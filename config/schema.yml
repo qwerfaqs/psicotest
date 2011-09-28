@@ -1,0 +1,8 @@
+propel:
+  _attributes:
+    package: lib.model
+    defaultIdMethod: native
+  calificaciones:
+    _attributes: { phpName: Calificaciones }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    motivo: { phpName: Motivo, type: LONGVARCHAR, required: false }
