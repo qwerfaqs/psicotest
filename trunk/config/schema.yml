@@ -2,7 +2,72 @@ propel:
   _attributes:
     package: lib.model
     defaultIdMethod: native
-  calificaciones:
-    _attributes: { phpName: Calificaciones }
+  asistencias:
+    _attributes: { phpName: Asistencias }
     id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
-    motivo: { phpName: Motivo, type: LONGVARCHAR, required: false }
+    evaluaciones_id: { phpName: EvaluacionesId, type: INTEGER, size: '11', required: true, foreignTable: evaluaciones, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    aspirantes_id: { phpName: AspirantesId, type: INTEGER, size: '11', required: true, foreignTable: aspirantes, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    _indexes: { aspirantes_id: [aspirantes_id], evaluaciones_id: [evaluaciones_id] }
+  aspirantes:
+    _attributes: { phpName: Aspirantes }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    nombre: { phpName: Nombre, type: VARCHAR, size: '60', required: false }
+    apellido: { phpName: Apellido, type: VARCHAR, size: '60', required: false }
+    cedula: { phpName: Cedula, type: CHAR, size: '30', required: false }
+    password: { phpName: Password, type: CHAR, size: '20', required: false }
+  estadopruebas:
+    _attributes: { phpName: Estadopruebas }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    nombre: { phpName: Nombre, type: VARCHAR, size: '50', required: false }
+  estadosevaluaciones:
+    _attributes: { phpName: Estadosevaluaciones }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    nombre: { phpName: Nombre, type: VARCHAR, size: '50', required: false }
+  evaluaciones:
+    _attributes: { phpName: Evaluaciones }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    cantidad: { phpName: Cantidad, type: INTEGER, size: '11', required: false }
+    fecha: { phpName: Fecha, type: DATE, required: false }
+    nombre: { phpName: Nombre, type: CHAR, size: '50', required: false }
+    estadosevaluaciones_id: { phpName: EstadosevaluacionesId, type: INTEGER, size: '11', required: true, foreignTable: estadosevaluaciones, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    _indexes: { estadosevaluaciones_id: [estadosevaluaciones_id] }
+  preguntas:
+    _attributes: { phpName: Preguntas }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    imagen: { phpName: Imagen, type: CHAR, size: '100', required: false }
+    tests_id: { phpName: TestsId, type: INTEGER, size: '11', required: true, foreignTable: tests, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    _indexes: { tests_id: [tests_id] }
+  pruebas:
+    _attributes: { phpName: Pruebas }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    tests_id: { phpName: TestsId, type: INTEGER, size: '11', required: true, foreignTable: tests, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    evaluaciones_id: { phpName: EvaluacionesId, type: INTEGER, size: '11', required: true, foreignTable: evaluaciones, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    estadopruebas_id: { phpName: EstadopruebasId, type: INTEGER, size: '11', required: true, foreignTable: estadopruebas, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    _indexes: { tests_id: [tests_id], estadopruebas_id: [estadopruebas_id], evaluaciones_id: [evaluaciones_id] }
+  respuestas:
+    _attributes: { phpName: Respuestas }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    texto: { phpName: Texto, type: CHAR, size: '100', required: false }
+    respuestas_id: { phpName: RespuestasId, type: INTEGER, size: '11', required: true, foreignTable: preguntas, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    estados_id: { phpName: EstadosId, type: INTEGER, size: '11', required: true, foreignTable: valoresdeverdad, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    _indexes: { respuestas_id: [respuestas_id], estados_id: [estados_id] }
+  resultados:
+    _attributes: { phpName: Resultados }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    duracion: { phpName: Duracion, type: CHAR, size: '20', required: false }
+    puntaje: { phpName: Puntaje, type: CHAR, size: '20', required: false }
+    pruebas_id: { phpName: PruebasId, type: INTEGER, size: '11', required: true, foreignTable: pruebas, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    aspirantes_id: { phpName: AspirantesId, type: INTEGER, size: '11', required: true, foreignTable: aspirantes, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    _indexes: { pruebas_id: [pruebas_id], aspirantes_id: [aspirantes_id] }
+  tests:
+    _attributes: { phpName: Tests }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    titulo: { phpName: Titulo, type: VARCHAR, size: '80', required: false }
+    historia: { phpName: Historia, type: LONGVARCHAR, required: false }
+    enunciado: { phpName: Enunciado, type: LONGVARCHAR, required: false }
+    imagen: { phpName: Imagen, type: CHAR, size: '100', required: false }
+    duracion: { phpName: Duracion, type: CHAR, size: '30', required: false }
+  valoresdeverdad:
+    _attributes: { phpName: Valoresdeverdad }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    nombre: { phpName: Nombre, type: VARCHAR, size: '50', required: false }
