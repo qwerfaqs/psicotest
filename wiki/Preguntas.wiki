@@ -8,28 +8,28 @@ gfcv20@hotmail.com.
 -----------------------------------------------------------------------------------------------
 26 de septiembre
 
-
 = Details =
 
-# ¿Los usuarios a los que se le toman la prueba se tienen que registrar en el sistema? o solo ingresan su nombre apellido dni y empiezan a hacer el test que le designe el profesor?
-# ¿Existe alguna tipologia sobre colores , definiciones de estilo del proyecto?
+  # ¿Los usuarios a los que se le toman la prueba se tienen que registrar en el sistema? o solo ingresan su nombre apellido dni y empiezan a hacer el test que le designe el profesor?
 
-# ¿Los test se desarrollan con algun tiempo determinado?
+  # ¿Existe alguna tipologia sobre colores , definiciones de estilo del proyecto?
 
-# ¿Que tipo de datos estadisticos desea para el sistema?
+  # ¿Los test se desarrollan con algun tiempo determinado?
 
-# ¿Pueden usar un navegador opensource firefox o chrome ?
+  # ¿Que tipo de datos estadisticos desea para el sistema?
 
-# ¿Hay que tomar el tiempo en que el evaluado tarda en completar el test ?
+  # ¿Pueden usar un navegador opensource firefox o chrome ?
 
-# Definir paso por paso el proceso de completo de test, para poder evaluar la implemetacion de los mismos.
+  # ¿Hay que tomar el tiempo en que el evaluado tarda en completar el test ?
 
-# ¿Quien genera los test? 
+  # Definir paso por paso el proceso de completo de test, para poder evaluar la implemetacion de los mismos.
 
-# ¿Los test se crean con fecha?, ¿Fecha inicio y fecha de fin?
+  # ¿Quien genera los test? 
 
-# ¿Se requiere asociar una lista de aspirantes(los evaluados) a un test especifico o cualquiera puede acceder?
+  # ¿Los test se crean con fecha?, ¿Fecha inicio y fecha de fin?
 
-# ¿Que arquitectura de hardware / software se dispone tanto de servidores como de clientes?
+  # ¿Se requiere asociar una lista de aspirantes(los evaluados) a un test especifico o cualquiera puede acceder?
 
-# ¿Cuales son las especificaciones de la infraestructura de networking sobre la que va a correr el sistema?
+  # ¿Que arquitectura de hardware / software se dispone tanto de servidores como de clientes?
+
+  # ¿Cuales son las especificaciones de la infraestructura de networking sobre la que va a correr el sistema?
