@@ -15,7 +15,7 @@ gfcv20@hotmail.com.
   # ¿Existe alguna tipologia sobre colores , definiciones de estilo del proyecto?
     * _ Ayúdeme especificando a que tipología de colores se refiere, porque aquí en la armada por lo general es el azul, el blanco, el naranja, el negro en sus diferentes áreas.._
   # ¿Que tipo de datos estadisticos desea para el sistema?
-* _ Puede ser para analizar tendecias entre diferentes procesos de diferentes años, cuantos aprobaron entre los diferentes procesos, cuantos reprobaron, etc  pero si usted considera algún otro tipo de dato estadístico me comunica para analizarlo, me imagino que usted debe tener varios modelos._
+    * _ Puede ser para analizar tendecias entre diferentes procesos de diferentes años, cuantos aprobaron entre los diferentes procesos, cuantos reprobaron, etc  pero si usted considera algún otro tipo de dato estadístico me comunica para analizarlo, me imagino que usted debe tener varios modelos._
   # ¿Pueden usar un navegador opensource firefox o chrome ?
     * _ Sería mejor que la aplicación corra en cualquier navegador._
   # ¿Hay que tomar el tiempo en que el evaluado tarda en completar el test ?
