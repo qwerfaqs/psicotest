@@ -16,6 +16,12 @@
  *
  * @package    lib.model
  */
-class PruebasPeer extends BasePruebasPeer {
-
+class PruebasPeer extends BasePruebasPeer 
+{
+  public static function getPruebas($evaluacion)
+  {
+    $criteria = new Criteria();
+    $criteria->add(PruebasPeer::EVALUACIONES_ID,$evaluacion,Criteria::EQUAL); 
+     return (self::doSelect($criteria));
+  }
 } // PruebasPeer

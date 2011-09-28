@@ -16,6 +16,8 @@
  *
  * @package    lib.model
  */
-class EvaluacionesPeer extends BaseEvaluacionesPeer {
-
+class EvaluacionesPeer extends BaseEvaluacionesPeer 
+{
+ 
+  
 } // EvaluacionesPeer

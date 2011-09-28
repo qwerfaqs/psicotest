@@ -16,6 +16,7 @@
  *
  * @package    lib.model
  */
-class AspirantesPeer extends BaseAspirantesPeer {
+class AspirantesPeer extends BaseAspirantesPeer 
+{
 
 } // AspirantesPeer
