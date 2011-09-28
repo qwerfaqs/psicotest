@@ -12,7 +12,6 @@ gfcv20@hotmail.com.
 = Details =
 
 # ¿Los usuarios a los que se le toman la prueba se tienen que registrar en el sistema? o solo ingresan su nombre apellido dni y empiezan a hacer el test que le designe el profesor?
-
 # ¿Existe alguna tipologia sobre colores , definiciones de estilo del proyecto?
 
 # ¿Los test se desarrollan con algun tiempo determinado?
