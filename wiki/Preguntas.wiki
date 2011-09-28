@@ -1,0 +1,36 @@
+#summary Preguntas para el cliente.
+
+= Introduction =
+
+CAbo Migues.
+gfcv20@hotmail.com.
+ HAY QUE MANDARLE UN CUESTIONARIO DE PREGUNTAS QUE EL SOLVENTARA. 
+-----------------------------------------------------------------------------------------------
+26 de septiembre
+
+
+= Details =
+
+# ¿Los usuarios a los que se le toman la prueba se tienen que registrar en el sistema? o solo ingresan su nombre apellido dni y empiezan a hacer el test que le designe el profesor?
+
+# ¿Existe alguna tipologia sobre colores , definiciones de estilo del proyecto?
+
+# ¿Los test se desarrollan con algun tiempo determinado?
+
+# ¿Que tipo de datos estadisticos desea para el sistema?
+
+# ¿Pueden usar un navegador opensource firefox o chrome ?
+
+# ¿Hay que tomar el tiempo en que el evaluado tarda en completar el test ?
+
+# Definir paso por paso el proceso de completo de test, para poder evaluar la implemetacion de los mismos.
+
+# ¿Quien genera los test? 
+
+# ¿Los test se crean con fecha?, ¿Fecha inicio y fecha de fin?
+
+# ¿Se requiere asociar una lista de aspirantes(los evaluados) a un test especifico o cualquiera puede acceder?
+
+# ¿Que arquitectura de hardware / software se dispone tanto de servidores como de clientes?
+
+# ¿Cuales son las especificaciones de la infraestructura de networking sobre la que va a correr el sistema?
