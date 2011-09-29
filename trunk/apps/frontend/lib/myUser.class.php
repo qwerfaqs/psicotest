@@ -27,9 +27,9 @@ class myUser extends derechosSecurityUser
    return($this->getAttribute('pruebas'));  
   }  
   
-  public function setInitprueba() 
+  public function setInitprueba($num) 
   {          
-   $this->setAttribute('currentprueba', 0);   
+   $this->setAttribute('currentprueba', $num);   
   }  
   
   public function Nextprueba() 
@@ -42,7 +42,7 @@ class myUser extends derechosSecurityUser
   
   public function getCurrentprueba() 
   {             
-   $this->getAttribute('currentprueba');   
+   return($this->getAttribute('currentprueba'));   
   }  
   
   public function getEvaluacion()

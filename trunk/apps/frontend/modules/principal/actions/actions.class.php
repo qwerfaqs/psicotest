@@ -37,8 +37,9 @@ class principalActions extends sfActions
   {
     $this->evaluacion = $this->getRoute()->getObject();      
     $this->pruebas = PruebasPeer::getPruebas($this->evaluacion->getId());  
-    if($this->pruebas!=null)
-       $this->getUser()->setPruebas($this->pruebas);              
+    /*if($this->pruebas!=null)
+       $this->getUser()->setPruebas($this->pruebas); */
+    
   }
   
   
@@ -48,9 +49,10 @@ class principalActions extends sfActions
      $aspirante = $this->getUser()->getAttribute('usuarioId');
      $asistencia =  AsistenciasPeer::getAsistencia($evaluacion,$aspirante);
      if(isset($asistencia))   
-     {
+     {   
+         
        $this->getUser()->setEvaluacion($asistencia->getEvaluaciones()); 
-       $this->getUser()->setPruebas();
+       $this->getUser()->setPruebas();              
        $this->forward('principal','evaluar');
      }
      else
@@ -60,16 +62,14 @@ class principalActions extends sfActions
   
   public function executeEvaluar(sfWebRequest $request) 
   {                    
-    $this->getUser()->setInitprueba(); 
+    $this->getUser()->setInitprueba(0);     
     $this->forward('principal','pregunta');
   }  
   
   public function executePregunta(sfWebRequest $request) 
-  {   $this->getUser()->setInitprueba();
-     $numPrueba = $this->getUser()->getCurrentprueba();
-     print_r($numPrueba);
-     $pruebas= $this->getUser()->getPruebas();     
-        
+  {        
+     $numPrueba = $this->getUser()->getCurrentprueba();       
+     $pruebas = $this->getUser()->getPruebas();        
      $this->preguntas = PreguntasPeer::getPreguntas($pruebas[$numPrueba]->getTests()->getId(),1);          
   }
   
