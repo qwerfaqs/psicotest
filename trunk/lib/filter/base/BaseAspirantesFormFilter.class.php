@@ -12,10 +12,10 @@ abstract class BaseAspirantesFormFilter extends BaseFormFilterPropel
   public function setup()
   {
     $this->setWidgets(array(
-      'nombre'   => new sfWidgetFormFilterInput(),
-      'apellido' => new sfWidgetFormFilterInput(),
-      'cedula'   => new sfWidgetFormFilterInput(),
-      'password' => new sfWidgetFormFilterInput(),
+      'nombre'   => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'apellido' => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'cedula'   => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'password' => new sfWidgetFormFilterInput(array('with_empty' => false)),
     ));
 
     $this->setValidators(array(

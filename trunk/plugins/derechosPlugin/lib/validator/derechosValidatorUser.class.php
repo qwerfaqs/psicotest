@@ -28,7 +28,7 @@ class derechosValidatorUser extends sfValidatorBase {
         $password = isset($values[$this->getOption('password_field')]) ? $values[$this->getOption('password_field')] : '';
 
         if ($username && $password) {
-            $function =  new \ReflectionClass(sfConfig::get('app_derechos_plugin_modelo').'Peer');
+            $function =  new ReflectionClass(sfConfig::get('app_derechos_plugin_modelo').'Peer');
             $name = $function->newInstanceArgs();
             $user = $name::login($username, $password);
             // existe?
