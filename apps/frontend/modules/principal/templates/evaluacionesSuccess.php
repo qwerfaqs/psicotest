@@ -24,7 +24,7 @@
           <h2 class="star"><span>Opciones</span></h2>
           <div class="clr"></div>
           <ul class="sb_menu">
-            <li><a href="#">Cerrar Sesión</a></li>                        
+              <li><a href="<?php echo url_for("@derechos_signout")?>">Cerrar Sesión</a></li>
           </ul>
         </div>
         </div>
