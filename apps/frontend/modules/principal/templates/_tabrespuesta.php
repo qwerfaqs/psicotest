@@ -1,6 +1,6 @@
   </p>
             <p style="text-align:center">
-            <img src="/images/tests/1.png" alt="" width="203" height="227"/>
+            <img src="/images/tests/<?php echo $pregunta->getImagen(); ?>" alt="" width="203" height="227"/>
             
         <div class="seleccionarficha" clear:both">
                 <table align="center">
@@ -107,7 +107,8 @@
                       </table></td>
                     </tr>
                     <tr>
-                      <td colspan="4" align="center"><form action="domino.asp" method="post" name="f_d" id="f_d" onsubmit="respuestaAcertada();return true;">
+                      <td colspan="4" align="center">
+                       <form action="<?php echo url_for('principal/check') ?>" method="post" name="f_d" id="f_d" onsubmit="respuestaAcertada();return true;">
                           <input type="hidden" name="OK" value="0" />
                           <!-- aciertos -->
                           <input type="hidden" name="R1" value="0" />
@@ -117,6 +118,12 @@
                           <input type="hidden" name="R3" value="V" />
                           <!-- orientación H - V -->
                           <input type="hidden" name="FASE" value="1" />
+                          
+                          <input type="hidden" name="pagina" value="<?php echo $pagina; ?>" />
+                          
+                          <input type="hidden" name="pregunta" value="<?php echo $pregunta->getId() ?>" />
+                          
+                          <input type="submit" name="ir" value="Continuar" />
                       </form></td>
                     </tr>
                   </tbody>

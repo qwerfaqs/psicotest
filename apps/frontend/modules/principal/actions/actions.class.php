@@ -39,20 +39,32 @@ class principalActions extends sfActions
     $this->evaluacion = $this->getRoute()->getObject();      
     $this->pruebas = PruebasPeer::getPruebas($this->evaluacion->getId());  
     if($this->pruebas!=null)
-       $this->getUser()->setPruebas($this->pruebas);    
-    
-    
-
-    
+       $this->getUser()->setPruebas($this->pruebas);              
   }
   
   
   public function executeProgress(sfWebRequest $request) 
   {
      $num = $request->getParameter('num');
-     $this->prueba = $this->getUser()->paginatePruebas(trim($num));      
+     $this->currentprueba = $this->getUser()->paginatePruebas(trim($num));        
+     $current = $this->currentprueba;
+     $this->getUser()->setCurrentprueba($current);         
+     $this->preguntas = PreguntasPeer::getPreguntas($this->currentprueba->getTests()->getId(),1);     
+     $this->pagina = 1;
+     
   }
   
+  public function executeCheck(sfWebRequest $request) 
+  {      
+   $pagina = $request->getParameter('pagina');
+   $superior = $request->getParameter('R2');
+   $inferior = $request->getParameter('R3');
+   $resultado = $superior.'/'.$inferior;   
+      
+   $this->preguntas = PreguntasPeer::getPreguntas($this->getUser()->getCurrentprueba()->getTests()->getId(),1,$pagina);     
+   $this->pagina++;
+   $this->setTemplate('progress');
+  }
   
   
   

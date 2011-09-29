@@ -25,6 +25,16 @@ class myUser extends derechosSecurityUser
    return($this->getAttribute('pruebas'));  
   }  
   
+  public function setCurrentprueba($current) 
+  {       
+   $this->setAttribute('currentprueba', $current);   
+  }  
+  
+  public function getCurrentprueba() 
+  {       
+   $this->getAttribute('currentprueba');   
+  }  
+  
   public function getEvaluacion()
   {       
    return($this->getAttribute('evaluacion'));  
