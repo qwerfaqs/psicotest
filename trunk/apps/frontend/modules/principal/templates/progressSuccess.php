@@ -116,11 +116,9 @@
 					f_d.OK.value = parseInt(f_d.OK.value) + 1;
 			}
 			</script>
-            <h3>Test de domino</h3>
+            <h3><?php echo $prueba->getTests()->getTitulo(); ?></h3>
             <p>
-            En esta prueba nos vamos a encontrar con una serie de fichas de Dominó que guardan una cierta relación entre sí. La misión del opositor radicará en descubrir el sistema de ordenación de esta serie y poner los valores que corresponden a la ficha en blanco.
-
-     Examine este grupo de fichas y piense cual iría a continuación:
+              <?php echo $prueba->getTests()->getEnunciado(); ?>      
 
           <?php  include_partial('tabrespuesta'); ?>
         
