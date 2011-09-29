@@ -253,11 +253,11 @@ h1 small {
 	padding-right:30px;
 	background:none;
 }
-#login label,#login span
+#login label, #login span
 {
 	width:80px;
 }
-#login #user,#password
+#login #signin_username,#signin_password
 {
 	width:220px;
 }
