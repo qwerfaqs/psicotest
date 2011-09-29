@@ -211,6 +211,40 @@ CREATE TABLE `resultados`
 )Type=InnoDB;
 
 #-----------------------------------------------------------------------------
+#-- resultadosparciales
+#-----------------------------------------------------------------------------
+
+DROP TABLE IF EXISTS `resultadosparciales`;
+
+
+CREATE TABLE `resultadosparciales`
+(
+	`id` INTEGER(11)  NOT NULL AUTO_INCREMENT,
+	`aspirantes_id` INTEGER(11)  NOT NULL,
+	`pruebas_id` INTEGER(11)  NOT NULL,
+	`respuestas_id` INTEGER(11)  NOT NULL,
+	PRIMARY KEY (`id`),
+	KEY `pruebas_id`(`pruebas_id`),
+	KEY `respuestas_id`(`respuestas_id`),
+	KEY `aspirantes_id`(`aspirantes_id`),
+	CONSTRAINT `resultadosparciales_FK_1`
+		FOREIGN KEY (`aspirantes_id`)
+		REFERENCES `aspirantes` (`id`)
+		ON UPDATE RESTRICT
+		ON DELETE RESTRICT,
+	CONSTRAINT `resultadosparciales_FK_2`
+		FOREIGN KEY (`pruebas_id`)
+		REFERENCES `pruebas` (`id`)
+		ON UPDATE RESTRICT
+		ON DELETE RESTRICT,
+	CONSTRAINT `resultadosparciales_FK_3`
+		FOREIGN KEY (`respuestas_id`)
+		REFERENCES `respuestas` (`id`)
+		ON UPDATE RESTRICT
+		ON DELETE RESTRICT
+)Type=InnoDB;
+
+#-----------------------------------------------------------------------------
 #-- tests
 #-----------------------------------------------------------------------------
 

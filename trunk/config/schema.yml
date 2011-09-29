@@ -59,6 +59,13 @@ propel:
     pruebas_id: { phpName: PruebasId, type: INTEGER, size: '11', required: true, foreignTable: pruebas, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
     aspirantes_id: { phpName: AspirantesId, type: INTEGER, size: '11', required: true, foreignTable: aspirantes, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
     _indexes: { pruebas_id: [pruebas_id], aspirantes_id: [aspirantes_id] }
+  resultadosparciales:
+    _attributes: { phpName: Resultadosparciales }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    aspirantes_id: { phpName: AspirantesId, type: INTEGER, size: '11', required: true, foreignTable: aspirantes, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    pruebas_id: { phpName: PruebasId, type: INTEGER, size: '11', required: true, foreignTable: pruebas, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    respuestas_id: { phpName: RespuestasId, type: INTEGER, size: '11', required: true, foreignTable: respuestas, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    _indexes: { pruebas_id: [pruebas_id], respuestas_id: [respuestas_id], aspirantes_id: [aspirantes_id] }
   tests:
     _attributes: { phpName: Tests }
     id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }

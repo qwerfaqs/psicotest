@@ -33,9 +33,21 @@ class principalActions extends sfActions
   
   public function executePruebas(sfWebRequest $request) // listado de pruebas de una evaluacion
   {
-    $evaluacion = $this->getRoute()->getObject();  
-    $this->pruebas = PruebasPeer::getPruebas($evaluacion->getId());       
+    $this->evaluacion = $this->getRoute()->getObject();      
+    $this->pruebas = PruebasPeer::getPruebas($this->evaluacion->getId());       
   }
+  
+  
+  public function executeProgress(sfWebRequest $request) // listado de pruebas de una evaluacion
+  {
+    $pagina = $request->getParameter('pagina');
+    if(!isset($pagina))
+        $pagina = 1;
+    
+        
+  }
+  
+  
   
    
  
