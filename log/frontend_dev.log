@@ -3857,3 +3857,191 @@ Sep 28 20:54:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Fou
 Sep 28 20:54:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
 Sep 28 20:54:00 symfony [info] {sfWebDebugLogger} Configuration 127.04 ms (5)
 Sep 28 20:54:00 symfony [info] {sfWebDebugLogger} Factories 721.24 ms (1)
+Sep 28 20:58:36 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /principal/evaluaciones with parameters array (  'module' => 'principal',  'action' => 'evaluaciones',)
+Sep 28 20:58:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 28 20:58:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 28 20:58:36 symfony [info] {principalActions} Call "principalActions->executeEvaluaciones()"
+Sep 28 20:58:36 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    5.5 MB | mempeak:    5.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Sep 28 20:58:36 symfony [debug] {sfPropelLogger} time:  0.002 sec | slow:  NO | mem:    5.8 MB | mempeak:    5.8 MB | memdelta:      0.0 B | SELECT asistencias.ID, asistencias.EVALUACIONES_ID, asistencias.ASPIRANTES_ID FROM `asistencias` LEFT JOIN evaluaciones ON (asistencias.EVALUACIONES_ID=evaluaciones.ID) LEFT JOIN aspirantes ON (asistencias.ASPIRANTES_ID=aspirantes.ID) WHERE evaluaciones.ESTADOSEVALUACIONES_ID=1 AND asistencias.ASPIRANTES_ID=1 LIMIT 1
+Sep 28 20:58:36 symfony [info] {principalActions} Change template to "CURRENT/evaluaciones"
+Sep 28 20:58:36 symfony [info] {sfPHPView} Render "C:\development\sfprojects\psicotest\apps\frontend\modules/principal/templates/evaluacionesSuccess.php"
+Sep 28 20:58:36 symfony [debug] {sfPropelLogger} time:  0.037 sec | slow:  NO | mem:    6.5 MB | mempeak:    6.5 MB | memdelta:      0.0 B | SELECT evaluaciones.ID, evaluaciones.CANTIDAD, evaluaciones.FECHA, evaluaciones.NOMBRE, evaluaciones.ESTADOSEVALUACIONES_ID FROM `evaluaciones` WHERE evaluaciones.ID=1
+Sep 28 20:58:36 symfony [info] {sfPHPView} Decorate content with "C:\development\sfprojects\psicotest\apps\frontend\templates/layout.php"
+Sep 28 20:58:36 symfony [info] {sfPHPView} Render "C:\development\sfprojects\psicotest\apps\frontend\templates/layout.php"
+Sep 28 20:58:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 28 20:58:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 28 20:58:36 symfony [info] {sfWebDebugLogger} Configuration 116.39 ms (9)
+Sep 28 20:58:36 symfony [info] {sfWebDebugLogger} Factories 184.54 ms (1)
+Sep 28 20:58:36 symfony [info] {sfWebDebugLogger} Action "principal/evaluaciones" 316.61 ms (1)
+Sep 28 20:58:36 symfony [info] {sfWebDebugLogger} View "Success" for "principal/evaluaciones" 213.75 ms (1)
+Sep 28 20:58:36 symfony [info] {sfWebResponse} Send content (34698 o)
+Sep 28 20:58:38 symfony [info] {sfPatternRouting} Match route "evaluacion" (/yates/:id) for /yates/1 with parameters array (  'module' => 'principal',  'action' => 'pruebas',  'id' => '1',)
+Sep 28 20:58:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 28 20:58:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 28 20:58:38 symfony [info] {principalActions} Call "principalActions->executePruebas()"
+Sep 28 20:58:39 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    5.5 MB | mempeak:    5.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Sep 28 20:58:39 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    5.5 MB | mempeak:    5.5 MB | memdelta:      0.0 B | SELECT evaluaciones.ID, evaluaciones.CANTIDAD, evaluaciones.FECHA, evaluaciones.NOMBRE, evaluaciones.ESTADOSEVALUACIONES_ID FROM `evaluaciones` WHERE evaluaciones.ID='1' LIMIT 1
+Sep 28 20:58:39 symfony [debug] {sfPropelLogger} time:  0.030 sec | slow:  NO | mem:    6.0 MB | mempeak:    6.0 MB | memdelta:      0.0 B | SELECT pruebas.ID, pruebas.TESTS_ID, pruebas.EVALUACIONES_ID, pruebas.ESTADOPRUEBAS_ID FROM `pruebas` WHERE pruebas.EVALUACIONES_ID=1
+Sep 28 20:58:39 symfony [info] {sfPHPView} Render "C:\development\sfprojects\psicotest\apps\frontend\modules/principal/templates/pruebasSuccess.php"
+Sep 28 20:58:39 symfony [debug] {sfPropelLogger} time:  0.022 sec | slow:  NO | mem:    6.8 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT tests.ID, tests.TITULO, tests.HISTORIA, tests.ENUNCIADO, tests.IMAGEN, tests.DURACION FROM `tests` WHERE tests.ID=1
+Sep 28 20:58:39 symfony [info] {sfPHPView} Decorate content with "C:\development\sfprojects\psicotest\apps\frontend\templates/layout.php"
+Sep 28 20:58:39 symfony [info] {sfPHPView} Render "C:\development\sfprojects\psicotest\apps\frontend\templates/layout.php"
+Sep 28 20:58:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 28 20:58:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 28 20:58:39 symfony [info] {sfWebDebugLogger} Configuration 116.32 ms (9)
+Sep 28 20:58:39 symfony [info] {sfWebDebugLogger} Factories 123.82 ms (1)
+Sep 28 20:58:39 symfony [info] {sfWebDebugLogger} Action "principal/pruebas" 277.14 ms (1)
+Sep 28 20:58:39 symfony [info] {sfWebDebugLogger} View "Success" for "principal/pruebas" 205.85 ms (1)
+Sep 28 20:58:39 symfony [info] {sfWebResponse} Send content (37970 o)
+Sep 28 20:58:43 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /principal with parameters array (  'module' => 'principal',  'action' => 'index',)
+Sep 28 20:58:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 28 20:58:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 28 20:58:43 symfony [info] {principalActions} Call "principalActions->executeIndex()"
+Sep 28 20:58:43 symfony [info] {sfPHPView} Render "C:\development\sfprojects\psicotest\apps\frontend\modules/principal/templates/indexSuccess.php"
+Sep 28 20:58:43 symfony [info] {sfPartialView} Render "C:\development\sfprojects\psicotest\apps\frontend\modules/principal/templates/_tabrespuesta.php"
+Sep 28 20:58:43 symfony [info] {sfPHPView} Decorate content with "C:\development\sfprojects\psicotest\apps\frontend\templates/layout.php"
+Sep 28 20:58:43 symfony [info] {sfPHPView} Render "C:\development\sfprojects\psicotest\apps\frontend\templates/layout.php"
+Sep 28 20:58:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 28 20:58:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 28 20:58:43 symfony [info] {sfWebDebugLogger} Configuration 100.36 ms (9)
+Sep 28 20:58:43 symfony [info] {sfWebDebugLogger} Factories 194.69 ms (1)
+Sep 28 20:58:43 symfony [info] {sfWebDebugLogger} Action "principal/index" 0.29 ms (1)
+Sep 28 20:58:43 symfony [info] {sfWebDebugLogger} View "Success" for "principal/index" 76.84 ms (1)
+Sep 28 20:58:43 symfony [info] {sfWebDebugLogger} Partial "principal/_tabrespuesta" 3.05 ms (1)
+Sep 28 20:58:44 symfony [info] {sfWebResponse} Send content (47560 o)
+Sep 28 20:58:44 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/css/style.css" (/).
+Sep 28 20:58:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Sep 28 20:58:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 28 20:58:44 symfony [info] {sfWebDebugLogger} Configuration 67.24 ms (5)
+Sep 28 20:58:44 symfony [info] {sfWebDebugLogger} Factories 261.12 ms (1)
+Sep 28 20:58:44 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/css/coin-slider.css" (/).
+Sep 28 20:58:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Sep 28 20:58:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 28 20:58:44 symfony [info] {sfWebDebugLogger} Configuration 115.84 ms (5)
+Sep 28 20:58:44 symfony [info] {sfWebDebugLogger} Factories 425.53 ms (1)
+Sep 28 20:58:45 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/cufon-yui.js" (/).
+Sep 28 20:58:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Sep 28 20:58:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 28 20:58:45 symfony [info] {sfWebDebugLogger} Configuration 54.42 ms (5)
+Sep 28 20:58:45 symfony [info] {sfWebDebugLogger} Factories 593.97 ms (1)
+Sep 28 20:58:45 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/droid_sans_400-droid_sans_700.font.js" (/).
+Sep 28 20:58:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Sep 28 20:58:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 28 20:58:45 symfony [info] {sfWebDebugLogger} Configuration 208.30 ms (5)
+Sep 28 20:58:45 symfony [info] {sfWebDebugLogger} Factories 882.23 ms (1)
+Sep 28 20:58:45 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/script.js" (/).
+Sep 28 20:58:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Sep 28 20:58:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 28 20:58:45 symfony [info] {sfWebDebugLogger} Configuration 154.49 ms (5)
+Sep 28 20:58:45 symfony [info] {sfWebDebugLogger} Factories 975.92 ms (1)
+Sep 28 20:58:45 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/coin-slider.min.js" (/).
+Sep 28 20:58:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Sep 28 20:58:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 28 20:58:45 symfony [info] {sfWebDebugLogger} Configuration 86.42 ms (5)
+Sep 28 20:58:45 symfony [info] {sfWebDebugLogger} Factories 1133.05 ms (1)
+Sep 28 20:58:46 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/jquery-1.4.2.min.js" (/).
+Sep 28 20:58:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Sep 28 20:58:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 28 20:58:46 symfony [info] {sfWebDebugLogger} Configuration 113.51 ms (5)
+Sep 28 20:58:46 symfony [info] {sfWebDebugLogger} Factories 1450.21 ms (1)
+Sep 28 20:58:47 symfony [info] {sfPatternRouting} Match route "evaluacion" (/yates/:id) for /yates/1 with parameters array (  'module' => 'principal',  'action' => 'pruebas',  'id' => '1',)
+Sep 28 20:58:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 28 20:58:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 28 20:58:47 symfony [info] {principalActions} Call "principalActions->executePruebas()"
+Sep 28 20:58:47 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    5.5 MB | mempeak:    5.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Sep 28 20:58:47 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    5.5 MB | mempeak:    5.5 MB | memdelta:      0.0 B | SELECT evaluaciones.ID, evaluaciones.CANTIDAD, evaluaciones.FECHA, evaluaciones.NOMBRE, evaluaciones.ESTADOSEVALUACIONES_ID FROM `evaluaciones` WHERE evaluaciones.ID='1' LIMIT 1
+Sep 28 20:58:47 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.0 MB | mempeak:    6.0 MB | memdelta:      0.0 B | SELECT pruebas.ID, pruebas.TESTS_ID, pruebas.EVALUACIONES_ID, pruebas.ESTADOPRUEBAS_ID FROM `pruebas` WHERE pruebas.EVALUACIONES_ID=1
+Sep 28 20:58:47 symfony [info] {sfPHPView} Render "C:\development\sfprojects\psicotest\apps\frontend\modules/principal/templates/pruebasSuccess.php"
+Sep 28 20:58:47 symfony [debug] {sfPropelLogger} time:  0.012 sec | slow:  NO | mem:    6.8 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT tests.ID, tests.TITULO, tests.HISTORIA, tests.ENUNCIADO, tests.IMAGEN, tests.DURACION FROM `tests` WHERE tests.ID=1
+Sep 28 20:58:47 symfony [info] {sfPHPView} Decorate content with "C:\development\sfprojects\psicotest\apps\frontend\templates/layout.php"
+Sep 28 20:58:47 symfony [info] {sfPHPView} Render "C:\development\sfprojects\psicotest\apps\frontend\templates/layout.php"
+Sep 28 20:58:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 28 20:58:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 28 20:58:47 symfony [info] {sfWebDebugLogger} Configuration 94.68 ms (9)
+Sep 28 20:58:47 symfony [info] {sfWebDebugLogger} Factories 111.91 ms (1)
+Sep 28 20:58:47 symfony [info] {sfWebDebugLogger} Action "principal/pruebas" 93.20 ms (1)
+Sep 28 20:58:47 symfony [info] {sfWebDebugLogger} View "Success" for "principal/pruebas" 173.43 ms (1)
+Sep 28 20:58:47 symfony [info] {sfWebResponse} Send content (37968 o)
+Sep 28 21:00:59 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /principal/index with parameters array (  'module' => 'principal',  'action' => 'index',)
+Sep 28 21:00:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 28 21:00:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 28 21:00:59 symfony [info] {principalActions} Call "principalActions->executeIndex()"
+Sep 28 21:00:59 symfony [info] {sfPHPView} Render "C:\development\sfprojects\psicotest\apps\frontend\modules/principal/templates/indexSuccess.php"
+Sep 28 21:01:00 symfony [info] {sfPartialView} Render "C:\development\sfprojects\psicotest\apps\frontend\modules/principal/templates/_tabrespuesta.php"
+Sep 28 21:01:00 symfony [info] {sfPHPView} Decorate content with "C:\development\sfprojects\psicotest\apps\frontend\templates/layout.php"
+Sep 28 21:01:00 symfony [info] {sfPHPView} Render "C:\development\sfprojects\psicotest\apps\frontend\templates/layout.php"
+Sep 28 21:01:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 28 21:01:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 28 21:01:00 symfony [info] {sfWebDebugLogger} Configuration 66.66 ms (9)
+Sep 28 21:01:00 symfony [info] {sfWebDebugLogger} Factories 107.45 ms (1)
+Sep 28 21:01:00 symfony [info] {sfWebDebugLogger} Action "principal/index" 0.28 ms (1)
+Sep 28 21:01:00 symfony [info] {sfWebDebugLogger} View "Success" for "principal/index" 59.83 ms (1)
+Sep 28 21:01:00 symfony [info] {sfWebDebugLogger} Partial "principal/_tabrespuesta" 2.52 ms (1)
+Sep 28 21:01:00 symfony [info] {sfWebResponse} Send content (47520 o)
+Sep 28 21:01:00 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /principal/css/style.css with parameters array (  'module' => 'principal',  'action' => 'css',  'style.css' => true,)
+Sep 28 21:01:00 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /principal/js/cufon-yui.js with parameters array (  'module' => 'principal',  'action' => 'js',  'cufon-yui.js' => true,)
+Sep 28 21:01:00 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /principal/js/jquery-1.4.2.min.js with parameters array (  'module' => 'principal',  'action' => 'js',  'jquery-1.4.2.min.js' => true,)
+Sep 28 21:01:00 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /principal/js/script.js with parameters array (  'module' => 'principal',  'action' => 'js',  'script.js' => true,)
+Sep 28 21:01:00 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /principal/js/droid_sans_400-droid_sans_700.font.js with parameters array (  'module' => 'principal',  'action' => 'js',  'droid_sans_400-droid_sans_700.font.js' => true,)
+Sep 28 21:01:00 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /principal/css/coin-slider.css with parameters array (  'module' => 'principal',  'action' => 'css',  'coin-slider.css' => true,)
+Sep 28 21:01:00 symfony [info] {sfFrontWebController} Action "principal/css" does not exist
+Sep 28 21:01:00 symfony [err] {sfError404Exception} Action "principal/css" does not exist.
+Sep 28 21:01:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Sep 28 21:01:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 28 21:01:00 symfony [info] {sfWebDebugLogger} Configuration 127.71 ms (5)
+Sep 28 21:01:00 symfony [info] {sfWebDebugLogger} Factories 273.07 ms (1)
+Sep 28 21:01:00 symfony [info] {sfFrontWebController} Action "principal/js" does not exist
+Sep 28 21:01:00 symfony [err] {sfError404Exception} Action "principal/js" does not exist.
+Sep 28 21:01:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Sep 28 21:01:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 28 21:01:01 symfony [info] {sfWebDebugLogger} Configuration 101.45 ms (5)
+Sep 28 21:01:01 symfony [info] {sfWebDebugLogger} Factories 453.23 ms (1)
+Sep 28 21:01:01 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /principal/js/coin-slider.min.js with parameters array (  'module' => 'principal',  'action' => 'js',  'coin-slider.min.js' => true,)
+Sep 28 21:01:01 symfony [info] {sfFrontWebController} Action "principal/js" does not exist
+Sep 28 21:01:01 symfony [err] {sfError404Exception} Action "principal/js" does not exist.
+Sep 28 21:01:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Sep 28 21:01:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 28 21:01:01 symfony [info] {sfWebDebugLogger} Configuration 181.59 ms (5)
+Sep 28 21:01:01 symfony [info] {sfWebDebugLogger} Factories 663.49 ms (1)
+Sep 28 21:01:01 symfony [info] {sfFrontWebController} Action "principal/js" does not exist
+Sep 28 21:01:01 symfony [err] {sfError404Exception} Action "principal/js" does not exist.
+Sep 28 21:01:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Sep 28 21:01:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 28 21:01:01 symfony [info] {sfWebDebugLogger} Configuration 172.10 ms (5)
+Sep 28 21:01:01 symfony [info] {sfWebDebugLogger} Factories 819.87 ms (1)
+Sep 28 21:01:01 symfony [info] {sfFrontWebController} Action "principal/js" does not exist
+Sep 28 21:01:01 symfony [err] {sfError404Exception} Action "principal/js" does not exist.
+Sep 28 21:01:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Sep 28 21:01:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 28 21:01:01 symfony [info] {sfWebDebugLogger} Configuration 120.11 ms (5)
+Sep 28 21:01:01 symfony [info] {sfWebDebugLogger} Factories 939.88 ms (1)
+Sep 28 21:01:01 symfony [info] {sfFrontWebController} Action "principal/css" does not exist
+Sep 28 21:01:01 symfony [err] {sfError404Exception} Action "principal/css" does not exist.
+Sep 28 21:01:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Sep 28 21:01:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 28 21:01:01 symfony [info] {sfWebDebugLogger} Configuration 108.16 ms (5)
+Sep 28 21:01:01 symfony [info] {sfWebDebugLogger} Factories 1090.40 ms (1)
+Sep 28 21:01:01 symfony [info] {sfFrontWebController} Action "principal/js" does not exist
+Sep 28 21:01:01 symfony [err] {sfError404Exception} Action "principal/js" does not exist.
+Sep 28 21:01:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Sep 28 21:01:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 28 21:01:01 symfony [info] {sfWebDebugLogger} Configuration 50.26 ms (5)
+Sep 28 21:01:01 symfony [info] {sfWebDebugLogger} Factories 879.22 ms (1)
+Sep 28 21:07:21 symfony [info] {sfPatternRouting} Match route "evaluacion" (/yates/:id) for /yates/1 with parameters array (  'module' => 'principal',  'action' => 'pruebas',  'id' => '1',)
+Sep 28 21:07:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 28 21:07:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 28 21:07:21 symfony [info] {principalActions} Call "principalActions->executePruebas()"
+Sep 28 21:07:21 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    5.5 MB | mempeak:    5.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Sep 28 21:07:21 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    5.5 MB | mempeak:    5.5 MB | memdelta:      0.0 B | SELECT evaluaciones.ID, evaluaciones.CANTIDAD, evaluaciones.FECHA, evaluaciones.NOMBRE, evaluaciones.ESTADOSEVALUACIONES_ID FROM `evaluaciones` WHERE evaluaciones.ID='1' LIMIT 1
+Sep 28 21:07:21 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.0 MB | mempeak:    6.0 MB | memdelta:      0.0 B | SELECT pruebas.ID, pruebas.TESTS_ID, pruebas.EVALUACIONES_ID, pruebas.ESTADOPRUEBAS_ID FROM `pruebas` WHERE pruebas.EVALUACIONES_ID=1
+Sep 28 21:07:21 symfony [info] {sfPHPView} Render "C:\development\sfprojects\psicotest\apps\frontend\modules/principal/templates/pruebasSuccess.php"
+Sep 28 21:07:21 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.8 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT tests.ID, tests.TITULO, tests.HISTORIA, tests.ENUNCIADO, tests.IMAGEN, tests.DURACION FROM `tests` WHERE tests.ID=1
+Sep 28 21:07:21 symfony [info] {sfPHPView} Decorate content with "C:\development\sfprojects\psicotest\apps\frontend\templates/layout.php"
+Sep 28 21:07:21 symfony [info] {sfPHPView} Render "C:\development\sfprojects\psicotest\apps\frontend\templates/layout.php"
+Sep 28 21:07:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 28 21:07:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 28 21:07:21 symfony [info] {sfWebDebugLogger} Configuration 78.25 ms (9)
+Sep 28 21:07:21 symfony [info] {sfWebDebugLogger} Factories 134.55 ms (1)
+Sep 28 21:07:21 symfony [info] {sfWebDebugLogger} Action "principal/pruebas" 71.96 ms (1)
+Sep 28 21:07:21 symfony [info] {sfWebDebugLogger} View "Success" for "principal/pruebas" 74.59 ms (1)
+Sep 28 21:07:21 symfony [info] {sfWebResponse} Send content (37967 o)
