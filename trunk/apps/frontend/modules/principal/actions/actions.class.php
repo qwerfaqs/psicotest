@@ -20,10 +20,10 @@ class principalActions extends sfActions
     
   }
   
-  public function executeEvaluaciones(sfWebRequest $request)
+  public function executeEvaluaciones(sfWebRequest $request) // evaluaciones disponibles de un aspirante
   {            
     $aspirante = 1;
-    $estado = 1;
+    $estado = 1; // el estado de la evaluacion en este caso activo para que aparesca en pantalla
     $this->asistencia= AsistenciasPeer::getEvaluaciones($estado,$aspirante);  
     if($this->asistencia)
        $this->setTemplate ('evaluaciones');
@@ -31,12 +31,12 @@ class principalActions extends sfActions
         $this->setTemplate ('nohayevaluaciones');
   }
   
-  public function executePruebas(sfWebRequest $request)
+  public function executePruebas(sfWebRequest $request) // listado de pruebas de una evaluacion
   {
     $evaluacion = $this->getRoute()->getObject();  
-    $this->pruebas = PruebasPeer::getPruebas($evaluacion->getId());   
-    
+    $this->pruebas = PruebasPeer::getPruebas($evaluacion->getId());       
   }
+  
    
  
   
