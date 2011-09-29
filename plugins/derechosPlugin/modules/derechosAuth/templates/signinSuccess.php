@@ -1,7 +1,4 @@
-<center>
-    <div id="Login" style="display:block">
-        <br/>
-        <div id="LoginTitulo">Ingreso al Sistema</div>
-        <?php echo get_partial('derechosAuth/signin_form', array('form' => $form)) ?>
-    </div>
-</center>
+<div id="login">
+    <h2>Acceso al sistema</h2>
+    <?php echo get_partial('derechosAuth/signin_form', array('form' => $form)) ?>
+</div>

@@ -25,9 +25,11 @@ class BasederechosFormSignin extends BaseForm
       'username' => new sfValidatorString(array("required"=>false)),
       'password' => new sfValidatorString(array("required"=>false)),
     ));
-
-    $this->widgetSchema['username']->setLabel('Usuario');
-    $this->widgetSchema['password']->setLabel('Clave');
+    
+    $this->widgetSchema['username']->setAttribute("class", "txt");
+    $this->widgetSchema['password']->setAttribute("class", "txt");
+    $this->widgetSchema['username']->setLabel('<span>Usuario</span>');
+    $this->widgetSchema['password']->setLabel('<span>Clave</span>');
     
     if (sfConfig::get('app_derechos_plugin_allow_login_with_email', false))
     {
@@ -37,5 +39,7 @@ class BasederechosFormSignin extends BaseForm
     $this->validatorSchema->setPostValidator(new derechosValidatorUser());
 
     $this->widgetSchema->setNameFormat('signin[%s]');
+    
   }
+
 }

@@ -1,18 +1,20 @@
 
-<form action="<?php echo url_for('@derechos_signin') ?>" method="post">
-    <br>
-    <div id="LoginData">
-        <table id="sf_admin_container">
-            <tbody>
-                <?php echo $form ?>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="2">
-                        <input type="submit" value="<?php echo('Entrar') ?>" class="small button green"/>
-                    </td>
-                </tr>
-            </tfoot>
-        </table>
-    </div>
+<form action="<?php echo url_for('@derechos_signin') ?>" class="cmxform" style="display: block; " method="post">
+
+    <fieldset>
+        <ol>
+            <li>
+                <?php echo $form["username"]->renderLabel() ?>
+                <?php echo $form["username"]->render() ?>
+            </li>
+            <li>
+                <?php echo $form["password"]->renderLabel() ?>
+                <?php echo $form["password"]->render() ?>
+            </li>
+            <?php echo $form->renderHiddenFields() ?>
+            <p id="forgetpass"><a>Regístrese</a> - <a>Olvido su Contraseña?</a></p>
+            <p><input type="image" value="Enviar" id="boton_enviar" src="/images/contactformsend.png" alt="Enviar"></p>
+        </ol>
+    </fieldset>
+    <?php     echo $form->renderGlobalErrors() ?>
 </form>
