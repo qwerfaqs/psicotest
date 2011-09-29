@@ -3,7 +3,9 @@
 
 
 # default rules
-
+homepage:
+  url:   /
+  param: { module: principal, action: evaluaciones }
 
 evaluacion:
   url:     /yates/:id
@@ -16,15 +18,6 @@ evaluacion:
     sf_culture: (?:en|es)
 
 
-
-
-
-
-
-homepage:
-  url:   /
-  param: { module: principal, action: evaluaciones }
-
 # generic rules
 # please, remove them by adding more specific rules
 default_index:
@@ -33,3 +26,17 @@ default_index:
 
 default:
   url:   /:module/:action/*
+
+
+# reglas para el Plugin de Derechos
+derechos_signin:
+  param: { module: derechosAuth, action: signin }
+
+derechos_signout:
+  url:   /logout/
+  param: { module: derechosAuth, action: signout }
+
+
+
+
+

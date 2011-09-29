@@ -23,7 +23,11 @@ test:
     etag:                   false
 
 all:
+  .actions:
+    login_module: derechosAuth
+    login_action: signin
   .settings:
+    enabled_modules: [derechosAuth]
     # Form security secret (CSRF protection)
     csrf_secret:            ac4a039337617d4894eeacdaebeaa8cbe33920b3
 

@@ -1,6 +1,6 @@
 <?php
 
-class myUser extends sfBasicSecurityUser
+class myUser extends derechosSecurityUser
 {
   
   public function paginatePruebas($num=0) // listado de pruebas de una evaluacion
