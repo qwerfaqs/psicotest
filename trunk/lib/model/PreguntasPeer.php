@@ -16,6 +16,16 @@
  *
  * @package    lib.model
  */
-class PreguntasPeer extends BasePreguntasPeer {
-
+class PreguntasPeer extends BasePreguntasPeer 
+{
+    
+ public static function getPreguntas($test,$rows=1,$pagina=1)
+  {
+    $criteria = new Criteria();
+    $criteria->add(PreguntasPeer::TESTS_ID,$test,Criteria::EQUAL); 
+    $pager = new PropelPager($criteria, 'PreguntasPeer', 'doSelectJoinAll', $page = $pagina, $rows);
+    return $pager;
+  }
+    
+  
 } // PreguntasPeer

@@ -116,11 +116,17 @@
 					f_d.OK.value = parseInt(f_d.OK.value) + 1;
 			}
 			</script>
-            <h3><?php echo $prueba->getTests()->getTitulo(); ?></h3>
+            <h3><?php // echo $currentprueba->getTests()->getTitulo(); ?></h3>
             <p>
-              <?php echo $prueba->getTests()->getEnunciado(); ?>      
+              <?php // echo $currentprueba->getTests()->getEnunciado(); ?>      
 
-          <?php  include_partial('tabrespuesta'); ?>
+          <?php 
+          
+          foreach($preguntas as $pregunta)
+           include_partial('tabrespuesta',array('pregunta'=>$pregunta)); 
+          
+          
+          ?>
         
               
    		<p class="pages"><small>Pagina 1 of 2</small> <span>1</span> <a href="#">2</a> <a href="#">Siguiente&raquo;</a></p>
