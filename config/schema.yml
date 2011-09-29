@@ -11,10 +11,10 @@ propel:
   aspirantes:
     _attributes: { phpName: Aspirantes }
     id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
-    nombre: { phpName: Nombre, type: VARCHAR, size: '60', required: false }
-    apellido: { phpName: Apellido, type: VARCHAR, size: '60', required: false }
-    cedula: { phpName: Cedula, type: CHAR, size: '30', required: false }
-    password: { phpName: Password, type: CHAR, size: '20', required: false }
+    nombre: { phpName: Nombre, type: VARCHAR, size: '60', required: true }
+    apellido: { phpName: Apellido, type: VARCHAR, size: '60', required: true }
+    cedula: { phpName: Cedula, type: CHAR, size: '30', required: true }
+    password: { phpName: Password, type: CHAR, size: '20', required: true }
   estadopruebas:
     _attributes: { phpName: Estadopruebas }
     id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
