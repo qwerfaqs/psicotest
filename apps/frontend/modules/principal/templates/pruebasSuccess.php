@@ -8,7 +8,7 @@ endforeach;
 ?> 
 
 <br/><br/><br/>
-<a href="<?php echo url_for('principal/index') ?>" >Iniciar test</a>
+<a href="<?php echo url_for('principal/progress') ?>?num=0" >Iniciar test</a>
 
 
 

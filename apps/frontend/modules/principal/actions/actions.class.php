@@ -26,7 +26,10 @@ class principalActions extends sfActions
     $estado = 1; // el estado de la evaluacion en este caso activo para que aparesca en pantalla
     $this->asistencia= AsistenciasPeer::getEvaluaciones($estado,$aspirante);  
     if($this->asistencia)
-       $this->setTemplate ('evaluaciones');
+    {
+       $this->getUser()->setEvaluacion($this->asistencia->getEvaluaciones());       
+       $this->setTemplate('evaluaciones');
+    }
     else
         $this->setTemplate ('nohayevaluaciones');
   }
@@ -34,18 +37,22 @@ class principalActions extends sfActions
   public function executePruebas(sfWebRequest $request) // listado de pruebas de una evaluacion
   {
     $this->evaluacion = $this->getRoute()->getObject();      
-    $this->pruebas = PruebasPeer::getPruebas($this->evaluacion->getId());       
-  }
-  
-  
-  public function executeProgress(sfWebRequest $request) // listado de pruebas de una evaluacion
-  {
-    $pagina = $request->getParameter('pagina');
-    if(!isset($pagina))
-        $pagina = 1;
+    $this->pruebas = PruebasPeer::getPruebas($this->evaluacion->getId());  
+    if($this->pruebas!=null)
+       $this->getUser()->setPruebas($this->pruebas);    
     
-        
+    
+
+    
   }
+  
+  
+  public function executeProgress(sfWebRequest $request) 
+  {
+     $num = $request->getParameter('num');
+     $this->prueba = $this->getUser()->paginatePruebas(trim($num));      
+  }
+  
   
   
   

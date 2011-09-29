@@ -22,6 +22,6 @@ class PruebasPeer extends BasePruebasPeer
   {
     $criteria = new Criteria();
     $criteria->add(PruebasPeer::EVALUACIONES_ID,$evaluacion,Criteria::EQUAL); 
-     return (self::doSelect($criteria));
+     return (self::doSelectJoinAll($criteria));
   }
 } // PruebasPeer
