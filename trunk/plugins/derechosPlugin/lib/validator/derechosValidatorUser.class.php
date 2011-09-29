@@ -24,13 +24,14 @@ class derechosValidatorUser extends sfValidatorBase {
         $this->setMessage('invalid', 'El Usuario y/o la Clave son Inválidos.');
     }
      protected function doClean($values) {
+         
         $username = isset($values[$this->getOption('username_field')]) ? $values[$this->getOption('username_field')] : '';
         $password = isset($values[$this->getOption('password_field')]) ? $values[$this->getOption('password_field')] : '';
 
         if ($username && $password) {
             $function =  new ReflectionClass(sfConfig::get('app_derechos_plugin_modelo').'Peer');
             $name = $function->newInstanceArgs();
-            $user = $name::login($username, $password);
+            $user = $name->login($username,$password);
             // existe?
             if($user) {
                 //validaciones adicionales o carga de credenciales segun
