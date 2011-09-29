@@ -8,11 +8,13 @@ class myUser extends derechosSecurityUser
     $pruebas = $this->getPruebas(); 
     if(isset($pruebas[$num]))
       return($pruebas[$num]);
+ 
   }
   
-  public function setPruebas($pruebas) // listado de pruebas de una evaluacion
+  public function setPruebas() // listado de pruebas de una evaluacion
   {       
-   $this->setAttribute('pruebas', $pruebas);  
+   $pruebas = PruebasPeer::getPruebas($this->getAttribute('evaluacion')->getId()); 
+   $this->setAttribute('pruebas', $pruebas);      
   }  
   
   public function setEvaluacion($evaluacion) // listado de pruebas de una evaluacion
@@ -21,17 +23,25 @@ class myUser extends derechosSecurityUser
   }
   
   public function getPruebas() 
-  {       
+  {          
    return($this->getAttribute('pruebas'));  
   }  
   
-  public function setCurrentprueba($current) 
+  public function setInitprueba() 
+  {          
+   $this->setAttribute('currentprueba', 0);   
+  }  
+  
+  public function Nextprueba() 
   {       
-   $this->setAttribute('currentprueba', $current);   
+   $numero = $this->getAttribute('currentprueba');      
+   $this->setAttribute('currentprueba',$numero++);
+   return($numero);
+   
   }  
   
   public function getCurrentprueba() 
-  {       
+  {             
    $this->getAttribute('currentprueba');   
   }  
   

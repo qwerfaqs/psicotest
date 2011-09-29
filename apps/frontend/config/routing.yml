@@ -8,7 +8,7 @@ homepage:
   param: { module: principal, action: evaluaciones }
 
 evaluacion:
-  url:     /yates/:id
+  url:     /principal/:id
   class:   sfPropelRoute
   options: { model: Evaluaciones, type: object }
   param:   { module: principal, action: pruebas }

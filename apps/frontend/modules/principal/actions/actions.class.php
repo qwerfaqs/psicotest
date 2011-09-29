@@ -24,10 +24,9 @@ class principalActions extends sfActions
   {            
     $aspirante = 1;
     $estado = 1; // el estado de la evaluacion en este caso activo para que aparesca en pantalla
-    $this->asistencia= AsistenciasPeer::getEvaluaciones($estado,$aspirante);  
-    if($this->asistencia)
-    {
-       $this->getUser()->setEvaluacion($this->asistencia->getEvaluaciones());       
+    $this->evaluaciones = EvaluacionesPeer::getEvaluaciones($estado,$aspirante);  
+    if($this->evaluaciones)
+    {   
        $this->setTemplate('evaluaciones');
     }
     else
@@ -43,15 +42,35 @@ class principalActions extends sfActions
   }
   
   
-  public function executeProgress(sfWebRequest $request) 
+  public function executeAsistencia(sfWebRequest $request) 
   {
-     $num = $request->getParameter('num');
-     $this->currentprueba = $this->getUser()->paginatePruebas(trim($num));        
-     $current = $this->currentprueba;
-     $this->getUser()->setCurrentprueba($current);         
-     $this->preguntas = PreguntasPeer::getPreguntas($this->currentprueba->getTests()->getId(),1);     
-     $this->pagina = 1;
+     $evaluacion = $request->getParameter('evaluacion');
+     $aspirante = $this->getUser()->getAttribute('usuarioId');
+     $asistencia =  AsistenciasPeer::getAsistencia($evaluacion,$aspirante);
+     if(isset($asistencia))   
+     {
+       $this->getUser()->setEvaluacion($asistencia->getEvaluaciones()); 
+       $this->getUser()->setPruebas();
+       $this->forward('principal','evaluar');
+     }
+     else
+        $this->redirect($request->getUriPrefix());
      
+    }
+  
+  public function executeEvaluar(sfWebRequest $request) 
+  {                    
+    $this->getUser()->setInitprueba(); 
+    $this->forward('principal','pregunta');
+  }  
+  
+  public function executePregunta(sfWebRequest $request) 
+  {   $this->getUser()->setInitprueba();
+     $numPrueba = $this->getUser()->getCurrentprueba();
+     print_r($numPrueba);
+     $pruebas= $this->getUser()->getPruebas();     
+        
+     $this->preguntas = PreguntasPeer::getPreguntas($pruebas[$numPrueba]->getTests()->getId(),1);          
   }
   
   public function executeCheck(sfWebRequest $request) 

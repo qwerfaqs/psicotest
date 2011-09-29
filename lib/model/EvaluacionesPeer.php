@@ -18,6 +18,12 @@
  */
 class EvaluacionesPeer extends BaseEvaluacionesPeer 
 {
- 
+ public static function getEvaluaciones($estado)
+  {
+    $criteria = new Criteria();    
+
+    $criteria->add(EvaluacionesPeer::ESTADOSEVALUACIONES_ID,$estado,Criteria::EQUAL);     
+    return (self::doSelectJoinAll($criteria));
+  }
   
 } // EvaluacionesPeer

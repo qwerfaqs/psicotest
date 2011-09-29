@@ -7,10 +7,9 @@ body {
 	padding:0;
 	width:100%;
 	color:#929292;
-	font:normal 12px/1.5em "Liberation sans", Arial, Helvetica, sans-serif;
+	font:normal 12px/1.5em "Lucida Grande", Arial, Helvetica, sans-serif;
 	background:#ececec url(../images/main_bg.gif) repeat-x left top;
 }
-
 
 html, .main {
 	padding:0;
@@ -18,6 +17,52 @@ html, .main {
 }
 .main {
 	background:no-repeat center top;
+}
+
+#btnactualizar, #btncomenzar 
+{
+	float:right;
+	position:relative;
+	left:10px;
+}
+.listadoconimagen
+{
+	
+	list-style:none;	
+	margin-left:10px;
+}
+.listadoconimagen li
+{
+	background-image:url(../images/listadoimgbackground.jpg);	
+	background-color:#CCCCCC;
+	width:640px;
+	height:75px;
+	font-size:12px;
+	margin-bottom:5px;
+}
+
+.listadoconimagen a
+{
+	text-decoration:none;
+}
+.listadoconimagen li label
+{
+	width:436px;
+	
+	font-size:24px;
+}
+.listadoconimagen li img
+{	height:71px;
+	width:71px;
+	margin:2px 0 0 2px;
+	vertical-align:middle;	
+	margin-right:15px;
+}
+.listadoconimagen .ampliar
+{
+	width:auto;
+	position:relative;
+	right:0px;
 }
 .clr {
 	clear:both;
@@ -166,22 +211,49 @@ h1 small {
 	float:left;
 	width:640px;
 }
+/*REGISTRO*/
+#registro
+{
+	padding:10px;
+	margin:40px auto 0 auto;
+	background-color:#FFFFFF;
+	width:597px;
+	background-image:url(../images/registerbackgroundmid.png);
+	background-repeat:repeat-y;
+}
+#registro form
+{
+	margin-left:10px;
+	width:577px;
+}
+/*FIN REGISTRO*/
+/*LOGIN*/
 #login
 {
 	text-align:center;
 	width:400px;
+	padding:10px 0 10px 0;
 	margin:40px auto 0 auto;
-	background-color:#FFFFFF;	
+	background-color:#FFFFFF;
+	background-image:url(../images/loginbackground.png);
+	background-position:center top;
+	background-repeat:no-repeat;	
 }
-#login h2
-{	
+#login p
+{
+	padding-right:20px;
+}
+#login h2, #registro h2
+{
+	text-align:center;
 	display:block;
 }
 #login .cmxform
 {
-	padding-right:20px;	
+	padding-right:30px;
+	background:none;
 }
-#login label
+#login label,#login span
 {
 	width:80px;
 }
@@ -189,6 +261,8 @@ h1 small {
 {
 	width:220px;
 }
+/*FIN LOGIN*/
+
 .content .mainbar h2 {
 	margin-bottom:0;
 	padding-bottom:0;
@@ -447,6 +521,7 @@ ol li .send {
 	margin:0 0 32px;
 	padding:0;
 	float:left;
+	
 }
 #formsearch {
 	margin:0;
@@ -520,6 +595,19 @@ a {
 	outline:none;
 }
 
+
+/* CMX   Formularios*/
+#forgetpass
+{
+	text-align:right;
+	
+}
+
+
+
+
+
+
 form.cmxform fieldset 
 {
 	background-color:#FFFF;
@@ -532,19 +620,15 @@ form.cmxform fieldset
 form.cmxform span
 {
 	display: block; 
-	width: 120px;
+	/*width: 120px;*/
 }
 
 form.cmxform .txt
 {	border: 0 none;
 	background: #F2F2F2  url(../images/bg_form_input.png) bottom center repeat-x;
-	
+	width:400px;
 }
-#forgetpass
-{
-	text-align:right;
-	
-}
+
 form.cmxform #comments
 {
 	width:400px;
@@ -561,7 +645,7 @@ form.cmxform label {
     line-height: 1.8;
     vertical-align: top;
 	padding:0;
-	text-align:right;
+	/*text-align:right;*/
 	
     }
     
