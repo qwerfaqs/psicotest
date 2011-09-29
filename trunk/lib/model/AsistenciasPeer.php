@@ -18,12 +18,10 @@
  */
 class AsistenciasPeer extends BaseAsistenciasPeer 
 {
- public static function getEvaluaciones($estado,$aspirante)
+ public static function getAsistencia($evaluacion,$aspirante)
   {
-    $criteria = new Criteria();    
-    $criteria->addJoin(self::EVALUACIONES_ID, EvaluacionesPeer::ID , Criteria::LEFT_JOIN);
-    $criteria->addJoin(self::ASPIRANTES_ID, AspirantesPeer::ID , Criteria::LEFT_JOIN);
-    $criteria->add(EvaluacionesPeer::ESTADOSEVALUACIONES_ID,$estado,Criteria::EQUAL); 
+    $criteria = new Criteria();        
+    $criteria->add(AsistenciasPeer::EVALUACIONES_ID,$evaluacion,Criteria::EQUAL); 
     $criteria->add(AsistenciasPeer::ASPIRANTES_ID,$aspirante,Criteria::EQUAL);      
     return (self::doSelectOne($criteria));
   }
