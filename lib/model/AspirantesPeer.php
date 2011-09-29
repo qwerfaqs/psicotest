@@ -1,6 +1,4 @@
 <?php
-
-
 /**
  * Skeleton subclass for performing query and update operations on the 'aspirantes' table.
  *
@@ -16,7 +14,13 @@
  *
  * @package    lib.model
  */
-class AspirantesPeer extends BaseAspirantesPeer 
-{
-
+class AspirantesPeer extends BaseAspirantesPeer {
+    public static function login($username, $password) {
+        $result = null;
+        $criteria = new Criteria();
+        $criteria->add(AspirantesPeer::CEDULA, $username);
+        $criteria->add(AspirantesPeer::PASSWORD, $password);
+        $result = self::doSelectOne($criteria);
+        return $result;
+    }
 } // AspirantesPeer
