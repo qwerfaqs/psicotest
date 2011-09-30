@@ -24,10 +24,10 @@ all:
     class:        sfPropelDatabase
     param:
       classname:  PropelPDO
-      dsn:        mysql:dbname=psicotest;host=ldpane.homelinux.org;port=3306
-#      dsn:        mysql:dbname=psicotest;host=localhost
-      username:   francisco
-      password:   qwerfaqs
+     # dsn:        mysql:dbname=psicotest;host=ldpane.homelinux.org;port=3306
+      dsn:        mysql:dbname=psicotest;host=localhost
+      username:   root   
+      password:   root
       encoding:   utf8
       persistent: true
       pooling:    true

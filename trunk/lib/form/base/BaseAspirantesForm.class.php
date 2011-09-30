@@ -23,10 +23,10 @@ abstract class BaseAspirantesForm extends BaseFormPropel
 
     $this->setValidators(array(
       'id'       => new sfValidatorChoice(array('choices' => array($this->getObject()->getId()), 'empty_value' => $this->getObject()->getId(), 'required' => false)),
-      'nombre'   => new sfValidatorString(array('max_length' => 60)),
-      'apellido' => new sfValidatorString(array('max_length' => 60)),
-      'cedula'   => new sfValidatorString(array('max_length' => 30)),
-      'password' => new sfValidatorString(array('max_length' => 20)),
+      'nombre'   => new sfValidatorString(array('max_length' => 60, 'required' => false)),
+      'apellido' => new sfValidatorString(array('max_length' => 60, 'required' => false)),
+      'cedula'   => new sfValidatorString(array('max_length' => 30, 'required' => false)),
+      'password' => new sfValidatorString(array('max_length' => 20, 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('aspirantes[%s]');

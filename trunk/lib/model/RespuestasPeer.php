@@ -16,6 +16,23 @@
  *
  * @package    lib.model
  */
-class RespuestasPeer extends BaseRespuestasPeer {
+class RespuestasPeer extends BaseRespuestasPeer 
+{
+    
+public static function getResponse($respuesta)
+  {
+    $criteria = new Criteria();    
 
+    $criteria->add(RespuestasPeer::TEXTO,$respuesta,Criteria::EQUAL);     
+    return (self::doSelectOne($criteria));
+  }
+  
+  
+  public static function getRespuesta($pregunta)
+  {
+    $criteria = new Criteria();    
+
+    $criteria->add(RespuestasPeer::PREGUNTAS_ID,$pregunta,Criteria::EQUAL);     
+    return (self::doSelectOne($criteria));
+  }
 } // RespuestasPeer
