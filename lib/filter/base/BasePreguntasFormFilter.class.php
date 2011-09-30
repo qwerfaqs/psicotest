@@ -12,13 +12,15 @@ abstract class BasePreguntasFormFilter extends BaseFormFilterPropel
   public function setup()
   {
     $this->setWidgets(array(
-      'imagen'   => new sfWidgetFormFilterInput(),
-      'tests_id' => new sfWidgetFormPropelChoice(array('model' => 'Tests', 'add_empty' => true)),
+      'imagen'      => new sfWidgetFormFilterInput(),
+      'descripcion' => new sfWidgetFormFilterInput(),
+      'tests_id'    => new sfWidgetFormPropelChoice(array('model' => 'Tests', 'add_empty' => true)),
     ));
 
     $this->setValidators(array(
-      'imagen'   => new sfValidatorPass(array('required' => false)),
-      'tests_id' => new sfValidatorPropelChoice(array('required' => false, 'model' => 'Tests', 'column' => 'id')),
+      'imagen'      => new sfValidatorPass(array('required' => false)),
+      'descripcion' => new sfValidatorPass(array('required' => false)),
+      'tests_id'    => new sfValidatorPropelChoice(array('required' => false, 'model' => 'Tests', 'column' => 'id')),
     ));
 
     $this->widgetSchema->setNameFormat('preguntas_filters[%s]');
@@ -36,9 +38,10 @@ abstract class BasePreguntasFormFilter extends BaseFormFilterPropel
   public function getFields()
   {
     return array(
-      'id'       => 'Number',
-      'imagen'   => 'Text',
-      'tests_id' => 'ForeignKey',
+      'id'          => 'Number',
+      'imagen'      => 'Text',
+      'descripcion' => 'Text',
+      'tests_id'    => 'ForeignKey',
     );
   }
 }

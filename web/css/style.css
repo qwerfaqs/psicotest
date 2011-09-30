@@ -25,6 +25,15 @@ html, .main {
 	position:relative;
 	left:10px;
 }
+#endtest
+{
+	background-image:url(../images/endevaluationbackground.png);
+	height:206px;
+}
+#endtest p
+{
+	padding:20px;
+}
 .listadoconimagen
 {
 	
@@ -228,17 +237,23 @@ h1 small {
 }
 /*FIN REGISTRO*/
 /*LOGIN*/
-#login
+#login, #endtest
 {
 	text-align:center;
 	width:400px;
 	padding:10px 0 10px 0;
 	margin:40px auto 0 auto;
 	background-color:#FFFFFF;
-	background-image:url(../images/loginbackground.png);
+	
 	background-position:center top;
 	background-repeat:no-repeat;	
 }
+#login
+{
+background-image:url(../images/loginbackground.png);
+}
+
+
 #login p
 {
 	padding-right:20px;

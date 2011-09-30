@@ -1,15 +1,13 @@
 Estadosevaluaciones:
   Estadosevaluaciones_1:
-    nombre: Activo
+    nombre: Activa
   Estadosevaluaciones_2:
-    nombre: 'En proceso'
-  Estadosevaluaciones_3:
-    nombre: Inicializada
+    nombre: Inactiva
 Evaluaciones:
   Evaluaciones_1:
     cantidad: '10'
-    fecha: '2011-09-28'
-    nombre: 'Pruebas para el curso II'
+    fecha: '2011-09-29'
+    nombre: 'Curso ingenieria Naval'
     estadosevaluaciones_id: Estadosevaluaciones_1
 Aspirantes:
   Aspirantes_1:
@@ -23,15 +21,49 @@ Asistencias:
     aspirantes_id: Aspirantes_1
 Estadopruebas:
   Estadopruebas_1:
-    nombre: Activa
+    nombre: Inicializada
   Estadopruebas_2:
-    nombre: Inactiva
+    nombre: 'En proceso'
+Tipoopcion:
+  Tipoopcion_1:
+    nombre: domino
+Opciones:
+  Opciones_1:
+    texto: 1/1
+    tipoopcion_id: Tipoopcion_1
+  Opciones_2:
+    texto: 1/2
+    tipoopcion_id: Tipoopcion_1
+  Opciones_3:
+    texto: 1/3
+    tipoopcion_id: Tipoopcion_1
+  Opciones_4:
+    texto: 1/4
+    tipoopcion_id: Tipoopcion_1
+  Opciones_5:
+    texto: 2/4
+    tipoopcion_id: Tipoopcion_1
+  Opciones_6:
+    texto: 2/3
+    tipoopcion_id: Tipoopcion_1
+  Opciones_7:
+    texto: 0/0
+    tipoopcion_id: Tipoopcion_1
 Tests:
   Tests_1:
     titulo: Domino
     historia: "El test de Dominó también llamado D48 es una prueba de la llamada inteligencia no verbal y fue creada por el psicólogo inglés E. Anstey para uso exclusivo de la Armada Británica. Mide el factor G de la inteligencia de los sujetos (capacidad de inteligencia general) en función de sus facultades lógicas.\r\nEl conocimiento del juego del dominó no supone en principio ninguna ventaja, simplemente una mayor familiaridad con las fichas y a pesar de que se trabaja con números no requiere de conocimientos matemáticos ni habilidades especiales. Simplemente hay que tener presente que las fichas siguen un orden cíclico de forma que la ficha posterior al 6 es la blanca y por lo tanto la ficha anterior a la blanca es el 6.\r\n\r\nUna de las principales ventajas de este test es que elimina las diferencias entre los sujetos causadas por factores sociales y educativos. Se le reconocen índices de validez y confiabilidad aceptables (r-0,79) con relación a otros tests de inteligencia y se aplica en multitud países en Psicología Clínica, Educativa y del Trabajo.\r\n\r\nEl test original, consta de 40 grupos de fichas y el objetivo es identificar una o más leyes que relacionan las partes superiores, inferiores o laterales de las fichas del dominó. No siempre regirán las mismas leyes. Lo que hay que descubrir es cuál es la serie u orden que que siguen las fichas. La dificultad se va incrementando en cada pregunta. Se aplica a personas de entre 10 y 65 años y el tiempo de realización oscila entre los 30 y 45 minutos."
     enunciado: "A continuación te proponemos una serie de ejemplos a modo de práctica. Puedes ver la solución de cada problema si lo deseas y la explicación razonada de la misma.\r\n\r\nPara responder cada problema debes seleccionar la orientación en la que debería aparecer la ficha, el número de la parte superior de la ficha y el de la parte inferior. Una vez seleccionada la respuesta, pulsa el botón continuar. Si lo deseas, puedes ver la solución pulsando el botón \"Mostrar solución\" que te aparece en la parte inferior."
+    imagen: d1.png
     duracion: '30 minutos'
+    tipoopcion_id: Tipoopcion_1
+Preguntas:
+  Preguntas_1:
+    imagen: d1.png
+    tests_id: Tests_1
+  Preguntas_2:
+    imagen: d2.png
+    tests_id: Tests_1
 Pruebas:
   Pruebas_1:
     tests_id: Tests_1
@@ -46,3 +78,42 @@ Valoresdeverdad:
     nombre: Correcta
   Valoresdeverdad_2:
     nombre: Incorrecta
+Respuestas:
+  Respuestas_1:
+    preguntas_id: Preguntas_1
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_5
+  Respuestas_2:
+    preguntas_id: Preguntas_2
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_6
+Resultadosparciales:
+  Resultadosparciales_1:
+    opciones_id: Opciones_7
+    preguntas_id: Preguntas_1
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_1
+  Resultadosparciales_2:
+    opciones_id: Opciones_7
+    preguntas_id: Preguntas_2
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_1
+  Resultadosparciales_3:
+    opciones_id: Opciones_7
+    preguntas_id: Preguntas_1
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_2
+  Resultadosparciales_4:
+    opciones_id: Opciones_7
+    preguntas_id: Preguntas_2
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_2
+Resultados:
+  Resultados_1:
+    puntaje: '0'
+    pruebas_id: Pruebas_1
+    aspirantes_id: Aspirantes_1
+  Resultados_2:
+    puntaje: '0'
+    pruebas_id: Pruebas_2
+    aspirantes_id: Aspirantes_1

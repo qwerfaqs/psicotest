@@ -4,6 +4,24 @@
 SET FOREIGN_KEY_CHECKS = 0;
 
 #-----------------------------------------------------------------------------
+#-- administradores
+#-----------------------------------------------------------------------------
+
+DROP TABLE IF EXISTS `administradores`;
+
+
+CREATE TABLE `administradores`
+(
+	`id` INTEGER(11)  NOT NULL AUTO_INCREMENT,
+	`usuario` CHAR(50),
+	`password` CHAR(50),
+	`nombre` CHAR(50),
+	`apellido` CHAR(20),
+	PRIMARY KEY (`id`),
+	UNIQUE KEY `usuario` (`usuario`)
+)Type=InnoDB;
+
+#-----------------------------------------------------------------------------
 #-- asistencias
 #-----------------------------------------------------------------------------
 
@@ -99,6 +117,27 @@ CREATE TABLE `evaluaciones`
 )Type=InnoDB;
 
 #-----------------------------------------------------------------------------
+#-- opciones
+#-----------------------------------------------------------------------------
+
+DROP TABLE IF EXISTS `opciones`;
+
+
+CREATE TABLE `opciones`
+(
+	`id` INTEGER(11)  NOT NULL AUTO_INCREMENT,
+	`texto` CHAR(50),
+	`tipoopcion_id` INTEGER(11)  NOT NULL,
+	PRIMARY KEY (`id`),
+	KEY `tipoopcion_id`(`tipoopcion_id`),
+	CONSTRAINT `opciones_FK_1`
+		FOREIGN KEY (`tipoopcion_id`)
+		REFERENCES `tipoopcion` (`id`)
+		ON UPDATE RESTRICT
+		ON DELETE RESTRICT
+)Type=InnoDB;
+
+#-----------------------------------------------------------------------------
 #-- preguntas
 #-----------------------------------------------------------------------------
 
@@ -109,6 +148,7 @@ CREATE TABLE `preguntas`
 (
 	`id` INTEGER(11)  NOT NULL AUTO_INCREMENT,
 	`imagen` CHAR(100),
+	`descripcion` TEXT,
 	`tests_id` INTEGER(11)  NOT NULL,
 	PRIMARY KEY (`id`),
 	KEY `tests_id`(`tests_id`),
@@ -163,20 +203,26 @@ DROP TABLE IF EXISTS `respuestas`;
 CREATE TABLE `respuestas`
 (
 	`id` INTEGER(11)  NOT NULL AUTO_INCREMENT,
-	`texto` CHAR(100),
-	`respuestas_id` INTEGER(11)  NOT NULL,
+	`preguntas_id` INTEGER(11)  NOT NULL,
 	`estados_id` INTEGER(11)  NOT NULL,
+	`opciones_id` INTEGER(11)  NOT NULL,
 	PRIMARY KEY (`id`),
-	KEY `respuestas_id`(`respuestas_id`),
+	KEY `preguntas_id`(`preguntas_id`),
 	KEY `estados_id`(`estados_id`),
+	KEY `opciones_id`(`opciones_id`),
 	CONSTRAINT `respuestas_FK_1`
-		FOREIGN KEY (`respuestas_id`)
+		FOREIGN KEY (`preguntas_id`)
 		REFERENCES `preguntas` (`id`)
 		ON UPDATE RESTRICT
 		ON DELETE RESTRICT,
 	CONSTRAINT `respuestas_FK_2`
 		FOREIGN KEY (`estados_id`)
 		REFERENCES `valoresdeverdad` (`id`)
+		ON UPDATE RESTRICT
+		ON DELETE RESTRICT,
+	CONSTRAINT `respuestas_FK_3`
+		FOREIGN KEY (`opciones_id`)
+		REFERENCES `opciones` (`id`)
 		ON UPDATE RESTRICT
 		ON DELETE RESTRICT
 )Type=InnoDB;
@@ -220,26 +266,33 @@ DROP TABLE IF EXISTS `resultadosparciales`;
 CREATE TABLE `resultadosparciales`
 (
 	`id` INTEGER(11)  NOT NULL AUTO_INCREMENT,
+	`opciones_id` INTEGER(11)  NOT NULL,
+	`preguntas_id` INTEGER(11)  NOT NULL,
 	`aspirantes_id` INTEGER(11)  NOT NULL,
 	`pruebas_id` INTEGER(11)  NOT NULL,
-	`respuestas_id` INTEGER(11)  NOT NULL,
 	PRIMARY KEY (`id`),
 	KEY `pruebas_id`(`pruebas_id`),
-	KEY `respuestas_id`(`respuestas_id`),
+	KEY `preguntas_id`(`preguntas_id`),
 	KEY `aspirantes_id`(`aspirantes_id`),
+	KEY `opciones_id`(`opciones_id`),
 	CONSTRAINT `resultadosparciales_FK_1`
+		FOREIGN KEY (`opciones_id`)
+		REFERENCES `opciones` (`id`)
+		ON UPDATE RESTRICT
+		ON DELETE RESTRICT,
+	CONSTRAINT `resultadosparciales_FK_2`
+		FOREIGN KEY (`preguntas_id`)
+		REFERENCES `preguntas` (`id`)
+		ON UPDATE RESTRICT
+		ON DELETE RESTRICT,
+	CONSTRAINT `resultadosparciales_FK_3`
 		FOREIGN KEY (`aspirantes_id`)
 		REFERENCES `aspirantes` (`id`)
 		ON UPDATE RESTRICT
 		ON DELETE RESTRICT,
-	CONSTRAINT `resultadosparciales_FK_2`
+	CONSTRAINT `resultadosparciales_FK_4`
 		FOREIGN KEY (`pruebas_id`)
 		REFERENCES `pruebas` (`id`)
-		ON UPDATE RESTRICT
-		ON DELETE RESTRICT,
-	CONSTRAINT `resultadosparciales_FK_3`
-		FOREIGN KEY (`respuestas_id`)
-		REFERENCES `respuestas` (`id`)
 		ON UPDATE RESTRICT
 		ON DELETE RESTRICT
 )Type=InnoDB;
@@ -259,6 +312,27 @@ CREATE TABLE `tests`
 	`enunciado` TEXT,
 	`imagen` CHAR(100),
 	`duracion` CHAR(30),
+	`tipoopcion_id` INTEGER(11)  NOT NULL,
+	PRIMARY KEY (`id`),
+	KEY `tipoopcion_id`(`tipoopcion_id`),
+	CONSTRAINT `tests_FK_1`
+		FOREIGN KEY (`tipoopcion_id`)
+		REFERENCES `tipoopcion` (`id`)
+		ON UPDATE RESTRICT
+		ON DELETE RESTRICT
+)Type=InnoDB;
+
+#-----------------------------------------------------------------------------
+#-- tipoopcion
+#-----------------------------------------------------------------------------
+
+DROP TABLE IF EXISTS `tipoopcion`;
+
+
+CREATE TABLE `tipoopcion`
+(
+	`id` INTEGER(11)  NOT NULL AUTO_INCREMENT,
+	`nombre` VARCHAR(50),
 	PRIMARY KEY (`id`)
 )Type=InnoDB;
 

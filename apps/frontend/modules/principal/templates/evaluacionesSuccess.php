@@ -9,17 +9,19 @@
             <?php foreach($evaluaciones as $evaluacion) :  
                     include_partial('evaluacion',array('evaluacion'=>$evaluacion));            	
                  endforeach; 
-            ?>                       
-        </ul>            
+            ?>                        
+        </ul>
+            
         </p>
-        <input type="image" src="/images/listado reload.png" id="btnactualizar" />        
+        <a href="<?php echo url_for('principal/evaluaciones') ?>"> <input  type="image" src="/images/listado reload.png" id="btnactualizar" /></a>                
       </div>
-      <div class="sidebar">       
+      <div class="sidebar">
+        
         <div class="gadget">
           <h2 class="star"><span>Opciones</span></h2>
           <div class="clr"></div>
           <ul class="sb_menu">
-              <li><a href="<?php echo url_for("@derechos_signout")?>">Cerrar Sesión</a></li>
+            <li><a href="#">Cerrar Sesión</a></li>                        
           </ul>
         </div>
         </div>
