@@ -272,7 +272,7 @@ background-image:url(../images/loginbackground.png);
 {
 	width:80px;
 }
-#login #signin_username,#signin_password
+#login #signin_username, #signin_password
 {
 	width:220px;
 }
