@@ -89,13 +89,8 @@
                 foreach ($preguntas as $pregunta)
                     include_partial('tabrespuesta', array('pregunta' => $pregunta, 'pagina' => $pagina));
                 ?>
-
-
         </div>
 
         <div class="clr"></div>
     </div>
 </div>
-
-
-
