@@ -19,11 +19,8 @@
 </head>
 <body>
 <div class="main">
-  		
   <div class="header">
-  	  
     <div class="header_resize">
-    
       <div class="logo">
         <h1><a href="index.html">Psico<span>Test</span> <small><span>Fuerzas Armadas del Ecuador</span></small></a></h1>
         </div>
@@ -34,12 +31,6 @@
   </div>
   <?php echo $sf_content; ?>
   <div class="fbg"></div>
-  
 </div>
-
-
 </body>
 </html>
-
-
-

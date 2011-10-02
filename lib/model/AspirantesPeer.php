@@ -18,8 +18,8 @@ class AspirantesPeer extends BaseAspirantesPeer {
     public static function login($username, $password) {
         $result = null;
         $criteria = new Criteria();
-        $criteria->add(AspirantesPeer::CEDULA, $username);
-        $criteria->add(AspirantesPeer::PASSWORD, $password);
+        $criteria->add(self::CEDULA, $username);
+        $criteria->add(self::PASSWORD, $password);
         $result = self::doSelectOne($criteria);
         return $result;
     }
