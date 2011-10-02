@@ -14,7 +14,6 @@ class principalActions extends sfActions{
      * Pagina Principal
      */
     public function executeIndex(sfWebRequest $request) {
-
     }
 }
 ?>

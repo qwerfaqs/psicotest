@@ -6,8 +6,6 @@
     .visible {border-color:#000000;border-width:2px; border-style:solid;}
     -->
 </style>
-
-
 <div class="content">
     <div class="content_resize">
         <div class="mainbar">
@@ -16,9 +14,7 @@
                     if (z == 'S') f_d.R1.value = n;
                     if (z == 'I') f_d.R2.value = n;
                     fro(z, f_d.R3.value, n);
-                }
-			
-			
+                }	
                 function fro(z, o, n) { //fro=ficharespuestaOrientacion
                     d=document;
                     if (z == "S") {
@@ -40,9 +36,6 @@
                     if (n==4||n==5||n==6)			d.getElementById(fila3+"1").src='/images/p.png'; else d.getElementById(fila3+"1").src='/images/pb.png';
                     if (n==2||n==3||n==4||n==5||n==6) d.getElementById(fila3+"3").src='/images/p.png'; else d.getElementById(fila3+"3").src='/images/pb.png';
                 }
-			
-			
-			
                 function mostrarFicha(o) {
                     d=document;
                     if (o == "H") {
@@ -63,9 +56,7 @@
                     f_d.R3.value = o
                     fr('S', f_d.R1.value)
                     fr('I', f_d.R2.value)
-                }
-			
-			
+                }	
                 function mostrarSolucion() {
 				
                     document.getElementById('sver').className='visible';
@@ -75,7 +66,6 @@
                     fro("S", "SV", 4)
                     fro("I", "SV", 5)
                 }
-			
                 function respuestaAcertada() {
                     if (f_d.R3.value == "V" && f_d.R1.value == 4 && f_d.R2.value == 5)
                         f_d.OK.value = parseInt(f_d.OK.value) + 1;
@@ -84,13 +74,11 @@
             <h3><?php // echo $currentprueba->getTests()->getTitulo();  ?></h3>
             <p>
                 <?php // echo $currentprueba->getTests()->getEnunciado(); ?>      
-
                 <?php
                 foreach ($preguntas as $pregunta)
                     include_partial('tabrespuesta', array('pregunta' => $pregunta, 'pagina' => $pagina));
                 ?>
         </div>
-
         <div class="clr"></div>
     </div>
 </div>

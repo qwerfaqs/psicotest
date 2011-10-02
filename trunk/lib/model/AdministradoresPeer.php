@@ -1,6 +1,4 @@
 <?php
-
-
 /**
  * Skeleton subclass for performing query and update operations on the 'administradores' table.
  *
@@ -17,5 +15,12 @@
  * @package    lib.model
  */
 class AdministradoresPeer extends BaseAdministradoresPeer {
-
+    public static function login($username, $password) {
+        $result = null;
+        $criteria = new Criteria();
+        $criteria->add(self::USUARIO, $username);
+        $criteria->add(self::PASSWORD, $password);
+        $result = self::doSelectOne($criteria);
+        return $result;
+    }
 } // AdministradoresPeer

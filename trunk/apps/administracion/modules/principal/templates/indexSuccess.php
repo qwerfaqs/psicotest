@@ -53,7 +53,6 @@
             <li><a href="#">Ver Aspirantes</a></li>
           </ul>
         </div>
-
       </div>
       <div class="clr"></div>
     </div>
