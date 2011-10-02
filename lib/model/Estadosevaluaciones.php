@@ -17,5 +17,7 @@
  * @package    lib.model
  */
 class Estadosevaluaciones extends BaseEstadosevaluaciones {
-
+public function __toString() {
+    return $this->getNombre();
+}
 } // Estadosevaluaciones
