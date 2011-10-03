@@ -17,7 +17,7 @@
       <td><?php echo $Evaluacion->getCantidad() ?></td>
       <td><?php echo $Evaluacion->getFecha() ?></td>
       <td><?php echo $Evaluacion->getNombre() ?></td>
-      <td><?php echo $Evaluacion->getEstadosevaluacionesId() ?></td>
+      <td><?php echo $Evaluacion->getEstadosevaluaciones()->getNombre() ?></td>
     </tr>
     <?php endforeach; ?>
   </tbody>
