@@ -62,6 +62,20 @@ class evaluacionesActions extends sfActions
 
     $this->redirect('evaluaciones/index');
   }
+  public function executeTestList(sfWebRequest $request) {
+      $this->forward404Unless($Evaluacion = EvaluacionesPeer::retrieveByPk($request->getParameter('id')), sprintf('Object Evaluacion does not exist (%s).', $request->getParameter('id')));
+//      $this->Pruebas = $Evaluacion->getPruebass();
+      $this->Tests = TestsPeer::doselect(new Criteria());
+      $PruebasTestIncluidas = $Evaluacion->getPruebass();
+      $this->testsIncluidos = array();
+      foreach($PruebasTestIncluidas as $Prueba){
+          $Prueba = new Pruebas();
+          $this->testsIncluidos[$Prueba->getTestsId()] = true;
+      }
+//      var_dump($this->TestsPruebasIncluidas);
+      $this->cant_tests = count($this->Tests);
+      $this->cant_tests_incluidos = count($this->testsIncluidos);
+  }
 
   protected function processForm(sfWebRequest $request, sfForm $form)
   {
