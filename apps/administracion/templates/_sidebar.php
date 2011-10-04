@@ -19,7 +19,8 @@
           <h2 class="star"><span>Evaluaciones</span></h2>
           <div class="clr"></div>
           <ul class="sb_menu">
-            <li><a href="#">Nueva Evaluacion</a></li>
+            <li><a href="<?php echo url_for('evaluaciones/index') ?>">Listado Evaluaciones</a></li>
+            <li><a href="<?php echo url_for('evaluaciones/new') ?>">Nueva Evaluacion</a></li>
             <li><a href="#">Evaluaciones Anteriores</a></li>
           </ul>
         </div>

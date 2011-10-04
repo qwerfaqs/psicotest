@@ -25,6 +25,7 @@
 
 <hr />
 
-<a href="<?php echo url_for('evaluaciones/edit?id='.$Evaluacion->getId()) ?>">Edit</a>
+<a href="<?php echo url_for('evaluaciones/edit?id='.$Evaluacion->getId()) ?>">Editar</a>
 &nbsp;
-<a href="<?php echo url_for('evaluaciones/index') ?>">List</a>
+<a href="<?php echo url_for('evaluaciones/index') ?>">Listado</a>
+<a href="<?php echo url_for('evaluaciones/testList?id='.$Evaluacion->getId()) ?>">Ver Pruebas Asignadas</a>
