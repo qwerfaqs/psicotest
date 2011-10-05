@@ -23,14 +23,37 @@
     <tbody>
         <?php foreach ($Tests as $i => $Test): ?>
             <tr class="<?php echo fmod($i, 2) ? 'even' : 'odd' ?>">
-                <th scope="row" id="<?php echo $Test->getId() ?>"><a href="<?php echo url_for('tests/show?id=' . $Test->getId()) ?>"><?php echo $Test->getTitulo() ?></a></th>
-                <td><a href="#"><?php echo $Test->getDuracion() ?> min</a></td>
-                <td><?php echo $Test->getEnunciado() ?></td>
-                <td><?php echo count($Test->getPreguntass()) ?></td>
-                <td><?php echo isset($testsIncluidos[$Test->getId()]) ?
-                        'Incluido</td><td><input type="image" src="images/btnquitar.png" />' :
-                        '<td><input type="image" src="images/btnagregar.png" /></td>
-                                    <td>No Incluido'?></td>
+                <th scope="row" id="<?php echo $Test->getId() ?>">
+                    <a href="<?php echo url_for('tests/show?id=' . $Test->getId()) ?>">
+                            <?php echo $Test->getTitulo() ?>
+                    </a>
+                </th>
+                <td>
+                    <a href="#">
+                        <?php echo $Test->getDuracion() ?> min
+                    </a>
+                </td>
+                <td>
+                    <?php echo $Test->getEnunciado() ?>
+                </td>
+                <td>
+                    <?php echo count($Test->getPreguntass()) ?>
+                </td>
+            <?php if (isset($testsIncluidos[$Test->getId()])) : ?>
+                <td>Incluido</td>
+                <td>
+                    <a href="<?php echo url_for('evaluaciones/quitarTest?id=' . $Evaluacion->getId() . '&pruebas_id=' . $testsIncluidos[$Test->getId()])?>">
+                        <input type="image" src="/images/btnquitar.png" />
+                    </a>
+                </td>
+            <?php else: ?>
+                <td>
+                    <a href="<?php echo url_for('evaluaciones/agregarTest?id=' . $Evaluacion->getId() . '&tests_id=' . $Test->getId()) ?>">
+                        <input type="image" src="/images/btnagregar.png" />
+                    </a>
+                </td>
+                <td>No Incluido</td>
+            <?php endif; ?>
             </tr>
         <?php endforeach; ?>
     </tbody>
