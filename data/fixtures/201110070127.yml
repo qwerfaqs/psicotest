@@ -1,0 +1,833 @@
+Estadosevaluaciones:
+  Estadosevaluaciones_1:
+    nombre: Activa
+  Estadosevaluaciones_2:
+    nombre: Inactiva
+Evaluaciones:
+  Evaluaciones_1:
+    cantidad: '10'
+    fecha: '2011-09-29'
+    nombre: 'Curso ingenieria Naval'
+    estadosevaluaciones_id: Estadosevaluaciones_1
+  Evaluaciones_2:
+    cantidad: '3'
+    fecha: '2011-04-10'
+    nombre: 'Aspirantes a Corsarios'
+    estadosevaluaciones_id: Estadosevaluaciones_1
+Aspirantes:
+  Aspirantes_1:
+    nombre: matias
+    apellido: luzardi
+    cedula: '33273976'
+    password: hola
+Asistencias:
+  Asistencias_1:
+    evaluaciones_id: Evaluaciones_1
+    aspirantes_id: Aspirantes_1
+Estadopruebas:
+  Estadopruebas_1:
+    nombre: Inicializada
+  Estadopruebas_2:
+    nombre: 'En proceso'
+Tipoopcion:
+  Tipoopcion_1:
+    nombre: domino
+  Tipoopcion_2:
+    nombre: Verdadero/Falso
+  Tipoopcion_3:
+    nombre: ABC
+Opciones:
+  Opciones_1:
+    texto: 1/1
+    tipoopcion_id: Tipoopcion_1
+  Opciones_2:
+    texto: 1/2
+    tipoopcion_id: Tipoopcion_1
+  Opciones_3:
+    texto: 1/3
+    tipoopcion_id: Tipoopcion_1
+  Opciones_4:
+    texto: 1/4
+    tipoopcion_id: Tipoopcion_1
+  Opciones_5:
+    texto: 2/4
+    tipoopcion_id: Tipoopcion_1
+  Opciones_6:
+    texto: 2/3
+    tipoopcion_id: Tipoopcion_1
+  Opciones_7:
+    texto: 0/0
+    tipoopcion_id: Tipoopcion_1
+  Opciones_8:
+    texto: 0/1
+    tipoopcion_id: Tipoopcion_1
+  Opciones_9:
+    texto: 0/2
+    tipoopcion_id: Tipoopcion_1
+  Opciones_10:
+    texto: 0/3
+    tipoopcion_id: Tipoopcion_1
+  Opciones_11:
+    texto: 0/4
+    tipoopcion_id: Tipoopcion_1
+  Opciones_12:
+    texto: 0/5
+    tipoopcion_id: Tipoopcion_1
+  Opciones_13:
+    texto: 0/6
+    tipoopcion_id: Tipoopcion_1
+  Opciones_14:
+    texto: 1/5
+    tipoopcion_id: Tipoopcion_1
+  Opciones_15:
+    texto: 1/6
+    tipoopcion_id: Tipoopcion_1
+  Opciones_16:
+    texto: 1/0
+    tipoopcion_id: Tipoopcion_1
+  Opciones_17:
+    texto: 2/0
+    tipoopcion_id: Tipoopcion_1
+  Opciones_18:
+    texto: 2/1
+    tipoopcion_id: Tipoopcion_1
+  Opciones_19:
+    texto: 2/2
+    tipoopcion_id: Tipoopcion_1
+  Opciones_20:
+    texto: 2/5
+    tipoopcion_id: Tipoopcion_1
+  Opciones_21:
+    texto: 2/6
+    tipoopcion_id: Tipoopcion_1
+  Opciones_23:
+    texto: 3/0
+    tipoopcion_id: Tipoopcion_1
+  Opciones_24:
+    texto: 3/1
+    tipoopcion_id: Tipoopcion_1
+  Opciones_25:
+    texto: 3/2
+    tipoopcion_id: Tipoopcion_1
+  Opciones_26:
+    texto: 3/3
+    tipoopcion_id: Tipoopcion_1
+  Opciones_27:
+    texto: 3/4
+    tipoopcion_id: Tipoopcion_1
+  Opciones_28:
+    texto: 3/5
+    tipoopcion_id: Tipoopcion_1
+  Opciones_29:
+    texto: 3/6
+    tipoopcion_id: Tipoopcion_1
+  Opciones_30:
+    texto: 4/0
+    tipoopcion_id: Tipoopcion_1
+  Opciones_31:
+    texto: 4/1
+    tipoopcion_id: Tipoopcion_1
+  Opciones_32:
+    texto: 4/2
+    tipoopcion_id: Tipoopcion_1
+  Opciones_33:
+    texto: 4/3
+    tipoopcion_id: Tipoopcion_1
+  Opciones_34:
+    texto: 4/4
+    tipoopcion_id: Tipoopcion_1
+  Opciones_35:
+    texto: 4/5
+    tipoopcion_id: Tipoopcion_1
+  Opciones_36:
+    texto: 4/6
+    tipoopcion_id: Tipoopcion_1
+  Opciones_37:
+    texto: 5/0
+    tipoopcion_id: Tipoopcion_1
+  Opciones_38:
+    texto: 5/1
+    tipoopcion_id: Tipoopcion_1
+  Opciones_39:
+    texto: 5/2
+    tipoopcion_id: Tipoopcion_1
+  Opciones_40:
+    texto: 5/3
+    tipoopcion_id: Tipoopcion_1
+  Opciones_41:
+    texto: 5/4
+    tipoopcion_id: Tipoopcion_1
+  Opciones_42:
+    texto: 5/5
+    tipoopcion_id: Tipoopcion_1
+  Opciones_43:
+    texto: 5/6
+    tipoopcion_id: Tipoopcion_1
+  Opciones_44:
+    texto: 6/0
+    tipoopcion_id: Tipoopcion_1
+  Opciones_45:
+    texto: 6/1
+    tipoopcion_id: Tipoopcion_1
+  Opciones_46:
+    texto: 6/2
+    tipoopcion_id: Tipoopcion_1
+  Opciones_47:
+    texto: 6/3
+    tipoopcion_id: Tipoopcion_1
+  Opciones_48:
+    texto: 6/4
+    tipoopcion_id: Tipoopcion_1
+  Opciones_49:
+    texto: 6/5
+    tipoopcion_id: Tipoopcion_1
+  Opciones_50:
+    texto: 6/6
+    tipoopcion_id: Tipoopcion_1
+  Opciones_51:
+    texto: Verdadero
+    tipoopcion_id: Tipoopcion_2
+  Opciones_52:
+    texto: Falso
+    tipoopcion_id: Tipoopcion_2
+  Opciones_53:
+    texto: A
+    tipoopcion_id: Tipoopcion_3
+  Opciones_54:
+    texto: B
+    tipoopcion_id: Tipoopcion_3
+  Opciones_55:
+    texto: C
+    tipoopcion_id: Tipoopcion_3
+Tests:
+  Tests_1:
+    titulo: Domino
+    historia: "El test de Dominó también llamado D48 es una prueba de la llamada inteligencia no verbal y fue creada por el psicólogo inglés E. Anstey para uso exclusivo de la Armada Británica. Mide el factor G de la inteligencia de los sujetos (capacidad de inteligencia general) en función de sus facultades lógicas.\r\nEl conocimiento del juego del dominó no supone en principio ninguna ventaja, simplemente una mayor familiaridad con las fichas y a pesar de que se trabaja con números no requiere de conocimientos matemáticos ni habilidades especiales. Simplemente hay que tener presente que las fichas siguen un orden cíclico de forma que la ficha posterior al 6 es la blanca y por lo tanto la ficha anterior a la blanca es el 6.\r\n\r\nUna de las principales ventajas de este test es que elimina las diferencias entre los sujetos causadas por factores sociales y educativos. Se le reconocen índices de validez y confiabilidad aceptables (r-0,79) con relación a otros tests de inteligencia y se aplica en multitud países en Psicología Clínica, Educativa y del Trabajo.\r\n\r\nEl test original, consta de 40 grupos de fichas y el objetivo es identificar una o más leyes que relacionan las partes superiores, inferiores o laterales de las fichas del dominó. No siempre regirán las mismas leyes. Lo que hay que descubrir es cuál es la serie u orden que que siguen las fichas. La dificultad se va incrementando en cada pregunta. Se aplica a personas de entre 10 y 65 años y el tiempo de realización oscila entre los 30 y 45 minutos."
+    enunciado: "A continuación te proponemos una serie de ejemplos a modo de práctica. Puedes ver la solución de cada problema si lo deseas y la explicación razonada de la misma.\r\n\r\nPara responder cada problema debes seleccionar la orientación en la que debería aparecer la ficha, el número de la parte superior de la ficha y el de la parte inferior. Una vez seleccionada la respuesta, pulsa el botón continuar. Si lo deseas, puedes ver la solución pulsando el botón \"Mostrar solución\" que te aparece en la parte inferior."
+    imagen: d1.png
+    duracion: '30 minutos'
+    tipoopcion_id: Tipoopcion_1
+  Tests_2:
+    titulo: 'Inventario Multiaxial Clinico de Millon. MCMI-II'
+    historia: 'Millon, 1999'
+    enunciado: 'Este test contiene una serie de frases usuales o expreciones que las personas suelen utilizar para describirse asi mismas. Sirven para ayudarle a describirse asi mismas. Sirven para ayudarle a describir sus sentimientos y actitudes. No te preocupes si algunas cuestiones o fraces te parecen extrañas, estan incluidas para describir los diferentes problemas que puede tener la gente. Procura responder a todas las frases aunque no estes totalmente seguro. Marca Siempre Verdadero o Falso.'
+    duracion: '30'
+    tipoopcion_id: Tipoopcion_2
+Preguntas:
+  Preguntas_1:
+    imagen: d1.png
+    tests_id: Tests_1
+  Preguntas_2:
+    imagen: d2.png
+    tests_id: Tests_1
+  Preguntas_3:
+    descripcion: 'Actúo siempre según mis propias ideas en vez de hacer lo que los otros esperan que haga.'
+    tests_id: Tests_2
+  Preguntas_4:
+    descripcion: 'He encontrado siempre más cómodo hacer las cosas sólo, tranquilamente, que hacerla con otros.'
+    tests_id: Tests_2
+  Preguntas_5:
+    descripcion: 'Hablar con la gente ha sido siempre difícil y desagradable para mí.'
+    tests_id: Tests_2
+  Preguntas_6:
+    descripcion: 'Creo que tengo que ser enérgico y decidido en todo lo que hago.'
+    tests_id: Tests_2
+  Preguntas_7:
+    descripcion: 'Desde hace algunas semanas me pongo a llorar incluso cuando la menor cosa me sale mal.'
+    tests_id: Tests_2
+  Preguntas_8:
+    descripcion: 'Algunas personas piensan que soy vanidoso o egocéntrico.'
+    tests_id: Tests_2
+  Preguntas_10:
+    descripcion: 'Cuando era adolescente tuve muchos problemas por mi mal comportamiento en el colegio.'
+    tests_id: Tests_2
+  Preguntas_11:
+    descripcion: 'Tengo siempre la impresión de no ser aceptado en un grupo.'
+    tests_id: Tests_2
+  Preguntas_12:
+    descripcion: 'Frecuentemente critico a la gente que me molesta.'
+    tests_id: Tests_2
+  Preguntas_13:
+    descripcion: 'Me encuentro a gusto siguiendo a los demás.'
+    tests_id: Tests_2
+  Preguntas_14:
+    descripcion: 'Me gusta hacer tantas cosas diferentes que no sé por donde empezar.'
+    tests_id: Tests_2
+  Preguntas_15:
+    descripcion: 'Algunas veces puedo ser bastante duro o mezquino con mi familia.'
+    tests_id: Tests_2
+  Preguntas_16:
+    descripcion: 'Tengo poco interés en hacer amigos.'
+    tests_id: Tests_2
+  Preguntas_17:
+    descripcion: 'Me considero una persona muy sociable o extravertida.'
+    tests_id: Tests_2
+  Preguntas_18:
+    descripcion: 'Sé que soy una persona superior a los demás y por eso no me preocupa lo que piensen.'
+    tests_id: Tests_2
+  Preguntas_19:
+    descripcion: 'La gente nunca ha apreciado suficientemente las cosas que he hecho.'
+    tests_id: Tests_2
+  Preguntas_20:
+    descripcion: 'Tengo problemas con la bebida que he intentado solucionar sin éxito.'
+    tests_id: Tests_2
+  Preguntas_21:
+    descripcion: 'Últimamente siento un nudo en el estomago y me invade un sudor frío.'
+    tests_id: Tests_2
+  Preguntas_22:
+    descripcion: 'Siempre he querido permanecer en segundo plano en las actividades sociales'
+    tests_id: Tests_2
+  Preguntas_23:
+    descripcion: 'A menudo hago cosas sin ninguna razón, sólo porque pueden ser divertidas.'
+    tests_id: Tests_2
+  Preguntas_24:
+    descripcion: 'Me molesta mucho la gente que no es capaz de hacer las cosas bien.'
+    tests_id: Tests_2
+  Preguntas_25:
+    descripcion: 'Si mi familia me obliga o presiona, es probable que me resista a hacer lo que ellos quieren.'
+    tests_id: Tests_2
+  Preguntas_26:
+    descripcion: 'Muchas veces pienso que me deberían castigar por las cosas que he hecho'
+    tests_id: Tests_2
+  Preguntas_27:
+    descripcion: 'La gente se ríe de mí a mis espaldas, hablando de lo que hago o parezco.'
+    tests_id: Tests_2
+  Preguntas_28:
+    descripcion: 'Los demás parecen más seguros que yo de lo que son y lo que quieren'
+    tests_id: Tests_2
+  Preguntas_29:
+    descripcion: 'Soy propenso a tener explosiones de llanto o cólera sin tener motivo.'
+    tests_id: Tests_2
+  Preguntas_30:
+    descripcion: 'Desde hace uno o dos años he comenzado a sentirme solo y vacío.'
+    tests_id: Tests_2
+  Preguntas_31:
+    descripcion: 'Tengo habilidad para “dramatizar” las cosas'
+    tests_id: Tests_2
+  Preguntas_32:
+    descripcion: 'Me resulta difícil mantener el equilibrio cuando camino.'
+    tests_id: Tests_2
+  Preguntas_33:
+    descripcion: 'Disfruto en situaciones de intensa competitividad.'
+    tests_id: Tests_2
+  Preguntas_34:
+    descripcion: 'Cuando entro en crisis busco enseguida alguien que me ayude.'
+    tests_id: Tests_2
+  Preguntas_35:
+    descripcion: 'Me protejo de los demás no dejando que la gente sepa mucho sobre mí.'
+    tests_id: Tests_2
+  Preguntas_36:
+    descripcion: 'Casi siempre me siento débil y cansado.'
+    tests_id: Tests_2
+  Preguntas_37:
+    descripcion: 'Otras personas se enfadan mucho más que yo por las cosas molestas.'
+    tests_id: Tests_2
+  Preguntas_38:
+    descripcion: 'A menudo, mi adicción a las drogas me ha causado en el pasado bastantes problemas.'
+    tests_id: Tests_2
+  Preguntas_39:
+    descripcion: 'Últimamente me encuentro llorando sin ningún motivo.'
+    tests_id: Tests_2
+  Preguntas_40:
+    descripcion: 'Creo que soy una persona especial, que necesita que los demás me presten una atención especial'
+    tests_id: Tests_2
+  Preguntas_41:
+    descripcion: 'Nunca me dejo engañar por gente que dice necesitar ayuda.'
+    tests_id: Tests_2
+  Preguntas_42:
+    descripcion: 'Una buena forma de conseguir un mundo en paz es fomentar los valores de la gente.'
+    tests_id: Tests_2
+  Preguntas_43:
+    descripcion: 'En el pasado he mantenido relaciones sexuales con muchas personas que no significaban nada para mí.'
+    tests_id: Tests_2
+  Preguntas_44:
+    descripcion: 'Me resulta difícil simpatizar con la gente que siente siempre insegura con todo.'
+    tests_id: Tests_2
+  Preguntas_45:
+    descripcion: 'Soy una persona muy agradable y dócil.'
+    tests_id: Tests_2
+  Preguntas_46:
+    descripcion: 'La principal causa de mis problemas ha sido mi “mal carácter”.'
+    tests_id: Tests_2
+  Preguntas_47:
+    descripcion: 'No tengo inconveniente en forzar a los demás a hacer lo que yo quiero.'
+    tests_id: Tests_2
+  Preguntas_48:
+    descripcion: 'En los últimos años, incluso las cosas sin importancia parecen deprimirme.'
+    tests_id: Tests_2
+  Preguntas_49:
+    descripcion: 'Mi deseo de hacer las cosas lo más perfectamente muchas veces enlentece mi trabajo.'
+    tests_id: Tests_2
+  Preguntas_50:
+    descripcion: 'Soy tan callado y retraído que la mayoría de la gente no sabe ni que existo.'
+    tests_id: Tests_2
+  Preguntas_51:
+    descripcion: 'Me gusta coquetear con las personas del otro sexo.'
+    tests_id: Tests_2
+  Preguntas_52:
+    descripcion: 'Soy una persona tranquila y temerosa.'
+    tests_id: Tests_2
+  Preguntas_53:
+    descripcion: 'Soy muy variable y cambio continuamente de opiniones y sentimientos.'
+    tests_id: Tests_2
+  Preguntas_54:
+    descripcion: 'Me pongo muy nervioso cuando pienso en los acontecimientos del día.'
+    tests_id: Tests_2
+  Preguntas_55:
+    descripcion: 'Beber alcohol nunca me ha causado verdaderos problemas en mi trabajo.'
+    tests_id: Tests_2
+  Preguntas_56:
+    descripcion: 'Últimamente me siento sin fuerzas, incluso por las mañanas.'
+    tests_id: Tests_2
+  Preguntas_57:
+    descripcion: 'Hace algunos años que he empezado a sentirme un fracasado.'
+    tests_id: Tests_2
+  Preguntas_58:
+    descripcion: 'No soporto a las personas “sabihondas”, que lo saben todo y piensan que pueden hacer cualquier cosa mejor que yo.'
+    tests_id: Tests_2
+  Preguntas_59:
+    descripcion: 'He tenido siempre miedo a perder el afecto de las personas que más necesito.'
+    tests_id: Tests_2
+  Preguntas_60:
+    descripcion: 'Parece que me aparto de mis objetivos, dejando que los demás me adelanten.'
+    tests_id: Tests_2
+  Preguntas_61:
+    descripcion: 'Últimamente he comenzado a sentir deseos de tirar u romper cosas.'
+    tests_id: Tests_2
+  Preguntas_62:
+    descripcion: 'Recientemente he pensado muy en serio en quitarme de en medio.'
+    tests_id: Tests_2
+  Preguntas_63:
+    descripcion: 'Siempre estoy buscando hacer nuevos amigos y conocer gente nueva.'
+    tests_id: Tests_2
+  Preguntas_64:
+    descripcion: 'Controlo muy bien mi dinero para estar preparado en caso de necesidad.'
+    tests_id: Tests_2
+  Preguntas_65:
+    descripcion: 'El año pasado aparecí en la portada de varias revistas.'
+    tests_id: Tests_2
+  Preguntas_66:
+    descripcion: 'Le gusto a muy poca gente.'
+    tests_id: Tests_2
+  Preguntas_67:
+    descripcion: 'Si alguien me criticase por cometer un error, rápidamente le reprocharía sus propios errores.'
+    tests_id: Tests_2
+  Preguntas_68:
+    descripcion: 'Algunas personas dicen que disfruto sufriendo.'
+    tests_id: Tests_2
+  Preguntas_69:
+    descripcion: 'Muchas veces expreso mi rabia y mal humor y luego me siento terriblemente culpable por ello.'
+    tests_id: Tests_2
+  Preguntas_70:
+    descripcion: 'Últimamente me siento nervioso y bajo una terrible tensión sin saber por qué.'
+    tests_id: Tests_2
+  Preguntas_71:
+    descripcion: 'Muy a menudo pierdo la capacidad para percibir sensaciones en partes de mi cuerpo.'
+    tests_id: Tests_2
+  Preguntas_72:
+    descripcion: 'Creo que hay personas que utilizan la telepatía para influir en mi vida.'
+    tests_id: Tests_2
+  Preguntas_73:
+    descripcion: 'Tomar las llamadas drogas “ilegales” puede ser indeseable y nocivo, pero reconozco que en el pasado las he necesitado.'
+    tests_id: Tests_2
+  Preguntas_74:
+    descripcion: 'Me siento continuamente muy cansado.'
+    tests_id: Tests_2
+  Preguntas_75:
+    descripcion: 'No puedo dormirme, y me levanto tan cansado como al acostarme.'
+    tests_id: Tests_2
+  Preguntas_76:
+    descripcion: 'He hecho impulsivamente muchas cosas estúpidas que han llegado a causarme grandes problemas.'
+    tests_id: Tests_2
+  Preguntas_77:
+    descripcion: 'Nunca perdono un insulto ni olvido una situación molesta que alguien me haya provocado.'
+    tests_id: Tests_2
+  Preguntas_78:
+    descripcion: 'Debemos respetar a nuestros mayores y no creer que sabemos más que ellos.'
+    tests_id: Tests_2
+  Preguntas_79:
+    descripcion: 'Me siento muy triste y deprimido la mayor parte del tiempo.'
+    tests_id: Tests_2
+  Preguntas_80:
+    descripcion: 'Soy la típica persona de la que los otros se aprovechan.'
+    tests_id: Tests_2
+  Preguntas_81:
+    descripcion: 'Siempre hago lo posible por complacer a los demás, incluso si ellos no me gustan.'
+    tests_id: Tests_2
+  Preguntas_82:
+    descripcion: 'Durante muchos años he pensado seriamente en suicidarme.'
+    tests_id: Tests_2
+  Preguntas_83:
+    descripcion: 'Me doy cuenta en seguida cuando la gente intenta crearme problemas.'
+    tests_id: Tests_2
+  Preguntas_84:
+    descripcion: 'Siempre he tenido menos interés en el sexo que la mayoría de la gente.'
+    tests_id: Tests_2
+  Preguntas_85:
+    descripcion: 'No comprendo por qué, pero parece que disfruto haciendo sufrir a los que quiero.'
+    tests_id: Tests_2
+  Preguntas_86:
+    descripcion: 'Hace mucho tiempo decidí que lo mejor es tener poco que ver con la gente.'
+    tests_id: Tests_2
+  Preguntas_87:
+    descripcion: 'Estoy dispuesto a luchar hasta el final antes de que nadie obstruya mis intereses y objetivos.'
+    tests_id: Tests_2
+  Preguntas_88:
+    descripcion: 'Desde niño siempre he tenido que tener cuidado con la gente que intentaba engañarme.'
+    tests_id: Tests_2
+  Preguntas_89:
+    descripcion: 'Cuando las cosas son aburridas me gusta provocar algo interesante.'
+    tests_id: Tests_2
+  Preguntas_90:
+    descripcion: 'Tengo un problema con el alcohol que nos ha creado dificultades a mí y a mi familia.'
+    tests_id: Tests_2
+  Preguntas_91:
+    descripcion: 'Si alguien necesita hacer algo que requiera mucha paciencia, debería contar conmigo.'
+    tests_id: Tests_2
+  Preguntas_92:
+    descripcion: 'Probablemente tengo las ideas más creativas de entre la gente que conozco.'
+    tests_id: Tests_2
+  Preguntas_93:
+    descripcion: 'No he visto ningún coche en los últimos diez años.'
+    tests_id: Tests_2
+  Preguntas_94:
+    descripcion: 'No veo nada incorrecto en utilizar a la gente para conseguir lo que quiero.'
+    tests_id: Tests_2
+  Preguntas_95:
+    descripcion: 'El que me castiguen nunca me ha frenado de conseguir lo que he querido'
+    tests_id: Tests_2
+  Preguntas_96:
+    descripcion: 'Muchas veces me siento muy alegre y animado sin ningún motivo.'
+    tests_id: Tests_2
+  Preguntas_97:
+    descripcion: 'Siendo adolescente, me fugué de casa por lo menos una vez.'
+    tests_id: Tests_2
+  Preguntas_98:
+    descripcion: 'Muy a menudo digo cosas sin pensarlas y luego me arrepiento de haberlas dicho.'
+    tests_id: Tests_2
+  Preguntas_99:
+    descripcion: 'En las últimas semanas me he sentido exhausto, agotado, sin un motivo especial.'
+    tests_id: Tests_2
+  Preguntas_100:
+    descripcion: 'Últimamente me he sentido muy culpable porque ya no sé hacer nada bien.'
+    tests_id: Tests_2
+  Preguntas_101:
+    descripcion: 'Algunas ideas me dan vueltas en la cabeza una y otra vez, y no consigo olvidarlas.'
+    tests_id: Tests_2
+  Preguntas_102:
+    descripcion: 'En los dos últimos años me he vuelto muy desanimado y triste sobre mi vida.'
+    tests_id: Tests_2
+  Preguntas_103:
+    descripcion: 'Mucha gente ha estado espiando mi vida privada durante años.'
+    tests_id: Tests_2
+  Preguntas_104:
+    descripcion: 'No sé por qué, pero a veces digo cosas crueles para hacer sufrir a los demás.'
+    tests_id: Tests_2
+  Preguntas_105:
+    descripcion: 'Odio o tengo miedo a la mayor parte de la gente.'
+    tests_id: Tests_2
+  Preguntas_106:
+    descripcion: 'Expreso mi opinión sin que me importe lo que otros puedan pensar.'
+    tests_id: Tests_2
+  Preguntas_107:
+    descripcion: 'Cuando alguien con autoridad insiste en que haga algo, es probable que lo eluda o bien que lo haga intencionadamente mal.'
+    tests_id: Tests_2
+  Preguntas_108:
+    descripcion: 'En el pasado el hábito de abusar de las drogas me ha hecho no acudir al trabajo.'
+    tests_id: Tests_2
+  Preguntas_109:
+    descripcion: 'Estoy siempre dispuesto a ceder ante los otros para evitar disputas'
+    tests_id: Tests_2
+  Preguntas_110:
+    descripcion: 'Con frecuencia estoy irritable y de mal humor.'
+    tests_id: Tests_2
+  Preguntas_111:
+    descripcion: 'Utimamente ya no tengo fuerzas para luchar no para defenderme.'
+    tests_id: Tests_2
+  Preguntas_112:
+    descripcion: 'Ultimamente tengo que pensar las cosas una y otra vez sin motivo.'
+    tests_id: Tests_2
+  Preguntas_113:
+    descripcion: 'Muchas veces pienso que no merezco las cosas buenas que me pasan.'
+    tests_id: Tests_2
+  Preguntas_114:
+    descripcion: 'Utilizo mi atractivo para conseguir la atención de los demás.'
+    tests_id: Tests_2
+  Preguntas_115:
+    descripcion: 'Cuando estoy sólo, a menudo noto la fuerte presencia de alguien cercano que no puede ser visto.'
+    tests_id: Tests_2
+  Preguntas_116:
+    descripcion: 'Me siento desorientado, sin objetivos y no sé hacia donde voy en la vida.'
+    tests_id: Tests_2
+  Preguntas_117:
+    descripcion: 'Últimamente he sudado mucho y me he sentido muy tenso.'
+    tests_id: Tests_2
+  Preguntas_118:
+    descripcion: 'A veces siento como si necesitase hacer algo para hacerme daño a mí mismo o a otros.'
+    tests_id: Tests_2
+  Preguntas_119:
+    descripcion: 'La ley me ha castigado injustamente por delitos que nunca he cometido.'
+    tests_id: Tests_2
+  Preguntas_120:
+    descripcion: 'Me he vuelto muy sobresaltado y nervioso en las últimas semanas.'
+    tests_id: Tests_2
+  Preguntas_121:
+    descripcion: 'Sigo teniendo extraños pensamientos de los que me gustaría poder librarme.'
+    tests_id: Tests_2
+  Preguntas_122:
+    descripcion: 'Tengo mucha dificultad para controlar el impulso de beber en exceso.'
+    tests_id: Tests_2
+  Preguntas_123:
+    descripcion: 'Mucha gente piensa que no sirvo para nada.'
+    tests_id: Tests_2
+  Preguntas_124:
+    descripcion: 'Puedo llegar a estar muy excitado sexualmente cuando discuto o peleo con alguien a quien amo.'
+    tests_id: Tests_2
+  Preguntas_125:
+    descripcion: 'Durante años he conseguido mantener en el mínimo mi consumo de alcohol.'
+    tests_id: Tests_2
+  Preguntas_126:
+    descripcion: 'Siempre pongo a prueba a la gente para saber hasta donde son de confianza.'
+    tests_id: Tests_2
+  Preguntas_127:
+    descripcion: 'Incluso cuando estoy despierto parece que no me doy cuenta de la gente que está cerca de mí.'
+    tests_id: Tests_2
+  Preguntas_128:
+    descripcion: 'Me resulta fácil hacer muchos amigos.'
+    tests_id: Tests_2
+  Preguntas_129:
+    descripcion: 'Me aseguro de que mi trabajo esté siempre bien planeado y organizado.'
+    tests_id: Tests_2
+  Preguntas_130:
+    descripcion: 'Con mucha frecuencia oigo cosas con tanta claridad que me molestan.'
+    tests_id: Tests_2
+  Preguntas_131:
+    descripcion: 'Mis estados de ánimo parecen cambiar de un día para otro.'
+    tests_id: Tests_2
+  Preguntas_132:
+    descripcion: 'No culpo de quien se aprovecha de alguien que se lo permite.'
+    tests_id: Tests_2
+  Preguntas_133:
+    descripcion: 'He cambiado de trabajo por lo menos más de tres veces en los últimos dos años.'
+    tests_id: Tests_2
+  Preguntas_134:
+    descripcion: 'Tengo muchas ideas muy avanzadas para los tiempo actuales.'
+    tests_id: Tests_2
+  Preguntas_135:
+    descripcion: 'Me siento muy triste y melancólico últimamente y parece que no puedo superarlo.'
+    tests_id: Tests_2
+  Preguntas_136:
+    descripcion: 'Creo que siempre es mejor buscar ayuda para hacer lo que hago.'
+    tests_id: Tests_2
+  Preguntas_137:
+    descripcion: 'Muchas veces me enfado con la gente que hace las cosas lentamente.'
+    tests_id: Tests_2
+  Preguntas_138:
+    descripcion: 'Realmente me molesta la gente que espera que haga lo que yo no quiero hacer.'
+    tests_id: Tests_2
+  Preguntas_139:
+    descripcion: 'En estos últimos años me he sentido tan culpable que puedo hacer algo terrible contra mí.'
+    tests_id: Tests_2
+  Preguntas_140:
+    descripcion: 'Cuando estoy en una fiesta o reunión social nunca me quedo al margen.'
+    tests_id: Tests_2
+  Preguntas_141:
+    descripcion: 'La gente me dice que soy una persona muy íntegra y moral.'
+    tests_id: Tests_2
+  Preguntas_142:
+    descripcion: 'Algunas veces me siento confuso y preocupado cuando la gente es amable conmigo.'
+    tests_id: Tests_2
+  Preguntas_143:
+    descripcion: 'El problema de usar drogas ilegales me ha causado discusiones con mi familia.'
+    tests_id: Tests_2
+  Preguntas_144:
+    descripcion: 'Me siento muy incómodo con personas del otro sexo.'
+    tests_id: Tests_2
+  Preguntas_145:
+    descripcion: 'Algunas personas de mi familia dicen que soy egoísta y que sólo pienso en mí mismo.'
+    tests_id: Tests_2
+  Preguntas_146:
+    descripcion: 'No me importa que la gente no se interese por mí.'
+    tests_id: Tests_2
+  Preguntas_147:
+    descripcion: 'Francamente, miento con mucha frecuencia para salir de dificultades o problemas.'
+    tests_id: Tests_2
+  Preguntas_148:
+    descripcion: 'a gente puede hacerme cambiar de ideas fácilmente, incluso cuando pienso que ya había tomado una decisión.'
+    tests_id: Tests_2
+  Preguntas_149:
+    descripcion: 'Algunos han tratado de dominarme, pero he tenido fuerza de voluntad para superarlo.'
+    tests_id: Tests_2
+  Preguntas_150:
+    descripcion: 'Mis padres me decían con frecuencia que no era bueno.'
+    tests_id: Tests_2
+  Preguntas_151:
+    descripcion: 'A menudo la gente se irrita conmigo cuando les doy órdenes.'
+    tests_id: Tests_2
+  Preguntas_152:
+    descripcion: 'Tengo mucho respeto por los que tienen autoridad sobre mí.'
+    tests_id: Tests_2
+  Preguntas_153:
+    descripcion: 'No tengo casi ningún lazo íntimo con los demás.'
+    tests_id: Tests_2
+  Preguntas_154:
+    descripcion: 'En el pasado la gente decía que yo estaba muy interesado y que me apasionaba por demasiadas cosas.'
+    tests_id: Tests_2
+  Preguntas_155:
+    descripcion: 'En el último año he cruzado el Atlántico más de treinta veces.'
+    tests_id: Tests_2
+  Preguntas_156:
+    descripcion: 'Estoy de acuerdo con el refrán:” Al que madruga Dios le ayuda”.'
+    tests_id: Tests_2
+  Preguntas_157:
+    descripcion: 'Me merezco el sufrimiento que he padecido a lo largo de mi vida.'
+    tests_id: Tests_2
+  Preguntas_158:
+    descripcion: 'Mis sentimientos hacia personas importantes en mi vida han oscilado entre amarlas y odiarlas.'
+    tests_id: Tests_2
+  Preguntas_159:
+    descripcion: 'Mis padres nunca se ponían de acuerdo entre ellos.'
+    tests_id: Tests_2
+  Preguntas_160:
+    descripcion: 'En alguna ocasión he bebido diez copas o más sin llegar a emborracharme.'
+    tests_id: Tests_2
+  Preguntas_161:
+    descripcion: 'Cuando estoy en una reunión social, en grupo casi siempre me siento tenso y controlado.'
+    tests_id: Tests_2
+  Preguntas_162:
+    descripcion: 'Tengo en alta estima las normas y reglas porque son una buena guía a seguir.'
+    tests_id: Tests_2
+  Preguntas_163:
+    descripcion: 'Desde que era niño he ido perdiendo contacto con la realidad.'
+    tests_id: Tests_2
+  Preguntas_164:
+    descripcion: 'Rara vez me emociono mucho con algo.'
+    tests_id: Tests_2
+  Preguntas_165:
+    descripcion: 'Habitualmente he sido un andariego inquieto, vagando de un sitio a otro sin tener idea de donde terminaría.'
+    tests_id: Tests_2
+  Preguntas_166:
+    descripcion: 'No soporto a las personas que llegan tarde a las citas.'
+    tests_id: Tests_2
+  Preguntas_167:
+    descripcion: 'Gente sin escrúpulos intenta con frecuencia aprovecharse de lo que yo he realizado o ideado.'
+    tests_id: Tests_2
+  Preguntas_168:
+    descripcion: 'Me irrita mucho que alguien me pida que haga las cosas a su modo en vez de al mío.'
+    tests_id: Tests_2
+  Preguntas_169:
+    descripcion: 'Tengo habilidad para tener éxito en casi todo lo que hago.'
+    tests_id: Tests_2
+  Preguntas_170:
+    descripcion: 'Últimamente me siento completamente destrozado.'
+    tests_id: Tests_2
+  Preguntas_171:
+    descripcion: 'A la gente que quiero, parece que la animo a que me hiera.'
+    tests_id: Tests_2
+  Preguntas_172:
+    descripcion: 'Nunca he tenido pelo ni en mi cabeza ni en mi cuerpo.'
+    tests_id: Tests_2
+  Preguntas_173:
+    descripcion: 'Cuando estoy con otras personas me gusta ser el centro de atención'
+    tests_id: Tests_2
+  Preguntas_174:
+    descripcion: 'Personas que en un principio he admirado grandemente, más tarde me han defraudado al conocer la realidad.'
+    tests_id: Tests_2
+  Preguntas_175:
+    descripcion: 'Soy el tipo de persona que puede abordar a cualquiera y echarle una bronca.'
+    tests_id: Tests_2
+  Preguntas_176:
+    descripcion: 'Prefiero estar con gente que me protegerá.'
+    tests_id: Tests_2
+  Preguntas_177:
+    descripcion: 'He tenido muchos períodos en mi vida que he estado tan animado y he derrochado tanta energía que luego me he sentido muy bajo de ánimo.'
+    tests_id: Tests_2
+  Preguntas_178:
+    descripcion: 'En el pasado he tenido dificultades para abandonar el abuso de drogas y de alcohol.'
+    tests_id: Tests_2
+Pruebas:
+  Pruebas_1:
+    tests_id: Tests_1
+    evaluaciones_id: Evaluaciones_1
+    estadopruebas_id: Estadopruebas_1
+  Pruebas_2:
+    tests_id: Tests_1
+    evaluaciones_id: Evaluaciones_1
+    estadopruebas_id: Estadopruebas_1
+Valoresdeverdad:
+  Valoresdeverdad_1:
+    nombre: Correcta
+  Valoresdeverdad_2:
+    nombre: Incorrecta
+Respuestas:
+  Respuestas_1:
+    preguntas_id: Preguntas_1
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_5
+  Respuestas_2:
+    preguntas_id: Preguntas_2
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_6
+Resultadosparciales:
+  Resultadosparciales_1:
+    opciones_id: Opciones_7
+    preguntas_id: Preguntas_1
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_1
+  Resultadosparciales_2:
+    opciones_id: Opciones_7
+    preguntas_id: Preguntas_2
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_1
+  Resultadosparciales_3:
+    opciones_id: Opciones_7
+    preguntas_id: Preguntas_1
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_2
+  Resultadosparciales_4:
+    opciones_id: Opciones_7
+    preguntas_id: Preguntas_2
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_2
+  Resultadosparciales_5:
+    opciones_id: Opciones_5
+    preguntas_id: Preguntas_1
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_1
+  Resultadosparciales_6:
+    opciones_id: Opciones_5
+    preguntas_id: Preguntas_1
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_1
+  Resultadosparciales_7:
+    opciones_id: Opciones_26
+    preguntas_id: Preguntas_2
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_1
+  Resultadosparciales_8:
+    opciones_id: Opciones_5
+    preguntas_id: Preguntas_1
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_2
+  Resultadosparciales_9:
+    opciones_id: Opciones_33
+    preguntas_id: Preguntas_2
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_2
+Resultados:
+  Resultados_1:
+    puntaje: '0'
+    pruebas_id: Pruebas_1
+    aspirantes_id: Aspirantes_1
+  Resultados_2:
+    puntaje: '0'
+    pruebas_id: Pruebas_2
+    aspirantes_id: Aspirantes_1
+  Resultados_3:
+    puntaje: '0.35'
+    pruebas_id: Pruebas_1
+    aspirantes_id: Aspirantes_1
+  Resultados_4:
+    puntaje: '0.35'
+    pruebas_id: Pruebas_2
+    aspirantes_id: Aspirantes_1
