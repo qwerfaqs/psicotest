@@ -16,11 +16,13 @@ Evaluaciones:
     fecha: '2011-09-29'
     nombre: 'Curso ingenieria Naval'
     estadosevaluaciones_id: Estadosevaluaciones_1
+    perfil_id:  Perfil_1
   Evaluaciones_2:
     cantidad: '3'
     fecha: '2011-04-10'
     nombre: 'Aspirantes a Corsarios'
     estadosevaluaciones_id: Estadosevaluaciones_1
+    perfil_id:  Perfil_2
 Aspirantes:
   Aspirantes_1:
     nombre: matias
@@ -1068,12 +1070,12 @@ Pruebas:
     tests_id: Tests_1
     evaluaciones_id: Evaluaciones_1
     estadopruebas_id: Estadopruebas_1
-    perfil_id:  Perfil_1
+#    perfil_id:  Perfil_1
   Pruebas_2:
     tests_id: Tests_1
     evaluaciones_id: Evaluaciones_1
     estadopruebas_id: Estadopruebas_1
-    perfil_id:  Perfil_1
+#    perfil_id:  Perfil_1
 Valoresdeverdad:
   Valoresdeverdad_1:
     nombre: Correcta

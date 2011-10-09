@@ -46,6 +46,7 @@ propel:
     cantidad: { phpName: Cantidad, type: INTEGER, size: '11', required: false }
     fecha: { phpName: Fecha, type: DATE, required: false }
     nombre: { phpName: Nombre, type: CHAR, size: '50', required: false }
+    perfil_id: { phpName: PerfilId, type: INTEGER, size: '11', required: false, foreignTable: perfil, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
     _indexes: { estadosevaluaciones_id: [estadosevaluaciones_id] }
   opciones:
     _attributes: { phpName: Opciones }
@@ -71,7 +72,7 @@ propel:
     tests_id: { phpName: TestsId, type: INTEGER, size: '11', required: true, foreignTable: tests, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
     evaluaciones_id: { phpName: EvaluacionesId, type: INTEGER, size: '11', required: true, foreignTable: evaluaciones, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
     estadopruebas_id: { phpName: EstadopruebasId, type: INTEGER, size: '11', required: true, foreignTable: estadopruebas, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
-    perfil_id: { phpName: PerfilId, type: INTEGER, size: '11', required: false, foreignTable: perfil, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    #perfil_id: { phpName: PerfilId, type: INTEGER, size: '11', required: false, foreignTable: perfil, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
     _indexes: { tests_id: [tests_id], estadopruebas_id: [estadopruebas_id], evaluaciones_id: [evaluaciones_id], perfil_id: [perfil_id] }
   respuestas:
     _attributes: { phpName: Respuestas }
