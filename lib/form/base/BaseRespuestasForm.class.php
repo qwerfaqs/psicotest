@@ -18,6 +18,7 @@ abstract class BaseRespuestasForm extends BaseFormPropel
       'preguntas_id' => new sfWidgetFormPropelChoice(array('model' => 'Preguntas', 'add_empty' => false)),
       'estados_id'   => new sfWidgetFormPropelChoice(array('model' => 'Valoresdeverdad', 'add_empty' => false)),
       'opciones_id'  => new sfWidgetFormPropelChoice(array('model' => 'Opciones', 'add_empty' => false)),
+      'descripcion'  => new sfWidgetFormTextarea(),
     ));
 
     $this->setValidators(array(
@@ -25,6 +26,7 @@ abstract class BaseRespuestasForm extends BaseFormPropel
       'preguntas_id' => new sfValidatorPropelChoice(array('model' => 'Preguntas', 'column' => 'id')),
       'estados_id'   => new sfValidatorPropelChoice(array('model' => 'Valoresdeverdad', 'column' => 'id')),
       'opciones_id'  => new sfValidatorPropelChoice(array('model' => 'Opciones', 'column' => 'id')),
+      'descripcion'  => new sfValidatorString(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('respuestas[%s]');

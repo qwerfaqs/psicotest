@@ -1,3 +1,10 @@
+Perfil:
+  Perfil_1:
+    nombre: Infante
+  Perfil_2:
+    nombre: Oficial
+  Perfil_3:
+    nombre: Grumete
 Estadosevaluaciones:
   Estadosevaluaciones_1:
     nombre: Activa
@@ -8,6 +15,11 @@ Evaluaciones:
     cantidad: '10'
     fecha: '2011-09-29'
     nombre: 'Curso ingenieria Naval'
+    estadosevaluaciones_id: Estadosevaluaciones_1
+  Evaluaciones_2:
+    cantidad: '3'
+    fecha: '2011-04-10'
+    nombre: 'Aspirantes a Corsarios'
     estadosevaluaciones_id: Estadosevaluaciones_1
 Aspirantes:
   Aspirantes_1:
@@ -27,6 +39,10 @@ Estadopruebas:
 Tipoopcion:
   Tipoopcion_1:
     nombre: domino
+  Tipoopcion_2:
+    nombre: Verdadero/Falso
+  Tipoopcion_3:
+    nombre: ABC
 Opciones:
   Opciones_1:
     texto: 1/1
@@ -49,6 +65,147 @@ Opciones:
   Opciones_7:
     texto: 0/0
     tipoopcion_id: Tipoopcion_1
+  Opciones_8:
+    texto: 0/1
+    tipoopcion_id: Tipoopcion_1
+  Opciones_9:
+    texto: 0/2
+    tipoopcion_id: Tipoopcion_1
+  Opciones_10:
+    texto: 0/3
+    tipoopcion_id: Tipoopcion_1
+  Opciones_11:
+    texto: 0/4
+    tipoopcion_id: Tipoopcion_1
+  Opciones_12:
+    texto: 0/5
+    tipoopcion_id: Tipoopcion_1
+  Opciones_13:
+    texto: 0/6
+    tipoopcion_id: Tipoopcion_1
+  Opciones_14:
+    texto: 1/5
+    tipoopcion_id: Tipoopcion_1
+  Opciones_15:
+    texto: 1/6
+    tipoopcion_id: Tipoopcion_1
+  Opciones_16:
+    texto: 1/0
+    tipoopcion_id: Tipoopcion_1
+  Opciones_17:
+    texto: 2/0
+    tipoopcion_id: Tipoopcion_1
+  Opciones_18:
+    texto: 2/1
+    tipoopcion_id: Tipoopcion_1
+  Opciones_19:
+    texto: 2/2
+    tipoopcion_id: Tipoopcion_1
+  Opciones_20:
+    texto: 2/5
+    tipoopcion_id: Tipoopcion_1
+  Opciones_21:
+    texto: 2/6
+    tipoopcion_id: Tipoopcion_1
+  Opciones_23:
+    texto: 3/0
+    tipoopcion_id: Tipoopcion_1
+  Opciones_24:
+    texto: 3/1
+    tipoopcion_id: Tipoopcion_1
+  Opciones_25:
+    texto: 3/2
+    tipoopcion_id: Tipoopcion_1
+  Opciones_26:
+    texto: 3/3
+    tipoopcion_id: Tipoopcion_1
+  Opciones_27:
+    texto: 3/4
+    tipoopcion_id: Tipoopcion_1
+  Opciones_28:
+    texto: 3/5
+    tipoopcion_id: Tipoopcion_1
+  Opciones_29:
+    texto: 3/6
+    tipoopcion_id: Tipoopcion_1
+  Opciones_30:
+    texto: 4/0
+    tipoopcion_id: Tipoopcion_1
+  Opciones_31:
+    texto: 4/1
+    tipoopcion_id: Tipoopcion_1
+  Opciones_32:
+    texto: 4/2
+    tipoopcion_id: Tipoopcion_1
+  Opciones_33:
+    texto: 4/3
+    tipoopcion_id: Tipoopcion_1
+  Opciones_34:
+    texto: 4/4
+    tipoopcion_id: Tipoopcion_1
+  Opciones_35:
+    texto: 4/5
+    tipoopcion_id: Tipoopcion_1
+  Opciones_36:
+    texto: 4/6
+    tipoopcion_id: Tipoopcion_1
+  Opciones_37:
+    texto: 5/0
+    tipoopcion_id: Tipoopcion_1
+  Opciones_38:
+    texto: 5/1
+    tipoopcion_id: Tipoopcion_1
+  Opciones_39:
+    texto: 5/2
+    tipoopcion_id: Tipoopcion_1
+  Opciones_40:
+    texto: 5/3
+    tipoopcion_id: Tipoopcion_1
+  Opciones_41:
+    texto: 5/4
+    tipoopcion_id: Tipoopcion_1
+  Opciones_42:
+    texto: 5/5
+    tipoopcion_id: Tipoopcion_1
+  Opciones_43:
+    texto: 5/6
+    tipoopcion_id: Tipoopcion_1
+  Opciones_44:
+    texto: 6/0
+    tipoopcion_id: Tipoopcion_1
+  Opciones_45:
+    texto: 6/1
+    tipoopcion_id: Tipoopcion_1
+  Opciones_46:
+    texto: 6/2
+    tipoopcion_id: Tipoopcion_1
+  Opciones_47:
+    texto: 6/3
+    tipoopcion_id: Tipoopcion_1
+  Opciones_48:
+    texto: 6/4
+    tipoopcion_id: Tipoopcion_1
+  Opciones_49:
+    texto: 6/5
+    tipoopcion_id: Tipoopcion_1
+  Opciones_50:
+    texto: 6/6
+    tipoopcion_id: Tipoopcion_1
+  Opciones_51:
+    texto: Verdadero
+    tipoopcion_id: Tipoopcion_2
+  Opciones_52:
+    texto: Falso
+    tipoopcion_id: Tipoopcion_2
+  Opciones_53:
+    texto: A
+    tipoopcion_id: Tipoopcion_3
+  Opciones_54:
+    texto: B
+    tipoopcion_id: Tipoopcion_3
+  Opciones_55:
+    texto: C
+    tipoopcion_id: Tipoopcion_3
 Tests:
   Tests_1:
     titulo: Domino
@@ -57,6 +214,17 @@ Tests:
     imagen: d1.png
     duracion: '30 minutos'
     tipoopcion_id: Tipoopcion_1
+  Tests_2:
+    titulo: 'Inventario Multiaxial Clinico de Millon. MCMI-II'
+    historia: 'Millon, 1999'
+    enunciado: 'Este test contiene una serie de frases usuales o expreciones que las personas suelen utilizar para describirse asi mismas. Sirven para ayudarle a describirse asi mismas. Sirven para ayudarle a describir sus sentimientos y actitudes. No te preocupes si algunas cuestiones o fraces te parecen extrañas, estan incluidas para describir los diferentes problemas que puede tener la gente. Procura responder a todas las frases aunque no estes totalmente seguro. Marca Siempre Verdadero o Falso.'
+    duracion: '30'
+    tipoopcion_id: Tipoopcion_2
+  Tests_3:
+    titulo: '16 factores de personalidad'
+    historia: ''
+    enunciado: 'Este es un cuestionario de sus actitudes. Lo que hace o lo que piensa acerca de ciertas situaciones. Las personas piensan de una manera u otra. Por lo tanto, no existen respuestas “correctas o incorrectas” a las preguntas de este formulario.'
+    tipoopcion_id: Tipoopcion_3
 Preguntas:
   Preguntas_1:
     imagen: d1.png
@@ -64,15 +232,848 @@ Preguntas:
   Preguntas_2:
     imagen: d2.png
     tests_id: Tests_1
+  Preguntas_3:
+    descripcion: 'Actúo siempre según mis propias ideas en vez de hacer lo que los otros esperan que haga.'
+    tests_id: Tests_2
+  Preguntas_4:
+    descripcion: 'He encontrado siempre más cómodo hacer las cosas sólo, tranquilamente, que hacerla con otros.'
+    tests_id: Tests_2
+  Preguntas_5:
+    descripcion: 'Hablar con la gente ha sido siempre difícil y desagradable para mí.'
+    tests_id: Tests_2
+  Preguntas_6:
+    descripcion: 'Creo que tengo que ser enérgico y decidido en todo lo que hago.'
+    tests_id: Tests_2
+  Preguntas_7:
+    descripcion: 'Desde hace algunas semanas me pongo a llorar incluso cuando la menor cosa me sale mal.'
+    tests_id: Tests_2
+  Preguntas_8:
+    descripcion: 'Algunas personas piensan que soy vanidoso o egocéntrico.'
+    tests_id: Tests_2
+  Preguntas_10:
+    descripcion: 'Cuando era adolescente tuve muchos problemas por mi mal comportamiento en el colegio.'
+    tests_id: Tests_2
+  Preguntas_11:
+    descripcion: 'Tengo siempre la impresión de no ser aceptado en un grupo.'
+    tests_id: Tests_2
+  Preguntas_12:
+    descripcion: 'Frecuentemente critico a la gente que me molesta.'
+    tests_id: Tests_2
+  Preguntas_13:
+    descripcion: 'Me encuentro a gusto siguiendo a los demás.'
+    tests_id: Tests_2
+  Preguntas_14:
+    descripcion: 'Me gusta hacer tantas cosas diferentes que no sé por donde empezar.'
+    tests_id: Tests_2
+  Preguntas_15:
+    descripcion: 'Algunas veces puedo ser bastante duro o mezquino con mi familia.'
+    tests_id: Tests_2
+  Preguntas_16:
+    descripcion: 'Tengo poco interés en hacer amigos.'
+    tests_id: Tests_2
+  Preguntas_17:
+    descripcion: 'Me considero una persona muy sociable o extravertida.'
+    tests_id: Tests_2
+  Preguntas_18:
+    descripcion: 'Sé que soy una persona superior a los demás y por eso no me preocupa lo que piensen.'
+    tests_id: Tests_2
+  Preguntas_19:
+    descripcion: 'La gente nunca ha apreciado suficientemente las cosas que he hecho.'
+    tests_id: Tests_2
+  Preguntas_20:
+    descripcion: 'Tengo problemas con la bebida que he intentado solucionar sin éxito.'
+    tests_id: Tests_2
+  Preguntas_21:
+    descripcion: 'Últimamente siento un nudo en el estomago y me invade un sudor frío.'
+    tests_id: Tests_2
+  Preguntas_22:
+    descripcion: 'Siempre he querido permanecer en segundo plano en las actividades sociales'
+    tests_id: Tests_2
+  Preguntas_23:
+    descripcion: 'A menudo hago cosas sin ninguna razón, sólo porque pueden ser divertidas.'
+    tests_id: Tests_2
+  Preguntas_24:
+    descripcion: 'Me molesta mucho la gente que no es capaz de hacer las cosas bien.'
+    tests_id: Tests_2
+  Preguntas_25:
+    descripcion: 'Si mi familia me obliga o presiona, es probable que me resista a hacer lo que ellos quieren.'
+    tests_id: Tests_2
+  Preguntas_26:
+    descripcion: 'Muchas veces pienso que me deberían castigar por las cosas que he hecho'
+    tests_id: Tests_2
+  Preguntas_27:
+    descripcion: 'La gente se ríe de mí a mis espaldas, hablando de lo que hago o parezco.'
+    tests_id: Tests_2
+  Preguntas_28:
+    descripcion: 'Los demás parecen más seguros que yo de lo que son y lo que quieren'
+    tests_id: Tests_2
+  Preguntas_29:
+    descripcion: 'Soy propenso a tener explosiones de llanto o cólera sin tener motivo.'
+    tests_id: Tests_2
+  Preguntas_30:
+    descripcion: 'Desde hace uno o dos años he comenzado a sentirme solo y vacío.'
+    tests_id: Tests_2
+  Preguntas_31:
+    descripcion: 'Tengo habilidad para “dramatizar” las cosas'
+    tests_id: Tests_2
+  Preguntas_32:
+    descripcion: 'Me resulta difícil mantener el equilibrio cuando camino.'
+    tests_id: Tests_2
+  Preguntas_33:
+    descripcion: 'Disfruto en situaciones de intensa competitividad.'
+    tests_id: Tests_2
+  Preguntas_34:
+    descripcion: 'Cuando entro en crisis busco enseguida alguien que me ayude.'
+    tests_id: Tests_2
+  Preguntas_35:
+    descripcion: 'Me protejo de los demás no dejando que la gente sepa mucho sobre mí.'
+    tests_id: Tests_2
+  Preguntas_36:
+    descripcion: 'Casi siempre me siento débil y cansado.'
+    tests_id: Tests_2
+  Preguntas_37:
+    descripcion: 'Otras personas se enfadan mucho más que yo por las cosas molestas.'
+    tests_id: Tests_2
+  Preguntas_38:
+    descripcion: 'A menudo, mi adicción a las drogas me ha causado en el pasado bastantes problemas.'
+    tests_id: Tests_2
+  Preguntas_39:
+    descripcion: 'Últimamente me encuentro llorando sin ningún motivo.'
+    tests_id: Tests_2
+  Preguntas_40:
+    descripcion: 'Creo que soy una persona especial, que necesita que los demás me presten una atención especial'
+    tests_id: Tests_2
+  Preguntas_41:
+    descripcion: 'Nunca me dejo engañar por gente que dice necesitar ayuda.'
+    tests_id: Tests_2
+  Preguntas_42:
+    descripcion: 'Una buena forma de conseguir un mundo en paz es fomentar los valores de la gente.'
+    tests_id: Tests_2
+  Preguntas_43:
+    descripcion: 'En el pasado he mantenido relaciones sexuales con muchas personas que no significaban nada para mí.'
+    tests_id: Tests_2
+  Preguntas_44:
+    descripcion: 'Me resulta difícil simpatizar con la gente que siente siempre insegura con todo.'
+    tests_id: Tests_2
+  Preguntas_45:
+    descripcion: 'Soy una persona muy agradable y dócil.'
+    tests_id: Tests_2
+  Preguntas_46:
+    descripcion: 'La principal causa de mis problemas ha sido mi “mal carácter”.'
+    tests_id: Tests_2
+  Preguntas_47:
+    descripcion: 'No tengo inconveniente en forzar a los demás a hacer lo que yo quiero.'
+    tests_id: Tests_2
+  Preguntas_48:
+    descripcion: 'En los últimos años, incluso las cosas sin importancia parecen deprimirme.'
+    tests_id: Tests_2
+  Preguntas_49:
+    descripcion: 'Mi deseo de hacer las cosas lo más perfectamente muchas veces enlentece mi trabajo.'
+    tests_id: Tests_2
+  Preguntas_50:
+    descripcion: 'Soy tan callado y retraído que la mayoría de la gente no sabe ni que existo.'
+    tests_id: Tests_2
+  Preguntas_51:
+    descripcion: 'Me gusta coquetear con las personas del otro sexo.'
+    tests_id: Tests_2
+  Preguntas_52:
+    descripcion: 'Soy una persona tranquila y temerosa.'
+    tests_id: Tests_2
+  Preguntas_53:
+    descripcion: 'Soy muy variable y cambio continuamente de opiniones y sentimientos.'
+    tests_id: Tests_2
+  Preguntas_54:
+    descripcion: 'Me pongo muy nervioso cuando pienso en los acontecimientos del día.'
+    tests_id: Tests_2
+  Preguntas_55:
+    descripcion: 'Beber alcohol nunca me ha causado verdaderos problemas en mi trabajo.'
+    tests_id: Tests_2
+  Preguntas_56:
+    descripcion: 'Últimamente me siento sin fuerzas, incluso por las mañanas.'
+    tests_id: Tests_2
+  Preguntas_57:
+    descripcion: 'Hace algunos años que he empezado a sentirme un fracasado.'
+    tests_id: Tests_2
+  Preguntas_58:
+    descripcion: 'No soporto a las personas “sabihondas”, que lo saben todo y piensan que pueden hacer cualquier cosa mejor que yo.'
+    tests_id: Tests_2
+  Preguntas_59:
+    descripcion: 'He tenido siempre miedo a perder el afecto de las personas que más necesito.'
+    tests_id: Tests_2
+  Preguntas_60:
+    descripcion: 'Parece que me aparto de mis objetivos, dejando que los demás me adelanten.'
+    tests_id: Tests_2
+  Preguntas_61:
+    descripcion: 'Últimamente he comenzado a sentir deseos de tirar u romper cosas.'
+    tests_id: Tests_2
+  Preguntas_62:
+    descripcion: 'Recientemente he pensado muy en serio en quitarme de en medio.'
+    tests_id: Tests_2
+  Preguntas_63:
+    descripcion: 'Siempre estoy buscando hacer nuevos amigos y conocer gente nueva.'
+    tests_id: Tests_2
+  Preguntas_64:
+    descripcion: 'Controlo muy bien mi dinero para estar preparado en caso de necesidad.'
+    tests_id: Tests_2
+  Preguntas_65:
+    descripcion: 'El año pasado aparecí en la portada de varias revistas.'
+    tests_id: Tests_2
+  Preguntas_66:
+    descripcion: 'Le gusto a muy poca gente.'
+    tests_id: Tests_2
+  Preguntas_67:
+    descripcion: 'Si alguien me criticase por cometer un error, rápidamente le reprocharía sus propios errores.'
+    tests_id: Tests_2
+  Preguntas_68:
+    descripcion: 'Algunas personas dicen que disfruto sufriendo.'
+    tests_id: Tests_2
+  Preguntas_69:
+    descripcion: 'Muchas veces expreso mi rabia y mal humor y luego me siento terriblemente culpable por ello.'
+    tests_id: Tests_2
+  Preguntas_70:
+    descripcion: 'Últimamente me siento nervioso y bajo una terrible tensión sin saber por qué.'
+    tests_id: Tests_2
+  Preguntas_71:
+    descripcion: 'Muy a menudo pierdo la capacidad para percibir sensaciones en partes de mi cuerpo.'
+    tests_id: Tests_2
+  Preguntas_72:
+    descripcion: 'Creo que hay personas que utilizan la telepatía para influir en mi vida.'
+    tests_id: Tests_2
+  Preguntas_73:
+    descripcion: 'Tomar las llamadas drogas “ilegales” puede ser indeseable y nocivo, pero reconozco que en el pasado las he necesitado.'
+    tests_id: Tests_2
+  Preguntas_74:
+    descripcion: 'Me siento continuamente muy cansado.'
+    tests_id: Tests_2
+  Preguntas_75:
+    descripcion: 'No puedo dormirme, y me levanto tan cansado como al acostarme.'
+    tests_id: Tests_2
+  Preguntas_76:
+    descripcion: 'He hecho impulsivamente muchas cosas estúpidas que han llegado a causarme grandes problemas.'
+    tests_id: Tests_2
+  Preguntas_77:
+    descripcion: 'Nunca perdono un insulto ni olvido una situación molesta que alguien me haya provocado.'
+    tests_id: Tests_2
+  Preguntas_78:
+    descripcion: 'Debemos respetar a nuestros mayores y no creer que sabemos más que ellos.'
+    tests_id: Tests_2
+  Preguntas_79:
+    descripcion: 'Me siento muy triste y deprimido la mayor parte del tiempo.'
+    tests_id: Tests_2
+  Preguntas_80:
+    descripcion: 'Soy la típica persona de la que los otros se aprovechan.'
+    tests_id: Tests_2
+  Preguntas_81:
+    descripcion: 'Siempre hago lo posible por complacer a los demás, incluso si ellos no me gustan.'
+    tests_id: Tests_2
+  Preguntas_82:
+    descripcion: 'Durante muchos años he pensado seriamente en suicidarme.'
+    tests_id: Tests_2
+  Preguntas_83:
+    descripcion: 'Me doy cuenta en seguida cuando la gente intenta crearme problemas.'
+    tests_id: Tests_2
+  Preguntas_84:
+    descripcion: 'Siempre he tenido menos interés en el sexo que la mayoría de la gente.'
+    tests_id: Tests_2
+  Preguntas_85:
+    descripcion: 'No comprendo por qué, pero parece que disfruto haciendo sufrir a los que quiero.'
+    tests_id: Tests_2
+  Preguntas_86:
+    descripcion: 'Hace mucho tiempo decidí que lo mejor es tener poco que ver con la gente.'
+    tests_id: Tests_2
+  Preguntas_87:
+    descripcion: 'Estoy dispuesto a luchar hasta el final antes de que nadie obstruya mis intereses y objetivos.'
+    tests_id: Tests_2
+  Preguntas_88:
+    descripcion: 'Desde niño siempre he tenido que tener cuidado con la gente que intentaba engañarme.'
+    tests_id: Tests_2
+  Preguntas_89:
+    descripcion: 'Cuando las cosas son aburridas me gusta provocar algo interesante.'
+    tests_id: Tests_2
+  Preguntas_90:
+    descripcion: 'Tengo un problema con el alcohol que nos ha creado dificultades a mí y a mi familia.'
+    tests_id: Tests_2
+  Preguntas_91:
+    descripcion: 'Si alguien necesita hacer algo que requiera mucha paciencia, debería contar conmigo.'
+    tests_id: Tests_2
+  Preguntas_92:
+    descripcion: 'Probablemente tengo las ideas más creativas de entre la gente que conozco.'
+    tests_id: Tests_2
+  Preguntas_93:
+    descripcion: 'No he visto ningún coche en los últimos diez años.'
+    tests_id: Tests_2
+  Preguntas_94:
+    descripcion: 'No veo nada incorrecto en utilizar a la gente para conseguir lo que quiero.'
+    tests_id: Tests_2
+  Preguntas_95:
+    descripcion: 'El que me castiguen nunca me ha frenado de conseguir lo que he querido'
+    tests_id: Tests_2
+  Preguntas_96:
+    descripcion: 'Muchas veces me siento muy alegre y animado sin ningún motivo.'
+    tests_id: Tests_2
+  Preguntas_97:
+    descripcion: 'Siendo adolescente, me fugué de casa por lo menos una vez.'
+    tests_id: Tests_2
+  Preguntas_98:
+    descripcion: 'Muy a menudo digo cosas sin pensarlas y luego me arrepiento de haberlas dicho.'
+    tests_id: Tests_2
+  Preguntas_99:
+    descripcion: 'En las últimas semanas me he sentido exhausto, agotado, sin un motivo especial.'
+    tests_id: Tests_2
+  Preguntas_100:
+    descripcion: 'Últimamente me he sentido muy culpable porque ya no sé hacer nada bien.'
+    tests_id: Tests_2
+  Preguntas_101:
+    descripcion: 'Algunas ideas me dan vueltas en la cabeza una y otra vez, y no consigo olvidarlas.'
+    tests_id: Tests_2
+  Preguntas_102:
+    descripcion: 'En los dos últimos años me he vuelto muy desanimado y triste sobre mi vida.'
+    tests_id: Tests_2
+  Preguntas_103:
+    descripcion: 'Mucha gente ha estado espiando mi vida privada durante años.'
+    tests_id: Tests_2
+  Preguntas_104:
+    descripcion: 'No sé por qué, pero a veces digo cosas crueles para hacer sufrir a los demás.'
+    tests_id: Tests_2
+  Preguntas_105:
+    descripcion: 'Odio o tengo miedo a la mayor parte de la gente.'
+    tests_id: Tests_2
+  Preguntas_106:
+    descripcion: 'Expreso mi opinión sin que me importe lo que otros puedan pensar.'
+    tests_id: Tests_2
+  Preguntas_107:
+    descripcion: 'Cuando alguien con autoridad insiste en que haga algo, es probable que lo eluda o bien que lo haga intencionadamente mal.'
+    tests_id: Tests_2
+  Preguntas_108:
+    descripcion: 'En el pasado el hábito de abusar de las drogas me ha hecho no acudir al trabajo.'
+    tests_id: Tests_2
+  Preguntas_109:
+    descripcion: 'Estoy siempre dispuesto a ceder ante los otros para evitar disputas'
+    tests_id: Tests_2
+  Preguntas_110:
+    descripcion: 'Con frecuencia estoy irritable y de mal humor.'
+    tests_id: Tests_2
+  Preguntas_111:
+    descripcion: 'Utimamente ya no tengo fuerzas para luchar no para defenderme.'
+    tests_id: Tests_2
+  Preguntas_112:
+    descripcion: 'Ultimamente tengo que pensar las cosas una y otra vez sin motivo.'
+    tests_id: Tests_2
+  Preguntas_113:
+    descripcion: 'Muchas veces pienso que no merezco las cosas buenas que me pasan.'
+    tests_id: Tests_2
+  Preguntas_114:
+    descripcion: 'Utilizo mi atractivo para conseguir la atención de los demás.'
+    tests_id: Tests_2
+  Preguntas_115:
+    descripcion: 'Cuando estoy sólo, a menudo noto la fuerte presencia de alguien cercano que no puede ser visto.'
+    tests_id: Tests_2
+  Preguntas_116:
+    descripcion: 'Me siento desorientado, sin objetivos y no sé hacia donde voy en la vida.'
+    tests_id: Tests_2
+  Preguntas_117:
+    descripcion: 'Últimamente he sudado mucho y me he sentido muy tenso.'
+    tests_id: Tests_2
+  Preguntas_118:
+    descripcion: 'A veces siento como si necesitase hacer algo para hacerme daño a mí mismo o a otros.'
+    tests_id: Tests_2
+  Preguntas_119:
+    descripcion: 'La ley me ha castigado injustamente por delitos que nunca he cometido.'
+    tests_id: Tests_2
+  Preguntas_120:
+    descripcion: 'Me he vuelto muy sobresaltado y nervioso en las últimas semanas.'
+    tests_id: Tests_2
+  Preguntas_121:
+    descripcion: 'Sigo teniendo extraños pensamientos de los que me gustaría poder librarme.'
+    tests_id: Tests_2
+  Preguntas_122:
+    descripcion: 'Tengo mucha dificultad para controlar el impulso de beber en exceso.'
+    tests_id: Tests_2
+  Preguntas_123:
+    descripcion: 'Mucha gente piensa que no sirvo para nada.'
+    tests_id: Tests_2
+  Preguntas_124:
+    descripcion: 'Puedo llegar a estar muy excitado sexualmente cuando discuto o peleo con alguien a quien amo.'
+    tests_id: Tests_2
+  Preguntas_125:
+    descripcion: 'Durante años he conseguido mantener en el mínimo mi consumo de alcohol.'
+    tests_id: Tests_2
+  Preguntas_126:
+    descripcion: 'Siempre pongo a prueba a la gente para saber hasta donde son de confianza.'
+    tests_id: Tests_2
+  Preguntas_127:
+    descripcion: 'Incluso cuando estoy despierto parece que no me doy cuenta de la gente que está cerca de mí.'
+    tests_id: Tests_2
+  Preguntas_128:
+    descripcion: 'Me resulta fácil hacer muchos amigos.'
+    tests_id: Tests_2
+  Preguntas_129:
+    descripcion: 'Me aseguro de que mi trabajo esté siempre bien planeado y organizado.'
+    tests_id: Tests_2
+  Preguntas_130:
+    descripcion: 'Con mucha frecuencia oigo cosas con tanta claridad que me molestan.'
+    tests_id: Tests_2
+  Preguntas_131:
+    descripcion: 'Mis estados de ánimo parecen cambiar de un día para otro.'
+    tests_id: Tests_2
+  Preguntas_132:
+    descripcion: 'No culpo de quien se aprovecha de alguien que se lo permite.'
+    tests_id: Tests_2
+  Preguntas_133:
+    descripcion: 'He cambiado de trabajo por lo menos más de tres veces en los últimos dos años.'
+    tests_id: Tests_2
+  Preguntas_134:
+    descripcion: 'Tengo muchas ideas muy avanzadas para los tiempo actuales.'
+    tests_id: Tests_2
+  Preguntas_135:
+    descripcion: 'Me siento muy triste y melancólico últimamente y parece que no puedo superarlo.'
+    tests_id: Tests_2
+  Preguntas_136:
+    descripcion: 'Creo que siempre es mejor buscar ayuda para hacer lo que hago.'
+    tests_id: Tests_2
+  Preguntas_137:
+    descripcion: 'Muchas veces me enfado con la gente que hace las cosas lentamente.'
+    tests_id: Tests_2
+  Preguntas_138:
+    descripcion: 'Realmente me molesta la gente que espera que haga lo que yo no quiero hacer.'
+    tests_id: Tests_2
+  Preguntas_139:
+    descripcion: 'En estos últimos años me he sentido tan culpable que puedo hacer algo terrible contra mí.'
+    tests_id: Tests_2
+  Preguntas_140:
+    descripcion: 'Cuando estoy en una fiesta o reunión social nunca me quedo al margen.'
+    tests_id: Tests_2
+  Preguntas_141:
+    descripcion: 'La gente me dice que soy una persona muy íntegra y moral.'
+    tests_id: Tests_2
+  Preguntas_142:
+    descripcion: 'Algunas veces me siento confuso y preocupado cuando la gente es amable conmigo.'
+    tests_id: Tests_2
+  Preguntas_143:
+    descripcion: 'El problema de usar drogas ilegales me ha causado discusiones con mi familia.'
+    tests_id: Tests_2
+  Preguntas_144:
+    descripcion: 'Me siento muy incómodo con personas del otro sexo.'
+    tests_id: Tests_2
+  Preguntas_145:
+    descripcion: 'Algunas personas de mi familia dicen que soy egoísta y que sólo pienso en mí mismo.'
+    tests_id: Tests_2
+  Preguntas_146:
+    descripcion: 'No me importa que la gente no se interese por mí.'
+    tests_id: Tests_2
+  Preguntas_147:
+    descripcion: 'Francamente, miento con mucha frecuencia para salir de dificultades o problemas.'
+    tests_id: Tests_2
+  Preguntas_148:
+    descripcion: 'a gente puede hacerme cambiar de ideas fácilmente, incluso cuando pienso que ya había tomado una decisión.'
+    tests_id: Tests_2
+  Preguntas_149:
+    descripcion: 'Algunos han tratado de dominarme, pero he tenido fuerza de voluntad para superarlo.'
+    tests_id: Tests_2
+  Preguntas_150:
+    descripcion: 'Mis padres me decían con frecuencia que no era bueno.'
+    tests_id: Tests_2
+  Preguntas_151:
+    descripcion: 'A menudo la gente se irrita conmigo cuando les doy órdenes.'
+    tests_id: Tests_2
+  Preguntas_152:
+    descripcion: 'Tengo mucho respeto por los que tienen autoridad sobre mí.'
+    tests_id: Tests_2
+  Preguntas_153:
+    descripcion: 'No tengo casi ningún lazo íntimo con los demás.'
+    tests_id: Tests_2
+  Preguntas_154:
+    descripcion: 'En el pasado la gente decía que yo estaba muy interesado y que me apasionaba por demasiadas cosas.'
+    tests_id: Tests_2
+  Preguntas_155:
+    descripcion: 'En el último año he cruzado el Atlántico más de treinta veces.'
+    tests_id: Tests_2
+  Preguntas_156:
+    descripcion: 'Estoy de acuerdo con el refrán:” Al que madruga Dios le ayuda”.'
+    tests_id: Tests_2
+  Preguntas_157:
+    descripcion: 'Me merezco el sufrimiento que he padecido a lo largo de mi vida.'
+    tests_id: Tests_2
+  Preguntas_158:
+    descripcion: 'Mis sentimientos hacia personas importantes en mi vida han oscilado entre amarlas y odiarlas.'
+    tests_id: Tests_2
+  Preguntas_159:
+    descripcion: 'Mis padres nunca se ponían de acuerdo entre ellos.'
+    tests_id: Tests_2
+  Preguntas_160:
+    descripcion: 'En alguna ocasión he bebido diez copas o más sin llegar a emborracharme.'
+    tests_id: Tests_2
+  Preguntas_161:
+    descripcion: 'Cuando estoy en una reunión social, en grupo casi siempre me siento tenso y controlado.'
+    tests_id: Tests_2
+  Preguntas_162:
+    descripcion: 'Tengo en alta estima las normas y reglas porque son una buena guía a seguir.'
+    tests_id: Tests_2
+  Preguntas_163:
+    descripcion: 'Desde que era niño he ido perdiendo contacto con la realidad.'
+    tests_id: Tests_2
+  Preguntas_164:
+    descripcion: 'Rara vez me emociono mucho con algo.'
+    tests_id: Tests_2
+  Preguntas_165:
+    descripcion: 'Habitualmente he sido un andariego inquieto, vagando de un sitio a otro sin tener idea de donde terminaría.'
+    tests_id: Tests_2
+  Preguntas_166:
+    descripcion: 'No soporto a las personas que llegan tarde a las citas.'
+    tests_id: Tests_2
+  Preguntas_167:
+    descripcion: 'Gente sin escrúpulos intenta con frecuencia aprovecharse de lo que yo he realizado o ideado.'
+    tests_id: Tests_2
+  Preguntas_168:
+    descripcion: 'Me irrita mucho que alguien me pida que haga las cosas a su modo en vez de al mío.'
+    tests_id: Tests_2
+  Preguntas_169:
+    descripcion: 'Tengo habilidad para tener éxito en casi todo lo que hago.'
+    tests_id: Tests_2
+  Preguntas_170:
+    descripcion: 'Últimamente me siento completamente destrozado.'
+    tests_id: Tests_2
+  Preguntas_171:
+    descripcion: 'A la gente que quiero, parece que la animo a que me hiera.'
+    tests_id: Tests_2
+  Preguntas_172:
+    descripcion: 'Nunca he tenido pelo ni en mi cabeza ni en mi cuerpo.'
+    tests_id: Tests_2
+  Preguntas_173:
+    descripcion: 'Cuando estoy con otras personas me gusta ser el centro de atención'
+    tests_id: Tests_2
+  Preguntas_174:
+    descripcion: 'Personas que en un principio he admirado grandemente, más tarde me han defraudado al conocer la realidad.'
+    tests_id: Tests_2
+  Preguntas_175:
+    descripcion: 'Soy el tipo de persona que puede abordar a cualquiera y echarle una bronca.'
+    tests_id: Tests_2
+  Preguntas_176:
+    descripcion: 'Prefiero estar con gente que me protegerá.'
+    tests_id: Tests_2
+  Preguntas_177:
+    descripcion: 'He tenido muchos períodos en mi vida que he estado tan animado y he derrochado tanta energía que luego me he sentido muy bajo de ánimo.'
+    tests_id: Tests_2
+  Preguntas_178:
+    descripcion: 'En el pasado he tenido dificultades para abandonar el abuso de drogas y de alcohol.'
+    tests_id: Tests_2
+  Preguntas_184:
+    descripcion: '¿Está su memoria mejor ahora que antes?  '
+    tests_id: Tests_3
+  Preguntas_185:
+    descripcion: '¿Podría tolerar usted vivir solo,  lejos de todo el mundo, como un ermitaño?'
+    tests_id: Tests_3
+  Preguntas_186:
+    descripcion: '¿Cómo llamaría a un criminal una persona que dijera que el cielo está abajo y que en invierno hace calor?'
+    tests_id: Tests_3
+  Preguntas_187:
+    descripcion: '¿Qué hace usted cuando se encuentra con gente desarreglada y desordenada?'
+    tests_id: Tests_3
+  Preguntas_188:
+    descripcion: '¿A veces trata usted de ser demasiado gentil con los meseros y las meseras?'
+    tests_id: Tests_3
+  Preguntas_190:
+    descripcion: '¿En una fiesta,  prefiere usted esperar que otra gente empiece a contar chistes y los cuentos?'
+    tests_id: Tests_3
+  Preguntas_191:
+    descripcion: '¿Cree usted que la gente debería observar las leyes morales más rígidamente'
+    tests_id: Tests_3
+  Preguntas_192:
+    descripcion: '¿A la mayoría de la gente que conoce,  le da verdadero gusto encontrarle en una fiesta?'
+    tests_id: Tests_3
+  Preguntas_193:
+    descripcion: '¿Preferiría usted hacer ejercicio con:'
+    tests_id: Tests_3
+  Preguntas_194:
+    descripcion: '¿Le causan risa las grandes diferencias entre lo que hace la gente y lo que dice que hace?'
+    tests_id: Tests_3
+  Preguntas_195:
+    descripcion: '¿Cuando niño sentía tristeza al salir de la casa para ir a la escuela cada día?'
+    tests_id: Tests_3
+  Preguntas_196:
+    descripcion: '¿Qué hace usted si se pasa por alto algún comentario suyo?'
+    tests_id: Tests_3
+  Preguntas_197:
+    descripcion: '¿Se ve usted en la necesidad de evitar la excitación porque le cansa?'
+    tests_id: Tests_3
+  Preguntas_198:
+    descripcion: '¿De   ser   posible,   qué   preferiría   jugar?'
+    tests_id: Tests_3
+  Preguntas_199:
+    descripcion: '¿Cuándo piensa hacer algo, lo trata de hacer completamente a solas, sin solicitar ayuda de otro?'
+    tests_id: Tests_3
+  Preguntas_200:
+    descripcion: '¿Se rehúsa usted a dedicar tiempo pensando "lo que podría haber sido"?'
+    tests_id: Tests_3
+  Preguntas_201:
+    descripcion: '¿Es usted persona que se deshace fácilmente de las preocupaciones y responsabilidades?'
+    tests_id: Tests_3
+  Preguntas_202:
+    descripcion: '¿En alguna ocasión, aunque haya sido por un momento, ha sentido usted resentimiento con sus padres?'
+    tests_id: Tests_3
+  Preguntas_203:
+    descripcion: '¿Tomaría usted un trabajo en el que tuviera que escuchar quejas de los empleados o de los clientes durante el día entero? '
+    tests_id: Tests_3
+  Preguntas_204:
+    descripcion: '¿Cuál   de   las   siguientes   palabras   es   lo   opuesto, de lo opuesto de inexacto?  '
+    tests_id: Tests_3
+  Preguntas_205:
+    descripcion: '¿Siempre cuenta usted con bastante energía cuando más lo necesita?'
+    tests_id: Tests_3
+  Preguntas_206:
+    descripcion: '¿Le daría vergüenza estar en una sala de baños turcos sin ropas?'
+    tests_id: Tests_3
+  Preguntas_207:
+    descripcion: '¿Busca usted las reuniones grandes, como las fiestas o los bailes? '
+    tests_id: Tests_3
+  Preguntas_208:
+    descripcion: '¿Cree usted  que:'
+    tests_id: Tests_3
+  Preguntas_209:
+    descripcion: '¿Al caminar  por  la  calle,   a  veces se disgusta por la manera como  le mira alguna gente? '
+    tests_id: Tests_3
+  Preguntas_210:
+    descripcion: '¿Qué preferiría ser usted:'
+    tests_id: Tests_3
+  Preguntas_211:
+    descripcion: '¿Si un vecino constantemente le hace trampas pequeñas, cree usted que  es mejor simplemente, acomodarse que desenmascararlo?'
+    tests_id: Tests_3
+  Preguntas_212:
+    descripcion: '¿Preferiría   ver:'
+    tests_id: Tests_3
+  Preguntas_213:
+    descripcion: '¿Cuando se le ha hecho responsable por algún proyecto, insiste usted  en  imponer  siempre  su  punto  de  vista o renunciar?'
+    tests_id: Tests_3
+  Preguntas_214:
+    descripcion: '¿Cuando en opinión suya alguien muestra mala educación:'
+    tests_id: Tests_3
+  Preguntas_215:
+    descripcion: '¿Cuando le presentan a alguien, prefiere usted:'
+    tests_id: Tests_3
+  Preguntas_216:
+    descripcion: '¿Cree usted que es cruel vacunar a los niños pequeños, y ¿ Cree usted que es cruel vacunar a los niños pequeños y que los padres deben tener derecho de aplazar la vacuna?'
+    tests_id: Tests_3
+  Preguntas_217:
+    descripcion: 'Es   mejor   confiar  en:'
+    tests_id: Tests_3
+  Preguntas_218:
+    descripcion: '¿Cuando tiene pendiente algún viaje,  siente usted apuros, tensión, o  ansiedad,   aunque  sabe  que  cuenta  con   bastante   tiempo?'
+    tests_id: Tests_3
+  Preguntas_219:
+    descripcion: '¿Le es difícil admitir que está equivocado?'
+    tests_id: Tests_3
+  Preguntas_220:
+    descripcion: 'En   una   fábrica,   ¿preferiría   usted  encargarse  de:'
+    tests_id: Tests_3
+  Preguntas_221:
+    descripcion: '¿Cuál   palabra   no   va   con   las   otras   dos?'
+    tests_id: Tests_3
+  Preguntas_222:
+    descripcion: '¿Es usted  de salud  variable,  que a veces le obliga a cambiar sus proyectos   inesperadamente?'
+    tests_id: Tests_3
+  Preguntas_223:
+    descripcion: '¿Le   gustaría   ser   atendido   por   sirvientes   personales?'
+    tests_id: Tests_3
+  Preguntas_224:
+    descripcion: '¿Se siente usted incómodo en compañía de otras personas, de manera que  nunca  presenta su mejor aspecto?'
+    tests_id: Tests_3
+  Preguntas_225:
+    descripcion: '¿Si le sobrara dinero de sus necesidades cotidianas, cree que debería donar gran parte del sobrante a programas de bienestar social?'
+    tests_id: Tests_3
+  Preguntas_226:
+    descripcion: '¿Hay ocasiones que se enfurece tanto, que le parece mejor no decir nada?'
+    tests_id: Tests_3
+  Preguntas_227:
+    descripcion: '¿Puede usted hacer trabajo físico duro sin fatigarse tanto, como la mayoría de las personas?'
+    tests_id: Tests_3
+  Preguntas_228:
+    descripcion: '¿Cree usted que aún cuando es para ellos riesgoso, la mayoría de los testigos dicen la verdad?'
+    tests_id: Tests_3
+  Preguntas_229:
+    descripcion: '¿Le ayuda ir y venir cuando piensa?'
+    tests_id: Tests_3
+  Preguntas_230:
+    descripcion: '¿Cree usted que nuestro país debería gastar más en:'
+    tests_id: Tests_3
+  Preguntas_231:
+    descripcion: '¿Preferiría   usted   pasarse   la   noche:'
+    tests_id: Tests_3
+  Preguntas_232:
+    descripcion: '¿Preferiría usted leer:'
+    tests_id: Tests_3
+  Preguntas_233:
+    descripcion: '¿Está usted verdaderamente seguro que hay más gente amable que gente tonta en el mundo?'
+    tests_id: Tests_3
+  Preguntas_234:
+    descripcion: '¿Hace  usted  más  proyectos  y  es  más  enérgico,  en cuanto a llevar a   cabo   su   trabajo,    que   otras   personas   que   han   tenido éxito?'
+    tests_id: Tests_3
+  Preguntas_235:
+    descripcion: '¿Hay  ocasiones   que   prefiere   no   ver   a  nadie?'
+    tests_id: Tests_3
+  Preguntas_236:
+    descripcion: '¿Cuando sabe que lo que hace es lo correcto, siempre le es fácil hacerlo?'
+    tests_id: Tests_3
+  Preguntas_237:
+    descripcion: '¿Preferiría:'
+    tests_id: Tests_3
+  Preguntas_238:
+    descripcion: 'El negro se compara con el gris como el dolor se compara con:'
+    tests_id: Tests_3
+  Preguntas_239:
+    descripcion: '¿Siempre duerme usted bien, sin hablar o caminar dormido?'
+    tests_id: Tests_3
+  Preguntas_240:
+    descripcion: 'Si le es necesario, puede usted decirle una mentira a un desconocido sin cambiar de expresión?'
+    tests_id: Tests_3
+  Preguntas_241:
+    descripcion: '¿Ha participado usted activamente en la organización de algún club, equipo o grupo social?'
+    tests_id: Tests_3
+  Preguntas_242:
+    descripcion: '¿A quien admira usted más?'
+    tests_id: Tests_3
+  Preguntas_243:
+    descripcion: '¿Cuándo presenta usted una queja justa, siempre consigue satisfacción?'
+    tests_id: Tests_3
+  Preguntas_244:
+    descripcion: '¿Las circunstancias desalentadoras lo dejan al borde de la lágrimas?'
+    tests_id: Tests_3
+  Preguntas_245:
+    descripcion: '¿Cree usted que muchos países extranjeros sienten más amistad con nosotros de lo que suponemos?'
+    tests_id: Tests_3
+  Preguntas_246:
+    descripcion: '¿Hay momentos del día en que le gusta estar solo con sus pensamientos, aparte de la gente?'
+    tests_id: Tests_3
+  Preguntas_247:
+    descripcion: '¿Hay veces que se exaspera a consecuencia de reglas y restricciones pequeñas, que en momentos más calmados los acepta?'
+    tests_id: Tests_3
+  Preguntas_248:
+    descripcion: '¿Cree usted que mucha de la educación moderna, dizque "progresista" no es tan buena como las reglas disciplinarias de sentido común de la escuela antigua?'
+    tests_id: Tests_3
+  Preguntas_249:
+    descripcion: '¿Aprendió usted más en la escuela:'
+    tests_id: Tests_3
+  Preguntas_250:
+    descripcion: '¿Trata usted de evitar mezclarse en responsabilidades sociales?'
+    tests_id: Tests_3
+  Preguntas_251:
+    descripcion: 'Cuando tiene usted mucho que hacer, y un problema se vuelve demasiado difícil, busca:'
+    tests_id: Tests_3
+  Preguntas_252:
+    descripcion: '¿Deriva usted ánimos fuertes como la ansiedad, la risa, la ira, etc.; de incidentes pequeños?'
+    tests_id: Tests_3
+  Preguntas_253:
+    descripcion: '¿Hay veces que su mente no funciona tan bien como en otras ocasiones?'
+    tests_id: Tests_3
+  Preguntas_254:
+    descripcion: '¿Complace usted a la gente cumpliendo con citas a horas que les conviene a ellos?'
+    tests_id: Tests_3
+  Preguntas_255:
+    descripcion: '¿Si la mamá de María es la hermana del papá de Federico. Qué parentesco tiene Federico con el papa de María?'
+    tests_id: Tests_3
+  Preguntas_256:
+    descripcion: '¿Se siente usted crítico del trabajo de mucha gente?'
+    tests_id: Tests_3
+  Preguntas_257:
+    descripcion: '¿Le molesta la gente que dice que puede hacer las cosas mejor que los demás?'
+    tests_id: Tests_3
+  Preguntas_258:
+    descripcion: '¿Le encantaría salir de viaje todo el tiempo?'
+    tests_id: Tests_3
+  Preguntas_259:
+    descripcion: '¿Ha llegado usted casi a desmayarse por algún dolor repentino o al ver la sangre?'
+    tests_id: Tests_3
+  Preguntas_260:
+    descripcion: '¿Dedica usted mucho tiempo a platicar sobre los problemas regionales con la gente?'
+    tests_id: Tests_3
+  Preguntas_261:
+    descripcion: 'Preferiría usted ser:'
+    tests_id: Tests_3
+  Preguntas_262:
+    descripcion: 'Es necesario a menudo dominarse para no meterse a tratar de resolver los problemas de otras personas?'
+    tests_id: Tests_3
+  Preguntas_263:
+    descripcion: '¿Cuántos de sus vecinos le aburren platicando?'
+    tests_id: Tests_3
+  Preguntas_264:
+    descripcion: 'Si hay propaganda escondida en lo que está leyendo usted, generalmente lo nota antes de que alguien se lo indique?'
+    tests_id: Tests_3
+  Preguntas_265:
+    descripcion: '¿Creé usted que cada cuento debe indicar alguna moraleja?'
+    tests_id: Tests_3
+  Preguntas_266:
+    descripcion: 'Causa más dificultad el hecho de que la gente:'
+    tests_id: Tests_3
+  Preguntas_267:
+    descripcion: '¿Hay veces que no se atreve a utilizar sus propias ideas porque le parecen poco prácticas?'
+    tests_id: Tests_3
+  Preguntas_268:
+    descripcion: '¿Parecen molestarse algunas personas estiradas al ver que usted se acerca?'
+    tests_id: Tests_3
+  Preguntas_269:
+    descripcion: '¿Puede usted confiar en que su memoria no le traiciona, aún en detalles pequeños?'
+    tests_id: Tests_3
+  Preguntas_270:
+    descripcion: '¿A veces es usted menos considerado de las demás personas que ellas de usted?'
+    tests_id: Tests_3
+  Preguntas_271:
+    descripcion: '¿Es usted lento para decir lo que siente, en comparación con la demás gente?'
+    tests_id: Tests_3
+  Preguntas_272:
+    descripcion: '¿El número correcto para continuar la serie de números 1, 2, 3, 6, 5,  es?'
+    tests_id: Tests_3
+  Preguntas_273:
+    descripcion: '¿Se impacienta usted hasta enfurecerse cuando alguien lo demora?'
+    tests_id: Tests_3
+  Preguntas_274:
+    descripcion: '¿Dice la gente que usted es una persona que tiende a salirse con la suya?'
+    tests_id: Tests_3
+  Preguntas_275:
+    descripcion: '¿Es usted lento para quejarse si no se le da el material adecuado para su trabajo?'
+    tests_id: Tests_3
+  Preguntas_276:
+    descripcion: 'En casa:'
+    tests_id: Tests_3
+  Preguntas_277:
+    descripcion: '¿Es usted tímido y cauteloso en hacer nuevas amistades?'
+    tests_id: Tests_3
+  Preguntas_278:
+    descripcion: '¿Cree usted que lo que se trata de expresar en la poesía, se podría expresar con la misma claridad en lenguaje común y corriente?'
+    tests_id: Tests_3
+  Preguntas_279:
+    descripcion: '¿Sospecha usted que las personas que aparentan amistad con usted a veces son desleales en sus ausencia?'
+    tests_id: Tests_3
+  Preguntas_280:
+    descripcion: '¿Dejan generalmente sin cambio su personalidad aún  las experiencias más dramáticas en el curso del año?'
+    tests_id: Tests_3
+  Preguntas_281:
+    descripcion: ' ¿Habla usted despacito o lentamente?'
+    tests_id: Tests_3
+  Preguntas_282:
+    descripcion: '¿Siente usted temor o disgusto casi incontrolable hacia lagunas cosas; por ejemplo, algún animal, algún lugar particular, etc.?'
+    tests_id: Tests_3
+  Preguntas_283:
+    descripcion: 'Dentro de un grupo, preferiría usted ser la persona que:'
+    tests_id: Tests_3
+  Preguntas_284:
+    descripcion: 'Para saber cómo votar sobre alguna cuestión social, leería usted:'
+    tests_id: Tests_3
+  Preguntas_285:
+    descripcion: '¿Tiene usted sueños de noche que son algo fantásticos?'
+    tests_id: Tests_3
+  Preguntas_286:
+    descripcion: '¿Si se le deja solo en la casa por algún tiempo, tiende a ponerse ansioso?'
+    tests_id: Tests_3
 Pruebas:
   Pruebas_1:
     tests_id: Tests_1
     evaluaciones_id: Evaluaciones_1
     estadopruebas_id: Estadopruebas_1
+    perfil_id:  Perfil_1
   Pruebas_2:
     tests_id: Tests_1
     evaluaciones_id: Evaluaciones_1
     estadopruebas_id: Estadopruebas_1
+    perfil_id:  Perfil_1
 Valoresdeverdad:
   Valoresdeverdad_1:
     nombre: Correcta
@@ -83,10 +1084,1542 @@ Respuestas:
     preguntas_id: Preguntas_1
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_5
+    descripcion: ''
   Respuestas_2:
     preguntas_id: Preguntas_2
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_6
+    descripcion: ''
+  Respuestas_3:
+    preguntas_id: Preguntas_184
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_4:
+    preguntas_id: Preguntas_184
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_5:
+    preguntas_id: Preguntas_184
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_6:
+    preguntas_id: Preguntas_185
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_7:
+    preguntas_id: Preguntas_185
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Ocasionalmente
+  Respuestas_8:
+    preguntas_id: Preguntas_185
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_9:
+    preguntas_id: Preguntas_186
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: 'Un gangster'
+  Respuestas_10:
+    preguntas_id: Preguntas_186
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'Un santo'
+  Respuestas_11:
+    preguntas_id: Preguntas_186
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: 'Una nube'
+  Respuestas_12:
+    preguntas_id: Preguntas_187
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: 'La acepta'
+  Respuestas_13:
+    preguntas_id: Preguntas_187
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_14:
+    preguntas_id: Preguntas_187
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: 'Se siente disgustado y molesto'
+  Respuestas_15:
+    preguntas_id: Preguntas_188
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_16:
+    preguntas_id: Preguntas_188
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Ocasionalmente
+  Respuestas_17:
+    preguntas_id: Preguntas_188
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_18:
+    preguntas_id: Preguntas_190
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_19:
+    preguntas_id: Preguntas_190
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_20:
+    preguntas_id: Preguntas_190
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_21:
+    preguntas_id: Preguntas_191
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_22:
+    preguntas_id: Preguntas_191
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_23:
+    preguntas_id: Preguntas_191
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_24:
+    preguntas_id: Preguntas_192
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_25:
+    preguntas_id: Preguntas_192
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_26:
+    preguntas_id: Preguntas_192
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_27:
+    preguntas_id: Preguntas_193
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: 'Ping pong y Baile'
+  Respuestas_28:
+    preguntas_id: Preguntas_193
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_29:
+    preguntas_id: Preguntas_193
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: 'El futbol y boxeo?'
+  Respuestas_30:
+    preguntas_id: Preguntas_194
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_31:
+    preguntas_id: Preguntas_194
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Ocasionalmente
+  Respuestas_32:
+    preguntas_id: Preguntas_194
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_33:
+    preguntas_id: Preguntas_195
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_34:
+    preguntas_id: Preguntas_195
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Ocasionalmente
+  Respuestas_35:
+    preguntas_id: Preguntas_195
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_36:
+    preguntas_id: Preguntas_196
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: 'Lo olvida'
+  Respuestas_37:
+    preguntas_id: Preguntas_196
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_38:
+    preguntas_id: Preguntas_196
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: 'Lo repite hasta la gente comprenda'
+  Respuestas_39:
+    preguntas_id: Preguntas_197
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_40:
+    preguntas_id: Preguntas_197
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Ocasionalmente
+  Respuestas_41:
+    preguntas_id: Preguntas_197
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_42:
+    preguntas_id: Preguntas_198
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Ajedrez
+  Respuestas_43:
+    preguntas_id: Preguntas_198
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_44:
+    preguntas_id: Preguntas_198
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: 'Ludo o Parchis'
+  Respuestas_45:
+    preguntas_id: Preguntas_199
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_46:
+    preguntas_id: Preguntas_199
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Ocacionalmente
+  Respuestas_47:
+    preguntas_id: Preguntas_199
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_48:
+    preguntas_id: Preguntas_200
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_49:
+    preguntas_id: Preguntas_200
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_50:
+    preguntas_id: Preguntas_200
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_51:
+    preguntas_id: Preguntas_201
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_52:
+    preguntas_id: Preguntas_201
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_53:
+    preguntas_id: Preguntas_201
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_54:
+    preguntas_id: Preguntas_202
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_55:
+    preguntas_id: Preguntas_202
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_56:
+    preguntas_id: Preguntas_202
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_57:
+    preguntas_id: Preguntas_203
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_58:
+    preguntas_id: Preguntas_203
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_59:
+    preguntas_id: Preguntas_203
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_60:
+    preguntas_id: Preguntas_204
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Casual
+  Respuestas_61:
+    preguntas_id: Preguntas_204
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Preciso
+  Respuestas_62:
+    preguntas_id: Preguntas_204
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: Aproximado
+  Respuestas_63:
+    preguntas_id: Preguntas_205
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_64:
+    preguntas_id: Preguntas_205
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_65:
+    preguntas_id: Preguntas_205
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_66:
+    preguntas_id: Preguntas_206
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_67:
+    preguntas_id: Preguntas_206
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_68:
+    preguntas_id: Preguntas_206
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_69:
+    preguntas_id: Preguntas_207
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_70:
+    preguntas_id: Preguntas_207
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_71:
+    preguntas_id: Preguntas_207
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_72:
+    preguntas_id: Preguntas_208
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: 'Hay trabajos que no requieren el mismo cuidado que otros'
+  Respuestas_73:
+    preguntas_id: Preguntas_208
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_74:
+    preguntas_id: Preguntas_208
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: 'Cualquier trabajo si es que se va a ejecutar debe hacerse bien?'
+  Respuestas_75:
+    preguntas_id: Preguntas_209
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_76:
+    preguntas_id: Preguntas_209
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_77:
+    preguntas_id: Preguntas_209
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_78:
+    preguntas_id: Preguntas_210
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Sacerdote
+  Respuestas_79:
+    preguntas_id: Preguntas_210
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_80:
+    preguntas_id: Preguntas_210
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: Coronel
+  Respuestas_81:
+    preguntas_id: Preguntas_211
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_82:
+    preguntas_id: Preguntas_211
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Ocasionalmente
+  Respuestas_83:
+    preguntas_id: Preguntas_211
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_84:
+    preguntas_id: Preguntas_212
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: 'Una buena pelicula sobre la epoca brava de la colonizacion'
+  Respuestas_85:
+    preguntas_id: Preguntas_212
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_86:
+    preguntas_id: Preguntas_212
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: 'Una farsa ingeniosa sobre la sociedad del futuro?'
+  Respuestas_87:
+    preguntas_id: Preguntas_213
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_88:
+    preguntas_id: Preguntas_213
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_89:
+    preguntas_id: Preguntas_213
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_90:
+    preguntas_id: Preguntas_214
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: 'No dice usted nada por no queres parecer fastidioso'
+  Respuestas_91:
+    preguntas_id: Preguntas_214
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_92:
+    preguntas_id: Preguntas_214
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: 'Le hace ver claramente a esta persona lo que piensa?'
+  Respuestas_93:
+    preguntas_id: Preguntas_215
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: 'Tener una discusion placentera sobre la politica y puntos de vista sociales'
+  Respuestas_94:
+    preguntas_id: Preguntas_215
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_95:
+    preguntas_id: Preguntas_215
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: 'Que le cuente unos chistes'
+  Respuestas_96:
+    preguntas_id: Preguntas_216
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_97:
+    preguntas_id: Preguntas_216
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_98:
+    preguntas_id: Preguntas_216
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_99:
+    preguntas_id: Preguntas_217
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: 'La suerte de la vida'
+  Respuestas_100:
+    preguntas_id: Preguntas_217
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_101:
+    preguntas_id: Preguntas_217
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: 'La capacidad personal'
+  Respuestas_102:
+    preguntas_id: Preguntas_218
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: 'Si '
+  Respuestas_103:
+    preguntas_id: Preguntas_218
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_104:
+    preguntas_id: Preguntas_218
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_105:
+    preguntas_id: Preguntas_219
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_106:
+    preguntas_id: Preguntas_219
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_107:
+    preguntas_id: Preguntas_219
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_108:
+    preguntas_id: Preguntas_220
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Maquinas
+  Respuestas_109:
+    preguntas_id: Preguntas_220
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_110:
+    preguntas_id: Preguntas_220
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: 'Entrevistar y contratar a el nuevo personal?'
+  Respuestas_111:
+    preguntas_id: Preguntas_221
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Gato
+  Respuestas_112:
+    preguntas_id: Preguntas_221
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Atras
+  Respuestas_113:
+    preguntas_id: Preguntas_221
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: Sol
+  Respuestas_114:
+    preguntas_id: Preguntas_222
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_115:
+    preguntas_id: Preguntas_222
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Ocasionalmente
+  Respuestas_116:
+    preguntas_id: Preguntas_222
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_117:
+    preguntas_id: Preguntas_223
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_118:
+    preguntas_id: Preguntas_223
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_119:
+    preguntas_id: Preguntas_223
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_120:
+    preguntas_id: Preguntas_224
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_121:
+    preguntas_id: Preguntas_224
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Ocasionalmente
+  Respuestas_122:
+    preguntas_id: Preguntas_224
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_123:
+    preguntas_id: Preguntas_225
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: ' Si'
+  Respuestas_124:
+    preguntas_id: Preguntas_225
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_125:
+    preguntas_id: Preguntas_225
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_126:
+    preguntas_id: Preguntas_226
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_127:
+    preguntas_id: Preguntas_226
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_128:
+    preguntas_id: Preguntas_226
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_129:
+    preguntas_id: Preguntas_227
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_130:
+    preguntas_id: Preguntas_227
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_131:
+    preguntas_id: Preguntas_227
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_132:
+    preguntas_id: Preguntas_228
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_133:
+    preguntas_id: Preguntas_228
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_134:
+    preguntas_id: Preguntas_228
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_135:
+    preguntas_id: Preguntas_229
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_136:
+    preguntas_id: Preguntas_229
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_137:
+    preguntas_id: Preguntas_229
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_138:
+    preguntas_id: Preguntas_230
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Armamento
+  Respuestas_139:
+    preguntas_id: Preguntas_230
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_140:
+    preguntas_id: Preguntas_230
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: Educacion
+  Respuestas_141:
+    preguntas_id: Preguntas_231
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: 'En un juego reñido de naipes'
+  Respuestas_142:
+    preguntas_id: Preguntas_231
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_143:
+    preguntas_id: Preguntas_231
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: 'Mirando fotografias'
+  Respuestas_144:
+    preguntas_id: Preguntas_232
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: 'Una buena novela historica'
+  Respuestas_145:
+    preguntas_id: Preguntas_232
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_146:
+    preguntas_id: Preguntas_232
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: 'Un ensayo por algun cientifico sobre la manera de aprovechar los recursos del mundo?'
+  Respuestas_147:
+    preguntas_id: Preguntas_233
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: 'Si '
+  Respuestas_148:
+    preguntas_id: Preguntas_233
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_149:
+    preguntas_id: Preguntas_233
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_150:
+    preguntas_id: Preguntas_234
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_151:
+    preguntas_id: Preguntas_234
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Ocasionalmente
+  Respuestas_152:
+    preguntas_id: Preguntas_234
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_153:
+    preguntas_id: Preguntas_235
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: 'Muy rara vez'
+  Respuestas_154:
+    preguntas_id: Preguntas_235
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_155:
+    preguntas_id: Preguntas_235
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: 'Muy a menudo'
+  Respuestas_156:
+    preguntas_id: Preguntas_236
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_157:
+    preguntas_id: Preguntas_236
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_158:
+    preguntas_id: Preguntas_236
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_159:
+    preguntas_id: Preguntas_237
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: 'Trabajar en una oficina de negocios organizando a la gente'
+  Respuestas_160:
+    preguntas_id: Preguntas_237
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_161:
+    preguntas_id: Preguntas_237
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: 'Ser arquitecto proyectando edificios?'
+  Respuestas_162:
+    preguntas_id: Preguntas_238
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: 'La herida'
+  Respuestas_163:
+    preguntas_id: Preguntas_238
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'La enfermedad'
+  Respuestas_164:
+    preguntas_id: Preguntas_238
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: 'La molestia'
+  Respuestas_165:
+    preguntas_id: Preguntas_239
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_166:
+    preguntas_id: Preguntas_239
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_167:
+    preguntas_id: Preguntas_239
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_168:
+    preguntas_id: Preguntas_240
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_169:
+    preguntas_id: Preguntas_240
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Ocasionalmente
+  Respuestas_170:
+    preguntas_id: Preguntas_240
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_171:
+    preguntas_id: Preguntas_241
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_172:
+    preguntas_id: Preguntas_241
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Ocasionalmente
+  Respuestas_173:
+    preguntas_id: Preguntas_241
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_174:
+    preguntas_id: Preguntas_242
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: 'Una persona lista pero poco confiable'
+  Respuestas_175:
+    preguntas_id: Preguntas_242
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_176:
+    preguntas_id: Preguntas_242
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: 'Una persona media con la voluntad de resistir las tentaciones'
+  Respuestas_177:
+    preguntas_id: Preguntas_243
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_178:
+    preguntas_id: Preguntas_243
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_179:
+    preguntas_id: Preguntas_243
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_180:
+    preguntas_id: Preguntas_244
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_181:
+    preguntas_id: Preguntas_244
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Ocasionalmente
+  Respuestas_182:
+    preguntas_id: Preguntas_244
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_183:
+    preguntas_id: Preguntas_245
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_184:
+    preguntas_id: Preguntas_245
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_185:
+    preguntas_id: Preguntas_245
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_186:
+    preguntas_id: Preguntas_246
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_187:
+    preguntas_id: Preguntas_246
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_188:
+    preguntas_id: Preguntas_246
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_189:
+    preguntas_id: Preguntas_247
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_190:
+    preguntas_id: Preguntas_247
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_191:
+    preguntas_id: Preguntas_247
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_192:
+    preguntas_id: Preguntas_248
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_193:
+    preguntas_id: Preguntas_248
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_194:
+    preguntas_id: Preguntas_248
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_195:
+    preguntas_id: Preguntas_249
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: 'Asistiendo a las clases'
+  Respuestas_196:
+    preguntas_id: Preguntas_249
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_197:
+    preguntas_id: Preguntas_249
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: 'Leyendo texttos?'
+  Respuestas_198:
+    preguntas_id: Preguntas_250
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_199:
+    preguntas_id: Preguntas_250
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_200:
+    preguntas_id: Preguntas_250
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_201:
+    preguntas_id: Preguntas_251
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: 'Un problema distinto'
+  Respuestas_202:
+    preguntas_id: Preguntas_251
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_203:
+    preguntas_id: Preguntas_251
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: 'Otra manera de resolver el mismo problema'
+  Respuestas_204:
+    preguntas_id: Preguntas_252
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_205:
+    preguntas_id: Preguntas_252
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Ocasionalmente
+  Respuestas_206:
+    preguntas_id: Preguntas_252
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_207:
+    preguntas_id: Preguntas_253
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_208:
+    preguntas_id: Preguntas_253
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_209:
+    preguntas_id: Preguntas_253
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_210:
+    preguntas_id: Preguntas_254
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_211:
+    preguntas_id: Preguntas_254
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_212:
+    preguntas_id: Preguntas_254
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_213:
+    preguntas_id: Preguntas_255
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Primo
+  Respuestas_214:
+    preguntas_id: Preguntas_255
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Sobrino
+  Respuestas_215:
+    preguntas_id: Preguntas_255
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: Tio
+  Respuestas_216:
+    preguntas_id: Preguntas_256
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_217:
+    preguntas_id: Preguntas_256
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Ocasionalmente
+  Respuestas_218:
+    preguntas_id: Preguntas_256
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_219:
+    preguntas_id: Preguntas_257
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_220:
+    preguntas_id: Preguntas_257
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Ocacionalmente
+  Respuestas_221:
+    preguntas_id: Preguntas_257
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_222:
+    preguntas_id: Preguntas_258
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_223:
+    preguntas_id: Preguntas_258
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Ocacionalmente
+  Respuestas_224:
+    preguntas_id: Preguntas_258
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_225:
+    preguntas_id: Preguntas_259
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_226:
+    preguntas_id: Preguntas_259
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_227:
+    preguntas_id: Preguntas_259
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_228:
+    preguntas_id: Preguntas_260
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_229:
+    preguntas_id: Preguntas_260
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_230:
+    preguntas_id: Preguntas_260
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_231:
+    preguntas_id: Preguntas_261
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: 'Ingeniero o Arquitecto'
+  Respuestas_232:
+    preguntas_id: Preguntas_261
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_233:
+    preguntas_id: Preguntas_261
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: 'Profesor de teorias sociales'
+  Respuestas_234:
+    preguntas_id: Preguntas_262
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_235:
+    preguntas_id: Preguntas_262
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_236:
+    preguntas_id: Preguntas_262
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_237:
+    preguntas_id: Preguntas_263
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: 'La mayoria'
+  Respuestas_238:
+    preguntas_id: Preguntas_263
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_239:
+    preguntas_id: Preguntas_263
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: 'Casi ninguno'
+  Respuestas_240:
+    preguntas_id: Preguntas_264
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_241:
+    preguntas_id: Preguntas_264
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Ocasionalmente
+  Respuestas_242:
+    preguntas_id: Preguntas_264
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_243:
+    preguntas_id: Preguntas_265
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_244:
+    preguntas_id: Preguntas_265
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_245:
+    preguntas_id: Preguntas_265
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_246:
+    preguntas_id: Preguntas_266
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: 'Cambia y modifica metodos ya bien comprobados'
+  Respuestas_247:
+    preguntas_id: Preguntas_266
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_248:
+    preguntas_id: Preguntas_266
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: 'Rechaza los metodos nuevos y modernizados'
+  Respuestas_249:
+    preguntas_id: Preguntas_267
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_250:
+    preguntas_id: Preguntas_267
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_251:
+    preguntas_id: Preguntas_267
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_252:
+    preguntas_id: Preguntas_268
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_253:
+    preguntas_id: Preguntas_268
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_254:
+    preguntas_id: Preguntas_268
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_255:
+    preguntas_id: Preguntas_269
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_256:
+    preguntas_id: Preguntas_269
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_257:
+    preguntas_id: Preguntas_269
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_258:
+    preguntas_id: Preguntas_270
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_259:
+    preguntas_id: Preguntas_270
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Ocasionalmente
+  Respuestas_260:
+    preguntas_id: Preguntas_270
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_261:
+    preguntas_id: Preguntas_271
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_262:
+    preguntas_id: Preguntas_271
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_263:
+    preguntas_id: Preguntas_271
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_264:
+    preguntas_id: Preguntas_272
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: '5'
+  Respuestas_265:
+    preguntas_id: Preguntas_272
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: '7'
+  Respuestas_266:
+    preguntas_id: Preguntas_272
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: '10'
+  Respuestas_267:
+    preguntas_id: Preguntas_273
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_268:
+    preguntas_id: Preguntas_273
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Ocasionalmente
+  Respuestas_269:
+    preguntas_id: Preguntas_273
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_270:
+    preguntas_id: Preguntas_274
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_271:
+    preguntas_id: Preguntas_274
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Ocasionalmente
+  Respuestas_272:
+    preguntas_id: Preguntas_274
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: NO
+  Respuestas_273:
+    preguntas_id: Preguntas_275
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_274:
+    preguntas_id: Preguntas_275
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_275:
+    preguntas_id: Preguntas_275
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_276:
+    preguntas_id: Preguntas_276
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: 'Utiliza su tiempo en platicar y descansar'
+  Respuestas_277:
+    preguntas_id: Preguntas_276
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_278:
+    preguntas_id: Preguntas_276
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: 'Piensa en ocupar si tiempo con trabajos especiales'
+  Respuestas_279:
+    preguntas_id: Preguntas_277
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_280:
+    preguntas_id: Preguntas_277
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Ocasionalmente
+  Respuestas_281:
+    preguntas_id: Preguntas_277
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_282:
+    preguntas_id: Preguntas_278
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_283:
+    preguntas_id: Preguntas_278
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_284:
+    preguntas_id: Preguntas_278
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_285:
+    preguntas_id: Preguntas_279
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_286:
+    preguntas_id: Preguntas_279
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Ocasionalmente
+  Respuestas_287:
+    preguntas_id: Preguntas_279
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_288:
+    preguntas_id: Preguntas_280
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: 'Si '
+  Respuestas_289:
+    preguntas_id: Preguntas_280
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Ocasionalmente
+  Respuestas_290:
+    preguntas_id: Preguntas_280
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_291:
+    preguntas_id: Preguntas_281
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_292:
+    preguntas_id: Preguntas_281
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_293:
+    preguntas_id: Preguntas_281
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_294:
+    preguntas_id: Preguntas_282
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_295:
+    preguntas_id: Preguntas_282
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_296:
+    preguntas_id: Preguntas_282
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_297:
+    preguntas_id: Preguntas_283
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: 'Trabaja sobre desarrollos tecnicos'
+  Respuestas_298:
+    preguntas_id: Preguntas_283
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_299:
+    preguntas_id: Preguntas_283
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: 'Se encarga de los registros y vigilancia de los reglamentos'
+  Respuestas_300:
+    preguntas_id: Preguntas_284
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: 'Una novela inteligente que ha recibido buenos comentarios sobre el tema'
+  Respuestas_301:
+    preguntas_id: Preguntas_284
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Intermedio
+  Respuestas_302:
+    preguntas_id: Preguntas_284
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: 'Algun texto que enumera estadisticas y otros datos'
+  Respuestas_303:
+    preguntas_id: Preguntas_285
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_304:
+    preguntas_id: Preguntas_285
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: Ocasionalmente
+  Respuestas_305:
+    preguntas_id: Preguntas_285
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
+  Respuestas_306:
+    preguntas_id: Preguntas_286
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_53
+    descripcion: Si
+  Respuestas_307:
+    preguntas_id: Preguntas_286
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_54
+    descripcion: 'A veces'
+  Respuestas_308:
+    preguntas_id: Preguntas_286
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: No
 Resultadosparciales:
   Resultadosparciales_1:
     opciones_id: Opciones_7
@@ -108,6 +2641,31 @@ Resultadosparciales:
     preguntas_id: Preguntas_2
     aspirantes_id: Aspirantes_1
     pruebas_id: Pruebas_2
+  Resultadosparciales_5:
+    opciones_id: Opciones_5
+    preguntas_id: Preguntas_1
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_1
+  Resultadosparciales_6:
+    opciones_id: Opciones_5
+    preguntas_id: Preguntas_1
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_1
+  Resultadosparciales_7:
+    opciones_id: Opciones_26
+    preguntas_id: Preguntas_2
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_1
+  Resultadosparciales_8:
+    opciones_id: Opciones_5
+    preguntas_id: Preguntas_1
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_2
+  Resultadosparciales_9:
+    opciones_id: Opciones_33
+    preguntas_id: Preguntas_2
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_2
 Resultados:
   Resultados_1:
     puntaje: '0'
@@ -115,5 +2673,13 @@ Resultados:
     aspirantes_id: Aspirantes_1
   Resultados_2:
     puntaje: '0'
+    pruebas_id: Pruebas_2
+    aspirantes_id: Aspirantes_1
+  Resultados_3:
+    puntaje: '0.35'
+    pruebas_id: Pruebas_1
+    aspirantes_id: Aspirantes_1
+  Resultados_4:
+    puntaje: '0.35'
     pruebas_id: Pruebas_2
     aspirantes_id: Aspirantes_1

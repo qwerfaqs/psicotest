@@ -15,16 +15,16 @@ abstract class BasePreguntasForm extends BaseFormPropel
   {
     $this->setWidgets(array(
       'id'          => new sfWidgetFormInputHidden(),
+      'tests_id'    => new sfWidgetFormPropelChoice(array('model' => 'Tests', 'add_empty' => false)),
       'imagen'      => new sfWidgetFormInputText(),
       'descripcion' => new sfWidgetFormTextarea(),
-      'tests_id'    => new sfWidgetFormPropelChoice(array('model' => 'Tests', 'add_empty' => false)),
     ));
 
     $this->setValidators(array(
       'id'          => new sfValidatorChoice(array('choices' => array($this->getObject()->getId()), 'empty_value' => $this->getObject()->getId(), 'required' => false)),
+      'tests_id'    => new sfValidatorPropelChoice(array('model' => 'Tests', 'column' => 'id')),
       'imagen'      => new sfValidatorString(array('max_length' => 100, 'required' => false)),
       'descripcion' => new sfValidatorString(array('required' => false)),
-      'tests_id'    => new sfValidatorPropelChoice(array('model' => 'Tests', 'column' => 'id')),
     ));
 
     $this->widgetSchema->setNameFormat('preguntas[%s]');
