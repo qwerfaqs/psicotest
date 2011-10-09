@@ -17,8 +17,12 @@
       <td><?php echo $Evaluacion->getNombre() ?></td>
     </tr>
     <tr>
-      <th>Estadosevaluaciones:</th>
-      <td><?php echo $Evaluacion->getEstadosevaluacionesId() ?></td>
+      <th>Estado:</th>
+      <td><?php echo $Evaluacion->getEstadosevaluaciones()->getNombre() ?></td>
+    </tr>
+    <tr>
+      <th>Perfil:</th>
+      <td><?php /* $Evaluacion = new Evaluaciones(); */ echo $Evaluacion->getPerfil()->getNombre()?></td>
     </tr>
   </tbody>
 </table>
@@ -29,3 +33,4 @@
 &nbsp;
 <a href="<?php echo url_for('evaluaciones/index') ?>">Listado</a>
 <a href="<?php echo url_for('evaluaciones/testList?id='.$Evaluacion->getId()) ?>">Ver Pruebas Asignadas</a>
+<a href="<?php echo url_for('evaluaciones/aspirantesList?id='.$Evaluacion->getId()) ?>">Ver Aspirantes Asignados</a>

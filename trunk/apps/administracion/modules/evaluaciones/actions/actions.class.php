@@ -74,7 +74,32 @@ class evaluacionesActions extends sfActions {
 
     public function executeAspirantesList(sfWebRequest $request) {
         $this->forward404Unless($Evaluacion = EvaluacionesPeer::retrieveByPk($request->getParameter('id')), sprintf('Object Evaluacion does not exist (%s).', $request->getParameter('id')));
-        
+        $criteria = new Criteria();
+        $criteria->add(AsistenciasPeer::EVALUACIONES_ID, $Evaluacion->getId());
+        $this->Evaluacion = $Evaluacion;
+        $this->Asistencias = AsistenciasPeer::doSelectJoinAspirantes($criteria);
+        $a = new Asistencias();
+        $a->getAspirantes();
+    }
+    public function executeAspirantesAgregando(sfWebRequest $request) {
+        $this->forward404Unless($Evaluacion = EvaluacionesPeer::retrieveByPk($request->getParameter('id')), sprintf('Object Evaluacion does not exist (%s).', $request->getParameter('id')));
+        $criteria = new Criteria();
+        $this->Aspirantes = AspirantesPeer::doSelect($criteria);
+        $this->Evaluacion = $Evaluacion;
+    }
+    public function executeQuitarAspirante(sfWebRequest $request) {
+        $this->forward404Unless($Asistencia = AsistenciasPeer::retrieveByPk($request->getParameter('asistencias_id')), sprintf('Object Asistencias does not exist (%s).', $request->getParameter('asistencias_id')));
+        $Asistencia->delete();
+        $this->redirect(url_for('evaluaciones/aspirantesList?id=' . $request->getParameter('id')));
+    }
+    public function executeAgregarAspirante(sfWebRequest $request) {
+        $this->forward404Unless($Evaluacion = EvaluacionesPeer::retrieveByPk($request->getParameter('id')), sprintf('Object Evaluacion does not exist (%s).', $request->getParameter('id')));
+        $this->forward404Unless($Aspirante = AspirantesPeer::retrieveByPk($request->getParameter('aspirantes_id')), sprintf('Object Aspirante does not exist (%s).', $request->getParameter('aspirantes_id')));
+        $Asistencia = new Asistencias();
+        $Asistencia->setEvaluaciones($Evaluacion);
+        $Asistencia->setAspirantes($Aspirante);
+        $Asistencia->save();
+        $this->redirect(url_for('evaluaciones/aspirantesAgregando?id=' . $Evaluacion->getId()));
     }
     protected function processForm(sfWebRequest $request, sfForm $form) {
         $form->bind($request->getParameter($form->getName()), $request->getFiles($form->getName()));
