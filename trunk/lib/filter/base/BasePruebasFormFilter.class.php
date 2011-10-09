@@ -15,12 +15,14 @@ abstract class BasePruebasFormFilter extends BaseFormFilterPropel
       'tests_id'         => new sfWidgetFormPropelChoice(array('model' => 'Tests', 'add_empty' => true)),
       'evaluaciones_id'  => new sfWidgetFormPropelChoice(array('model' => 'Evaluaciones', 'add_empty' => true)),
       'estadopruebas_id' => new sfWidgetFormPropelChoice(array('model' => 'Estadopruebas', 'add_empty' => true)),
+      'perfil_id'        => new sfWidgetFormPropelChoice(array('model' => 'Perfil', 'add_empty' => true)),
     ));
 
     $this->setValidators(array(
       'tests_id'         => new sfValidatorPropelChoice(array('required' => false, 'model' => 'Tests', 'column' => 'id')),
       'evaluaciones_id'  => new sfValidatorPropelChoice(array('required' => false, 'model' => 'Evaluaciones', 'column' => 'id')),
       'estadopruebas_id' => new sfValidatorPropelChoice(array('required' => false, 'model' => 'Estadopruebas', 'column' => 'id')),
+      'perfil_id'        => new sfValidatorPropelChoice(array('required' => false, 'model' => 'Perfil', 'column' => 'id')),
     ));
 
     $this->widgetSchema->setNameFormat('pruebas_filters[%s]');
@@ -42,6 +44,7 @@ abstract class BasePruebasFormFilter extends BaseFormFilterPropel
       'tests_id'         => 'ForeignKey',
       'evaluaciones_id'  => 'ForeignKey',
       'estadopruebas_id' => 'ForeignKey',
+      'perfil_id'        => 'ForeignKey',
     );
   }
 }

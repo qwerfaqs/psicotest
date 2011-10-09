@@ -20,11 +20,8 @@ class evaluacionesActions extends sfActions {
     }
     public function executeCreate(sfWebRequest $request) {
         $this->forward404Unless($request->isMethod(sfRequest::POST));
-
         $this->form = new EvaluacionesForm();
-
         $this->processForm($request, $this->form);
-
         $this->setTemplate('new');
     }
     public function executeEdit(sfWebRequest $request) {
@@ -35,9 +32,7 @@ class evaluacionesActions extends sfActions {
         $this->forward404Unless($request->isMethod(sfRequest::POST) || $request->isMethod(sfRequest::PUT));
         $this->forward404Unless($Evaluacion = EvaluacionesPeer::retrieveByPk($request->getParameter('id')), sprintf('Object Evaluacion does not exist (%s).', $request->getParameter('id')));
         $this->form = new EvaluacionesForm($Evaluacion);
-
         $this->processForm($request, $this->form);
-
         $this->setTemplate('edit');
     }
     public function executeDelete(sfWebRequest $request) {
@@ -45,7 +40,6 @@ class evaluacionesActions extends sfActions {
 
         $this->forward404Unless($Evaluacion = EvaluacionesPeer::retrieveByPk($request->getParameter('id')), sprintf('Object Evaluacion does not exist (%s).', $request->getParameter('id')));
         $Evaluacion->delete();
-
         $this->redirect('evaluaciones/index');
     }
     public function executeTestList(sfWebRequest $request) {
@@ -80,13 +74,12 @@ class evaluacionesActions extends sfActions {
 
     public function executeAspirantesList(sfWebRequest $request) {
         $this->forward404Unless($Evaluacion = EvaluacionesPeer::retrieveByPk($request->getParameter('id')), sprintf('Object Evaluacion does not exist (%s).', $request->getParameter('id')));
+        
     }
-
     protected function processForm(sfWebRequest $request, sfForm $form) {
         $form->bind($request->getParameter($form->getName()), $request->getFiles($form->getName()));
         if ($form->isValid()) {
             $Evaluacion = $form->save();
-
             $this->redirect('evaluaciones/edit?id=' . $Evaluacion->getId());
         }
     }
