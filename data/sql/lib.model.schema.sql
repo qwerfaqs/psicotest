@@ -221,7 +221,6 @@ CREATE TABLE `pruebas`
 	KEY `tests_id`(`tests_id`),
 	KEY `estadopruebas_id`(`estadopruebas_id`),
 	KEY `evaluaciones_id`(`evaluaciones_id`),
-	KEY `perfil_id`(`perfil_id`),
 	CONSTRAINT `pruebas_FK_1`
 		FOREIGN KEY (`tests_id`)
 		REFERENCES `tests` (`id`)

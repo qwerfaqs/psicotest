@@ -27,6 +27,8 @@
             <?php echo $form["nombre"]->render() ?>
             <?php echo $form["estadosevaluaciones_id"]->renderLabel() ?>
             <?php echo $form["estadosevaluaciones_id"]->render() ?>
+            <?php echo $form["perfil_id"]->renderLabel() ?>
+            <?php echo $form["perfil_id"]->render() ?>
         </tbody>
     </table>
 </form>
