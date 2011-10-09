@@ -8,8 +8,7 @@
             <ul class="listadoconimagen">
                 <?php foreach($evaluaciones as $evaluacion) : ?>
                 <?php        include_partial('evaluacion',array('evaluacion'=>$evaluacion)); ?>
-                <?php endforeach; ?>
-                ?>
+                <?php endforeach; ?>              
             </ul>
         </p>
         <a href="<?php echo url_for('principal/evaluaciones') ?>"> <input  type="image" src="/images/listado reload.png" id="btnactualizar" /></a>                

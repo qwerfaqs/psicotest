@@ -19,6 +19,7 @@ abstract class BaseEvaluacionesForm extends BaseFormPropel
       'cantidad'               => new sfWidgetFormInputText(),
       'fecha'                  => new sfWidgetFormDate(),
       'nombre'                 => new sfWidgetFormInputText(),
+      'perfil_id'              => new sfWidgetFormPropelChoice(array('model' => 'Perfil', 'add_empty' => true)),
     ));
 
     $this->setValidators(array(
@@ -27,6 +28,7 @@ abstract class BaseEvaluacionesForm extends BaseFormPropel
       'cantidad'               => new sfValidatorInteger(array('min' => -2147483648, 'max' => 2147483647, 'required' => false)),
       'fecha'                  => new sfValidatorDate(array('required' => false)),
       'nombre'                 => new sfValidatorString(array('max_length' => 50, 'required' => false)),
+      'perfil_id'              => new sfValidatorPropelChoice(array('model' => 'Perfil', 'column' => 'id', 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('evaluaciones[%s]');

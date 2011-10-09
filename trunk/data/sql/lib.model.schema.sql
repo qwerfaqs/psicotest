@@ -130,11 +130,18 @@ CREATE TABLE `evaluaciones`
 	`cantidad` INTEGER(11),
 	`fecha` DATE,
 	`nombre` CHAR(50),
+	`perfil_id` INTEGER(11),
 	PRIMARY KEY (`id`),
 	KEY `estadosevaluaciones_id`(`estadosevaluaciones_id`),
 	CONSTRAINT `evaluaciones_FK_1`
 		FOREIGN KEY (`estadosevaluaciones_id`)
 		REFERENCES `estadosevaluaciones` (`id`)
+		ON UPDATE RESTRICT
+		ON DELETE RESTRICT,
+	INDEX `evaluaciones_FI_2` (`perfil_id`),
+	CONSTRAINT `evaluaciones_FK_2`
+		FOREIGN KEY (`perfil_id`)
+		REFERENCES `perfil` (`id`)
 		ON UPDATE RESTRICT
 		ON DELETE RESTRICT
 )Type=InnoDB;
@@ -210,7 +217,6 @@ CREATE TABLE `pruebas`
 	`tests_id` INTEGER(11)  NOT NULL,
 	`evaluaciones_id` INTEGER(11)  NOT NULL,
 	`estadopruebas_id` INTEGER(11)  NOT NULL,
-	`perfil_id` INTEGER(11),
 	PRIMARY KEY (`id`),
 	KEY `tests_id`(`tests_id`),
 	KEY `estadopruebas_id`(`estadopruebas_id`),
@@ -229,11 +235,6 @@ CREATE TABLE `pruebas`
 	CONSTRAINT `pruebas_FK_3`
 		FOREIGN KEY (`estadopruebas_id`)
 		REFERENCES `estadopruebas` (`id`)
-		ON UPDATE RESTRICT
-		ON DELETE RESTRICT,
-	CONSTRAINT `pruebas_FK_4`
-		FOREIGN KEY (`perfil_id`)
-		REFERENCES `perfil` (`id`)
 		ON UPDATE RESTRICT
 		ON DELETE RESTRICT
 )Type=InnoDB;
