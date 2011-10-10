@@ -8,6 +8,7 @@ sfContext::getInstance()->getConfiguration()->loadHelpers('Url');
  * @author     Psicotest
  */
 class evaluacionesActions extends sfActions {
+    
     public function executeIndex(sfWebRequest $request) {
         $this->Evaluaciones = EvaluacionesPeer::doSelect(new Criteria());
     }
@@ -72,7 +73,8 @@ class evaluacionesActions extends sfActions {
         $this->redirect(url_for('evaluaciones/testList?id=' . $Evaluacion->getId()));
     }
 
-    public function executeAspirantesList(sfWebRequest $request) {
+    public function executeAspirantesList(sfWebRequest $request) 
+    {
         $this->forward404Unless($Evaluacion = EvaluacionesPeer::retrieveByPk($request->getParameter('id')), sprintf('Object Evaluacion does not exist (%s).', $request->getParameter('id')));
         $criteria = new Criteria();
         $criteria->add(AsistenciasPeer::EVALUACIONES_ID, $Evaluacion->getId());
@@ -81,13 +83,19 @@ class evaluacionesActions extends sfActions {
         $a = new Asistencias();
         $a->getAspirantes();
     }
-    public function executeAspirantesAgregando(sfWebRequest $request) {
+    public function executeAspirantesAgregando(sfWebRequest $request) 
+    {
         $this->forward404Unless($Evaluacion = EvaluacionesPeer::retrieveByPk($request->getParameter('id')), sprintf('Object Evaluacion does not exist (%s).', $request->getParameter('id')));
-        $criteria = new Criteria();
-        $this->Aspirantes = AspirantesPeer::doSelect($criteria);
+        if(AspirantesPeer::count($Evaluacion->getId())!=0)
+         $this->Aspirantes = AspirantesPeer::getAspirantesdisponibles($Evaluacion->getId());
+        else{
+            $criteria = new Criteria();
+            $this->Aspirantes = AspirantesPeer::doSelect ($criteria);
+            }
         $this->Evaluacion = $Evaluacion;
     }
-    public function executeQuitarAspirante(sfWebRequest $request) {
+    public function executeQuitarAspirante(sfWebRequest $request) 
+    {
         $this->forward404Unless($Asistencia = AsistenciasPeer::retrieveByPk($request->getParameter('asistencias_id')), sprintf('Object Asistencias does not exist (%s).', $request->getParameter('asistencias_id')));
         $Asistencia->delete();
         $this->redirect(url_for('evaluaciones/aspirantesList?id=' . $request->getParameter('id')));

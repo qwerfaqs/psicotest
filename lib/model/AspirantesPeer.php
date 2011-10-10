@@ -14,7 +14,9 @@
  *
  * @package    lib.model
  */
-class AspirantesPeer extends BaseAspirantesPeer {
+class AspirantesPeer extends BaseAspirantesPeer 
+{
+    
     public static function login($username, $password) {
         $result = null;
         $criteria = new Criteria();
@@ -22,5 +24,25 @@ class AspirantesPeer extends BaseAspirantesPeer {
         $criteria->add(self::PASSWORD, $password);
         $result = self::doSelectOne($criteria);
         return $result;
+    }
+    
+  public static function getAspirantesdisponibles($evaluacion) {
+        $query = 'SELECT * 
+FROM aspirantes
+LEFT JOIN asistencias ON aspirantes.id = asistencias.aspirantes_id
+LEFT JOIN evaluaciones ON asistencias.evaluaciones_id='.$evaluacion.'
+WHERE asistencias.aspirantes_id IS NULL ' ;
+
+        $connection = Propel::getConnection(self::DATABASE_NAME);
+        $statement = $connection->prepare($query);
+        $statement->execute();
+        return self::populateObjects($statement, $connection);
+    }
+    
+    public static function count($evaluacion) 
+    {
+        $criteria = new Criteria();
+        $criteria->add(AsistenciasPeer::EVALUACIONES_ID,$evaluacion,  Criteria::EQUAL);
+        return(AsistenciasPeer::doCount($criteria));
     }
 } // AspirantesPeer
