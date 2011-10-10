@@ -27,11 +27,14 @@ class AspirantesPeer extends BaseAspirantesPeer
     }
     
   public static function getAspirantesdisponibles($evaluacion) {
-        $query = 'SELECT * 
-FROM aspirantes
-LEFT JOIN asistencias ON aspirantes.id = asistencias.aspirantes_id
-LEFT JOIN evaluaciones ON asistencias.evaluaciones_id='.$evaluacion.'
-WHERE asistencias.aspirantes_id IS NULL ' ;
+        $query = 'SELECT * FROM ASPIRANTES 
+LEFT JOIN 
+(SELECT aspirantes_id FROM ASISTENCIAS 
+INNER JOIN EVALUACIONES 
+ON ASISTENCIAS.EVALUACIONES_ID = EVALUACIONES.ID
+WHERE EVALUACIONES.ID = '.$evaluacion.')  O ON
+ASPIRANTES.ID = O.ASPIRANTES_ID
+WHERE O.aspirantes_id IS NULL ' ;
 
         $connection = Propel::getConnection(self::DATABASE_NAME);
         $statement = $connection->prepare($query);
