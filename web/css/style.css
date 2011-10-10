@@ -660,7 +660,7 @@ form.cmxform span
 	/*width: 120px;*/
 }
 
-form.cmxform .txt,form.cmxform .shorttxt, select, option
+form.cmxform .txt,form.cmxform .shorttxt
 {	border: 0 none;
 	background: #F2F2F2  url(../images/bg_form_input.png) bottom center repeat-x;	
 }
