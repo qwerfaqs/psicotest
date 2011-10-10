@@ -27,7 +27,7 @@ all:
      # dsn:        mysql:dbname=psicotest;host=ldpane.homelinux.org;port=3306
       dsn:        mysql:dbname=psicotest;host=localhost
       username:   root
-#      password:   root
+      password:   root
       encoding:   utf8
       persistent: true
       pooling:    true
