@@ -87,30 +87,15 @@ class myUser extends derechosSecurityUser
     foreach($respuestas as $resultado)
         $resultado->save(); 
     
-    $this->calcularDomino($respuestas);    
+    switch ($respuestas[0]->getPruebas()->getTests()->getTitulo()) 
+    {
+        case 'domino': Test::calcularDomino($respuestas);  break;
+        case '16pf': Test::calcular16pf($respuestas); break;        
+    }        
   }
   
   
-  public function calcularDomino($respuestas)
-  { 
-    $puntaje =0; 
-      
-       foreach($respuestas as $resultado)
-       {     
-         $pregunta = $resultado->getPreguntas();
-         $respuesta =  RespuestasPeer::getRespuesta($pregunta->getId());
-        
-          if ($resultado->getOpciones()->getTexto()==$respuesta->getOpciones()->getTexto())
-          {
-            $puntaje = $puntaje + 2.857142857142857;  
-          }
-       }   
-       $result = new Resultados();
-       $result->setAspirantesId($respuestas[0]->getAspirantesId());
-       $result->setPuntaje($puntaje);
-       $result->setPruebas($respuestas[0]->getPruebas());
-       $result->save();
-  }
+  
   
   
   
