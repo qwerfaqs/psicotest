@@ -104,7 +104,7 @@ class myUser extends derechosSecurityUser
         
           if ($resultado->getOpciones()->getTexto()==$respuesta->getOpciones()->getTexto())
           {
-            $puntaje = $puntaje + 0.35;  
+            $puntaje = $puntaje + 2.857142857142857;  
           }
        }   
        $result = new Resultados();
