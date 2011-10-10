@@ -165,7 +165,7 @@
                                     <option value="3">Grumete</option>
                                      
                                   </select>
-                               	</li>
+                               	</li> 
                             	<li>
                                 <p>
                                   <input type="image" value="Enviar" id="boton_enviar" src="images/btnsiguiente.png" alt="Enviar">

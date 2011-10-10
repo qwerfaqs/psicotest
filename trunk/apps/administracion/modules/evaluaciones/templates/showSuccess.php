@@ -29,8 +29,8 @@
 
 <hr />
 
-<a href="<?php echo url_for('evaluaciones/edit?id='.$Evaluacion->getId()) ?>">Editar</a>
+<a href="<?php echo url_for('evaluaciones/edit?id='.$Evaluacion->getId()) ?>" class="link">Editar</a>
 &nbsp;
-<a href="<?php echo url_for('evaluaciones/index') ?>">Listado</a>
-<a href="<?php echo url_for('evaluaciones/testList?id='.$Evaluacion->getId()) ?>">Ver Pruebas Asignadas</a>
-<a href="<?php echo url_for('evaluaciones/aspirantesList?id='.$Evaluacion->getId()) ?>">Ver Aspirantes Asignados</a>
+<a href="<?php echo url_for('evaluaciones/index') ?>"class="link">Listado</a>
+<a href="<?php echo url_for('evaluaciones/testList?id='.$Evaluacion->getId()) ?>" class="link">Ver Pruebas Asignadas</a>
+<a href="<?php echo url_for('evaluaciones/aspirantesList?id='.$Evaluacion->getId()) ?>"class="link">Ver Aspirantes Asignados</a>

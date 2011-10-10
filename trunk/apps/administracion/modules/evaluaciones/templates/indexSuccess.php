@@ -28,4 +28,4 @@
         </tbody>
     </table>
 
-    <a href="<?php echo url_for('evaluaciones/new') ?>">Crear Nueva Evaluacion</a>
+    <a href="<?php echo url_for('evaluaciones/new') ?>" class="link">Crear Nueva Evaluacion</a>
