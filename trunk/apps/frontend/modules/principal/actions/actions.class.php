@@ -76,7 +76,7 @@ class principalActions extends sfActions
      
    $this->preguntas = PreguntasPeer::getPreguntas($prueba->getTests()->getId(),1,$this->pagina);     
    $pregunta = $this->preguntas->getResult();
-   $this->opciones = RespuestasPeer::getRespuestas($pregunta[0]->getId());
+       
   
    if(count($this->preguntas)==0) { // si no hay mas preguntas entonces paso a la siguiente prueba
        $this->getUser()->saveResultados(); // grabo los resultados totales y parciales
@@ -84,6 +84,9 @@ class principalActions extends sfActions
        $this->getUser()->initResultados();           // inicializo el arreglo de resultados
        $this->forward('principal', 'pregunta'); // vuelvo al flujo del principio pero con otro test
    }
+   else
+        $this->opciones = RespuestasPeer::getRespuestas($pregunta[0]->getId());
+   
    $this->test=trim($prueba->getTests()->getTitulo());
    $this->setTemplate('pregunta');
   }
