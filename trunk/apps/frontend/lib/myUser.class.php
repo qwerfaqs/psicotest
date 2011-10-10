@@ -65,15 +65,14 @@ class myUser extends derechosSecurityUser
   {
       $result = $this->getAttribute('resultados');
       $result[] = $resultado;
-      $this->setAttribute('resultados',$result);      
+      $this->setAttribute('resultados',$result);            
   }
   
   
   
   public function setResultado($prueba,$respuesta,$pregunta)
   {          
-     $res = OpcionesPeer::getOpcion($respuesta);
-     
+     $res = OpcionesPeer::getOpcion($respuesta);     
      $resultado = new  Resultadosparciales();
      $resultado->setAspirantesId($this->getAttribute('usuarioId'));     
      $resultado->setOpciones($res);
@@ -88,8 +87,7 @@ class myUser extends derechosSecurityUser
     foreach($respuestas as $resultado)
         $resultado->save(); 
     
-    $this->calcularDomino($respuestas);
-    
+    $this->calcularDomino($respuestas);    
   }
   
   

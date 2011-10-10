@@ -25,4 +25,12 @@ class OpcionesPeer extends BaseOpcionesPeer
     $criteria->add(OpcionesPeer::TEXTO,$opcion,Criteria::EQUAL);     
     return (self::doSelectOne($criteria));
   }
+  
+   public static function getOpciones($pregunta)
+  {
+    $criteria = new Criteria();    
+    $criteria->addJoin(self::TIPOOPCION_ID,TestsPeer::TIPOOPCION_ID,Criteria::INNER_JOIN); 
+    $criteria->add(OpcionesPeer::TEXTO,$opcion,Criteria::EQUAL);
+    return (self::doSelectJoinAll($criteria));
+  }
 } // OpcionesPeer

@@ -35,4 +35,11 @@ public static function getResponse($respuesta)
     $criteria->add(RespuestasPeer::PREGUNTAS_ID,$pregunta,Criteria::EQUAL);     
     return (self::doSelectOne($criteria));
   }
+  
+   public static function getRespuestas($pregunta)
+  {
+    $criteria = new Criteria();    
+    $criteria->add(self::PREGUNTAS_ID,$pregunta,Criteria::EQUAL);     
+    return (self::doSelectJoinAll($criteria));
+  }
 } // RespuestasPeer
