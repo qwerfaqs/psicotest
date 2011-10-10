@@ -1,3 +1,3 @@
-<h1>Edit Evaluacion</h1>
+<h1>Editar evaluacion</h1>
 
 <?php include_partial('form', array('form' => $form)) ?>

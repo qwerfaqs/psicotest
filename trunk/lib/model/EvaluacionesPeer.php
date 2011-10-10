@@ -26,4 +26,10 @@ class EvaluacionesPeer extends BaseEvaluacionesPeer
     return (self::doSelectJoinAll($criteria));
   }
   
+  public static function getAll()
+  {
+    $criteria = new Criteria();          
+    return (self::doSelectJoinAll($criteria));
+  }
+  
 } // EvaluacionesPeer
