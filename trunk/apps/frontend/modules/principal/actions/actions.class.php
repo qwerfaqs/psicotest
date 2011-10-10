@@ -14,14 +14,15 @@ class principalActions extends sfActions
   *
   * @param sfRequest $request A request object
   */
-  public function executeIndex(sfWebRequest $request) {
+  public function executeIndex(sfWebRequest $request) 
+  {
     
   }
   public function executeEvaluaciones(sfWebRequest $request) { // evaluaciones disponibles de un aspirante
               
     $aspirante = $this->getUser()->getAttribute('usuarioId');
     $estado = sfConfig::get('app_activo'); // el estado de la evaluacion en este caso activo para que aparesca en pantalla
-    $this->evaluaciones = EvaluacionesPeer::getEvaluaciones($estado,$aspirante);            
+    $this->evaluaciones = EvaluacionesPeer::getEvaluaciones($estado,$aspirante);       
   }
   public function executePruebas(sfWebRequest $request) { // listado de pruebas de una evaluacion
     $this->evaluacion = $this->getRoute()->getObject();      
@@ -44,6 +45,7 @@ class principalActions extends sfActions
      if($prueba!=null){
         $this->pagina= sfConfig::get('app_activo'); //Pagina nro 1
         $this->preguntas = PreguntasPeer::getPreguntas($prueba->getTests()->getId(),1,$this->pagina);
+        $this->test=trim($prueba->getTests()->getTitulo());
         if(count($this->preguntas)==0)
             $this->forward('principal','finish');
      }else 
