@@ -36,9 +36,24 @@ html, .main {
 }
 .listadoconimagen
 {
-	
 	list-style:none;	
 	margin-left:10px;
+}
+.listado
+{
+	list-style:none;	
+}
+.listado li
+{
+	padding:10px 10px 10px 15px;
+	border-style:solid;
+	border-width:2px;
+	border-color:#CCC;
+	background-color:#FFF;
+	width:620px;
+	
+	font-size:12px;
+	margin-bottom:5px;
 }
 .listadoconimagen li
 {
@@ -268,11 +283,11 @@ background-image:url(../images/loginbackground.png);
 	padding-right:30px;
 	background:none;
 }
-#login label, #login span
+#login label,#login span
 {
 	width:80px;
 }
-#login #signin_username, #signin_password
+#login #user,#password
 {
 	width:220px;
 }
@@ -318,6 +333,13 @@ background-image:url(../images/loginbackground.png);
 	margin:0 0 12px;
 	padding:8px 0;
 	background:repeat-x left bottom;
+}
+.gadget .current
+{
+	color:#CC0033;  
+	text-decoration:underline; 
+	font-weight:400;  
+	text-decoration:blink;
 }
 .content .sidebar h2 {
 	color:#0a83c0;
@@ -638,10 +660,17 @@ form.cmxform span
 	/*width: 120px;*/
 }
 
-form.cmxform .txt
+form.cmxform .txt,form.cmxform .shorttxt, select, option
 {	border: 0 none;
-	background: #F2F2F2  url(../images/bg_form_input.png) bottom center repeat-x;
+	background: #F2F2F2  url(../images/bg_form_input.png) bottom center repeat-x;	
+}
+form.cmxform .txt
+{
 	width:400px;
+}
+form.cmxform .shorttxt
+{
+	width:200px;
 }
 
 form.cmxform #comments
@@ -704,6 +733,6 @@ form.cmxform em {
 
 form.cmxform label { width: 120px; } /* Width of labels */
 form.cmxform fieldset fieldset label { margin-left: 123px; } /* Width plus 3 (html space) */
-#boton_enviar{ float:right;}
+#boton_enviar, #boton_guardar{ float:right;}
 
 /*\*//*/ form.cmxform legend { display: inline-block; } /* IE Mac legend fix */
