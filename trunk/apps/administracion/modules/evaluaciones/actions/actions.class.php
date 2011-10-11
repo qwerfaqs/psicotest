@@ -10,8 +10,9 @@ sfContext::getInstance()->getConfiguration()->loadHelpers('Url');
 class evaluacionesActions extends sfActions {
     
     public function executeIndex(sfWebRequest $request) 
-    {           
-        $this->Evaluaciones = EvaluacionesPeer::getAll();
+    {       
+        $estado = sfConfig::get('app_activo');
+        $this->Evaluaciones = EvaluacionesPeer::getEvaluaciones($estado,1,100,"","--");
     }
     public function executeShow(sfWebRequest $request) {
         $this->Evaluacion = EvaluacionesPeer::retrieveByPk($request->getParameter('id'));
@@ -87,8 +88,8 @@ class evaluacionesActions extends sfActions {
     public function executeAspirantesAgregando(sfWebRequest $request) 
     {
         $this->forward404Unless($Evaluacion = EvaluacionesPeer::retrieveByPk($request->getParameter('id')), sprintf('Object Evaluacion does not exist (%s).', $request->getParameter('id')));
-        $this->Aspirantes = AspirantesPeer::getAspirantesdisponibles($Evaluacion->getId());
-       
+        $cedula = $request->getParameter('cedula');
+        $this->Aspirantes = AspirantesPeer::getAspirantesdisponibles($Evaluacion->getId(),$cedula);       
         $this->Evaluacion = $Evaluacion;
     }
     public function executeQuitarAspirante(sfWebRequest $request) 

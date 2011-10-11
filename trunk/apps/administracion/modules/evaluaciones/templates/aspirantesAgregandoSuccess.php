@@ -6,12 +6,13 @@
 
 
 
-<form action="/administracion_dev.php/evaluaciones/create" method="post">
+<form action="/administracion_dev.php/evaluaciones/aspirantesAgregando" method="post">
   <table>
     <tfoot>
       <tr>
-        <td colspan="2">          
-            <a type="submit" value="" class="link">Buscar</a>
+        <td colspan="2">        
+            <input type="hidden" name="id" value="<?php echo $Evaluacion->getId() ?>" />
+            <input type="submit" value="Buscar" class="link"/>
         </td>
       </tr>
     </tfoot>
@@ -22,16 +23,9 @@
   
 <tr>
   <th><label for="aspirantes_cedula">cedula</label></th>
-  <td><input type="text" name="cedula" id=""></td>
+  <td><input type="text" name="cedula" id="cedula"></td>
 </tr>
-<tr>
-  <th><label for="aspirantes_nombre">Nombre</label></th>
-  <td><input type="text" name="cedula" id=""></td>
-</tr>
-<tr>
-  <th><label for="aspirantes_apellido">apellido</label></th>
-  <td><input type="text" name="" id=""></td>
-</tr>
+
 
     </tbody>
   </table>
@@ -39,9 +33,7 @@
 
       
 
-<table summary="Submitted table designs"><caption>
-        <h3>Aspirantes</h3>
-    </caption>
+<table summary="Submitted table designs">
     <thead>
         <tr>
             <th scope="col">cedula</th>
