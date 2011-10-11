@@ -28,10 +28,10 @@ public static function getResponse($respuesta)
   }
   
   
-  public static function getRespuesta($pregunta)
+  public static function getRespuesta($pregunta,$estado)
   {
     $criteria = new Criteria();    
-
+    $criteria->add(RespuestasPeer::ESTADOS_ID,$estado,Criteria::EQUAL);  
     $criteria->add(RespuestasPeer::PREGUNTAS_ID,$pregunta,Criteria::EQUAL);     
     return (self::doSelectOne($criteria));
   }

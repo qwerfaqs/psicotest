@@ -16,6 +16,7 @@
  *
  * @package    lib.model
  */
-class EscalasPeer extends BaseEscalasPeer {
-
+class EscalasPeer extends BaseEscalasPeer 
+{
+ 
 } // EscalasPeer
