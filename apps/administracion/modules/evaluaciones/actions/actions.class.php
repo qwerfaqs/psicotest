@@ -10,8 +10,7 @@ sfContext::getInstance()->getConfiguration()->loadHelpers('Url');
 class evaluacionesActions extends sfActions {
     
     public function executeIndex(sfWebRequest $request) 
-    {   
-        
+    {           
         $this->Evaluaciones = EvaluacionesPeer::getAll();
     }
     public function executeShow(sfWebRequest $request) {
@@ -111,8 +110,18 @@ class evaluacionesActions extends sfActions {
     
     public function executeHistorial(sfWebRequest $request) 
     {
+        $pagina = $request->getParameter('pagina');
+        $this->dia = $request->getParameter('day');
+        $this->mes = $request->getParameter('month');
+        $this->año = $request->getParameter('year');        
+        $this->nombre = $request->getParameter('nombre');                    
+        $this->fecha = $this->año.'-'.$this->mes.'-'.$this->dia;
+      
+        if(!isset($pagina))
+            $pagina = 1;
+        
         $estado = sfConfig::get('app_finalizado');
-        $this->Evaluaciones = EvaluacionesPeer::getEvaluaciones($estado);        
+        $this->Evaluaciones = EvaluacionesPeer::getEvaluaciones($estado,$pagina,6,$this->nombre,$this->fecha);        
     }
     
 
