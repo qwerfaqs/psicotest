@@ -39,8 +39,8 @@
           <h2 class="star"><span>Aspirantes</span></h2>
           <div class="clr"></div>
           <ul class="sb_menu">
-            <li><a href="#">Nuevo aspirante</a></li>
-            <li><a href="#">Ver Aspirantes</a></li>            
+            <li><a href="<?php echo url_for('aspirantes/index') ?>">Ver Aspirantes</a></li>            
+            <li><a href="<?php echo url_for('aspirantes/new') ?>">Nuevo aspirante</a></li>            
           </ul>
         </div>
           
