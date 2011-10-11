@@ -9,7 +9,7 @@
     <tfoot>
       <tr>
         <td colspan="2">          
-            <a type="submit" value="" class="link">Buscar</a>
+            <input type="submit" value="Buscar" class="link">
         </td>
       </tr>
     </tfoot>
@@ -90,7 +90,7 @@
 </form>
 <hr>
 <table summary="Submitted table designs">
-    <caption><h3>Historial de evaluaciones</h3></caption>
+    
     <thead>
         <tr>
             <th scope="col">nombre</th>

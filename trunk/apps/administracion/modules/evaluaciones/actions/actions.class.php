@@ -10,8 +10,8 @@ sfContext::getInstance()->getConfiguration()->loadHelpers('Url');
 class evaluacionesActions extends sfActions {
     
     public function executeIndex(sfWebRequest $request) 
-    {
-        $estado = sfConfig::get('app_activo');
+    {   
+        
         $this->Evaluaciones = EvaluacionesPeer::getAll();
     }
     public function executeShow(sfWebRequest $request) {
