@@ -24,4 +24,4 @@
   </tbody>
 </table>
 
-  <a href="<?php echo url_for('pruebas/new') ?>">New</a>
+
