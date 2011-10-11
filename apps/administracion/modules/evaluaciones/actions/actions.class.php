@@ -107,6 +107,24 @@ class evaluacionesActions extends sfActions {
         $Asistencia->save();
         $this->redirect(url_for('evaluaciones/aspirantesAgregando?id=' . $Evaluacion->getId()));
     }
+    
+    
+    public function executeHistorial(sfWebRequest $request) 
+    {
+        $estado = sfConfig::get('app_finalizado');
+        $this->Evaluaciones = EvaluacionesPeer::getEvaluaciones($estado);        
+    }
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
     protected function processForm(sfWebRequest $request, sfForm $form) {
         $form->bind($request->getParameter($form->getName()), $request->getFiles($form->getName()));
         if ($form->isValid()) {

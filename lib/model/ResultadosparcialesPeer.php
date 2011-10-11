@@ -16,6 +16,14 @@
  *
  * @package    lib.model
  */
-class ResultadosparcialesPeer extends BaseResultadosparcialesPeer {
+class ResultadosparcialesPeer extends BaseResultadosparcialesPeer 
+{
+ public static function getResultadosParciales($prueba,$aspirante)
+  {
+    $criteria = new Criteria();    
 
+    $criteria->add(ResultadosparcialesPeer::PRUEBAS_ID,$prueba,Criteria::EQUAL);     
+    $criteria->add(ResultadosparcialesPeer::ASPIRANTES_ID,$aspirante,Criteria::EQUAL);    
+    return (self::doSelectJoinAll($criteria));
+  }
 } // ResultadosparcialesPeer

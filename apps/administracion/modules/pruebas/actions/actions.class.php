@@ -10,8 +10,22 @@
 class pruebasActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
-  {
-    $this->Pruebas = PruebasPeer::doSelect(new Criteria());
+  {      
+    $evaluacion = $request->getParameter('id');
+    $this->Pruebas = PruebasPeer::getPruebasPaged($evaluacion, 1,5);            
+  }
+  
+  public function executeAspirantes(sfWebRequest $request)
+  {      
+    $prueba = $request->getParameter('id');
+    $this->resultados = ResultadosPeer::getResultados($prueba);    
+  }
+  
+  public function executeParciales(sfWebRequest $request)
+  {      
+    $aspirante = $request->getParameter('id');
+    $prueba = $request->getParameter('prueba');
+    $this->resultados = ResultadosparcialesPeer::getResultadosParciales($prueba, $aspirante);    
   }
 
   public function executeShow(sfWebRequest $request)
