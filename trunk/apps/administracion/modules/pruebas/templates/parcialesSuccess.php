@@ -1,5 +1,5 @@
 <table summary="Submitted table designs">
-    <caption><h3>Puntajes por aspirante </h3></caption>
+    <caption><h3>Respuestas parciales </h3></caption>
     <thead>
         <tr>
             <th scope="col">ID</th>

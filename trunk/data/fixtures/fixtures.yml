@@ -1,8 +1,21 @@
+Administradores:
+  Administradores_1:
+    usuario: qwerfaqs
+    password: villeroshijosdeputa
+    nombre: franchisco
+    apellido: laconcha
+  Administradores_2:
+    usuario: potich
+    password: x1234
+    nombre: matias
+    apellido: luzardi
 Estadosevaluaciones:
   Estadosevaluaciones_1:
     nombre: Activa
   Estadosevaluaciones_2:
     nombre: Inactiva
+  Estadosevaluaciones_3:
+    nombre: Finalizada
 Perfil:
   Perfil_1:
     nombre: Infante
@@ -12,7 +25,7 @@ Perfil:
     nombre: Grumete
 Evaluaciones:
   Evaluaciones_1:
-    estadosevaluaciones_id: Estadosevaluaciones_1
+    estadosevaluaciones_id: Estadosevaluaciones_3
     cantidad: '10'
     fecha: '2011-09-29'
     nombre: 'Curso ingenieria Naval'
@@ -35,21 +48,38 @@ Evaluaciones:
     fecha: '2006-01-01'
     nombre: arena
     perfil_id: Perfil_1
+  Evaluaciones_5:
+    estadosevaluaciones_id: Estadosevaluaciones_2
+    cantidad: '210'
+    fecha: '2010-01-03'
+    nombre: 'TERCERA GUERRA MUNDIAL'
+    perfil_id: Perfil_2
 Aspirantes:
   Aspirantes_1:
     nombre: matias
     apellido: luzardi
     cedula: '33273976'
     password: hola
+  Aspirantes_2:
+    nombre: francisco
+    apellido: pane
+    cedula: '35322222'
+    password: puto
 Asistencias:
   Asistencias_1:
     evaluaciones_id: Evaluaciones_1
     aspirantes_id: Aspirantes_1
-  Asistencias_3:
-    evaluaciones_id: Evaluaciones_3
-    aspirantes_id: Aspirantes_1
   Asistencias_5:
-    evaluaciones_id: Evaluaciones_4
+    evaluaciones_id: Evaluaciones_1
+    aspirantes_id: Aspirantes_2
+  Asistencias_6:
+    evaluaciones_id: Evaluaciones_2
+    aspirantes_id: Aspirantes_2
+  Asistencias_7:
+    evaluaciones_id: Evaluaciones_2
+    aspirantes_id: Aspirantes_1
+  Asistencias_8:
+    evaluaciones_id: Evaluaciones_3
     aspirantes_id: Aspirantes_1
 Tipoopcion:
   Tipoopcion_1:
@@ -74,9 +104,10 @@ Tests:
     duracion: '30'
   Tests_3:
     tipoopcion_id: Tipoopcion_3
-    titulo: '16 factores de personalidad'
+    titulo: 16pf
     historia: ''
-    enunciado: 'Este es un cuestionario de sus actitudes. Lo que hace o lo que piensa acerca de ciertas situaciones. Las personas piensan de una manera u otra. Por lo tanto, no existen respuestas “correctas o incorrectas” a las preguntas de este formulario.'
+    enunciado: "Este es un cuestionario de sus actitudes. Lo que hace o lo que piensa acerca de ciertas situaciones. Las personas piensan de una manera u otra. Por lo tanto, no existen respuestas “correctas o incorrectas” a las preguntas de este formulario.Adelante aparecen cinco preguntas de ensayo que contestarán usted para estar seguro de que comprende lo que debe hacer en el propio cuestionario. Marque las contestaciones a estas preguntas de ensayo en la “Hoja de respuestas 16. P.F” en la parte superior izquierda, identificadas con números romanos. Se ofrecen tres posibles respuestas para cada pregunta que Ud. debe contestar “Si o No”, colocando una “Equis (X)” en la casilla (A) si su respuesta es afirmativa; o, en la casilla “C” si es negativa. Solamente debe marcar la respuesta en el centro “B” cuando le sea realmente imposible decir “Si” o “No”.\r\nConteste ahora las cinco siguientes preguntas de ensayo: \r\nI.	Me guata hacer ejercicios al aire libre (A) Si; (B) Más o menos; (C) No.\r\nII.	Me gustaría ser: (A) Operador de máquina de fábrica; (B) Vendedor; (C) Empleado de un Banco.\r\nIII.	Cuando duermo sueño  mucho (A) Si; (B) Ocasionalmente; (C) No.\r\nIV.	Me gusta una persona que sea: (A) Atenta con la gente; (B) Apartad e indiferente con la gente; (C) Que sea sarcástico.\r\nV.	Me es difícil conversar con alguien cuando el radio está puesto. (A) Si; (B) Intermedio; (C) No.\r\nEn las páginas interiores que siguen encontrará 102 preguntas similares a las que apareen arriba. Para contestarlas tenga presente estas reglas:\r\n1.	Conteste las preguntas tan franca y honradamente como le sea posible. No existe ventaja en crear una mejor impresión personal. No marque una respuesta que no sea cierta por creer que “es lo que debe decir”.\r\n2.	Conteste con la mayor rapidez posible. No dedique tiempo en meditar sobre las preguntas. Anote su primera reacción y pase de allí a la próxima pregunta.\r\n3.	Marque la respuesta “Si” (o “A”) o la respuesta “No” (o “C”) con una (X) para la mayoría de las preguntas. Solamente marque las respuestas en el centro “B” cuando le sea imposible contestar “Si” o  “No” aunque en algunos casos le será difícil escoger.\r\n4.	Conteste todas las preguntas sin excepción. Habrá las preguntas que no reflejan sus ideas, pero debe contestarlas todas. No debe saltarse ninguna. Sus respuestas serán confidenciales.   \r\n\r\n5.	onteste las preguntas tan franca y honradamente como le sea posible. No existe ventaja en crear una mejor impresión personal. No marque una respuesta que no sea cierta por creer que “es lo que debe decir”.\r\n6.	Conteste con la mayor rapidez posible. No dedique tiempo en meditar sobre las preguntas. Anote su primera reacción y pase de allí a la próxima pregunta.\r\n7.	Marque la respuesta “Si” (o “A”) o la respuesta “No” (o “C”) con una (X) para la mayoría de las preguntas. Solamente marque las respuestas en el centro “B” cuando le sea imposible contestar “Si” o  “No” aunque en algunos casos le será difícil escoger.\r\n8.	Conteste todas las preguntas sin excepción. Habrá las preguntas que no reflejan sus ideas, pero debe contestarlas todas. No debe saltarse ninguna. Sus respuestas serán confidenciales.   \r\n\r\n\r\n\r\nTodas sus contestaciones en la \"Hoja de Respuestas 16 P.F.\"    No marque ni haga señales en estas hojas.\r\nASEGURESE DE QUE HAYA MARCADO UNA RESPUESTA,  PERO SOLAMENTE UNA, PARA CADA PREGUNTA.\r\n"
+    duracion: '30 min'
 Estadopruebas:
   Estadopruebas_1:
     nombre: Inicializada
@@ -1187,9 +1218,17 @@ Pruebas:
     tests_id: Tests_1
     evaluaciones_id: Evaluaciones_3
     estadopruebas_id: Estadopruebas_1
-  Pruebas_9:
-    tests_id: Tests_3
+  Pruebas_10:
+    tests_id: Tests_1
     evaluaciones_id: Evaluaciones_1
+    estadopruebas_id: Estadopruebas_1
+  Pruebas_12:
+    tests_id: Tests_3
+    evaluaciones_id: Evaluaciones_2
+    estadopruebas_id: Estadopruebas_1
+  Pruebas_13:
+    tests_id: Tests_1
+    evaluaciones_id: Evaluaciones_4
     estadopruebas_id: Estadopruebas_1
 Valoresdeverdad:
   Valoresdeverdad_1:
@@ -2869,3 +2908,184 @@ Respuestas:
     preguntas_id: Preguntas_313
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_1
+Resultados:
+  Resultados_1:
+    pruebas_id: Pruebas_10
+    aspirantes_id: Aspirantes_1
+    puntaje: '8.57142857143'
+Resultadosparciales:
+  Resultadosparciales_1:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_1
+    opciones_id: Opciones_5
+  Resultadosparciales_2:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_2
+    opciones_id: Opciones_7
+  Resultadosparciales_3:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_280
+    opciones_id: Opciones_7
+  Resultadosparciales_4:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_281
+    opciones_id: Opciones_7
+  Resultadosparciales_5:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_282
+    opciones_id: Opciones_7
+  Resultadosparciales_6:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_283
+    opciones_id: Opciones_7
+  Resultadosparciales_7:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_284
+    opciones_id: Opciones_7
+  Resultadosparciales_8:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_285
+    opciones_id: Opciones_7
+  Resultadosparciales_9:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_286
+    opciones_id: Opciones_7
+  Resultadosparciales_10:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_287
+    opciones_id: Opciones_7
+  Resultadosparciales_11:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_288
+    opciones_id: Opciones_7
+  Resultadosparciales_12:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_289
+    opciones_id: Opciones_7
+  Resultadosparciales_13:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_290
+    opciones_id: Opciones_7
+  Resultadosparciales_14:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_291
+    opciones_id: Opciones_7
+  Resultadosparciales_15:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_292
+    opciones_id: Opciones_7
+  Resultadosparciales_16:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_294
+    opciones_id: Opciones_7
+  Resultadosparciales_17:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_295
+    opciones_id: Opciones_7
+  Resultadosparciales_18:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_296
+    opciones_id: Opciones_7
+  Resultadosparciales_19:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_297
+    opciones_id: Opciones_7
+  Resultadosparciales_20:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_298
+    opciones_id: Opciones_7
+  Resultadosparciales_21:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_299
+    opciones_id: Opciones_7
+  Resultadosparciales_22:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_300
+    opciones_id: Opciones_7
+  Resultadosparciales_23:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_301
+    opciones_id: Opciones_7
+  Resultadosparciales_24:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_302
+    opciones_id: Opciones_7
+  Resultadosparciales_25:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_303
+    opciones_id: Opciones_7
+  Resultadosparciales_26:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_304
+    opciones_id: Opciones_7
+  Resultadosparciales_27:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_305
+    opciones_id: Opciones_7
+  Resultadosparciales_28:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_306
+    opciones_id: Opciones_7
+  Resultadosparciales_29:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_307
+    opciones_id: Opciones_7
+  Resultadosparciales_30:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_308
+    opciones_id: Opciones_7
+  Resultadosparciales_31:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_309
+    opciones_id: Opciones_7
+  Resultadosparciales_32:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_310
+    opciones_id: Opciones_7
+  Resultadosparciales_33:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_311
+    opciones_id: Opciones_7
+  Resultadosparciales_34:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_312
+    opciones_id: Opciones_7
+  Resultadosparciales_35:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
+    preguntas_id: Preguntas_313
+    opciones_id: Opciones_7
