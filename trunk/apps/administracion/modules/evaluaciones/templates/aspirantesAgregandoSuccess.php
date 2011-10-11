@@ -36,7 +36,7 @@
     </tbody>
   </table>
 </form>
-<p class="pages"><small>Pagina 1 of 2</small> <span>1</span> <a href="#">2</a> <a href="#">Siguiente&raquo;</a></p>
+
       
 
 <table summary="Submitted table designs"><caption>

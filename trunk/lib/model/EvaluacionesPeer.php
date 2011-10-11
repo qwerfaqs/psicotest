@@ -18,12 +18,17 @@
  */
 class EvaluacionesPeer extends BaseEvaluacionesPeer 
 {
- public static function getEvaluaciones($estado)
+ public static function getEvaluaciones($estado,$pagina,$rows,$nombre,$fecha)
   {
     $criteria = new Criteria();    
-
+    if($nombre!="")
+        $criteria->add(EvaluacionesPeer::NOMBRE,$nombre,Criteria::EQUAL);     
+    if($fecha!="--")
+        $criteria->add(EvaluacionesPeer::FECHA,$fecha,Criteria::EQUAL);     
+    
     $criteria->add(EvaluacionesPeer::ESTADOSEVALUACIONES_ID,$estado,Criteria::EQUAL);     
-    return (self::doSelectJoinAll($criteria));
+    $pager = new PropelPager($criteria, 'EvaluacionesPeer', 'doSelectJoinAll', $page = $pagina, $rows);
+    return $pager;
   }
   
   public static function getAll()

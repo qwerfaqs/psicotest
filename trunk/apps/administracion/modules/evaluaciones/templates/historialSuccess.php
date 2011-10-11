@@ -4,7 +4,7 @@
 
 
 
-<form action="/administracion_dev.php/evaluaciones/create" method="post">
+<form action="<?php echo url_for('evaluaciones/historial') ?>" method="post">
   <table>
     <tfoot>
       <tr>
@@ -18,22 +18,8 @@
       
 
   <th><label for="evaluaciones_fecha">Fecha</label></th>
-  <td><select name="evaluaciones[fecha][month]" id="evaluaciones_fecha_month">
-<option value="" selected="selected"></option>
-<option value="1">01</option>
-<option value="2">02</option>
-<option value="3">03</option>
-<option value="4">04</option>
-<option value="5">05</option>
-<option value="6">06</option>
-<option value="7">07</option>
-<option value="8">08</option>
-<option value="9">09</option>
-<option value="10">10</option>
-<option value="11">11</option>
-<option value="12">12</option>
-</select>/<select name="evaluaciones[fecha][day]" id="evaluaciones_fecha_day">
-<option value="" selected="selected"></option>
+  <td><select name="day" id="evaluaciones_fecha_day">
+<option value="<?php echo $dia; ?>" selected="selected"></option>
 <option value="1">01</option>
 <option value="2">02</option>
 <option value="3">03</option>
@@ -65,8 +51,22 @@
 <option value="29">29</option>
 <option value="30">30</option>
 <option value="31">31</option>
-</select>/<select name="evaluaciones[fecha][year]" id="evaluaciones_fecha_year">
-<option value="" selected="selected"></option>
+</select>/<select name="month" id="evaluaciones_fecha_month">
+<option value="<?php echo $mes; ?>" selected="selected"></option>
+<option value="1">01</option>
+<option value="2">02</option>
+<option value="3">03</option>
+<option value="4">04</option>
+<option value="5">05</option>
+<option value="6">06</option>
+<option value="7">07</option>
+<option value="8">08</option>
+<option value="9">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>/<select name="year" id="evaluaciones_fecha_year">
+<option value="<?php echo $año; ?>" selected="selected"></option>
 <option value="2006">2006</option>
 <option value="2007">2007</option>
 <option value="2008">2008</option>
@@ -82,7 +82,7 @@
 </tr>
 <tr>
   <th><label for="evaluaciones_nombre">Nombre</label></th>
-  <td><input type="text" name="evaluaciones[nombre]" id="evaluaciones_nombre"></td>
+  <td><input type="text" name="nombre" id="evaluaciones_nombre"/></td>
 </tr>
 
     </tbody>
@@ -113,10 +113,38 @@
                 <td><a href=""><?php echo $Evaluacion->getFecha() ?></a></td>
                 <td><?php echo $Evaluacion->getCantidad() ?></td>
                 <td><?php echo $Evaluacion->getNombre() ?></td>
-                <td><?php echo $Evaluacion->getEstadosevaluaciones()->getNombre() ?></td>
+                <td><?php echo $Evaluacion->getEstadosevaluaciones()->getNombre() ?></td>                	                               
+			
             </tr>
         <?php endforeach; ?>
         </tbody>
     </table>
 
-    
+<?php if (!$Evaluaciones->atFirstPage()): ?> 
+  <!-- Links for first and previous pages -->
+ <a href="/administracion_dev.php/evaluaciones/historial?nombre=<?php echo $nombre; ?>&&year=<?php echo $año; ?>&&month=<?php echo $mes; ?>&&day=<?php echo $dia; ?>&&pagina=<?php echo $Evaluaciones->getFirstPage(); ?>">Primero</a>
+  <a href="/administracion_dev.php/evaluaciones/historial?nombre=<?php echo $nombre; ?>&&year=<?php echo $año; ?>&&month=<?php echo $mes; ?>&&day=<?php echo $dia; ?>&&pagina=<?php echo $Evaluaciones->getPrev(); ?> ">Anterior</a>
+<?php endif; ?>
+
+<!-- Links to the 3 previous pages -->
+<?php foreach ($Evaluaciones->getPrevLinks(20) as $link): ?>
+   <a href="/administracion_dev.php/evaluaciones/historial?nombre=<?php echo $nombre; ?>&&year=<?php echo $año; ?>&&month=<?php echo $mes; ?>&&day=<?php echo $dia; ?>&&pagina=<?php echo $link; ?> ">
+     <?php echo $link ?>
+   </a>
+<?php endforeach; ?>
+
+<!-- Current page -->
+<?php echo $Evaluaciones->getPage(); ?>
+
+<!-- Links to the next 3 pages -->
+<?php foreach ($Evaluaciones->getNextLinks(20) as $link): ?>
+  <a href="/administracion_dev.php/evaluaciones/historial?nombre=<?php echo $nombre; ?>&&year=<?php echo $año; ?>&&month=<?php echo $mes; ?>&&day=<?php echo $dia; ?>&&pagina=<?php echo $link; ?> ">
+       <?php echo $link; ?></a>
+<?php endforeach; ?>
+
+<?php if (!$Evaluaciones->atLastPage()): ?> 
+  <!-- Links for next and last pages -->
+  <a href="/administracion_dev.php/evaluaciones/historial?nombre=<?php echo $nombre; ?>&&year=<?php echo $año; ?>&&month=<?php echo $mes; ?>&&day=<?php echo $dia; ?>&&pagina=<?php echo $Evaluaciones->getNext(); ?> ">Siguiente</a>
+  <a href="/administracion_dev.php/evaluaciones/historial?nombre=<?php echo $nombre; ?>&&year=<?php echo $año; ?>&&month=<?php echo $mes; ?>&&day=<?php echo $dia; ?>&&pagina=<?php echo $Evaluaciones->getLastPage(); ?> ">Ultimo</a>
+<?php endif; ?>            
+    <!--<p class="pages"><small>Pagina 1 of 2</small> <span>1</span> <a href="#">2</a> <a href="#">Siguiente&raquo;</a></p> -->
