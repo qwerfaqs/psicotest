@@ -32,13 +32,35 @@ class test
        $result = new Resultados();
        $result->setAspirantesId($respuestas[0]->getAspirantesId());
        $result->setPuntaje($puntaje);
-       $result->setPruebas($respuestas[0]->getPruebas());
+       $result->setPruebas($respuestas[0]->getPruebas());  
+       $result->setEstadosresultadosId(Test::aprobacion($respuestas[0]->getPruebas(), $puntaje));
        $result->save();
+  }
+  
+  
+  public static function aprobacion($prueba,$puntaje)
+  {      
+     $aprobacion = $prueba->getTests()->getPuntajeAprobacion();
+     if($puntaje>=$aprobacion)
+     {
+         $estado = sfConfig::get('app_resultado_apto');
+         return($estado);
+     }
+     else
+     {
+       $estado = sfConfig::get('app_resultado_noapto');
+       return($estado);
+     }
   }
   
   public static function calcular16pf($respuestas)
   { 
       // calculo del 16pf arrojando resultado por factor 
+  }
+  
+  public static function calcularig2($respuestas)
+  { 
+      
   }
    
    

@@ -11,4 +11,6 @@ all:
     modelo: Aspirantes
   activo: 1
   init_prueba: 0
+  resultado_apto: 1 
+  resultado_noapto: 2 
      

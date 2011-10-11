@@ -31,6 +31,14 @@ class EvaluacionesPeer extends BaseEvaluacionesPeer
     return $pager;
   }
   
+  public static function getEvaluacionesAspirantes($estado,$aspirante)
+  {
+    $criteria = new Criteria();    
+    $criteria->add(AsistenciasPeer::ASPIRANTES_ID,$aspirante,Criteria::EQUAL);     
+    $criteria->add(EvaluacionesPeer::ESTADOSEVALUACIONES_ID,$estado,Criteria::EQUAL);     
+    return (AsistenciasPeer::doSelectJoinAll($criteria));
+  }
+  
   public static function getAll()
   {
     $criteria = new Criteria();          

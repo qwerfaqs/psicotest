@@ -117,6 +117,20 @@ CREATE TABLE `estadosevaluaciones`
 )Type=InnoDB;
 
 #-----------------------------------------------------------------------------
+#-- estadosresultados
+#-----------------------------------------------------------------------------
+
+DROP TABLE IF EXISTS `estadosresultados`;
+
+
+CREATE TABLE `estadosresultados`
+(
+	`id` INTEGER(11)  NOT NULL AUTO_INCREMENT,
+	`nombre` CHAR(50),
+	PRIMARY KEY (`id`)
+)Type=InnoDB;
+
+#-----------------------------------------------------------------------------
 #-- evaluaciones
 #-----------------------------------------------------------------------------
 
@@ -126,22 +140,22 @@ DROP TABLE IF EXISTS `evaluaciones`;
 CREATE TABLE `evaluaciones`
 (
 	`id` INTEGER(11)  NOT NULL AUTO_INCREMENT,
+	`perfil_id` INTEGER(11)  NOT NULL,
 	`estadosevaluaciones_id` INTEGER(11)  NOT NULL,
 	`cantidad` INTEGER(11),
 	`fecha` DATE,
 	`nombre` CHAR(50),
-	`perfil_id` INTEGER(11),
 	PRIMARY KEY (`id`),
 	KEY `estadosevaluaciones_id`(`estadosevaluaciones_id`),
+	KEY `perfil_id`(`perfil_id`),
 	CONSTRAINT `evaluaciones_FK_1`
-		FOREIGN KEY (`estadosevaluaciones_id`)
-		REFERENCES `estadosevaluaciones` (`id`)
-		ON UPDATE RESTRICT
-		ON DELETE RESTRICT,
-	INDEX `evaluaciones_FI_2` (`perfil_id`),
-	CONSTRAINT `evaluaciones_FK_2`
 		FOREIGN KEY (`perfil_id`)
 		REFERENCES `perfil` (`id`)
+		ON UPDATE RESTRICT
+		ON DELETE RESTRICT,
+	CONSTRAINT `evaluaciones_FK_2`
+		FOREIGN KEY (`estadosevaluaciones_id`)
+		REFERENCES `estadosevaluaciones` (`id`)
 		ON UPDATE RESTRICT
 		ON DELETE RESTRICT
 )Type=InnoDB;
@@ -163,6 +177,29 @@ CREATE TABLE `opciones`
 	CONSTRAINT `opciones_FK_1`
 		FOREIGN KEY (`tipoopcion_id`)
 		REFERENCES `tipoopcion` (`id`)
+		ON UPDATE RESTRICT
+		ON DELETE RESTRICT
+)Type=InnoDB;
+
+#-----------------------------------------------------------------------------
+#-- percentiles
+#-----------------------------------------------------------------------------
+
+DROP TABLE IF EXISTS `percentiles`;
+
+
+CREATE TABLE `percentiles`
+(
+	`id` INTEGER(11)  NOT NULL AUTO_INCREMENT,
+	`escalas_id` INTEGER(11)  NOT NULL,
+	`percentil` INTEGER(11),
+	`desde` INTEGER(11)  NOT NULL,
+	`hasta` INTEGER(11),
+	PRIMARY KEY (`id`),
+	KEY `escalas_id`(`escalas_id`),
+	CONSTRAINT `percentiles_FK_1`
+		FOREIGN KEY (`escalas_id`)
+		REFERENCES `escalas` (`id`)
 		ON UPDATE RESTRICT
 		ON DELETE RESTRICT
 )Type=InnoDB;
@@ -315,9 +352,11 @@ CREATE TABLE `resultados`
 	`aspirantes_id` INTEGER(11)  NOT NULL,
 	`duracion` CHAR(20),
 	`puntaje` CHAR(20),
+	`estadosresultados_id` INTEGER(11),
 	PRIMARY KEY (`id`),
 	KEY `pruebas_id`(`pruebas_id`),
 	KEY `aspirantes_id`(`aspirantes_id`),
+	KEY `estadosresultados_id`(`estadosresultados_id`),
 	CONSTRAINT `resultados_FK_1`
 		FOREIGN KEY (`pruebas_id`)
 		REFERENCES `pruebas` (`id`)
@@ -326,6 +365,11 @@ CREATE TABLE `resultados`
 	CONSTRAINT `resultados_FK_2`
 		FOREIGN KEY (`aspirantes_id`)
 		REFERENCES `aspirantes` (`id`)
+		ON UPDATE RESTRICT
+		ON DELETE RESTRICT,
+	CONSTRAINT `resultados_FK_3`
+		FOREIGN KEY (`estadosresultados_id`)
+		REFERENCES `estadosresultados` (`id`)
 		ON UPDATE RESTRICT
 		ON DELETE RESTRICT
 )Type=InnoDB;
@@ -409,12 +453,13 @@ DROP TABLE IF EXISTS `tests`;
 CREATE TABLE `tests`
 (
 	`id` INTEGER(11)  NOT NULL AUTO_INCREMENT,
-	`tipoopcion_id` INTEGER(11)  NOT NULL,
 	`titulo` VARCHAR(80),
 	`historia` TEXT,
 	`enunciado` TEXT,
 	`imagen` CHAR(100),
 	`duracion` CHAR(30),
+	`puntaje_aprobacion` CHAR(20),
+	`tipoopcion_id` INTEGER(11)  NOT NULL,
 	PRIMARY KEY (`id`),
 	KEY `tipoopcion_id`(`tipoopcion_id`),
 	CONSTRAINT `tests_FK_1`

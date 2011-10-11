@@ -21,8 +21,10 @@ class Tomador
          break;
          case '16pf': 
             return(Tomador::getRespuestaSimple($request) );                
+         break;     
+         case 'ig2': 
+            return(Tomador::getRespuestaSimple($request) );                
          break;
-     
          default:
          break;
      }

@@ -18,11 +18,12 @@
  */
 class OpcionesPeer extends BaseOpcionesPeer 
 {
- public static function getOpcion($opcion)
+ public static function getOpcion($opcion,$tipoopcion)
   {
     $criteria = new Criteria();    
 
     $criteria->add(OpcionesPeer::TEXTO,$opcion,Criteria::EQUAL);     
+    $criteria->add(OpcionesPeer::TIPOOPCION_ID,$tipoopcion,Criteria::EQUAL);   
     return (self::doSelectOne($criteria));
   }
   

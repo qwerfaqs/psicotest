@@ -65,14 +65,15 @@ class myUser extends derechosSecurityUser
   {
       $result = $this->getAttribute('resultados');
       $result[] = $resultado;
-      $this->setAttribute('resultados',$result);            
+      $this->setAttribute('resultados',$result);      
+     
   }
   
   
   
   public function setResultado($prueba,$respuesta,$pregunta)
-  {          
-     $res = OpcionesPeer::getOpcion($respuesta);     
+  {               
+     $res = OpcionesPeer::getOpcion($respuesta,$prueba->getTests()->getTipoopcion()->getId());          
      $resultado = new  Resultadosparciales();
      $resultado->setAspirantesId($this->getAttribute('usuarioId'));     
      $resultado->setOpciones($res);
@@ -84,13 +85,15 @@ class myUser extends derechosSecurityUser
   public function saveResultados()
   { 
     $respuestas =   $this->getAttribute('resultados');
-    foreach($respuestas as $resultado)
+    foreach($respuestas as $resultado)     
         $resultado->save(); 
+   
     
     switch ($respuestas[0]->getPruebas()->getTests()->getTitulo()) 
     {
         case 'domino': Test::calcularDomino($respuestas);  break;
-        case '16pf': Test::calcular16pf($respuestas); break;        
+        case '16pf': Test::calcular16pf($respuestas); break;   
+        case 'ig2': Test::calcularig2($respuestas); break; 
     }        
   }
   
