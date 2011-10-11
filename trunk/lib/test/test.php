@@ -22,7 +22,8 @@ class test
        foreach($respuestas as $resultado)
        {     
          $pregunta = $resultado->getPreguntas();
-         $respuesta =  RespuestasPeer::getRespuesta($pregunta->getId());
+         $estado = sfConfig::get('app_activo');
+         $respuesta =  RespuestasPeer::getRespuesta($pregunta->getId(),$estado);
         
           if ($resultado->getOpciones()->getTexto()==$respuesta->getOpciones()->getTexto())
           {
@@ -60,7 +61,27 @@ class test
   
   public static function calcularig2($respuestas)
   { 
+     $puntaje=0; 
       
+       foreach($respuestas as $resultado)
+       {     
+         $pregunta = $resultado->getPreguntas();
+         $estado = sfConfig::get('app_activo');
+         $respuesta =  RespuestasPeer::getRespuesta($pregunta->getId(),$estado);
+         if ($resultado->getOpciones()->getTexto()==$respuesta->getOpciones()->getTexto())
+          {
+            $puntaje = $puntaje + 1;  
+          }
+       }
+       $percentil = PercentilesPeer::getPercentil($respuestas[0]->getPruebas()->getTests()->getId(),$puntaje);      
+       
+       $result = new Resultados();
+       $result->setAspirantesId($respuestas[0]->getAspirantesId());       
+       $result->setPuntaje($percentil->getPercentil());
+       $result->setPruebas($respuestas[0]->getPruebas());  
+       
+       $result->setEstadosresultadosId(Test::aprobacion($respuestas[0]->getPruebas(), $percentil->getPercentil()));             
+       $result->save();
   }
    
    
