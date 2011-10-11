@@ -62,6 +62,10 @@ html, .main {
 	font-size:12px;
 	margin-bottom:5px;
 }
+.listado li img
+{
+	max-width:620px;
+}
 .listadoconimagen li
 {
 	background-image:url(../images/listadoimgbackground.jpg);	
