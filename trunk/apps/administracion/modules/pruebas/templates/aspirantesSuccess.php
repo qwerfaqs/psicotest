@@ -7,12 +7,13 @@
             <th scope="col">Nombre</th>
             <th scope="col">Apellido</th>
             <th scope="col">Puntaje obtenido</th>
+            <th scope="col">Resultado Final</th>
         </tr>
     </thead>
     <tfoot>
         <tr>
             <th scope="row">Total</th>
-            <td colspan="4"><?php echo count($resultados) ?> aspirantes</td>
+            <td colspan="5"><?php echo count($resultados) ?> aspirantes</td>
         </tr>
     </tfoot>
     <tbody>
@@ -23,6 +24,7 @@
         <td><?php echo $resultado->getAspirantes()->getNombre() ?></td>
         <td><?php echo $resultado->getAspirantes()->getApellido()?></td>
         <td><?php echo $resultado->getPuntaje() ?></td>
+        <td><?php echo $resultado->getEstadosresultados()->getNombre() ?></td>
     </tr>
     <?php endforeach; ?>
   </tbody>

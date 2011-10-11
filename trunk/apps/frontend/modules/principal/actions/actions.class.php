@@ -19,7 +19,7 @@ class principalActions extends sfActions
               
     $aspirante = $this->getUser()->getAttribute('usuarioId');
     $estado = sfConfig::get('app_activo'); // el estado de la evaluacion en este caso activo para que aparesca en pantalla
-    $this->evaluaciones = EvaluacionesPeer::getEvaluaciones($estado,$aspirante);       
+    $this->evaluaciones = EvaluacionesPeer::getEvaluacionesAspirantes($estado,$aspirante);       
   }
   public function executePruebas(sfWebRequest $request) { // listado de pruebas de una evaluacion
     $this->evaluacion = $this->getRoute()->getObject();      
@@ -94,6 +94,9 @@ class principalActions extends sfActions
   
   public function executeFinish(sfWebRequest $request) 
   {  
+/*   $ev = $this->getUser()->getEvaluacion();      
+   $ev->setEstadosevaluacionesId(3);
+   $ev->save(); FINALIZA TODAS LAS EVALUACIONES*/
       
   }
   

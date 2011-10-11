@@ -5,9 +5,9 @@
         <h3>Evaluaciones disponibles:</h3>
         <p>Seleccione Cualquiera de las evaluaciones disponibles, el link lo llevará a una pantalla con detalles de la evaluación y de cada uno de los Evaluación que deberá realizar.	</p>
         <p id="listadoevaluaciones">
-            <ul class="listadoconimagen">
+            <ul class="listadoconimagen">                
                 <?php foreach($evaluaciones as $evaluacion) : ?>
-                <?php        include_partial('evaluacion',array('evaluacion'=>$evaluacion)); ?>
+                <?php        include_partial('evaluacion',array('evaluacion'=>$evaluacion->getEvaluaciones())); ?>
                 <?php endforeach; ?>              
             </ul>
         </p>
