@@ -1,3 +1,44 @@
+<table summary="Submitted table designs">
+<caption>
+<h3>Buscar aspirantes</h3>
+</caption>
+</table>
+
+
+
+<form action="/administracion_dev.php/evaluaciones/create" method="post">
+  <table>
+    <tfoot>
+      <tr>
+        <td colspan="2">          
+            <a type="submit" value="" class="link">Buscar</a>
+        </td>
+      </tr>
+    </tfoot>
+    <tbody>
+    
+      
+
+  
+<tr>
+  <th><label for="aspirantes_cedula">cedula</label></th>
+  <td><input type="text" name="cedula" id=""></td>
+</tr>
+<tr>
+  <th><label for="aspirantes_nombre">Nombre</label></th>
+  <td><input type="text" name="cedula" id=""></td>
+</tr>
+<tr>
+  <th><label for="aspirantes_apellido">apellido</label></th>
+  <td><input type="text" name="" id=""></td>
+</tr>
+
+    </tbody>
+  </table>
+</form>
+<p class="pages"><small>Pagina 1 of 2</small> <span>1</span> <a href="#">2</a> <a href="#">Siguiente&raquo;</a></p>
+      
+
 <table summary="Submitted table designs"><caption>
         <h3>Aspirantes</h3>
     </caption>
