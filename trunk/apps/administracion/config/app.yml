@@ -10,3 +10,4 @@ all:
     # aca hay varias opciones Administrador Chicas Clientes Reevendedores
     modelo: Administradores
   activo: 1  
+  finalizado: 3 
