@@ -9,13 +9,6 @@ Administradores:
     password: x1234
     nombre: matias
     apellido: luzardi
-Estadosevaluaciones:
-  Estadosevaluaciones_1:
-    nombre: Activa
-  Estadosevaluaciones_2:
-    nombre: Inactiva
-  Estadosevaluaciones_3:
-    nombre: Finalizada
 Perfil:
   Perfil_1:
     nombre: Infante
@@ -23,37 +16,50 @@ Perfil:
     nombre: Oficial
   Perfil_3:
     nombre: Grumete
+Estadosevaluaciones:
+  Estadosevaluaciones_1:
+    nombre: Activa
+  Estadosevaluaciones_2:
+    nombre: Inactiva
+  Estadosevaluaciones_3:
+    nombre: Finalizada
 Evaluaciones:
   Evaluaciones_1:
+    perfil_id: Perfil_1
     estadosevaluaciones_id: Estadosevaluaciones_3
     cantidad: '10'
     fecha: '2011-09-29'
     nombre: 'Curso ingenieria Naval'
-    perfil_id: Perfil_1
   Evaluaciones_2:
+    perfil_id: Perfil_2
     estadosevaluaciones_id: Estadosevaluaciones_1
     cantidad: '3'
     fecha: '2011-09-29'
     nombre: 'Aspirantes a Corsarios'
-    perfil_id: Perfil_2
   Evaluaciones_3:
+    perfil_id: Perfil_1
     estadosevaluaciones_id: Estadosevaluaciones_1
     cantidad: '20'
     fecha: '2006-01-01'
     nombre: 'GRUMETES A LA MARINE'
-    perfil_id: Perfil_1
   Evaluaciones_4:
+    perfil_id: Perfil_1
     estadosevaluaciones_id: Estadosevaluaciones_3
     cantidad: '30'
     fecha: '2006-01-01'
     nombre: arena
-    perfil_id: Perfil_1
   Evaluaciones_5:
+    perfil_id: Perfil_2
     estadosevaluaciones_id: Estadosevaluaciones_2
     cantidad: '210'
     fecha: '2010-01-03'
     nombre: 'TERCERA GUERRA MUNDIAL'
-    perfil_id: Perfil_2
+  Evaluaciones_6:
+    perfil_id: Perfil_1
+    estadosevaluaciones_id: Estadosevaluaciones_3
+    cantidad: '10'
+    fecha: '2006-01-01'
+    nombre: 'IG2 A TODOS'
 Aspirantes:
   Aspirantes_1:
     nombre: matias
@@ -69,11 +75,14 @@ Asistencias:
   Asistencias_1:
     evaluaciones_id: Evaluaciones_1
     aspirantes_id: Aspirantes_1
-  Asistencias_5:
+  Asistencias_2:
     evaluaciones_id: Evaluaciones_1
     aspirantes_id: Aspirantes_2
-  Asistencias_10:
+  Asistencias_3:
     evaluaciones_id: Evaluaciones_2
+    aspirantes_id: Aspirantes_1
+  Asistencias_4:
+    evaluaciones_id: Evaluaciones_6
     aspirantes_id: Aspirantes_1
 Tipoopcion:
   Tipoopcion_1:
@@ -82,31 +91,48 @@ Tipoopcion:
     nombre: Verdadero/Falso
   Tipoopcion_3:
     nombre: ABC
+  Tipoopcion_4:
+    nombre: ABCDE
 Tests:
   Tests_1:
-    tipoopcion_id: Tipoopcion_1
     titulo: domino
     historia: "El test de Dominó también llamado D48 es una prueba de la llamada inteligencia no verbal y fue creada por el psicólogo inglés E. Anstey para uso exclusivo de la Armada Británica. Mide el factor G de la inteligencia de los sujetos (capacidad de inteligencia general) en función de sus facultades lógicas.\r\nEl conocimiento del juego del dominó no supone en principio ninguna ventaja, simplemente una mayor familiaridad con las fichas y a pesar de que se trabaja con números no requiere de conocimientos matemáticos ni habilidades especiales. Simplemente hay que tener presente que las fichas siguen un orden cíclico de forma que la ficha posterior al 6 es la blanca y por lo tanto la ficha anterior a la blanca es el 6.\r\n\r\nUna de las principales ventajas de este test es que elimina las diferencias entre los sujetos causadas por factores sociales y educativos. Se le reconocen índices de validez y confiabilidad aceptables (r-0,79) con relación a otros tests de inteligencia y se aplica en multitud países en Psicología Clínica, Educativa y del Trabajo.\r\n\r\nEl test original, consta de 40 grupos de fichas y el objetivo es identificar una o más leyes que relacionan las partes superiores, inferiores o laterales de las fichas del dominó. No siempre regirán las mismas leyes. Lo que hay que descubrir es cuál es la serie u orden que que siguen las fichas. La dificultad se va incrementando en cada pregunta. Se aplica a personas de entre 10 y 65 años y el tiempo de realización oscila entre los 30 y 45 minutos."
     enunciado: "A continuación te proponemos una serie de ejemplos a modo de práctica. Puedes ver la solución de cada problema si lo deseas y la explicación razonada de la misma.\r\n\r\nPara responder cada problema debes seleccionar la orientación en la que debería aparecer la ficha, el número de la parte superior de la ficha y el de la parte inferior. Una vez seleccionada la respuesta, pulsa el botón continuar. Si lo deseas, puedes ver la solución pulsando el botón \"Mostrar solución\" que te aparece en la parte inferior."
     imagen: d1.png
     duracion: '10 minutos'
+    puntaje_aprobacion: '50'
+    tipoopcion_id: Tipoopcion_1
   Tests_2:
-    tipoopcion_id: Tipoopcion_2
     titulo: 'Inventario Multiaxial Clinico de Millon. MCMI-II'
     historia: 'Millon, 1999'
     enunciado: 'Este test contiene una serie de frases usuales o expreciones que las personas suelen utilizar para describirse asi mismas. Sirven para ayudarle a describirse asi mismas. Sirven para ayudarle a describir sus sentimientos y actitudes. No te preocupes si algunas cuestiones o fraces te parecen extrañas, estan incluidas para describir los diferentes problemas que puede tener la gente. Procura responder a todas las frases aunque no estes totalmente seguro. Marca Siempre Verdadero o Falso.'
     duracion: '30'
+    tipoopcion_id: Tipoopcion_2
   Tests_3:
-    tipoopcion_id: Tipoopcion_3
     titulo: 16pf
     historia: ''
     enunciado: "Este es un cuestionario de sus actitudes. Lo que hace o lo que piensa acerca de ciertas situaciones. Las personas piensan de una manera u otra. Por lo tanto, no existen respuestas “correctas o incorrectas” a las preguntas de este formulario.Adelante aparecen cinco preguntas de ensayo que contestarán usted para estar seguro de que comprende lo que debe hacer en el propio cuestionario. Marque las contestaciones a estas preguntas de ensayo en la “Hoja de respuestas 16. P.F” en la parte superior izquierda, identificadas con números romanos. Se ofrecen tres posibles respuestas para cada pregunta que Ud. debe contestar “Si o No”, colocando una “Equis (X)” en la casilla (A) si su respuesta es afirmativa; o, en la casilla “C” si es negativa. Solamente debe marcar la respuesta en el centro “B” cuando le sea realmente imposible decir “Si” o “No”.\r\nConteste ahora las cinco siguientes preguntas de ensayo: \r\nI.	Me guata hacer ejercicios al aire libre (A) Si; (B) Más o menos; (C) No.\r\nII.	Me gustaría ser: (A) Operador de máquina de fábrica; (B) Vendedor; (C) Empleado de un Banco.\r\nIII.	Cuando duermo sueño  mucho (A) Si; (B) Ocasionalmente; (C) No.\r\nIV.	Me gusta una persona que sea: (A) Atenta con la gente; (B) Apartad e indiferente con la gente; (C) Que sea sarcástico.\r\nV.	Me es difícil conversar con alguien cuando el radio está puesto. (A) Si; (B) Intermedio; (C) No.\r\nEn las páginas interiores que siguen encontrará 102 preguntas similares a las que apareen arriba. Para contestarlas tenga presente estas reglas:\r\n1.	Conteste las preguntas tan franca y honradamente como le sea posible. No existe ventaja en crear una mejor impresión personal. No marque una respuesta que no sea cierta por creer que “es lo que debe decir”.\r\n2.	Conteste con la mayor rapidez posible. No dedique tiempo en meditar sobre las preguntas. Anote su primera reacción y pase de allí a la próxima pregunta.\r\n3.	Marque la respuesta “Si” (o “A”) o la respuesta “No” (o “C”) con una (X) para la mayoría de las preguntas. Solamente marque las respuestas en el centro “B” cuando le sea imposible contestar “Si” o  “No” aunque en algunos casos le será difícil escoger.\r\n4.	Conteste todas las preguntas sin excepción. Habrá las preguntas que no reflejan sus ideas, pero debe contestarlas todas. No debe saltarse ninguna. Sus respuestas serán confidenciales.   \r\n\r\n5.	onteste las preguntas tan franca y honradamente como le sea posible. No existe ventaja en crear una mejor impresión personal. No marque una respuesta que no sea cierta por creer que “es lo que debe decir”.\r\n6.	Conteste con la mayor rapidez posible. No dedique tiempo en meditar sobre las preguntas. Anote su primera reacción y pase de allí a la próxima pregunta.\r\n7.	Marque la respuesta “Si” (o “A”) o la respuesta “No” (o “C”) con una (X) para la mayoría de las preguntas. Solamente marque las respuestas en el centro “B” cuando le sea imposible contestar “Si” o  “No” aunque en algunos casos le será difícil escoger.\r\n8.	Conteste todas las preguntas sin excepción. Habrá las preguntas que no reflejan sus ideas, pero debe contestarlas todas. No debe saltarse ninguna. Sus respuestas serán confidenciales.   \r\n\r\n\r\n\r\nTodas sus contestaciones en la \"Hoja de Respuestas 16 P.F.\"    No marque ni haga señales en estas hojas.\r\nASEGURESE DE QUE HAYA MARCADO UNA RESPUESTA,  PERO SOLAMENTE UNA, PARA CADA PREGUNTA.\r\n"
     duracion: '30 min'
+    tipoopcion_id: Tipoopcion_3
+  Tests_4:
+    titulo: ig2
+    historia: "Perteneciente al grupo de pruebas de inteligencia tipo “omnibus”, sus elementos ponen en ejercicio varias aptitudes intelectuales, cuya puntuación global permite una rápida discriminación por medio de una aplicación colectiva.\r\n"
+    puntaje_aprobacion: '50'
+    tipoopcion_id: Tipoopcion_4
+Escalas:
+  Escalas_1:
+    tests_id: Tests_4
+    nombre: 'escala ig2'
 Estadopruebas:
   Estadopruebas_1:
     nombre: Inicializada
   Estadopruebas_2:
     nombre: 'En proceso'
+Estadosresultados:
+  Estadosresultados_1:
+    nombre: Apto
+  Estadosresultados_2:
+    nombre: 'No apto'
 Opciones:
   Opciones_1:
     tipoopcion_id: Tipoopcion_1
@@ -270,6 +296,136 @@ Opciones:
   Opciones_54:
     tipoopcion_id: Tipoopcion_3
     texto: C
+  Opciones_55:
+    tipoopcion_id: Tipoopcion_4
+    texto: A
+  Opciones_56:
+    tipoopcion_id: Tipoopcion_4
+    texto: B
+  Opciones_57:
+    tipoopcion_id: Tipoopcion_4
+    texto: C
+  Opciones_58:
+    tipoopcion_id: Tipoopcion_4
+    texto: D
+  Opciones_59:
+    tipoopcion_id: Tipoopcion_4
+    texto: E
+Percentiles:
+  Percentiles_1:
+    escalas_id: Escalas_1
+    percentil: '99'
+    desde: '47'
+    hasta: '50'
+  Percentiles_2:
+    escalas_id: Escalas_1
+    percentil: '98'
+    desde: '46'
+  Percentiles_3:
+    escalas_id: Escalas_1
+    percentil: '97'
+    desde: '45'
+  Percentiles_4:
+    escalas_id: Escalas_1
+    percentil: '96'
+    desde: '0'
+  Percentiles_5:
+    escalas_id: Escalas_1
+    percentil: '95'
+    desde: '43'
+    hasta: '44'
+  Percentiles_6:
+    escalas_id: Escalas_1
+    percentil: '90'
+    desde: '42'
+  Percentiles_7:
+    escalas_id: Escalas_1
+    percentil: '85'
+    desde: '41'
+  Percentiles_8:
+    escalas_id: Escalas_1
+    percentil: '80'
+    desde: '40'
+  Percentiles_9:
+    escalas_id: Escalas_1
+    percentil: '75'
+    desde: '39'
+  Percentiles_10:
+    escalas_id: Escalas_1
+    percentil: '70'
+    desde: '38'
+  Percentiles_11:
+    escalas_id: Escalas_1
+    percentil: '65'
+    desde: '37'
+  Percentiles_12:
+    escalas_id: Escalas_1
+    percentil: '60'
+    desde: '36'
+  Percentiles_13:
+    escalas_id: Escalas_1
+    percentil: '50'
+    desde: '35'
+  Percentiles_14:
+    escalas_id: Escalas_1
+    percentil: '45'
+    desde: '34'
+  Percentiles_15:
+    escalas_id: Escalas_1
+    percentil: '40'
+    desde: '33'
+  Percentiles_16:
+    escalas_id: Escalas_1
+    percentil: '35'
+    desde: '32'
+  Percentiles_17:
+    escalas_id: Escalas_1
+    percentil: '30'
+    desde: '31'
+  Percentiles_18:
+    escalas_id: Escalas_1
+    percentil: '25'
+    desde: '29'
+    hasta: '30'
+  Percentiles_19:
+    escalas_id: Escalas_1
+    percentil: '20'
+    desde: '27'
+    hasta: '28'
+  Percentiles_20:
+    escalas_id: Escalas_1
+    percentil: '15'
+    desde: '24'
+    hasta: '26'
+  Percentiles_21:
+    escalas_id: Escalas_1
+    percentil: '10'
+    desde: '19'
+    hasta: '23'
+  Percentiles_22:
+    escalas_id: Escalas_1
+    percentil: '5'
+    desde: '18'
+  Percentiles_23:
+    escalas_id: Escalas_1
+    percentil: '4'
+    desde: '16'
+    hasta: '17'
+  Percentiles_24:
+    escalas_id: Escalas_1
+    percentil: '3'
+    desde: '13'
+    hasta: '15'
+  Percentiles_25:
+    escalas_id: Escalas_1
+    percentil: '2'
+    desde: '9'
+    hasta: '12'
+  Percentiles_26:
+    escalas_id: Escalas_1
+    percentil: '1'
+    desde: '0'
+    hasta: '8'
 Preguntas:
   Preguntas_1:
     tests_id: Tests_1
@@ -1147,82 +1303,93 @@ Preguntas:
   Preguntas_292:
     tests_id: Tests_1
     imagen: d15.png
-  Preguntas_294:
+  Preguntas_293:
     tests_id: Tests_1
     imagen: b1.png
-  Preguntas_295:
+  Preguntas_294:
     tests_id: Tests_1
     imagen: b2.png
-  Preguntas_296:
+  Preguntas_295:
     tests_id: Tests_1
     imagen: b3.png
-  Preguntas_297:
+  Preguntas_296:
     tests_id: Tests_1
     imagen: b4.png
-  Preguntas_298:
+  Preguntas_297:
     tests_id: Tests_1
     imagen: b5.png
-  Preguntas_299:
+  Preguntas_298:
     tests_id: Tests_1
     imagen: b6.png
-  Preguntas_300:
+  Preguntas_299:
     tests_id: Tests_1
     imagen: b7.png
-  Preguntas_301:
+  Preguntas_300:
     tests_id: Tests_1
     imagen: b8.png
-  Preguntas_302:
+  Preguntas_301:
     tests_id: Tests_1
     imagen: b9.png
-  Preguntas_303:
+  Preguntas_302:
     tests_id: Tests_1
     imagen: b10.png
-  Preguntas_304:
+  Preguntas_303:
     tests_id: Tests_1
     imagen: b11.png
-  Preguntas_305:
+  Preguntas_304:
     tests_id: Tests_1
     imagen: b12.png
-  Preguntas_306:
+  Preguntas_305:
     tests_id: Tests_1
     imagen: b13.png
-  Preguntas_307:
+  Preguntas_306:
     tests_id: Tests_1
     imagen: b14.png
-  Preguntas_308:
+  Preguntas_307:
     tests_id: Tests_1
     imagen: b15.png
-  Preguntas_309:
+  Preguntas_308:
     tests_id: Tests_1
     imagen: b16.png
-  Preguntas_310:
+  Preguntas_309:
     tests_id: Tests_1
     imagen: b17.png
-  Preguntas_311:
+  Preguntas_310:
     tests_id: Tests_1
     imagen: b18.png
-  Preguntas_312:
+  Preguntas_311:
     tests_id: Tests_1
     imagen: b19.png
-  Preguntas_313:
+  Preguntas_312:
     tests_id: Tests_1
     imagen: b20.png
+  Preguntas_313:
+    tests_id: Tests_4
+    imagen: ''
+    descripcion: '¿Qué palabra es más general o comprende a las otras cuatro?'
+  Preguntas_314:
+    tests_id: Tests_4
+    descripcion: "¿Qué palabra completa mejor la frase siguiente?\r\n\r\nLIBRO es a BIBLIOTECA como DIARIO es a..... 	\r\n"
 Pruebas:
-  Pruebas_6:
+  Pruebas_1:
     tests_id: Tests_1
     evaluaciones_id: Evaluaciones_3
     estadopruebas_id: Estadopruebas_1
-  Pruebas_10:
+  Pruebas_2:
     tests_id: Tests_1
     evaluaciones_id: Evaluaciones_1
     estadopruebas_id: Estadopruebas_1
-  Pruebas_12:
+  Pruebas_3:
     tests_id: Tests_3
     evaluaciones_id: Evaluaciones_2
     estadopruebas_id: Estadopruebas_1
-  Pruebas_13:
+  Pruebas_4:
     tests_id: Tests_1
     evaluaciones_id: Evaluaciones_4
+    estadopruebas_id: Estadopruebas_1
+  Pruebas_6:
+    tests_id: Tests_4
+    evaluaciones_id: Evaluaciones_6
     estadopruebas_id: Estadopruebas_1
 Valoresdeverdad:
   Valoresdeverdad_1:
@@ -2823,402 +2990,149 @@ Respuestas:
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_5
   Respuestas_322:
-    preguntas_id: Preguntas_294
+    preguntas_id: Preguntas_293
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_33
   Respuestas_323:
-    preguntas_id: Preguntas_295
+    preguntas_id: Preguntas_294
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_38
   Respuestas_324:
-    preguntas_id: Preguntas_296
+    preguntas_id: Preguntas_295
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_49
   Respuestas_325:
-    preguntas_id: Preguntas_297
+    preguntas_id: Preguntas_296
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_39
   Respuestas_326:
-    preguntas_id: Preguntas_298
+    preguntas_id: Preguntas_297
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_46
   Respuestas_327:
-    preguntas_id: Preguntas_299
+    preguntas_id: Preguntas_298
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_49
   Respuestas_328:
-    preguntas_id: Preguntas_300
+    preguntas_id: Preguntas_299
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_33
   Respuestas_329:
-    preguntas_id: Preguntas_301
+    preguntas_id: Preguntas_300
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_13
   Respuestas_330:
-    preguntas_id: Preguntas_302
+    preguntas_id: Preguntas_301
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_7
   Respuestas_331:
-    preguntas_id: Preguntas_303
+    preguntas_id: Preguntas_302
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_38
   Respuestas_332:
-    preguntas_id: Preguntas_304
+    preguntas_id: Preguntas_303
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_10
   Respuestas_333:
-    preguntas_id: Preguntas_305
+    preguntas_id: Preguntas_304
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_45
   Respuestas_334:
-    preguntas_id: Preguntas_306
+    preguntas_id: Preguntas_305
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_15
   Respuestas_335:
-    preguntas_id: Preguntas_307
+    preguntas_id: Preguntas_306
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_4
   Respuestas_336:
-    preguntas_id: Preguntas_308
+    preguntas_id: Preguntas_307
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_15
   Respuestas_337:
-    preguntas_id: Preguntas_309
+    preguntas_id: Preguntas_308
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_12
   Respuestas_338:
-    preguntas_id: Preguntas_310
+    preguntas_id: Preguntas_309
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_36
   Respuestas_339:
-    preguntas_id: Preguntas_311
+    preguntas_id: Preguntas_310
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_13
   Respuestas_340:
-    preguntas_id: Preguntas_312
+    preguntas_id: Preguntas_311
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_12
   Respuestas_341:
-    preguntas_id: Preguntas_313
+    preguntas_id: Preguntas_312
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_1
+  Respuestas_342:
+    preguntas_id: Preguntas_313
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Antracita
+  Respuestas_343:
+    preguntas_id: Preguntas_313
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: ' Hulla'
+  Respuestas_344:
+    preguntas_id: Preguntas_313
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+    descripcion: Carbón
+  Respuestas_345:
+    preguntas_id: Preguntas_313
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: ' Lignito'
+  Respuestas_346:
+    preguntas_id: Preguntas_313
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: ' Cisco'
+  Respuestas_347:
+    preguntas_id: Preguntas_314
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: ' Pinacoteca'
+  Respuestas_348:
+    preguntas_id: Preguntas_314
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: ' Hemeroteca'
+  Respuestas_349:
+    preguntas_id: Preguntas_314
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: ' Revista'
+  Respuestas_350:
+    preguntas_id: Preguntas_314
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: Contabilidad
+  Respuestas_351:
+    preguntas_id: Preguntas_314
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: Quiosco
 Resultados:
   Resultados_1:
-    pruebas_id: Pruebas_10
+    pruebas_id: Pruebas_6
     aspirantes_id: Aspirantes_1
-    puntaje: '8.57142857143'
-  Resultados_3:
-    pruebas_id: Pruebas_10
-    aspirantes_id: Aspirantes_1
-    puntaje: '5.71428571429'
+    puntaje: '1'
+    estadosresultados_id: Estadosresultados_2
 Resultadosparciales:
   Resultadosparciales_1:
     aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_1
-    opciones_id: Opciones_5
+    pruebas_id: Pruebas_6
+    preguntas_id: Preguntas_313
+    opciones_id: Opciones_55
   Resultadosparciales_2:
     aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_2
-    opciones_id: Opciones_7
-  Resultadosparciales_3:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_280
-    opciones_id: Opciones_7
-  Resultadosparciales_4:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_281
-    opciones_id: Opciones_7
-  Resultadosparciales_5:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_282
-    opciones_id: Opciones_7
-  Resultadosparciales_6:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_283
-    opciones_id: Opciones_7
-  Resultadosparciales_7:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_284
-    opciones_id: Opciones_7
-  Resultadosparciales_8:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_285
-    opciones_id: Opciones_7
-  Resultadosparciales_9:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_286
-    opciones_id: Opciones_7
-  Resultadosparciales_10:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_287
-    opciones_id: Opciones_7
-  Resultadosparciales_11:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_288
-    opciones_id: Opciones_7
-  Resultadosparciales_12:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_289
-    opciones_id: Opciones_7
-  Resultadosparciales_13:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_290
-    opciones_id: Opciones_7
-  Resultadosparciales_14:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_291
-    opciones_id: Opciones_7
-  Resultadosparciales_15:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_292
-    opciones_id: Opciones_7
-  Resultadosparciales_16:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_294
-    opciones_id: Opciones_7
-  Resultadosparciales_17:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_295
-    opciones_id: Opciones_7
-  Resultadosparciales_18:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_296
-    opciones_id: Opciones_7
-  Resultadosparciales_19:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_297
-    opciones_id: Opciones_7
-  Resultadosparciales_20:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_298
-    opciones_id: Opciones_7
-  Resultadosparciales_21:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_299
-    opciones_id: Opciones_7
-  Resultadosparciales_22:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_300
-    opciones_id: Opciones_7
-  Resultadosparciales_23:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_301
-    opciones_id: Opciones_7
-  Resultadosparciales_24:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_302
-    opciones_id: Opciones_7
-  Resultadosparciales_25:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_303
-    opciones_id: Opciones_7
-  Resultadosparciales_26:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_304
-    opciones_id: Opciones_7
-  Resultadosparciales_27:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_305
-    opciones_id: Opciones_7
-  Resultadosparciales_28:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_306
-    opciones_id: Opciones_7
-  Resultadosparciales_29:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_307
-    opciones_id: Opciones_7
-  Resultadosparciales_30:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_308
-    opciones_id: Opciones_7
-  Resultadosparciales_31:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_309
-    opciones_id: Opciones_7
-  Resultadosparciales_32:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_310
-    opciones_id: Opciones_7
-  Resultadosparciales_33:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_311
-    opciones_id: Opciones_7
-  Resultadosparciales_34:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_312
-    opciones_id: Opciones_7
-  Resultadosparciales_35:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_313
-    opciones_id: Opciones_7
-  Resultadosparciales_36:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_286
-    opciones_id: Opciones_7
-  Resultadosparciales_37:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_287
-    opciones_id: Opciones_7
-  Resultadosparciales_38:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_288
-    opciones_id: Opciones_7
-  Resultadosparciales_39:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_289
-    opciones_id: Opciones_7
-  Resultadosparciales_40:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_290
-    opciones_id: Opciones_7
-  Resultadosparciales_41:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_291
-    opciones_id: Opciones_7
-  Resultadosparciales_42:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_292
-    opciones_id: Opciones_7
-  Resultadosparciales_43:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_294
-    opciones_id: Opciones_7
-  Resultadosparciales_44:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_295
-    opciones_id: Opciones_7
-  Resultadosparciales_45:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_296
-    opciones_id: Opciones_7
-  Resultadosparciales_46:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_297
-    opciones_id: Opciones_7
-  Resultadosparciales_47:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_298
-    opciones_id: Opciones_7
-  Resultadosparciales_48:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_299
-    opciones_id: Opciones_7
-  Resultadosparciales_49:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_300
-    opciones_id: Opciones_7
-  Resultadosparciales_50:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_301
-    opciones_id: Opciones_7
-  Resultadosparciales_51:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_302
-    opciones_id: Opciones_7
-  Resultadosparciales_52:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_303
-    opciones_id: Opciones_7
-  Resultadosparciales_53:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_304
-    opciones_id: Opciones_7
-  Resultadosparciales_54:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_305
-    opciones_id: Opciones_7
-  Resultadosparciales_55:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_306
-    opciones_id: Opciones_7
-  Resultadosparciales_56:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_307
-    opciones_id: Opciones_7
-  Resultadosparciales_57:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_308
-    opciones_id: Opciones_7
-  Resultadosparciales_58:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_309
-    opciones_id: Opciones_7
-  Resultadosparciales_59:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_310
-    opciones_id: Opciones_7
-  Resultadosparciales_60:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_311
-    opciones_id: Opciones_7
-  Resultadosparciales_61:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_312
-    opciones_id: Opciones_7
-  Resultadosparciales_62:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_10
-    preguntas_id: Preguntas_313
-    opciones_id: Opciones_7
+    pruebas_id: Pruebas_6
+    preguntas_id: Preguntas_314
+    opciones_id: Opciones_55
