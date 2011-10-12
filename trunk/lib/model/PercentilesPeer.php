@@ -20,11 +20,21 @@ class PercentilesPeer extends BasePercentilesPeer
 {
  public static function getPercentil($test,$puntaje)
   {
-    $criteria = new Criteria();    
+  /*  $criteria = new Criteria();    
     $criteria->addJoin(PercentilesPeer::ESCALAS_ID,  EscalasPeer::ID,  Criteria::INNER_JOIN);
     $criteria->add(EscalasPeer::TESTS_ID,$test,Criteria::EQUAL);
     $criteria->add('percentiles.hasta',$puntaje,Criteria::GREATER_EQUAL);
-    $criteria->addAnd('percentiles.desde',$puntaje,Criteria::LESS_EQUAL);        
-    return (self::doSelectOne($criteria));
+    $criteria->addAnd('percentiles.desde',$puntaje,Criteria::LESS_EQUAL);    */   
+   
+    /*SELECT * FROM `percentiles` WHERE 46 between desde and 
+IFNULL(hasta,desde)*/
+    $query = "SELECT * FROM percentiles 
+              INNER JOIN escalas ON percentiles.escalas_id = escalas.id  
+              WHERE escalas.tests_id=$test AND $puntaje between percentiles.desde and 
+              IFNULL(percentiles.hasta,percentiles.desde)";
+       $connection = Propel::getConnection(self::DATABASE_NAME);
+        $statement = $connection->prepare($query);
+        $statement->execute();
+        return self::populateObjects($statement, $connection);
   }
 } // PercentilesPeer

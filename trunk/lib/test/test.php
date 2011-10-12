@@ -71,15 +71,15 @@ class test
          if ($resultado->getOpciones()->getTexto()==$respuesta->getOpciones()->getTexto())
           {
             $puntaje = $puntaje + 1;  
-          }
-       }
-       $percentil = PercentilesPeer::getPercentil($respuestas[0]->getPruebas()->getTests()->getId(),$puntaje);             
+          }          
+       }       
+       $percentil = PercentilesPeer::getPercentil($respuestas[0]->getPruebas()->getTests()->getId(),$puntaje);                    
        $result = new Resultados();
        $result->setAspirantesId($respuestas[0]->getAspirantesId());       
-       $result->setPuntaje($percentil->getPercentil());
+       $result->setPuntaje($percentil[0]->getPercentil());
        $result->setPruebas($respuestas[0]->getPruebas());  
        
-       $result->setEstadosresultadosId(Test::aprobacion($respuestas[0]->getPruebas(), $percentil->getPercentil()));             
+       $result->setEstadosresultadosId(Test::aprobacion($respuestas[0]->getPruebas(), $percentil[0]->getPercentil()));             
        $result->save();
   }
   
