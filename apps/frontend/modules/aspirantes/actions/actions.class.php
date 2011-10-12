@@ -26,7 +26,7 @@ class aspirantesActions extends sfActions
   }
 
   public function executeCreate(sfWebRequest $request)
-  {
+  {      
     $this->forward404Unless($request->isMethod(sfRequest::POST));
 
     $this->form = new AspirantesForm();
@@ -52,6 +52,10 @@ class aspirantesActions extends sfActions
 
     $this->setTemplate('edit');
   }
+  public function executeFinish(sfWebRequest $request)
+  {
+      
+  }
 
   public function executeDelete(sfWebRequest $request)
   {
@@ -70,7 +74,7 @@ class aspirantesActions extends sfActions
     {
       $Aspirante = $form->save();
 
-      $this->redirect('aspirantes/edit?id='.$Aspirante->getId());
+      $this->redirect('aspirantes/finish?id='.$Aspirante->getId());
     }
   }
 }
