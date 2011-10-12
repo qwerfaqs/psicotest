@@ -94,6 +94,7 @@ class myUser extends derechosSecurityUser
         case 'domino': Test::calcularDomino($respuestas);  break;
         case '16pf': Test::calcular16pf($respuestas); break;   
         case 'ig2': Test::calcularig2($respuestas); break; 
+        case 'barsit': Test::calcularbarsit($respuestas); break; 
     }        
   }
   

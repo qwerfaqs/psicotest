@@ -24,7 +24,7 @@ class PercentilesPeer extends BasePercentilesPeer
     $criteria->addJoin(PercentilesPeer::ESCALAS_ID,  EscalasPeer::ID,  Criteria::INNER_JOIN);
     $criteria->add(EscalasPeer::TESTS_ID,$test,Criteria::EQUAL);
     $criteria->add('percentiles.hasta',$puntaje,Criteria::GREATER_EQUAL);
-    $criteria->addAnd('percentiles.desde',$puntaje,Criteria::LESS_EQUAL);    
+    $criteria->addAnd('percentiles.desde',$puntaje,Criteria::LESS_EQUAL);        
     return (self::doSelectOne($criteria));
   }
 } // PercentilesPeer

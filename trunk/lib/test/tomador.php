@@ -25,6 +25,9 @@ class Tomador
          case 'ig2': 
             return(Tomador::getRespuestaSimple($request) );                
          break;
+         case 'barsit': 
+            return(Tomador::getRespuestaSimple($request) );                
+         break;
          default:
          break;
      }
