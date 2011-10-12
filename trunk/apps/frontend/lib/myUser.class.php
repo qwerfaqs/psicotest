@@ -73,6 +73,7 @@ class myUser extends derechosSecurityUser
   
   public function setResultado($prueba,$respuesta,$pregunta)
   {               
+   
      $res = OpcionesPeer::getOpcion($respuesta,$prueba->getTests()->getTipoopcion()->getId());          
      $resultado = new  Resultadosparciales();
      $resultado->setAspirantesId($this->getAttribute('usuarioId'));     

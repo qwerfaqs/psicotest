@@ -1,0 +1,1 @@
+<?php include_partial('sino0123',array('preguntas'=>$preguntas,'opciones'=>$opciones,'pagina'=>$pagina)); ?>

@@ -62,7 +62,7 @@ Evaluaciones:
     nombre: 'IG2 A TODOS'
   Evaluaciones_7:
     perfil_id: Perfil_1
-    estadosevaluaciones_id: Estadosevaluaciones_1
+    estadosevaluaciones_id: Estadosevaluaciones_3
     cantidad: '1'
     fecha: '2011-12-09'
     nombre: GG
@@ -83,6 +83,41 @@ Aspirantes:
     apellido: pane
     cedula: '35322222'
     password: puto
+  Aspirantes_3:
+    nombre: carlos
+    apellido: arguillano
+    cedula: '32323231'
+    password: cocina
+  Aspirantes_4:
+    nombre: asdasdas
+    apellido: asdasdas
+    cedula: '12345'
+    password: '12345'
+  Aspirantes_5:
+    nombre: clara
+    apellido: pineda
+    cedula: '21212121'
+    password: '21212121'
+  Aspirantes_6:
+    nombre: asfasf
+    apellido: asfasf
+    cedula: '23141231'
+    password: '123456'
+  Aspirantes_7:
+    nombre: Catalana
+    apellido: Marcela
+    cedula: '22333666'
+    password: '789456'
+  Aspirantes_8:
+    nombre: cambiaso
+    apellido: cambiame
+    cedula: '987456311'
+    password: '963852'
+  Aspirantes_9:
+    nombre: finische
+    apellido: lokpoñ
+    cedula: '5465465'
+    password: '123456'
 Asistencias:
   Asistencias_1:
     evaluaciones_id: Evaluaciones_1
@@ -114,6 +149,8 @@ Tipoopcion:
     nombre: ABC
   Tipoopcion_4:
     nombre: ABCDE
+  Tipoopcion_5:
+    nombre: Si/No0123
 Tests:
   Tests_1:
     titulo: domino
@@ -146,6 +183,9 @@ Tests:
     duracion: '30 minutos'
     puntaje_aprobacion: '50'
     tipoopcion_id: Tipoopcion_4
+  Tests_6:
+    titulo: eae1
+    tipoopcion_id: Tipoopcion_5
 Escalas:
   Escalas_1:
     tests_id: Tests_4
@@ -153,6 +193,10 @@ Escalas:
   Escalas_2:
     tests_id: Tests_5
     nombre: 'escala barsit'
+  Escalas_3:
+    tests_id: Tests_6
+    nombre: 'escala g'
+    descripcion: 'escala g para test EAE1 POR EJ'
 Estadopruebas:
   Estadopruebas_1:
     nombre: Inicializada
@@ -341,6 +385,24 @@ Opciones:
   Opciones_59:
     tipoopcion_id: Tipoopcion_4
     texto: E
+  Opciones_60:
+    tipoopcion_id: Tipoopcion_5
+    texto: Si
+  Opciones_61:
+    tipoopcion_id: Tipoopcion_5
+    texto: No
+  Opciones_62:
+    tipoopcion_id: Tipoopcion_5
+    texto: '1'
+  Opciones_63:
+    tipoopcion_id: Tipoopcion_5
+    texto: '2'
+  Opciones_64:
+    tipoopcion_id: Tipoopcion_5
+    texto: '3'
+  Opciones_65:
+    tipoopcion_id: Tipoopcion_5
+    texto: '0'
 Percentiles:
   Percentiles_1:
     escalas_id: Escalas_1
@@ -576,6 +638,80 @@ Percentiles:
     escalas_id: Escalas_2
     percentil: '50'
     desde: '30'
+  Percentiles_57:
+    escalas_id: Escalas_3
+    percentil: '5'
+    desde: '19'
+  Percentiles_58:
+    escalas_id: Escalas_3
+    percentil: '10'
+    desde: '22'
+  Percentiles_59:
+    escalas_id: Escalas_3
+    percentil: '15'
+    desde: '27'
+  Percentiles_60:
+    escalas_id: Escalas_3
+    percentil: '25'
+    desde: '33'
+  Percentiles_61:
+    escalas_id: Escalas_3
+    percentil: '30'
+    desde: '36'
+  Percentiles_62:
+    escalas_id: Escalas_3
+    percentil: '35'
+    desde: '40'
+  Percentiles_63:
+    escalas_id: Escalas_3
+    percentil: '40'
+    desde: '43'
+  Percentiles_64:
+    escalas_id: Escalas_3
+    percentil: '45'
+    desde: '47'
+  Percentiles_65:
+    escalas_id: Escalas_3
+    percentil: '50'
+    desde: '51'
+  Percentiles_66:
+    escalas_id: Escalas_3
+    percentil: '55'
+    desde: '54'
+  Percentiles_67:
+    escalas_id: Escalas_3
+    percentil: '60'
+    desde: '57'
+  Percentiles_68:
+    escalas_id: Escalas_3
+    percentil: '65'
+    desde: '62'
+  Percentiles_69:
+    escalas_id: Escalas_3
+    percentil: '70'
+    desde: '69'
+  Percentiles_70:
+    escalas_id: Escalas_3
+    percentil: '75'
+    desde: '77'
+  Percentiles_71:
+    escalas_id: Escalas_3
+    percentil: '90'
+    desde: '85'
+    hasta: '90'
+  Percentiles_72:
+    escalas_id: Escalas_3
+    percentil: '90'
+    desde: '97'
+  Percentiles_73:
+    escalas_id: Escalas_3
+    percentil: '95'
+    desde: '106'
+  Percentiles_74:
+    escalas_id: Escalas_3
+    percentil: '99'
+    desde: '120'
+    hasta: '123'
 Preguntas:
   Preguntas_1:
     tests_id: Tests_1
@@ -1526,6 +1662,165 @@ Preguntas:
   Preguntas_316:
     tests_id: Tests_5
     descripcion: ") escriba los dos números que falta en esta serie:\r\n10    15   20      25   …………….   35   40  ………………….     50    55  \r\n"
+  Preguntas_317:
+    tests_id: Tests_6
+    descripcion: 'Primer empleo.'
+  Preguntas_318:
+    tests_id: Tests_6
+    descripcion: 'Situación de paro, desempleo o jubilación anticipada.'
+  Preguntas_319:
+    tests_id: Tests_6
+    descripcion: 'Época de exámenes u oposiciones.'
+  Preguntas_320:
+    tests_id: Tests_6
+    descripcion: 'Cambio de ciudad o de residencia.'
+  Preguntas_321:
+    tests_id: Tests_6
+    descripcion: 'Búsqueda y/o adquisición de vivienda.'
+  Preguntas_322:
+    tests_id: Tests_6
+    descripcion: 'Deudas, préstamos, hipotecas.'
+  Preguntas_323:
+    tests_id: Tests_6
+    descripcion: 'Problemas económicos propios y familiares.'
+  Preguntas_324:
+    tests_id: Tests_6
+    descripcion: 'Estilo de vida y/o forma de ser.'
+  Preguntas_325:
+    tests_id: Tests_6
+    descripcion: 'Subida constante del costo de la vida.'
+  Preguntas_326:
+    tests_id: Tests_6
+    descripcion: 'Emancipación, independencia de la familia.'
+  Preguntas_327:
+    tests_id: Tests_6
+    descripcion: 'Falta de apoyo o traición de los amigos.'
+  Preguntas_328:
+    tests_id: Tests_6
+    descripcion: 'Infidelidad propia o de la otra persona hacia mí.'
+  Preguntas_329:
+    tests_id: Tests_6
+    descripcion: 'Hablar en público.'
+  Preguntas_330:
+    tests_id: Tests_6
+    descripcion: 'Inseguridad ciudadana.'
+  Preguntas_331:
+    tests_id: Tests_6
+    descripcion: 'Situación socio-política del país.'
+  Preguntas_332:
+    tests_id: Tests_6
+    descripcion: 'Preocupación por la puntualidad.'
+  Preguntas_333:
+    tests_id: Tests_6
+    descripcion: 'Vivir solo.'
+  Preguntas_334:
+    tests_id: Tests_6
+    descripcion: 'Problemas de convivencia con los demás.'
+  Preguntas_335:
+    tests_id: Tests_6
+    descripcion: 'Presencia de una persona no deseada en el hogar (Tía, Abuela, pariente).'
+  Preguntas_336:
+    tests_id: Tests_6
+    descripcion: 'Vida y relación de pareja o de matrimonio.'
+  Preguntas_337:
+    tests_id: Tests_6
+    descripcion: 'Ruptura de noviazgo o separación de pareja.'
+  Preguntas_338:
+    tests_id: Tests_6
+    descripcion: 'Ruptura de las relaciones familiares (Padres o hermanos).'
+  Preguntas_339:
+    tests_id: Tests_6
+    descripcion: 'Abandono del hogar de un ser querido.'
+  Preguntas_340:
+    tests_id: Tests_6
+    descripcion: 'Separación, divorcio de los padres.'
+  Preguntas_341:
+    tests_id: Tests_6
+    descripcion: 'Nacimiento de otro hijo o hermano.'
+  Preguntas_342:
+    tests_id: Tests_6
+    descripcion: 'Estudio y/o futuro de mis hijos o familiares cercanos.'
+  Preguntas_343:
+    tests_id: Tests_6
+    descripcion: 'Problemática de drogas o alcohol (propia o familiar).'
+  Preguntas_344:
+    tests_id: Tests_6
+    descripcion: 'Muerte de algún familiar muy cercano (conyuge, padres o hermanos).'
+  Preguntas_345:
+    tests_id: Tests_6
+    descripcion: 'Muerte de algún amigo/a o persona querida.'
+  Preguntas_346:
+    tests_id: Tests_6
+    descripcion: 'Embarazo no deseado o deseado con problemas.'
+  Preguntas_347:
+    tests_id: Tests_6
+    descripcion: 'Aborto provocado o accidental.'
+  Preguntas_348:
+    tests_id: Tests_6
+    descripcion: 'Tener una enfermedad grave.'
+  Preguntas_349:
+    tests_id: Tests_6
+    descripcion: Envejecer.
+  Preguntas_350:
+    tests_id: Tests_6
+    descripcion: 'Enfermedad de un ser querido.'
+  Preguntas_351:
+    tests_id: Tests_6
+    descripcion: 'Perdida de algún órgano o función física o psíquica.'
+  Preguntas_352:
+    tests_id: Tests_6
+    descripcion: 'Problemas sexuales.'
+  Preguntas_353:
+    tests_id: Tests_6
+    descripcion: 'Someterse a tratamiento, revisión o rehabilitación.'
+  Preguntas_354:
+    tests_id: Tests_6
+    descripcion: 'Intervención u operación quirúrgica.'
+  Preguntas_355:
+    tests_id: Tests_6
+    descripcion: 'Ocupar un nuevo cargo o puesto de trabajo.'
+  Preguntas_356:
+    tests_id: Tests_6
+    descripcion: 'Cambio de horario de trabajo.'
+  Preguntas_357:
+    tests_id: Tests_6
+    descripcion: 'Exceso de trabajo.'
+  Preguntas_358:
+    tests_id: Tests_6
+    descripcion: 'Excesiva responsabilidad laboral.'
+  Preguntas_359:
+    tests_id: Tests_6
+    descripcion: 'Hacer viajes (frecuentes, largos).'
+  Preguntas_360:
+    tests_id: Tests_6
+    descripcion: 'Tiempo libre y falta de ocupación.'
+  Preguntas_361:
+    tests_id: Tests_6
+    descripcion: 'Problemática de relaciones en mi trabajo (con los jefes, compañeros).'
+  Preguntas_362:
+    tests_id: Tests_6
+    descripcion: 'Situación discriminatoria en mi trabajo.'
+  Preguntas_363:
+    tests_id: Tests_6
+    descripcion: 'Éxito o fracaso profesional.'
+  Preguntas_364:
+    tests_id: Tests_6
+    descripcion: 'Desorden en casa, despacho.'
+  Preguntas_365:
+    tests_id: Tests_6
+    descripcion: 'Reformas en casa.'
+  Preguntas_366:
+    tests_id: Tests_6
+    descripcion: 'Dificultades en el lugar donde vivo.'
+  Preguntas_367:
+    tests_id: Tests_6
+    descripcion: 'Preparación de vacaciones.'
+  Preguntas_368:
+    tests_id: Tests_6
+    descripcion: 'Etapa de vacaciones e incorporación al trabajo.'
+  Preguntas_369:
+    tests_id: Tests_6
+    descripcion: 'Servicio militar.'
 Pruebas:
   Pruebas_1:
     tests_id: Tests_1
@@ -1560,6 +1855,8 @@ Valoresdeverdad:
     nombre: Correcta
   Valoresdeverdad_2:
     nombre: Incorrecta
+  Valoresdeverdad_3:
+    nombre: Suma
 Respuestas:
   Respuestas_1:
     preguntas_id: Preguntas_1
@@ -3333,6 +3630,30 @@ Respuestas:
     estados_id: Valoresdeverdad_2
     opciones_id: Opciones_59
     descripcion: rojo
+  Respuestas_362:
+    preguntas_id: Preguntas_317
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_5
+  Respuestas_363:
+    preguntas_id: Preguntas_317
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_6
+  Respuestas_364:
+    preguntas_id: Preguntas_317
+    estados_id: Valoresdeverdad_3
+    opciones_id: Opciones_65
+  Respuestas_365:
+    preguntas_id: Preguntas_317
+    estados_id: Valoresdeverdad_3
+    opciones_id: Opciones_62
+  Respuestas_366:
+    preguntas_id: Preguntas_317
+    estados_id: Valoresdeverdad_3
+    opciones_id: Opciones_63
+  Respuestas_367:
+    preguntas_id: Preguntas_317
+    estados_id: Valoresdeverdad_3
+    opciones_id: Opciones_64
 Resultados:
   Resultados_1:
     pruebas_id: Pruebas_7

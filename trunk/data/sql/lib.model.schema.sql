@@ -161,6 +161,33 @@ CREATE TABLE `evaluaciones`
 )Type=InnoDB;
 
 #-----------------------------------------------------------------------------
+#-- intencidades
+#-----------------------------------------------------------------------------
+
+DROP TABLE IF EXISTS `intencidades`;
+
+
+CREATE TABLE `intencidades`
+(
+	`id` INTEGER(11)  NOT NULL AUTO_INCREMENT,
+	`opciones_id` INTEGER(11)  NOT NULL,
+	`respuestas_id` INTEGER(11)  NOT NULL,
+	PRIMARY KEY (`id`),
+	KEY `respuestas_id`(`respuestas_id`),
+	KEY `opciones_id`(`opciones_id`),
+	CONSTRAINT `intencidades_FK_1`
+		FOREIGN KEY (`opciones_id`)
+		REFERENCES `opciones` (`id`)
+		ON UPDATE RESTRICT
+		ON DELETE RESTRICT,
+	CONSTRAINT `intencidades_FK_2`
+		FOREIGN KEY (`respuestas_id`)
+		REFERENCES `respuestas` (`id`)
+		ON UPDATE RESTRICT
+		ON DELETE RESTRICT
+)Type=InnoDB;
+
+#-----------------------------------------------------------------------------
 #-- opciones
 #-----------------------------------------------------------------------------
 
