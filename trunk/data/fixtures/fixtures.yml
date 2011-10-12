@@ -60,6 +60,18 @@ Evaluaciones:
     cantidad: '10'
     fecha: '2006-01-01'
     nombre: 'IG2 A TODOS'
+  Evaluaciones_7:
+    perfil_id: Perfil_1
+    estadosevaluaciones_id: Estadosevaluaciones_1
+    cantidad: '1'
+    fecha: '2011-12-09'
+    nombre: GG
+  Evaluaciones_8:
+    perfil_id: Perfil_1
+    estadosevaluaciones_id: Estadosevaluaciones_1
+    cantidad: '44'
+    fecha: '2016-12-03'
+    nombre: BARSIT
 Aspirantes:
   Aspirantes_1:
     nombre: matias
@@ -83,6 +95,15 @@ Asistencias:
     aspirantes_id: Aspirantes_1
   Asistencias_4:
     evaluaciones_id: Evaluaciones_6
+    aspirantes_id: Aspirantes_1
+  Asistencias_5:
+    evaluaciones_id: Evaluaciones_7
+    aspirantes_id: Aspirantes_2
+  Asistencias_6:
+    evaluaciones_id: Evaluaciones_7
+    aspirantes_id: Aspirantes_1
+  Asistencias_7:
+    evaluaciones_id: Evaluaciones_8
     aspirantes_id: Aspirantes_1
 Tipoopcion:
   Tipoopcion_1:
@@ -119,10 +140,19 @@ Tests:
     historia: "Perteneciente al grupo de pruebas de inteligencia tipo “omnibus”, sus elementos ponen en ejercicio varias aptitudes intelectuales, cuya puntuación global permite una rápida discriminación por medio de una aplicación colectiva.\r\n"
     puntaje_aprobacion: '50'
     tipoopcion_id: Tipoopcion_4
+  Tests_5:
+    titulo: barsit
+    enunciado: "Esta es una prueba que sirve para apreciar cómo piensa Ud. Contiene una serie de cuestiones sencillas que debe leerlas atentamente. Luego debe anotar en la línea de puntos de la derecha, la letra que esta antes de la palabra que Ud. Selecciona como la mejor respuesta. O bien, debe escribir los dos números que falten en cada serie. A continuación encontrara Ud. Cinco ejemplos para que comprenda como debe realizar este trabajo.\r\nEJEMPLO 1. ¿Qué palabra indica lo contrario de blanco?\r\na)	claro        b) obscuro        c) gris        d) negro        e) nítido			Ej. 1 ____ \r\nLo contrario de blanco es negro. La palabra negro lleva la letra d). Por consiguiente, debe Ud. escribir la letra d) en la línea de puntos de la derecha. ¡Hágalo¡ En esta misma forma seguirá contestando las demás cuestiones.\r\nEJEMPLO 2. ¿Qué palabra expresa mejor lo que es un martillo?\r\na)	metal        b) objeto        c) herramienta        d) cosa        e) útil 		Ej. 2 ____\r\nEJEMPLO 3. ¿Cuál de las siguientes palabras no pertenece al grupo?\r\na)	lápiz        b) zapato        c) cuaderno        d) libro        e) regla		Ej. 3 ____\r\nEJEMPLO 4. ¿Qué palabra significa lo mismo que responder?\r\na)	explicar      b) indagar      c) preguntar      d) contestar      e) decir		Ej. 4 ____\r\nEJEMPLO 5. Escriba los números que faltan en esta serie\r\n	10	12	14	__	18	20	22	__	26		Ej. 5 ____\r\nDe inmediato encontrara Ud. 60 cuestiones parecidas a las que acaba de resolver. Recuerde que cada vez tendrá que escribir una letra en el margen derecho de la hoja o bien, escribir los dos números que faltan en las series. Procure resolver el mayor número posible de cuestiones. Trabaje rápidamente, pero procure no equivocarse. No conteste las cuestiones que le parezcan muy difíciles o que le quiten mucho tiempo. No pregunte nada a nadie, ni se distraiga mirando lo que hacen las demás personas.\r\nUd. Tiene 30 minutos para resolver toda la prueba. Anote las respuestas con absoluta claridad, Cuando se equivoque, tache la letra mal escrita y a su lado vuelva a escribir la letra correcta.\r\n¡LISTO PARA COMENZAR!\r\n"
+    duracion: '30 minutos'
+    puntaje_aprobacion: '50'
+    tipoopcion_id: Tipoopcion_4
 Escalas:
   Escalas_1:
     tests_id: Tests_4
     nombre: 'escala ig2'
+  Escalas_2:
+    tests_id: Tests_5
+    nombre: 'escala barsit'
 Estadopruebas:
   Estadopruebas_1:
     nombre: Inicializada
@@ -426,6 +456,126 @@ Percentiles:
     percentil: '1'
     desde: '0'
     hasta: '8'
+  Percentiles_27:
+    escalas_id: Escalas_2
+    percentil: '1'
+    desde: '1'
+  Percentiles_28:
+    escalas_id: Escalas_2
+    percentil: '3'
+    desde: '2'
+  Percentiles_29:
+    escalas_id: Escalas_2
+    percentil: '5'
+    desde: '3'
+  Percentiles_30:
+    escalas_id: Escalas_2
+    percentil: '6'
+    desde: '4'
+  Percentiles_31:
+    escalas_id: Escalas_2
+    percentil: '8'
+    desde: '5'
+  Percentiles_32:
+    escalas_id: Escalas_2
+    percentil: '10'
+    desde: '6'
+  Percentiles_33:
+    escalas_id: Escalas_2
+    percentil: '11'
+    desde: '7'
+  Percentiles_34:
+    escalas_id: Escalas_2
+    percentil: '13'
+    desde: '8'
+  Percentiles_35:
+    escalas_id: Escalas_2
+    percentil: '15'
+    desde: '9'
+  Percentiles_36:
+    escalas_id: Escalas_2
+    percentil: '16'
+    desde: '10'
+  Percentiles_37:
+    escalas_id: Escalas_2
+    percentil: '18'
+    desde: '11'
+  Percentiles_38:
+    escalas_id: Escalas_2
+    percentil: '20'
+    desde: '12'
+  Percentiles_39:
+    escalas_id: Escalas_2
+    percentil: '21'
+    desde: '13'
+  Percentiles_40:
+    escalas_id: Escalas_2
+    percentil: '23'
+    desde: '14'
+  Percentiles_41:
+    escalas_id: Escalas_2
+    percentil: '25'
+    desde: '15'
+  Percentiles_42:
+    escalas_id: Escalas_2
+    percentil: '26'
+    desde: '16'
+  Percentiles_43:
+    escalas_id: Escalas_2
+    percentil: '28'
+    desde: '17'
+  Percentiles_44:
+    escalas_id: Escalas_2
+    percentil: '30'
+    desde: '18'
+  Percentiles_45:
+    escalas_id: Escalas_2
+    percentil: '31'
+    desde: '19'
+  Percentiles_46:
+    escalas_id: Escalas_2
+    percentil: '33'
+    desde: '20'
+  Percentiles_47:
+    escalas_id: Escalas_2
+    percentil: '35'
+    desde: '21'
+  Percentiles_48:
+    escalas_id: Escalas_2
+    percentil: '36'
+    desde: '22'
+  Percentiles_49:
+    escalas_id: Escalas_2
+    percentil: '38'
+    desde: '23'
+  Percentiles_50:
+    escalas_id: Escalas_2
+    percentil: '40'
+    desde: '24'
+  Percentiles_51:
+    escalas_id: Escalas_2
+    percentil: '41'
+    desde: '25'
+  Percentiles_52:
+    escalas_id: Escalas_2
+    percentil: '43'
+    desde: '26'
+  Percentiles_53:
+    escalas_id: Escalas_2
+    percentil: '45'
+    desde: '27'
+  Percentiles_54:
+    escalas_id: Escalas_2
+    percentil: '46'
+    desde: '28'
+  Percentiles_55:
+    escalas_id: Escalas_2
+    percentil: '48'
+    desde: '29'
+  Percentiles_56:
+    escalas_id: Escalas_2
+    percentil: '50'
+    desde: '30'
 Preguntas:
   Preguntas_1:
     tests_id: Tests_1
@@ -1370,6 +1520,12 @@ Preguntas:
   Preguntas_314:
     tests_id: Tests_4
     descripcion: "¿Qué palabra completa mejor la frase siguiente?\r\n\r\nLIBRO es a BIBLIOTECA como DIARIO es a..... 	\r\n"
+  Preguntas_315:
+    tests_id: Tests_5
+    descripcion: 'Lo contrario de abierto es:'
+  Preguntas_316:
+    tests_id: Tests_5
+    descripcion: ") escriba los dos números que falta en esta serie:\r\n10    15   20      25   …………….   35   40  ………………….     50    55  \r\n"
 Pruebas:
   Pruebas_1:
     tests_id: Tests_1
@@ -1390,6 +1546,14 @@ Pruebas:
   Pruebas_6:
     tests_id: Tests_4
     evaluaciones_id: Evaluaciones_6
+    estadopruebas_id: Estadopruebas_1
+  Pruebas_7:
+    tests_id: Tests_4
+    evaluaciones_id: Evaluaciones_7
+    estadopruebas_id: Estadopruebas_1
+  Pruebas_8:
+    tests_id: Tests_5
+    evaluaciones_id: Evaluaciones_8
     estadopruebas_id: Estadopruebas_1
 Valoresdeverdad:
   Valoresdeverdad_1:
@@ -3096,12 +3260,12 @@ Respuestas:
     descripcion: ' Cisco'
   Respuestas_347:
     preguntas_id: Preguntas_314
-    estados_id: Valoresdeverdad_1
+    estados_id: Valoresdeverdad_2
     opciones_id: Opciones_55
     descripcion: ' Pinacoteca'
   Respuestas_348:
     preguntas_id: Preguntas_314
-    estados_id: Valoresdeverdad_2
+    estados_id: Valoresdeverdad_1
     opciones_id: Opciones_56
     descripcion: ' Hemeroteca'
   Respuestas_349:
@@ -3119,20 +3283,115 @@ Respuestas:
     estados_id: Valoresdeverdad_2
     opciones_id: Opciones_59
     descripcion: Quiosco
+  Respuestas_352:
+    preguntas_id: Preguntas_315
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Plano
+  Respuestas_353:
+    preguntas_id: Preguntas_315
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+    descripcion: cerrado
+  Respuestas_354:
+    preguntas_id: Preguntas_315
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: atrás
+  Respuestas_355:
+    preguntas_id: Preguntas_315
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: 'claro  '
+  Respuestas_356:
+    preguntas_id: Preguntas_315
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: despejado
+  Respuestas_357:
+    preguntas_id: Preguntas_316
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Azul
+  Respuestas_358:
+    preguntas_id: Preguntas_316
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: verde
+  Respuestas_359:
+    preguntas_id: Preguntas_316
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: 'amarillo     '
+  Respuestas_360:
+    preguntas_id: Preguntas_316
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+    descripcion: 'bandera '
+  Respuestas_361:
+    preguntas_id: Preguntas_316
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: rojo
 Resultados:
   Resultados_1:
-    pruebas_id: Pruebas_6
+    pruebas_id: Pruebas_7
     aspirantes_id: Aspirantes_1
     puntaje: '1'
     estadosresultados_id: Estadosresultados_2
+  Resultados_2:
+    pruebas_id: Pruebas_8
+    aspirantes_id: Aspirantes_1
+    puntaje: '1'
+    estadosresultados_id: Estadosresultados_2
+  Resultados_3:
+    pruebas_id: Pruebas_8
+    aspirantes_id: Aspirantes_1
+    puntaje: '3'
+    estadosresultados_id: Estadosresultados_2
+  Resultados_4:
+    pruebas_id: Pruebas_7
+    aspirantes_id: Aspirantes_1
+    puntaje: '98'
+    estadosresultados_id: Estadosresultados_1
 Resultadosparciales:
   Resultadosparciales_1:
     aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
+    pruebas_id: Pruebas_7
     preguntas_id: Preguntas_313
-    opciones_id: Opciones_55
+    opciones_id: Opciones_57
   Resultadosparciales_2:
     aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
+    pruebas_id: Pruebas_7
     preguntas_id: Preguntas_314
-    opciones_id: Opciones_55
+    opciones_id: Opciones_56
+  Resultadosparciales_3:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_315
+    opciones_id: Opciones_56
+  Resultadosparciales_4:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_316
+    opciones_id: Opciones_58
+  Resultadosparciales_5:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_315
+    opciones_id: Opciones_56
+  Resultadosparciales_6:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_316
+    opciones_id: Opciones_58
+  Resultadosparciales_7:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_313
+    opciones_id: Opciones_57
+  Resultadosparciales_8:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_314
+    opciones_id: Opciones_59
