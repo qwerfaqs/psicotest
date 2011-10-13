@@ -4,7 +4,7 @@
           <li>
            <p><?php echo $pregunta->getDescripcion()  ?> <br />
             <?php if ($pregunta->getImagen()!=NULL)
-                    echo '<img width="150px" src="/images/tests/d1.png" />';
+                    echo '<img height="100px" width="350px" src="/images/tests/ig2/'.$pregunta->getImagen().'" />';
                   else
                   {
                     foreach ($opciones as $opcion) :

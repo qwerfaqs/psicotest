@@ -27,7 +27,7 @@ class OpcionesPeer extends BaseOpcionesPeer
     return (self::doSelectOne($criteria));
   }
   
-   public static function getOpciones($pregunta)
+  public static function getOpciones($pregunta)
   {
     $criteria = new Criteria();    
     $criteria->addJoin(self::TIPOOPCION_ID,TestsPeer::TIPOOPCION_ID,Criteria::INNER_JOIN); 
