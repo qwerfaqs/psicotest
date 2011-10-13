@@ -1358,6 +1358,157 @@ Preguntas:
   Preguntas_369:
     tests_id: Tests_6
     descripcion: 'Servicio militar.'
+  Preguntas_370:
+    tests_id: Tests_4
+    imagen: 3.png
+    descripcion: '¿Qué figura de la derecha continúa la serie de la izquierda?'
+  Preguntas_371:
+    tests_id: Tests_4
+    descripcion: '¿Qué palabra significa lo mismo que la escrita en mayúsculas?'
+  Preguntas_372:
+    tests_id: Tests_4
+    descripcion: '¿Qué cifra continúa la serie?'
+  Preguntas_373:
+    tests_id: Tests_4
+    descripcion: '¿Qué par de palabras completa mejor la frase, poniendo la 1.a al principio y ¡a 2.a al final?'
+  Preguntas_374:
+    tests_id: Tests_4
+    descripcion: '¿Qué palabra tiene dos vocales iguales?'
+  Preguntas_375:
+    tests_id: Tests_4
+    imagen: 8.png
+    descripcion: '¿Qué figura de la derecha continúa la serie de la izquierda?'
+  Preguntas_376:
+    tests_id: Tests_4
+    descripcion: '¿Qué palabra continúa la serie si la primera y las últimas letras son siempre las mismas?'
+  Preguntas_377:
+    tests_id: Tests_4
+    descripcion: '¿Qué par de palabras completa mejor la frase, poniendo la 1.a al principio y la 2.a al final?'
+  Preguntas_378:
+    tests_id: Tests_4
+    descripcion: '¿Qué palabra significa lo mismo que la escrita en mayúsculas?'
+  Preguntas_379:
+    tests_id: Tests_4
+    imagen: 13.png
+    descripcion: '¿Qué figura de la derecha continúa la serie de la izquierda?'
+  Preguntas_380:
+    tests_id: Tests_4
+    descripcion: '¿Qué palabra completa mejor la frase?'
+  Preguntas_381:
+    tests_id: Tests_4
+    descripcion: '¿Qué cifra continúa la serie?'
+  Preguntas_382:
+    tests_id: Tests_4
+    descripcion: '¿Qué par de palabras completa mejor la frase, poniendo la 1.§ al principio y la 2.a ai final?'
+  Preguntas_383:
+    tests_id: Tests_4
+    descripcion: '¿Qué palabra significa lo contrario que la escrita con mayúsculas?'
+  Preguntas_384:
+    tests_id: Tests_4
+    imagen: 18.png
+    descripcion: 'Qué figura de la derecha continua la serie de la izquierda?'
+  Preguntas_385:
+    tests_id: Tests_4
+    descripcion: 'Qué palabra es mas general o comprende a las otras cuatro?'
+  Preguntas_386:
+    tests_id: Tests_4
+    descripcion: '¿Qué palabra completa mejor la frase siguiente?'
+  Preguntas_387:
+    tests_id: Tests_4
+    descripcion: '¿Qué palabra significa lo mismo que la escrita en mayúsculas?'
+  Preguntas_388:
+    tests_id: Tests_4
+    descripcion: '¿Qué par de palabras completa mejor la frase, poniendo la 1* al principio y la 2* al final.'
+  Preguntas_389:
+    tests_id: Tests_4
+    imagen: 23.png
+    descripcion: 'Qué figura de la derecha continua la serie de la izquierda?'
+  Preguntas_390:
+    tests_id: Tests_4
+    descripcion: '¿En qué grupo de letras hay una que no está en los otros grupos?'
+  Preguntas_391:
+    tests_id: Tests_4
+    descripcion: '¿Qué cifra continua la serie?'
+  Preguntas_392:
+    tests_id: Tests_4
+    descripcion: '¿Qué palabra completa mejor la frase?'
+  Preguntas_393:
+    tests_id: Tests_4
+    descripcion: 'Qué palabra significa lo contrario que la escrita en mayúsculas?'
+  Preguntas_394:
+    tests_id: Tests_4
+    imagen: 28.png
+    descripcion: '¿Qué figura de la derecha continua la serie de la izquierda?'
+  Preguntas_395:
+    tests_id: Tests_4
+    descripcion: '¿Qué palabra significa lo mismo que la escrita en mayúsculas?'
+  Preguntas_396:
+    tests_id: Tests_4
+    descripcion: '¿Qué palabra tiene dos vocales o consonantes juntas?'
+  Preguntas_397:
+    tests_id: Tests_4
+    descripcion: '¿Qué cifra continua la serie?'
+  Preguntas_398:
+    tests_id: Tests_4
+    descripcion: '¿Qué par de palabras completa mejor la frase, poniendo la 1* al principio y la 2* al final?'
+  Preguntas_399:
+    tests_id: Tests_4
+    imagen: 33.png
+    descripcion: '¿Qué figura de la derecha continua la serie de la izquierda?'
+  Preguntas_400:
+    tests_id: Tests_4
+    descripcion: '¿Qué palabra es mas general o comprende a las otras cuatro?'
+  Preguntas_401:
+    tests_id: Tests_4
+    descripcion: '¿Qué palabra completa mejor la frase?'
+  Preguntas_402:
+    tests_id: Tests_4
+    descripcion: '36.	¿Qué palabra significa lo mismo que la escrita en mayúsculas?'
+  Preguntas_403:
+    tests_id: Tests_4
+    descripcion: '¿Qué par de palabras completa mejor la frase, poniendo la 1.a al principio y la 2.a al final?'
+  Preguntas_404:
+    tests_id: Tests_4
+    imagen: 38.png
+    descripcion: '¿Qué figura de la derecha continúa la serie de la izquierda?'
+  Preguntas_405:
+    tests_id: Tests_4
+    descripcion: '¿Qué cifra continúa la serie?'
+  Preguntas_406:
+    tests_id: Tests_4
+    descripcion: '¿Qué palabra completa mejor la frase?'
+  Preguntas_407:
+    tests_id: Tests_4
+    descripcion: '¿Qué palabra significa lo mismo que la escrita en mayúsculas?'
+  Preguntas_408:
+    tests_id: Tests_4
+    descripcion: '¿En qué grupo hay una letra que no está en los otros grupos?'
+  Preguntas_409:
+    tests_id: Tests_4
+    descripcion: '¿Qué cifra continúa la serie?'
+  Preguntas_410:
+    tests_id: Tests_4
+    imagen: 44.png
+    descripcion: '¿Qué figura de la derecha continúa la serie de la izquierda?'
+  Preguntas_411:
+    tests_id: Tests_4
+    descripcion: '¿Qué palabra significa lo mismo que la escrita en mayúsculas?'
+  Preguntas_412:
+    tests_id: Tests_4
+    descripcion: '¿Qué par de palabras completa mejor ¡a frase, poniendo la 1.a al principio y la 2.a al final?'
+  Preguntas_413:
+    tests_id: Tests_4
+    descripcion: '¿Qué palabra continúa la serie si la primera y la última letras son siempre las mismas?'
+  Preguntas_414:
+    tests_id: Tests_4
+    descripcion: '¿Qué par de palabras completa mejor la frase, poniendo la 1.a al principio y la 2.a al final?'
+  Preguntas_415:
+    tests_id: Tests_4
+    descripcion: '¿Qué cifra continúa la serie?'
+  Preguntas_416:
+    tests_id: Tests_4
+    imagen: 50.png
+    descripcion: '¿Qué figura de la derecha continúa la serie de la izquierda?'
 Opciones:
   Opciones_1:
     tipoopcion_id: Tipoopcion_1
@@ -5132,6 +5283,51 @@ Respuestas:
     preguntas_id: Preguntas_317
     estados_id: Valoresdeverdad_3
     opciones_id: Opciones_64
+  Respuestas_368:
+    preguntas_id: Preguntas_370
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+  Respuestas_369:
+    preguntas_id: Preguntas_370
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+  Respuestas_370:
+    preguntas_id: Preguntas_370
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+  Respuestas_371:
+    preguntas_id: Preguntas_370
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+  Respuestas_372:
+    preguntas_id: Preguntas_370
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+  Respuestas_373:
+    preguntas_id: Preguntas_371
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: Huir
+  Respuestas_374:
+    preguntas_id: Preguntas_371
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: Abandonar
+  Respuestas_375:
+    preguntas_id: Preguntas_371
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+    descripcion: Molestar
+  Respuestas_376:
+    preguntas_id: Preguntas_371
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: Eludir
+  Respuestas_377:
+    preguntas_id: Preguntas_371
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Esquivar
 Resultados:
   Resultados_1:
     pruebas_id: Pruebas_7
