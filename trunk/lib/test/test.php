@@ -88,7 +88,34 @@ class test
   { 
       Test::calcularig2($respuestas);
   }
-   
+  
+  public static function calculareae1($intensidades)
+  { 
+     $puntaje=0; 
+      $sumaint = 0;
+       foreach($intensidades as $intensidad)
+       {     
+         $pregunta = $intensidad->getResultadosparciales()->getPreguntas();
+         $estado = sfConfig::get('app_activo');
+         
+         $respuesta =  RespuestasPeer::getRespuesta($pregunta->getId(),$estado);         
+        
+         if($intensidad->getResultadosparciales()->getOpciones()->getTexto()==$respuesta->getOpciones()->getTexto())
+          {
+            $puntaje = $puntaje + 1;  
+          }  
+          $sumaint = $sumaint + $intensidad->getOpciones()->getTexto();
+       }       
+       $puntaje = $puntaje + $sumaint;
+       $percentil = PercentilesPeer::getPercentil($intensidades[0]->getResultadosparciales()->getPruebas()->getTests()->getId(),$puntaje);                    
+       $result = new Resultados();
+       $result->setAspirantesId($intensidades[0]->getResultadosparciales()->getAspirantesId());       
+       $result->setPuntaje($percentil[0]->getPercentil());
+       $result->setPruebas($intensidades[0]->getResultadosparciales()->getPruebas());         
+       $result->setEstadosresultadosId(Test::aprobacion($intensidades[0]->getResultadosparciales()->getPruebas(), $percentil[0]->getPercentil()));             
+       $result->save();            
+  }
+  
    
 }
 

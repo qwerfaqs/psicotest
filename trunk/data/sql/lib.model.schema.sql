@@ -161,28 +161,28 @@ CREATE TABLE `evaluaciones`
 )Type=InnoDB;
 
 #-----------------------------------------------------------------------------
-#-- intencidades
+#-- intensidades
 #-----------------------------------------------------------------------------
 
-DROP TABLE IF EXISTS `intencidades`;
+DROP TABLE IF EXISTS `intensidades`;
 
 
-CREATE TABLE `intencidades`
+CREATE TABLE `intensidades`
 (
 	`id` INTEGER(11)  NOT NULL AUTO_INCREMENT,
+	`resultadosparciales_id` INTEGER(11)  NOT NULL,
 	`opciones_id` INTEGER(11)  NOT NULL,
-	`respuestas_id` INTEGER(11)  NOT NULL,
 	PRIMARY KEY (`id`),
-	KEY `respuestas_id`(`respuestas_id`),
+	KEY `resultadosparciales_id`(`resultadosparciales_id`),
 	KEY `opciones_id`(`opciones_id`),
-	CONSTRAINT `intencidades_FK_1`
-		FOREIGN KEY (`opciones_id`)
-		REFERENCES `opciones` (`id`)
+	CONSTRAINT `intensidades_FK_1`
+		FOREIGN KEY (`resultadosparciales_id`)
+		REFERENCES `resultadosparciales` (`id`)
 		ON UPDATE RESTRICT
 		ON DELETE RESTRICT,
-	CONSTRAINT `intencidades_FK_2`
-		FOREIGN KEY (`respuestas_id`)
-		REFERENCES `respuestas` (`id`)
+	CONSTRAINT `intensidades_FK_2`
+		FOREIGN KEY (`opciones_id`)
+		REFERENCES `opciones` (`id`)
 		ON UPDATE RESTRICT
 		ON DELETE RESTRICT
 )Type=InnoDB;

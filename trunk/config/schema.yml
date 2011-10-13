@@ -52,12 +52,12 @@ propel:
     fecha: { phpName: Fecha, type: DATE, required: false }
     nombre: { phpName: Nombre, type: CHAR, size: '50', required: false }
     _indexes: { estadosevaluaciones_id: [estadosevaluaciones_id], perfil_id: [perfil_id] }
-  intencidades:
-    _attributes: { phpName: Intencidades }
+  intensidades:
+    _attributes: { phpName: Intensidades }
     id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    resultadosparciales_id: { phpName: ResultadosparcialesId, type: INTEGER, size: '11', required: true, foreignTable: resultadosparciales, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
     opciones_id: { phpName: OpcionesId, type: INTEGER, size: '11', required: true, foreignTable: opciones, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
-    respuestas_id: { phpName: RespuestasId, type: INTEGER, size: '11', required: true, foreignTable: respuestas, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
-    _indexes: { respuestas_id: [respuestas_id], opciones_id: [opciones_id] }
+    _indexes: { resultadosparciales_id: [resultadosparciales_id], opciones_id: [opciones_id] }
   opciones:
     _attributes: { phpName: Opciones }
     id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
