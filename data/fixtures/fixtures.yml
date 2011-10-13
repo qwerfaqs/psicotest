@@ -72,6 +72,12 @@ Evaluaciones:
     cantidad: '44'
     fecha: '2016-12-03'
     nombre: BARSIT
+  Evaluaciones_9:
+    perfil_id: Perfil_1
+    estadosevaluaciones_id: Estadosevaluaciones_1
+    cantidad: '50'
+    fecha: '2012-04-03'
+    nombre: EW
 Aspirantes:
   Aspirantes_1:
     nombre: matias
@@ -140,6 +146,9 @@ Asistencias:
   Asistencias_7:
     evaluaciones_id: Evaluaciones_8
     aspirantes_id: Aspirantes_1
+  Asistencias_8:
+    evaluaciones_id: Evaluaciones_9
+    aspirantes_id: Aspirantes_1
 Tipoopcion:
   Tipoopcion_1:
     nombre: domino
@@ -207,511 +216,39 @@ Estadosresultados:
     nombre: Apto
   Estadosresultados_2:
     nombre: 'No apto'
-Opciones:
-  Opciones_1:
-    tipoopcion_id: Tipoopcion_1
-    texto: 1/1
-  Opciones_2:
-    tipoopcion_id: Tipoopcion_1
-    texto: 1/2
-  Opciones_3:
-    tipoopcion_id: Tipoopcion_1
-    texto: 1/3
-  Opciones_4:
-    tipoopcion_id: Tipoopcion_1
-    texto: 1/4
-  Opciones_5:
-    tipoopcion_id: Tipoopcion_1
-    texto: 2/4
-  Opciones_6:
-    tipoopcion_id: Tipoopcion_1
-    texto: 2/3
-  Opciones_7:
-    tipoopcion_id: Tipoopcion_1
-    texto: 0/0
-  Opciones_8:
-    tipoopcion_id: Tipoopcion_1
-    texto: 0/1
-  Opciones_9:
-    tipoopcion_id: Tipoopcion_1
-    texto: 0/2
-  Opciones_10:
-    tipoopcion_id: Tipoopcion_1
-    texto: 0/3
-  Opciones_11:
-    tipoopcion_id: Tipoopcion_1
-    texto: 0/4
-  Opciones_12:
-    tipoopcion_id: Tipoopcion_1
-    texto: 0/5
-  Opciones_13:
-    tipoopcion_id: Tipoopcion_1
-    texto: 0/6
-  Opciones_14:
-    tipoopcion_id: Tipoopcion_1
-    texto: 1/5
-  Opciones_15:
-    tipoopcion_id: Tipoopcion_1
-    texto: 1/6
-  Opciones_16:
-    tipoopcion_id: Tipoopcion_1
-    texto: 1/0
-  Opciones_17:
-    tipoopcion_id: Tipoopcion_1
-    texto: 2/0
-  Opciones_18:
-    tipoopcion_id: Tipoopcion_1
-    texto: 2/1
-  Opciones_19:
-    tipoopcion_id: Tipoopcion_1
-    texto: 2/2
-  Opciones_20:
-    tipoopcion_id: Tipoopcion_1
-    texto: 2/5
-  Opciones_21:
-    tipoopcion_id: Tipoopcion_1
-    texto: 2/6
-  Opciones_22:
-    tipoopcion_id: Tipoopcion_1
-    texto: 3/0
-  Opciones_23:
-    tipoopcion_id: Tipoopcion_1
-    texto: 3/1
-  Opciones_24:
-    tipoopcion_id: Tipoopcion_1
-    texto: 3/2
-  Opciones_25:
-    tipoopcion_id: Tipoopcion_1
-    texto: 3/3
-  Opciones_26:
-    tipoopcion_id: Tipoopcion_1
-    texto: 3/4
-  Opciones_27:
-    tipoopcion_id: Tipoopcion_1
-    texto: 3/5
-  Opciones_28:
-    tipoopcion_id: Tipoopcion_1
-    texto: 3/6
-  Opciones_29:
-    tipoopcion_id: Tipoopcion_1
-    texto: 4/0
-  Opciones_30:
-    tipoopcion_id: Tipoopcion_1
-    texto: 4/1
-  Opciones_31:
-    tipoopcion_id: Tipoopcion_1
-    texto: 4/2
-  Opciones_32:
-    tipoopcion_id: Tipoopcion_1
-    texto: 4/3
-  Opciones_33:
-    tipoopcion_id: Tipoopcion_1
-    texto: 4/4
-  Opciones_34:
-    tipoopcion_id: Tipoopcion_1
-    texto: 4/5
-  Opciones_35:
-    tipoopcion_id: Tipoopcion_1
-    texto: 4/6
-  Opciones_36:
-    tipoopcion_id: Tipoopcion_1
-    texto: 5/0
-  Opciones_37:
-    tipoopcion_id: Tipoopcion_1
-    texto: 5/1
-  Opciones_38:
-    tipoopcion_id: Tipoopcion_1
-    texto: 5/2
-  Opciones_39:
-    tipoopcion_id: Tipoopcion_1
-    texto: 5/3
-  Opciones_40:
-    tipoopcion_id: Tipoopcion_1
-    texto: 5/4
-  Opciones_41:
-    tipoopcion_id: Tipoopcion_1
-    texto: 5/5
-  Opciones_42:
-    tipoopcion_id: Tipoopcion_1
-    texto: 5/6
-  Opciones_43:
-    tipoopcion_id: Tipoopcion_1
-    texto: 6/0
-  Opciones_44:
-    tipoopcion_id: Tipoopcion_1
-    texto: 6/1
-  Opciones_45:
-    tipoopcion_id: Tipoopcion_1
-    texto: 6/2
-  Opciones_46:
-    tipoopcion_id: Tipoopcion_1
-    texto: 6/3
-  Opciones_47:
-    tipoopcion_id: Tipoopcion_1
-    texto: 6/4
-  Opciones_48:
-    tipoopcion_id: Tipoopcion_1
-    texto: 6/5
-  Opciones_49:
-    tipoopcion_id: Tipoopcion_1
-    texto: 6/6
-  Opciones_50:
-    tipoopcion_id: Tipoopcion_2
-    texto: Verdadero
-  Opciones_51:
-    tipoopcion_id: Tipoopcion_2
-    texto: Falso
-  Opciones_52:
-    tipoopcion_id: Tipoopcion_3
-    texto: A
-  Opciones_53:
-    tipoopcion_id: Tipoopcion_3
-    texto: B
-  Opciones_54:
-    tipoopcion_id: Tipoopcion_3
-    texto: C
-  Opciones_55:
-    tipoopcion_id: Tipoopcion_4
-    texto: A
-  Opciones_56:
-    tipoopcion_id: Tipoopcion_4
-    texto: B
-  Opciones_57:
-    tipoopcion_id: Tipoopcion_4
-    texto: C
-  Opciones_58:
-    tipoopcion_id: Tipoopcion_4
-    texto: D
-  Opciones_59:
-    tipoopcion_id: Tipoopcion_4
-    texto: E
-  Opciones_60:
-    tipoopcion_id: Tipoopcion_5
-    texto: Si
-  Opciones_61:
-    tipoopcion_id: Tipoopcion_5
-    texto: No
-  Opciones_62:
-    tipoopcion_id: Tipoopcion_5
-    texto: '1'
-  Opciones_63:
-    tipoopcion_id: Tipoopcion_5
-    texto: '2'
-  Opciones_64:
-    tipoopcion_id: Tipoopcion_5
-    texto: '3'
-  Opciones_65:
-    tipoopcion_id: Tipoopcion_5
-    texto: '0'
-Percentiles:
-  Percentiles_1:
-    escalas_id: Escalas_1
-    percentil: '99'
-    desde: '47'
-    hasta: '50'
-  Percentiles_2:
-    escalas_id: Escalas_1
-    percentil: '98'
-    desde: '46'
-  Percentiles_3:
-    escalas_id: Escalas_1
-    percentil: '97'
-    desde: '45'
-  Percentiles_4:
-    escalas_id: Escalas_1
-    percentil: '96'
-    desde: '0'
-  Percentiles_5:
-    escalas_id: Escalas_1
-    percentil: '95'
-    desde: '43'
-    hasta: '44'
-  Percentiles_6:
-    escalas_id: Escalas_1
-    percentil: '90'
-    desde: '42'
-  Percentiles_7:
-    escalas_id: Escalas_1
-    percentil: '85'
-    desde: '41'
-  Percentiles_8:
-    escalas_id: Escalas_1
-    percentil: '80'
-    desde: '40'
-  Percentiles_9:
-    escalas_id: Escalas_1
-    percentil: '75'
-    desde: '39'
-  Percentiles_10:
-    escalas_id: Escalas_1
-    percentil: '70'
-    desde: '38'
-  Percentiles_11:
-    escalas_id: Escalas_1
-    percentil: '65'
-    desde: '37'
-  Percentiles_12:
-    escalas_id: Escalas_1
-    percentil: '60'
-    desde: '36'
-  Percentiles_13:
-    escalas_id: Escalas_1
-    percentil: '50'
-    desde: '35'
-  Percentiles_14:
-    escalas_id: Escalas_1
-    percentil: '45'
-    desde: '34'
-  Percentiles_15:
-    escalas_id: Escalas_1
-    percentil: '40'
-    desde: '33'
-  Percentiles_16:
-    escalas_id: Escalas_1
-    percentil: '35'
-    desde: '32'
-  Percentiles_17:
-    escalas_id: Escalas_1
-    percentil: '30'
-    desde: '31'
-  Percentiles_18:
-    escalas_id: Escalas_1
-    percentil: '25'
-    desde: '29'
-    hasta: '30'
-  Percentiles_19:
-    escalas_id: Escalas_1
-    percentil: '20'
-    desde: '27'
-    hasta: '28'
-  Percentiles_20:
-    escalas_id: Escalas_1
-    percentil: '15'
-    desde: '24'
-    hasta: '26'
-  Percentiles_21:
-    escalas_id: Escalas_1
-    percentil: '10'
-    desde: '19'
-    hasta: '23'
-  Percentiles_22:
-    escalas_id: Escalas_1
-    percentil: '5'
-    desde: '18'
-  Percentiles_23:
-    escalas_id: Escalas_1
-    percentil: '4'
-    desde: '16'
-    hasta: '17'
-  Percentiles_24:
-    escalas_id: Escalas_1
-    percentil: '3'
-    desde: '13'
-    hasta: '15'
-  Percentiles_25:
-    escalas_id: Escalas_1
-    percentil: '2'
-    desde: '9'
-    hasta: '12'
-  Percentiles_26:
-    escalas_id: Escalas_1
-    percentil: '1'
-    desde: '0'
-    hasta: '8'
-  Percentiles_27:
-    escalas_id: Escalas_2
-    percentil: '1'
-    desde: '1'
-  Percentiles_28:
-    escalas_id: Escalas_2
-    percentil: '3'
-    desde: '2'
-  Percentiles_29:
-    escalas_id: Escalas_2
-    percentil: '5'
-    desde: '3'
-  Percentiles_30:
-    escalas_id: Escalas_2
-    percentil: '6'
-    desde: '4'
-  Percentiles_31:
-    escalas_id: Escalas_2
-    percentil: '8'
-    desde: '5'
-  Percentiles_32:
-    escalas_id: Escalas_2
-    percentil: '10'
-    desde: '6'
-  Percentiles_33:
-    escalas_id: Escalas_2
-    percentil: '11'
-    desde: '7'
-  Percentiles_34:
-    escalas_id: Escalas_2
-    percentil: '13'
-    desde: '8'
-  Percentiles_35:
-    escalas_id: Escalas_2
-    percentil: '15'
-    desde: '9'
-  Percentiles_36:
-    escalas_id: Escalas_2
-    percentil: '16'
-    desde: '10'
-  Percentiles_37:
-    escalas_id: Escalas_2
-    percentil: '18'
-    desde: '11'
-  Percentiles_38:
-    escalas_id: Escalas_2
-    percentil: '20'
-    desde: '12'
-  Percentiles_39:
-    escalas_id: Escalas_2
-    percentil: '21'
-    desde: '13'
-  Percentiles_40:
-    escalas_id: Escalas_2
-    percentil: '23'
-    desde: '14'
-  Percentiles_41:
-    escalas_id: Escalas_2
-    percentil: '25'
-    desde: '15'
-  Percentiles_42:
-    escalas_id: Escalas_2
-    percentil: '26'
-    desde: '16'
-  Percentiles_43:
-    escalas_id: Escalas_2
-    percentil: '28'
-    desde: '17'
-  Percentiles_44:
-    escalas_id: Escalas_2
-    percentil: '30'
-    desde: '18'
-  Percentiles_45:
-    escalas_id: Escalas_2
-    percentil: '31'
-    desde: '19'
-  Percentiles_46:
-    escalas_id: Escalas_2
-    percentil: '33'
-    desde: '20'
-  Percentiles_47:
-    escalas_id: Escalas_2
-    percentil: '35'
-    desde: '21'
-  Percentiles_48:
-    escalas_id: Escalas_2
-    percentil: '36'
-    desde: '22'
-  Percentiles_49:
-    escalas_id: Escalas_2
-    percentil: '38'
-    desde: '23'
-  Percentiles_50:
-    escalas_id: Escalas_2
-    percentil: '40'
-    desde: '24'
-  Percentiles_51:
-    escalas_id: Escalas_2
-    percentil: '41'
-    desde: '25'
-  Percentiles_52:
-    escalas_id: Escalas_2
-    percentil: '43'
-    desde: '26'
-  Percentiles_53:
-    escalas_id: Escalas_2
-    percentil: '45'
-    desde: '27'
-  Percentiles_54:
-    escalas_id: Escalas_2
-    percentil: '46'
-    desde: '28'
-  Percentiles_55:
-    escalas_id: Escalas_2
-    percentil: '48'
-    desde: '29'
-  Percentiles_56:
-    escalas_id: Escalas_2
-    percentil: '50'
-    desde: '30'
-  Percentiles_57:
-    escalas_id: Escalas_3
-    percentil: '5'
-    desde: '19'
-  Percentiles_58:
-    escalas_id: Escalas_3
-    percentil: '10'
-    desde: '22'
-  Percentiles_59:
-    escalas_id: Escalas_3
-    percentil: '15'
-    desde: '27'
-  Percentiles_60:
-    escalas_id: Escalas_3
-    percentil: '25'
-    desde: '33'
-  Percentiles_61:
-    escalas_id: Escalas_3
-    percentil: '30'
-    desde: '36'
-  Percentiles_62:
-    escalas_id: Escalas_3
-    percentil: '35'
-    desde: '40'
-  Percentiles_63:
-    escalas_id: Escalas_3
-    percentil: '40'
-    desde: '43'
-  Percentiles_64:
-    escalas_id: Escalas_3
-    percentil: '45'
-    desde: '47'
-  Percentiles_65:
-    escalas_id: Escalas_3
-    percentil: '50'
-    desde: '51'
-  Percentiles_66:
-    escalas_id: Escalas_3
-    percentil: '55'
-    desde: '54'
-  Percentiles_67:
-    escalas_id: Escalas_3
-    percentil: '60'
-    desde: '57'
-  Percentiles_68:
-    escalas_id: Escalas_3
-    percentil: '65'
-    desde: '62'
-  Percentiles_69:
-    escalas_id: Escalas_3
-    percentil: '70'
-    desde: '69'
-  Percentiles_70:
-    escalas_id: Escalas_3
-    percentil: '75'
-    desde: '77'
-  Percentiles_71:
-    escalas_id: Escalas_3
-    percentil: '90'
-    desde: '85'
-    hasta: '90'
-  Percentiles_72:
-    escalas_id: Escalas_3
-    percentil: '90'
-    desde: '97'
-  Percentiles_73:
-    escalas_id: Escalas_3
-    percentil: '95'
-    desde: '106'
-  Percentiles_74:
-    escalas_id: Escalas_3
-    percentil: '99'
-    desde: '120'
-    hasta: '123'
+Pruebas:
+  Pruebas_1:
+    tests_id: Tests_1
+    evaluaciones_id: Evaluaciones_3
+    estadopruebas_id: Estadopruebas_1
+  Pruebas_2:
+    tests_id: Tests_1
+    evaluaciones_id: Evaluaciones_1
+    estadopruebas_id: Estadopruebas_1
+  Pruebas_3:
+    tests_id: Tests_3
+    evaluaciones_id: Evaluaciones_2
+    estadopruebas_id: Estadopruebas_1
+  Pruebas_4:
+    tests_id: Tests_1
+    evaluaciones_id: Evaluaciones_4
+    estadopruebas_id: Estadopruebas_1
+  Pruebas_5:
+    tests_id: Tests_4
+    evaluaciones_id: Evaluaciones_6
+    estadopruebas_id: Estadopruebas_1
+  Pruebas_6:
+    tests_id: Tests_4
+    evaluaciones_id: Evaluaciones_7
+    estadopruebas_id: Estadopruebas_1
+  Pruebas_7:
+    tests_id: Tests_5
+    evaluaciones_id: Evaluaciones_8
+    estadopruebas_id: Estadopruebas_1
+  Pruebas_8:
+    tests_id: Tests_6
+    evaluaciones_id: Evaluaciones_9
+    estadopruebas_id: Estadopruebas_1
 Preguntas:
   Preguntas_1:
     tests_id: Tests_1
@@ -1821,35 +1358,1976 @@ Preguntas:
   Preguntas_369:
     tests_id: Tests_6
     descripcion: 'Servicio militar.'
-Pruebas:
-  Pruebas_1:
-    tests_id: Tests_1
-    evaluaciones_id: Evaluaciones_3
-    estadopruebas_id: Estadopruebas_1
-  Pruebas_2:
-    tests_id: Tests_1
-    evaluaciones_id: Evaluaciones_1
-    estadopruebas_id: Estadopruebas_1
-  Pruebas_3:
-    tests_id: Tests_3
-    evaluaciones_id: Evaluaciones_2
-    estadopruebas_id: Estadopruebas_1
-  Pruebas_4:
-    tests_id: Tests_1
-    evaluaciones_id: Evaluaciones_4
-    estadopruebas_id: Estadopruebas_1
-  Pruebas_6:
-    tests_id: Tests_4
-    evaluaciones_id: Evaluaciones_6
-    estadopruebas_id: Estadopruebas_1
-  Pruebas_7:
-    tests_id: Tests_4
-    evaluaciones_id: Evaluaciones_7
-    estadopruebas_id: Estadopruebas_1
-  Pruebas_8:
-    tests_id: Tests_5
-    evaluaciones_id: Evaluaciones_8
-    estadopruebas_id: Estadopruebas_1
+Opciones:
+  Opciones_1:
+    tipoopcion_id: Tipoopcion_1
+    texto: 1/1
+  Opciones_2:
+    tipoopcion_id: Tipoopcion_1
+    texto: 1/2
+  Opciones_3:
+    tipoopcion_id: Tipoopcion_1
+    texto: 1/3
+  Opciones_4:
+    tipoopcion_id: Tipoopcion_1
+    texto: 1/4
+  Opciones_5:
+    tipoopcion_id: Tipoopcion_1
+    texto: 2/4
+  Opciones_6:
+    tipoopcion_id: Tipoopcion_1
+    texto: 2/3
+  Opciones_7:
+    tipoopcion_id: Tipoopcion_1
+    texto: 0/0
+  Opciones_8:
+    tipoopcion_id: Tipoopcion_1
+    texto: 0/1
+  Opciones_9:
+    tipoopcion_id: Tipoopcion_1
+    texto: 0/2
+  Opciones_10:
+    tipoopcion_id: Tipoopcion_1
+    texto: 0/3
+  Opciones_11:
+    tipoopcion_id: Tipoopcion_1
+    texto: 0/4
+  Opciones_12:
+    tipoopcion_id: Tipoopcion_1
+    texto: 0/5
+  Opciones_13:
+    tipoopcion_id: Tipoopcion_1
+    texto: 0/6
+  Opciones_14:
+    tipoopcion_id: Tipoopcion_1
+    texto: 1/5
+  Opciones_15:
+    tipoopcion_id: Tipoopcion_1
+    texto: 1/6
+  Opciones_16:
+    tipoopcion_id: Tipoopcion_1
+    texto: 1/0
+  Opciones_17:
+    tipoopcion_id: Tipoopcion_1
+    texto: 2/0
+  Opciones_18:
+    tipoopcion_id: Tipoopcion_1
+    texto: 2/1
+  Opciones_19:
+    tipoopcion_id: Tipoopcion_1
+    texto: 2/2
+  Opciones_20:
+    tipoopcion_id: Tipoopcion_1
+    texto: 2/5
+  Opciones_21:
+    tipoopcion_id: Tipoopcion_1
+    texto: 2/6
+  Opciones_22:
+    tipoopcion_id: Tipoopcion_1
+    texto: 3/0
+  Opciones_23:
+    tipoopcion_id: Tipoopcion_1
+    texto: 3/1
+  Opciones_24:
+    tipoopcion_id: Tipoopcion_1
+    texto: 3/2
+  Opciones_25:
+    tipoopcion_id: Tipoopcion_1
+    texto: 3/3
+  Opciones_26:
+    tipoopcion_id: Tipoopcion_1
+    texto: 3/4
+  Opciones_27:
+    tipoopcion_id: Tipoopcion_1
+    texto: 3/5
+  Opciones_28:
+    tipoopcion_id: Tipoopcion_1
+    texto: 3/6
+  Opciones_29:
+    tipoopcion_id: Tipoopcion_1
+    texto: 4/0
+  Opciones_30:
+    tipoopcion_id: Tipoopcion_1
+    texto: 4/1
+  Opciones_31:
+    tipoopcion_id: Tipoopcion_1
+    texto: 4/2
+  Opciones_32:
+    tipoopcion_id: Tipoopcion_1
+    texto: 4/3
+  Opciones_33:
+    tipoopcion_id: Tipoopcion_1
+    texto: 4/4
+  Opciones_34:
+    tipoopcion_id: Tipoopcion_1
+    texto: 4/5
+  Opciones_35:
+    tipoopcion_id: Tipoopcion_1
+    texto: 4/6
+  Opciones_36:
+    tipoopcion_id: Tipoopcion_1
+    texto: 5/0
+  Opciones_37:
+    tipoopcion_id: Tipoopcion_1
+    texto: 5/1
+  Opciones_38:
+    tipoopcion_id: Tipoopcion_1
+    texto: 5/2
+  Opciones_39:
+    tipoopcion_id: Tipoopcion_1
+    texto: 5/3
+  Opciones_40:
+    tipoopcion_id: Tipoopcion_1
+    texto: 5/4
+  Opciones_41:
+    tipoopcion_id: Tipoopcion_1
+    texto: 5/5
+  Opciones_42:
+    tipoopcion_id: Tipoopcion_1
+    texto: 5/6
+  Opciones_43:
+    tipoopcion_id: Tipoopcion_1
+    texto: 6/0
+  Opciones_44:
+    tipoopcion_id: Tipoopcion_1
+    texto: 6/1
+  Opciones_45:
+    tipoopcion_id: Tipoopcion_1
+    texto: 6/2
+  Opciones_46:
+    tipoopcion_id: Tipoopcion_1
+    texto: 6/3
+  Opciones_47:
+    tipoopcion_id: Tipoopcion_1
+    texto: 6/4
+  Opciones_48:
+    tipoopcion_id: Tipoopcion_1
+    texto: 6/5
+  Opciones_49:
+    tipoopcion_id: Tipoopcion_1
+    texto: 6/6
+  Opciones_50:
+    tipoopcion_id: Tipoopcion_2
+    texto: Verdadero
+  Opciones_51:
+    tipoopcion_id: Tipoopcion_2
+    texto: Falso
+  Opciones_52:
+    tipoopcion_id: Tipoopcion_3
+    texto: A
+  Opciones_53:
+    tipoopcion_id: Tipoopcion_3
+    texto: B
+  Opciones_54:
+    tipoopcion_id: Tipoopcion_3
+    texto: C
+  Opciones_55:
+    tipoopcion_id: Tipoopcion_4
+    texto: A
+  Opciones_56:
+    tipoopcion_id: Tipoopcion_4
+    texto: B
+  Opciones_57:
+    tipoopcion_id: Tipoopcion_4
+    texto: C
+  Opciones_58:
+    tipoopcion_id: Tipoopcion_4
+    texto: D
+  Opciones_59:
+    tipoopcion_id: Tipoopcion_4
+    texto: E
+  Opciones_60:
+    tipoopcion_id: Tipoopcion_5
+    texto: Si
+  Opciones_61:
+    tipoopcion_id: Tipoopcion_5
+    texto: No
+  Opciones_62:
+    tipoopcion_id: Tipoopcion_5
+    texto: '1'
+  Opciones_63:
+    tipoopcion_id: Tipoopcion_5
+    texto: '2'
+  Opciones_64:
+    tipoopcion_id: Tipoopcion_5
+    texto: '3'
+  Opciones_65:
+    tipoopcion_id: Tipoopcion_5
+    texto: '0'
+Resultadosparciales:
+  Resultadosparciales_1:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_315
+    opciones_id: Opciones_56
+  Resultadosparciales_2:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_316
+    opciones_id: Opciones_58
+  Resultadosparciales_3:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_317
+    opciones_id: Opciones_60
+  Resultadosparciales_4:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_317
+    opciones_id: Opciones_60
+  Resultadosparciales_5:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_318
+    opciones_id: Opciones_60
+  Resultadosparciales_6:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_319
+    opciones_id: Opciones_60
+  Resultadosparciales_7:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_320
+    opciones_id: Opciones_60
+  Resultadosparciales_8:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_321
+    opciones_id: Opciones_60
+  Resultadosparciales_9:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_322
+    opciones_id: Opciones_60
+  Resultadosparciales_10:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_323
+    opciones_id: Opciones_60
+  Resultadosparciales_11:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_324
+    opciones_id: Opciones_60
+  Resultadosparciales_12:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_325
+    opciones_id: Opciones_60
+  Resultadosparciales_13:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_326
+    opciones_id: Opciones_60
+  Resultadosparciales_14:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_327
+    opciones_id: Opciones_60
+  Resultadosparciales_15:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_328
+    opciones_id: Opciones_60
+  Resultadosparciales_16:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_329
+    opciones_id: Opciones_60
+  Resultadosparciales_17:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_330
+    opciones_id: Opciones_60
+  Resultadosparciales_18:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_331
+    opciones_id: Opciones_60
+  Resultadosparciales_19:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_332
+    opciones_id: Opciones_60
+  Resultadosparciales_20:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_333
+    opciones_id: Opciones_60
+  Resultadosparciales_21:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_334
+    opciones_id: Opciones_60
+  Resultadosparciales_22:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_335
+    opciones_id: Opciones_60
+  Resultadosparciales_23:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_336
+    opciones_id: Opciones_60
+  Resultadosparciales_24:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_337
+    opciones_id: Opciones_60
+  Resultadosparciales_25:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_338
+    opciones_id: Opciones_60
+  Resultadosparciales_26:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_339
+    opciones_id: Opciones_60
+  Resultadosparciales_27:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_340
+    opciones_id: Opciones_60
+  Resultadosparciales_28:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_341
+    opciones_id: Opciones_60
+  Resultadosparciales_29:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_342
+    opciones_id: Opciones_60
+  Resultadosparciales_30:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_343
+    opciones_id: Opciones_60
+  Resultadosparciales_31:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_344
+    opciones_id: Opciones_60
+  Resultadosparciales_32:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_345
+    opciones_id: Opciones_60
+  Resultadosparciales_33:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_346
+    opciones_id: Opciones_60
+  Resultadosparciales_34:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_347
+    opciones_id: Opciones_60
+  Resultadosparciales_35:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_348
+    opciones_id: Opciones_60
+  Resultadosparciales_36:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_349
+    opciones_id: Opciones_60
+  Resultadosparciales_37:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_350
+    opciones_id: Opciones_60
+  Resultadosparciales_38:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_351
+    opciones_id: Opciones_60
+  Resultadosparciales_39:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_352
+    opciones_id: Opciones_60
+  Resultadosparciales_40:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_353
+    opciones_id: Opciones_60
+  Resultadosparciales_41:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_354
+    opciones_id: Opciones_60
+  Resultadosparciales_42:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_355
+    opciones_id: Opciones_60
+  Resultadosparciales_43:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_356
+    opciones_id: Opciones_60
+  Resultadosparciales_44:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_357
+    opciones_id: Opciones_60
+  Resultadosparciales_45:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_358
+    opciones_id: Opciones_60
+  Resultadosparciales_46:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_359
+    opciones_id: Opciones_60
+  Resultadosparciales_47:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_360
+    opciones_id: Opciones_60
+  Resultadosparciales_48:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_361
+    opciones_id: Opciones_60
+  Resultadosparciales_49:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_362
+    opciones_id: Opciones_60
+  Resultadosparciales_50:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_363
+    opciones_id: Opciones_60
+  Resultadosparciales_51:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_364
+    opciones_id: Opciones_60
+  Resultadosparciales_52:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_365
+    opciones_id: Opciones_60
+  Resultadosparciales_53:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_366
+    opciones_id: Opciones_60
+  Resultadosparciales_54:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_367
+    opciones_id: Opciones_60
+  Resultadosparciales_55:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_368
+    opciones_id: Opciones_60
+  Resultadosparciales_56:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_369
+    opciones_id: Opciones_60
+  Resultadosparciales_57:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_317
+    opciones_id: Opciones_60
+  Resultadosparciales_58:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_318
+    opciones_id: Opciones_60
+  Resultadosparciales_59:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_319
+    opciones_id: Opciones_60
+  Resultadosparciales_60:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_320
+    opciones_id: Opciones_60
+  Resultadosparciales_61:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_321
+    opciones_id: Opciones_60
+  Resultadosparciales_62:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_322
+    opciones_id: Opciones_60
+  Resultadosparciales_63:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_323
+    opciones_id: Opciones_60
+  Resultadosparciales_64:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_324
+    opciones_id: Opciones_60
+  Resultadosparciales_65:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_325
+    opciones_id: Opciones_60
+  Resultadosparciales_66:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_326
+    opciones_id: Opciones_60
+  Resultadosparciales_67:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_327
+    opciones_id: Opciones_60
+  Resultadosparciales_68:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_328
+    opciones_id: Opciones_60
+  Resultadosparciales_69:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_329
+    opciones_id: Opciones_60
+  Resultadosparciales_70:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_330
+    opciones_id: Opciones_60
+  Resultadosparciales_71:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_331
+    opciones_id: Opciones_60
+  Resultadosparciales_72:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_332
+    opciones_id: Opciones_60
+  Resultadosparciales_73:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_333
+    opciones_id: Opciones_60
+  Resultadosparciales_74:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_334
+    opciones_id: Opciones_60
+  Resultadosparciales_75:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_335
+    opciones_id: Opciones_60
+  Resultadosparciales_76:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_336
+    opciones_id: Opciones_60
+  Resultadosparciales_77:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_337
+    opciones_id: Opciones_60
+  Resultadosparciales_78:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_338
+    opciones_id: Opciones_60
+  Resultadosparciales_79:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_339
+    opciones_id: Opciones_60
+  Resultadosparciales_80:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_340
+    opciones_id: Opciones_60
+  Resultadosparciales_81:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_341
+    opciones_id: Opciones_60
+  Resultadosparciales_82:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_342
+    opciones_id: Opciones_60
+  Resultadosparciales_83:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_343
+    opciones_id: Opciones_60
+  Resultadosparciales_84:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_344
+    opciones_id: Opciones_60
+  Resultadosparciales_85:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_345
+    opciones_id: Opciones_60
+  Resultadosparciales_86:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_346
+    opciones_id: Opciones_60
+  Resultadosparciales_87:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_347
+    opciones_id: Opciones_60
+  Resultadosparciales_88:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_348
+    opciones_id: Opciones_60
+  Resultadosparciales_89:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_349
+    opciones_id: Opciones_60
+  Resultadosparciales_90:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_350
+    opciones_id: Opciones_60
+  Resultadosparciales_91:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_351
+    opciones_id: Opciones_60
+  Resultadosparciales_92:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_352
+    opciones_id: Opciones_60
+  Resultadosparciales_93:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_353
+    opciones_id: Opciones_60
+  Resultadosparciales_94:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_354
+    opciones_id: Opciones_60
+  Resultadosparciales_95:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_355
+    opciones_id: Opciones_60
+  Resultadosparciales_96:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_356
+    opciones_id: Opciones_60
+  Resultadosparciales_97:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_357
+    opciones_id: Opciones_60
+  Resultadosparciales_98:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_358
+    opciones_id: Opciones_60
+  Resultadosparciales_99:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_359
+    opciones_id: Opciones_60
+  Resultadosparciales_100:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_360
+    opciones_id: Opciones_60
+  Resultadosparciales_101:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_361
+    opciones_id: Opciones_60
+  Resultadosparciales_102:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_362
+    opciones_id: Opciones_60
+  Resultadosparciales_103:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_363
+    opciones_id: Opciones_60
+  Resultadosparciales_104:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_364
+    opciones_id: Opciones_60
+  Resultadosparciales_105:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_365
+    opciones_id: Opciones_60
+  Resultadosparciales_106:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_366
+    opciones_id: Opciones_60
+  Resultadosparciales_107:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_367
+    opciones_id: Opciones_60
+  Resultadosparciales_108:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_368
+    opciones_id: Opciones_60
+  Resultadosparciales_109:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_369
+    opciones_id: Opciones_60
+  Resultadosparciales_110:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_369
+    opciones_id: Opciones_60
+  Resultadosparciales_111:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_369
+    opciones_id: Opciones_60
+  Resultadosparciales_112:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_369
+    opciones_id: Opciones_60
+  Resultadosparciales_113:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_369
+    opciones_id: Opciones_60
+  Resultadosparciales_114:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_369
+    opciones_id: Opciones_60
+  Resultadosparciales_115:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_369
+    opciones_id: Opciones_60
+  Resultadosparciales_116:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_369
+    opciones_id: Opciones_60
+  Resultadosparciales_117:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_317
+    opciones_id: Opciones_60
+  Resultadosparciales_118:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_318
+    opciones_id: Opciones_60
+  Resultadosparciales_119:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_319
+    opciones_id: Opciones_60
+  Resultadosparciales_120:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_320
+    opciones_id: Opciones_60
+  Resultadosparciales_121:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_321
+    opciones_id: Opciones_60
+  Resultadosparciales_122:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_321
+    opciones_id: Opciones_60
+  Resultadosparciales_123:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_322
+    opciones_id: Opciones_60
+  Resultadosparciales_124:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_322
+    opciones_id: Opciones_60
+  Resultadosparciales_125:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_323
+    opciones_id: Opciones_60
+  Resultadosparciales_126:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_324
+    opciones_id: Opciones_60
+  Resultadosparciales_127:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_325
+    opciones_id: Opciones_60
+  Resultadosparciales_128:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_326
+    opciones_id: Opciones_60
+  Resultadosparciales_129:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_327
+    opciones_id: Opciones_60
+  Resultadosparciales_130:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_328
+    opciones_id: Opciones_60
+  Resultadosparciales_131:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_329
+    opciones_id: Opciones_60
+  Resultadosparciales_132:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_330
+    opciones_id: Opciones_60
+  Resultadosparciales_133:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_331
+    opciones_id: Opciones_60
+  Resultadosparciales_134:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_332
+    opciones_id: Opciones_60
+  Resultadosparciales_135:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_333
+    opciones_id: Opciones_60
+  Resultadosparciales_136:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_334
+    opciones_id: Opciones_60
+  Resultadosparciales_137:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_335
+    opciones_id: Opciones_60
+  Resultadosparciales_138:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_336
+    opciones_id: Opciones_60
+  Resultadosparciales_139:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_337
+    opciones_id: Opciones_60
+  Resultadosparciales_140:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_338
+    opciones_id: Opciones_60
+  Resultadosparciales_141:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_339
+    opciones_id: Opciones_60
+  Resultadosparciales_142:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_340
+    opciones_id: Opciones_60
+  Resultadosparciales_143:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_341
+    opciones_id: Opciones_60
+  Resultadosparciales_144:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_342
+    opciones_id: Opciones_60
+  Resultadosparciales_145:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_343
+    opciones_id: Opciones_60
+  Resultadosparciales_146:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_344
+    opciones_id: Opciones_60
+  Resultadosparciales_147:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_345
+    opciones_id: Opciones_60
+  Resultadosparciales_148:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_346
+    opciones_id: Opciones_60
+  Resultadosparciales_149:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_347
+    opciones_id: Opciones_60
+  Resultadosparciales_150:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_348
+    opciones_id: Opciones_60
+  Resultadosparciales_151:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_349
+    opciones_id: Opciones_60
+  Resultadosparciales_152:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_350
+    opciones_id: Opciones_60
+  Resultadosparciales_153:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_351
+    opciones_id: Opciones_60
+  Resultadosparciales_154:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_352
+    opciones_id: Opciones_60
+  Resultadosparciales_155:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_353
+    opciones_id: Opciones_60
+  Resultadosparciales_156:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_354
+    opciones_id: Opciones_60
+  Resultadosparciales_157:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_355
+    opciones_id: Opciones_60
+  Resultadosparciales_158:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_356
+    opciones_id: Opciones_60
+  Resultadosparciales_159:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_357
+    opciones_id: Opciones_60
+  Resultadosparciales_160:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_358
+    opciones_id: Opciones_60
+  Resultadosparciales_161:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_359
+    opciones_id: Opciones_60
+  Resultadosparciales_162:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_360
+    opciones_id: Opciones_60
+  Resultadosparciales_163:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_361
+    opciones_id: Opciones_60
+  Resultadosparciales_164:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_362
+    opciones_id: Opciones_60
+  Resultadosparciales_165:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_363
+    opciones_id: Opciones_60
+  Resultadosparciales_166:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_364
+    opciones_id: Opciones_60
+  Resultadosparciales_167:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_365
+    opciones_id: Opciones_60
+  Resultadosparciales_168:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_366
+    opciones_id: Opciones_60
+  Resultadosparciales_169:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_367
+    opciones_id: Opciones_60
+  Resultadosparciales_170:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_368
+    opciones_id: Opciones_60
+  Resultadosparciales_171:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_369
+    opciones_id: Opciones_60
+  Resultadosparciales_172:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_369
+    opciones_id: Opciones_60
+  Resultadosparciales_173:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_369
+    opciones_id: Opciones_60
+  Resultadosparciales_174:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_369
+    opciones_id: Opciones_60
+  Resultadosparciales_175:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_369
+    opciones_id: Opciones_60
+  Resultadosparciales_176:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_369
+    opciones_id: Opciones_60
+  Resultadosparciales_177:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_369
+    opciones_id: Opciones_60
+  Resultadosparciales_178:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_369
+    opciones_id: Opciones_60
+  Resultadosparciales_179:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_369
+    opciones_id: Opciones_60
+  Resultadosparciales_180:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_369
+    opciones_id: Opciones_60
+  Resultadosparciales_181:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_369
+    opciones_id: Opciones_60
+  Resultadosparciales_182:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_369
+    opciones_id: Opciones_60
+  Resultadosparciales_183:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_369
+    opciones_id: Opciones_60
+  Resultadosparciales_184:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_369
+    opciones_id: Opciones_60
+Intensidades:
+  Intensidades_1:
+    resultadosparciales_id: Resultadosparciales_4
+    opciones_id: Opciones_65
+  Intensidades_2:
+    resultadosparciales_id: Resultadosparciales_5
+    opciones_id: Opciones_63
+  Intensidades_3:
+    resultadosparciales_id: Resultadosparciales_6
+    opciones_id: Opciones_63
+  Intensidades_4:
+    resultadosparciales_id: Resultadosparciales_7
+    opciones_id: Opciones_65
+  Intensidades_5:
+    resultadosparciales_id: Resultadosparciales_8
+    opciones_id: Opciones_65
+  Intensidades_6:
+    resultadosparciales_id: Resultadosparciales_9
+    opciones_id: Opciones_65
+  Intensidades_7:
+    resultadosparciales_id: Resultadosparciales_10
+    opciones_id: Opciones_65
+  Intensidades_8:
+    resultadosparciales_id: Resultadosparciales_11
+    opciones_id: Opciones_65
+  Intensidades_9:
+    resultadosparciales_id: Resultadosparciales_12
+    opciones_id: Opciones_65
+  Intensidades_10:
+    resultadosparciales_id: Resultadosparciales_13
+    opciones_id: Opciones_65
+  Intensidades_11:
+    resultadosparciales_id: Resultadosparciales_14
+    opciones_id: Opciones_64
+  Intensidades_12:
+    resultadosparciales_id: Resultadosparciales_15
+    opciones_id: Opciones_65
+  Intensidades_13:
+    resultadosparciales_id: Resultadosparciales_16
+    opciones_id: Opciones_65
+  Intensidades_14:
+    resultadosparciales_id: Resultadosparciales_17
+    opciones_id: Opciones_65
+  Intensidades_15:
+    resultadosparciales_id: Resultadosparciales_18
+    opciones_id: Opciones_65
+  Intensidades_16:
+    resultadosparciales_id: Resultadosparciales_19
+    opciones_id: Opciones_65
+  Intensidades_17:
+    resultadosparciales_id: Resultadosparciales_20
+    opciones_id: Opciones_65
+  Intensidades_18:
+    resultadosparciales_id: Resultadosparciales_21
+    opciones_id: Opciones_65
+  Intensidades_19:
+    resultadosparciales_id: Resultadosparciales_22
+    opciones_id: Opciones_65
+  Intensidades_20:
+    resultadosparciales_id: Resultadosparciales_23
+    opciones_id: Opciones_65
+  Intensidades_21:
+    resultadosparciales_id: Resultadosparciales_24
+    opciones_id: Opciones_65
+  Intensidades_22:
+    resultadosparciales_id: Resultadosparciales_25
+    opciones_id: Opciones_65
+  Intensidades_23:
+    resultadosparciales_id: Resultadosparciales_26
+    opciones_id: Opciones_65
+  Intensidades_24:
+    resultadosparciales_id: Resultadosparciales_27
+    opciones_id: Opciones_64
+  Intensidades_25:
+    resultadosparciales_id: Resultadosparciales_28
+    opciones_id: Opciones_63
+  Intensidades_26:
+    resultadosparciales_id: Resultadosparciales_29
+    opciones_id: Opciones_64
+  Intensidades_27:
+    resultadosparciales_id: Resultadosparciales_30
+    opciones_id: Opciones_63
+  Intensidades_28:
+    resultadosparciales_id: Resultadosparciales_31
+    opciones_id: Opciones_64
+  Intensidades_29:
+    resultadosparciales_id: Resultadosparciales_32
+    opciones_id: Opciones_65
+  Intensidades_30:
+    resultadosparciales_id: Resultadosparciales_33
+    opciones_id: Opciones_65
+  Intensidades_31:
+    resultadosparciales_id: Resultadosparciales_34
+    opciones_id: Opciones_65
+  Intensidades_32:
+    resultadosparciales_id: Resultadosparciales_35
+    opciones_id: Opciones_65
+  Intensidades_33:
+    resultadosparciales_id: Resultadosparciales_36
+    opciones_id: Opciones_64
+  Intensidades_34:
+    resultadosparciales_id: Resultadosparciales_37
+    opciones_id: Opciones_63
+  Intensidades_35:
+    resultadosparciales_id: Resultadosparciales_38
+    opciones_id: Opciones_63
+  Intensidades_36:
+    resultadosparciales_id: Resultadosparciales_39
+    opciones_id: Opciones_65
+  Intensidades_37:
+    resultadosparciales_id: Resultadosparciales_40
+    opciones_id: Opciones_64
+  Intensidades_38:
+    resultadosparciales_id: Resultadosparciales_41
+    opciones_id: Opciones_64
+  Intensidades_39:
+    resultadosparciales_id: Resultadosparciales_42
+    opciones_id: Opciones_65
+  Intensidades_40:
+    resultadosparciales_id: Resultadosparciales_43
+    opciones_id: Opciones_65
+  Intensidades_41:
+    resultadosparciales_id: Resultadosparciales_44
+    opciones_id: Opciones_63
+  Intensidades_42:
+    resultadosparciales_id: Resultadosparciales_45
+    opciones_id: Opciones_62
+  Intensidades_43:
+    resultadosparciales_id: Resultadosparciales_46
+    opciones_id: Opciones_65
+  Intensidades_44:
+    resultadosparciales_id: Resultadosparciales_47
+    opciones_id: Opciones_65
+  Intensidades_45:
+    resultadosparciales_id: Resultadosparciales_48
+    opciones_id: Opciones_64
+  Intensidades_46:
+    resultadosparciales_id: Resultadosparciales_49
+    opciones_id: Opciones_65
+  Intensidades_47:
+    resultadosparciales_id: Resultadosparciales_50
+    opciones_id: Opciones_65
+  Intensidades_48:
+    resultadosparciales_id: Resultadosparciales_51
+    opciones_id: Opciones_65
+  Intensidades_49:
+    resultadosparciales_id: Resultadosparciales_52
+    opciones_id: Opciones_63
+  Intensidades_50:
+    resultadosparciales_id: Resultadosparciales_53
+    opciones_id: Opciones_65
+  Intensidades_51:
+    resultadosparciales_id: Resultadosparciales_54
+    opciones_id: Opciones_65
+  Intensidades_52:
+    resultadosparciales_id: Resultadosparciales_55
+    opciones_id: Opciones_64
+  Intensidades_53:
+    resultadosparciales_id: Resultadosparciales_56
+    opciones_id: Opciones_65
+  Intensidades_54:
+    resultadosparciales_id: Resultadosparciales_57
+    opciones_id: Opciones_62
+  Intensidades_55:
+    resultadosparciales_id: Resultadosparciales_58
+    opciones_id: Opciones_64
+  Intensidades_56:
+    resultadosparciales_id: Resultadosparciales_59
+    opciones_id: Opciones_64
+  Intensidades_57:
+    resultadosparciales_id: Resultadosparciales_60
+    opciones_id: Opciones_64
+  Intensidades_58:
+    resultadosparciales_id: Resultadosparciales_61
+    opciones_id: Opciones_64
+  Intensidades_59:
+    resultadosparciales_id: Resultadosparciales_62
+    opciones_id: Opciones_63
+  Intensidades_60:
+    resultadosparciales_id: Resultadosparciales_63
+    opciones_id: Opciones_64
+  Intensidades_61:
+    resultadosparciales_id: Resultadosparciales_64
+    opciones_id: Opciones_64
+  Intensidades_62:
+    resultadosparciales_id: Resultadosparciales_65
+    opciones_id: Opciones_65
+  Intensidades_63:
+    resultadosparciales_id: Resultadosparciales_66
+    opciones_id: Opciones_65
+  Intensidades_64:
+    resultadosparciales_id: Resultadosparciales_67
+    opciones_id: Opciones_65
+  Intensidades_65:
+    resultadosparciales_id: Resultadosparciales_68
+    opciones_id: Opciones_65
+  Intensidades_66:
+    resultadosparciales_id: Resultadosparciales_69
+    opciones_id: Opciones_65
+  Intensidades_67:
+    resultadosparciales_id: Resultadosparciales_70
+    opciones_id: Opciones_64
+  Intensidades_68:
+    resultadosparciales_id: Resultadosparciales_71
+    opciones_id: Opciones_63
+  Intensidades_69:
+    resultadosparciales_id: Resultadosparciales_72
+    opciones_id: Opciones_64
+  Intensidades_70:
+    resultadosparciales_id: Resultadosparciales_73
+    opciones_id: Opciones_63
+  Intensidades_71:
+    resultadosparciales_id: Resultadosparciales_74
+    opciones_id: Opciones_64
+  Intensidades_72:
+    resultadosparciales_id: Resultadosparciales_75
+    opciones_id: Opciones_64
+  Intensidades_73:
+    resultadosparciales_id: Resultadosparciales_76
+    opciones_id: Opciones_64
+  Intensidades_74:
+    resultadosparciales_id: Resultadosparciales_77
+    opciones_id: Opciones_64
+  Intensidades_75:
+    resultadosparciales_id: Resultadosparciales_78
+    opciones_id: Opciones_64
+  Intensidades_76:
+    resultadosparciales_id: Resultadosparciales_79
+    opciones_id: Opciones_65
+  Intensidades_77:
+    resultadosparciales_id: Resultadosparciales_80
+    opciones_id: Opciones_65
+  Intensidades_78:
+    resultadosparciales_id: Resultadosparciales_81
+    opciones_id: Opciones_65
+  Intensidades_79:
+    resultadosparciales_id: Resultadosparciales_82
+    opciones_id: Opciones_64
+  Intensidades_80:
+    resultadosparciales_id: Resultadosparciales_83
+    opciones_id: Opciones_64
+  Intensidades_81:
+    resultadosparciales_id: Resultadosparciales_84
+    opciones_id: Opciones_65
+  Intensidades_82:
+    resultadosparciales_id: Resultadosparciales_85
+    opciones_id: Opciones_65
+  Intensidades_83:
+    resultadosparciales_id: Resultadosparciales_86
+    opciones_id: Opciones_65
+  Intensidades_84:
+    resultadosparciales_id: Resultadosparciales_87
+    opciones_id: Opciones_65
+  Intensidades_85:
+    resultadosparciales_id: Resultadosparciales_88
+    opciones_id: Opciones_65
+  Intensidades_86:
+    resultadosparciales_id: Resultadosparciales_89
+    opciones_id: Opciones_65
+  Intensidades_87:
+    resultadosparciales_id: Resultadosparciales_90
+    opciones_id: Opciones_65
+  Intensidades_88:
+    resultadosparciales_id: Resultadosparciales_91
+    opciones_id: Opciones_65
+  Intensidades_89:
+    resultadosparciales_id: Resultadosparciales_92
+    opciones_id: Opciones_65
+  Intensidades_90:
+    resultadosparciales_id: Resultadosparciales_93
+    opciones_id: Opciones_65
+  Intensidades_91:
+    resultadosparciales_id: Resultadosparciales_94
+    opciones_id: Opciones_65
+  Intensidades_92:
+    resultadosparciales_id: Resultadosparciales_95
+    opciones_id: Opciones_65
+  Intensidades_93:
+    resultadosparciales_id: Resultadosparciales_96
+    opciones_id: Opciones_64
+  Intensidades_94:
+    resultadosparciales_id: Resultadosparciales_97
+    opciones_id: Opciones_64
+  Intensidades_95:
+    resultadosparciales_id: Resultadosparciales_98
+    opciones_id: Opciones_64
+  Intensidades_96:
+    resultadosparciales_id: Resultadosparciales_99
+    opciones_id: Opciones_64
+  Intensidades_97:
+    resultadosparciales_id: Resultadosparciales_100
+    opciones_id: Opciones_64
+  Intensidades_98:
+    resultadosparciales_id: Resultadosparciales_101
+    opciones_id: Opciones_63
+  Intensidades_99:
+    resultadosparciales_id: Resultadosparciales_102
+    opciones_id: Opciones_64
+  Intensidades_100:
+    resultadosparciales_id: Resultadosparciales_103
+    opciones_id: Opciones_64
+  Intensidades_101:
+    resultadosparciales_id: Resultadosparciales_104
+    opciones_id: Opciones_63
+  Intensidades_102:
+    resultadosparciales_id: Resultadosparciales_105
+    opciones_id: Opciones_65
+  Intensidades_103:
+    resultadosparciales_id: Resultadosparciales_106
+    opciones_id: Opciones_65
+  Intensidades_104:
+    resultadosparciales_id: Resultadosparciales_107
+    opciones_id: Opciones_65
+  Intensidades_105:
+    resultadosparciales_id: Resultadosparciales_108
+    opciones_id: Opciones_65
+  Intensidades_106:
+    resultadosparciales_id: Resultadosparciales_109
+    opciones_id: Opciones_65
+  Intensidades_107:
+    resultadosparciales_id: Resultadosparciales_110
+    opciones_id: Opciones_65
+  Intensidades_108:
+    resultadosparciales_id: Resultadosparciales_111
+    opciones_id: Opciones_65
+  Intensidades_109:
+    resultadosparciales_id: Resultadosparciales_112
+    opciones_id: Opciones_65
+  Intensidades_110:
+    resultadosparciales_id: Resultadosparciales_113
+    opciones_id: Opciones_65
+  Intensidades_111:
+    resultadosparciales_id: Resultadosparciales_114
+    opciones_id: Opciones_65
+  Intensidades_112:
+    resultadosparciales_id: Resultadosparciales_115
+    opciones_id: Opciones_65
+  Intensidades_113:
+    resultadosparciales_id: Resultadosparciales_116
+    opciones_id: Opciones_65
+  Intensidades_114:
+    resultadosparciales_id: Resultadosparciales_117
+    opciones_id: Opciones_65
+  Intensidades_115:
+    resultadosparciales_id: Resultadosparciales_118
+    opciones_id: Opciones_65
+  Intensidades_116:
+    resultadosparciales_id: Resultadosparciales_119
+    opciones_id: Opciones_65
+  Intensidades_117:
+    resultadosparciales_id: Resultadosparciales_120
+    opciones_id: Opciones_65
+  Intensidades_118:
+    resultadosparciales_id: Resultadosparciales_121
+    opciones_id: Opciones_65
+  Intensidades_119:
+    resultadosparciales_id: Resultadosparciales_122
+    opciones_id: Opciones_65
+  Intensidades_120:
+    resultadosparciales_id: Resultadosparciales_123
+    opciones_id: Opciones_65
+  Intensidades_121:
+    resultadosparciales_id: Resultadosparciales_124
+    opciones_id: Opciones_65
+  Intensidades_122:
+    resultadosparciales_id: Resultadosparciales_125
+    opciones_id: Opciones_65
+  Intensidades_123:
+    resultadosparciales_id: Resultadosparciales_126
+    opciones_id: Opciones_65
+  Intensidades_124:
+    resultadosparciales_id: Resultadosparciales_127
+    opciones_id: Opciones_65
+  Intensidades_125:
+    resultadosparciales_id: Resultadosparciales_128
+    opciones_id: Opciones_65
+  Intensidades_126:
+    resultadosparciales_id: Resultadosparciales_129
+    opciones_id: Opciones_65
+  Intensidades_127:
+    resultadosparciales_id: Resultadosparciales_130
+    opciones_id: Opciones_65
+  Intensidades_128:
+    resultadosparciales_id: Resultadosparciales_131
+    opciones_id: Opciones_65
+  Intensidades_129:
+    resultadosparciales_id: Resultadosparciales_132
+    opciones_id: Opciones_65
+  Intensidades_130:
+    resultadosparciales_id: Resultadosparciales_133
+    opciones_id: Opciones_65
+  Intensidades_131:
+    resultadosparciales_id: Resultadosparciales_134
+    opciones_id: Opciones_65
+  Intensidades_132:
+    resultadosparciales_id: Resultadosparciales_135
+    opciones_id: Opciones_65
+  Intensidades_133:
+    resultadosparciales_id: Resultadosparciales_136
+    opciones_id: Opciones_65
+  Intensidades_134:
+    resultadosparciales_id: Resultadosparciales_137
+    opciones_id: Opciones_65
+  Intensidades_135:
+    resultadosparciales_id: Resultadosparciales_138
+    opciones_id: Opciones_65
+  Intensidades_136:
+    resultadosparciales_id: Resultadosparciales_139
+    opciones_id: Opciones_65
+  Intensidades_137:
+    resultadosparciales_id: Resultadosparciales_140
+    opciones_id: Opciones_65
+  Intensidades_138:
+    resultadosparciales_id: Resultadosparciales_141
+    opciones_id: Opciones_65
+  Intensidades_139:
+    resultadosparciales_id: Resultadosparciales_142
+    opciones_id: Opciones_65
+  Intensidades_140:
+    resultadosparciales_id: Resultadosparciales_143
+    opciones_id: Opciones_65
+  Intensidades_141:
+    resultadosparciales_id: Resultadosparciales_144
+    opciones_id: Opciones_65
+  Intensidades_142:
+    resultadosparciales_id: Resultadosparciales_145
+    opciones_id: Opciones_65
+  Intensidades_143:
+    resultadosparciales_id: Resultadosparciales_146
+    opciones_id: Opciones_65
+  Intensidades_144:
+    resultadosparciales_id: Resultadosparciales_147
+    opciones_id: Opciones_65
+  Intensidades_145:
+    resultadosparciales_id: Resultadosparciales_148
+    opciones_id: Opciones_65
+  Intensidades_146:
+    resultadosparciales_id: Resultadosparciales_149
+    opciones_id: Opciones_65
+  Intensidades_147:
+    resultadosparciales_id: Resultadosparciales_150
+    opciones_id: Opciones_65
+  Intensidades_148:
+    resultadosparciales_id: Resultadosparciales_151
+    opciones_id: Opciones_64
+  Intensidades_149:
+    resultadosparciales_id: Resultadosparciales_152
+    opciones_id: Opciones_64
+  Intensidades_150:
+    resultadosparciales_id: Resultadosparciales_153
+    opciones_id: Opciones_64
+  Intensidades_151:
+    resultadosparciales_id: Resultadosparciales_154
+    opciones_id: Opciones_65
+  Intensidades_152:
+    resultadosparciales_id: Resultadosparciales_155
+    opciones_id: Opciones_65
+  Intensidades_153:
+    resultadosparciales_id: Resultadosparciales_156
+    opciones_id: Opciones_65
+  Intensidades_154:
+    resultadosparciales_id: Resultadosparciales_157
+    opciones_id: Opciones_65
+  Intensidades_155:
+    resultadosparciales_id: Resultadosparciales_158
+    opciones_id: Opciones_65
+  Intensidades_156:
+    resultadosparciales_id: Resultadosparciales_159
+    opciones_id: Opciones_65
+  Intensidades_157:
+    resultadosparciales_id: Resultadosparciales_160
+    opciones_id: Opciones_65
+  Intensidades_158:
+    resultadosparciales_id: Resultadosparciales_161
+    opciones_id: Opciones_65
+  Intensidades_159:
+    resultadosparciales_id: Resultadosparciales_162
+    opciones_id: Opciones_65
+  Intensidades_160:
+    resultadosparciales_id: Resultadosparciales_163
+    opciones_id: Opciones_65
+  Intensidades_161:
+    resultadosparciales_id: Resultadosparciales_164
+    opciones_id: Opciones_65
+  Intensidades_162:
+    resultadosparciales_id: Resultadosparciales_165
+    opciones_id: Opciones_65
+  Intensidades_163:
+    resultadosparciales_id: Resultadosparciales_166
+    opciones_id: Opciones_65
+  Intensidades_164:
+    resultadosparciales_id: Resultadosparciales_167
+    opciones_id: Opciones_65
+  Intensidades_165:
+    resultadosparciales_id: Resultadosparciales_168
+    opciones_id: Opciones_65
+  Intensidades_166:
+    resultadosparciales_id: Resultadosparciales_169
+    opciones_id: Opciones_65
+  Intensidades_167:
+    resultadosparciales_id: Resultadosparciales_170
+    opciones_id: Opciones_65
+  Intensidades_168:
+    resultadosparciales_id: Resultadosparciales_171
+    opciones_id: Opciones_65
+  Intensidades_169:
+    resultadosparciales_id: Resultadosparciales_172
+    opciones_id: Opciones_65
+  Intensidades_170:
+    resultadosparciales_id: Resultadosparciales_173
+    opciones_id: Opciones_65
+  Intensidades_171:
+    resultadosparciales_id: Resultadosparciales_174
+    opciones_id: Opciones_65
+  Intensidades_172:
+    resultadosparciales_id: Resultadosparciales_175
+    opciones_id: Opciones_65
+  Intensidades_173:
+    resultadosparciales_id: Resultadosparciales_176
+    opciones_id: Opciones_65
+  Intensidades_174:
+    resultadosparciales_id: Resultadosparciales_177
+    opciones_id: Opciones_65
+  Intensidades_175:
+    resultadosparciales_id: Resultadosparciales_178
+    opciones_id: Opciones_65
+  Intensidades_176:
+    resultadosparciales_id: Resultadosparciales_179
+    opciones_id: Opciones_65
+  Intensidades_177:
+    resultadosparciales_id: Resultadosparciales_180
+    opciones_id: Opciones_65
+  Intensidades_178:
+    resultadosparciales_id: Resultadosparciales_181
+    opciones_id: Opciones_65
+  Intensidades_179:
+    resultadosparciales_id: Resultadosparciales_182
+    opciones_id: Opciones_65
+  Intensidades_180:
+    resultadosparciales_id: Resultadosparciales_183
+    opciones_id: Opciones_65
+  Intensidades_181:
+    resultadosparciales_id: Resultadosparciales_184
+    opciones_id: Opciones_65
+Percentiles:
+  Percentiles_1:
+    escalas_id: Escalas_1
+    percentil: '99'
+    desde: '47'
+    hasta: '50'
+  Percentiles_2:
+    escalas_id: Escalas_1
+    percentil: '98'
+    desde: '46'
+  Percentiles_3:
+    escalas_id: Escalas_1
+    percentil: '97'
+    desde: '45'
+  Percentiles_4:
+    escalas_id: Escalas_1
+    percentil: '96'
+    desde: '0'
+  Percentiles_5:
+    escalas_id: Escalas_1
+    percentil: '95'
+    desde: '43'
+    hasta: '44'
+  Percentiles_6:
+    escalas_id: Escalas_1
+    percentil: '90'
+    desde: '42'
+  Percentiles_7:
+    escalas_id: Escalas_1
+    percentil: '85'
+    desde: '41'
+  Percentiles_8:
+    escalas_id: Escalas_1
+    percentil: '80'
+    desde: '40'
+  Percentiles_9:
+    escalas_id: Escalas_1
+    percentil: '75'
+    desde: '39'
+  Percentiles_10:
+    escalas_id: Escalas_1
+    percentil: '70'
+    desde: '38'
+  Percentiles_11:
+    escalas_id: Escalas_1
+    percentil: '65'
+    desde: '37'
+  Percentiles_12:
+    escalas_id: Escalas_1
+    percentil: '60'
+    desde: '36'
+  Percentiles_13:
+    escalas_id: Escalas_1
+    percentil: '50'
+    desde: '35'
+  Percentiles_14:
+    escalas_id: Escalas_1
+    percentil: '45'
+    desde: '34'
+  Percentiles_15:
+    escalas_id: Escalas_1
+    percentil: '40'
+    desde: '33'
+  Percentiles_16:
+    escalas_id: Escalas_1
+    percentil: '35'
+    desde: '32'
+  Percentiles_17:
+    escalas_id: Escalas_1
+    percentil: '30'
+    desde: '31'
+  Percentiles_18:
+    escalas_id: Escalas_1
+    percentil: '25'
+    desde: '29'
+    hasta: '30'
+  Percentiles_19:
+    escalas_id: Escalas_1
+    percentil: '20'
+    desde: '27'
+    hasta: '28'
+  Percentiles_20:
+    escalas_id: Escalas_1
+    percentil: '15'
+    desde: '24'
+    hasta: '26'
+  Percentiles_21:
+    escalas_id: Escalas_1
+    percentil: '10'
+    desde: '19'
+    hasta: '23'
+  Percentiles_22:
+    escalas_id: Escalas_1
+    percentil: '5'
+    desde: '18'
+  Percentiles_23:
+    escalas_id: Escalas_1
+    percentil: '4'
+    desde: '16'
+    hasta: '17'
+  Percentiles_24:
+    escalas_id: Escalas_1
+    percentil: '3'
+    desde: '13'
+    hasta: '15'
+  Percentiles_25:
+    escalas_id: Escalas_1
+    percentil: '2'
+    desde: '9'
+    hasta: '12'
+  Percentiles_26:
+    escalas_id: Escalas_1
+    percentil: '1'
+    desde: '0'
+    hasta: '8'
+  Percentiles_27:
+    escalas_id: Escalas_2
+    percentil: '1'
+    desde: '1'
+  Percentiles_28:
+    escalas_id: Escalas_2
+    percentil: '3'
+    desde: '2'
+  Percentiles_29:
+    escalas_id: Escalas_2
+    percentil: '5'
+    desde: '3'
+  Percentiles_30:
+    escalas_id: Escalas_2
+    percentil: '6'
+    desde: '4'
+  Percentiles_31:
+    escalas_id: Escalas_2
+    percentil: '8'
+    desde: '5'
+  Percentiles_32:
+    escalas_id: Escalas_2
+    percentil: '10'
+    desde: '6'
+  Percentiles_33:
+    escalas_id: Escalas_2
+    percentil: '11'
+    desde: '7'
+  Percentiles_34:
+    escalas_id: Escalas_2
+    percentil: '13'
+    desde: '8'
+  Percentiles_35:
+    escalas_id: Escalas_2
+    percentil: '15'
+    desde: '9'
+  Percentiles_36:
+    escalas_id: Escalas_2
+    percentil: '16'
+    desde: '10'
+  Percentiles_37:
+    escalas_id: Escalas_2
+    percentil: '18'
+    desde: '11'
+  Percentiles_38:
+    escalas_id: Escalas_2
+    percentil: '20'
+    desde: '12'
+  Percentiles_39:
+    escalas_id: Escalas_2
+    percentil: '21'
+    desde: '13'
+  Percentiles_40:
+    escalas_id: Escalas_2
+    percentil: '23'
+    desde: '14'
+  Percentiles_41:
+    escalas_id: Escalas_2
+    percentil: '25'
+    desde: '15'
+  Percentiles_42:
+    escalas_id: Escalas_2
+    percentil: '26'
+    desde: '16'
+  Percentiles_43:
+    escalas_id: Escalas_2
+    percentil: '28'
+    desde: '17'
+  Percentiles_44:
+    escalas_id: Escalas_2
+    percentil: '30'
+    desde: '18'
+  Percentiles_45:
+    escalas_id: Escalas_2
+    percentil: '31'
+    desde: '19'
+  Percentiles_46:
+    escalas_id: Escalas_2
+    percentil: '33'
+    desde: '20'
+  Percentiles_47:
+    escalas_id: Escalas_2
+    percentil: '35'
+    desde: '21'
+  Percentiles_48:
+    escalas_id: Escalas_2
+    percentil: '36'
+    desde: '22'
+  Percentiles_49:
+    escalas_id: Escalas_2
+    percentil: '38'
+    desde: '23'
+  Percentiles_50:
+    escalas_id: Escalas_2
+    percentil: '40'
+    desde: '24'
+  Percentiles_51:
+    escalas_id: Escalas_2
+    percentil: '41'
+    desde: '25'
+  Percentiles_52:
+    escalas_id: Escalas_2
+    percentil: '43'
+    desde: '26'
+  Percentiles_53:
+    escalas_id: Escalas_2
+    percentil: '45'
+    desde: '27'
+  Percentiles_54:
+    escalas_id: Escalas_2
+    percentil: '46'
+    desde: '28'
+  Percentiles_55:
+    escalas_id: Escalas_2
+    percentil: '48'
+    desde: '29'
+  Percentiles_56:
+    escalas_id: Escalas_2
+    percentil: '50'
+    desde: '30'
+  Percentiles_57:
+    escalas_id: Escalas_3
+    percentil: '5'
+    desde: '19'
+  Percentiles_58:
+    escalas_id: Escalas_3
+    percentil: '10'
+    desde: '22'
+  Percentiles_59:
+    escalas_id: Escalas_3
+    percentil: '15'
+    desde: '27'
+  Percentiles_60:
+    escalas_id: Escalas_3
+    percentil: '25'
+    desde: '33'
+  Percentiles_61:
+    escalas_id: Escalas_3
+    percentil: '30'
+    desde: '36'
+  Percentiles_62:
+    escalas_id: Escalas_3
+    percentil: '35'
+    desde: '40'
+  Percentiles_63:
+    escalas_id: Escalas_3
+    percentil: '40'
+    desde: '43'
+  Percentiles_64:
+    escalas_id: Escalas_3
+    percentil: '45'
+    desde: '47'
+  Percentiles_65:
+    escalas_id: Escalas_3
+    percentil: '50'
+    desde: '51'
+  Percentiles_66:
+    escalas_id: Escalas_3
+    percentil: '55'
+    desde: '54'
+  Percentiles_67:
+    escalas_id: Escalas_3
+    percentil: '60'
+    desde: '57'
+  Percentiles_68:
+    escalas_id: Escalas_3
+    percentil: '65'
+    desde: '62'
+  Percentiles_69:
+    escalas_id: Escalas_3
+    percentil: '70'
+    desde: '69'
+  Percentiles_70:
+    escalas_id: Escalas_3
+    percentil: '75'
+    desde: '77'
+  Percentiles_71:
+    escalas_id: Escalas_3
+    percentil: '90'
+    desde: '85'
+    hasta: '90'
+  Percentiles_72:
+    escalas_id: Escalas_3
+    percentil: '90'
+    desde: '97'
+  Percentiles_73:
+    escalas_id: Escalas_3
+    percentil: '95'
+    desde: '106'
+  Percentiles_74:
+    escalas_id: Escalas_3
+    percentil: '99'
+    desde: '120'
+    hasta: '123'
 Valoresdeverdad:
   Valoresdeverdad_1:
     nombre: Correcta
@@ -3633,11 +5111,11 @@ Respuestas:
   Respuestas_362:
     preguntas_id: Preguntas_317
     estados_id: Valoresdeverdad_1
-    opciones_id: Opciones_5
+    opciones_id: Opciones_60
   Respuestas_363:
     preguntas_id: Preguntas_317
     estados_id: Valoresdeverdad_2
-    opciones_id: Opciones_6
+    opciones_id: Opciones_61
   Respuestas_364:
     preguntas_id: Preguntas_317
     estados_id: Valoresdeverdad_3
@@ -3658,61 +5136,5 @@ Resultados:
   Resultados_1:
     pruebas_id: Pruebas_7
     aspirantes_id: Aspirantes_1
-    puntaje: '1'
-    estadosresultados_id: Estadosresultados_2
-  Resultados_2:
-    pruebas_id: Pruebas_8
-    aspirantes_id: Aspirantes_1
-    puntaje: '1'
-    estadosresultados_id: Estadosresultados_2
-  Resultados_3:
-    pruebas_id: Pruebas_8
-    aspirantes_id: Aspirantes_1
     puntaje: '3'
     estadosresultados_id: Estadosresultados_2
-  Resultados_4:
-    pruebas_id: Pruebas_7
-    aspirantes_id: Aspirantes_1
-    puntaje: '98'
-    estadosresultados_id: Estadosresultados_1
-Resultadosparciales:
-  Resultadosparciales_1:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_313
-    opciones_id: Opciones_57
-  Resultadosparciales_2:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_314
-    opciones_id: Opciones_56
-  Resultadosparciales_3:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_315
-    opciones_id: Opciones_56
-  Resultadosparciales_4:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_316
-    opciones_id: Opciones_58
-  Resultadosparciales_5:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_315
-    opciones_id: Opciones_56
-  Resultadosparciales_6:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_316
-    opciones_id: Opciones_58
-  Resultadosparciales_7:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_313
-    opciones_id: Opciones_57
-  Resultadosparciales_8:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_314
-    opciones_id: Opciones_59

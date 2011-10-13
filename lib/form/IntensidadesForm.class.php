@@ -1,13 +1,13 @@
 <?php
 
 /**
- * Intencidades form.
+ * Intensidades form.
  *
  * @package    psicotest
  * @subpackage form
  * @author     Psicotest
  */
-class IntencidadesForm extends BaseIntencidadesForm
+class IntensidadesForm extends BaseIntensidadesForm
 {
   public function configure()
   {

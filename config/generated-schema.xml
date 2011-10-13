@@ -88,18 +88,18 @@
     </index>
   </table>
 
-  <table name="intencidades">
+  <table name="intensidades">
     <column name="id" phpName="Id" type="INTEGER" size="11" primaryKey="true" autoIncrement="true" required="true" />
+    <column name="resultadosparciales_id" phpName="ResultadosparcialesId" type="INTEGER" size="11" required="true" />
+    <foreign-key foreignTable="resultadosparciales" onDelete="RESTRICT" onUpdate="RESTRICT">
+      <reference local="resultadosparciales_id" foreign="id" />
+    </foreign-key>
     <column name="opciones_id" phpName="OpcionesId" type="INTEGER" size="11" required="true" />
     <foreign-key foreignTable="opciones" onDelete="RESTRICT" onUpdate="RESTRICT">
       <reference local="opciones_id" foreign="id" />
     </foreign-key>
-    <column name="respuestas_id" phpName="RespuestasId" type="INTEGER" size="11" required="true" />
-    <foreign-key foreignTable="respuestas" onDelete="RESTRICT" onUpdate="RESTRICT">
-      <reference local="respuestas_id" foreign="id" />
-    </foreign-key>
-    <index name="respuestas_id">
-      <index-column name="respuestas_id" />
+    <index name="resultadosparciales_id">
+      <index-column name="resultadosparciales_id" />
     </index>
     <index name="opciones_id">
       <index-column name="opciones_id" />
