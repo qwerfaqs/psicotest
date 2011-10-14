@@ -35,13 +35,13 @@ class EvaluacionesPeer extends BaseEvaluacionesPeer
   {
     $criteria = new Criteria();    
     $criteria->add(AsistenciasPeer::ASPIRANTES_ID,$aspirante,Criteria::EQUAL);     
-    $criteria->add(EvaluacionesPeer::ESTADOSEVALUACIONES_ID,$estado,Criteria::EQUAL);     
+    $criteria->add(EvaluacionesPeer::ESTADOSEVALUACIONES_ID,$estado,Criteria::EQUAL);         
     return (AsistenciasPeer::doSelectJoinAll($criteria));
   }
   
   public static function getAll()
   {
-    $criteria = new Criteria();          
+    $criteria = new Criteria();      
     return (self::doSelectJoinAll($criteria));
   }
   

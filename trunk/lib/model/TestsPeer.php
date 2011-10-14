@@ -16,6 +16,15 @@
  *
  * @package    lib.model
  */
-class TestsPeer extends BaseTestsPeer {
-
+class TestsPeer extends BaseTestsPeer 
+{
+  public static function getTestHijos($padres)
+  {
+    $criteria = new Criteria();          
+   foreach($padres as $padre)
+   {       
+      $criteria->addOr(TestsPeer::TESTS_ID, $padre->getTests()->getId(), Criteria::IN);
+   }
+    return (self::doSelectJoinAll($criteria));
+  }
 } // TestsPeer

@@ -487,11 +487,18 @@ CREATE TABLE `tests`
 	`duracion` CHAR(30),
 	`puntaje_aprobacion` CHAR(20),
 	`tipoopcion_id` INTEGER(11)  NOT NULL,
+	`tests_id` INTEGER(11)  NOT NULL,
 	PRIMARY KEY (`id`),
+	KEY `tests_id`(`tests_id`),
 	KEY `tipoopcion_id`(`tipoopcion_id`),
 	CONSTRAINT `tests_FK_1`
 		FOREIGN KEY (`tipoopcion_id`)
 		REFERENCES `tipoopcion` (`id`)
+		ON UPDATE RESTRICT
+		ON DELETE RESTRICT,
+	CONSTRAINT `tests_FK_2`
+		FOREIGN KEY (`tests_id`)
+		REFERENCES `tests` (`id`)
 		ON UPDATE RESTRICT
 		ON DELETE RESTRICT
 )Type=InnoDB;
