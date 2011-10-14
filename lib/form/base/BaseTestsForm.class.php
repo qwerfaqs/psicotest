@@ -22,6 +22,7 @@ abstract class BaseTestsForm extends BaseFormPropel
       'duracion'           => new sfWidgetFormInputText(),
       'puntaje_aprobacion' => new sfWidgetFormInputText(),
       'tipoopcion_id'      => new sfWidgetFormPropelChoice(array('model' => 'Tipoopcion', 'add_empty' => false)),
+      'tests_id'           => new sfWidgetFormPropelChoice(array('model' => 'Tests', 'add_empty' => false)),
     ));
 
     $this->setValidators(array(
@@ -33,6 +34,7 @@ abstract class BaseTestsForm extends BaseFormPropel
       'duracion'           => new sfValidatorString(array('max_length' => 30, 'required' => false)),
       'puntaje_aprobacion' => new sfValidatorString(array('max_length' => 20, 'required' => false)),
       'tipoopcion_id'      => new sfValidatorPropelChoice(array('model' => 'Tipoopcion', 'column' => 'id')),
+      'tests_id'           => new sfValidatorPropelChoice(array('model' => 'Tests', 'column' => 'id')),
     ));
 
     $this->widgetSchema->setNameFormat('tests[%s]');

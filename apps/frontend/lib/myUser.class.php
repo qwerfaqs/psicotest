@@ -13,16 +13,19 @@ class myUser extends derechosSecurityUser
         return(null);
   }
   
-  public function setPruebas() // listado de pruebas de una evaluacion
+  public function setPruebas() // seteo todas las pruebas de una evaluacion
   {       
-   $pruebas = PruebasPeer::getPruebas($this->getAttribute('evaluacion')->getId()); 
+      
+   $pruebas= PruebasPeer::getPruebas($this->getAttribute('evaluacion')->getId()); 
+  // TestsPeer::getTestHijos($pruebas); esto trae todos los hijos de los padres
    $this->setAttribute('pruebas', $pruebas);  
    $this->setInitprueba(sfConfig::get('app_init_prueba'));
   }  
   
-  public function setEvaluacion($evaluacion) // listado de pruebas de una evaluacion
+  public function setEvaluacion($evaluacion) // setea la evaluacion a realizar
   {       
-   $this->setAttribute('evaluacion', $evaluacion);  
+   $this->setAttribute('evaluacion', $evaluacion); 
+   
   }
   
   public function getPruebas() 

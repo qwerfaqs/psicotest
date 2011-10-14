@@ -15,16 +15,20 @@ class principalActions extends sfActions
     
   }
   
-  public function executeEvaluaciones(sfWebRequest $request) { // evaluaciones disponibles de un aspirante
+  public function executeEvaluaciones(sfWebRequest $request) 
+  { // evaluaciones disponibles de un aspirante
               
     $aspirante = $this->getUser()->getAttribute('usuarioId');
     $estado = sfConfig::get('app_activo'); // el estado de la evaluacion en este caso activo para que aparesca en pantalla
     $this->evaluaciones = EvaluacionesPeer::getEvaluacionesAspirantes($estado,$aspirante);       
   }
-  public function executePruebas(sfWebRequest $request) { // listado de pruebas de una evaluacion
+  public function executePruebas(sfWebRequest $request) 
+  { // listado de pruebas de una evaluacion
     $this->evaluacion = $this->getRoute()->getObject();      
     $this->pruebas = PruebasPeer::getPruebas($this->evaluacion->getId());      
   }
+  
+  
   public function executeAsistencia(sfWebRequest $request) 
   {
      $evaluacion = $request->getParameter('evaluacion'); // Id de la evaluacion
@@ -43,8 +47,9 @@ class principalActions extends sfActions
     
     
   public function executePregunta(sfWebRequest $request) 
-    {                
+  {                
      $prueba = $this->getUser()->getPrueba();  //prueba actual
+     // si prueba no tiene hijos else traigo el primero sub 
      if($prueba!=null)
      {
         $this->pagina= sfConfig::get('app_activo'); //Pagina nro 1
@@ -54,7 +59,8 @@ class principalActions extends sfActions
         $this->test=trim($prueba->getTests()->getTitulo());
         if(count($this->preguntas)==0)
             $this->forward('principal','finish');
-     }else 
+     }
+     else 
         $this->forward('principal','finish');
   }
   
@@ -78,7 +84,7 @@ class principalActions extends sfActions
    $pregunta = $this->preguntas->getResult();
        
   
-   if(count($this->preguntas)==0) { // si no hay mas preguntas entonces paso a la siguiente prueba
+   if(count($this->preguntas)==0) { // si no hay mas preguntas entonces paso a la siguiente prueba y ademas si no tengo hijos guardados 
        $this->getUser()->saveResultados(); // grabo los resultados totales y parciales
        $this->getUser()->Nextprueba();   // doy acceso a la siguiente prueba
        $this->getUser()->initResultados();           // inicializo el arreglo de resultados
