@@ -37,7 +37,7 @@ class test
        $result->setEstadosresultadosId(Test::aprobacion($respuestas[0]->getPruebas(), $puntaje));
        $result->save();
   }
-  
+
   
   public static function aprobacion($prueba,$puntaje)
   {      

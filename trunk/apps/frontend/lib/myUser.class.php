@@ -17,8 +17,8 @@ class myUser extends derechosSecurityUser
   {       
       
    $pruebas= PruebasPeer::getPruebas($this->getAttribute('evaluacion')->getId()); 
-  // TestsPeer::getTestHijos($pruebas); esto trae todos los hijos de los padres
-   $this->setAttribute('pruebas', $pruebas);  
+   $tests =  TestsPeer::getTestHijos($pruebas);   
+   $this->setAttribute('pruebas', $tests);  
    $this->setInitprueba(sfConfig::get('app_init_prueba'));
   }  
   
@@ -62,9 +62,10 @@ class myUser extends derechosSecurityUser
     $resultados=array();
     $intensidades=array();
     $this->setAttribute('resultados',$resultados);     
-    $this->setAttribute('intensidades',$intensidades);     
-    
+    $this->setAttribute('intensidades',$intensidades);         
   }
+  
+
   
   
   public function addResultados($resultado)
@@ -86,7 +87,7 @@ class myUser extends derechosSecurityUser
   }
   
     
-  public function setResultado($prueba,$respuesta,$pregunta)
+  public function setResultado($prueba,$test,$respuesta,$pregunta)
   {               
      if($prueba->getTests()->getTitulo()=='eae1')
      {
@@ -95,7 +96,7 @@ class myUser extends derechosSecurityUser
        $intensidad = $tal[1];          
      }
      
-     $res = OpcionesPeer::getOpcion($respuesta,$prueba->getTests()->getTipoopcion()->getId());          
+     $res = OpcionesPeer::getOpcion($respuesta,$test->getTipoopcion()->getId());              
      $resultado = new  Resultadosparciales();
      $resultado->setAspirantesId($this->getAttribute('usuarioId'));     
      $resultado->setOpciones($res);
@@ -111,11 +112,11 @@ class myUser extends derechosSecurityUser
      }
   }
   
-  public function saveResultados()
+  public function saveResultados($test)
   { 
     $respuestas = $this->getAttribute('resultados');  
     $intensidades = $this->getAttribute('intensidades'); 
-    switch ($respuestas[0]->getPruebas()->getTests()->getTitulo()) 
+    switch ($test->getTitulo()) 
     {
         case 'domino': Test::calcularDomino($respuestas);  break;
         case '16pf': Test::calcular16pf($respuestas); break;   

@@ -16,8 +16,7 @@ class principalActions extends sfActions
   }
   
   public function executeEvaluaciones(sfWebRequest $request) 
-  { // evaluaciones disponibles de un aspirante
-              
+  { // evaluaciones disponibles de un aspirante              
     $aspirante = $this->getUser()->getAttribute('usuarioId');
     $estado = sfConfig::get('app_activo'); // el estado de la evaluacion en este caso activo para que aparesca en pantalla
     $this->evaluaciones = EvaluacionesPeer::getEvaluacionesAspirantes($estado,$aspirante);       
@@ -38,7 +37,7 @@ class principalActions extends sfActions
      {
         $this->getUser()->setEvaluacion($asistencia->getEvaluaciones());
         $this->getUser()->setPruebas(); // guardo en un arreglo todas las pruebas de la evaluacion seleccionada
-        $this->getUser()->initResultados(); // inicia el arreglo de resultados
+        $this->getUser()->initResultados(); // inicia el arreglo de resultados        
         $this->forward('principal','pregunta'); // me voy a realizar las preguntas
      } else
         $this->redirect($request->getUriPrefix()); // lo pateo porque no esta asistido
@@ -50,13 +49,14 @@ class principalActions extends sfActions
   {                
      $prueba = $this->getUser()->getPrueba();  //prueba actual
      // si prueba no tiene hijos else traigo el primero sub 
+    
      if($prueba!=null)
      {
         $this->pagina= sfConfig::get('app_activo'); //Pagina nro 1
-        $this->preguntas = PreguntasPeer::getPreguntas($prueba->getTests()->getId(),1,$this->pagina);
+        $this->preguntas = PreguntasPeer::getPreguntas($prueba->getId(),1,$this->pagina);
         $pregunta = $this->preguntas->getResult();
         $this->opciones = RespuestasPeer::getRespuestas($pregunta[0]->getId());
-        $this->test=trim($prueba->getTests()->getTitulo());
+        $this->test=trim($prueba->getTitulo());
         if(count($this->preguntas)==0)
             $this->forward('principal','finish');
      }
@@ -66,26 +66,27 @@ class principalActions extends sfActions
   
   
   public function executeCheck(sfWebRequest $request) 
-  {
+  { 
    $pregunta = $request->getParameter('pregunta');  // id pregunta 
    $this->pagina = $request->getParameter('pagina'); // pagina a mostrar teniendo en cuenta que es 1 a 1
    $this->pagina++;  // sumamos una pagina
   
-   $prueba = $this->getUser()->getPrueba(); // prueba actual   
-   
+   $prueba = $this->getUser()->getPrueba(); // prueba actual      
    //tomar el resultado ingresado
    if($prueba!=null)
     $resultado =  Tomador::getRespuesta($request, $prueba); // tomo la respuesta ingresada
-      
+ 
+
+    $pruebareal = PruebasPeer::getPrueba( $this->getUser()->getEvaluacion()->getId(), $prueba->getTestsId());   
    
-   $this->getUser()->setResultado($prueba,$resultado,$pregunta); // setiar resultado a la coleccion
+    $this->getUser()->setResultado($pruebareal,$prueba,$resultado,$pregunta); // setiar resultado a la coleccion
      
-   $this->preguntas = PreguntasPeer::getPreguntas($prueba->getTests()->getId(),1,$this->pagina);     
+   $this->preguntas = PreguntasPeer::getPreguntas($prueba->getId(),1,$this->pagina);     
    $pregunta = $this->preguntas->getResult();
        
   
    if(count($this->preguntas)==0) { // si no hay mas preguntas entonces paso a la siguiente prueba y ademas si no tengo hijos guardados 
-       $this->getUser()->saveResultados(); // grabo los resultados totales y parciales
+       $this->getUser()->saveResultados($prueba); // grabo los resultados totales y parciales
        $this->getUser()->Nextprueba();   // doy acceso a la siguiente prueba
        $this->getUser()->initResultados();           // inicializo el arreglo de resultados
        $this->forward('principal', 'pregunta'); // vuelvo al flujo del principio pero con otro test
@@ -93,7 +94,7 @@ class principalActions extends sfActions
    else
         $this->opciones = RespuestasPeer::getRespuestas($pregunta[0]->getId());
    
-   $this->test=trim($prueba->getTests()->getTitulo());
+   $this->test=trim($prueba->getTitulo());
    $this->setTemplate('pregunta');
   }
   
