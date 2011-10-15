@@ -25,6 +25,14 @@ class PruebasPeer extends BasePruebasPeer
     return (self::doSelectJoinAll($criteria));
   }
   
+  public static function getPrueba($evaluacion,$test)
+  {
+    $criteria = new Criteria();
+    $criteria->add(PruebasPeer::EVALUACIONES_ID,$evaluacion,Criteria::EQUAL); 
+    $criteria->add(PruebasPeer::TESTS_ID,$test,Criteria::EQUAL); 
+    return (self::doSelectOne($criteria));
+  }
+  
   
   public static function getPruebasPaged($evaluacion,$pagina,$rows)
   {

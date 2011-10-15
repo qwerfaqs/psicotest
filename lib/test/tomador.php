@@ -15,7 +15,7 @@ class Tomador
     
  public static function getRespuesta(sfWebRequest $request,$prueba) 
  {
-     switch ($prueba->getTests()->getTitulo()) {
+     switch ($prueba->getTitulo()) {
          case 'domino': 
             return(Tomador::getDomino($request) );                
          break;
