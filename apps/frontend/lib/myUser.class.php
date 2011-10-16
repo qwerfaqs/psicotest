@@ -17,8 +17,9 @@ class myUser extends derechosSecurityUser
   {       
       
    $pruebas= PruebasPeer::getPruebas($this->getAttribute('evaluacion')->getId()); 
-   $tests =  TestsPeer::getTestHijos($pruebas);   
+   $tests =  TestsPeer::getTestHijos($pruebas);     
    $this->setAttribute('pruebas', $tests);  
+   $this->setResultadoInicial($pruebas);
    $this->setInitprueba(sfConfig::get('app_init_prueba'));
   }  
   
@@ -86,6 +87,20 @@ class myUser extends derechosSecurityUser
       $this->setAttribute('intensidades',$resulta);           
   }
   
+  public function setResultadoInicial($pruebas)
+  {
+      foreach($pruebas as $prueba)
+      {
+      
+       $result = new Resultados();
+       $result->setAspirantesId($this->getAttribute('usuarioId'));       
+       $result->setPuntaje(0);                   
+       $result->setPruebas($prueba);         
+       $result->setEstadosresultadosId(2);             
+       
+       $result->save();
+      }
+  }
     
   public function setResultado($prueba,$test,$respuesta,$pregunta)
   {               

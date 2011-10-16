@@ -19,13 +19,22 @@
 class TestsPeer extends BaseTestsPeer 
 {
   public static function getTestHijos($padres)
-  {
-      
+  {      
     $criteria = new Criteria();          
    foreach($padres as $padre)
    {             
       $criteria->addOr(TestsPeer::TESTS_ID, $padre->getTests()->getId(), Criteria::IN);
    }
+    $criteria->addAscendingOrderByColumn(self::TITULO);
     return (self::doSelectJoinAll($criteria));
   }
+  
+  public static function getTestsPadres()
+  { 
+      $criteria = new Criteria();       
+      $criteria->add(self::TESTS_ID,null,Criteria::ISNULL);        
+      return (self::doSelectJoinAll($criteria));
+  }
+  
+  
 } // TestsPeer

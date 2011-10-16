@@ -48,7 +48,7 @@ class evaluacionesActions extends sfActions {
     public function executeTestList(sfWebRequest $request) {
         $this->forward404Unless($Evaluacion = EvaluacionesPeer::retrieveByPk($request->getParameter('id')), sprintf('Object Evaluacion does not exist (%s).', $request->getParameter('id')));
         $this->Evaluacion = $Evaluacion;
-        $this->Tests = TestsPeer::doselect(new Criteria());
+        $this->Tests = TestsPeer::getTestsPadres();
         $PruebasTestIncluidas = $Evaluacion->getPruebass();
         $this->testsIncluidos = array();
         foreach ($PruebasTestIncluidas as $Prueba) {
