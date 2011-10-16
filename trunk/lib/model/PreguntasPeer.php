@@ -26,6 +26,15 @@ class PreguntasPeer extends BasePreguntasPeer
     $pager = new PropelPager($criteria, 'PreguntasPeer', 'doSelectJoinAll', $page = $pagina, $rows);
     return $pager;
   }
+  
+  
+  public static function getCount($test)
+  {
+    $criteria = new Criteria(); 
+    $criteria->addJoin(self::TESTS_ID,TestsPeer::ID,Criteria::INNER_JOIN); 
+    $criteria->add(TestsPeer::TESTS_ID,$test,Criteria::EQUAL);      
+    return self::doCount($criteria);
+  }
     
   
 } // PreguntasPeer

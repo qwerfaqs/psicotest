@@ -27,7 +27,7 @@ class PruebasPeer extends BasePruebasPeer
   
   public static function getPrueba($evaluacion,$test)
   {
-    $criteria = new Criteria();
+    $criteria = new Criteria();    
     $criteria->add(PruebasPeer::EVALUACIONES_ID,$evaluacion,Criteria::EQUAL); 
     $criteria->add(PruebasPeer::TESTS_ID,$test,Criteria::EQUAL); 
     return (self::doSelectOne($criteria));

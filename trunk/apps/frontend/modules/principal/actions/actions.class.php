@@ -35,6 +35,7 @@ class principalActions extends sfActions
      $asistencia =  AsistenciasPeer::getAsistencia($evaluacion,$aspirante); //Recupero de la lista de aspirantes de la evaluacion
      if(isset($asistencia)) 
      {
+         
         $this->getUser()->setEvaluacion($asistencia->getEvaluaciones());
         $this->getUser()->setPruebas(); // guardo en un arreglo todas las pruebas de la evaluacion seleccionada
         $this->getUser()->initResultados(); // inicia el arreglo de resultados        
@@ -52,6 +53,7 @@ class principalActions extends sfActions
     
      if($prueba!=null)
      {
+         
         $this->pagina= sfConfig::get('app_activo'); //Pagina nro 1
         $this->preguntas = PreguntasPeer::getPreguntas($prueba->getId(),1,$this->pagina);
         $pregunta = $this->preguntas->getResult();

@@ -4,8 +4,7 @@
     <thead>
         <tr>
             <th scope="col">nombre</th>
-            <th scope="col">duracion</th>
-            <th scope="col">enunciado</th>
+            <th scope="col">duracion</th>            
             <th scope="col">cantidad de preguntas</th>
             <th scope="col">incluir a la evaluación</th>
             <th scope="col">quitar de la evaluación</th>
@@ -15,7 +14,8 @@
         <tr>
             <th scope="row">Total</th>
             <td colspan="3"><?php echo $cant_tests ?> tests</td>
-            <td><a href="#" title="emma"><?php echo $cant_tests_incluidos ?> Incluidos</a></td>
+            <td><a href="#" title="emma">
+            <?php echo $cant_tests_incluidos ?> Incluidos</a></td>
             <td><a href="#" title="emma"><?php echo $cant_tests - $cant_tests_incluidos ?> no incluidos</a>
                 <a href="#" title="emma"></a></td>
         </tr>
@@ -33,11 +33,9 @@
                         <?php echo $Test->getDuracion() ?> min
                     </a>
                 </td>
+             
                 <td>
-                    <?php echo $Test->getEnunciado() ?>
-                </td>
-                <td>
-                    <?php echo count($Test->getPreguntass()) ?>
+                    <?php echo PreguntasPeer::getCount($Test->getId()); ?>
                 </td>
             <?php if (isset($testsIncluidos[$Test->getId()])) : ?>
                 <td>Incluido</td>

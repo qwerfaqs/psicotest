@@ -25,4 +25,13 @@ class ResultadosPeer extends BaseResultadosPeer
     $criteria->add(ResultadosPeer::PRUEBAS_ID,$prueba,Criteria::EQUAL);     
     return (self::doSelectJoinAll($criteria));
   }
+  
+  public static function getResultado($prueba,$aspirante)
+  {
+    $criteria = new Criteria();    
+
+    $criteria->add(ResultadosPeer::PRUEBAS_ID,$prueba,Criteria::EQUAL);     
+    $criteria->add(ResultadosPeer::ASPIRANTES_ID,$aspirante,Criteria::EQUAL); 
+    return (self::doSelectOne($criteria));
+  }
 } // ResultadosPeer
