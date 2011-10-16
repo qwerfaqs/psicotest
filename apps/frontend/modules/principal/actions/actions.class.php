@@ -68,7 +68,7 @@ class principalActions extends sfActions
   
   
   public function executeCheck(sfWebRequest $request) 
-  { 
+  {    
    $pregunta = $request->getParameter('pregunta');  // id pregunta 
    $this->pagina = $request->getParameter('pagina'); // pagina a mostrar teniendo en cuenta que es 1 a 1
    $this->pagina++;  // sumamos una pagina
@@ -77,8 +77,7 @@ class principalActions extends sfActions
    //tomar el resultado ingresado
    if($prueba!=null)
     $resultado =  Tomador::getRespuesta($request, $prueba); // tomo la respuesta ingresada
- 
-
+   
     $pruebareal = PruebasPeer::getPrueba( $this->getUser()->getEvaluacion()->getId(), $prueba->getTestsId());   
    
     $this->getUser()->setResultado($pruebareal,$prueba,$resultado,$pregunta); // setiar resultado a la coleccion
