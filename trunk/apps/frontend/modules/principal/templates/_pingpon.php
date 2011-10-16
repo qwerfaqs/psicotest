@@ -3,7 +3,7 @@
         <?php 
              foreach ($opciones as $opcion) :
         ?>
-        <input type="radio" name="group1" value="<?php  echo $opcion->getOpciones()->getTexto(); ?>"> 
+        <input type="radio" name="<?php echo $opcion->getTipoopcion()->getNombre(); ?>" value="<?php  echo $opcion->getOpciones()->getTexto(); ?>"/> 
             <?php echo $opcion->getDescripcion(); 
             endforeach;?>                       
 

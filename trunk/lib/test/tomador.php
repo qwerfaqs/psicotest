@@ -14,7 +14,8 @@ class Tomador
 {    
     
  public static function getRespuesta(sfWebRequest $request,$prueba) 
- {
+ {     
+ 
      switch ($prueba->getTitulo()) {
          case 'domino': 
             return(Tomador::getDomino($request) );                
@@ -31,7 +32,13 @@ class Tomador
          case 'eae1': 
             return(Tomador::getRespuestaDoble($request) );                
          break;
-         default:
+         case 'razonamientoverbal ':              
+            return(Tomador::getRespuestaSimple($request) );                
+         break;
+         case 'razonamientoabstracto':              
+            return(Tomador::getRespuestaSimple($request) );                
+         break;
+         default:             
          break;
      }
  }
@@ -54,7 +61,8 @@ class Tomador
     
     public static function getRespuestaSimple(sfWebRequest $request) 
     {   
-        $resultado = $request->getParameter('valor');  // resultado total
+        $resultado = $request->getParameter('valor');  // resultado total   
+        
         return($resultado);
     }
     

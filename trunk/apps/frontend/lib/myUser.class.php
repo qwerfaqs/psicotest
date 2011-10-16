@@ -109,8 +109,7 @@ class myUser extends derechosSecurityUser
        $tal=explode("/",$respuesta);
        $respuesta = $tal[0];
        $intensidad = $tal[1];          
-     }
-     
+     }          
      $res = OpcionesPeer::getOpcion($respuesta,$test->getTipoopcion()->getId());              
      $resultado = new  Resultadosparciales();
      $resultado->setAspirantesId($this->getAttribute('usuarioId'));     
@@ -138,6 +137,7 @@ class myUser extends derechosSecurityUser
         case 'ig2': Test::calcularig2($respuestas); break; 
         case 'barsit': Test::calcularbarsit($respuestas); break; 
         case 'eae1': Test::calculareae1($intensidades); break; 
+        case 'razonamientoverbal ': Test::calcularrazonamientoverbal($respuestas); break;
     }        
   }
   
