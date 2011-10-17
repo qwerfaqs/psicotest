@@ -110,7 +110,7 @@ class myUser extends derechosSecurityUser
        $respuesta = $tal[0];
        $intensidad = $tal[1];          
      }          
-     $res = OpcionesPeer::getOpcion($respuesta,$test->getTipoopcion()->getId());              
+     $res = OpcionesPeer::getOpcion($respuesta,$test->getTipoopcion()->getId());                        
      $resultado = new  Resultadosparciales();
      $resultado->setAspirantesId($this->getAttribute('usuarioId'));     
      $resultado->setOpciones($res);
