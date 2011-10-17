@@ -38,10 +38,22 @@ Evaluaciones:
     nombre: Ganjah
   Evaluaciones_3:
     perfil_id: Perfil_1
-    estadosevaluaciones_id: Estadosevaluaciones_1
+    estadosevaluaciones_id: Estadosevaluaciones_3
     cantidad: '10'
     fecha: '2011-04-04'
     nombre: razonamiento
+  Evaluaciones_4:
+    perfil_id: Perfil_1
+    estadosevaluaciones_id: Estadosevaluaciones_1
+    cantidad: '88'
+    fecha: '2010-04-04'
+    nombre: 'IG2 A TODOS'
+  Evaluaciones_5:
+    perfil_id: Perfil_1
+    estadosevaluaciones_id: Estadosevaluaciones_1
+    cantidad: '66'
+    fecha: '2011-07-06'
+    nombre: 'PROTOCOLO RAVEN'
 Aspirantes:
   Aspirantes_1:
     nombre: matias
@@ -98,6 +110,12 @@ Asistencias:
   Asistencias_3:
     evaluaciones_id: Evaluaciones_3
     aspirantes_id: Aspirantes_1
+  Asistencias_4:
+    evaluaciones_id: Evaluaciones_4
+    aspirantes_id: Aspirantes_1
+  Asistencias_5:
+    evaluaciones_id: Evaluaciones_5
+    aspirantes_id: Aspirantes_1
 Tipoopcion:
   Tipoopcion_1:
     nombre: domino
@@ -109,6 +127,8 @@ Tipoopcion:
     nombre: ABCDE
   Tipoopcion_5:
     nombre: Si/No0123
+  Tipoopcion_6:
+    nombre: '12345678'
 Tests:
   Tests_7:
     titulo: 'Test Domino'
@@ -135,6 +155,15 @@ Tests:
     tipoopcion_id: Tipoopcion_5
   Tests_14:
     titulo: 'TESTS DE APTITUDES DIFERENCIALES'
+    tipoopcion_id: Tipoopcion_4
+  Tests_18:
+    titulo: RAVEN
+    historia: ''
+    tipoopcion_id: Tipoopcion_6
+  Tests_20:
+    titulo: 'Bady G Escalas  Principales'
+    duracion: ''
+    puntaje_aprobacion: '50'
     tipoopcion_id: Tipoopcion_4
   Tests_1:
     titulo: domino
@@ -191,6 +220,19 @@ Tests:
     enunciado: 'n esta prueba se trata de apreciar la capacidad para razonar con figuras o dibujos. En cada fila hay cuatro figuras llamadas PROBLEMAS y cinco llamadas  RESPUESTAS. Las figuras PROBLEMAS forman una serie porque están ordenadas siguiendo una ley. Su tarea consiste en elegir, entre las figuras RESPUESTAS, la que debería ir a continuación (es decir, la que sería el número cinco de la serie). Cuando la haya elegido, debe fijarse en la letra que corresponde a esa figura y marcar el recuadro que está debajo de esa letra en la hoja de respuestas. '
     tipoopcion_id: Tipoopcion_4
     tests_id: Tests_14
+  Tests_17:
+    titulo: razonamientonumerico
+    puntaje_aprobacion: ''
+    tipoopcion_id: Tipoopcion_4
+    tests_id: Tests_14
+  Tests_19:
+    titulo: raven
+    tipoopcion_id: Tipoopcion_6
+    tests_id: Tests_18
+  Tests_21:
+    titulo: Analogiasverbales
+    tipoopcion_id: Tipoopcion_4
+    tests_id: Tests_20
 Escalas:
   Escalas_1:
     tests_id: Tests_9
@@ -202,6 +244,10 @@ Escalas:
     tests_id: Tests_13
     nombre: 'escala g'
     descripcion: 'escala g para test EAE1 POR EJ'
+  Escalas_4:
+    tests_id: Tests_18
+    nombre: 'Escala General Raven'
+    descripcion: raven
 Estadopruebas:
   Estadopruebas_1:
     nombre: Inicializada
@@ -224,6 +270,14 @@ Pruebas:
   Pruebas_4:
     tests_id: Tests_14
     evaluaciones_id: Evaluaciones_3
+    estadopruebas_id: Estadopruebas_1
+  Pruebas_5:
+    tests_id: Tests_9
+    evaluaciones_id: Evaluaciones_4
+    estadopruebas_id: Estadopruebas_1
+  Pruebas_6:
+    tests_id: Tests_18
+    evaluaciones_id: Evaluaciones_5
     estadopruebas_id: Estadopruebas_1
 Preguntas:
   Preguntas_1:
@@ -1900,6 +1954,419 @@ Preguntas:
   Preguntas_554:
     tests_id: Tests_16
     imagen: 40.png
+  Preguntas_555:
+    tests_id: Tests_17
+    descripcion: '¿Qué cifra debería reemplazar a la F en esta división cuyo resultado es correcto? F73: F3 = 1 '
+  Preguntas_556:
+    tests_id: Tests_17
+    descripcion: '3x2+7x-9x+10 ='
+  Preguntas_557:
+    tests_id: Tests_17
+    descripcion: '5 – 12 ='
+  Preguntas_558:
+    tests_id: Tests_17
+    imagen: 4.png
+    descripcion: '¿Qué cifra debería ir en lugar de la P en esta suma cuyo resultado es correcto?'
+  Preguntas_559:
+    tests_id: Tests_17
+    descripcion: '	¿Cuál es el resultado de dividir 2,480.739 entre 20?'
+  Preguntas_560:
+    tests_id: Tests_17
+    imagen: 6.png
+    descripcion: '	¿Qué número puede sustituir a la L para que la proporción sea correcta?'
+  Preguntas_561:
+    tests_id: Tests_17
+    imagen: 7.png
+  Preguntas_562:
+    tests_id: Tests_17
+    descripcion: 'El 30% del 50% de 300 es:'
+  Preguntas_563:
+    tests_id: Tests_17
+    descripcion: '¿Qué numero debería sustituir a la K en esta división cuyo resultado es correcto?'
+  Preguntas_564:
+    tests_id: Tests_17
+    descripcion: '4 = 10% de ___'
+  Preguntas_565:
+    tests_id: Tests_17
+    descripcion: 16x²+4y²+3x²
+  Preguntas_566:
+    tests_id: Tests_17
+    imagen: 12.png
+    descripcion: '¿Qué número debe sustituir a la N para que la proporción sea correcta?'
+  Preguntas_567:
+    tests_id: Tests_17
+    descripcion: 'Si 2x² + 6x = 2x² +3x + 5, entonces  x = '
+  Preguntas_568:
+    tests_id: Tests_17
+    descripcion: '¿Qué suma MAYOR que uno?'
+  Preguntas_569:
+    tests_id: Tests_17
+    imagen: 15.png
+    descripcion: ' ¿Qué cifra debe sustituir a la J en esta suma cuyo resultado es correcto?'
+  Preguntas_570:
+    tests_id: Tests_17
+    imagen: 16.png
+    descripcion: ' ¿Qué número debería continuar la serie? '
+  Preguntas_571:
+    tests_id: Tests_17
+    descripcion: '¿Cuál es el número MÁS PEQUEÑO que es divisible exactamente por 2, 4,7 y 21?'
+  Preguntas_572:
+    tests_id: Tests_17
+    imagen: 18.png
+    descripcion: '¿Qué cifra debería sustituir a la N en esta resta cuyo resultado es correcto?'
+  Preguntas_573:
+    tests_id: Tests_17
+    descripcion: '15/21 : 7/3'
+  Preguntas_574:
+    tests_id: Tests_17
+    imagen: 20.png
+    descripcion: '¿Cuál es el resultado redondeando al número entero más próximo?'
+  Preguntas_575:
+    tests_id: Tests_17
+    imagen: 21.png
+    descripcion: '¿Qué cifra debe sustituir a la R en esta resta cuyo resultado es correcto?'
+  Preguntas_576:
+    tests_id: Tests_17
+    descripcion: '¿Qué número es visible exactamente entre 3?'
+  Preguntas_577:
+    tests_id: Tests_17
+    descripcion: ' y + x + 7x – 6y ='
+  Preguntas_578:
+    tests_id: Tests_17
+    imagen: 24.png
+    descripcion: '¿Qué número continuaría la serie?'
+  Preguntas_579:
+    tests_id: Tests_17
+    descripcion: '¿Cuál es el millar más próximo al que podría redondearse 710 x 80?'
+  Preguntas_580:
+    tests_id: Tests_17
+    imagen: 26.png
+    descripcion: '¿Qué cifra debería sustituir a la A  en esta multiplicación cuyo resultado es correcto?'
+  Preguntas_581:
+    tests_id: Tests_17
+    descripcion: ' mn = y     Si y = 10, entonces m = '
+  Preguntas_582:
+    tests_id: Tests_17
+    imagen: 28.png
+    descripcion: ''
+  Preguntas_583:
+    tests_id: Tests_17
+    imagen: 29.png
+    descripcion: '¿Qué número debe sustituirse a la T para que la proporción sea correcta?'
+  Preguntas_584:
+    tests_id: Tests_17
+    descripcion: '¿Qué valores de x hacen que sea verdadera la expresión x + 3 <=  11?'
+  Preguntas_585:
+    tests_id: Tests_17
+    descripcion: '¿Qué cifra debe sustituirse a la F en la siguiente división cuyo resultado es correcto? 2F1F2 : F855 = 6; RESTO = 2 '
+  Preguntas_586:
+    tests_id: Tests_17
+    descripcion: ' ¿Cuál de las siguientes expresiones vale uno?'
+  Preguntas_587:
+    tests_id: Tests_17
+    imagen: 33.png
+    descripcion: '¿Qué cifra debe sustituirse a la J en esta multiplicación cuyo resultado es correcto?'
+  Preguntas_588:
+    tests_id: Tests_17
+    imagen: 34.png
+    descripcion: '¿Cuál es el resultado, redondeado al número entero más próximo, de la siguiente operación?'
+  Preguntas_589:
+    tests_id: Tests_17
+    imagen: 35.png
+    descripcion: '¿Qué número debería sustituir a la H para que la proporción fuera correcta?'
+  Preguntas_590:
+    tests_id: Tests_17
+    descripcion: '2 x 100.000 + 8 x 1.000 + 9 x 10 ='
+  Preguntas_591:
+    tests_id: Tests_17
+    descripcion: 'Si x = 10, entonces 3x2 – x ='
+  Preguntas_592:
+    tests_id: Tests_17
+    descripcion: 'a =  1/2  bh     Si b = 6y a = 14, entonces h = '
+  Preguntas_593:
+    tests_id: Tests_17
+    imagen: 39-40.png
+    descripcion: 'si introduce el número 8, ¿Cuántas veces pasará por el paso 4 para llegar al final?'
+  Preguntas_594:
+    tests_id: Tests_17
+    imagen: 39-40.png
+    descripcion: 'si introduce el número 3, ¿Cuál será el número cuando llegue al final?'
+  Preguntas_595:
+    tests_id: Tests_19
+    imagen: 'raven 001.jpg'
+  Preguntas_596:
+    tests_id: Tests_19
+    imagen: 'raven 002.jpg'
+  Preguntas_597:
+    tests_id: Tests_19
+    imagen: 'raven 003.jpg'
+  Preguntas_598:
+    tests_id: Tests_19
+    imagen: 'raven 004.jpg'
+  Preguntas_599:
+    tests_id: Tests_19
+    imagen: 'raven 005.jpg'
+  Preguntas_600:
+    tests_id: Tests_19
+    imagen: 'raven 006.jpg'
+  Preguntas_601:
+    tests_id: Tests_19
+    imagen: 'raven 007.jpg'
+  Preguntas_602:
+    tests_id: Tests_19
+    imagen: 'raven 008.jpg'
+  Preguntas_603:
+    tests_id: Tests_19
+    imagen: 'raven 009.jpg'
+  Preguntas_604:
+    tests_id: Tests_19
+    imagen: 'raven 010.jpg'
+  Preguntas_605:
+    tests_id: Tests_19
+    imagen: 'raven 011.jpg'
+  Preguntas_606:
+    tests_id: Tests_19
+    imagen: 'raven 012.jpg'
+  Preguntas_607:
+    tests_id: Tests_19
+    imagen: 'raven 013.jpg'
+  Preguntas_608:
+    tests_id: Tests_19
+    imagen: 'raven 014.jpg'
+  Preguntas_609:
+    tests_id: Tests_19
+    imagen: 'raven 015.jpg'
+  Preguntas_610:
+    tests_id: Tests_19
+    imagen: 'raven 016.jpg'
+  Preguntas_611:
+    tests_id: Tests_19
+    imagen: 'raven 017.jpg'
+  Preguntas_612:
+    tests_id: Tests_19
+    imagen: 'raven 018.jpg'
+  Preguntas_613:
+    tests_id: Tests_19
+    imagen: 'raven 019.jpg'
+  Preguntas_614:
+    tests_id: Tests_19
+    imagen: 'raven 020.jpg'
+  Preguntas_615:
+    tests_id: Tests_19
+    imagen: 'raven 021.jpg'
+  Preguntas_616:
+    tests_id: Tests_19
+    imagen: 'raven 022.jpg'
+  Preguntas_617:
+    tests_id: Tests_19
+    imagen: 'raven 023.jpg'
+  Preguntas_618:
+    tests_id: Tests_19
+    imagen: 'raven 024.jpg'
+  Preguntas_619:
+    tests_id: Tests_19
+    imagen: 'raven 025.jpg'
+  Preguntas_620:
+    tests_id: Tests_19
+    imagen: 'raven 026.jpg'
+  Preguntas_621:
+    tests_id: Tests_19
+    imagen: 'raven 027.jpg'
+  Preguntas_622:
+    tests_id: Tests_19
+    imagen: 'raven 028.jpg'
+  Preguntas_623:
+    tests_id: Tests_19
+    imagen: 'raven 029.jpg'
+  Preguntas_624:
+    tests_id: Tests_19
+    imagen: 'raven 030.jpg'
+  Preguntas_625:
+    tests_id: Tests_19
+    imagen: 'raven 031.jpg'
+  Preguntas_626:
+    tests_id: Tests_19
+    imagen: 'raven 032.jpg'
+  Preguntas_627:
+    tests_id: Tests_19
+    imagen: 'raven 033.jpg'
+  Preguntas_628:
+    tests_id: Tests_19
+    imagen: 'raven 034.jpg'
+  Preguntas_629:
+    tests_id: Tests_19
+    imagen: 'raven 035.jpg'
+  Preguntas_630:
+    tests_id: Tests_19
+    imagen: 'raven 036.jpg'
+  Preguntas_631:
+    tests_id: Tests_19
+    imagen: 'raven 037.jpg'
+  Preguntas_632:
+    tests_id: Tests_19
+    imagen: 'raven 038.jpg'
+  Preguntas_633:
+    tests_id: Tests_19
+    imagen: 'raven 039.jpg'
+  Preguntas_634:
+    tests_id: Tests_19
+    imagen: 'raven 040.jpg'
+  Preguntas_635:
+    tests_id: Tests_19
+    imagen: 'raven 041.jpg'
+  Preguntas_636:
+    tests_id: Tests_19
+    imagen: 'raven 042.jpg'
+  Preguntas_637:
+    tests_id: Tests_19
+    imagen: 'raven 043.jpg'
+  Preguntas_638:
+    tests_id: Tests_19
+    imagen: 'raven 044.jpg'
+  Preguntas_639:
+    tests_id: Tests_19
+    imagen: 'raven 045.jpg'
+  Preguntas_640:
+    tests_id: Tests_19
+    imagen: 'raven 046.jpg'
+  Preguntas_641:
+    tests_id: Tests_19
+    imagen: 'raven 047.jpg'
+  Preguntas_642:
+    tests_id: Tests_19
+    imagen: 'raven 048.jpg'
+  Preguntas_643:
+    tests_id: Tests_19
+    imagen: 'raven 049.jpg'
+  Preguntas_644:
+    tests_id: Tests_19
+    imagen: 'raven 050.jpg'
+  Preguntas_645:
+    tests_id: Tests_19
+    imagen: 'raven 051.jpg'
+  Preguntas_646:
+    tests_id: Tests_19
+    imagen: 'raven 052.jpg'
+  Preguntas_647:
+    tests_id: Tests_19
+    imagen: 'raven 053.jpg'
+  Preguntas_648:
+    tests_id: Tests_19
+    imagen: 'raven 054.jpg'
+  Preguntas_649:
+    tests_id: Tests_19
+    imagen: 'raven 055.jpg'
+  Preguntas_650:
+    tests_id: Tests_19
+    imagen: 'raven 056.jpg'
+  Preguntas_651:
+    tests_id: Tests_19
+    imagen: 'raven 057.jpg'
+  Preguntas_652:
+    tests_id: Tests_19
+    imagen: 'raven 058.jpg'
+  Preguntas_653:
+    tests_id: Tests_19
+    imagen: 'raven 059.jpg'
+  Preguntas_654:
+    tests_id: Tests_19
+    imagen: 'raven 060.jpg'
+  Preguntas_655:
+    tests_id: Tests_21
+    descripcion: 'Escudo es a ______ como lanza es a ataque'
+  Preguntas_656:
+    tests_id: Tests_21
+    descripcion: 'Cerrar es a dificultar como abrir es a _________'
+  Preguntas_657:
+    tests_id: Tests_21
+    descripcion: 'Tartamudear es a hablar como tropezar es a ______'
+  Preguntas_658:
+    tests_id: Tests_21
+    descripcion: 'Luz es a ceguera como ______ es a sordera'
+  Preguntas_659:
+    tests_id: Tests_21
+    descripcion: 'Oscuro es a opaco cmo claro es a _____'
+  Preguntas_660:
+    tests_id: Tests_21
+    descripcion: '_____ es a pasado como adivino es a futuro'
+  Preguntas_661:
+    tests_id: Tests_21
+    descripcion: 'Estéril es a _______ como fértil es a supervivencia'
+  Preguntas_662:
+    tests_id: Tests_21
+    descripcion: 'Rey es a ____ como presidente es a dimitir'
+  Preguntas_663:
+    tests_id: Tests_21
+    descripcion: 'Viajar es a espacio como envejecer es a _____________'
+  Preguntas_664:
+    tests_id: Tests_21
+    descripcion: 'Sombrío es a ____ como claro es a diurno'
+  Preguntas_665:
+    tests_id: Tests_21
+    descripcion: 'Mío es a suyo como propio es a _______'
+  Preguntas_666:
+    tests_id: Tests_21
+    descripcion: 'Barco es a naufragar como negocio es a _________'
+  Preguntas_667:
+    tests_id: Tests_21
+    descripcion: 'Sembrar trigo es a _____________ como trabajar es a recibir un salario'
+  Preguntas_668:
+    tests_id: Tests_21
+    descripcion: 'Medianoche es a mediodía como amanecer es a ___________'
+  Preguntas_669:
+    tests_id: Tests_21
+    descripcion: 'Singular es a _____ como uno es a varios'
+  Preguntas_670:
+    tests_id: Tests_21
+    descripcion: 'Corroer es a ______ como restaurar es a conservar'
+  Preguntas_671:
+    tests_id: Tests_21
+    descripcion: 'Tiempo seco es a polvo como tiempo lluvioso es a _____'
+  Preguntas_672:
+    tests_id: Tests_21
+    descripcion: 'Cuadrado es a  círculo como cubo es a ________'
+  Preguntas_673:
+    tests_id: Tests_21
+    descripcion: 'Ventana es a abertura como _______ es a cerramiento'
+  Preguntas_674:
+    tests_id: Tests_21
+    descripcion: 'Aficionado es a profesional como novato es a __________'
+  Preguntas_675:
+    tests_id: Tests_21
+    descripcion: 'Valla es a cerramiento como dique es a__________'
+  Preguntas_676:
+    tests_id: Tests_21
+    descripcion: 'Tratamiento es a curación como_____  es a nacimiento '
+  Preguntas_677:
+    tests_id: Tests_21
+    descripcion: 'Mercancía es a ______ como equipaje es a viaje'
+  Preguntas_678:
+    tests_id: Tests_21
+    descripcion: 'Aversión es a repugnancia como característico es a __________'
+  Preguntas_679:
+    tests_id: Tests_21
+    descripcion: 'Aconsejar es a obligar como proponer es a _________'
+  Preguntas_680:
+    tests_id: Tests_21
+    descripcion: 'Trágico es a ________ como victoria es a derrota'
+  Preguntas_681:
+    tests_id: Tests_21
+    descripcion: 'Alegar es a probar como argumentar es a ____________'
+  Preguntas_682:
+    tests_id: Tests_21
+    descripcion: 'Victorioso es a encumbrado como vencido es a ___________'
+  Preguntas_683:
+    tests_id: Tests_21
+    descripcion: 'Deudor es a ________ como septentrional es a meridional'
+  Preguntas_684:
+    tests_id: Tests_21
+    descripcion: '_________ es a tejido como barnizar es a madera'
+  Preguntas_685:
+    tests_id: Tests_21
+    descripcion: 'Frío es a _______ como mucho es a suficiente'
+  Preguntas_686:
+    tests_id: Tests_21
+    descripcion: '_________ es a realidad como exageración es a verdad'
 Opciones:
   Opciones_1:
     tipoopcion_id: Tipoopcion_1
@@ -2096,207 +2563,30 @@ Opciones:
   Opciones_65:
     tipoopcion_id: Tipoopcion_5
     texto: '0'
-Resultadosparciales:
-  Resultadosparciales_1:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_475
-    opciones_id: Opciones_55
-  Resultadosparciales_2:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_476
-    opciones_id: Opciones_55
-  Resultadosparciales_3:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_477
-    opciones_id: Opciones_55
-  Resultadosparciales_4:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_478
-    opciones_id: Opciones_55
-  Resultadosparciales_5:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_479
-    opciones_id: Opciones_55
-  Resultadosparciales_6:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_480
-    opciones_id: Opciones_55
-  Resultadosparciales_7:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_481
-    opciones_id: Opciones_55
-  Resultadosparciales_8:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_482
-    opciones_id: Opciones_55
-  Resultadosparciales_9:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_483
-    opciones_id: Opciones_55
-  Resultadosparciales_10:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_484
-    opciones_id: Opciones_55
-  Resultadosparciales_11:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_485
-    opciones_id: Opciones_55
-  Resultadosparciales_12:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_486
-    opciones_id: Opciones_55
-  Resultadosparciales_13:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_487
-    opciones_id: Opciones_55
-  Resultadosparciales_14:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_488
-    opciones_id: Opciones_55
-  Resultadosparciales_15:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_489
-    opciones_id: Opciones_55
-  Resultadosparciales_16:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_490
-    opciones_id: Opciones_55
-  Resultadosparciales_17:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_491
-    opciones_id: Opciones_55
-  Resultadosparciales_18:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_492
-    opciones_id: Opciones_55
-  Resultadosparciales_19:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_493
-    opciones_id: Opciones_55
-  Resultadosparciales_20:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_494
-    opciones_id: Opciones_55
-  Resultadosparciales_21:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_495
-    opciones_id: Opciones_55
-  Resultadosparciales_22:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_496
-    opciones_id: Opciones_55
-  Resultadosparciales_23:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_497
-    opciones_id: Opciones_55
-  Resultadosparciales_24:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_498
-    opciones_id: Opciones_55
-  Resultadosparciales_25:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_499
-    opciones_id: Opciones_55
-  Resultadosparciales_26:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_500
-    opciones_id: Opciones_55
-  Resultadosparciales_27:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_501
-    opciones_id: Opciones_55
-  Resultadosparciales_28:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_502
-    opciones_id: Opciones_55
-  Resultadosparciales_29:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_503
-    opciones_id: Opciones_55
-  Resultadosparciales_30:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_504
-    opciones_id: Opciones_55
-  Resultadosparciales_31:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_505
-    opciones_id: Opciones_55
-  Resultadosparciales_32:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_506
-    opciones_id: Opciones_55
-  Resultadosparciales_33:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_507
-    opciones_id: Opciones_55
-  Resultadosparciales_34:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_508
-    opciones_id: Opciones_55
-  Resultadosparciales_35:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_509
-    opciones_id: Opciones_55
-  Resultadosparciales_36:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_510
-    opciones_id: Opciones_55
-  Resultadosparciales_37:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_511
-    opciones_id: Opciones_55
-  Resultadosparciales_38:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_512
-    opciones_id: Opciones_55
-  Resultadosparciales_39:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_513
-    opciones_id: Opciones_55
-  Resultadosparciales_40:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_4
-    preguntas_id: Preguntas_514
-    opciones_id: Opciones_55
+  Opciones_66:
+    tipoopcion_id: Tipoopcion_6
+    texto: '1'
+  Opciones_67:
+    tipoopcion_id: Tipoopcion_6
+    texto: '2'
+  Opciones_68:
+    tipoopcion_id: Tipoopcion_6
+    texto: '3'
+  Opciones_69:
+    tipoopcion_id: Tipoopcion_6
+    texto: '4'
+  Opciones_70:
+    tipoopcion_id: Tipoopcion_6
+    texto: '5'
+  Opciones_71:
+    tipoopcion_id: Tipoopcion_6
+    texto: '6'
+  Opciones_72:
+    tipoopcion_id: Tipoopcion_6
+    texto: '7'
+  Opciones_73:
+    tipoopcion_id: Tipoopcion_6
+    texto: '8'
 Percentiles:
   Percentiles_1:
     escalas_id: Escalas_1
@@ -2622,6 +2912,41 @@ Percentiles:
     percentil: '99'
     desde: '120'
     hasta: '123'
+  Percentiles_75:
+    escalas_id: Escalas_4
+    percentil: '5'
+    desde: '0'
+    hasta: '27'
+  Percentiles_76:
+    escalas_id: Escalas_4
+    percentil: '10'
+    desde: '28'
+    hasta: '35'
+  Percentiles_77:
+    escalas_id: Escalas_4
+    percentil: '25'
+    desde: '36'
+    hasta: '44'
+  Percentiles_78:
+    escalas_id: Escalas_4
+    percentil: '50'
+    desde: '45'
+    hasta: '51'
+  Percentiles_79:
+    escalas_id: Escalas_4
+    percentil: '75'
+    desde: '52'
+    hasta: '55'
+  Percentiles_80:
+    escalas_id: Escalas_4
+    percentil: '90'
+    desde: '56'
+    hasta: '57'
+  Percentiles_81:
+    escalas_id: Escalas_4
+    percentil: '95'
+    desde: '58'
+    hasta: '660'
 Valoresdeverdad:
   Valoresdeverdad_1:
     nombre: Correcta
@@ -9359,9 +9684,2039 @@ Respuestas:
     preguntas_id: Preguntas_554
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_58
-Resultados:
-  Resultados_1:
-    pruebas_id: Pruebas_4
-    aspirantes_id: Aspirantes_1
-    puntaje: '1.76'
-    estadosresultados_id: Estadosresultados_1
+  Respuestas_1435:
+    preguntas_id: Preguntas_555
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '9'
+  Respuestas_1436:
+    preguntas_id: Preguntas_555
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: '8'
+  Respuestas_1437:
+    preguntas_id: Preguntas_555
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: '6'
+  Respuestas_1438:
+    preguntas_id: Preguntas_555
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+    descripcion: '4'
+  Respuestas_1439:
+    preguntas_id: Preguntas_555
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1440:
+    preguntas_id: Preguntas_556
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '-60X² + 10'
+  Respuestas_1441:
+    preguntas_id: Preguntas_556
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: '3X² - 63 + 10'
+  Respuestas_1442:
+    preguntas_id: Preguntas_556
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+    descripcion: '3X² -2X +10'
+  Respuestas_1443:
+    preguntas_id: Preguntas_556
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: '3X² - 16X + 10'
+  Respuestas_1444:
+    preguntas_id: Preguntas_556
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas '
+  Respuestas_1445:
+    preguntas_id: Preguntas_557
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: '- 12 + 5'
+  Respuestas_1446:
+    preguntas_id: Preguntas_557
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: '12 - 5 '
+  Respuestas_1447:
+    preguntas_id: Preguntas_557
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: '– (5 - 12)'
+  Respuestas_1448:
+    preguntas_id: Preguntas_557
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: '– (12 + 5)'
+  Respuestas_1449:
+    preguntas_id: Preguntas_557
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1450:
+    preguntas_id: Preguntas_558
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '9'
+  Respuestas_1451:
+    preguntas_id: Preguntas_558
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: '8'
+  Respuestas_1452:
+    preguntas_id: Preguntas_558
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+    descripcion: '3'
+  Respuestas_1453:
+    preguntas_id: Preguntas_558
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: '2'
+  Respuestas_1454:
+    preguntas_id: Preguntas_558
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1455:
+    preguntas_id: Preguntas_559
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '1'
+  Respuestas_1456:
+    preguntas_id: Preguntas_559
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: '9'
+  Respuestas_1457:
+    preguntas_id: Preguntas_559
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: '29'
+  Respuestas_1458:
+    preguntas_id: Preguntas_559
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: '39'
+  Respuestas_1459:
+    preguntas_id: Preguntas_559
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1460:
+    preguntas_id: Preguntas_560
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '3'
+  Respuestas_1461:
+    preguntas_id: Preguntas_560
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: '9'
+  Respuestas_1462:
+    preguntas_id: Preguntas_560
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+    descripcion: '12'
+  Respuestas_1463:
+    preguntas_id: Preguntas_560
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: '18'
+  Respuestas_1464:
+    preguntas_id: Preguntas_560
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas '
+  Respuestas_1465:
+    preguntas_id: Preguntas_561
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: 1/2
+  Respuestas_1466:
+    preguntas_id: Preguntas_561
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+    descripcion: 3/4
+  Respuestas_1467:
+    preguntas_id: Preguntas_561
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: 4/3
+  Respuestas_1468:
+    preguntas_id: Preguntas_561
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: 3/2
+  Respuestas_1469:
+    preguntas_id: Preguntas_561
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1470:
+    preguntas_id: Preguntas_562
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '150'
+  Respuestas_1471:
+    preguntas_id: Preguntas_562
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: '90'
+  Respuestas_1472:
+    preguntas_id: Preguntas_562
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: '50'
+  Respuestas_1473:
+    preguntas_id: Preguntas_562
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: '45'
+  Respuestas_1474:
+    preguntas_id: Preguntas_562
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1475:
+    preguntas_id: Preguntas_563
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: '2'
+  Respuestas_1476:
+    preguntas_id: Preguntas_563
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: '3'
+  Respuestas_1477:
+    preguntas_id: Preguntas_563
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: '5'
+  Respuestas_1478:
+    preguntas_id: Preguntas_563
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: '6'
+  Respuestas_1479:
+    preguntas_id: Preguntas_563
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1480:
+    preguntas_id: Preguntas_564
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '0.4'
+  Respuestas_1481:
+    preguntas_id: Preguntas_564
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: '4'
+  Respuestas_1482:
+    preguntas_id: Preguntas_564
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+    descripcion: '40'
+  Respuestas_1483:
+    preguntas_id: Preguntas_564
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: '400'
+  Respuestas_1484:
+    preguntas_id: Preguntas_564
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas '
+  Respuestas_1485:
+    preguntas_id: Preguntas_565
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: 19x²+4y²
+  Respuestas_1486:
+    preguntas_id: Preguntas_565
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: '19x^4 +4y²'
+  Respuestas_1487:
+    preguntas_id: Preguntas_565
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: 23x²y²
+  Respuestas_1488:
+    preguntas_id: Preguntas_565
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: 23x^4y²
+  Respuestas_1489:
+    preguntas_id: Preguntas_565
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1490:
+    preguntas_id: Preguntas_566
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '16'
+  Respuestas_1491:
+    preguntas_id: Preguntas_566
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: '5'
+  Respuestas_1492:
+    preguntas_id: Preguntas_566
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+    descripcion: '4'
+  Respuestas_1493:
+    preguntas_id: Preguntas_566
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: '2'
+  Respuestas_1494:
+    preguntas_id: Preguntas_566
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1495:
+    preguntas_id: Preguntas_567
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '-2.5'
+  Respuestas_1496:
+    preguntas_id: Preguntas_567
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: -5/4
+  Respuestas_1497:
+    preguntas_id: Preguntas_567
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: '-1'
+  Respuestas_1498:
+    preguntas_id: Preguntas_567
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: '0.6'
+  Respuestas_1499:
+    preguntas_id: Preguntas_567
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1500:
+    preguntas_id: Preguntas_568
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: 1/5+3/4
+  Respuestas_1501:
+    preguntas_id: Preguntas_568
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+    descripcion: 2/3+3/8
+  Respuestas_1502:
+    preguntas_id: Preguntas_568
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: 8/12+1/3
+  Respuestas_1503:
+    preguntas_id: Preguntas_568
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: 5/8+1/4
+  Respuestas_1504:
+    preguntas_id: Preguntas_568
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1505:
+    preguntas_id: Preguntas_569
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '0'
+  Respuestas_1506:
+    preguntas_id: Preguntas_569
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: '6'
+  Respuestas_1507:
+    preguntas_id: Preguntas_569
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: '8'
+  Respuestas_1508:
+    preguntas_id: Preguntas_569
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: '9'
+  Respuestas_1509:
+    preguntas_id: Preguntas_569
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1510:
+    preguntas_id: Preguntas_570
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '5'
+  Respuestas_1511:
+    preguntas_id: Preguntas_570
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+    descripcion: √36
+  Respuestas_1512:
+    preguntas_id: Preguntas_570
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: √49
+  Respuestas_1513:
+    preguntas_id: Preguntas_570
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: '8'
+  Respuestas_1514:
+    preguntas_id: Preguntas_570
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1515:
+    preguntas_id: Preguntas_571
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '1176'
+  Respuestas_1516:
+    preguntas_id: Preguntas_571
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: '168'
+  Respuestas_1517:
+    preguntas_id: Preguntas_571
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+    descripcion: '84'
+  Respuestas_1518:
+    preguntas_id: Preguntas_571
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: '42'
+  Respuestas_1519:
+    preguntas_id: Preguntas_571
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1520:
+    preguntas_id: Preguntas_572
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '1'
+  Respuestas_1521:
+    preguntas_id: Preguntas_572
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: '4'
+  Respuestas_1522:
+    preguntas_id: Preguntas_572
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: '5'
+  Respuestas_1523:
+    preguntas_id: Preguntas_572
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: '6'
+  Respuestas_1524:
+    preguntas_id: Preguntas_572
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1525:
+    preguntas_id: Preguntas_573
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: 15/49
+  Respuestas_1526:
+    preguntas_id: Preguntas_573
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: 5/3
+  Respuestas_1527:
+    preguntas_id: Preguntas_573
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: 15/7
+  Respuestas_1528:
+    preguntas_id: Preguntas_573
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: '15'
+  Respuestas_1529:
+    preguntas_id: Preguntas_573
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1530:
+    preguntas_id: Preguntas_574
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '28'
+  Respuestas_1531:
+    preguntas_id: Preguntas_574
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+    descripcion: '24'
+  Respuestas_1532:
+    preguntas_id: Preguntas_574
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: '20'
+  Respuestas_1533:
+    preguntas_id: Preguntas_574
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: '16'
+  Respuestas_1534:
+    preguntas_id: Preguntas_574
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1535:
+    preguntas_id: Preguntas_575
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '0'
+  Respuestas_1536:
+    preguntas_id: Preguntas_575
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: '1'
+  Respuestas_1537:
+    preguntas_id: Preguntas_575
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: '6'
+  Respuestas_1538:
+    preguntas_id: Preguntas_575
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: '8'
+  Respuestas_1539:
+    preguntas_id: Preguntas_575
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1540:
+    preguntas_id: Preguntas_576
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '766'
+  Respuestas_1541:
+    preguntas_id: Preguntas_576
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+    descripcion: '768'
+  Respuestas_1542:
+    preguntas_id: Preguntas_576
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: '796'
+  Respuestas_1543:
+    preguntas_id: Preguntas_576
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: '976'
+  Respuestas_1544:
+    preguntas_id: Preguntas_576
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1545:
+    preguntas_id: Preguntas_577
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '8x + 5y'
+  Respuestas_1546:
+    preguntas_id: Preguntas_577
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: '7x – 6y'
+  Respuestas_1547:
+    preguntas_id: Preguntas_577
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: '7x² – 6y²'
+  Respuestas_1548:
+    preguntas_id: Preguntas_577
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: '5y – 8x'
+  Respuestas_1549:
+    preguntas_id: Preguntas_577
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1550:
+    preguntas_id: Preguntas_578
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '0'
+  Respuestas_1551:
+    preguntas_id: Preguntas_578
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: '100'
+  Respuestas_1552:
+    preguntas_id: Preguntas_578
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+    descripcion: '150'
+  Respuestas_1553:
+    preguntas_id: Preguntas_578
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: '200'
+  Respuestas_1554:
+    preguntas_id: Preguntas_578
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1555:
+    preguntas_id: Preguntas_579
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '50000'
+  Respuestas_1556:
+    preguntas_id: Preguntas_579
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: '55000'
+  Respuestas_1557:
+    preguntas_id: Preguntas_579
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+    descripcion: '57000'
+  Respuestas_1558:
+    preguntas_id: Preguntas_579
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: '60000'
+  Respuestas_1559:
+    preguntas_id: Preguntas_579
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas '
+  Respuestas_1560:
+    preguntas_id: Preguntas_580
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: '9'
+  Respuestas_1561:
+    preguntas_id: Preguntas_580
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: '7'
+  Respuestas_1562:
+    preguntas_id: Preguntas_580
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: '5'
+  Respuestas_1563:
+    preguntas_id: Preguntas_580
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: '1'
+  Respuestas_1564:
+    preguntas_id: Preguntas_580
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1565:
+    preguntas_id: Preguntas_581
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '10 – n '
+  Respuestas_1566:
+    preguntas_id: Preguntas_581
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: 'n – 10'
+  Respuestas_1567:
+    preguntas_id: Preguntas_581
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: n/10
+  Respuestas_1568:
+    preguntas_id: Preguntas_581
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+    descripcion: 10/n
+  Respuestas_1569:
+    preguntas_id: Preguntas_581
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1570:
+    preguntas_id: Preguntas_582
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '6'
+  Respuestas_1571:
+    preguntas_id: Preguntas_582
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: 5/6
+  Respuestas_1572:
+    preguntas_id: Preguntas_582
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: 2/3
+  Respuestas_1573:
+    preguntas_id: Preguntas_582
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+    descripcion: 1/6
+  Respuestas_1574:
+    preguntas_id: Preguntas_582
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1575:
+    preguntas_id: Preguntas_583
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '6.5'
+  Respuestas_1576:
+    preguntas_id: Preguntas_583
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+    descripcion: '5.2'
+  Respuestas_1577:
+    preguntas_id: Preguntas_583
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: '4.0'
+  Respuestas_1578:
+    preguntas_id: Preguntas_583
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: '1.04'
+  Respuestas_1579:
+    preguntas_id: Preguntas_583
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1580:
+    preguntas_id: Preguntas_584
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '5, 6, 7'
+  Respuestas_1581:
+    preguntas_id: Preguntas_584
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: '6, 7, 8'
+  Respuestas_1582:
+    preguntas_id: Preguntas_584
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: '7, 8, 9'
+  Respuestas_1583:
+    preguntas_id: Preguntas_584
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+    descripcion: '8, 9, 10'
+  Respuestas_1584:
+    preguntas_id: Preguntas_584
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1585:
+    preguntas_id: Preguntas_585
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '9'
+  Respuestas_1586:
+    preguntas_id: Preguntas_585
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: '7'
+  Respuestas_1587:
+    preguntas_id: Preguntas_585
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: '4'
+  Respuestas_1588:
+    preguntas_id: Preguntas_585
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+    descripcion: '3'
+  Respuestas_1589:
+    preguntas_id: Preguntas_585
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1590:
+    preguntas_id: Preguntas_586
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '-3x2 / 6'
+  Respuestas_1591:
+    preguntas_id: Preguntas_586
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: '-6 / -2 x -3'
+  Respuestas_1592:
+    preguntas_id: Preguntas_586
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: '2x -3 / 6'
+  Respuestas_1593:
+    preguntas_id: Preguntas_586
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+    descripcion: '6 / -3 x -2'
+  Respuestas_1594:
+    preguntas_id: Preguntas_586
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1595:
+    preguntas_id: Preguntas_587
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_1596:
+    preguntas_id: Preguntas_587
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+  Respuestas_1597:
+    preguntas_id: Preguntas_587
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+  Respuestas_1598:
+    preguntas_id: Preguntas_587
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+  Respuestas_1599:
+    preguntas_id: Preguntas_587
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1600:
+    preguntas_id: Preguntas_588
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '20'
+  Respuestas_1601:
+    preguntas_id: Preguntas_588
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+    descripcion: '15'
+  Respuestas_1602:
+    preguntas_id: Preguntas_588
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: '10'
+  Respuestas_1603:
+    preguntas_id: Preguntas_588
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: '5'
+  Respuestas_1604:
+    preguntas_id: Preguntas_588
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1605:
+    preguntas_id: Preguntas_589
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '0,03%'
+  Respuestas_1606:
+    preguntas_id: Preguntas_589
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: '0,3%'
+  Respuestas_1607:
+    preguntas_id: Preguntas_589
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+    descripcion: 3%
+  Respuestas_1608:
+    preguntas_id: Preguntas_589
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: 30%
+  Respuestas_1609:
+    preguntas_id: Preguntas_589
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1610:
+    preguntas_id: Preguntas_590
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '28.090'
+  Respuestas_1611:
+    preguntas_id: Preguntas_590
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: '28.900'
+  Respuestas_1612:
+    preguntas_id: Preguntas_590
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: '190.000'
+  Respuestas_1613:
+    preguntas_id: Preguntas_590
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+    descripcion: '208.090'
+  Respuestas_1614:
+    preguntas_id: Preguntas_590
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1615:
+    preguntas_id: Preguntas_591
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '50'
+  Respuestas_1616:
+    preguntas_id: Preguntas_591
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: '200'
+  Respuestas_1617:
+    preguntas_id: Preguntas_591
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: '270'
+  Respuestas_1618:
+    preguntas_id: Preguntas_591
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+    descripcion: '290'
+  Respuestas_1619:
+    preguntas_id: Preguntas_591
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1620:
+    preguntas_id: Preguntas_592
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: 14/3
+  Respuestas_1621:
+    preguntas_id: Preguntas_592
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: 7/3
+  Respuestas_1622:
+    preguntas_id: Preguntas_592
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: 7/6
+  Respuestas_1623:
+    preguntas_id: Preguntas_592
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: 6/7
+  Respuestas_1624:
+    preguntas_id: Preguntas_592
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1625:
+    preguntas_id: Preguntas_593
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '8'
+  Respuestas_1626:
+    preguntas_id: Preguntas_593
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: '4'
+  Respuestas_1627:
+    preguntas_id: Preguntas_593
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: '2'
+  Respuestas_1628:
+    preguntas_id: Preguntas_593
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+    descripcion: '1'
+  Respuestas_1629:
+    preguntas_id: Preguntas_593
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1630:
+    preguntas_id: Preguntas_594
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: '6'
+  Respuestas_1631:
+    preguntas_id: Preguntas_594
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+    descripcion: '5'
+  Respuestas_1632:
+    preguntas_id: Preguntas_594
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: '3'
+  Respuestas_1633:
+    preguntas_id: Preguntas_594
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: '2'
+  Respuestas_1634:
+    preguntas_id: Preguntas_594
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Ninguna de ellas'
+  Respuestas_1635:
+    preguntas_id: Preguntas_595
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_69
+  Respuestas_1636:
+    preguntas_id: Preguntas_596
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_70
+  Respuestas_1637:
+    preguntas_id: Preguntas_597
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_66
+  Respuestas_1638:
+    preguntas_id: Preguntas_598
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_67
+  Respuestas_1639:
+    preguntas_id: Preguntas_599
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_71
+  Respuestas_1640:
+    preguntas_id: Preguntas_600
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_68
+  Respuestas_1641:
+    preguntas_id: Preguntas_601
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_71
+  Respuestas_1642:
+    preguntas_id: Preguntas_602
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_67
+  Respuestas_1643:
+    preguntas_id: Preguntas_603
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_66
+  Respuestas_1644:
+    preguntas_id: Preguntas_604
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_68
+  Respuestas_1645:
+    preguntas_id: Preguntas_605
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_70
+  Respuestas_1646:
+    preguntas_id: Preguntas_606
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_69
+  Respuestas_1647:
+    preguntas_id: Preguntas_607
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_67
+  Respuestas_1648:
+    preguntas_id: Preguntas_608
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_71
+  Respuestas_1649:
+    preguntas_id: Preguntas_609
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_66
+  Respuestas_1650:
+    preguntas_id: Preguntas_610
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_67
+  Respuestas_1651:
+    preguntas_id: Preguntas_611
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_66
+  Respuestas_1652:
+    preguntas_id: Preguntas_612
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_68
+  Respuestas_1653:
+    preguntas_id: Preguntas_613
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_70
+  Respuestas_1654:
+    preguntas_id: Preguntas_614
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_71
+  Respuestas_1655:
+    preguntas_id: Preguntas_615
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_69
+  Respuestas_1656:
+    preguntas_id: Preguntas_616
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_68
+  Respuestas_1657:
+    preguntas_id: Preguntas_617
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_69
+  Respuestas_1658:
+    preguntas_id: Preguntas_618
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_70
+  Respuestas_1659:
+    preguntas_id: Preguntas_619
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_73
+  Respuestas_1660:
+    preguntas_id: Preguntas_620
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_67
+  Respuestas_1661:
+    preguntas_id: Preguntas_621
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_68
+  Respuestas_1662:
+    preguntas_id: Preguntas_622
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_73
+  Respuestas_1663:
+    preguntas_id: Preguntas_623
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_72
+  Respuestas_1664:
+    preguntas_id: Preguntas_624
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_69
+  Respuestas_1665:
+    preguntas_id: Preguntas_625
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_70
+  Respuestas_1666:
+    preguntas_id: Preguntas_626
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_66
+  Respuestas_1667:
+    preguntas_id: Preguntas_627
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_72
+  Respuestas_1668:
+    preguntas_id: Preguntas_628
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_71
+  Respuestas_1669:
+    preguntas_id: Preguntas_629
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_66
+  Respuestas_1670:
+    preguntas_id: Preguntas_630
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_67
+  Respuestas_1671:
+    preguntas_id: Preguntas_631
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_68
+  Respuestas_1672:
+    preguntas_id: Preguntas_632
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_69
+  Respuestas_1673:
+    preguntas_id: Preguntas_633
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_68
+  Respuestas_1674:
+    preguntas_id: Preguntas_634
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_72
+  Respuestas_1675:
+    preguntas_id: Preguntas_635
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_73
+  Respuestas_1676:
+    preguntas_id: Preguntas_636
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_71
+  Respuestas_1677:
+    preguntas_id: Preguntas_637
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_70
+  Respuestas_1678:
+    preguntas_id: Preguntas_638
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_69
+  Respuestas_1679:
+    preguntas_id: Preguntas_639
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_66
+  Respuestas_1680:
+    preguntas_id: Preguntas_640
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_67
+  Respuestas_1681:
+    preguntas_id: Preguntas_641
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_70
+  Respuestas_1682:
+    preguntas_id: Preguntas_642
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_71
+  Respuestas_1683:
+    preguntas_id: Preguntas_643
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_72
+  Respuestas_1684:
+    preguntas_id: Preguntas_644
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_71
+  Respuestas_1685:
+    preguntas_id: Preguntas_645
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_73
+  Respuestas_1686:
+    preguntas_id: Preguntas_646
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_67
+  Respuestas_1687:
+    preguntas_id: Preguntas_647
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_66
+  Respuestas_1688:
+    preguntas_id: Preguntas_648
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_70
+  Respuestas_1689:
+    preguntas_id: Preguntas_649
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_67
+  Respuestas_1690:
+    preguntas_id: Preguntas_650
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_69
+  Respuestas_1691:
+    preguntas_id: Preguntas_651
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_66
+  Respuestas_1692:
+    preguntas_id: Preguntas_652
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_71
+  Respuestas_1693:
+    preguntas_id: Preguntas_653
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_68
+  Respuestas_1694:
+    preguntas_id: Preguntas_654
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_70
+  Respuestas_1695:
+    preguntas_id: Preguntas_655
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: muralla
+  Respuestas_1696:
+    preguntas_id: Preguntas_655
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+    descripcion: ' defensa'
+  Respuestas_1697:
+    preguntas_id: Preguntas_655
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: contebnción
+  Respuestas_1698:
+    preguntas_id: Preguntas_655
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: pasividad
+  Respuestas_1699:
+    preguntas_id: Preguntas_655
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: parapeto
+  Respuestas_1700:
+    preguntas_id: Preguntas_656
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Entrar
+  Respuestas_1701:
+    preguntas_id: Preguntas_656
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: 'usar la llave'
+  Respuestas_1702:
+    preguntas_id: Preguntas_656
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+    descripcion: facilitar
+  Respuestas_1703:
+    preguntas_id: Preguntas_656
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: mejorar
+  Respuestas_1704:
+    preguntas_id: Preguntas_656
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: ampliar
+  Respuestas_1705:
+    preguntas_id: Preguntas_657
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: Andar
+  Respuestas_1706:
+    preguntas_id: Preguntas_657
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: ' golpear'
+  Respuestas_1707:
+    preguntas_id: Preguntas_657
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: engancharse
+  Respuestas_1708:
+    preguntas_id: Preguntas_657
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: obstaculizar
+  Respuestas_1709:
+    preguntas_id: Preguntas_657
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: ' saltar'
+  Respuestas_1710:
+    preguntas_id: Preguntas_658
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Sordo
+  Respuestas_1711:
+    preguntas_id: Preguntas_658
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: silencio
+  Respuestas_1712:
+    preguntas_id: Preguntas_658
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: ' oído'
+  Respuestas_1713:
+    preguntas_id: Preguntas_658
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+    descripcion: sonido
+  Respuestas_1714:
+    preguntas_id: Preguntas_658
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: oreja
+  Respuestas_1715:
+    preguntas_id: Preguntas_659
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Visible
+  Respuestas_1716:
+    preguntas_id: Preguntas_659
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: acristalado
+  Respuestas_1717:
+    preguntas_id: Preguntas_659
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: blanco
+  Respuestas_1718:
+    preguntas_id: Preguntas_659
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: ' sólido'
+  Respuestas_1719:
+    preguntas_id: Preguntas_659
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
+    descripcion: transparente
+  Respuestas_1720:
+    preguntas_id: Preguntas_660
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Prehistoria
+  Respuestas_1721:
+    preguntas_id: Preguntas_660
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: geógrafo
+  Respuestas_1722:
+    preguntas_id: Preguntas_660
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+    descripcion: historiador
+  Respuestas_1723:
+    preguntas_id: Preguntas_660
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: pretérito
+  Respuestas_1724:
+    preguntas_id: Preguntas_660
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: antigüedad
+  Respuestas_1725:
+    preguntas_id: Preguntas_661
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: 'Sin hijos'
+  Respuestas_1726:
+    preguntas_id: Preguntas_661
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+    descripcion: extinción
+  Respuestas_1727:
+    preguntas_id: Preguntas_661
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: ' fecundo'
+  Respuestas_1728:
+    preguntas_id: Preguntas_661
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: desendencia
+  Respuestas_1729:
+    preguntas_id: Preguntas_661
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: aridez
+  Respuestas_1730:
+    preguntas_id: Preguntas_662
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Renegar
+  Respuestas_1731:
+    preguntas_id: Preguntas_662
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: renunciar
+  Respuestas_1732:
+    preguntas_id: Preguntas_662
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: abandonar
+  Respuestas_1733:
+    preguntas_id: Preguntas_662
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: morir
+  Respuestas_1734:
+    preguntas_id: Preguntas_662
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
+    descripcion: abdicar
+  Respuestas_1735:
+    preguntas_id: Preguntas_663
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Inevitable
+  Respuestas_1736:
+    preguntas_id: Preguntas_663
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: final
+  Respuestas_1737:
+    preguntas_id: Preguntas_663
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: ' decrepitud'
+  Respuestas_1738:
+    preguntas_id: Preguntas_663
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+    descripcion: ' tiempo'
+  Respuestas_1739:
+    preguntas_id: Preguntas_663
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: ancianidad
+  Respuestas_1740:
+    preguntas_id: Preguntas_664
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: Nocturno
+  Respuestas_1741:
+    preguntas_id: Preguntas_664
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: umbrío
+  Respuestas_1742:
+    preguntas_id: Preguntas_664
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: oscuro
+  Respuestas_1743:
+    preguntas_id: Preguntas_664
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: grisáceo
+  Respuestas_1744:
+    preguntas_id: Preguntas_664
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: atardecer
+  Respuestas_1745:
+    preguntas_id: Preguntas_665
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Particular
+  Respuestas_1746:
+    preguntas_id: Preguntas_665
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+    descripcion: ajeno
+  Respuestas_1747:
+    preguntas_id: Preguntas_665
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: 'de él'
+  Respuestas_1748:
+    preguntas_id: Preguntas_665
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: impropio
+  Respuestas_1749:
+    preguntas_id: Preguntas_665
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: ' extraño'
+  Respuestas_1750:
+    preguntas_id: Preguntas_666
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Inundarse
+  Respuestas_1751:
+    preguntas_id: Preguntas_666
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: traspasar
+  Respuestas_1752:
+    preguntas_id: Preguntas_666
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: endeudarse
+  Respuestas_1753:
+    preguntas_id: Preguntas_666
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: perder
+  Respuestas_1754:
+    preguntas_id: Preguntas_666
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
+    descripcion: quebrar
+  Respuestas_1755:
+    preguntas_id: Preguntas_667
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: Cosechar
+  Respuestas_1756:
+    preguntas_id: Preguntas_667
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: segar
+  Respuestas_1757:
+    preguntas_id: Preguntas_667
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: comer
+  Respuestas_1758:
+    preguntas_id: Preguntas_667
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: labrar
+  Respuestas_1759:
+    preguntas_id: Preguntas_667
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: esperar
+  Respuestas_1760:
+    preguntas_id: Preguntas_668
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Alborear
+  Respuestas_1761:
+    preguntas_id: Preguntas_668
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: noche
+  Respuestas_1762:
+    preguntas_id: Preguntas_668
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+    descripcion: anochecer
+  Respuestas_1763:
+    preguntas_id: Preguntas_668
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: declinar
+  Respuestas_1764:
+    preguntas_id: Preguntas_668
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: ' oscurecer'
+  Respuestas_1765:
+    preguntas_id: Preguntas_669
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Dos
+  Respuestas_1766:
+    preguntas_id: Preguntas_669
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+    descripcion: plural
+  Respuestas_1767:
+    preguntas_id: Preguntas_669
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: pocos
+  Respuestas_1768:
+    preguntas_id: Preguntas_669
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: individuo
+  Respuestas_1769:
+    preguntas_id: Preguntas_669
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: único
+  Respuestas_1770:
+    preguntas_id: Preguntas_670
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Reparar
+  Respuestas_1771:
+    preguntas_id: Preguntas_670
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: roer
+  Respuestas_1772:
+    preguntas_id: Preguntas_670
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: 'oxidar. '
+  Respuestas_1773:
+    preguntas_id: Preguntas_670
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+    descripcion: deteriorar
+  Respuestas_1774:
+    preguntas_id: Preguntas_670
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: ' polucionar'
+  Respuestas_1775:
+    preguntas_id: Preguntas_671
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Agua
+  Respuestas_1776:
+    preguntas_id: Preguntas_671
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: gota
+  Respuestas_1777:
+    preguntas_id: Preguntas_671
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: 'suelo mojado'
+  Respuestas_1778:
+    preguntas_id: Preguntas_671
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: charco
+  Respuestas_1779:
+    preguntas_id: Preguntas_671
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
+    descripcion: barro
+  Respuestas_1780:
+    preguntas_id: Preguntas_672
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: Esfera
+  Respuestas_1781:
+    preguntas_id: Preguntas_672
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: bola
+  Respuestas_1782:
+    preguntas_id: Preguntas_672
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: pirámide
+  Respuestas_1783:
+    preguntas_id: Preguntas_672
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: circunferencia
+  Respuestas_1784:
+    preguntas_id: Preguntas_672
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: ' caja'
+  Respuestas_1785:
+    preguntas_id: Preguntas_673
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Ladrillo
+  Respuestas_1786:
+    preguntas_id: Preguntas_673
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: viga
+  Respuestas_1787:
+    preguntas_id: Preguntas_673
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: hormigón
+  Respuestas_1788:
+    preguntas_id: Preguntas_673
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+    descripcion: ' tapón'
+  Respuestas_1789:
+    preguntas_id: Preguntas_673
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: chapa
+  Respuestas_1790:
+    preguntas_id: Preguntas_674
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Inexperto
+  Respuestas_1791:
+    preguntas_id: Preguntas_674
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: inicial
+  Respuestas_1792:
+    preguntas_id: Preguntas_674
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+    descripcion: veterano
+  Respuestas_1793:
+    preguntas_id: Preguntas_674
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: ' especialista'
+  Respuestas_1794:
+    preguntas_id: Preguntas_674
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: anciano
+  Respuestas_1795:
+    preguntas_id: Preguntas_675
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Abastecimiento
+  Respuestas_1796:
+    preguntas_id: Preguntas_675
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+    descripcion: contención
+  Respuestas_1797:
+    preguntas_id: Preguntas_675
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: torrente
+  Respuestas_1798:
+    preguntas_id: Preguntas_675
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: ' inundación'
+  Respuestas_1799:
+    preguntas_id: Preguntas_675
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: laguna
+  Respuestas_1800:
+    preguntas_id: Preguntas_676
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Parto
+  Respuestas_1801:
+    preguntas_id: Preguntas_676
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+    descripcion: gestación
+  Respuestas_1802:
+    preguntas_id: Preguntas_676
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: maternidad
+  Respuestas_1803:
+    preguntas_id: Preguntas_676
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: aborto
+  Respuestas_1804:
+    preguntas_id: Preguntas_676
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'infancia. '
+  Respuestas_1805:
+    preguntas_id: Preguntas_677
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: Venta
+  Respuestas_1806:
+    preguntas_id: Preguntas_677
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: tienda
+  Respuestas_1807:
+    preguntas_id: Preguntas_677
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: escaparate
+  Respuestas_1808:
+    preguntas_id: Preguntas_677
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: vendedor
+  Respuestas_1809:
+    preguntas_id: Preguntas_677
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: comprador
+  Respuestas_1810:
+    preguntas_id: Preguntas_678
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Común
+  Respuestas_1811:
+    preguntas_id: Preguntas_678
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: privado
+  Respuestas_1812:
+    preguntas_id: Preguntas_678
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+    descripcion: peculiar
+  Respuestas_1813:
+    preguntas_id: Preguntas_678
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: acostumbrado
+  Respuestas_1814:
+    preguntas_id: Preguntas_678
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: natural
+  Respuestas_1815:
+    preguntas_id: Preguntas_679
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Pronosticar
+  Respuestas_1816:
+    preguntas_id: Preguntas_679
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: inducir
+  Respuestas_1817:
+    preguntas_id: Preguntas_679
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: 'gritar. '
+  Respuestas_1818:
+    preguntas_id: Preguntas_679
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+    descripcion: ' imponer'
+  Respuestas_1819:
+    preguntas_id: Preguntas_679
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: realizar
+  Respuestas_1820:
+    preguntas_id: Preguntas_680
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Alegre
+  Respuestas_1821:
+    preguntas_id: Preguntas_680
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: dramático
+  Respuestas_1822:
+    preguntas_id: Preguntas_680
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: lamentable
+  Respuestas_1823:
+    preguntas_id: Preguntas_680
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: teatro
+  Respuestas_1824:
+    preguntas_id: Preguntas_680
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
+    descripcion: cómico
+  Respuestas_1825:
+    preguntas_id: Preguntas_681
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Mostrar
+  Respuestas_1826:
+    preguntas_id: Preguntas_681
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+    descripcion: demostrar
+  Respuestas_1827:
+    preguntas_id: Preguntas_681
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: ' comprobar'
+  Respuestas_1828:
+    preguntas_id: Preguntas_681
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: ocultar
+  Respuestas_1829:
+    preguntas_id: Preguntas_681
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: discutir
+  Respuestas_1830:
+    preguntas_id: Preguntas_682
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Castigado
+  Respuestas_1831:
+    preguntas_id: Preguntas_682
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: derrotado
+  Respuestas_1832:
+    preguntas_id: Preguntas_682
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: perdedor
+  Respuestas_1833:
+    preguntas_id: Preguntas_682
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+    descripcion: humillado
+  Respuestas_1834:
+    preguntas_id: Preguntas_682
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: desamparado
+  Respuestas_1835:
+    preguntas_id: Preguntas_683
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Préstamo
+  Respuestas_1836:
+    preguntas_id: Preguntas_683
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: dinero
+  Respuestas_1837:
+    preguntas_id: Preguntas_683
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+    descripcion: ' acreedor'
+  Respuestas_1838:
+    preguntas_id: Preguntas_683
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: necesitado
+  Respuestas_1839:
+    preguntas_id: Preguntas_683
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: deuda
+  Respuestas_1840:
+    preguntas_id: Preguntas_684
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Blanquear
+  Respuestas_1841:
+    preguntas_id: Preguntas_684
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: ' zurcir'
+  Respuestas_1842:
+    preguntas_id: Preguntas_684
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: lavar
+  Respuestas_1843:
+    preguntas_id: Preguntas_684
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: tejer
+  Respuestas_1844:
+    preguntas_id: Preguntas_684
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
+    descripcion: teñir
+  Respuestas_1845:
+    preguntas_id: Preguntas_685
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: Templado
+  Respuestas_1846:
+    preguntas_id: Preguntas_685
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: helado
+  Respuestas_1847:
+    preguntas_id: Preguntas_685
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: ' otoño'
+  Respuestas_1848:
+    preguntas_id: Preguntas_685
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: caliente
+  Respuestas_1849:
+    preguntas_id: Preguntas_685
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: temperatura
+  Respuestas_1850:
+    preguntas_id: Preguntas_686
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Equivocación
+  Respuestas_1851:
+    preguntas_id: Preguntas_686
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: irrealidad
+  Respuestas_1852:
+    preguntas_id: Preguntas_686
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+    descripcion: caricatura
+  Respuestas_1853:
+    preguntas_id: Preguntas_686
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: drama
+  Respuestas_1854:
+    preguntas_id: Preguntas_686
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: superación
