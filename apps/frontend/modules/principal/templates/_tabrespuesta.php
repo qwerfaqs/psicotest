@@ -1,6 +1,6 @@
 </p>
 <p style="text-align:center">
-    <img src="/images/tests/<?php echo $pregunta->getImagen(); ?>" alt="" width="203" height="227"/>
+    <img src="/images/tests/<?php echo $pregunta->getTests()->getImagen(); ?>/<?php echo $pregunta->getImagen(); ?>" alt="" width="203" height="227"/>
 <div class="seleccionarficha" clear:both">
      <table align="center">
         <tbody>

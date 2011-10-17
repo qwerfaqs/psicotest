@@ -21,7 +21,7 @@
       <td><?php echo $resultado->getId() ?></a></td>      
         <td><?php echo $resultado->getPruebas()->getTests()->getTitulo() ?></td>
         <td><?php echo $resultado->getPreguntas()->getDescripcion()?></td>
-        <td><img width="100px" src="/images/tests/<?php echo $resultado->getPreguntas()->getImagen()?>"/></td>
+        <td><img width="100px" src="/images/tests/<?php echo $resultado->getPreguntas()->getTests()->getTitulo()?>/<?php echo $resultado->getPreguntas()->getImagen()?>"/></td>
         <td><?php echo $resultado->getOpciones()->getTexto() ?></td>
     </tr>
     <?php endforeach; ?>
