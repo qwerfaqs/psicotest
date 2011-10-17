@@ -38,6 +38,12 @@ class Tomador
          case 'razonamientoabstracto':              
             return(Tomador::getRespuestaSimple($request) );                
          break;
+         case 'razonamientonumerico':              
+            return(Tomador::getRespuestaSimple($request) );                
+         break;
+         case 'raven':              
+            return(Tomador::getRespuestaSimple($request) );                
+         break;
          default:             
          break;
      }

@@ -108,7 +108,13 @@ class test
   
   public static function calcularrazonamientoverbal($respuestas)
   { 
-       $puntaje =0; 
+    Test::calcularrazonamientoabstracto($respuestas);
+      
+  }
+  
+  public static function calcularrazonamientoabstracto($respuestas)
+  { 
+        $puntaje =0; 
       
        foreach($respuestas as $resultado)
        {     
@@ -122,6 +128,18 @@ class test
           }
        }          
        Test::grabarPuntaje($puntaje,$respuestas[0]->getPruebas(), $respuestas[0]->getAspirantesId());       
+  }
+  
+  public static function calcularrazonamientonumerico($respuestas)
+  { 
+       Test::calcularrazonamientoabstracto($respuestas);
+  }
+  
+  public static function calcularraven($respuestas)
+  {
+      Test::calcularig2($respuestas);
+      
+      
   }
   
   public static function grabarPuntaje($puntaje,$prueba,$aspirante)
