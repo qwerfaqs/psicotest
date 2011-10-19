@@ -10,7 +10,7 @@
 class aspirantesActions extends sfActions
 {
     
- 
+
   
   public function executeIndex(sfWebRequest $request)
   {
