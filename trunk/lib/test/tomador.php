@@ -44,6 +44,9 @@ class Tomador
          case 'raven':              
             return(Tomador::getRespuestaSimple($request) );                
          break;
+         case 'monedas':              
+            return(Tomador::getRespuestaSimple($request) );                
+         break;
          default:             
          break;
      }
