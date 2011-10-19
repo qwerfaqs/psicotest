@@ -26,6 +26,8 @@ class ResultadosPeer extends BaseResultadosPeer
     return (self::doSelectJoinAll($criteria));
   }
   
+  
+  
   public static function getResultado($prueba,$aspirante)
   {
     $criteria = new Criteria();    
@@ -33,5 +35,35 @@ class ResultadosPeer extends BaseResultadosPeer
     $criteria->add(ResultadosPeer::PRUEBAS_ID,$prueba,Criteria::EQUAL);     
     $criteria->add(ResultadosPeer::ASPIRANTES_ID,$aspirante,Criteria::EQUAL); 
     return (self::doSelectOne($criteria));
+  }
+  
+  
+  
+  public static function getCantAprobados()
+  {
+     $sql ="SELECT tests.titulo, COUNT( * ) as cantidad
+            FROM resultados
+            INNER JOIN pruebas ON resultados.pruebas_id = pruebas.id
+            INNER JOIN tests ON pruebas.tests_id = tests.id
+            WHERE estadosresultados_id =1
+            GROUP BY tests.id";
+      
+   /* $criteria = new Criteria();    
+    $criteria->addJoin(self::PRUEBAS_ID,PruebasPeer::ID, Criteria::INNER_JOIN);
+    $criteria->addJoin(PruebasPeer::TESTS_ID,TestsPeer::ID, Criteria::INNER_JOIN);    
+    $estado = sfConfig::get('app_activo');
+    $criteria->add(ResultadosPeer::ESTADOSRESULTADOS_ID,$estado,Criteria::EQUAL);     
+    $criteria->addGroupByColumn(TestsPeer::ID); 
+    echo $criteria->toString();
+    return (self::doSelect($criteria));*/
+      
+       $connection = Propel::getConnection();
+       $statement = $connection->prepare($sql);
+        $statement->execute();
+        $datos = array();
+        while ($result = $statement->fetch(PDO::FETCH_ASSOC)) {
+            $datos[] = $result;
+        }
+        return($datos);
   }
 } // ResultadosPeer

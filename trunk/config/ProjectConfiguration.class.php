@@ -9,5 +9,6 @@ class ProjectConfiguration extends sfProjectConfiguration
   {
     $this->enablePlugins('sfPropelPlugin');
     $this->enablePlugins('derechosPlugin');
+    $this->enablePlugins('sfTCPDFPlugin');
   }
 }

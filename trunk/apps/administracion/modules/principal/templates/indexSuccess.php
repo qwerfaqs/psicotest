@@ -1,14 +1,22 @@
 <h2>Panel de Administración</h2>
 <h3>Ayuda y Especificaciones Técnicas</h3>
 <h4>¿Como Utilizar el Panel de Administración?</h4>
-<p> Lorem ipsum ad his scripta blandit partiendo, eum fastidii concha de tu hermana administración accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. Eu sit tincidunt incorrupte definitionem, vis mutat affert percipit cu, eirmod consectetuer signiferumque eu per. In usu latine equidem dolores. Quo no falli viris intellegam, ut fugit veritus placerat per.</p>
-<p>Ius id vidit volumus mandamus, vide veritus democritum te nec, ei eos debet libris consulatu. No mei ferri graeco dicunt, ad cum veri accommodare. Sed at malis omnesque delicata, usu et iusto zzril meliore. Dicunt maiorum eloquentiam cum cu, sit summo dolor essent te. Ne quodsi nusquam legendos has, ea dicit voluptua eloquentiam pro, ad sit quas qualisque. Eos vocibus deserunt quaestio ei.</p>
-<h4>¿Como Crear Evaluaciónes?</h4>
-<p>Blandit incorrupte quaerendum in quo, nibh impedit id vis, vel no nullam semper audiam. Ei populo graeci consulatu mei, has ea stet modus phaedrum. Inani oblique ne has, duo et veritus detraxit. Tota ludus oratio ea mel, offendit persequeris ei vim. Eos dicat oratio partem ut, id cum ignota senserit intellegat. Sit inani ubique graecis ad, quando graecis liberavisse et cum, dicit option eruditi at duo. Homero salutatus suscipiantur eum id, tamquam voluptaria expetendis ad sed, nobis feugiat similique usu ex.</p>
-<p>Eum hinc argumentum te, no sit percipit adversarium, ne qui feugiat persecuti. Odio omnes scripserit ad est, ut vidit lorem maiestatis his, putent mandamus gloriatur ne pro. Oratio iriure rationibus ne his, ad est corrumpit splendide. Ad duo appareat moderatius, ei falli tollit denique eos. Dicant evertitur mei in, ne his deserunt perpetua sententiae, ea sea omnes similique vituperatoribus. Ex mel errem intellegebat comprehensam, vel ad tantas antiopam delicatissimi, tota ferri affert eu nec. Legere expetenda pertinacia ne pro, et pro impetus persius assueverit.</p>
-<p>Ea mei nullam facete, omnis oratio offendit ius cu. Doming takimata repudiandae usu an, mei dicant takimata id, pri eleifend inimicus euripidis at. His vero singulis ea, quem euripidis abhorreant mei ut, et populo iriure vix. Usu ludus affert voluptaria ei, vix ea error definitiones, movet fastidii signiferumque in qui.</p>
-<p>Vis prodesset adolescens adipiscing te, usu mazim perfecto recteque at, assum putant erroribus mea in. Vel facete imperdiet id, cum an libris luptatum perfecto, vel fabellas inciderint ut. Veri facete debitis ea vis, ut eos oratio erroribus. Sint facete perfecto no vel, vim id omnium insolens. Vel dolores perfecto pertinacia ut, te mel meis ullum dicam, eos assum facilis corpora in.</p>
-<p>Mea te unum viderer dolores, nostrum detracto nec in, vis no partem definiebas constituam. Dicant utinam philosophia has cu, hendrerit prodesset at nam, eos an bonorum dissentiet. Has ad placerat intellegam consectetuer, no adipisci mandamus senserit pro, torquatos similique percipitur est ex. Pro ex putant deleniti repudiare, vel an aperiam sensibus suavitate. Ad vel epicurei convenire, ea soluta aliquid deserunt ius, pri in errem putant feugiat.</p>
- 
+<p> El panel de administración cuenta con un sensillo menú ubicado hacia la derecha mediante el cual usted podra dominar las siguientes funciones : </p>
+<h4>Administradores : </h4>
+<p>  - Listado de administradores : permite listar todos los administradores que se encuentran vigentes en el sistema , los administradores de sistemas pueden ser psicologos o cualquier persona autorizada para su correspondiente uso.</p>
+<p> - Nuevo administrador : permite la creación de un administrador , tenga en cuenta que la persona que cree un administrador debera estar autorizada previamente por el jefe del departamento o área en la que trabaja , todo aquel que cree un nuevo administrador quedará registrado en el registro de auditorias diarias para que los superiores puedan ver todas las acciones de todos los usuarios .</p>
+<h4>Evaluaciones : </h4>
+<p>  - Listado de evaluaciones : permite visualizar las evaluaciones que estan activas en un momento dado , luego de terminada una evaluacion deberá cambiarse el estado de la misma a finalizada para que pase al correspondiente historial de evaluaciones tomadas o realizadas , ademas podremos asignar los tests a tomar para una evaluación asi como los alumnos autorizados a rendir la misma. Los alumnos pueden buscarse por el campo numero de cedula de esta forma al encontrarlo tocaremos el signo + para incluirlo en la evaluación  .</p>
+<p>  - Nueva Evaluación : permite la creación de una evaluación ,ingresando los siguientes campos : Perfil (Infante,Oficial,Grumete) , estado de la evaluación,cantidad de alumnos a evaluaar,fecha de evaluación y el nombre que se le va a poner a la evaluación para que los aspirantes cuando ingresen la puedan identificar por ej . (Evaluación de aspirantes de grumetes de la localidad de Quito) .</p>
+<p>  - Historial de evaluaciones : permite ver todas las evaluaciones finalizadas hasta la fecha , las mismas pueden ser filtradas por fecha o por nombre , ademas podremos ver los tests involucrados en esa evaluación asi como los resultados que saco cada aspirante .  .</p>
+<h4>Aspirantes : </h4>
+<p>-Ver aspirantes : visualiza todos los aspirantes registrados en el sistema , asi como sus datos personales.</p>
+<p>-Nuevo aspirante : nos permite registrar un aspirante nuevo , tenga en cuenta de pedir permiso previo porque todas sus acciones quedaran registradas en un registro de transacciones de usuarios.</p>
+<h4>Estadisticas : </h4>
+<p>- Cantidad de aspirantes aprobados por test  :arroja el numero de estudiantes aprobados por test hasta la fecha y luego filtrado por año.</p>
+<p>- Cantidad de aspirantes desaprobados por test  :arroja el numero de estudiantes desaprobados por test hasta la fecha y luego filtrado por año.</p>
+<p>- Cantidad de aspirantes registrados : nos permitira identificar la cantidad de aspirantes evaluados por el sistema y por año .</p>
+<p/><p/>
+<h4>Para mas detalles consulte su correspondiente manual de usuario . Muchas Gracias  </h4>
       
       

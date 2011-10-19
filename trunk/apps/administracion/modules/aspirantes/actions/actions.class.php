@@ -9,6 +9,9 @@
  */
 class aspirantesActions extends sfActions
 {
+    
+ 
+  
   public function executeIndex(sfWebRequest $request)
   {
     $this->Aspirantess = AspirantesPeer::doSelect(new Criteria());
