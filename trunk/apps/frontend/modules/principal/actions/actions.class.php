@@ -7,35 +7,25 @@
  * @author     Psicotest
  * @version    SVN: $Id: actions.class.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
  */
-class principalActions extends sfActions
-{
+class principalActions extends sfActions {
  
-  public function executeIndex(sfWebRequest $request) 
-  {
+  public function executeIndex(sfWebRequest $request) {
     
-  }
-  
-  public function executeEvaluaciones(sfWebRequest $request) 
-  { // evaluaciones disponibles de un aspirante              
+  } 
+  public function executeEvaluaciones(sfWebRequest $request) { // evaluaciones disponibles de un aspirante              
     $aspirante = $this->getUser()->getAttribute('usuarioId');
     $estado = sfConfig::get('app_activo'); // el estado de la evaluacion en este caso activo para que aparesca en pantalla
     $this->evaluaciones = EvaluacionesPeer::getEvaluacionesAspirantes($estado,$aspirante);       
   }
-  public function executePruebas(sfWebRequest $request) 
-  { // listado de pruebas de una evaluacion
+  public function executePruebas(sfWebRequest $request) { // listado de pruebas de una evaluacion
     $this->evaluacion = $this->getRoute()->getObject();      
     $this->pruebas = PruebasPeer::getPruebas($this->evaluacion->getId());      
   }
-  
-  
-  public function executeAsistencia(sfWebRequest $request) 
-  {
+  public function executeAsistencia(sfWebRequest $request) {
      $evaluacion = $request->getParameter('evaluacion'); // Id de la evaluacion
      $aspirante = $this->getUser()->getAttribute('usuarioId');
      $asistencia =  AsistenciasPeer::getAsistencia($evaluacion,$aspirante); //Recupero de la lista de aspirantes de la evaluacion
-     if(isset($asistencia)) 
-     {
-         
+     if(isset($asistencia)) {
         $this->getUser()->setEvaluacion($asistencia->getEvaluaciones());
         $this->getUser()->setPruebas(); // guardo en un arreglo todas las pruebas de la evaluacion seleccionada
         $this->getUser()->initResultados(); // inicia el arreglo de resultados        
@@ -43,17 +33,10 @@ class principalActions extends sfActions
      } else
         $this->redirect($request->getUriPrefix()); // lo pateo porque no esta asistido
     }
-    
-    
-    
-  public function executePregunta(sfWebRequest $request) 
-  {                
+  public function executePregunta(sfWebRequest $request) {                
      $prueba = $this->getUser()->getPrueba();  //prueba actual
      // si prueba no tiene hijos else traigo el primero sub 
-    
-     if($prueba!=null)
-     {
-         
+     if($prueba!=null) {
         $this->pagina= sfConfig::get('app_activo'); //Pagina nro 1
         $this->preguntas = PreguntasPeer::getPreguntas($prueba->getId(),1,$this->pagina);
         $pregunta = $this->preguntas->getResult();
@@ -65,14 +48,11 @@ class principalActions extends sfActions
      else 
         $this->forward('principal','finish');
   }
-  
-  
-  public function executeCheck(sfWebRequest $request) 
-  {    
+  public function executeCheck(sfWebRequest $request) {    
    $pregunta = $request->getParameter('pregunta');  // id pregunta 
    $this->pagina = $request->getParameter('pagina'); // pagina a mostrar teniendo en cuenta que es 1 a 1
    $this->pagina++;  // sumamos una pagina
-  
+ 
    $prueba = $this->getUser()->getPrueba(); // prueba actual      
    //tomar el resultado ingresado
    if($prueba!=null)
@@ -98,18 +78,10 @@ class principalActions extends sfActions
    $this->test=trim($prueba->getTitulo());
    $this->setTemplate('pregunta');
   }
-  
-  
-  public function executeFinish(sfWebRequest $request) 
-  {  
+  public function executeFinish(sfWebRequest $request){  
 /*   $ev = $this->getUser()->getEvaluacion();      
    $ev->setEstadosevaluacionesId(3);
    $ev->save(); FINALIZA TODAS LAS EVALUACIONES*/
       
   }
-  
-  
-   
- 
-  
 }

@@ -140,7 +140,7 @@ propel:
     duracion: { phpName: Duracion, type: CHAR, size: '30', required: false }
     puntaje_aprobacion: { phpName: PuntajeAprobacion, type: CHAR, size: '20', required: false }
     tipoopcion_id: { phpName: TipoopcionId, type: INTEGER, size: '11', required: true, foreignTable: tipoopcion, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
-    tests_id: { phpName: TestsId, type: INTEGER, size: '11', required: true, foreignTable: tests, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    tests_id: { phpName: TestsId, type: INTEGER, size: '11', required: false, foreignTable: tests, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
     _indexes: { tests_id: [tests_id], tipoopcion_id: [tipoopcion_id] }
   tipoopcion:
     _attributes: { phpName: Tipoopcion }

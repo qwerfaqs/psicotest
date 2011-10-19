@@ -56,3 +56,4 @@
         <?php endforeach; ?>
     </tbody>
 </table>
+<a href="<?php echo url_for("evaluaciones/show?id=". $Evaluacion->getId()) ?>" class="link"  >Volver</a>

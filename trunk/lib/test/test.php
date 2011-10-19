@@ -1,22 +1,11 @@
 <?php
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  * Description of test
  *
  * @author potich
  */
-class test 
-{
-       
-   
-    
-  public static function calcularDomino($respuestas)
-  { 
+class test { 
+  public static function calcularDomino($respuestas){ 
     $puntaje =0; 
       
        foreach($respuestas as $resultado)
@@ -32,10 +21,7 @@ class test
        }          
        Test::grabarPuntaje($puntaje,$respuestas[0]->getPruebas(), $respuestas[0]->getAspirantesId());       
   }
-
-  
-  public static function aprobacion($prueba,$puntaje)
-  {      
+  public static function aprobacion($prueba,$puntaje){      
      $aprobacion = $prueba->getTests()->getPuntajeAprobacion();
       
      if($puntaje>=$aprobacion)
@@ -49,11 +35,7 @@ class test
        return($estado);
      }
   }
-  
-
-  
-  public static function calcularig2($respuestas)
-  { 
+  public static function calcularig2($respuestas){ 
      $puntaje=0; 
       
        foreach($respuestas as $resultado)
@@ -70,31 +52,30 @@ class test
        $percentil = PercentilesPeer::getPercentil($respuestas[0]->getPruebas()->getTests()->getId(),$puntaje);                               
        Test::grabarPuntaje($percentil[0]->getPercentil(),$respuestas[0]->getPruebas(), $respuestas[0]->getAspirantesId());             
   }
-  
-  
-  public static function calcularbarsit($respuestas)
-  { 
+  public static function calcularbarsit($respuestas){ 
       Test::calcularig2($respuestas);
   }
-  
-    public static function calcular16pf($respuestas)
-  { 
-      // calculo del 16pf arrojando resultado por factor 
+  /*
+   * Calcula los resultados del test 16pf
+   */
+  public static function calcular16pf($respuestas) { 
+      $tests_id = $respuestas[0]->getPruebas()->getTests()->getId(); //Obtengo el id del test
+      $criteria = new Criteria(); //creamos el objecto criteria
+      $criteria->add(EscalasPeer::TESTS_ID, $tests_id); // where tests_id = (id del test)
+      $escalas = EscalasPeer::doSelect($criteria);//obtengo las escalas para el test
+      //foreach ()
+      PercentilesPeer::getPercentil($test, $puntaje);
   }
-  
-  public static function calculareae1($intensidades)
-  { 
+  public static function calculareae1($intensidades) { 
      $puntaje=0; 
       $sumaint = 0;
-       foreach($intensidades as $intensidad)
-       {     
+       foreach($intensidades as $intensidad) {     
          $pregunta = $intensidad->getResultadosparciales()->getPreguntas();
          $estado = sfConfig::get('app_activo');
          
          $respuesta =  RespuestasPeer::getRespuesta($pregunta->getId(),$estado);         
         
-         if($intensidad->getResultadosparciales()->getOpciones()->getTexto()==$respuesta->getOpciones()->getTexto())
-          {            
+         if($intensidad->getResultadosparciales()->getOpciones()->getTexto()==$respuesta->getOpciones()->getTexto()) {            
             $puntaje = $puntaje + 1;              
           }  
           $sumaint = $sumaint + $intensidad->getOpciones()->getTexto();
@@ -104,54 +85,33 @@ class test
               
        Test::grabarPuntaje($percentil[0]->getPercentil(),$intensidades[0]->getResultadosparciales()->getPruebas(), $intensidades[0]->getResultadosparciales()->getAspirantesId());             
   }
-  
-  
-  public static function calcularrazonamientoverbal($respuestas)
-  { 
+  public static function calcularrazonamientoverbal($respuestas) { 
     Test::calcularrazonamientoabstracto($respuestas);
-      
   }
-  
-  public static function calcularrazonamientoabstracto($respuestas)
-  { 
+  public static function calcularrazonamientoabstracto($respuestas) { 
         $puntaje =0; 
-      
-       foreach($respuestas as $resultado)
-       {     
+       foreach($respuestas as $resultado) {     
          $pregunta = $resultado->getPreguntas();
          $estado = sfConfig::get('app_activo');
-         $respuesta =  RespuestasPeer::getRespuesta($pregunta->getId(),$estado);
-        
-          if ($resultado->getOpciones()->getTexto()==$respuesta->getOpciones()->getTexto())
-          {
+         $respuesta =  RespuestasPeer::getRespuesta($pregunta->getId(),$estado);  
+          if ($resultado->getOpciones()->getTexto()==$respuesta->getOpciones()->getTexto()) {
             $puntaje = $puntaje + 0.44;  
           }
        }          
        Test::grabarPuntaje($puntaje,$respuestas[0]->getPruebas(), $respuestas[0]->getAspirantesId());       
   }
-  
-  public static function calcularrazonamientonumerico($respuestas)
-  { 
+  public static function calcularrazonamientonumerico($respuestas) { 
        Test::calcularrazonamientoabstracto($respuestas);
   }
-  
-  public static function calcularraven($respuestas)
-  {
+  public static function calcularraven($respuestas) {
       Test::calcularig2($respuestas);
-      
-      
   }
-  
-  public static function grabarPuntaje($puntaje,$prueba,$aspirante)
-  { 
+  public static function grabarPuntaje($puntaje,$prueba,$aspirante) { 
        $result = ResultadosPeer::getResultado($prueba->getId(), $aspirante);              
        $puntaje = $puntaje + $result->getPuntaje();
        $result->setPuntaje($puntaje);              
        $result->setEstadosresultadosId(Test::aprobacion($prueba, $puntaje));             
        $result->save();             
   }
-  
-   
 }
-
 ?>
