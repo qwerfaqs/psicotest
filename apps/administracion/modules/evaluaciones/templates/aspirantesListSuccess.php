@@ -41,4 +41,5 @@
         <?php endforeach; ?>
     </tbody>
 </table>
+<a href="<?php echo url_for("evaluaciones/show?id=". $Evaluacion->getId()) ?>" class="link"  >Volver</a>
 <a href="<?php echo url_for("evaluaciones/aspirantesAgregando?id=". $Evaluacion->getId()) ?>" class="link"  >Agregar Aspirantes</a>

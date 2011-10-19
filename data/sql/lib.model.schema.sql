@@ -487,7 +487,7 @@ CREATE TABLE `tests`
 	`duracion` CHAR(30),
 	`puntaje_aprobacion` CHAR(20),
 	`tipoopcion_id` INTEGER(11)  NOT NULL,
-	`tests_id` INTEGER(11)  NOT NULL,
+	`tests_id` INTEGER(11),
 	PRIMARY KEY (`id`),
 	KEY `tests_id`(`tests_id`),
 	KEY `tipoopcion_id`(`tipoopcion_id`),

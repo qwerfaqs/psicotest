@@ -279,77 +279,62 @@ Escalas:
     tests_id: Tests_3
     nombre: A
     nombrelargo: Sociable
-    descripcion: ''
   Escalas_6:
     tests_id: Tests_3
     nombre: B
     nombrelargo: Rápido
-    descripcion: ''
   Escalas_7:
     tests_id: Tests_3
     nombre: C
     nombrelargo: Maduro
-    descripcion: ''
   Escalas_8:
     tests_id: Tests_3
     nombre: E
     nombrelargo: Dominante
-    descripcion: ''
   Escalas_9:
     tests_id: Tests_3
     nombre: F
     nombrelargo: Entusiasta
-    descripcion: ''
   Escalas_10:
     tests_id: Tests_3
     nombre: G
     nombrelargo: Constante
-    descripcion: ''
   Escalas_11:
     tests_id: Tests_3
     nombre: H
     nombrelargo: Aventurado
-    descripcion: ''
   Escalas_12:
     tests_id: Tests_3
     nombre: I
     nombrelargo: Pasional
-    descripcion: ''
   Escalas_13:
     tests_id: Tests_3
     nombre: L
     nombrelargo: Fiable
-    descripcion: ''
   Escalas_14:
     tests_id: Tests_3
     nombre: M
     nombrelargo: Convencional
-    descripcion: ''
   Escalas_15:
     tests_id: Tests_3
     nombre: N
     nombrelargo: Sofisticado
-    descripcion: ''
   Escalas_16:
     tests_id: Tests_3
     nombre: O
     nombrelargo: 'Confiado en si mismo'
-    descripcion: ''
   Escalas_17:
     tests_id: Tests_3
     nombre: Q1
     nombrelargo: Retomador
-    descripcion: ''
   Escalas_18:
     tests_id: Tests_3
     nombre: Q2
     nombrelargo: Autosuficiente
-    descripcion: ''
   Escalas_19:
     tests_id: Tests_3
     nombre: Q3
     nombrelargo: Controlado
-    descripcion: ''
   Escalas_20:
     tests_id: Tests_3
     nombre: Q4
@@ -2154,7 +2139,6 @@ Preguntas:
   Preguntas_582:
     tests_id: Tests_17
     imagen: 28.png
-    descripcion: ''
   Preguntas_583:
     tests_id: Tests_17
     imagen: 29.png
@@ -4550,12 +4534,10 @@ Respuestas:
     preguntas_id: Preguntas_1
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_5
-    descripcion: ''
   Respuestas_2:
     preguntas_id: Preguntas_2
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_25
-    descripcion: ''
   Respuestas_3:
     preguntas_id: Preguntas_178
     estados_id: Valoresdeverdad_1
