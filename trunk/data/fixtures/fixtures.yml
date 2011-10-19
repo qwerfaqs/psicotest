@@ -165,6 +165,9 @@ Tests:
     duracion: ''
     puntaje_aprobacion: '50'
     tipoopcion_id: Tipoopcion_4
+  Tests_27:
+    titulo: Monedas
+    tipoopcion_id: Tipoopcion_4
   Tests_1:
     titulo: domino
     historia: ''
@@ -241,6 +244,22 @@ Tests:
     titulo: matriceslogicas
     tipoopcion_id: Tipoopcion_4
     tests_id: Tests_20
+  Tests_24:
+    titulo: completaroraciones
+    tipoopcion_id: Tipoopcion_4
+    tests_id: Tests_20
+  Tests_25:
+    titulo: encajarfiguras
+    tipoopcion_id: Tipoopcion_4
+    tests_id: Tests_20
+  Tests_26:
+    titulo: problemasnumericos
+    tipoopcion_id: Tipoopcion_4
+    tests_id: Tests_20
+  Tests_28:
+    titulo: monedas
+    tipoopcion_id: Tipoopcion_4
+    tests_id: Tests_27
 Escalas:
   Escalas_1:
     tests_id: Tests_9
@@ -2646,6 +2665,126 @@ Preguntas:
   Preguntas_750:
     tests_id: Tests_23
     imagen: 32.png
+  Preguntas_751:
+    tests_id: Tests_28
+    imagen: 1.png
+  Preguntas_752:
+    tests_id: Tests_28
+    imagen: 2.png
+  Preguntas_753:
+    tests_id: Tests_28
+    imagen: 3.png
+  Preguntas_754:
+    tests_id: Tests_28
+    imagen: 4.png
+  Preguntas_755:
+    tests_id: Tests_28
+    imagen: 5.png
+  Preguntas_756:
+    tests_id: Tests_28
+    imagen: 6.png
+  Preguntas_757:
+    tests_id: Tests_28
+    imagen: 7.png
+  Preguntas_758:
+    tests_id: Tests_28
+    imagen: 8.png
+  Preguntas_759:
+    tests_id: Tests_28
+    imagen: 9.png
+  Preguntas_760:
+    tests_id: Tests_28
+    imagen: 10.png
+  Preguntas_761:
+    tests_id: Tests_28
+    imagen: 11.png
+  Preguntas_762:
+    tests_id: Tests_28
+    imagen: 12.png
+  Preguntas_763:
+    tests_id: Tests_28
+    imagen: 13.png
+  Preguntas_764:
+    tests_id: Tests_28
+    imagen: 14.png
+  Preguntas_765:
+    tests_id: Tests_28
+    imagen: 15.png
+  Preguntas_766:
+    tests_id: Tests_28
+    imagen: 16.png
+  Preguntas_767:
+    tests_id: Tests_28
+    imagen: 17.png
+  Preguntas_768:
+    tests_id: Tests_28
+    imagen: 18.png
+  Preguntas_769:
+    tests_id: Tests_28
+    imagen: 19.png
+  Preguntas_770:
+    tests_id: Tests_28
+    imagen: 20.png
+  Preguntas_771:
+    tests_id: Tests_28
+    imagen: 21.png
+  Preguntas_772:
+    tests_id: Tests_28
+    imagen: 22.png
+  Preguntas_773:
+    tests_id: Tests_28
+    imagen: 23.png
+  Preguntas_774:
+    tests_id: Tests_28
+    imagen: 24.png
+  Preguntas_775:
+    tests_id: Tests_28
+    imagen: 25.png
+  Preguntas_776:
+    tests_id: Tests_28
+    imagen: 26.png
+  Preguntas_777:
+    tests_id: Tests_28
+    imagen: 27.png
+  Preguntas_778:
+    tests_id: Tests_28
+    imagen: 28.png
+  Preguntas_779:
+    tests_id: Tests_28
+    imagen: 29.png
+  Preguntas_780:
+    tests_id: Tests_28
+    imagen: 30.png
+  Preguntas_781:
+    tests_id: Tests_28
+    imagen: 31.png
+  Preguntas_782:
+    tests_id: Tests_28
+    imagen: 32.png
+  Preguntas_783:
+    tests_id: Tests_28
+    imagen: 33.png
+  Preguntas_784:
+    tests_id: Tests_28
+    imagen: 34.png
+  Preguntas_785:
+    tests_id: Tests_28
+    imagen: 35.png
+  Preguntas_786:
+    tests_id: Tests_28
+    imagen: 36.png
+  Preguntas_787:
+    tests_id: Tests_28
+    imagen: 37.png
+  Preguntas_788:
+    tests_id: Tests_28
+    imagen: 38.png
+  Preguntas_789:
+    tests_id: Tests_28
+    imagen: 39.png
+  Preguntas_790:
+    tests_id: Tests_28
+    imagen: 40.png
 Opciones:
   Opciones_1:
     tipoopcion_id: Tipoopcion_1
@@ -3782,6 +3921,623 @@ Percentiles:
     percentil: '95'
     desde: '58'
     hasta: '660'
+  Percentiles_82:
+    escalas_id: Escalas_5
+    percentil: '1'
+    desde: '0'
+    hasta: '3'
+  Percentiles_83:
+    escalas_id: Escalas_5
+    percentil: '2'
+    desde: '4'
+    hasta: '5'
+  Percentiles_84:
+    escalas_id: Escalas_5
+    percentil: '3'
+    desde: '6'
+    hasta: '6'
+  Percentiles_85:
+    escalas_id: Escalas_5
+    percentil: '4'
+    desde: '7'
+    hasta: '7'
+  Percentiles_86:
+    escalas_id: Escalas_5
+    percentil: '5'
+    desde: '8'
+    hasta: '8'
+  Percentiles_87:
+    escalas_id: Escalas_5
+    percentil: '6'
+    desde: '9'
+    hasta: '9'
+  Percentiles_88:
+    escalas_id: Escalas_5
+    percentil: '7'
+    desde: '10'
+    hasta: '10'
+  Percentiles_89:
+    escalas_id: Escalas_5
+    percentil: '8'
+    desde: '11'
+    hasta: '11'
+  Percentiles_90:
+    escalas_id: Escalas_5
+    percentil: '9'
+    desde: '12'
+    hasta: '12'
+  Percentiles_91:
+    escalas_id: Escalas_6
+    percentil: '1'
+    desde: '0'
+    hasta: '1'
+  Percentiles_92:
+    escalas_id: Escalas_6
+    percentil: '2'
+    desde: '2'
+  Percentiles_93:
+    escalas_id: Escalas_6
+    percentil: '3'
+    desde: '3'
+  Percentiles_94:
+    escalas_id: Escalas_6
+    percentil: '4'
+    desde: '4'
+  Percentiles_95:
+    escalas_id: Escalas_6
+    percentil: '7'
+    desde: '5'
+  Percentiles_96:
+    escalas_id: Escalas_6
+    percentil: '9'
+    desde: '6'
+  Percentiles_97:
+    escalas_id: Escalas_7
+    percentil: '1'
+    desde: '0'
+    hasta: '3'
+  Percentiles_98:
+    escalas_id: Escalas_7
+    percentil: '2'
+    desde: '4'
+    hasta: '5'
+  Percentiles_99:
+    escalas_id: Escalas_7
+    percentil: '3'
+    desde: '6'
+  Percentiles_100:
+    escalas_id: Escalas_7
+    percentil: '4'
+    desde: '7'
+  Percentiles_101:
+    escalas_id: Escalas_7
+    percentil: '5'
+    desde: '8'
+  Percentiles_102:
+    escalas_id: Escalas_7
+    percentil: '6'
+    desde: '9'
+  Percentiles_103:
+    escalas_id: Escalas_7
+    percentil: '7'
+    desde: '10'
+  Percentiles_104:
+    escalas_id: Escalas_7
+    percentil: '8'
+    desde: '11'
+  Percentiles_105:
+    escalas_id: Escalas_7
+    percentil: '9'
+    desde: '12'
+  Percentiles_106:
+    escalas_id: Escalas_8
+    percentil: '1'
+    desde: '0'
+  Percentiles_107:
+    escalas_id: Escalas_8
+    percentil: '2'
+    desde: '1'
+  Percentiles_108:
+    escalas_id: Escalas_8
+    percentil: '3'
+    desde: '2'
+  Percentiles_109:
+    escalas_id: Escalas_8
+    percentil: '4'
+    desde: '3'
+  Percentiles_110:
+    escalas_id: Escalas_8
+    percentil: '5'
+    desde: '4'
+  Percentiles_111:
+    escalas_id: Escalas_8
+    percentil: '6'
+    desde: '5'
+    hasta: '6'
+  Percentiles_112:
+    escalas_id: Escalas_8
+    percentil: '7'
+    desde: '7'
+  Percentiles_113:
+    escalas_id: Escalas_8
+    percentil: '8'
+    desde: '8'
+    hasta: '9'
+  Percentiles_114:
+    escalas_id: Escalas_8
+    percentil: '9'
+    desde: '10'
+    hasta: '12'
+  Percentiles_124:
+    escalas_id: Escalas_9
+    percentil: '1'
+    desde: '0'
+    hasta: '2'
+  Percentiles_125:
+    escalas_id: Escalas_9
+    percentil: '2'
+    desde: '3'
+    hasta: '4'
+  Percentiles_126:
+    escalas_id: Escalas_9
+    percentil: '3'
+    desde: '5'
+  Percentiles_127:
+    escalas_id: Escalas_9
+    percentil: '4'
+    desde: '6'
+  Percentiles_128:
+    escalas_id: Escalas_9
+    percentil: '5'
+    desde: '7'
+  Percentiles_129:
+    escalas_id: Escalas_9
+    percentil: '6'
+    desde: '8'
+  Percentiles_130:
+    escalas_id: Escalas_9
+    percentil: '7'
+    desde: '9'
+  Percentiles_131:
+    escalas_id: Escalas_9
+    percentil: '8'
+    desde: '10'
+  Percentiles_132:
+    escalas_id: Escalas_9
+    percentil: '9'
+    desde: '11'
+    hasta: '12'
+  Percentiles_133:
+    escalas_id: Escalas_10
+    percentil: '1'
+    desde: '0'
+    hasta: '1'
+  Percentiles_134:
+    escalas_id: Escalas_10
+    percentil: '2'
+    desde: '2'
+    hasta: '3'
+  Percentiles_135:
+    escalas_id: Escalas_10
+    percentil: '3'
+    desde: '4'
+    hasta: '5'
+  Percentiles_136:
+    escalas_id: Escalas_10
+    percentil: '4'
+    desde: '6'
+  Percentiles_137:
+    escalas_id: Escalas_10
+    percentil: '5'
+    desde: '7'
+  Percentiles_138:
+    escalas_id: Escalas_10
+    percentil: '6'
+    desde: '8'
+  Percentiles_139:
+    escalas_id: Escalas_10
+    percentil: '7'
+    desde: '9'
+    hasta: '10'
+  Percentiles_140:
+    escalas_id: Escalas_10
+    percentil: '8'
+    desde: '11'
+  Percentiles_141:
+    escalas_id: Escalas_10
+    percentil: '9'
+    desde: '12'
+  Percentiles_142:
+    escalas_id: Escalas_11
+    percentil: '1'
+    desde: '0'
+    hasta: '3'
+  Percentiles_143:
+    escalas_id: Escalas_11
+    percentil: '2'
+    desde: '4'
+    hasta: '5'
+  Percentiles_144:
+    escalas_id: Escalas_11
+    percentil: '3'
+    desde: '6'
+  Percentiles_145:
+    escalas_id: Escalas_11
+    percentil: '4'
+    desde: '7'
+  Percentiles_146:
+    escalas_id: Escalas_11
+    percentil: '5'
+    desde: '8'
+  Percentiles_147:
+    escalas_id: Escalas_11
+    percentil: '6'
+    desde: '9'
+  Percentiles_148:
+    escalas_id: Escalas_11
+    percentil: '7'
+    desde: '10'
+  Percentiles_149:
+    escalas_id: Escalas_11
+    percentil: '8'
+    desde: '11'
+  Percentiles_150:
+    escalas_id: Escalas_11
+    percentil: '9'
+    desde: '12'
+  Percentiles_151:
+    escalas_id: Escalas_12
+    percentil: '1'
+    desde: '11'
+    hasta: '12'
+  Percentiles_152:
+    escalas_id: Escalas_12
+    percentil: '2'
+    desde: '10'
+  Percentiles_153:
+    escalas_id: Escalas_12
+    percentil: '3'
+    desde: '8'
+    hasta: '9'
+  Percentiles_154:
+    escalas_id: Escalas_12
+    percentil: '4'
+    desde: '7'
+  Percentiles_155:
+    escalas_id: Escalas_12
+    percentil: '5'
+    desde: '5'
+    hasta: '6'
+  Percentiles_156:
+    escalas_id: Escalas_12
+    percentil: '6'
+    desde: '4'
+  Percentiles_157:
+    escalas_id: Escalas_12
+    percentil: '7'
+    desde: '2'
+    hasta: '3'
+  Percentiles_158:
+    escalas_id: Escalas_12
+    percentil: '8'
+    desde: '1'
+  Percentiles_159:
+    escalas_id: Escalas_12
+    percentil: '9'
+    desde: '0'
+  Percentiles_160:
+    escalas_id: Escalas_13
+    percentil: '1'
+    desde: '11'
+    hasta: '12'
+  Percentiles_161:
+    escalas_id: Escalas_13
+    percentil: '2'
+    desde: '10'
+  Percentiles_162:
+    escalas_id: Escalas_13
+    percentil: '3'
+    desde: '8'
+    hasta: '9'
+  Percentiles_163:
+    escalas_id: Escalas_13
+    percentil: '4'
+    desde: '6'
+    hasta: '7'
+  Percentiles_164:
+    escalas_id: Escalas_13
+    percentil: '5'
+    desde: '5'
+  Percentiles_165:
+    escalas_id: Escalas_13
+    percentil: '6'
+    desde: '4'
+  Percentiles_166:
+    escalas_id: Escalas_13
+    percentil: '7'
+    desde: '2'
+    hasta: '3'
+  Percentiles_167:
+    escalas_id: Escalas_13
+    percentil: '8'
+    desde: '1'
+  Percentiles_168:
+    escalas_id: Escalas_13
+    percentil: '9'
+    desde: '0'
+  Percentiles_169:
+    escalas_id: Escalas_14
+    percentil: '1'
+    desde: '11'
+    hasta: '12'
+  Percentiles_170:
+    escalas_id: Escalas_14
+    percentil: '2'
+    desde: '9'
+    hasta: '10'
+  Percentiles_171:
+    escalas_id: Escalas_14
+    percentil: '3'
+    desde: '8'
+  Percentiles_172:
+    escalas_id: Escalas_14
+    percentil: '4'
+    desde: '7'
+  Percentiles_173:
+    escalas_id: Escalas_14
+    percentil: '5'
+    desde: '6'
+  Percentiles_174:
+    escalas_id: Escalas_14
+    percentil: '6'
+    desde: '5'
+  Percentiles_175:
+    escalas_id: Escalas_14
+    percentil: '7'
+    desde: '3'
+    hasta: '4'
+  Percentiles_176:
+    escalas_id: Escalas_14
+    percentil: '8'
+    desde: '2'
+  Percentiles_177:
+    escalas_id: Escalas_14
+    percentil: '9'
+    desde: '0'
+    hasta: '1'
+  Percentiles_178:
+    escalas_id: Escalas_15
+    percentil: '1'
+    desde: '0'
+    hasta: '1'
+  Percentiles_179:
+    escalas_id: Escalas_15
+    percentil: '2'
+    desde: '2'
+  Percentiles_180:
+    escalas_id: Escalas_15
+    percentil: '3'
+    desde: '3'
+  Percentiles_181:
+    escalas_id: Escalas_15
+    percentil: '4'
+    desde: '4'
+  Percentiles_182:
+    escalas_id: Escalas_15
+    percentil: '5'
+    desde: '5'
+  Percentiles_183:
+    escalas_id: Escalas_15
+    percentil: '6'
+    desde: '6'
+  Percentiles_184:
+    escalas_id: Escalas_15
+    percentil: '7'
+    desde: '7'
+  Percentiles_185:
+    escalas_id: Escalas_15
+    percentil: '8'
+    desde: '8'
+  Percentiles_186:
+    escalas_id: Escalas_15
+    percentil: '9'
+    desde: '9'
+  Percentiles_187:
+    escalas_id: Escalas_16
+    percentil: '1'
+    desde: '9'
+    hasta: '12'
+  Percentiles_188:
+    escalas_id: Escalas_16
+    percentil: '2'
+    desde: '10'
+    hasta: '11'
+  Percentiles_189:
+    escalas_id: Escalas_16
+    percentil: '3'
+    desde: '7'
+    hasta: '8'
+  Percentiles_190:
+    escalas_id: Escalas_16
+    percentil: '4'
+    desde: '6'
+  Percentiles_191:
+    escalas_id: Escalas_16
+    percentil: '5'
+    desde: '5'
+  Percentiles_192:
+    escalas_id: Escalas_16
+    percentil: '6'
+    desde: '3'
+  Percentiles_193:
+    escalas_id: Escalas_16
+    percentil: '7'
+    desde: '2'
+  Percentiles_194:
+    escalas_id: Escalas_16
+    percentil: '8'
+    desde: '1'
+  Percentiles_195:
+    escalas_id: Escalas_16
+    percentil: '9'
+    desde: '0'
+  Percentiles_196:
+    escalas_id: Escalas_17
+    percentil: '1'
+    desde: '0'
+  Percentiles_197:
+    escalas_id: Escalas_17
+    percentil: '2'
+    desde: '1'
+  Percentiles_198:
+    escalas_id: Escalas_17
+    percentil: '3'
+    desde: '2'
+    hasta: '3'
+  Percentiles_199:
+    escalas_id: Escalas_17
+    percentil: '4'
+    desde: '4'
+  Percentiles_200:
+    escalas_id: Escalas_17
+    percentil: '5'
+    desde: '5'
+  Percentiles_201:
+    escalas_id: Escalas_17
+    percentil: '6'
+    desde: '6'
+    hasta: '7'
+  Percentiles_202:
+    escalas_id: Escalas_17
+    percentil: '7'
+    desde: '8'
+  Percentiles_203:
+    escalas_id: Escalas_17
+    percentil: '8'
+    desde: '9'
+    hasta: '10'
+  Percentiles_204:
+    escalas_id: Escalas_17
+    percentil: '9'
+    desde: '11'
+    hasta: '12'
+  Percentiles_205:
+    escalas_id: Escalas_18
+    percentil: '1'
+    desde: '0'
+    hasta: '3'
+  Percentiles_206:
+    escalas_id: Escalas_18
+    percentil: '2'
+    desde: '4'
+    hasta: '5'
+  Percentiles_207:
+    escalas_id: Escalas_18
+    percentil: '3'
+    desde: '6'
+  Percentiles_208:
+    escalas_id: Escalas_18
+    percentil: '4'
+    desde: '7'
+  Percentiles_209:
+    escalas_id: Escalas_18
+    percentil: '5'
+    desde: '8'
+  Percentiles_210:
+    escalas_id: Escalas_18
+    percentil: '6'
+    desde: '9'
+  Percentiles_211:
+    escalas_id: Escalas_18
+    percentil: '7'
+    desde: '10'
+  Percentiles_212:
+    escalas_id: Escalas_18
+    percentil: '8'
+    desde: '11'
+  Percentiles_213:
+    escalas_id: Escalas_18
+    percentil: '9'
+    desde: '12'
+  Percentiles_214:
+    escalas_id: Escalas_19
+    percentil: '1'
+    desde: '0'
+    hasta: '2'
+  Percentiles_215:
+    escalas_id: Escalas_19
+    percentil: '2'
+    desde: '3'
+    hasta: '4'
+  Percentiles_216:
+    escalas_id: Escalas_19
+    percentil: '3'
+    desde: '5'
+  Percentiles_217:
+    escalas_id: Escalas_19
+    percentil: '4'
+    desde: '6'
+  Percentiles_218:
+    escalas_id: Escalas_19
+    percentil: '5'
+    desde: '7'
+    hasta: '8'
+  Percentiles_219:
+    escalas_id: Escalas_19
+    percentil: '6'
+    desde: '9'
+  Percentiles_220:
+    escalas_id: Escalas_19
+    percentil: '7'
+    desde: '10'
+  Percentiles_221:
+    escalas_id: Escalas_19
+    percentil: '8'
+    desde: '11'
+  Percentiles_222:
+    escalas_id: Escalas_19
+    percentil: '9'
+    desde: '12'
+  Percentiles_223:
+    escalas_id: Escalas_20
+    percentil: '1'
+    desde: '11'
+    hasta: '12'
+  Percentiles_224:
+    escalas_id: Escalas_20
+    percentil: '2'
+    desde: '9'
+    hasta: '10'
+  Percentiles_225:
+    escalas_id: Escalas_20
+    percentil: '3'
+    desde: '8'
+  Percentiles_226:
+    escalas_id: Escalas_20
+    percentil: '4'
+    desde: '6'
+    hasta: '7'
+  Percentiles_227:
+    escalas_id: Escalas_20
+    percentil: '5'
+    desde: '5'
+  Percentiles_228:
+    escalas_id: Escalas_20
+    percentil: '6'
+    desde: '4'
+  Percentiles_229:
+    escalas_id: Escalas_20
+    percentil: '7'
+    desde: '3'
+  Percentiles_230:
+    escalas_id: Escalas_20
+    percentil: '8'
+    desde: '2'
+  Percentiles_231:
+    escalas_id: Escalas_20
+    percentil: '9'
+    desde: '0'
+    hasta: '1'
 Valoresdeverdad:
   Valoresdeverdad_1:
     nombre: Correcta
@@ -13483,6 +14239,166 @@ Respuestas:
     preguntas_id: Preguntas_750
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_56
+  Respuestas_2047:
+    preguntas_id: Preguntas_751
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+  Respuestas_2048:
+    preguntas_id: Preguntas_752
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+  Respuestas_2049:
+    preguntas_id: Preguntas_753
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+  Respuestas_2050:
+    preguntas_id: Preguntas_754
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+  Respuestas_2051:
+    preguntas_id: Preguntas_755
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+  Respuestas_2052:
+    preguntas_id: Preguntas_756
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2053:
+    preguntas_id: Preguntas_757
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+  Respuestas_2054:
+    preguntas_id: Preguntas_758
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
+  Respuestas_2055:
+    preguntas_id: Preguntas_759
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2056:
+    preguntas_id: Preguntas_760
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+  Respuestas_2057:
+    preguntas_id: Preguntas_761
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
+  Respuestas_2058:
+    preguntas_id: Preguntas_762
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2059:
+    preguntas_id: Preguntas_763
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
+  Respuestas_2060:
+    preguntas_id: Preguntas_764
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+  Respuestas_2061:
+    preguntas_id: Preguntas_765
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
+  Respuestas_2062:
+    preguntas_id: Preguntas_766
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+  Respuestas_2063:
+    preguntas_id: Preguntas_767
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
+  Respuestas_2064:
+    preguntas_id: Preguntas_768
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+  Respuestas_2065:
+    preguntas_id: Preguntas_769
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
+  Respuestas_2066:
+    preguntas_id: Preguntas_770
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+  Respuestas_2067:
+    preguntas_id: Preguntas_771
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+  Respuestas_2068:
+    preguntas_id: Preguntas_772
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
+  Respuestas_2069:
+    preguntas_id: Preguntas_773
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+  Respuestas_2070:
+    preguntas_id: Preguntas_774
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+  Respuestas_2071:
+    preguntas_id: Preguntas_775
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+  Respuestas_2072:
+    preguntas_id: Preguntas_776
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+  Respuestas_2073:
+    preguntas_id: Preguntas_777
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+  Respuestas_2074:
+    preguntas_id: Preguntas_778
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
+  Respuestas_2075:
+    preguntas_id: Preguntas_779
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+  Respuestas_2076:
+    preguntas_id: Preguntas_780
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+  Respuestas_2077:
+    preguntas_id: Preguntas_781
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+  Respuestas_2078:
+    preguntas_id: Preguntas_782
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+  Respuestas_2079:
+    preguntas_id: Preguntas_783
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
+  Respuestas_2080:
+    preguntas_id: Preguntas_784
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+  Respuestas_2081:
+    preguntas_id: Preguntas_785
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
+  Respuestas_2082:
+    preguntas_id: Preguntas_786
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
+  Respuestas_2083:
+    preguntas_id: Preguntas_787
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+  Respuestas_2084:
+    preguntas_id: Preguntas_788
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+  Respuestas_2085:
+    preguntas_id: Preguntas_789
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+  Respuestas_2086:
+    preguntas_id: Preguntas_790
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
 Respuestasescalas:
   Respuestasescalas_1:
     respuestas_id: Respuestas_7
@@ -14647,3 +15563,233 @@ Resultados:
     aspirantes_id: Aspirantes_1
     puntaje: '1'
     estadosresultados_id: Estadosresultados_1
+Valoresperado:
+  Valoresperado_1:
+    perfil_id: Perfil_1
+    escalas_id: Escalas_5
+    mayorque: '3'
+    menorque: '6'
+  Valoresperado_2:
+    perfil_id: Perfil_2
+    escalas_id: Escalas_5
+    mayorque: '4'
+    menorque: '9'
+  Valoresperado_3:
+    perfil_id: Perfil_3
+    escalas_id: Escalas_5
+    mayorque: '5'
+    menorque: '7'
+  Valoresperado_4:
+    perfil_id: Perfil_1
+    escalas_id: Escalas_6
+    mayorque: '5'
+  Valoresperado_5:
+    perfil_id: Perfil_2
+    escalas_id: Escalas_6
+    mayorque: '5'
+  Valoresperado_6:
+    perfil_id: Perfil_3
+    escalas_id: Escalas_6
+    mayorque: '5'
+  Valoresperado_7:
+    perfil_id: Perfil_1
+    escalas_id: Escalas_7
+    mayorque: '5'
+  Valoresperado_8:
+    perfil_id: Perfil_2
+    escalas_id: Escalas_7
+    mayorque: '5'
+  Valoresperado_9:
+    perfil_id: Perfil_3
+    escalas_id: Escalas_7
+    mayorque: '5'
+  Valoresperado_10:
+    perfil_id: Perfil_1
+    escalas_id: Escalas_8
+    mayorque: '4'
+    menorque: '7'
+  Valoresperado_11:
+    perfil_id: Perfil_2
+    escalas_id: Escalas_8
+    mayorque: '5'
+    menorque: '9'
+  Valoresperado_12:
+    perfil_id: Perfil_3
+    escalas_id: Escalas_8
+    mayorque: '4'
+    menorque: '7'
+  Valoresperado_13:
+    perfil_id: Perfil_1
+    escalas_id: Escalas_9
+    mayorque: '5'
+    menorque: '7'
+  Valoresperado_14:
+    perfil_id: Perfil_2
+    escalas_id: Escalas_9
+    mayorque: '5'
+    menorque: '9'
+  Valoresperado_15:
+    perfil_id: Perfil_3
+    escalas_id: Escalas_9
+    mayorque: '5'
+    menorque: '7'
+  Valoresperado_16:
+    perfil_id: Perfil_1
+    escalas_id: Escalas_10
+    mayorque: '6'
+    menorque: '9'
+  Valoresperado_17:
+    perfil_id: Perfil_2
+    escalas_id: Escalas_10
+    mayorque: '6'
+    menorque: '9'
+  Valoresperado_18:
+    perfil_id: Perfil_3
+    escalas_id: Escalas_10
+    mayorque: '6'
+    menorque: '9'
+  Valoresperado_19:
+    perfil_id: Perfil_2
+    escalas_id: Escalas_11
+    mayorque: '5'
+    menorque: '9'
+  Valoresperado_20:
+    perfil_id: Perfil_3
+    escalas_id: Escalas_11
+    mayorque: '5'
+    menorque: '9'
+  Valoresperado_21:
+    perfil_id: Perfil_1
+    escalas_id: Escalas_12
+    mayorque: '4'
+    menorque: '8'
+  Valoresperado_22:
+    perfil_id: Perfil_2
+    escalas_id: Escalas_12
+    mayorque: '5'
+    menorque: '9'
+  Valoresperado_23:
+    perfil_id: Perfil_3
+    escalas_id: Escalas_12
+    mayorque: '4'
+    menorque: '8'
+  Valoresperado_24:
+    perfil_id: Perfil_1
+    escalas_id: Escalas_13
+    mayorque: '1'
+    menorque: '9'
+  Valoresperado_25:
+    perfil_id: Perfil_2
+    escalas_id: Escalas_13
+    mayorque: '1'
+    menorque: '9'
+  Valoresperado_26:
+    perfil_id: Perfil_3
+    escalas_id: Escalas_13
+    mayorque: '1'
+    menorque: '9'
+  Valoresperado_27:
+    perfil_id: Perfil_1
+    escalas_id: Escalas_14
+    mayorque: '1'
+    menorque: '9'
+  Valoresperado_28:
+    perfil_id: Perfil_2
+    escalas_id: Escalas_14
+    mayorque: '1'
+    menorque: '9'
+  Valoresperado_29:
+    perfil_id: Perfil_3
+    escalas_id: Escalas_14
+    mayorque: '1'
+    menorque: '9'
+  Valoresperado_30:
+    perfil_id: Perfil_1
+    escalas_id: Escalas_15
+    mayorque: '1'
+    menorque: '9'
+  Valoresperado_31:
+    perfil_id: Perfil_2
+    escalas_id: Escalas_15
+    mayorque: '1'
+    menorque: '9'
+  Valoresperado_32:
+    perfil_id: Perfil_3
+    escalas_id: Escalas_15
+    mayorque: '1'
+    menorque: '9'
+  Valoresperado_33:
+    perfil_id: Perfil_1
+    escalas_id: Escalas_16
+    mayorque: '4'
+    menorque: '7'
+  Valoresperado_34:
+    perfil_id: Perfil_2
+    escalas_id: Escalas_16
+    mayorque: '5'
+    menorque: '8'
+  Valoresperado_35:
+    perfil_id: Perfil_3
+    escalas_id: Escalas_16
+    mayorque: '4'
+    menorque: '7'
+  Valoresperado_36:
+    perfil_id: Perfil_1
+    escalas_id: Escalas_17
+    mayorque: '5'
+    menorque: '7'
+  Valoresperado_37:
+    perfil_id: Perfil_2
+    escalas_id: Escalas_17
+    mayorque: '5'
+    menorque: '8'
+  Valoresperado_38:
+    perfil_id: Perfil_3
+    escalas_id: Escalas_17
+    mayorque: '5'
+    menorque: '7'
+  Valoresperado_39:
+    perfil_id: Perfil_1
+    escalas_id: Escalas_18
+    mayorque: '4'
+    menorque: '7'
+  Valoresperado_40:
+    perfil_id: Perfil_2
+    escalas_id: Escalas_18
+    mayorque: '4'
+    menorque: '8'
+  Valoresperado_41:
+    perfil_id: Perfil_3
+    escalas_id: Escalas_18
+    mayorque: '4'
+    menorque: '7'
+  Valoresperado_42:
+    perfil_id: Perfil_1
+    escalas_id: Escalas_19
+    mayorque: '5'
+    menorque: '8'
+  Valoresperado_43:
+    perfil_id: Perfil_2
+    escalas_id: Escalas_19
+    mayorque: '5'
+    menorque: '8'
+  Valoresperado_44:
+    perfil_id: Perfil_3
+    escalas_id: Escalas_19
+    mayorque: '5'
+    menorque: '8'
+  Valoresperado_45:
+    perfil_id: Perfil_1
+    escalas_id: Escalas_20
+    mayorque: '5'
+    menorque: '9'
+  Valoresperado_46:
+    perfil_id: Perfil_2
+    escalas_id: Escalas_20
+    mayorque: '5'
+    menorque: '9'
+  Valoresperado_47:
+    perfil_id: Perfil_3
+    escalas_id: Escalas_20
+    mayorque: '5'
+    menorque: '9'

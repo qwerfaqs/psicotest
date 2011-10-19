@@ -17,7 +17,7 @@ class estadisticasActions extends sfActions
   */
     
     
-  public function executeIndex(sfWebRequest $request)
+  public function executeAprobados(sfWebRequest $request)
   {    
    $aprobados = ResultadosPeer::getCantAprobados();
    
@@ -76,6 +76,16 @@ foreach($aprobados as $suma):
 endforeach; 
 // Set some content to print
 $html = <<<EOD
+<style type="text/css">
+table {
+width: 635px;
+border: 0;
+background-color: #00CCFF;
+color: #000000;
+}
+
+</style>
+
 
 <table>     
     <thead>
@@ -84,8 +94,7 @@ $html = <<<EOD
         <th scope="col">Cantidad de aspirantes</th>            
        </tr>
      </thead>     
-<tbody>
-  
+<tbody>  
    $salida
    </tbody> 
   </table>
