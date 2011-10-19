@@ -2,7 +2,7 @@
      <ul class="listado">
           <?php foreach ($preguntas as $pregunta) : ?>
          <li>
-           <?php echo '<img height="100px" width="350px" src="/images/tests/'.$pregunta->getTests()->getTitulo().'/'.$pregunta->getImagen().'" />';                 
+           <?php echo '<img height="'.$alto.'" width="'.$ancho.'" src="/images/tests/'.$pregunta->getTests()->getTitulo().'/'.$pregunta->getImagen().'" />';                 
             ?>
              
           <form  action="<?php echo url_for('principal/check') ?>" method="post">

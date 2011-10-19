@@ -21,6 +21,7 @@ class test {
        }          
        Test::grabarPuntaje($puntaje,$respuestas[0]->getPruebas(), $respuestas[0]->getAspirantesId());       
   }
+  
   public static function aprobacion($prueba,$puntaje){      
      $aprobacion = $prueba->getTests()->getPuntajeAprobacion();
       
@@ -106,6 +107,27 @@ class test {
   public static function calcularraven($respuestas) {
       Test::calcularig2($respuestas);
   }
+  
+  public static function calcularmonedas($respuestas) 
+  {
+     $puntaje =0; 
+      
+       foreach($respuestas as $resultado)
+       {     
+         $pregunta = $resultado->getPreguntas();
+         $estado = sfConfig::get('app_activo');
+         $respuesta =  RespuestasPeer::getRespuesta($pregunta->getId(),$estado);
+        
+          if ($resultado->getOpciones()->getTexto()==$respuesta->getOpciones()->getTexto())
+          {
+            $puntaje = $puntaje + 1;  
+          }
+       }          
+       Test::grabarPuntaje($puntaje,$respuestas[0]->getPruebas(), $respuestas[0]->getAspirantesId());       
+            
+  }
+  
+  
   public static function grabarPuntaje($puntaje,$prueba,$aspirante) { 
        $result = ResultadosPeer::getResultado($prueba->getId(), $aspirante);              
        $puntaje = $puntaje + $result->getPuntaje();
@@ -113,5 +135,8 @@ class test {
        $result->setEstadosresultadosId(Test::aprobacion($prueba, $puntaje));             
        $result->save();             
   }
+  
+  
+  
 }
 ?>
