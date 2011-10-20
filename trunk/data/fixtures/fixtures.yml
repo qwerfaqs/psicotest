@@ -66,6 +66,18 @@ Evaluaciones:
     cantidad: '99'
     fecha: '2011-03-04'
     nombre: Monedero
+  Evaluaciones_8:
+    perfil_id: Perfil_1
+    estadosevaluaciones_id: Estadosevaluaciones_1
+    cantidad: '20'
+    fecha: '2009-01-02'
+    nombre: 'INTENCIDAD Y LA PUTA Q TE PARIO'
+  Evaluaciones_9:
+    perfil_id: Perfil_1
+    estadosevaluaciones_id: Estadosevaluaciones_1
+    cantidad: '5'
+    fecha: '2007-02-02'
+    nombre: '16'
 Aspirantes:
   Aspirantes_1:
     nombre: matias
@@ -141,6 +153,12 @@ Asistencias:
     aspirantes_id: Aspirantes_10
   Asistencias_9:
     evaluaciones_id: Evaluaciones_7
+    aspirantes_id: Aspirantes_1
+  Asistencias_10:
+    evaluaciones_id: Evaluaciones_8
+    aspirantes_id: Aspirantes_1
+  Asistencias_11:
+    evaluaciones_id: Evaluaciones_9
     aspirantes_id: Aspirantes_1
 Tipoopcion:
   Tipoopcion_1:
@@ -380,6 +398,25 @@ Escalas:
     tests_id: Tests_3
     nombre: Q4
     nombrelargo: Estable
+  Escalas_21:
+    tests_id: Tests_21
+    nombre: Rv
+    nombrelargo: ''
+  Escalas_22:
+    tests_id: Tests_22
+    nombre: Rn
+  Escalas_23:
+    tests_id: Tests_23
+    nombre: Re
+  Escalas_24:
+    tests_id: Tests_24
+    nombre: Sv
+  Escalas_25:
+    tests_id: Tests_25
+    nombre: Se
+  Escalas_26:
+    tests_id: Tests_26
+    nombre: Sn
 Estadopruebas:
   Estadopruebas_1:
     nombre: Inicializada
@@ -418,6 +455,14 @@ Pruebas:
   Pruebas_8:
     tests_id: Tests_27
     evaluaciones_id: Evaluaciones_7
+    estadopruebas_id: Estadopruebas_1
+  Pruebas_9:
+    tests_id: Tests_13
+    evaluaciones_id: Evaluaciones_8
+    estadopruebas_id: Estadopruebas_1
+  Pruebas_10:
+    tests_id: Tests_11
+    evaluaciones_id: Evaluaciones_9
     estadopruebas_id: Estadopruebas_1
 Preguntas:
   Preguntas_1:
@@ -3011,6 +3056,102 @@ Preguntas:
   Preguntas_854:
     tests_id: Tests_26
     imagen: 32.png
+  Preguntas_855:
+    tests_id: Tests_25
+    imagen: 1.png
+  Preguntas_856:
+    tests_id: Tests_25
+    imagen: 2.png
+  Preguntas_857:
+    tests_id: Tests_25
+    imagen: 3.png
+  Preguntas_858:
+    tests_id: Tests_25
+    imagen: 4.png
+  Preguntas_859:
+    tests_id: Tests_25
+    imagen: 5.png
+  Preguntas_860:
+    tests_id: Tests_25
+    imagen: 6.png
+  Preguntas_861:
+    tests_id: Tests_25
+    imagen: 7.png
+  Preguntas_862:
+    tests_id: Tests_25
+    imagen: 8.png
+  Preguntas_863:
+    tests_id: Tests_25
+    imagen: 9.png
+  Preguntas_864:
+    tests_id: Tests_25
+    imagen: 10.png
+  Preguntas_865:
+    tests_id: Tests_25
+    imagen: 11.png
+  Preguntas_866:
+    tests_id: Tests_25
+    imagen: 12.png
+  Preguntas_867:
+    tests_id: Tests_25
+    imagen: 13.png
+  Preguntas_868:
+    tests_id: Tests_25
+    imagen: 14.png
+  Preguntas_869:
+    tests_id: Tests_25
+    imagen: 15.png
+  Preguntas_870:
+    tests_id: Tests_25
+    imagen: 16.png
+  Preguntas_871:
+    tests_id: Tests_25
+    imagen: 17.png
+  Preguntas_872:
+    tests_id: Tests_25
+    imagen: 18.png
+  Preguntas_873:
+    tests_id: Tests_25
+    imagen: 19.png
+  Preguntas_874:
+    tests_id: Tests_25
+    imagen: 20.png
+  Preguntas_875:
+    tests_id: Tests_25
+    imagen: 21.png
+  Preguntas_876:
+    tests_id: Tests_25
+    imagen: 22.png
+  Preguntas_877:
+    tests_id: Tests_25
+    imagen: 23.png
+  Preguntas_878:
+    tests_id: Tests_25
+    imagen: 24.png
+  Preguntas_879:
+    tests_id: Tests_25
+    imagen: 25.png
+  Preguntas_880:
+    tests_id: Tests_25
+    imagen: 26.png
+  Preguntas_881:
+    tests_id: Tests_25
+    imagen: 27.png
+  Preguntas_882:
+    tests_id: Tests_25
+    imagen: 28.png
+  Preguntas_883:
+    tests_id: Tests_25
+    imagen: 29.png
+  Preguntas_884:
+    tests_id: Tests_25
+    imagen: 30.png
+  Preguntas_885:
+    tests_id: Tests_25
+    imagen: 31.png
+  Preguntas_886:
+    tests_id: Tests_25
+    imagen: 32.png
 Opciones:
   Opciones_1:
     tipoopcion_id: Tipoopcion_1
@@ -3234,1614 +3375,54 @@ Opciones:
 Resultadosparciales:
   Resultadosparciales_1:
     aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_595
-    opciones_id: Opciones_67
-  Resultadosparciales_2:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_596
-    opciones_id: Opciones_69
-  Resultadosparciales_3:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_597
-    opciones_id: Opciones_67
-  Resultadosparciales_4:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_598
-    opciones_id: Opciones_66
-  Resultadosparciales_5:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_599
-    opciones_id: Opciones_66
-  Resultadosparciales_6:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_600
-    opciones_id: Opciones_66
-  Resultadosparciales_7:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_601
-    opciones_id: Opciones_66
-  Resultadosparciales_8:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_602
-    opciones_id: Opciones_66
-  Resultadosparciales_9:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_603
-    opciones_id: Opciones_66
-  Resultadosparciales_10:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_604
-    opciones_id: Opciones_66
-  Resultadosparciales_11:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_605
-    opciones_id: Opciones_66
-  Resultadosparciales_12:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_606
-    opciones_id: Opciones_66
-  Resultadosparciales_13:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_607
-    opciones_id: Opciones_66
-  Resultadosparciales_14:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_608
-    opciones_id: Opciones_66
-  Resultadosparciales_15:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_609
-    opciones_id: Opciones_66
-  Resultadosparciales_16:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_610
-    opciones_id: Opciones_66
-  Resultadosparciales_17:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_611
-    opciones_id: Opciones_66
-  Resultadosparciales_18:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_612
-    opciones_id: Opciones_66
-  Resultadosparciales_19:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_613
-    opciones_id: Opciones_66
-  Resultadosparciales_20:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_614
-    opciones_id: Opciones_66
-  Resultadosparciales_21:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_615
-    opciones_id: Opciones_66
-  Resultadosparciales_22:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_616
-    opciones_id: Opciones_66
-  Resultadosparciales_23:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_617
-    opciones_id: Opciones_66
-  Resultadosparciales_24:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_618
-    opciones_id: Opciones_66
-  Resultadosparciales_25:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_619
-    opciones_id: Opciones_66
-  Resultadosparciales_26:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_620
-    opciones_id: Opciones_66
-  Resultadosparciales_27:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_621
-    opciones_id: Opciones_66
-  Resultadosparciales_28:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_622
-    opciones_id: Opciones_66
-  Resultadosparciales_29:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_623
-    opciones_id: Opciones_66
-  Resultadosparciales_30:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_624
-    opciones_id: Opciones_66
-  Resultadosparciales_31:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_625
-    opciones_id: Opciones_67
-  Resultadosparciales_32:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_625
-    opciones_id: Opciones_67
-  Resultadosparciales_33:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_626
-    opciones_id: Opciones_66
-  Resultadosparciales_34:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_627
-    opciones_id: Opciones_66
-  Resultadosparciales_35:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_628
-    opciones_id: Opciones_66
-  Resultadosparciales_36:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_629
-    opciones_id: Opciones_66
-  Resultadosparciales_37:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_630
-    opciones_id: Opciones_66
-  Resultadosparciales_38:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_631
-    opciones_id: Opciones_66
-  Resultadosparciales_39:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_632
-    opciones_id: Opciones_66
-  Resultadosparciales_40:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_633
-    opciones_id: Opciones_66
-  Resultadosparciales_41:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_634
-    opciones_id: Opciones_66
-  Resultadosparciales_42:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_635
-    opciones_id: Opciones_66
-  Resultadosparciales_43:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_636
-    opciones_id: Opciones_66
-  Resultadosparciales_44:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_637
-    opciones_id: Opciones_66
-  Resultadosparciales_45:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_638
-    opciones_id: Opciones_66
-  Resultadosparciales_46:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_639
-    opciones_id: Opciones_66
-  Resultadosparciales_47:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_640
-    opciones_id: Opciones_66
-  Resultadosparciales_48:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_641
-    opciones_id: Opciones_66
-  Resultadosparciales_49:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_642
-    opciones_id: Opciones_66
-  Resultadosparciales_50:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_643
-    opciones_id: Opciones_66
-  Resultadosparciales_51:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_644
-    opciones_id: Opciones_66
-  Resultadosparciales_52:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_645
-    opciones_id: Opciones_66
-  Resultadosparciales_53:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_646
-    opciones_id: Opciones_66
-  Resultadosparciales_54:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_647
-    opciones_id: Opciones_66
-  Resultadosparciales_55:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_648
-    opciones_id: Opciones_66
-  Resultadosparciales_56:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_649
-    opciones_id: Opciones_66
-  Resultadosparciales_57:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_650
-    opciones_id: Opciones_66
-  Resultadosparciales_58:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_651
-    opciones_id: Opciones_66
-  Resultadosparciales_59:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_652
-    opciones_id: Opciones_66
-  Resultadosparciales_60:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_653
-    opciones_id: Opciones_66
-  Resultadosparciales_61:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_6
-    preguntas_id: Preguntas_654
-    opciones_id: Opciones_66
-  Resultadosparciales_62:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_313
-    opciones_id: Opciones_56
-  Resultadosparciales_63:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_314
-    opciones_id: Opciones_55
-  Resultadosparciales_64:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_370
-    opciones_id: Opciones_55
-  Resultadosparciales_65:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_371
-    opciones_id: Opciones_55
-  Resultadosparciales_66:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_372
-    opciones_id: Opciones_55
-  Resultadosparciales_67:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_373
-    opciones_id: Opciones_55
-  Resultadosparciales_68:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_374
-    opciones_id: Opciones_55
-  Resultadosparciales_69:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_375
-    opciones_id: Opciones_55
-  Resultadosparciales_70:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_376
-    opciones_id: Opciones_55
-  Resultadosparciales_71:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_377
-    opciones_id: Opciones_55
-  Resultadosparciales_72:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_378
-    opciones_id: Opciones_55
-  Resultadosparciales_73:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_379
-    opciones_id: Opciones_55
-  Resultadosparciales_74:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_380
-    opciones_id: Opciones_55
-  Resultadosparciales_75:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_381
-    opciones_id: Opciones_55
-  Resultadosparciales_76:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_382
-    opciones_id: Opciones_55
-  Resultadosparciales_77:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_383
-    opciones_id: Opciones_55
-  Resultadosparciales_78:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_384
-    opciones_id: Opciones_55
-  Resultadosparciales_79:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_385
-    opciones_id: Opciones_55
-  Resultadosparciales_80:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_386
-    opciones_id: Opciones_55
-  Resultadosparciales_81:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_387
-    opciones_id: Opciones_55
-  Resultadosparciales_82:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_388
-    opciones_id: Opciones_55
-  Resultadosparciales_83:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_389
-    opciones_id: Opciones_55
-  Resultadosparciales_84:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_390
-    opciones_id: Opciones_55
-  Resultadosparciales_85:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_391
-    opciones_id: Opciones_55
-  Resultadosparciales_86:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_392
-    opciones_id: Opciones_55
-  Resultadosparciales_87:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_393
-    opciones_id: Opciones_55
-  Resultadosparciales_88:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_394
-    opciones_id: Opciones_55
-  Resultadosparciales_89:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_395
-    opciones_id: Opciones_55
-  Resultadosparciales_90:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_396
-    opciones_id: Opciones_55
-  Resultadosparciales_91:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_397
-    opciones_id: Opciones_55
-  Resultadosparciales_92:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_398
-    opciones_id: Opciones_55
-  Resultadosparciales_93:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_399
-    opciones_id: Opciones_55
-  Resultadosparciales_94:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_400
-    opciones_id: Opciones_55
-  Resultadosparciales_95:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_401
-    opciones_id: Opciones_55
-  Resultadosparciales_96:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_402
-    opciones_id: Opciones_55
-  Resultadosparciales_97:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_403
-    opciones_id: Opciones_55
-  Resultadosparciales_98:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_404
-    opciones_id: Opciones_55
-  Resultadosparciales_99:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_405
-    opciones_id: Opciones_55
-  Resultadosparciales_100:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_406
-    opciones_id: Opciones_55
-  Resultadosparciales_101:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_407
-    opciones_id: Opciones_55
-  Resultadosparciales_102:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_408
-    opciones_id: Opciones_55
-  Resultadosparciales_103:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_409
-    opciones_id: Opciones_55
-  Resultadosparciales_104:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_410
-    opciones_id: Opciones_55
-  Resultadosparciales_105:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_411
-    opciones_id: Opciones_55
-  Resultadosparciales_106:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_412
-    opciones_id: Opciones_55
-  Resultadosparciales_107:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_413
-    opciones_id: Opciones_55
-  Resultadosparciales_108:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_414
-    opciones_id: Opciones_55
-  Resultadosparciales_109:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_415
-    opciones_id: Opciones_55
-  Resultadosparciales_110:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_416
-    opciones_id: Opciones_55
-  Resultadosparciales_111:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_5
-    preguntas_id: Preguntas_474
-    opciones_id: Opciones_55
-  Resultadosparciales_112:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
+    pruebas_id: Pruebas_10
     preguntas_id: Preguntas_178
     opciones_id: Opciones_52
-  Resultadosparciales_113:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
+  Resultadosparciales_2:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
     preguntas_id: Preguntas_179
     opciones_id: Opciones_52
-  Resultadosparciales_114:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
+  Resultadosparciales_3:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
     preguntas_id: Preguntas_180
-    opciones_id: Opciones_54
-  Resultadosparciales_115:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
+    opciones_id: Opciones_52
+  Resultadosparciales_4:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
     preguntas_id: Preguntas_181
     opciones_id: Opciones_52
-  Resultadosparciales_116:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
+  Resultadosparciales_5:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
     preguntas_id: Preguntas_182
     opciones_id: Opciones_52
-  Resultadosparciales_117:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
+  Resultadosparciales_6:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
     preguntas_id: Preguntas_183
-    opciones_id: Opciones_52
-  Resultadosparciales_118:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
+    opciones_id: Opciones_53
+  Resultadosparciales_7:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
     preguntas_id: Preguntas_184
-    opciones_id: Opciones_52
-  Resultadosparciales_119:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
+    opciones_id: Opciones_53
+  Resultadosparciales_8:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
     preguntas_id: Preguntas_185
-    opciones_id: Opciones_54
-  Resultadosparciales_120:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
+    opciones_id: Opciones_53
+  Resultadosparciales_9:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
     preguntas_id: Preguntas_186
     opciones_id: Opciones_53
-  Resultadosparciales_121:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
+  Resultadosparciales_10:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_10
     preguntas_id: Preguntas_187
-    opciones_id: Opciones_52
-  Resultadosparciales_122:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_188
     opciones_id: Opciones_53
-  Resultadosparciales_123:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_189
-    opciones_id: Opciones_54
-  Resultadosparciales_124:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_190
-    opciones_id: Opciones_53
-  Resultadosparciales_125:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_191
-    opciones_id: Opciones_54
-  Resultadosparciales_126:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_192
-    opciones_id: Opciones_52
-  Resultadosparciales_127:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_193
-    opciones_id: Opciones_52
-  Resultadosparciales_128:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_194
-    opciones_id: Opciones_52
-  Resultadosparciales_129:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_195
-    opciones_id: Opciones_54
-  Resultadosparciales_130:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_196
-    opciones_id: Opciones_52
-  Resultadosparciales_131:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_197
-    opciones_id: Opciones_53
-  Resultadosparciales_132:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_198
-    opciones_id: Opciones_52
-  Resultadosparciales_133:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_199
-    opciones_id: Opciones_52
-  Resultadosparciales_134:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_200
-    opciones_id: Opciones_54
-  Resultadosparciales_135:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_201
-    opciones_id: Opciones_52
-  Resultadosparciales_136:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_202
-    opciones_id: Opciones_52
-  Resultadosparciales_137:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_203
-    opciones_id: Opciones_52
-  Resultadosparciales_138:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_204
-    opciones_id: Opciones_52
-  Resultadosparciales_139:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_205
-    opciones_id: Opciones_52
-  Resultadosparciales_140:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_206
-    opciones_id: Opciones_52
-  Resultadosparciales_141:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_207
-    opciones_id: Opciones_52
-  Resultadosparciales_142:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_208
-    opciones_id: Opciones_52
-  Resultadosparciales_143:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_209
-    opciones_id: Opciones_52
-  Resultadosparciales_144:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_210
-    opciones_id: Opciones_52
-  Resultadosparciales_145:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_211
-    opciones_id: Opciones_52
-  Resultadosparciales_146:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_212
-    opciones_id: Opciones_52
-  Resultadosparciales_147:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_213
-    opciones_id: Opciones_52
-  Resultadosparciales_148:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_214
-    opciones_id: Opciones_52
-  Resultadosparciales_149:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_215
-    opciones_id: Opciones_52
-  Resultadosparciales_150:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_216
-    opciones_id: Opciones_52
-  Resultadosparciales_151:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_217
-    opciones_id: Opciones_52
-  Resultadosparciales_152:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_218
-    opciones_id: Opciones_52
-  Resultadosparciales_153:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_219
-    opciones_id: Opciones_52
-  Resultadosparciales_154:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_220
-    opciones_id: Opciones_52
-  Resultadosparciales_155:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_221
-    opciones_id: Opciones_52
-  Resultadosparciales_156:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_222
-    opciones_id: Opciones_52
-  Resultadosparciales_157:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_223
-    opciones_id: Opciones_52
-  Resultadosparciales_158:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_224
-    opciones_id: Opciones_52
-  Resultadosparciales_159:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_225
-    opciones_id: Opciones_52
-  Resultadosparciales_160:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_226
-    opciones_id: Opciones_52
-  Resultadosparciales_161:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_227
-    opciones_id: Opciones_52
-  Resultadosparciales_162:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_228
-    opciones_id: Opciones_52
-  Resultadosparciales_163:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_229
-    opciones_id: Opciones_52
-  Resultadosparciales_164:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_230
-    opciones_id: Opciones_52
-  Resultadosparciales_165:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_231
-    opciones_id: Opciones_52
-  Resultadosparciales_166:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_232
-    opciones_id: Opciones_52
-  Resultadosparciales_167:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_233
-    opciones_id: Opciones_52
-  Resultadosparciales_168:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_234
-    opciones_id: Opciones_52
-  Resultadosparciales_169:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_235
-    opciones_id: Opciones_52
-  Resultadosparciales_170:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_236
-    opciones_id: Opciones_52
-  Resultadosparciales_171:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_237
-    opciones_id: Opciones_52
-  Resultadosparciales_172:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_238
-    opciones_id: Opciones_52
-  Resultadosparciales_173:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_239
-    opciones_id: Opciones_52
-  Resultadosparciales_174:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_240
-    opciones_id: Opciones_52
-  Resultadosparciales_175:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_241
-    opciones_id: Opciones_52
-  Resultadosparciales_176:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_242
-    opciones_id: Opciones_52
-  Resultadosparciales_177:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_243
-    opciones_id: Opciones_52
-  Resultadosparciales_178:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_244
-    opciones_id: Opciones_52
-  Resultadosparciales_179:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_245
-    opciones_id: Opciones_52
-  Resultadosparciales_180:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_246
-    opciones_id: Opciones_52
-  Resultadosparciales_181:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_247
-    opciones_id: Opciones_52
-  Resultadosparciales_182:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_248
-    opciones_id: Opciones_52
-  Resultadosparciales_183:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_249
-    opciones_id: Opciones_52
-  Resultadosparciales_184:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_250
-    opciones_id: Opciones_52
-  Resultadosparciales_185:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_251
-    opciones_id: Opciones_52
-  Resultadosparciales_186:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_252
-    opciones_id: Opciones_52
-  Resultadosparciales_187:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_253
-    opciones_id: Opciones_52
-  Resultadosparciales_188:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_254
-    opciones_id: Opciones_52
-  Resultadosparciales_189:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_255
-    opciones_id: Opciones_52
-  Resultadosparciales_190:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_256
-    opciones_id: Opciones_52
-  Resultadosparciales_191:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_257
-    opciones_id: Opciones_52
-  Resultadosparciales_192:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_258
-    opciones_id: Opciones_52
-  Resultadosparciales_193:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_259
-    opciones_id: Opciones_52
-  Resultadosparciales_194:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_260
-    opciones_id: Opciones_52
-  Resultadosparciales_195:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_261
-    opciones_id: Opciones_52
-  Resultadosparciales_196:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_262
-    opciones_id: Opciones_52
-  Resultadosparciales_197:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_263
-    opciones_id: Opciones_52
-  Resultadosparciales_198:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_264
-    opciones_id: Opciones_52
-  Resultadosparciales_199:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_265
-    opciones_id: Opciones_52
-  Resultadosparciales_200:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_266
-    opciones_id: Opciones_52
-  Resultadosparciales_201:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_267
-    opciones_id: Opciones_52
-  Resultadosparciales_202:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_268
-    opciones_id: Opciones_52
-  Resultadosparciales_203:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_269
-    opciones_id: Opciones_52
-  Resultadosparciales_204:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_270
-    opciones_id: Opciones_52
-  Resultadosparciales_205:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_271
-    opciones_id: Opciones_52
-  Resultadosparciales_206:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_272
-    opciones_id: Opciones_52
-  Resultadosparciales_207:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_273
-    opciones_id: Opciones_52
-  Resultadosparciales_208:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_274
-    opciones_id: Opciones_52
-  Resultadosparciales_209:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_275
-    opciones_id: Opciones_52
-  Resultadosparciales_210:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_276
-    opciones_id: Opciones_52
-  Resultadosparciales_211:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_277
-    opciones_id: Opciones_52
-  Resultadosparciales_212:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_278
-    opciones_id: Opciones_52
-  Resultadosparciales_213:
-    aspirantes_id: Aspirantes_2
-    pruebas_id: Pruebas_7
-    preguntas_id: Preguntas_279
-    opciones_id: Opciones_52
-  Resultadosparciales_214:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_751
-    opciones_id: Opciones_56
-  Resultadosparciales_215:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_752
-    opciones_id: Opciones_58
-  Resultadosparciales_216:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_753
-    opciones_id: Opciones_55
-  Resultadosparciales_217:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_754
-    opciones_id: Opciones_55
-  Resultadosparciales_218:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_755
-    opciones_id: Opciones_55
-  Resultadosparciales_219:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_756
-    opciones_id: Opciones_55
-  Resultadosparciales_220:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_757
-    opciones_id: Opciones_55
-  Resultadosparciales_221:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_758
-    opciones_id: Opciones_55
-  Resultadosparciales_222:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_759
-    opciones_id: Opciones_55
-  Resultadosparciales_223:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_760
-    opciones_id: Opciones_55
-  Resultadosparciales_224:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_761
-    opciones_id: Opciones_55
-  Resultadosparciales_225:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_762
-    opciones_id: Opciones_55
-  Resultadosparciales_226:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_763
-    opciones_id: Opciones_55
-  Resultadosparciales_227:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_764
-    opciones_id: Opciones_55
-  Resultadosparciales_228:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_765
-    opciones_id: Opciones_55
-  Resultadosparciales_229:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_766
-    opciones_id: Opciones_55
-  Resultadosparciales_230:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_767
-    opciones_id: Opciones_55
-  Resultadosparciales_231:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_768
-    opciones_id: Opciones_55
-  Resultadosparciales_232:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_769
-    opciones_id: Opciones_55
-  Resultadosparciales_233:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_770
-    opciones_id: Opciones_55
-  Resultadosparciales_234:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_771
-    opciones_id: Opciones_55
-  Resultadosparciales_235:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_772
-    opciones_id: Opciones_55
-  Resultadosparciales_236:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_773
-    opciones_id: Opciones_55
-  Resultadosparciales_237:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_774
-    opciones_id: Opciones_55
-  Resultadosparciales_238:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_775
-    opciones_id: Opciones_55
-  Resultadosparciales_239:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_776
-    opciones_id: Opciones_55
-  Resultadosparciales_240:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_777
-    opciones_id: Opciones_55
-  Resultadosparciales_241:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_778
-    opciones_id: Opciones_55
-  Resultadosparciales_242:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_779
-    opciones_id: Opciones_55
-  Resultadosparciales_243:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_780
-    opciones_id: Opciones_55
-  Resultadosparciales_244:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_781
-    opciones_id: Opciones_55
-  Resultadosparciales_245:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_782
-    opciones_id: Opciones_55
-  Resultadosparciales_246:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_783
-    opciones_id: Opciones_55
-  Resultadosparciales_247:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_784
-    opciones_id: Opciones_55
-  Resultadosparciales_248:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_785
-    opciones_id: Opciones_55
-  Resultadosparciales_249:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_786
-    opciones_id: Opciones_55
-  Resultadosparciales_250:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_787
-    opciones_id: Opciones_55
-  Resultadosparciales_251:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_788
-    opciones_id: Opciones_55
-  Resultadosparciales_252:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_789
-    opciones_id: Opciones_55
-  Resultadosparciales_253:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_790
-    opciones_id: Opciones_55
-  Resultadosparciales_254:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_751
-    opciones_id: Opciones_56
-  Resultadosparciales_255:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_752
-    opciones_id: Opciones_57
-  Resultadosparciales_256:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_753
-    opciones_id: Opciones_57
-  Resultadosparciales_257:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_754
-    opciones_id: Opciones_57
-  Resultadosparciales_258:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_755
-    opciones_id: Opciones_57
-  Resultadosparciales_259:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_756
-    opciones_id: Opciones_58
-  Resultadosparciales_260:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_757
-    opciones_id: Opciones_58
-  Resultadosparciales_261:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_758
-    opciones_id: Opciones_58
-  Resultadosparciales_262:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_759
-    opciones_id: Opciones_56
-  Resultadosparciales_263:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_760
-    opciones_id: Opciones_59
-  Resultadosparciales_264:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_761
-    opciones_id: Opciones_56
-  Resultadosparciales_265:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_762
-    opciones_id: Opciones_58
-  Resultadosparciales_266:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_763
-    opciones_id: Opciones_58
-  Resultadosparciales_267:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_764
-    opciones_id: Opciones_58
-  Resultadosparciales_268:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_765
-    opciones_id: Opciones_57
-  Resultadosparciales_269:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_766
-    opciones_id: Opciones_57
-  Resultadosparciales_270:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_767
-    opciones_id: Opciones_57
-  Resultadosparciales_271:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_768
-    opciones_id: Opciones_59
-  Resultadosparciales_272:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_769
-    opciones_id: Opciones_58
-  Resultadosparciales_273:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_770
-    opciones_id: Opciones_59
-  Resultadosparciales_274:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_771
-    opciones_id: Opciones_59
-  Resultadosparciales_275:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_772
-    opciones_id: Opciones_58
-  Resultadosparciales_276:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_773
-    opciones_id: Opciones_58
-  Resultadosparciales_277:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_774
-    opciones_id: Opciones_58
-  Resultadosparciales_278:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_775
-    opciones_id: Opciones_58
-  Resultadosparciales_279:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_776
-    opciones_id: Opciones_57
-  Resultadosparciales_280:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_777
-    opciones_id: Opciones_58
-  Resultadosparciales_281:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_778
-    opciones_id: Opciones_59
-  Resultadosparciales_282:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_779
-    opciones_id: Opciones_57
-  Resultadosparciales_283:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_780
-    opciones_id: Opciones_57
-  Resultadosparciales_284:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_781
-    opciones_id: Opciones_57
-  Resultadosparciales_285:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_782
-    opciones_id: Opciones_56
-  Resultadosparciales_286:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_783
-    opciones_id: Opciones_57
-  Resultadosparciales_287:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_784
-    opciones_id: Opciones_57
-  Resultadosparciales_288:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_785
-    opciones_id: Opciones_59
-  Resultadosparciales_289:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_786
-    opciones_id: Opciones_55
-  Resultadosparciales_290:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_787
-    opciones_id: Opciones_57
-  Resultadosparciales_291:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_788
-    opciones_id: Opciones_58
-  Resultadosparciales_292:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_789
-    opciones_id: Opciones_58
-  Resultadosparciales_293:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_790
-    opciones_id: Opciones_57
-  Resultadosparciales_294:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_751
-    opciones_id: Opciones_55
-  Resultadosparciales_295:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_752
-    opciones_id: Opciones_56
-  Resultadosparciales_296:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_753
-    opciones_id: Opciones_55
-  Resultadosparciales_297:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_754
-    opciones_id: Opciones_55
-  Resultadosparciales_298:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_755
-    opciones_id: Opciones_55
-  Resultadosparciales_299:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_755
-    opciones_id: Opciones_55
-  Resultadosparciales_300:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_756
-    opciones_id: Opciones_55
-  Resultadosparciales_301:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_757
-    opciones_id: Opciones_55
-  Resultadosparciales_302:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_758
-    opciones_id: Opciones_55
-  Resultadosparciales_303:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_759
-    opciones_id: Opciones_55
-  Resultadosparciales_304:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_760
-    opciones_id: Opciones_55
-  Resultadosparciales_305:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_761
-    opciones_id: Opciones_55
-  Resultadosparciales_306:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_762
-    opciones_id: Opciones_55
-  Resultadosparciales_307:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_763
-    opciones_id: Opciones_55
-  Resultadosparciales_308:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_764
-    opciones_id: Opciones_55
-  Resultadosparciales_309:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_765
-    opciones_id: Opciones_55
-  Resultadosparciales_310:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_766
-    opciones_id: Opciones_55
-  Resultadosparciales_311:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_767
-    opciones_id: Opciones_55
-  Resultadosparciales_312:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_768
-    opciones_id: Opciones_55
-  Resultadosparciales_313:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_769
-    opciones_id: Opciones_55
-  Resultadosparciales_314:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_770
-    opciones_id: Opciones_55
-  Resultadosparciales_315:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_771
-    opciones_id: Opciones_55
-  Resultadosparciales_316:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_772
-    opciones_id: Opciones_55
-  Resultadosparciales_317:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_773
-    opciones_id: Opciones_55
-  Resultadosparciales_318:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_774
-    opciones_id: Opciones_55
-  Resultadosparciales_319:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_775
-    opciones_id: Opciones_55
-  Resultadosparciales_320:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_776
-    opciones_id: Opciones_55
-  Resultadosparciales_321:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_777
-    opciones_id: Opciones_55
-  Resultadosparciales_322:
-    aspirantes_id: Aspirantes_1
-    pruebas_id: Pruebas_8
-    preguntas_id: Preguntas_778
-    opciones_id: Opciones_55
 Percentiles:
   Percentiles_1:
     escalas_id: Escalas_1
@@ -5819,6 +4400,535 @@ Percentiles:
     percentil: '9'
     desde: '0'
     hasta: '1'
+  Percentiles_232:
+    escalas_id: Escalas_21
+    percentil: '1'
+    desde: '0'
+    hasta: '7'
+  Percentiles_233:
+    escalas_id: Escalas_21
+    percentil: '2'
+    desde: '8'
+  Percentiles_234:
+    escalas_id: Escalas_21
+    percentil: '3'
+    desde: '9'
+  Percentiles_235:
+    escalas_id: Escalas_21
+    percentil: '5'
+    desde: '10'
+  Percentiles_236:
+    escalas_id: Escalas_21
+    percentil: '6'
+    desde: '11'
+  Percentiles_237:
+    escalas_id: Escalas_21
+    percentil: '9'
+    desde: '12'
+  Percentiles_238:
+    escalas_id: Escalas_21
+    percentil: '13'
+    desde: '13'
+  Percentiles_239:
+    escalas_id: Escalas_21
+    percentil: '18'
+    desde: '14'
+  Percentiles_240:
+    escalas_id: Escalas_21
+    percentil: '23'
+    desde: '15'
+  Percentiles_241:
+    escalas_id: Escalas_21
+    percentil: '27'
+    desde: '16'
+  Percentiles_242:
+    escalas_id: Escalas_21
+    percentil: '34'
+    desde: '17'
+  Percentiles_243:
+    escalas_id: Escalas_21
+    percentil: '41'
+    desde: '18'
+  Percentiles_244:
+    escalas_id: Escalas_21
+    percentil: '46'
+    desde: '19'
+  Percentiles_245:
+    escalas_id: Escalas_21
+    percentil: '54'
+    desde: '20'
+  Percentiles_246:
+    escalas_id: Escalas_21
+    percentil: '62'
+    desde: '21'
+  Percentiles_247:
+    escalas_id: Escalas_21
+    percentil: '73'
+    desde: '22'
+  Percentiles_248:
+    escalas_id: Escalas_21
+    percentil: '77'
+    desde: '23'
+  Percentiles_249:
+    escalas_id: Escalas_21
+    percentil: '82'
+    desde: '24'
+  Percentiles_250:
+    escalas_id: Escalas_21
+    percentil: '87'
+    desde: '25'
+  Percentiles_251:
+    escalas_id: Escalas_21
+    percentil: '92'
+    desde: '26'
+  Percentiles_252:
+    escalas_id: Escalas_21
+    percentil: '94'
+    desde: '27'
+  Percentiles_253:
+    escalas_id: Escalas_21
+    percentil: '97'
+    desde: '28'
+  Percentiles_254:
+    escalas_id: Escalas_21
+    percentil: '98'
+    desde: '29'
+  Percentiles_255:
+    escalas_id: Escalas_21
+    percentil: '99'
+    desde: '30'
+    hasta: '32'
+  Percentiles_256:
+    escalas_id: Escalas_22
+    percentil: '1'
+    desde: '0'
+    hasta: '8'
+  Percentiles_257:
+    escalas_id: Escalas_22
+    percentil: '2'
+    desde: '9'
+  Percentiles_258:
+    escalas_id: Escalas_22
+    percentil: '4'
+    desde: '10'
+  Percentiles_259:
+    escalas_id: Escalas_22
+    percentil: '6'
+    desde: '11'
+  Percentiles_260:
+    escalas_id: Escalas_22
+    percentil: '13'
+    desde: '12'
+  Percentiles_261:
+    escalas_id: Escalas_22
+    percentil: '20'
+    desde: '13'
+  Percentiles_262:
+    escalas_id: Escalas_22
+    percentil: '27'
+    desde: '14'
+  Percentiles_263:
+    escalas_id: Escalas_22
+    percentil: '30'
+    desde: '15'
+  Percentiles_264:
+    escalas_id: Escalas_22
+    percentil: '38'
+    desde: '16'
+  Percentiles_265:
+    escalas_id: Escalas_22
+    percentil: '41'
+    desde: '17'
+  Percentiles_266:
+    escalas_id: Escalas_22
+    percentil: '50'
+    desde: '18'
+  Percentiles_267:
+    escalas_id: Escalas_22
+    percentil: '59'
+    desde: '19'
+  Percentiles_268:
+    escalas_id: Escalas_22
+    percentil: '70'
+    desde: '20'
+  Percentiles_269:
+    escalas_id: Escalas_22
+    percentil: '73'
+    desde: '21'
+  Percentiles_270:
+    escalas_id: Escalas_22
+    percentil: '77'
+    desde: '22'
+  Percentiles_271:
+    escalas_id: Escalas_22
+    percentil: '82'
+    desde: '23'
+  Percentiles_272:
+    escalas_id: Escalas_22
+    percentil: '89'
+    desde: '24'
+  Percentiles_273:
+    escalas_id: Escalas_22
+    percentil: '94'
+    desde: '25'
+  Percentiles_274:
+    escalas_id: Escalas_22
+    percentil: '96'
+    desde: '26'
+  Percentiles_275:
+    escalas_id: Escalas_22
+    percentil: '97'
+    desde: '27'
+  Percentiles_276:
+    escalas_id: Escalas_22
+    percentil: '99'
+    desde: '28'
+    hasta: '32'
+  Percentiles_277:
+    escalas_id: Escalas_23
+    desde: '0'
+    hasta: '5'
+  Percentiles_278:
+    escalas_id: Escalas_23
+    desde: '6'
+    hasta: '7'
+  Percentiles_279:
+    escalas_id: Escalas_23
+    desde: '8'
+  Percentiles_280:
+    escalas_id: Escalas_23
+    desde: '9'
+  Percentiles_281:
+    escalas_id: Escalas_23
+    desde: '10'
+  Percentiles_282:
+    escalas_id: Escalas_23
+    desde: '11'
+  Percentiles_283:
+    escalas_id: Escalas_23
+    desde: '12'
+  Percentiles_284:
+    escalas_id: Escalas_23
+    desde: '13'
+  Percentiles_285:
+    escalas_id: Escalas_23
+    desde: '14'
+  Percentiles_286:
+    escalas_id: Escalas_23
+    desde: '15'
+  Percentiles_287:
+    escalas_id: Escalas_23
+    desde: '16'
+  Percentiles_288:
+    escalas_id: Escalas_23
+    desde: '17'
+  Percentiles_289:
+    escalas_id: Escalas_23
+    desde: '18'
+  Percentiles_290:
+    escalas_id: Escalas_23
+    desde: '19'
+  Percentiles_291:
+    escalas_id: Escalas_23
+    desde: '20'
+  Percentiles_292:
+    escalas_id: Escalas_23
+    desde: '21'
+  Percentiles_293:
+    escalas_id: Escalas_23
+    desde: '22'
+  Percentiles_294:
+    escalas_id: Escalas_23
+    desde: '23'
+  Percentiles_295:
+    escalas_id: Escalas_23
+    desde: '24'
+  Percentiles_296:
+    escalas_id: Escalas_23
+    desde: '25'
+    hasta: '26'
+  Percentiles_297:
+    escalas_id: Escalas_23
+    desde: '27'
+    hasta: '28'
+  Percentiles_298:
+    escalas_id: Escalas_23
+    desde: '29'
+    hasta: '32'
+  Percentiles_299:
+    escalas_id: Escalas_24
+    percentil: '1'
+    desde: '0'
+    hasta: '7'
+  Percentiles_300:
+    escalas_id: Escalas_24
+    percentil: '2'
+    desde: '8'
+  Percentiles_301:
+    escalas_id: Escalas_24
+    percentil: '3'
+    desde: '9'
+  Percentiles_302:
+    escalas_id: Escalas_24
+    percentil: '4'
+    desde: '10'
+  Percentiles_303:
+    escalas_id: Escalas_24
+    percentil: '6'
+    desde: '11'
+  Percentiles_304:
+    escalas_id: Escalas_24
+    percentil: '9'
+    desde: '12'
+  Percentiles_305:
+    escalas_id: Escalas_24
+    percentil: '13'
+    desde: '13'
+  Percentiles_306:
+    escalas_id: Escalas_24
+    percentil: '18'
+    desde: '14'
+  Percentiles_307:
+    escalas_id: Escalas_24
+    percentil: '23'
+    desde: '15'
+  Percentiles_308:
+    escalas_id: Escalas_24
+    percentil: '30'
+    desde: '16'
+  Percentiles_309:
+    escalas_id: Escalas_24
+    percentil: '38'
+    desde: '17'
+  Percentiles_310:
+    escalas_id: Escalas_24
+    percentil: '46'
+    desde: '18'
+  Percentiles_311:
+    escalas_id: Escalas_24
+    percentil: '54'
+    desde: '19'
+  Percentiles_312:
+    escalas_id: Escalas_24
+    percentil: '66'
+    desde: '20'
+  Percentiles_313:
+    escalas_id: Escalas_24
+    percentil: '73'
+    desde: '21'
+  Percentiles_314:
+    escalas_id: Escalas_24
+    percentil: '77'
+    desde: '22'
+  Percentiles_315:
+    escalas_id: Escalas_24
+    percentil: '82'
+    desde: '23'
+  Percentiles_316:
+    escalas_id: Escalas_24
+    percentil: '87'
+    desde: '24'
+  Percentiles_317:
+    escalas_id: Escalas_24
+    percentil: '92'
+    desde: '25'
+  Percentiles_318:
+    escalas_id: Escalas_24
+    percentil: '96'
+    desde: '26'
+  Percentiles_319:
+    escalas_id: Escalas_24
+    percentil: '98'
+    desde: '27'
+  Percentiles_320:
+    escalas_id: Escalas_24
+    percentil: '99'
+    desde: '28'
+    hasta: '32'
+  Percentiles_321:
+    escalas_id: Escalas_25
+    percentil: '1'
+    desde: '0'
+    hasta: '6'
+  Percentiles_322:
+    escalas_id: Escalas_25
+    percentil: '2'
+    desde: '7'
+  Percentiles_323:
+    escalas_id: Escalas_25
+    percentil: '3'
+    desde: '8'
+  Percentiles_324:
+    escalas_id: Escalas_25
+    percentil: '5'
+    desde: '9'
+  Percentiles_325:
+    escalas_id: Escalas_25
+    percentil: '8'
+    desde: '10'
+  Percentiles_326:
+    escalas_id: Escalas_25
+    percentil: '9'
+    desde: '11'
+  Percentiles_327:
+    escalas_id: Escalas_25
+    percentil: '11'
+    desde: '12'
+  Percentiles_328:
+    escalas_id: Escalas_25
+    percentil: '18'
+    desde: '13'
+  Percentiles_329:
+    escalas_id: Escalas_25
+    percentil: '23'
+    desde: '14'
+  Percentiles_330:
+    escalas_id: Escalas_25
+    percentil: '30'
+    desde: '15'
+  Percentiles_331:
+    escalas_id: Escalas_25
+    percentil: '38'
+    desde: '16'
+  Percentiles_332:
+    escalas_id: Escalas_25
+    percentil: '46'
+    desde: '17'
+  Percentiles_333:
+    escalas_id: Escalas_25
+    percentil: '50'
+    desde: '18'
+  Percentiles_334:
+    escalas_id: Escalas_25
+    percentil: '59'
+    desde: '19'
+  Percentiles_335:
+    escalas_id: Escalas_25
+    percentil: '62'
+    desde: '20'
+  Percentiles_336:
+    escalas_id: Escalas_25
+    percentil: '73'
+    desde: '21'
+  Percentiles_337:
+    escalas_id: Escalas_25
+    percentil: '82'
+    desde: '22'
+  Percentiles_338:
+    escalas_id: Escalas_25
+    percentil: '89'
+    desde: '23'
+  Percentiles_339:
+    escalas_id: Escalas_25
+    percentil: '92'
+    desde: '24'
+  Percentiles_340:
+    escalas_id: Escalas_25
+    percentil: '94'
+    desde: '25'
+  Percentiles_341:
+    escalas_id: Escalas_25
+    percentil: '96'
+    desde: '26'
+  Percentiles_342:
+    escalas_id: Escalas_25
+    percentil: '99'
+    desde: '27'
+    hasta: '32'
+  Percentiles_343:
+    escalas_id: Escalas_26
+    percentil: '1'
+    desde: '0'
+    hasta: '3'
+  Percentiles_344:
+    escalas_id: Escalas_26
+    percentil: '2'
+    desde: '4'
+  Percentiles_345:
+    escalas_id: Escalas_26
+    percentil: '4'
+    desde: '5'
+  Percentiles_346:
+    escalas_id: Escalas_26
+    percentil: '6'
+    desde: '6'
+  Percentiles_347:
+    escalas_id: Escalas_26
+    percentil: '9'
+    desde: '7'
+  Percentiles_348:
+    escalas_id: Escalas_26
+    percentil: '15'
+    desde: '8'
+  Percentiles_349:
+    escalas_id: Escalas_26
+    percentil: '20'
+    desde: '9'
+  Percentiles_350:
+    escalas_id: Escalas_26
+    percentil: '30'
+    desde: '10'
+  Percentiles_351:
+    escalas_id: Escalas_26
+    percentil: '34'
+    desde: '11'
+  Percentiles_352:
+    escalas_id: Escalas_26
+    percentil: '41'
+    desde: '12'
+  Percentiles_353:
+    escalas_id: Escalas_26
+    percentil: '50'
+    desde: '13'
+  Percentiles_354:
+    escalas_id: Escalas_26
+    percentil: '54'
+    desde: '14'
+  Percentiles_355:
+    escalas_id: Escalas_26
+    percentil: '66'
+    desde: '15'
+  Percentiles_356:
+    escalas_id: Escalas_26
+    percentil: '73'
+    desde: '16'
+  Percentiles_357:
+    escalas_id: Escalas_26
+    percentil: '80'
+    desde: '17'
+  Percentiles_358:
+    escalas_id: Escalas_26
+    percentil: '85'
+    desde: '18'
+  Percentiles_359:
+    escalas_id: Escalas_26
+    percentil: '91'
+    desde: '19'
+  Percentiles_360:
+    escalas_id: Escalas_26
+    percentil: '94'
+    desde: '20'
+  Percentiles_361:
+    escalas_id: Escalas_26
+    percentil: '95'
+    desde: '21'
+  Percentiles_362:
+    escalas_id: Escalas_26
+    percentil: '96'
+    desde: '22'
+  Percentiles_363:
+    escalas_id: Escalas_26
+    percentil: '97'
+    desde: '23'
+  Percentiles_364:
+    escalas_id: Escalas_26
+    percentil: '98'
+    desde: '24'
+  Percentiles_365:
+    escalas_id: Escalas_26
+    percentil: '99'
+    desde: '25'
+    hasta: '32'
 Valoresdeverdad:
   Valoresdeverdad_1:
     nombre: Correcta
@@ -16608,6 +15718,134 @@ Respuestas:
     preguntas_id: Preguntas_854
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_55
+  Respuestas_2279:
+    preguntas_id: Preguntas_855
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+  Respuestas_2280:
+    preguntas_id: Preguntas_856
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2281:
+    preguntas_id: Preguntas_857
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2282:
+    preguntas_id: Preguntas_858
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2283:
+    preguntas_id: Preguntas_859
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2284:
+    preguntas_id: Preguntas_860
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2285:
+    preguntas_id: Preguntas_861
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2286:
+    preguntas_id: Preguntas_862
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2287:
+    preguntas_id: Preguntas_863
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2288:
+    preguntas_id: Preguntas_864
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2289:
+    preguntas_id: Preguntas_865
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2290:
+    preguntas_id: Preguntas_866
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2291:
+    preguntas_id: Preguntas_867
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2292:
+    preguntas_id: Preguntas_868
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2293:
+    preguntas_id: Preguntas_869
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2294:
+    preguntas_id: Preguntas_870
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2295:
+    preguntas_id: Preguntas_871
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2296:
+    preguntas_id: Preguntas_872
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2297:
+    preguntas_id: Preguntas_873
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2298:
+    preguntas_id: Preguntas_874
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2299:
+    preguntas_id: Preguntas_875
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2300:
+    preguntas_id: Preguntas_876
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2301:
+    preguntas_id: Preguntas_877
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2302:
+    preguntas_id: Preguntas_878
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2303:
+    preguntas_id: Preguntas_879
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2304:
+    preguntas_id: Preguntas_880
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2305:
+    preguntas_id: Preguntas_881
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2306:
+    preguntas_id: Preguntas_882
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2307:
+    preguntas_id: Preguntas_883
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2308:
+    preguntas_id: Preguntas_884
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2309:
+    preguntas_id: Preguntas_885
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2310:
+    preguntas_id: Preguntas_886
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
 Respuestasescalas:
   Respuestasescalas_1:
     respuestas_id: Respuestas_7
@@ -17763,97 +17001,12 @@ Respuestasescalas:
     valor: '2'
 Resultados:
   Resultados_1:
-    pruebas_id: Pruebas_6
+    pruebas_id: Pruebas_10
     aspirantes_id: Aspirantes_1
-    puntaje: '5'
-    estadosresultados_id: Estadosresultados_1
+    puntaje: '0'
+    estadosresultados_id: Estadosresultados_2
   Resultados_2:
-    pruebas_id: Pruebas_5
-    aspirantes_id: Aspirantes_1
-    puntaje: '1'
-    estadosresultados_id: Estadosresultados_1
-  Resultados_3:
-    pruebas_id: Pruebas_7
-    aspirantes_id: Aspirantes_2
-    puntaje: '0'
-    estadosresultados_id: Estadosresultados_2
-  Resultados_4:
-    pruebas_id: Pruebas_7
-    aspirantes_id: Aspirantes_2
-    puntaje: '0'
-    estadosresultados_id: Estadosresultados_2
-  Resultados_5:
-    pruebas_id: Pruebas_7
-    aspirantes_id: Aspirantes_2
-    puntaje: '0'
-    estadosresultados_id: Estadosresultados_2
-  Resultados_6:
-    pruebas_id: Pruebas_7
-    aspirantes_id: Aspirantes_2
-    puntaje: '0'
-    estadosresultados_id: Estadosresultados_2
-  Resultados_7:
-    pruebas_id: Pruebas_7
-    aspirantes_id: Aspirantes_2
-    puntaje: '0'
-    estadosresultados_id: Estadosresultados_2
-  Resultados_8:
-    pruebas_id: Pruebas_7
-    aspirantes_id: Aspirantes_2
-    puntaje: '0'
-    estadosresultados_id: Estadosresultados_2
-  Resultados_9:
-    pruebas_id: Pruebas_7
-    aspirantes_id: Aspirantes_2
-    puntaje: '0'
-    estadosresultados_id: Estadosresultados_2
-  Resultados_10:
-    pruebas_id: Pruebas_7
-    aspirantes_id: Aspirantes_2
-    puntaje: '0'
-    estadosresultados_id: Estadosresultados_2
-  Resultados_11:
-    pruebas_id: Pruebas_7
-    aspirantes_id: Aspirantes_2
-    puntaje: '0'
-    estadosresultados_id: Estadosresultados_2
-  Resultados_12:
-    pruebas_id: Pruebas_7
-    aspirantes_id: Aspirantes_2
-    puntaje: '0'
-    estadosresultados_id: Estadosresultados_2
-  Resultados_13:
-    pruebas_id: Pruebas_7
-    aspirantes_id: Aspirantes_2
-    puntaje: '0'
-    estadosresultados_id: Estadosresultados_2
-  Resultados_14:
-    pruebas_id: Pruebas_7
-    aspirantes_id: Aspirantes_2
-    puntaje: '0'
-    estadosresultados_id: Estadosresultados_2
-  Resultados_15:
-    pruebas_id: Pruebas_7
-    aspirantes_id: Aspirantes_2
-    puntaje: '0'
-    estadosresultados_id: Estadosresultados_2
-  Resultados_16:
-    pruebas_id: Pruebas_7
-    aspirantes_id: Aspirantes_2
-    puntaje: '0'
-    estadosresultados_id: Estadosresultados_2
-  Resultados_17:
-    pruebas_id: Pruebas_8
-    aspirantes_id: Aspirantes_1
-    puntaje: '8'
-    estadosresultados_id: Estadosresultados_1
-  Resultados_18:
-    pruebas_id: Pruebas_8
-    aspirantes_id: Aspirantes_1
-    puntaje: '0'
-    estadosresultados_id: Estadosresultados_2
-  Resultados_19:
-    pruebas_id: Pruebas_8
+    pruebas_id: Pruebas_10
     aspirantes_id: Aspirantes_1
     puntaje: '0'
     estadosresultados_id: Estadosresultados_2
