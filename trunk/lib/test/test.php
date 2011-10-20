@@ -123,6 +123,7 @@ class test {
             $puntaje = $puntaje + 1;  
           }
        }          
+       $puntaje = ($puntaje * 100)/40;
        Test::grabarPuntaje($puntaje,$respuestas[0]->getPruebas(), $respuestas[0]->getAspirantesId());       
             
   }

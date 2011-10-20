@@ -10,7 +10,17 @@
 class aspirantesActions extends sfActions
 {
     
-
+ public function executeBd(sfWebRequest $request)
+ {
+     /*for($x=823;$x<=854;$x++)
+     {
+         $pregunta = new Respuestas();
+         $pregunta->setEstadosId(1);
+         $pregunta->setOpcionesId(55);
+         $pregunta->setPreguntasId($x);
+         $pregunta->save();
+     }*/
+ }
   
   public function executeIndex(sfWebRequest $request)
   {

@@ -54,6 +54,18 @@ Evaluaciones:
     cantidad: '66'
     fecha: '2011-07-06'
     nombre: 'PROTOCOLO RAVEN'
+  Evaluaciones_6:
+    perfil_id: Perfil_1
+    estadosevaluaciones_id: Estadosevaluaciones_3
+    cantidad: '2'
+    fecha: '2011-10-19'
+    nombre: '16 pitufos forros'
+  Evaluaciones_7:
+    perfil_id: Perfil_1
+    estadosevaluaciones_id: Estadosevaluaciones_1
+    cantidad: '99'
+    fecha: '2011-03-04'
+    nombre: Monedero
 Aspirantes:
   Aspirantes_1:
     nombre: matias
@@ -63,8 +75,8 @@ Aspirantes:
   Aspirantes_2:
     nombre: francisco
     apellido: pane
-    cedula: '35322222'
-    password: puto
+    cedula: '33646764'
+    password: mundo
   Aspirantes_3:
     nombre: carlos
     apellido: arguillano
@@ -100,6 +112,11 @@ Aspirantes:
     apellido: lokpoñ
     cedula: '5465465'
     password: '123456'
+  Aspirantes_10:
+    nombre: 'Ivana Leila'
+    apellido: 'Di Biase'
+    cedula: '32126209'
+    password: '123456'
 Asistencias:
   Asistencias_1:
     evaluaciones_id: Evaluaciones_1
@@ -115,6 +132,15 @@ Asistencias:
     aspirantes_id: Aspirantes_1
   Asistencias_5:
     evaluaciones_id: Evaluaciones_5
+    aspirantes_id: Aspirantes_1
+  Asistencias_7:
+    evaluaciones_id: Evaluaciones_6
+    aspirantes_id: Aspirantes_2
+  Asistencias_8:
+    evaluaciones_id: Evaluaciones_6
+    aspirantes_id: Aspirantes_10
+  Asistencias_9:
+    evaluaciones_id: Evaluaciones_7
     aspirantes_id: Aspirantes_1
 Tipoopcion:
   Tipoopcion_1:
@@ -279,62 +305,77 @@ Escalas:
     tests_id: Tests_3
     nombre: A
     nombrelargo: Sociable
+    descripcion: ''
   Escalas_6:
     tests_id: Tests_3
     nombre: B
     nombrelargo: Rápido
+    descripcion: ''
   Escalas_7:
     tests_id: Tests_3
     nombre: C
     nombrelargo: Maduro
+    descripcion: ''
   Escalas_8:
     tests_id: Tests_3
     nombre: E
     nombrelargo: Dominante
+    descripcion: ''
   Escalas_9:
     tests_id: Tests_3
     nombre: F
     nombrelargo: Entusiasta
+    descripcion: ''
   Escalas_10:
     tests_id: Tests_3
     nombre: G
     nombrelargo: Constante
+    descripcion: ''
   Escalas_11:
     tests_id: Tests_3
     nombre: H
     nombrelargo: Aventurado
+    descripcion: ''
   Escalas_12:
     tests_id: Tests_3
     nombre: I
     nombrelargo: Pasional
+    descripcion: ''
   Escalas_13:
     tests_id: Tests_3
     nombre: L
     nombrelargo: Fiable
+    descripcion: ''
   Escalas_14:
     tests_id: Tests_3
     nombre: M
     nombrelargo: Convencional
+    descripcion: ''
   Escalas_15:
     tests_id: Tests_3
     nombre: N
     nombrelargo: Sofisticado
+    descripcion: ''
   Escalas_16:
     tests_id: Tests_3
     nombre: O
     nombrelargo: 'Confiado en si mismo'
+    descripcion: ''
   Escalas_17:
     tests_id: Tests_3
     nombre: Q1
     nombrelargo: Retomador
+    descripcion: ''
   Escalas_18:
     tests_id: Tests_3
     nombre: Q2
     nombrelargo: Autosuficiente
+    descripcion: ''
   Escalas_19:
     tests_id: Tests_3
     nombre: Q3
     nombrelargo: Controlado
+    descripcion: ''
   Escalas_20:
     tests_id: Tests_3
     nombre: Q4
@@ -369,6 +410,14 @@ Pruebas:
   Pruebas_6:
     tests_id: Tests_18
     evaluaciones_id: Evaluaciones_5
+    estadopruebas_id: Estadopruebas_1
+  Pruebas_7:
+    tests_id: Tests_11
+    evaluaciones_id: Evaluaciones_6
+    estadopruebas_id: Estadopruebas_1
+  Pruebas_8:
+    tests_id: Tests_27
+    evaluaciones_id: Evaluaciones_7
     estadopruebas_id: Estadopruebas_1
 Preguntas:
   Preguntas_1:
@@ -2139,6 +2188,7 @@ Preguntas:
   Preguntas_582:
     tests_id: Tests_17
     imagen: 28.png
+    descripcion: ''
   Preguntas_583:
     tests_id: Tests_17
     imagen: 29.png
@@ -2769,6 +2819,198 @@ Preguntas:
   Preguntas_790:
     tests_id: Tests_28
     imagen: 40.png
+  Preguntas_791:
+    tests_id: Tests_24
+    descripcion: 'Nuestra historia debería enseñarnos____?_____ muchos errores en la actualidad'
+  Preguntas_792:
+    tests_id: Tests_24
+    descripcion: '_____?______ una enfermedad es mejor que tratar de curarla después'
+  Preguntas_793:
+    tests_id: Tests_24
+    descripcion: 'El inteligente comprende las cosas y el astuto intuye____?_____ de las personas'
+  Preguntas_794:
+    tests_id: Tests_24
+    descripcion: 'Practicar un deporte____?_____ una vida mas sana'
+  Preguntas_795:
+    tests_id: Tests_24
+    descripcion: 'Mostro su disconformidad por el_____?______ confuso seguido en la votación'
+  Preguntas_796:
+    tests_id: Tests_24
+    descripcion: 'Toda acción humana tiene sus____?_____ como toda causa tiene sus efectos'
+  Preguntas_797:
+    tests_id: Tests_24
+    descripcion: ' Para poder competir son imprescindibles otros____?____'
+  Preguntas_798:
+    tests_id: Tests_24
+    descripcion: 'Serios errores en el pasado pueden____?____ hondas decepciones en el futuro'
+  Preguntas_799:
+    tests_id: Tests_24
+    descripcion: 'Ilusionarnos____?___ nos impide ver objetivamente la realidad'
+  Preguntas_800:
+    tests_id: Tests_24
+    descripcion: 'Una experiencia negativa suele____?____ intentar repetirla'
+  Preguntas_801:
+    tests_id: Tests_24
+    descripcion: 'Reconocer los errores propios es____?____ de sabiduría'
+  Preguntas_802:
+    tests_id: Tests_24
+    descripcion: 'Traspasar los limites de____?____ constituye un delito'
+  Preguntas_803:
+    tests_id: Tests_24
+    descripcion: 'Si lo sometemos a___?____ sabremos que piensan los asistentes'
+  Preguntas_804:
+    tests_id: Tests_24
+    descripcion: 'Es inútil tratar de convencer a un____?___'
+  Preguntas_805:
+    tests_id: Tests_24
+    descripcion: 'Paliar un desastre no suele ser____?____ para prevenirlo en el futuro'
+  Preguntas_806:
+    tests_id: Tests_24
+    descripcion: 'Acerca del pasado nunca podremos hacer____?____'
+  Preguntas_807:
+    tests_id: Tests_24
+    descripcion: '________ siempre es consecuencia de un accidente.'
+  Preguntas_808:
+    tests_id: Tests_24
+    descripcion: 'Las  _______  nunca demuestran que lo que cuentan ocurrió históricamente.'
+  Preguntas_809:
+    tests_id: Tests_24
+    descripcion: '______ del tráfico es un problema de las grandes ciudades modernas.'
+  Preguntas_810:
+    tests_id: Tests_24
+    descripcion: 'Nada físicamente real puede ser tan pequeño que al menos no tenga   ________'
+  Preguntas_811:
+    tests_id: Tests_24
+    descripcion: 'No puede haber diálogo cuando  _______  no desea hablar.'
+  Preguntas_812:
+    tests_id: Tests_24
+    descripcion: 'Seleccionar equivale a separar lo importante de lo _______ '
+  Preguntas_813:
+    tests_id: Tests_24
+    descripcion: 'La exageración es una forma de  _________  la realidad.'
+  Preguntas_814:
+    tests_id: Tests_24
+    descripcion: 'Ningún buen profesional admitiría  _________  en su trabajo.'
+  Preguntas_815:
+    tests_id: Tests_24
+    descripcion: 'Nunca podremos demostrar, por contradictorio, que lo _________ sea irracional.'
+  Preguntas_816:
+    tests_id: Tests_24
+    descripcion: '_______   todo aquello que no hacemos en su momento.'
+  Preguntas_817:
+    tests_id: Tests_24
+    descripcion: 'La esplendidez está reñida con  ________ .'
+  Preguntas_818:
+    tests_id: Tests_24
+    descripcion: 'Los  _______ de un moderno edificio en ruinas, fueron absueltos.'
+  Preguntas_819:
+    tests_id: Tests_24
+    descripcion: 'Pertenecer a algún club deportivo _______ la práctica efectiva del deporte.'
+  Preguntas_820:
+    tests_id: Tests_24
+    descripcion: 'Tener precaución es una manera de ______ algunas consecuencias indeseables.'
+  Preguntas_821:
+    tests_id: Tests_24
+    descripcion: 'Para construir en terreno no urbanizable, los gobernantes deben antes  _______ .'
+  Preguntas_822:
+    tests_id: Tests_24
+    descripcion: 'El lastre de errores pasados pueden hacernos  __________   en el futuro.'
+  Preguntas_823:
+    tests_id: Tests_26
+    imagen: 1.png
+  Preguntas_824:
+    tests_id: Tests_26
+    imagen: 2.png
+  Preguntas_825:
+    tests_id: Tests_26
+    imagen: 3.png
+  Preguntas_826:
+    tests_id: Tests_26
+    imagen: 4.png
+  Preguntas_827:
+    tests_id: Tests_26
+    imagen: 5.png
+  Preguntas_828:
+    tests_id: Tests_26
+    imagen: 6.png
+  Preguntas_829:
+    tests_id: Tests_26
+    imagen: 7.png
+  Preguntas_830:
+    tests_id: Tests_26
+    imagen: 8.png
+  Preguntas_831:
+    tests_id: Tests_26
+    imagen: 9.png
+  Preguntas_832:
+    tests_id: Tests_26
+    imagen: 10.png
+  Preguntas_833:
+    tests_id: Tests_26
+    imagen: 11.png
+  Preguntas_834:
+    tests_id: Tests_26
+    imagen: 12.png
+  Preguntas_835:
+    tests_id: Tests_26
+    imagen: 13.png
+  Preguntas_836:
+    tests_id: Tests_26
+    imagen: 14.png
+  Preguntas_837:
+    tests_id: Tests_26
+    imagen: 15.png
+  Preguntas_838:
+    tests_id: Tests_26
+    imagen: 16.png
+  Preguntas_839:
+    tests_id: Tests_26
+    imagen: 17.png
+  Preguntas_840:
+    tests_id: Tests_26
+    imagen: 18.png
+  Preguntas_841:
+    tests_id: Tests_26
+    imagen: 19.png
+  Preguntas_842:
+    tests_id: Tests_26
+    imagen: 20.png
+  Preguntas_843:
+    tests_id: Tests_26
+    imagen: 21.png
+  Preguntas_844:
+    tests_id: Tests_26
+    imagen: 22.png
+  Preguntas_845:
+    tests_id: Tests_26
+    imagen: 23.png
+  Preguntas_846:
+    tests_id: Tests_26
+    imagen: 24.png
+  Preguntas_847:
+    tests_id: Tests_26
+    imagen: 25.png
+  Preguntas_848:
+    tests_id: Tests_26
+    imagen: 26.png
+  Preguntas_849:
+    tests_id: Tests_26
+    imagen: 27.png
+  Preguntas_850:
+    tests_id: Tests_26
+    imagen: 28.png
+  Preguntas_851:
+    tests_id: Tests_26
+    imagen: 29.png
+  Preguntas_852:
+    tests_id: Tests_26
+    imagen: 30.png
+  Preguntas_853:
+    tests_id: Tests_26
+    imagen: 31.png
+  Preguntas_854:
+    tests_id: Tests_26
+    imagen: 32.png
 Opciones:
   Opciones_1:
     tipoopcion_id: Tipoopcion_1
@@ -3544,6 +3786,1061 @@ Resultadosparciales:
     aspirantes_id: Aspirantes_1
     pruebas_id: Pruebas_5
     preguntas_id: Preguntas_474
+    opciones_id: Opciones_55
+  Resultadosparciales_112:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_178
+    opciones_id: Opciones_52
+  Resultadosparciales_113:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_179
+    opciones_id: Opciones_52
+  Resultadosparciales_114:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_180
+    opciones_id: Opciones_54
+  Resultadosparciales_115:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_181
+    opciones_id: Opciones_52
+  Resultadosparciales_116:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_182
+    opciones_id: Opciones_52
+  Resultadosparciales_117:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_183
+    opciones_id: Opciones_52
+  Resultadosparciales_118:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_184
+    opciones_id: Opciones_52
+  Resultadosparciales_119:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_185
+    opciones_id: Opciones_54
+  Resultadosparciales_120:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_186
+    opciones_id: Opciones_53
+  Resultadosparciales_121:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_187
+    opciones_id: Opciones_52
+  Resultadosparciales_122:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_188
+    opciones_id: Opciones_53
+  Resultadosparciales_123:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_189
+    opciones_id: Opciones_54
+  Resultadosparciales_124:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_190
+    opciones_id: Opciones_53
+  Resultadosparciales_125:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_191
+    opciones_id: Opciones_54
+  Resultadosparciales_126:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_192
+    opciones_id: Opciones_52
+  Resultadosparciales_127:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_193
+    opciones_id: Opciones_52
+  Resultadosparciales_128:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_194
+    opciones_id: Opciones_52
+  Resultadosparciales_129:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_195
+    opciones_id: Opciones_54
+  Resultadosparciales_130:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_196
+    opciones_id: Opciones_52
+  Resultadosparciales_131:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_197
+    opciones_id: Opciones_53
+  Resultadosparciales_132:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_198
+    opciones_id: Opciones_52
+  Resultadosparciales_133:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_199
+    opciones_id: Opciones_52
+  Resultadosparciales_134:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_200
+    opciones_id: Opciones_54
+  Resultadosparciales_135:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_201
+    opciones_id: Opciones_52
+  Resultadosparciales_136:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_202
+    opciones_id: Opciones_52
+  Resultadosparciales_137:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_203
+    opciones_id: Opciones_52
+  Resultadosparciales_138:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_204
+    opciones_id: Opciones_52
+  Resultadosparciales_139:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_205
+    opciones_id: Opciones_52
+  Resultadosparciales_140:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_206
+    opciones_id: Opciones_52
+  Resultadosparciales_141:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_207
+    opciones_id: Opciones_52
+  Resultadosparciales_142:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_208
+    opciones_id: Opciones_52
+  Resultadosparciales_143:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_209
+    opciones_id: Opciones_52
+  Resultadosparciales_144:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_210
+    opciones_id: Opciones_52
+  Resultadosparciales_145:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_211
+    opciones_id: Opciones_52
+  Resultadosparciales_146:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_212
+    opciones_id: Opciones_52
+  Resultadosparciales_147:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_213
+    opciones_id: Opciones_52
+  Resultadosparciales_148:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_214
+    opciones_id: Opciones_52
+  Resultadosparciales_149:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_215
+    opciones_id: Opciones_52
+  Resultadosparciales_150:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_216
+    opciones_id: Opciones_52
+  Resultadosparciales_151:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_217
+    opciones_id: Opciones_52
+  Resultadosparciales_152:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_218
+    opciones_id: Opciones_52
+  Resultadosparciales_153:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_219
+    opciones_id: Opciones_52
+  Resultadosparciales_154:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_220
+    opciones_id: Opciones_52
+  Resultadosparciales_155:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_221
+    opciones_id: Opciones_52
+  Resultadosparciales_156:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_222
+    opciones_id: Opciones_52
+  Resultadosparciales_157:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_223
+    opciones_id: Opciones_52
+  Resultadosparciales_158:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_224
+    opciones_id: Opciones_52
+  Resultadosparciales_159:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_225
+    opciones_id: Opciones_52
+  Resultadosparciales_160:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_226
+    opciones_id: Opciones_52
+  Resultadosparciales_161:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_227
+    opciones_id: Opciones_52
+  Resultadosparciales_162:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_228
+    opciones_id: Opciones_52
+  Resultadosparciales_163:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_229
+    opciones_id: Opciones_52
+  Resultadosparciales_164:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_230
+    opciones_id: Opciones_52
+  Resultadosparciales_165:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_231
+    opciones_id: Opciones_52
+  Resultadosparciales_166:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_232
+    opciones_id: Opciones_52
+  Resultadosparciales_167:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_233
+    opciones_id: Opciones_52
+  Resultadosparciales_168:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_234
+    opciones_id: Opciones_52
+  Resultadosparciales_169:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_235
+    opciones_id: Opciones_52
+  Resultadosparciales_170:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_236
+    opciones_id: Opciones_52
+  Resultadosparciales_171:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_237
+    opciones_id: Opciones_52
+  Resultadosparciales_172:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_238
+    opciones_id: Opciones_52
+  Resultadosparciales_173:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_239
+    opciones_id: Opciones_52
+  Resultadosparciales_174:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_240
+    opciones_id: Opciones_52
+  Resultadosparciales_175:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_241
+    opciones_id: Opciones_52
+  Resultadosparciales_176:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_242
+    opciones_id: Opciones_52
+  Resultadosparciales_177:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_243
+    opciones_id: Opciones_52
+  Resultadosparciales_178:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_244
+    opciones_id: Opciones_52
+  Resultadosparciales_179:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_245
+    opciones_id: Opciones_52
+  Resultadosparciales_180:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_246
+    opciones_id: Opciones_52
+  Resultadosparciales_181:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_247
+    opciones_id: Opciones_52
+  Resultadosparciales_182:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_248
+    opciones_id: Opciones_52
+  Resultadosparciales_183:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_249
+    opciones_id: Opciones_52
+  Resultadosparciales_184:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_250
+    opciones_id: Opciones_52
+  Resultadosparciales_185:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_251
+    opciones_id: Opciones_52
+  Resultadosparciales_186:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_252
+    opciones_id: Opciones_52
+  Resultadosparciales_187:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_253
+    opciones_id: Opciones_52
+  Resultadosparciales_188:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_254
+    opciones_id: Opciones_52
+  Resultadosparciales_189:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_255
+    opciones_id: Opciones_52
+  Resultadosparciales_190:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_256
+    opciones_id: Opciones_52
+  Resultadosparciales_191:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_257
+    opciones_id: Opciones_52
+  Resultadosparciales_192:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_258
+    opciones_id: Opciones_52
+  Resultadosparciales_193:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_259
+    opciones_id: Opciones_52
+  Resultadosparciales_194:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_260
+    opciones_id: Opciones_52
+  Resultadosparciales_195:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_261
+    opciones_id: Opciones_52
+  Resultadosparciales_196:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_262
+    opciones_id: Opciones_52
+  Resultadosparciales_197:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_263
+    opciones_id: Opciones_52
+  Resultadosparciales_198:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_264
+    opciones_id: Opciones_52
+  Resultadosparciales_199:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_265
+    opciones_id: Opciones_52
+  Resultadosparciales_200:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_266
+    opciones_id: Opciones_52
+  Resultadosparciales_201:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_267
+    opciones_id: Opciones_52
+  Resultadosparciales_202:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_268
+    opciones_id: Opciones_52
+  Resultadosparciales_203:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_269
+    opciones_id: Opciones_52
+  Resultadosparciales_204:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_270
+    opciones_id: Opciones_52
+  Resultadosparciales_205:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_271
+    opciones_id: Opciones_52
+  Resultadosparciales_206:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_272
+    opciones_id: Opciones_52
+  Resultadosparciales_207:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_273
+    opciones_id: Opciones_52
+  Resultadosparciales_208:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_274
+    opciones_id: Opciones_52
+  Resultadosparciales_209:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_275
+    opciones_id: Opciones_52
+  Resultadosparciales_210:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_276
+    opciones_id: Opciones_52
+  Resultadosparciales_211:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_277
+    opciones_id: Opciones_52
+  Resultadosparciales_212:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_278
+    opciones_id: Opciones_52
+  Resultadosparciales_213:
+    aspirantes_id: Aspirantes_2
+    pruebas_id: Pruebas_7
+    preguntas_id: Preguntas_279
+    opciones_id: Opciones_52
+  Resultadosparciales_214:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_751
+    opciones_id: Opciones_56
+  Resultadosparciales_215:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_752
+    opciones_id: Opciones_58
+  Resultadosparciales_216:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_753
+    opciones_id: Opciones_55
+  Resultadosparciales_217:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_754
+    opciones_id: Opciones_55
+  Resultadosparciales_218:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_755
+    opciones_id: Opciones_55
+  Resultadosparciales_219:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_756
+    opciones_id: Opciones_55
+  Resultadosparciales_220:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_757
+    opciones_id: Opciones_55
+  Resultadosparciales_221:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_758
+    opciones_id: Opciones_55
+  Resultadosparciales_222:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_759
+    opciones_id: Opciones_55
+  Resultadosparciales_223:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_760
+    opciones_id: Opciones_55
+  Resultadosparciales_224:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_761
+    opciones_id: Opciones_55
+  Resultadosparciales_225:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_762
+    opciones_id: Opciones_55
+  Resultadosparciales_226:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_763
+    opciones_id: Opciones_55
+  Resultadosparciales_227:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_764
+    opciones_id: Opciones_55
+  Resultadosparciales_228:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_765
+    opciones_id: Opciones_55
+  Resultadosparciales_229:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_766
+    opciones_id: Opciones_55
+  Resultadosparciales_230:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_767
+    opciones_id: Opciones_55
+  Resultadosparciales_231:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_768
+    opciones_id: Opciones_55
+  Resultadosparciales_232:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_769
+    opciones_id: Opciones_55
+  Resultadosparciales_233:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_770
+    opciones_id: Opciones_55
+  Resultadosparciales_234:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_771
+    opciones_id: Opciones_55
+  Resultadosparciales_235:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_772
+    opciones_id: Opciones_55
+  Resultadosparciales_236:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_773
+    opciones_id: Opciones_55
+  Resultadosparciales_237:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_774
+    opciones_id: Opciones_55
+  Resultadosparciales_238:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_775
+    opciones_id: Opciones_55
+  Resultadosparciales_239:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_776
+    opciones_id: Opciones_55
+  Resultadosparciales_240:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_777
+    opciones_id: Opciones_55
+  Resultadosparciales_241:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_778
+    opciones_id: Opciones_55
+  Resultadosparciales_242:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_779
+    opciones_id: Opciones_55
+  Resultadosparciales_243:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_780
+    opciones_id: Opciones_55
+  Resultadosparciales_244:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_781
+    opciones_id: Opciones_55
+  Resultadosparciales_245:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_782
+    opciones_id: Opciones_55
+  Resultadosparciales_246:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_783
+    opciones_id: Opciones_55
+  Resultadosparciales_247:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_784
+    opciones_id: Opciones_55
+  Resultadosparciales_248:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_785
+    opciones_id: Opciones_55
+  Resultadosparciales_249:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_786
+    opciones_id: Opciones_55
+  Resultadosparciales_250:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_787
+    opciones_id: Opciones_55
+  Resultadosparciales_251:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_788
+    opciones_id: Opciones_55
+  Resultadosparciales_252:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_789
+    opciones_id: Opciones_55
+  Resultadosparciales_253:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_790
+    opciones_id: Opciones_55
+  Resultadosparciales_254:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_751
+    opciones_id: Opciones_56
+  Resultadosparciales_255:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_752
+    opciones_id: Opciones_57
+  Resultadosparciales_256:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_753
+    opciones_id: Opciones_57
+  Resultadosparciales_257:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_754
+    opciones_id: Opciones_57
+  Resultadosparciales_258:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_755
+    opciones_id: Opciones_57
+  Resultadosparciales_259:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_756
+    opciones_id: Opciones_58
+  Resultadosparciales_260:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_757
+    opciones_id: Opciones_58
+  Resultadosparciales_261:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_758
+    opciones_id: Opciones_58
+  Resultadosparciales_262:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_759
+    opciones_id: Opciones_56
+  Resultadosparciales_263:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_760
+    opciones_id: Opciones_59
+  Resultadosparciales_264:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_761
+    opciones_id: Opciones_56
+  Resultadosparciales_265:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_762
+    opciones_id: Opciones_58
+  Resultadosparciales_266:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_763
+    opciones_id: Opciones_58
+  Resultadosparciales_267:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_764
+    opciones_id: Opciones_58
+  Resultadosparciales_268:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_765
+    opciones_id: Opciones_57
+  Resultadosparciales_269:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_766
+    opciones_id: Opciones_57
+  Resultadosparciales_270:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_767
+    opciones_id: Opciones_57
+  Resultadosparciales_271:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_768
+    opciones_id: Opciones_59
+  Resultadosparciales_272:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_769
+    opciones_id: Opciones_58
+  Resultadosparciales_273:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_770
+    opciones_id: Opciones_59
+  Resultadosparciales_274:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_771
+    opciones_id: Opciones_59
+  Resultadosparciales_275:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_772
+    opciones_id: Opciones_58
+  Resultadosparciales_276:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_773
+    opciones_id: Opciones_58
+  Resultadosparciales_277:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_774
+    opciones_id: Opciones_58
+  Resultadosparciales_278:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_775
+    opciones_id: Opciones_58
+  Resultadosparciales_279:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_776
+    opciones_id: Opciones_57
+  Resultadosparciales_280:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_777
+    opciones_id: Opciones_58
+  Resultadosparciales_281:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_778
+    opciones_id: Opciones_59
+  Resultadosparciales_282:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_779
+    opciones_id: Opciones_57
+  Resultadosparciales_283:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_780
+    opciones_id: Opciones_57
+  Resultadosparciales_284:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_781
+    opciones_id: Opciones_57
+  Resultadosparciales_285:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_782
+    opciones_id: Opciones_56
+  Resultadosparciales_286:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_783
+    opciones_id: Opciones_57
+  Resultadosparciales_287:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_784
+    opciones_id: Opciones_57
+  Resultadosparciales_288:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_785
+    opciones_id: Opciones_59
+  Resultadosparciales_289:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_786
+    opciones_id: Opciones_55
+  Resultadosparciales_290:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_787
+    opciones_id: Opciones_57
+  Resultadosparciales_291:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_788
+    opciones_id: Opciones_58
+  Resultadosparciales_292:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_789
+    opciones_id: Opciones_58
+  Resultadosparciales_293:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_790
+    opciones_id: Opciones_57
+  Resultadosparciales_294:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_751
+    opciones_id: Opciones_55
+  Resultadosparciales_295:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_752
+    opciones_id: Opciones_56
+  Resultadosparciales_296:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_753
+    opciones_id: Opciones_55
+  Resultadosparciales_297:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_754
+    opciones_id: Opciones_55
+  Resultadosparciales_298:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_755
+    opciones_id: Opciones_55
+  Resultadosparciales_299:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_755
+    opciones_id: Opciones_55
+  Resultadosparciales_300:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_756
+    opciones_id: Opciones_55
+  Resultadosparciales_301:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_757
+    opciones_id: Opciones_55
+  Resultadosparciales_302:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_758
+    opciones_id: Opciones_55
+  Resultadosparciales_303:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_759
+    opciones_id: Opciones_55
+  Resultadosparciales_304:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_760
+    opciones_id: Opciones_55
+  Resultadosparciales_305:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_761
+    opciones_id: Opciones_55
+  Resultadosparciales_306:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_762
+    opciones_id: Opciones_55
+  Resultadosparciales_307:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_763
+    opciones_id: Opciones_55
+  Resultadosparciales_308:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_764
+    opciones_id: Opciones_55
+  Resultadosparciales_309:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_765
+    opciones_id: Opciones_55
+  Resultadosparciales_310:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_766
+    opciones_id: Opciones_55
+  Resultadosparciales_311:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_767
+    opciones_id: Opciones_55
+  Resultadosparciales_312:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_768
+    opciones_id: Opciones_55
+  Resultadosparciales_313:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_769
+    opciones_id: Opciones_55
+  Resultadosparciales_314:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_770
+    opciones_id: Opciones_55
+  Resultadosparciales_315:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_771
+    opciones_id: Opciones_55
+  Resultadosparciales_316:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_772
+    opciones_id: Opciones_55
+  Resultadosparciales_317:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_773
+    opciones_id: Opciones_55
+  Resultadosparciales_318:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_774
+    opciones_id: Opciones_55
+  Resultadosparciales_319:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_775
+    opciones_id: Opciones_55
+  Resultadosparciales_320:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_776
+    opciones_id: Opciones_55
+  Resultadosparciales_321:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_777
+    opciones_id: Opciones_55
+  Resultadosparciales_322:
+    aspirantes_id: Aspirantes_1
+    pruebas_id: Pruebas_8
+    preguntas_id: Preguntas_778
     opciones_id: Opciones_55
 Percentiles:
   Percentiles_1:
@@ -4534,10 +5831,12 @@ Respuestas:
     preguntas_id: Preguntas_1
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_5
+    descripcion: ''
   Respuestas_2:
     preguntas_id: Preguntas_2
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_25
+    descripcion: ''
   Respuestas_3:
     preguntas_id: Preguntas_178
     estados_id: Valoresdeverdad_1
@@ -14381,6 +15680,934 @@ Respuestas:
     preguntas_id: Preguntas_790
     estados_id: Valoresdeverdad_1
     opciones_id: Opciones_59
+  Respuestas_2087:
+    preguntas_id: Preguntas_791
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Conducir
+  Respuestas_2088:
+    preguntas_id: Preguntas_791
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: Dirigir
+  Respuestas_2089:
+    preguntas_id: Preguntas_791
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: Constatar
+  Respuestas_2090:
+    preguntas_id: Preguntas_791
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+    descripcion: Evitar
+  Respuestas_2091:
+    preguntas_id: Preguntas_791
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: Cambiar
+  Respuestas_2092:
+    preguntas_id: Preguntas_792
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: Diagnosticar
+  Respuestas_2093:
+    preguntas_id: Preguntas_792
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: '	Medicar'
+  Respuestas_2094:
+    preguntas_id: Preguntas_792
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: Tratar
+  Respuestas_2095:
+    preguntas_id: Preguntas_792
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: Revisar
+  Respuestas_2096:
+    preguntas_id: Preguntas_792
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: Prevenir
+  Respuestas_2097:
+    preguntas_id: Preguntas_793
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: 'El pasado'
+  Respuestas_2098:
+    preguntas_id: Preguntas_793
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+    descripcion: 'La intención'
+  Respuestas_2099:
+    preguntas_id: Preguntas_793
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: 'La ilusión'
+  Respuestas_2100:
+    preguntas_id: Preguntas_793
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: 'El aspecto'
+  Respuestas_2101:
+    preguntas_id: Preguntas_793
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: '	Los defectos'
+  Respuestas_2102:
+    preguntas_id: Preguntas_794
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: Arraiga
+  Respuestas_2103:
+    preguntas_id: Preguntas_794
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: Anticipa
+  Respuestas_2104:
+    preguntas_id: Preguntas_794
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: Predetermina
+  Respuestas_2105:
+    preguntas_id: Preguntas_794
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: Propicia
+  Respuestas_2106:
+    preguntas_id: Preguntas_794
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: Selecciona
+  Respuestas_2107:
+    preguntas_id: Preguntas_795
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: Procedimiento
+  Respuestas_2108:
+    preguntas_id: Preguntas_795
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: Resultado
+  Respuestas_2109:
+    preguntas_id: Preguntas_795
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: Cambio
+  Respuestas_2110:
+    preguntas_id: Preguntas_795
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: Dialogo
+  Respuestas_2111:
+    preguntas_id: Preguntas_795
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: Aplazamiento
+  Respuestas_2112:
+    preguntas_id: Preguntas_796
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Orígenes
+  Respuestas_2113:
+    preguntas_id: Preguntas_796
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: Limites
+  Respuestas_2114:
+    preguntas_id: Preguntas_796
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: Finalidades
+  Respuestas_2115:
+    preguntas_id: Preguntas_796
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+    descripcion: Consecuencias
+  Respuestas_2116:
+    preguntas_id: Preguntas_796
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: Matices
+  Respuestas_2117:
+    preguntas_id: Preguntas_797
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Esfuerzos
+  Respuestas_2118:
+    preguntas_id: Preguntas_797
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: Planteamientos
+  Respuestas_2119:
+    preguntas_id: Preguntas_797
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+    descripcion: Rivales
+  Respuestas_2120:
+    preguntas_id: Preguntas_797
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: Ánimos
+  Respuestas_2121:
+    preguntas_id: Preguntas_797
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: Métodos
+  Respuestas_2122:
+    preguntas_id: Preguntas_798
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Aumentar
+  Respuestas_2123:
+    preguntas_id: Preguntas_798
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: Reproducir
+  Respuestas_2124:
+    preguntas_id: Preguntas_798
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: Hilvanar
+  Respuestas_2125:
+    preguntas_id: Preguntas_798
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: Decidir
+  Respuestas_2126:
+    preguntas_id: Preguntas_798
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
+    descripcion: Conllevar
+  Respuestas_2127:
+    preguntas_id: Preguntas_799
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Antes
+  Respuestas_2128:
+    preguntas_id: Preguntas_799
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: Previamente
+  Respuestas_2129:
+    preguntas_id: Preguntas_799
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+    descripcion: 'En exceso'
+  Respuestas_2130:
+    preguntas_id: Preguntas_799
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: Siempre
+  Respuestas_2131:
+    preguntas_id: Preguntas_799
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'De lo imposible'
+  Respuestas_2132:
+    preguntas_id: Preguntas_800
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: 'Terminar de'
+  Respuestas_2133:
+    preguntas_id: Preguntas_800
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: 'Anticiparnos a'
+  Respuestas_2134:
+    preguntas_id: Preguntas_800
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: 'Incitarnos a. '
+  Respuestas_2135:
+    preguntas_id: Preguntas_800
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+    descripcion: 'Prevenirnos de'
+  Respuestas_2136:
+    preguntas_id: Preguntas_800
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Desanimarnos de'
+  Respuestas_2137:
+    preguntas_id: Preguntas_801
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: 'Un pozo'
+  Respuestas_2138:
+    preguntas_id: Preguntas_801
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: 'Un talante'
+  Respuestas_2139:
+    preguntas_id: Preguntas_801
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: 'Un precedente'
+  Respuestas_2140:
+    preguntas_id: Preguntas_801
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+    descripcion: 'Un síntoma'
+  Respuestas_2141:
+    preguntas_id: Preguntas_801
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Un aumento'
+  Respuestas_2142:
+    preguntas_id: Preguntas_802
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: 'Lo prudente'
+  Respuestas_2143:
+    preguntas_id: Preguntas_802
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: 'La ilegalidad'
+  Respuestas_2144:
+    preguntas_id: Preguntas_802
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+    descripcion: 'La legalidad'
+  Respuestas_2145:
+    preguntas_id: Preguntas_802
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: 'Lo establecido'
+  Respuestas_2146:
+    preguntas_id: Preguntas_802
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Lo privado'
+  Respuestas_2147:
+    preguntas_id: Preguntas_803
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Examen
+  Respuestas_2148:
+    preguntas_id: Preguntas_803
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: Decisión
+  Respuestas_2149:
+    preguntas_id: Preguntas_803
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: Juicio
+  Respuestas_2150:
+    preguntas_id: Preguntas_803
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: Prueba
+  Respuestas_2151:
+    preguntas_id: Preguntas_803
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
+    descripcion: Debate
+  Respuestas_2152:
+    preguntas_id: Preguntas_804
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Ilusionado
+  Respuestas_2153:
+    preguntas_id: Preguntas_804
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: Farsante
+  Respuestas_2154:
+    preguntas_id: Preguntas_804
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: Precavido
+  Respuestas_2155:
+    preguntas_id: Preguntas_804
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+    descripcion: 'Fanático. '
+  Respuestas_2156:
+    preguntas_id: Preguntas_804
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: Analfabeto
+  Respuestas_2157:
+    preguntas_id: Preguntas_805
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: Suficiente
+  Respuestas_2158:
+    preguntas_id: Preguntas_805
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: 'Útil. '
+  Respuestas_2159:
+    preguntas_id: Preguntas_805
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: Motivo
+  Respuestas_2160:
+    preguntas_id: Preguntas_805
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: Conveniente
+  Respuestas_2161:
+    preguntas_id: Preguntas_805
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: Necesario
+  Respuestas_2162:
+    preguntas_id: Preguntas_806
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: Pronósticos
+  Respuestas_2163:
+    preguntas_id: Preguntas_806
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: Indagaciones
+  Respuestas_2164:
+    preguntas_id: Preguntas_806
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: Sondeos
+  Respuestas_2165:
+    preguntas_id: Preguntas_806
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: Cálculos
+  Respuestas_2166:
+    preguntas_id: Preguntas_806
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: Ciencia
+  Respuestas_2167:
+    preguntas_id: Preguntas_807
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: 'Una catástrofe'
+  Respuestas_2168:
+    preguntas_id: Preguntas_807
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+    descripcion: 'Un naufragio'
+  Respuestas_2169:
+    preguntas_id: Preguntas_807
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: 'Un sabotaje'
+  Respuestas_2170:
+    preguntas_id: Preguntas_807
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: 'Un desastre'
+  Respuestas_2171:
+    preguntas_id: Preguntas_807
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Un alud'
+  Respuestas_2172:
+    preguntas_id: Preguntas_808
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: Leyendas
+  Respuestas_2173:
+    preguntas_id: Preguntas_808
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: anécdotas
+  Respuestas_2174:
+    preguntas_id: Preguntas_808
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: biografías
+  Respuestas_2175:
+    preguntas_id: Preguntas_808
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: investigaciones
+  Respuestas_2176:
+    preguntas_id: Preguntas_808
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: novelas
+  Respuestas_2177:
+    preguntas_id: Preguntas_809
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: 'La previsión'
+  Respuestas_2178:
+    preguntas_id: Preguntas_809
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+    descripcion: 'la congestión'
+  Respuestas_2179:
+    preguntas_id: Preguntas_809
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: 'El estudio'
+  Respuestas_2180:
+    preguntas_id: Preguntas_809
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: 'El diseño'
+  Respuestas_2181:
+    preguntas_id: Preguntas_809
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'La información'
+  Respuestas_2182:
+    preguntas_id: Preguntas_810
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: Masa
+  Respuestas_2183:
+    preguntas_id: Preguntas_810
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: exteriorización
+  Respuestas_2184:
+    preguntas_id: Preguntas_810
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: medida
+  Respuestas_2185:
+    preguntas_id: Preguntas_810
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: comprobación
+  Respuestas_2186:
+    preguntas_id: Preguntas_810
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: visibilidad
+  Respuestas_2187:
+    preguntas_id: Preguntas_811
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: 'El amigo'
+  Respuestas_2188:
+    preguntas_id: Preguntas_811
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: 'el superior'
+  Respuestas_2189:
+    preguntas_id: Preguntas_811
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: 'la parte'
+  Respuestas_2190:
+    preguntas_id: Preguntas_811
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+    descripcion: 'el interlocutor'
+  Respuestas_2191:
+    preguntas_id: Preguntas_811
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'el negligente'
+  Respuestas_2192:
+    preguntas_id: Preguntas_812
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Necesario
+  Respuestas_2193:
+    preguntas_id: Preguntas_812
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: inseguro
+  Respuestas_2194:
+    preguntas_id: Preguntas_812
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: válido
+  Respuestas_2195:
+    preguntas_id: Preguntas_812
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+    descripcion: accesorio
+  Respuestas_2196:
+    preguntas_id: Preguntas_812
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: esencial
+  Respuestas_2197:
+    preguntas_id: Preguntas_813
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: Falsear
+  Respuestas_2198:
+    preguntas_id: Preguntas_813
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: liberar
+  Respuestas_2199:
+    preguntas_id: Preguntas_813
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: 'hablar de'
+  Respuestas_2200:
+    preguntas_id: Preguntas_813
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: 'insistir en'
+  Respuestas_2201:
+    preguntas_id: Preguntas_813
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: expresar
+  Respuestas_2202:
+    preguntas_id: Preguntas_814
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Regateos
+  Respuestas_2203:
+    preguntas_id: Preguntas_814
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: pruebas
+  Respuestas_2204:
+    preguntas_id: Preguntas_814
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+    descripcion: ' chapuzas'
+  Respuestas_2205:
+    preguntas_id: Preguntas_814
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: demoras
+  Respuestas_2206:
+    preguntas_id: Preguntas_814
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: pérdidas
+  Respuestas_2207:
+    preguntas_id: Preguntas_815
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Demostrado
+  Respuestas_2208:
+    preguntas_id: Preguntas_815
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+    descripcion: racional
+  Respuestas_2209:
+    preguntas_id: Preguntas_815
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: humano
+  Respuestas_2210:
+    preguntas_id: Preguntas_815
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: ' evidente'
+  Respuestas_2211:
+    preguntas_id: Preguntas_815
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: conseguido
+  Respuestas_2212:
+    preguntas_id: Preguntas_816
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Deshacernos
+  Respuestas_2213:
+    preguntas_id: Preguntas_816
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+    descripcion: ' Aplazamos'
+  Respuestas_2214:
+    preguntas_id: Preguntas_816
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: Descuidamos
+  Respuestas_2215:
+    preguntas_id: Preguntas_816
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: Queremos
+  Respuestas_2216:
+    preguntas_id: Preguntas_816
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: 'Nos agobia'
+  Respuestas_2217:
+    preguntas_id: Preguntas_817
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: 'La antipatía'
+  Respuestas_2218:
+    preguntas_id: Preguntas_817
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: 'la maldad'
+  Respuestas_2219:
+    preguntas_id: Preguntas_817
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: 'el despilfarro'
+  Respuestas_2220:
+    preguntas_id: Preguntas_817
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: 'el sentido común'
+  Respuestas_2221:
+    preguntas_id: Preguntas_817
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
+    descripcion: 'la avaricia'
+  Respuestas_2222:
+    preguntas_id: Preguntas_818
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Albañiles
+  Respuestas_2223:
+    preguntas_id: Preguntas_818
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: dueños
+  Respuestas_2224:
+    preguntas_id: Preguntas_818
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: inquilinos
+  Respuestas_2225:
+    preguntas_id: Preguntas_818
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: ocupantes
+  Respuestas_2226:
+    preguntas_id: Preguntas_818
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_59
+    descripcion: ' promotores'
+  Respuestas_2227:
+    preguntas_id: Preguntas_819
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Atenúa
+  Respuestas_2228:
+    preguntas_id: Preguntas_819
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: realza
+  Respuestas_2229:
+    preguntas_id: Preguntas_819
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_57
+    descripcion: 'predispone a'
+  Respuestas_2230:
+    preguntas_id: Preguntas_819
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: asegura
+  Respuestas_2231:
+    preguntas_id: Preguntas_819
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: ' aconseja'
+  Respuestas_2232:
+    preguntas_id: Preguntas_820
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+    descripcion: Sortear
+  Respuestas_2233:
+    preguntas_id: Preguntas_820
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: asumir
+  Respuestas_2234:
+    preguntas_id: Preguntas_820
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: predecir
+  Respuestas_2235:
+    preguntas_id: Preguntas_820
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: aclarar
+  Respuestas_2236:
+    preguntas_id: Preguntas_820
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: valorar
+  Respuestas_2237:
+    preguntas_id: Preguntas_821
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Prepararlo
+  Respuestas_2238:
+    preguntas_id: Preguntas_821
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_56
+    descripcion: ' canalizarlo'
+  Respuestas_2239:
+    preguntas_id: Preguntas_821
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: recalificarlo
+  Respuestas_2240:
+    preguntas_id: Preguntas_821
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_58
+    descripcion: preverlo
+  Respuestas_2241:
+    preguntas_id: Preguntas_821
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: ' urbanizarlo'
+  Respuestas_2242:
+    preguntas_id: Preguntas_822
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_55
+    descripcion: Tranquilos
+  Respuestas_2243:
+    preguntas_id: Preguntas_822
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_56
+    descripcion: ' fracasar'
+  Respuestas_2244:
+    preguntas_id: Preguntas_822
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_57
+    descripcion: deudores
+  Respuestas_2245:
+    preguntas_id: Preguntas_822
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_58
+    descripcion: 'más prudentes'
+  Respuestas_2246:
+    preguntas_id: Preguntas_822
+    estados_id: Valoresdeverdad_2
+    opciones_id: Opciones_59
+    descripcion: ' mejorar'
+  Respuestas_2247:
+    preguntas_id: Preguntas_823
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2248:
+    preguntas_id: Preguntas_824
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2249:
+    preguntas_id: Preguntas_825
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2250:
+    preguntas_id: Preguntas_826
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2251:
+    preguntas_id: Preguntas_827
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2252:
+    preguntas_id: Preguntas_828
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2253:
+    preguntas_id: Preguntas_829
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2254:
+    preguntas_id: Preguntas_830
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2255:
+    preguntas_id: Preguntas_831
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2256:
+    preguntas_id: Preguntas_832
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2257:
+    preguntas_id: Preguntas_833
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2258:
+    preguntas_id: Preguntas_834
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2259:
+    preguntas_id: Preguntas_835
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2260:
+    preguntas_id: Preguntas_836
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2261:
+    preguntas_id: Preguntas_837
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2262:
+    preguntas_id: Preguntas_838
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2263:
+    preguntas_id: Preguntas_839
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2264:
+    preguntas_id: Preguntas_840
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2265:
+    preguntas_id: Preguntas_841
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2266:
+    preguntas_id: Preguntas_842
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2267:
+    preguntas_id: Preguntas_843
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2268:
+    preguntas_id: Preguntas_844
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2269:
+    preguntas_id: Preguntas_845
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2270:
+    preguntas_id: Preguntas_846
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2271:
+    preguntas_id: Preguntas_847
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2272:
+    preguntas_id: Preguntas_848
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2273:
+    preguntas_id: Preguntas_849
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2274:
+    preguntas_id: Preguntas_850
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2275:
+    preguntas_id: Preguntas_851
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2276:
+    preguntas_id: Preguntas_852
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2277:
+    preguntas_id: Preguntas_853
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
+  Respuestas_2278:
+    preguntas_id: Preguntas_854
+    estados_id: Valoresdeverdad_1
+    opciones_id: Opciones_55
 Respuestasescalas:
   Respuestasescalas_1:
     respuestas_id: Respuestas_7
@@ -15545,6 +17772,91 @@ Resultados:
     aspirantes_id: Aspirantes_1
     puntaje: '1'
     estadosresultados_id: Estadosresultados_1
+  Resultados_3:
+    pruebas_id: Pruebas_7
+    aspirantes_id: Aspirantes_2
+    puntaje: '0'
+    estadosresultados_id: Estadosresultados_2
+  Resultados_4:
+    pruebas_id: Pruebas_7
+    aspirantes_id: Aspirantes_2
+    puntaje: '0'
+    estadosresultados_id: Estadosresultados_2
+  Resultados_5:
+    pruebas_id: Pruebas_7
+    aspirantes_id: Aspirantes_2
+    puntaje: '0'
+    estadosresultados_id: Estadosresultados_2
+  Resultados_6:
+    pruebas_id: Pruebas_7
+    aspirantes_id: Aspirantes_2
+    puntaje: '0'
+    estadosresultados_id: Estadosresultados_2
+  Resultados_7:
+    pruebas_id: Pruebas_7
+    aspirantes_id: Aspirantes_2
+    puntaje: '0'
+    estadosresultados_id: Estadosresultados_2
+  Resultados_8:
+    pruebas_id: Pruebas_7
+    aspirantes_id: Aspirantes_2
+    puntaje: '0'
+    estadosresultados_id: Estadosresultados_2
+  Resultados_9:
+    pruebas_id: Pruebas_7
+    aspirantes_id: Aspirantes_2
+    puntaje: '0'
+    estadosresultados_id: Estadosresultados_2
+  Resultados_10:
+    pruebas_id: Pruebas_7
+    aspirantes_id: Aspirantes_2
+    puntaje: '0'
+    estadosresultados_id: Estadosresultados_2
+  Resultados_11:
+    pruebas_id: Pruebas_7
+    aspirantes_id: Aspirantes_2
+    puntaje: '0'
+    estadosresultados_id: Estadosresultados_2
+  Resultados_12:
+    pruebas_id: Pruebas_7
+    aspirantes_id: Aspirantes_2
+    puntaje: '0'
+    estadosresultados_id: Estadosresultados_2
+  Resultados_13:
+    pruebas_id: Pruebas_7
+    aspirantes_id: Aspirantes_2
+    puntaje: '0'
+    estadosresultados_id: Estadosresultados_2
+  Resultados_14:
+    pruebas_id: Pruebas_7
+    aspirantes_id: Aspirantes_2
+    puntaje: '0'
+    estadosresultados_id: Estadosresultados_2
+  Resultados_15:
+    pruebas_id: Pruebas_7
+    aspirantes_id: Aspirantes_2
+    puntaje: '0'
+    estadosresultados_id: Estadosresultados_2
+  Resultados_16:
+    pruebas_id: Pruebas_7
+    aspirantes_id: Aspirantes_2
+    puntaje: '0'
+    estadosresultados_id: Estadosresultados_2
+  Resultados_17:
+    pruebas_id: Pruebas_8
+    aspirantes_id: Aspirantes_1
+    puntaje: '8'
+    estadosresultados_id: Estadosresultados_1
+  Resultados_18:
+    pruebas_id: Pruebas_8
+    aspirantes_id: Aspirantes_1
+    puntaje: '0'
+    estadosresultados_id: Estadosresultados_2
+  Resultados_19:
+    pruebas_id: Pruebas_8
+    aspirantes_id: Aspirantes_1
+    puntaje: '0'
+    estadosresultados_id: Estadosresultados_2
 Valoresperado:
   Valoresperado_1:
     perfil_id: Perfil_1
