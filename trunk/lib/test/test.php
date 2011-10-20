@@ -53,19 +53,71 @@ class test {
        $percentil = PercentilesPeer::getPercentil($respuestas[0]->getPruebas()->getTests()->getId(),$puntaje);                               
        Test::grabarPuntaje($percentil[0]->getPercentil(),$respuestas[0]->getPruebas(), $respuestas[0]->getAspirantesId());             
   }
-  public static function calcularbarsit($respuestas){ 
+  public static function calcularbarsit($respuestas) { 
       Test::calcularig2($respuestas);
   }
   /*
    * Calcula los resultados del test 16pf
+   * $respuestas son Resultadosparciales
    */
   public static function calcular16pf($respuestas) { 
-      $tests_id = $respuestas[0]->getPruebas()->getTests()->getId(); //Obtengo el id del test
-      $criteria = new Criteria(); //creamos el objecto criteria
-      $criteria->add(EscalasPeer::TESTS_ID, $tests_id); // where tests_id = (id del test)
-      $escalas = EscalasPeer::doSelect($criteria);//obtengo las escalas para el test
-      //foreach ()
-      PercentilesPeer::getPercentil($test, $puntaje);
+      $resultadosEscalas = array(); // arreglo para guardar los resultados por escalas ?
+//     $r = new Resultadosparciales();
+      $prueba = $respuestas[0]->getPruebas();
+      $aspirante = $respuestas[0]->getAspirantes();
+      $aspirantes_id  = $aspirante->getId();
+      $pruebas_id = $prueba->getId();
+      $perfil = $prueba->getEvaluaciones()->getPerfil();
+      $criteria = new Criteria(); 
+      $criteria->add(ResultadosPeer::ASPIRANTES_ID, $aspirantes_id);
+      $criteria->add(ResultadosPeer::PRUEBAS_ID, $pruebas_id);
+      $resultado = ResultadosPeer::doSelectOne($criteria);
+      foreach ($respuestas as $respuesta) {
+//          $respuesta = new Respuestas();
+          $Respuestasescalas = $respuesta->getRespuestasescalassJoinEscalas();
+          foreach ($Respuestasescalas as $Respuestaescala) {
+//              $Respuestaescala = new Respuestasescalas();
+              $resultadosEscalas[$Respuestaescala->getEscalas()] = (isset ($resultadosEscalas[$Respuestaescala->getEscalas()]) ?$resultadosEscalas[$Respuestaescala->getEscalas()] : 0) + $Respuestaescala->getValor();
+          }
+      }
+//      $percentiles_por_escala = array();
+      $aprobado_general = true;
+      
+      foreach ($resultadosEscalas as $Escala => $valor) {
+          $Resultadosescalas = new Resultadosescalas();
+          $Resultadosescalas->setEscalas($Escala);
+          $Resultadosescalas->setResultados($resultado);
+          //$Resultadosescalas->setValor($valor);
+          $percentil = PercentilesPeer::getPercentilPorEscala($escala, $valor);
+//          $percentil = new Percentiles();
+//          $percentil->getPercentil();
+//          $percentiles_por_escala[$Escala] = $percentil->getPercentil();
+          $Resultadosescalas->setValor($percentil->getPercentil());
+          $Resultadosescalas->save();
+          $aprobado = PercentilesPeer::evaluarValorEsperado($perfil, $percentil); // devuelve true si aprobo, sino false
+          if($aprobado === false) {
+              $aprobado_general = false;
+          }
+      }
+      if($aprobado_general === true) {
+          $result = ResultadosPeer::getResultado($prueba->getId(), $aspirante);   
+          $result->setEstadosresultadosId(1);
+          $result->save();
+      }
+      
+  }
+  /*
+   * Calcula los resultados para 1 sola Escala del 16pf
+   */
+  public static function calcularPorEscala16pf($respuestas, $escala) {
+      foreach ($respuestas as $respuesta) {
+//          $respuesta = new Respuestas();
+          $Respuestasescalas = $respuesta->getRespuestasescalassJoinEscalas();
+          foreach ($Respuestasescalas as $Respuestaescala) {
+//              $Respuestaescala = new Respuestasescalas();
+              $Respuestaescala->getEscalas();
+          }
+      }
   }
   public static function calculareae1($intensidades) { 
      $puntaje=0; 
@@ -78,8 +130,8 @@ class test {
         
          if($intensidad->getResultadosparciales()->getOpciones()->getTexto()==$respuesta->getOpciones()->getTexto()) {            
             $puntaje = $puntaje + 1;              
-          }  
-          $sumaint = $sumaint + $intensidad->getOpciones()->getTexto();
+         }  
+         $sumaint = $sumaint + $intensidad->getOpciones()->getTexto();
        }       
        $puntaje = $puntaje + $sumaint;
        $percentil = PercentilesPeer::getPercentil($intensidades[0]->getResultadosparciales()->getPruebas()->getTests()->getId(),$puntaje);                         

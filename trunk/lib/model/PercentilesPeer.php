@@ -1,6 +1,4 @@
 <?php
-
-
 /**
  * Skeleton subclass for performing query and update operations on the 'percentiles' table.
  *
@@ -16,10 +14,8 @@
  *
  * @package    lib.model
  */
-class PercentilesPeer extends BasePercentilesPeer 
-{
- public static function getPercentil($test,$puntaje)
-  {
+class PercentilesPeer extends BasePercentilesPeer {
+    public static function getPercentil($test,$puntaje) {
   /*  $criteria = new Criteria();    
     $criteria->addJoin(PercentilesPeer::ESCALAS_ID,  EscalasPeer::ID,  Criteria::INNER_JOIN);
     $criteria->add(EscalasPeer::TESTS_ID,$test,Criteria::EQUAL);
@@ -28,13 +24,33 @@ class PercentilesPeer extends BasePercentilesPeer
    
     /*SELECT * FROM `percentiles` WHERE 46 between desde and 
 IFNULL(hasta,desde)*/
-    $query = "SELECT * FROM percentiles 
-              INNER JOIN escalas ON percentiles.escalas_id = escalas.id  
-              WHERE escalas.tests_id=$test AND $puntaje between percentiles.desde and 
-              IFNULL(percentiles.hasta,percentiles.desde)";
-       $connection = Propel::getConnection(self::DATABASE_NAME);
+        $query = "SELECT * FROM percentiles 
+                  INNER JOIN escalas ON percentiles.escalas_id = escalas.id  
+                  WHERE escalas.tests_id=$test AND $puntaje between percentiles.desde and 
+                  IFNULL(percentiles.hasta,percentiles.desde)";
+        $connection = Propel::getConnection(self::DATABASE_NAME);
         $statement = $connection->prepare($query);
         $statement->execute();
         return self::populateObjects($statement, $connection);
-  }
+    }
+    public static function getPercentilPorEscala($escala, $puntaje) {
+        $query = "SELECT * FROM percentiles 
+                  WHERE escalas_id=$escala AND $puntaje between percentiles.desde and 
+                  IFNULL(percentiles.hasta,percentiles.desde)";
+        $connection = Propel::getConnection(self::DATABASE_NAME);
+        $statement = $connection->prepare($query);
+        $statement->execute();
+        return self::populateObjects($statement, $connection);
+    }
+    public static function evaluarValorEsperado(Perfil $perfil, Percentiles $percentil) {
+        $criteria = new Criteria();
+        $criteria->add(ValoresperadoPeer::ESCALAS_ID, $percentil->getEscalasId());
+        $valorEsperados = $perfil->getValoresperados($criteria);
+        $valorEsperado = $valorEsperados[0];
+//        $valorEsperado = new Valoresperado();
+        return  (   $valorEsperado->getMayorque() <= $percentil->getPercentil() 
+                    and $valorEsperado->getMenorque() >= $percentil->getPercentil() ) ? true : false;
+        
+    }
 } // PercentilesPeer
+?>
