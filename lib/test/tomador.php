@@ -13,7 +13,7 @@
 class Tomador 
 {    
     
- public static function getRespuesta(sfWebRequest $request,$prueba) 
+ public static function getRespuesta(sfWebRequest $request,$prueba,$num) 
  {     
  
      switch ($prueba->getTitulo()) {
@@ -21,31 +21,31 @@ class Tomador
             return(Tomador::getDomino($request) );                
          break;
          case '16pf': 
-            return(Tomador::getRespuestaSimple($request) );                
+            return(Tomador::getRespuestaSimple($request,$num) );                
          break;     
          case 'ig2': 
-            return(Tomador::getRespuestaSimple($request) );                
+            return(Tomador::getRespuestaSimple($request,$num) );                
          break;
          case 'barsit': 
-            return(Tomador::getRespuestaSimple($request) );                
+            return(Tomador::getRespuestaSimple($request,$num) );                
          break;
          case 'eae1': 
-            return(Tomador::getRespuestaDoble($request) );                
+            return(Tomador::getRespuestaDoble($request,$num) );                
          break;
          case 'razonamientoverbal ':              
-            return(Tomador::getRespuestaSimple($request) );                
+            return(Tomador::getRespuestaSimple($request,$num) );                
          break;
          case 'razonamientoabstracto':              
-            return(Tomador::getRespuestaSimple($request) );                
+            return(Tomador::getRespuestaSimple($request,$num) );                
          break;
          case 'razonamientonumerico':              
-            return(Tomador::getRespuestaSimple($request) );                
+            return(Tomador::getRespuestaSimple($request,$num) );                
          break;
          case 'raven':              
-            return(Tomador::getRespuestaSimple($request) );                
+            return(Tomador::getRespuestaSimple($request,$num) );                
          break;
          case 'monedas':              
-            return(Tomador::getRespuestaSimple($request) );                
+            return(Tomador::getRespuestaSimple($request,$num) );                
          break;
          default:             
          break;
@@ -68,17 +68,17 @@ class Tomador
     }
     
     
-    public static function getRespuestaSimple(sfWebRequest $request) 
+    public static function getRespuestaSimple(sfWebRequest $request,$num) 
     {   
-        $resultado = $request->getParameter('valor');  // resultado total   
+        $resultado = $request->getParameter('valor'.$num);  // resultado total   
         
         return($resultado);
     }
     
-    public static function getRespuestaDoble(sfWebRequest $request) 
+    public static function getRespuestaDoble(sfWebRequest $request,$num) 
     {   
-        $resultado1 = $request->getParameter('valor');  
-        $resultado2 = $request->getParameter('valor2'); 
+        $resultado1 = $request->getParameter('valor'.$num);  
+        $resultado2 = $request->getParameter('valor2'.$num); 
         $resultado = $resultado1.'/'.$resultado2;
         return($resultado);
     }

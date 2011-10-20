@@ -10,16 +10,15 @@
                         <br />  
                 <?php endforeach;?>
             </p>
-            <form  action="<?php echo url_for('principal/check') ?>" method="post">
+            
                 <label for="">La respuesta correcta es</label> 
-                <select  name="valor" >
+                <select  name="valor<?php echo $n; ?>" >
                     <option value="A" >A</option>
                     <option value="B" >B</option>
                     <option value="C" >C</option>
                 </select>
                 <input type="hidden" name="pagina" value="<?php echo $pagina; ?>" />
-                <input type="hidden" name="pregunta" value="<?php echo $pregunta->getId() ?>" />
-                <input type="submit" value="Continuar" />
-            </form>                      
+                <input type="hidden" name="pregunta<?php echo $n; ?>" value="<?php echo $pregunta->getId() ?>" />
+                            
         </li>     
 </ul>

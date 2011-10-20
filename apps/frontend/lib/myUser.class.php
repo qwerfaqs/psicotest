@@ -66,10 +66,10 @@ class myUser extends derechosSecurityUser {
       }
   }
   public function setResultado($prueba,$test,$respuesta,$pregunta) {               
-     if($prueba->getTests()->getTitulo()=='eae1') {
+     if($test->getTitulo()=='eae1') {
        $tal=explode("/",$respuesta);
        $respuesta = $tal[0];
-       $intensidad = $tal[1];          
+       $intensidad = $tal[1];           
      }          
      $res = OpcionesPeer::getOpcion($respuesta,$test->getTipoopcion()->getId());                        
      $resultado = new  Resultadosparciales();
@@ -79,7 +79,7 @@ class myUser extends derechosSecurityUser {
      $resultado->setPreguntasId($pregunta);
      $resultado->save();
      $this->addResultados($resultado); 
-     if($prueba->getTests()->getTitulo()=='eae1') {
+     if($test->getTitulo()=='eae1') {
          $int = OpcionesPeer::getOpcion($intensidad,$prueba->getTests()->getTipoopcion()->getId());          
          $this->addIntensidades($int, $resultado);
      }
