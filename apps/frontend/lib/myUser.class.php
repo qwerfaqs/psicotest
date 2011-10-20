@@ -96,7 +96,7 @@ class myUser extends derechosSecurityUser {
         case 'razonamientoverbal ': Test::calcularrazonamientoverbal($respuestas); break;
         case 'razonamientoabstracto': Test::calcularrazonamientoabstracto($respuestas); break;
         case 'razonamientonumerico': Test::calcularrazonamientonumerico($respuestas); break;
-        case 'raven': Test::calcularraven($respuestas); break;
+        case 'raven': Test::calcularraven($respuestas); break;        
         
         case 'monedas': Test::calcularmonedas($respuestas); break;
     }        
