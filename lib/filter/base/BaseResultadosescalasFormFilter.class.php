@@ -20,7 +20,7 @@ abstract class BaseResultadosescalasFormFilter extends BaseFormFilterPropel
     $this->setValidators(array(
       'resultados_id' => new sfValidatorPropelChoice(array('required' => false, 'model' => 'Resultados', 'column' => 'id')),
       'escalas_id'    => new sfValidatorPropelChoice(array('required' => false, 'model' => 'Escalas', 'column' => 'id')),
-      'valor'         => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
+      'valor'         => new sfValidatorPass(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('resultadosescalas_filters[%s]');
@@ -41,7 +41,7 @@ abstract class BaseResultadosescalasFormFilter extends BaseFormFilterPropel
       'id'            => 'Number',
       'resultados_id' => 'ForeignKey',
       'escalas_id'    => 'ForeignKey',
-      'valor'         => 'Number',
+      'valor'         => 'Text',
     );
   }
 }

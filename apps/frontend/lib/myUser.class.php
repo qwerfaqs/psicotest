@@ -96,8 +96,13 @@ class myUser extends derechosSecurityUser {
         case 'razonamientoverbal ': Test::calcularrazonamientoverbal($respuestas); break;
         case 'razonamientoabstracto': Test::calcularrazonamientoabstracto($respuestas); break;
         case 'razonamientonumerico': Test::calcularrazonamientonumerico($respuestas); break;
-        case 'raven': Test::calcularraven($respuestas); break;        
-        
+        case 'raven': Test::calcularraven($respuestas); break;              
+        case 'analogiasverbales': Test::calcularanalogiasverbales($respuestas); break;
+        case 'seriesnumericas': Test::calcularseriesnumericas($respuestas); break;
+        case 'matriceslogicas': Test::calcularmatriceslogicas($respuestas); break;
+        case 'completaroraciones': Test::calcularcompletaroraciones($respuestas); break;
+        case 'encajarfiguras': Test::calcularencajarfiguras($respuestas); break;
+        case 'problemasnumericos': Test::calcularproblemasnumericos($respuestas); break;               
         case 'monedas': Test::calcularmonedas($respuestas); break;
     }        
   }

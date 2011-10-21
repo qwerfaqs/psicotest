@@ -22,6 +22,8 @@ propel:
     nombre: { phpName: Nombre, type: VARCHAR, size: '60', required: false }
     apellido: { phpName: Apellido, type: VARCHAR, size: '60', required: false }
     cedula: { phpName: Cedula, type: CHAR, size: '30', required: false }
+    sexo: { phpName: Sexo, type: CHAR, size: '1', required: false }
+    fechanacimiento: { phpName: Fechanacimiento, type: DATE, required: false }
     password: { phpName: Password, type: CHAR, size: '20', required: false }
   escalas:
     _attributes: { phpName: Escalas }
@@ -90,6 +92,7 @@ propel:
     tests_id: { phpName: TestsId, type: INTEGER, size: '11', required: true, foreignTable: tests, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
     evaluaciones_id: { phpName: EvaluacionesId, type: INTEGER, size: '11', required: true, foreignTable: evaluaciones, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
     estadopruebas_id: { phpName: EstadopruebasId, type: INTEGER, size: '11', required: true, foreignTable: estadopruebas, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
     _indexes: { tests_id: [tests_id], estadopruebas_id: [estadopruebas_id], evaluaciones_id: [evaluaciones_id] }
   respuestas:
     _attributes: { phpName: Respuestas }
@@ -120,7 +123,7 @@ propel:
     id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
     resultados_id: { phpName: ResultadosId, type: INTEGER, size: '11', required: true, foreignTable: resultados, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
     escalas_id: { phpName: EscalasId, type: INTEGER, size: '11', required: true, foreignTable: escalas, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
-    valor: { phpName: Valor, type: INTEGER, size: '11', required: false }
+    valor: { phpName: Valor, type: CHAR, size: '5', required: false }
     _indexes: { resultados_id: [resultados_id], escalas_id: [escalas_id] }
   resultadosparciales:
     _attributes: { phpName: Resultadosparciales }
@@ -139,6 +142,7 @@ propel:
     imagen: { phpName: Imagen, type: CHAR, size: '100', required: false }
     duracion: { phpName: Duracion, type: CHAR, size: '30', required: false }
     puntaje_aprobacion: { phpName: PuntajeAprobacion, type: CHAR, size: '20', required: false }
+    paginacion: { phpName: Paginacion, type: INTEGER, size: '11', required: false }
     tipoopcion_id: { phpName: TipoopcionId, type: INTEGER, size: '11', required: true, foreignTable: tipoopcion, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
     tests_id: { phpName: TestsId, type: INTEGER, size: '11', required: false, foreignTable: tests, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
     _indexes: { tests_id: [tests_id], tipoopcion_id: [tipoopcion_id] }
