@@ -16,6 +16,12 @@
  *
  * @package    lib.model
  */
-class ResultadosescalasPeer extends BaseResultadosescalasPeer {
-
+class ResultadosescalasPeer extends BaseResultadosescalasPeer 
+{
+ public static function getResultados($resultado)
+  {
+    $criteria = new Criteria();    
+    $criteria->add(ResultadosescalasPeer::RESULTADOS_ID,$resultado,Criteria::EQUAL);     
+    return (self::doSelectJoinAll($criteria));
+  }
 } // ResultadosescalasPeer
