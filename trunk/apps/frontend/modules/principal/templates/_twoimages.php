@@ -5,7 +5,7 @@
          <li>
            <?php echo '<img height="'.$alto.'" width="'.$ancho.'" src="/images/tests/'.$pregunta->getTests()->getTitulo().'/'.$pregunta->getImagen().'" />';                 
             ?>           
-         
+         <br/>
              <label for="">La respuesta correcta es</label> 
              <select  name="valor<?php echo $n; ?>" >
                  <option value="A" >A</option>

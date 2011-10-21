@@ -191,19 +191,36 @@ class test {
   }
   
   public static function calcularencajarfiguras($respuestas) 
-  {
-      echo "encajar";
+  {      
        Test::calcularbabybase($respuestas);  
   }
   
   public static function calcularmatriceslogicas($respuestas) 
   {
+      
        Test::calcularbabybase($respuestas);  
   }
   
   public static function calcularseriesnumericas($respuestas) 
-  {
+  {      
        Test::calcularbabybase($respuestas);  
+        // Como es el ultimo test le pongo aprobado o desaprobado
+       $resultado =  ResultadosPeer::getResultado($respuestas[0]->getPruebas()->getId(),$respuestas[0]->getAspirantes()->getId() );
+       $resultadosescalas = ResultadosescalasPeer::getResultados($resultado->getId());
+       $aprobado = 0; 
+       foreach($resultadosescalas as $resultadoe)
+       {
+           if($resultadoe->getValor()>=$resultadoe->getEscalas()->getTests()->getPuntajeaprobacion())
+           {
+               $aprobado++ ; 
+           }
+       }
+       if($aprobado==6)
+       {
+           $resultado->setEstadosresultados(1);
+           $resultado->save();
+       }
+       
   }
   
   public static function calcularproblemasnumericos($respuestas) 
@@ -232,7 +249,7 @@ class test {
         $result = new Resultadosescalas();
         $result->setResultados($resultado);
         $result->setEscalas($percentil[0]->getEscalas());
-        $result->setValor($percentil[0]->getPercentil());
+        $result->setValor($percentil[0]->getPercentil());                    
         $result->save();
   }
   
