@@ -38,7 +38,7 @@ class principalActions extends sfActions {
      // si prueba no tiene hijos else traigo el primero sub 
      if($prueba!=null) {
         $this->pagina= sfConfig::get('app_activo'); //Pagina nro 1
-        $this->preguntas = PreguntasPeer::getPreguntas($prueba->getId(),5,$this->pagina);
+        $this->preguntas = PreguntasPeer::getPreguntas($prueba->getId(),$prueba->getPaginacion(),$this->pagina);
         $pregunta = $this->preguntas->getResult();
         $this->opciones = RespuestasPeer::getRespuestas($pregunta[0]->getId());
         $this->test=trim($prueba->getTitulo());
@@ -67,7 +67,7 @@ class principalActions extends sfActions {
    
     $this->getUser()->setResultado($pruebareal,$prueba,$resultado,$pregunta); // setiar resultado a la coleccion
      
-   $this->preguntas = PreguntasPeer::getPreguntas($prueba->getId(),5,$this->pagina);     
+   $this->preguntas = PreguntasPeer::getPreguntas($prueba->getId(),$prueba->getPaginacion(),$this->pagina);     
    $pregunta = $this->preguntas->getResult();
    }   
   
