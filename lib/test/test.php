@@ -190,6 +190,27 @@ class test {
        Test::calcularbabybase($respuestas);  
   }
   
+  public static function calcularencajarfiguras($respuestas) 
+  {
+      echo "encajar";
+       Test::calcularbabybase($respuestas);  
+  }
+  
+  public static function calcularmatriceslogicas($respuestas) 
+  {
+       Test::calcularbabybase($respuestas);  
+  }
+  
+  public static function calcularseriesnumericas($respuestas) 
+  {
+       Test::calcularbabybase($respuestas);  
+  }
+  
+  public static function calcularproblemasnumericos($respuestas) 
+  {
+       Test::calcularbabybase($respuestas);  
+  }
+  
   
   public static function calcularbabybase($respuestas) 
   {
