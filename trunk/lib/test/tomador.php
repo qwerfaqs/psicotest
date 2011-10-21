@@ -44,6 +44,25 @@ class Tomador
          case 'raven':              
             return(Tomador::getRespuestaSimple($request,$num) );                
          break;
+         case 'analogiasverbales':              
+            return(Tomador::getRespuestaSimple($request,$num) );                
+         break;
+         case 'seriesnumericas':              
+            return(Tomador::getRespuestaSimple($request,$num) );                
+         break;
+         case 'matriceslogicas':              
+            return(Tomador::getRespuestaSimple($request,$num) );                
+         break;
+         case 'completaroraciones':              
+            return(Tomador::getRespuestaSimple($request,$num) );                
+         break;
+         case 'encajarfiguras':              
+            return(Tomador::getRespuestaSimple($request,$num) );                
+         break;
+         case 'problemasnumericos':              
+            return(Tomador::getRespuestaSimple($request,$num) );                
+         break;
+     
          case 'monedas':              
             return(Tomador::getRespuestaSimple($request,$num) );                
          break;

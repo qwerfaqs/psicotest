@@ -180,6 +180,40 @@ class test {
             
   }
   
+  public static function calcularanalogiasverbales($respuestas) 
+  {
+    Test::calcularbabybase($respuestas);
+  }
+  
+  public static function calcularcompletaroraciones($respuestas) 
+  {
+       Test::calcularbabybase($respuestas);  
+  }
+  
+  
+  public static function calcularbabybase($respuestas) 
+  {
+           $puntaje =0; 
+      
+       foreach($respuestas as $resultado)
+       {     
+         $pregunta = $resultado->getPreguntas();
+         $estado = sfConfig::get('app_activo');
+         $respuesta =  RespuestasPeer::getRespuesta($pregunta->getId(),$estado);
+        
+          if ($resultado->getOpciones()->getTexto()==$respuesta->getOpciones()->getTexto())
+          {
+            $puntaje = $puntaje + 1;  
+          }
+       }    
+        $percentil = PercentilesPeer::getPercentil($respuestas[0]->getPreguntas()->getTests()->getId(),$puntaje);                               
+        $resultado = ResultadosPeer::getResultado($respuestas[0]->getPruebas()->getId(),$respuestas[0]->getAspirantes()->getId());
+        $result = new Resultadosescalas();
+        $result->setResultados($resultado);
+        $result->setEscalas($percentil[0]->getEscalas());
+        $result->setValor($percentil[0]->getPercentil());
+        $result->save();
+  }
   
   public static function grabarPuntaje($puntaje,$prueba,$aspirante) { 
        $result = ResultadosPeer::getResultado($prueba->getId(), $aspirante);              

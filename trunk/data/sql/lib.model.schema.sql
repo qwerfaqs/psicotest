@@ -61,6 +61,8 @@ CREATE TABLE `aspirantes`
 	`nombre` VARCHAR(60),
 	`apellido` VARCHAR(60),
 	`cedula` CHAR(30),
+	`sexo` CHAR(1),
+	`fechanacimiento` DATE,
 	`password` CHAR(20),
 	PRIMARY KEY (`id`)
 )Type=InnoDB;
@@ -281,6 +283,7 @@ CREATE TABLE `pruebas`
 	`tests_id` INTEGER(11)  NOT NULL,
 	`evaluaciones_id` INTEGER(11)  NOT NULL,
 	`estadopruebas_id` INTEGER(11)  NOT NULL,
+	`created_at` DATETIME,
 	PRIMARY KEY (`id`),
 	KEY `tests_id`(`tests_id`),
 	KEY `estadopruebas_id`(`estadopruebas_id`),
@@ -413,7 +416,7 @@ CREATE TABLE `resultadosescalas`
 	`id` INTEGER(11)  NOT NULL AUTO_INCREMENT,
 	`resultados_id` INTEGER(11)  NOT NULL,
 	`escalas_id` INTEGER(11)  NOT NULL,
-	`valor` INTEGER(11),
+	`valor` CHAR(5),
 	PRIMARY KEY (`id`),
 	KEY `resultados_id`(`resultados_id`),
 	KEY `escalas_id`(`escalas_id`),
@@ -486,6 +489,7 @@ CREATE TABLE `tests`
 	`imagen` CHAR(100),
 	`duracion` CHAR(30),
 	`puntaje_aprobacion` CHAR(20),
+	`paginacion` INTEGER(11),
 	`tipoopcion_id` INTEGER(11)  NOT NULL,
 	`tests_id` INTEGER(11),
 	PRIMARY KEY (`id`),

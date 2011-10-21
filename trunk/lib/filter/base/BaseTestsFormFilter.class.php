@@ -18,6 +18,7 @@ abstract class BaseTestsFormFilter extends BaseFormFilterPropel
       'imagen'             => new sfWidgetFormFilterInput(),
       'duracion'           => new sfWidgetFormFilterInput(),
       'puntaje_aprobacion' => new sfWidgetFormFilterInput(),
+      'paginacion'         => new sfWidgetFormFilterInput(),
       'tipoopcion_id'      => new sfWidgetFormPropelChoice(array('model' => 'Tipoopcion', 'add_empty' => true)),
       'tests_id'           => new sfWidgetFormPropelChoice(array('model' => 'Tests', 'add_empty' => true)),
     ));
@@ -29,6 +30,7 @@ abstract class BaseTestsFormFilter extends BaseFormFilterPropel
       'imagen'             => new sfValidatorPass(array('required' => false)),
       'duracion'           => new sfValidatorPass(array('required' => false)),
       'puntaje_aprobacion' => new sfValidatorPass(array('required' => false)),
+      'paginacion'         => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
       'tipoopcion_id'      => new sfValidatorPropelChoice(array('required' => false, 'model' => 'Tipoopcion', 'column' => 'id')),
       'tests_id'           => new sfValidatorPropelChoice(array('required' => false, 'model' => 'Tests', 'column' => 'id')),
     ));
@@ -55,6 +57,7 @@ abstract class BaseTestsFormFilter extends BaseFormFilterPropel
       'imagen'             => 'Text',
       'duracion'           => 'Text',
       'puntaje_aprobacion' => 'Text',
+      'paginacion'         => 'Number',
       'tipoopcion_id'      => 'ForeignKey',
       'tests_id'           => 'ForeignKey',
     );

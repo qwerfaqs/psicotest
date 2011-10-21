@@ -18,6 +18,7 @@ abstract class BasePruebasForm extends BaseFormPropel
       'tests_id'         => new sfWidgetFormPropelChoice(array('model' => 'Tests', 'add_empty' => false)),
       'evaluaciones_id'  => new sfWidgetFormPropelChoice(array('model' => 'Evaluaciones', 'add_empty' => false)),
       'estadopruebas_id' => new sfWidgetFormPropelChoice(array('model' => 'Estadopruebas', 'add_empty' => false)),
+      'created_at'       => new sfWidgetFormDateTime(),
     ));
 
     $this->setValidators(array(
@@ -25,6 +26,7 @@ abstract class BasePruebasForm extends BaseFormPropel
       'tests_id'         => new sfValidatorPropelChoice(array('model' => 'Tests', 'column' => 'id')),
       'evaluaciones_id'  => new sfValidatorPropelChoice(array('model' => 'Evaluaciones', 'column' => 'id')),
       'estadopruebas_id' => new sfValidatorPropelChoice(array('model' => 'Estadopruebas', 'column' => 'id')),
+      'created_at'       => new sfValidatorDateTime(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('pruebas[%s]');

@@ -24,7 +24,7 @@ abstract class BaseResultadosescalasForm extends BaseFormPropel
       'id'            => new sfValidatorChoice(array('choices' => array($this->getObject()->getId()), 'empty_value' => $this->getObject()->getId(), 'required' => false)),
       'resultados_id' => new sfValidatorPropelChoice(array('model' => 'Resultados', 'column' => 'id')),
       'escalas_id'    => new sfValidatorPropelChoice(array('model' => 'Escalas', 'column' => 'id')),
-      'valor'         => new sfValidatorInteger(array('min' => -2147483648, 'max' => 2147483647, 'required' => false)),
+      'valor'         => new sfValidatorString(array('max_length' => 5, 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('resultadosescalas[%s]');

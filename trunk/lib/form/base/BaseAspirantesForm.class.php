@@ -14,19 +14,23 @@ abstract class BaseAspirantesForm extends BaseFormPropel
   public function setup()
   {
     $this->setWidgets(array(
-      'id'       => new sfWidgetFormInputHidden(),
-      'nombre'   => new sfWidgetFormInputText(),
-      'apellido' => new sfWidgetFormInputText(),
-      'cedula'   => new sfWidgetFormInputText(),
-      'password' => new sfWidgetFormInputText(),
+      'id'              => new sfWidgetFormInputHidden(),
+      'nombre'          => new sfWidgetFormInputText(),
+      'apellido'        => new sfWidgetFormInputText(),
+      'cedula'          => new sfWidgetFormInputText(),
+      'sexo'            => new sfWidgetFormInputText(),
+      'fechanacimiento' => new sfWidgetFormDate(),
+      'password'        => new sfWidgetFormInputText(),
     ));
 
     $this->setValidators(array(
-      'id'       => new sfValidatorChoice(array('choices' => array($this->getObject()->getId()), 'empty_value' => $this->getObject()->getId(), 'required' => false)),
-      'nombre'   => new sfValidatorString(array('max_length' => 60, 'required' => false)),
-      'apellido' => new sfValidatorString(array('max_length' => 60, 'required' => false)),
-      'cedula'   => new sfValidatorString(array('max_length' => 30, 'required' => false)),
-      'password' => new sfValidatorString(array('max_length' => 20, 'required' => false)),
+      'id'              => new sfValidatorChoice(array('choices' => array($this->getObject()->getId()), 'empty_value' => $this->getObject()->getId(), 'required' => false)),
+      'nombre'          => new sfValidatorString(array('max_length' => 60, 'required' => false)),
+      'apellido'        => new sfValidatorString(array('max_length' => 60, 'required' => false)),
+      'cedula'          => new sfValidatorString(array('max_length' => 30, 'required' => false)),
+      'sexo'            => new sfValidatorString(array('max_length' => 1, 'required' => false)),
+      'fechanacimiento' => new sfValidatorDate(array('required' => false)),
+      'password'        => new sfValidatorString(array('max_length' => 20, 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('aspirantes[%s]');

@@ -21,6 +21,7 @@ abstract class BaseTestsForm extends BaseFormPropel
       'imagen'             => new sfWidgetFormInputText(),
       'duracion'           => new sfWidgetFormInputText(),
       'puntaje_aprobacion' => new sfWidgetFormInputText(),
+      'paginacion'         => new sfWidgetFormInputText(),
       'tipoopcion_id'      => new sfWidgetFormPropelChoice(array('model' => 'Tipoopcion', 'add_empty' => false)),
       'tests_id'           => new sfWidgetFormPropelChoice(array('model' => 'Tests', 'add_empty' => true)),
     ));
@@ -33,6 +34,7 @@ abstract class BaseTestsForm extends BaseFormPropel
       'imagen'             => new sfValidatorString(array('max_length' => 100, 'required' => false)),
       'duracion'           => new sfValidatorString(array('max_length' => 30, 'required' => false)),
       'puntaje_aprobacion' => new sfValidatorString(array('max_length' => 20, 'required' => false)),
+      'paginacion'         => new sfValidatorInteger(array('min' => -2147483648, 'max' => 2147483647, 'required' => false)),
       'tipoopcion_id'      => new sfValidatorPropelChoice(array('model' => 'Tipoopcion', 'column' => 'id')),
       'tests_id'           => new sfValidatorPropelChoice(array('model' => 'Tests', 'column' => 'id', 'required' => false)),
     ));
