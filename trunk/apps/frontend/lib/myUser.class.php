@@ -61,7 +61,7 @@ class myUser extends derechosSecurityUser {
        $result->setAspirantesId($this->getAttribute('usuarioId'));       
        $result->setPuntaje(0);                   
        $result->setPruebas($prueba);         
-       $result->setEstadosresultadosId(2);             
+       $result->setEstadosresultadosId(sfConfig::get('app_resultado_noapto'));             
        $result->save();
       }
   }

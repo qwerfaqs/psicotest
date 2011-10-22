@@ -60,11 +60,12 @@ class test {
    * Calcula los resultados del test 16pf
    * $respuestas son Resultadosparciales
    */
-  public static function calcular16pf($respuestas) { 
+  public static function calcular16pf($resultadosParciales) { 
+      $Escalas = array();
       $resultadosEscalas = array(); // arreglo para guardar los resultados por escalas ?
 //     $r = new Resultadosparciales();
-      $prueba = $respuestas[0]->getPruebas();
-      $aspirante = $respuestas[0]->getAspirantes();
+      $prueba = $resultadosParciales[0]->getPruebas();
+      $aspirante = $resultadosParciales[0]->getAspirantes();
       $aspirantes_id  = $aspirante->getId();
       $pruebas_id = $prueba->getId();
       $perfil = $prueba->getEvaluaciones()->getPerfil();
@@ -72,23 +73,39 @@ class test {
       $criteria->add(ResultadosPeer::ASPIRANTES_ID, $aspirantes_id);
       $criteria->add(ResultadosPeer::PRUEBAS_ID, $pruebas_id);
       $resultado = ResultadosPeer::doSelectOne($criteria);
-      foreach ($respuestas as $respuesta) {
+      foreach ($resultadosParciales as $resultadoParcial) {
 //          $respuesta = new Respuestas();
-          $Respuestasescalas = $respuesta->getRespuestasescalassJoinEscalas();
+//          $resultadoParcial = new Resultadosparciales();
+          $preguntas_id = $resultadoParcial->getPreguntasId();
+          $opciones_id = $resultadoParcial->getOpcionesId();
+          $criteria = new Criteria();
+          $criteria->add(RespuestasPeer::PREGUNTAS_ID, $preguntas_id);
+          $criteria->add(RespuestasPeer::OPCIONES_ID, $opciones_id);
+          $respuesta = RespuestasPeer::doSelectOne($criteria);
+          
+          $Respuestasescalas = $respuesta->getRespuestasescalass();
+//          echo $Respuestasescalas[0];
+//          die();
+          
           foreach ($Respuestasescalas as $Respuestaescala) {
 //              $Respuestaescala = new Respuestasescalas();
-              $resultadosEscalas[$Respuestaescala->getEscalas()] = (isset ($resultadosEscalas[$Respuestaescala->getEscalas()]) ?$resultadosEscalas[$Respuestaescala->getEscalas()] : 0) + $Respuestaescala->getValor();
+//              var_dump($Respuestaescala->getEscalas());
+              //die();
+              $Escalas[$Respuestaescala->getEscalas()->getId()] = $Respuestaescala->getEscalas();
+              $resultadosEscalas[$Respuestaescala->getEscalas()->getId()] = (isset ($resultadosEscalas[$Respuestaescala->getEscalas()->getId()]) ?$resultadosEscalas[$Respuestaescala->getEscalas()->getId()] : 0) + $Respuestaescala->getValor();
           }
+          die();
       }
 //      $percentiles_por_escala = array();
       $aprobado_general = true;
       
-      foreach ($resultadosEscalas as $Escala => $valor) {
+      foreach ($resultadosEscalas as $EscalaId => $valor) {
+          $Escala = $Escalas[$EscalaId];
           $Resultadosescalas = new Resultadosescalas();
           $Resultadosescalas->setEscalas($Escala);
           $Resultadosescalas->setResultados($resultado);
           //$Resultadosescalas->setValor($valor);
-          $percentil = PercentilesPeer::getPercentilPorEscala($escala, $valor);
+          $percentil = PercentilesPeer::getPercentilPorEscala($Escala, $valor);
 //          $percentil = new Percentiles();
 //          $percentil->getPercentil();
 //          $percentiles_por_escala[$Escala] = $percentil->getPercentil();
@@ -101,7 +118,7 @@ class test {
       }
       if($aprobado_general === true) {
           $result = ResultadosPeer::getResultado($prueba->getId(), $aspirante);   
-          $result->setEstadosresultadosId(1);
+          $result->setEstadosresultadosId(sfConfig::get('app_resultado_apto'));
           $result->save();
       }
       

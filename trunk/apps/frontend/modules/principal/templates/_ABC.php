@@ -3,7 +3,8 @@
             <p>
                 <?php echo $pregunta->getDescripcion() ?> 
                 <br />
-                <?php foreach ($respuestas as $respuesta) : ?>
+                <?php $respuestasMias = $pregunta->getRespuestass(); // Forro Hijo de puta, Que haces? ?>
+                <?php foreach ($respuestasMias as $respuesta) : ?>
                         <strong>
                             <?php echo $respuesta->getOpciones()->getTexto() ?>) <?php echo $respuesta->getDescripcion() ?>
                         </strong>

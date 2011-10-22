@@ -70,7 +70,7 @@ class evaluacionesActions extends sfActions {
         $Prueba = new Pruebas();
         $Prueba->setEvaluaciones($Evaluacion);
         $Prueba->setTests($Test);
-        $Prueba->setEstadopruebasId(1); // Estado Inicializado
+        $Prueba->setEstadopruebasId(sfConfig::get('app_prueba_inicializada')); // Estado Inicializado
         $Prueba->save();
         $this->redirect(url_for('evaluaciones/testList?id=' . $Evaluacion->getId()));
     }
