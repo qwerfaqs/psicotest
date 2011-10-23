@@ -24,6 +24,13 @@
                                   <li>
                                   <label for="repeatpassword"><span>Repita su contraseña</span></label> 
                                    <?php echo $form['password_check']->render(array('class'=>'txt')); ?></li>
+                                 <li>
+                                  <label for="fechanacimiento"><span>Fecha de nacimiento</span></label> 
+                                  <?php echo $form['fechanacimiento']->render(array('id'=>'dob')); ?>
+                                 </li>
+                                <li>
+                                  <label for="sex"><span>Sexo</span></label> 
+                                  <?php echo $form['sexo']->render(array('id'=>'sex')); ?></li>
                                 
                                                                                
                                 <li>

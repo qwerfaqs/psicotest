@@ -9,8 +9,18 @@
  */
 class AspirantesForm extends BaseAspirantesForm
 {
+     protected static $subjects = array('Masculino', 'Femenino');
+     
   public function configure()
   {
+   $years = range(1978, 2011 );
+        $this->widgetSchema['fechanacimiento'] = new sfWidgetFormDate(array(       
+        'format'=>'%day%%month%%year%',
+        'years'=>array_combine($years, $years),
+        'default' => $this->getObject()->getFechanacimiento(),        
+      ));
+                
+    $this->widgetSchema['sexo']= new sfWidgetFormSelect(array('choices' => self::$subjects)); 
     $this->widgetSchema['password']= new sfWidgetFormInputPassword();
     $this->widgetSchema['password_check']= new sfWidgetFormInputPassword();     
     $this->validatorSchema['password'] = new sfValidatorString(array('required' => true, 'min_length' => 4, 'max_length' => 20));
@@ -18,5 +28,7 @@ class AspirantesForm extends BaseAspirantesForm
    $this->validatorSchema->setPostValidator(new sfValidatorAnd(array(
     new sfValidatorSchemaCompare('password', '==', 'password_check', array('throw_global_error' => true), array('invalid' => 'La contraseña es Invalida')),
 )));
+   
+   
   }
 }
