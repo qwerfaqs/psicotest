@@ -9,8 +9,8 @@ all:
     success_signin_url: principal/evaluaciones
     # aca hay varias opciones Administrador Chicas Clientes Reevendedores
     modelo: Aspirantes
-  activo: 4
+  activo: 1
   init_prueba: 0
-  resultado_apto: 3 
-  resultado_noapto: 4 
+  resultado_apto: 1 
+  resultado_noapto: 2 
      
