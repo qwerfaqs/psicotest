@@ -66,4 +66,59 @@ class ResultadosPeer extends BaseResultadosPeer
         }
         return($datos);
   }
+  
+   public static function getCantDesaprobados()
+  {
+     $sql ="SELECT tests.titulo, COUNT( * ) as cantidad
+            FROM resultados
+            INNER JOIN pruebas ON resultados.pruebas_id = pruebas.id
+            INNER JOIN tests ON pruebas.tests_id = tests.id
+            WHERE estadosresultados_id =2
+            GROUP BY tests.id";
+      
+   /* $criteria = new Criteria();    
+    $criteria->addJoin(self::PRUEBAS_ID,PruebasPeer::ID, Criteria::INNER_JOIN);
+    $criteria->addJoin(PruebasPeer::TESTS_ID,TestsPeer::ID, Criteria::INNER_JOIN);    
+    $estado = sfConfig::get('app_activo');
+    $criteria->add(ResultadosPeer::ESTADOSRESULTADOS_ID,$estado,Criteria::EQUAL);     
+    $criteria->addGroupByColumn(TestsPeer::ID); 
+    echo $criteria->toString();
+    return (self::doSelect($criteria));*/
+      
+       $connection = Propel::getConnection();
+       $statement = $connection->prepare($sql);
+        $statement->execute();
+        $datos = array();
+        while ($result = $statement->fetch(PDO::FETCH_ASSOC)) {
+            $datos[] = $result;
+        }
+        return($datos);
+  }
+  
+  public static function getCantAspirantes()
+  {
+       $criteria = new Criteria();
+       $sql = "SELECT sexo,count(*) as cantidad FROM `aspirantes`
+        group by sexo WITH ROLLUP";
+        $connection = Propel::getConnection();
+       $statement = $connection->prepare($sql);
+        $statement->execute();
+        $datos = array();
+        while ($result = $statement->fetch(PDO::FETCH_ASSOC)) {
+            $datos[] = $result;
+        }
+        return($datos);
+  }
+  
+  public static function getPodio()
+  {
+    $criteria = new Criteria();    
+    $criteria->addJoin(self::PRUEBAS_ID,PruebasPeer::ID, Criteria::INNER_JOIN);
+    $criteria->addJoin(PruebasPeer::TESTS_ID,TestsPeer::ID, Criteria::INNER_JOIN);       
+    $criteria->addJoin(self::ASPIRANTES_ID,AspirantesPeer::ID, Criteria::INNER_JOIN); 
+    $criteria->addDescendingOrderByColumn(self::PUNTAJE);    
+    $criteria->setLimit(20);
+    return (self::doSelect($criteria));   
+  }
+  
 } // ResultadosPeer

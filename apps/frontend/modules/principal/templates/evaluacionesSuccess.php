@@ -1,4 +1,4 @@
-  <div class="content">
+<div class="content">
     <div class="content_resize">
       <div class="mainbar">
         <h2>Bienvenido <em><?php echo ucfirst($sf_user->getAttribute("usuarioNombre")) ?></em></h2>

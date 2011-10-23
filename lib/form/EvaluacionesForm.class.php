@@ -11,5 +11,8 @@ class EvaluacionesForm extends BaseEvaluacionesForm
 {
   public function configure()
   {
+       unset(
+      $this['fecha']
+    );
   }
 }
