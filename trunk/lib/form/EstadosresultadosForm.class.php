@@ -11,5 +11,6 @@ class EstadosresultadosForm extends BaseEstadosresultadosForm
 {
   public function configure()
   {
+      
   }
 }

@@ -51,6 +51,7 @@
             <li><a href="<?php echo url_for('estadisticas/aprobados') ?>">Cantidad de aprobados por test</a></li>
             <li><a href="<?php echo url_for('estadisticas/desaprobados') ?>">Cantidad de desaprobados por test</a></li>
             <li><a href="<?php echo url_for('estadisticas/aspirantes') ?>">Cantidad de aspirantes registrados</a></li>            
+            <li><a href="<?php echo url_for('estadisticas/podiogeneral') ?>">20 aspirantes con mejores puntajes</a></li>            
           </ul>
         </div>
           

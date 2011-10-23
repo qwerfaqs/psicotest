@@ -1,4 +1,7 @@
-<div class="mainbar">
+<div class="main">
+    <div class="content">
+        <div class="content_resize">
+            <div class="mainbar">
      <ul class="listado">
         <form  action="<?php echo url_for('principal/check') ?>" method="post">
           <?php foreach ($preguntas as $n=>$pregunta) : ?>
@@ -25,3 +28,4 @@
         </ul>
     </div>
 
+ </div></div></div>

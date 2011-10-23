@@ -1,3 +1,4 @@
+<?php include_partial('enunciado'.$test); ?>
 <style type="text/css">
     <!--
     .invisible {border-color:#FFFFFF;border-width:2px; border-style:solid;}
@@ -74,9 +75,11 @@
             <h3><?php // echo $currentprueba->getTests()->getTitulo();  ?></h3>
             <p>
                 <?php // echo $currentprueba->getTests()->getEnunciado(); ?>      
-                <?php               
-                foreach ($preguntas as $pregunta)
-                    include_partial('tabrespuesta', array('pregunta' =>$pregunta, 'pagina' => $pagina));
+                <?php   
+                
+                
+                foreach ($preguntas as $n=>$pregunta)
+                    include_partial('tabrespuesta', array('pregunta' =>$pregunta, 'pagina' => $pagina,'n'=>$n));
                 ?>
         </div>
         <div class="clr"></div>

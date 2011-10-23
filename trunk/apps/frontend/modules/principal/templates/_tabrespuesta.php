@@ -1,6 +1,6 @@
 </p>
 <p style="text-align:center">
-    <img src="/images/tests/<?php echo $pregunta->getTests()->getImagen(); ?>/<?php echo $pregunta->getImagen(); ?>" alt="" width="203" height="227"/>
+    <img src="/images/tests/<?php echo $pregunta->getTests()->getTitulo(); ?>/<?php echo $pregunta->getImagen(); ?>" alt="" width="203" height="227"/>
 <div class="seleccionarficha" clear:both">
      <table align="center">
         <tbody>
@@ -120,7 +120,9 @@
 
                         <input type="hidden" name="pagina" value="<?php echo $pagina; ?>" />
 
-                        <input type="hidden" name="pregunta" value="<?php echo $pregunta->getId() ?>" />
+                        <input type="hidden" name="pregunta<?php echo $n; ?>" value="<?php echo $pregunta->getId() ?>" />
+                        
+                         <input type="hidden" name="cantidad" value="<?php echo count($pregunta) ?>" />
 
                         <input type="submit" name="ir" value="Continuar" />
                     </form></td>
