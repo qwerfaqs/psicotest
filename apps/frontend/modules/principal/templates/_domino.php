@@ -1,4 +1,4 @@
-<?php include_partial('enunciado'.$test); ?>
+<?php include_partial('enunciado'.$test, array("pagina"=>$pagina)); ?>
 <style type="text/css">
     <!--
     .invisible {border-color:#FFFFFF;border-width:2px; border-style:solid;}
