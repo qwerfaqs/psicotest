@@ -1,12 +1,15 @@
 <br></br>
 <div>
 	<script>
-	$(function() {
+            $(document).ready(function() {
 		$( "#accordion" ).accordion({
-			collapsible: true
+			collapsible: true,
+                        active: <?php echo $pagina == 1 ? 0 : 1; ?>
+                        
 		});
-	});
+            });
 	</script>
+        
 
 
 <div class="demo">

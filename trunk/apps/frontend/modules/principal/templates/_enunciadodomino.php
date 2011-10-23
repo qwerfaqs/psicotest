@@ -4,7 +4,8 @@
             $(document).ready(function() {
 		$( "#accordion" ).accordion({
 			collapsible: true,
-                        active: <?php echo $pagina == 1 ? 0 : 0; ?>
+                        active: <?php echo $pagina == 1 ? 0 : 1; ?>
+                        
 		});
             });
 	</script>
