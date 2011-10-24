@@ -1,5 +1,5 @@
 <ul class="listado">
-    <?php echo count($preguntas); ?>
+    
     <form  action="<?php echo url_for('principal/check') ?>" method="post">
     <?php foreach ($preguntas as $n=>$pregunta) : ?>
           <li>

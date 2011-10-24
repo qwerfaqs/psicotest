@@ -1,3 +1,4 @@
+<?php include_partial('enunciado'.$test,array("pagina"=>$pagina)); ?>
 <div class="main">
     <div class="content">
         <div class="content_resize">

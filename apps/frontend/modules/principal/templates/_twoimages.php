@@ -26,6 +26,10 @@
             <input type="submit" value="Continuar" />
             </form>
         </ul>
+              <p style="text-align:center">&nbsp;</p>
+            </div>
+            <div class="clr"></div>
+        </div>
     </div>
 
- </div></div></div>
+</div>
