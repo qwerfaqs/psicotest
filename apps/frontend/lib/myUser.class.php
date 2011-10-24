@@ -107,4 +107,10 @@ class myUser extends derechosSecurityUser {
         case 'monedas': Test::calcularmonedas($respuestas); break;
     }        
   }
+  public function setStarTestTimeStamp(){
+      $this->setAttribute("StarTestTimeStamp", time());
+  }
+  public function getStarTestTimeStamp(){
+      return $this->getAttribute("StarTestTimeStamp");
+  }
 }

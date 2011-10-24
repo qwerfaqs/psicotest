@@ -18,7 +18,10 @@ class test {
           {
             $puntaje = $puntaje + 2.857142857142857;  
           }
-       }          
+       }     
+       /*
+        * Si al tipo se le acabo el tiempo y no respondio nada tira error porque no existe el indice 0
+        */
        Test::grabarPuntaje($puntaje,$respuestas[0]->getPruebas(), $respuestas[0]->getAspirantesId());       
   }
   
