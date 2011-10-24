@@ -1,4 +1,26 @@
 <?php include_partial('enunciado'.$test, array("pagina"=>$pagina)); ?>
+<script>
+    var i = 0;
+    function verificar(){
+//        alert(i++);
+$.get('<?php echo url_for('principal/consultaTiempo') ?>?ts='+Math.random(), function(data) {
+          //$('.result').html(data);
+          if(data == 'patadaNinja'){
+              patadaEnElOrto();
+          }else{
+              verificarRecurrente();
+          }
+        });
+        
+    }
+    function verificarRecurrente(){
+        setTimeout('verificar()', 2000);
+    }
+    function patadaEnElOrto(){
+        document.location.href = '<?php echo url_for('principal/pregunta') ?>';
+    }
+    verificarRecurrente();
+</script>
 <style type="text/css">
     <!--
     .invisible {border-color:#FFFFFF;border-width:2px; border-style:solid;}

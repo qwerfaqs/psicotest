@@ -28,7 +28,8 @@ class principalActions extends sfActions {
      if(isset($asistencia)) {
         $this->getUser()->setEvaluacion($asistencia->getEvaluaciones());
         $this->getUser()->setPruebas(); // guardo en un arreglo todas las pruebas de la evaluacion seleccionada
-        $this->getUser()->initResultados(); // inicia el arreglo de resultados        
+        $this->getUser()->initResultados(); // inicia el arreglo de resultados  
+//        $this->getUser()->setStarTestTimeStamp();// seteo el time stamp de inicio de test.
         $this->forward('principal','pregunta'); // me voy a realizar las preguntas
      } else
         $this->redirect($request->getUriPrefix()); // lo pateo porque no esta asistido
@@ -42,6 +43,8 @@ class principalActions extends sfActions {
         $pregunta = $this->preguntas->getResult();
         $this->opciones = RespuestasPeer::getRespuestas($pregunta[0]->getId());
         $this->test=trim($prueba->getTitulo());
+//        $this->evaluacionId = $prueba->getId();
+        $this->getUser()->setStarTestTimeStamp();// seteo el time stamp de inicio de test.
         if(count($this->preguntas)==0)
             $this->forward('principal','finish');
      }
@@ -88,5 +91,26 @@ class principalActions extends sfActions {
    $ev->setEstadosevaluacionesId(3);
    $ev->save(); FINALIZA TODAS LAS EVALUACIONES*/
       
+  }
+  public function executeConsultaTiempo(sfWebRequest $request) {
+       $tests_hijo = $this->getUser()->getPrueba();
+//       $tests_hijo = new Tests();
+       $duracion = $tests_hijo->getDuracion() * 60;
+       $id = $tests_hijo->getId();
+       $nombre = $tests_hijo->getTitulo();
+       $inicio = $this->getUser()->getStarTestTimeStamp();
+       $lapsus = round( time() - $inicio) ;
+//       var_dump($tests_hijo);
+       $respuesta = "tortugaNinja";
+       if($lapsus >= $duracion) {
+           $respuesta = "patadaNinja";
+           $this->getUser()->saveResultados($tests_hijo); // grabo los resultados totales y parciales
+           $this->getUser()->Nextprueba();   // doy acceso a la siguiente prueba
+           $this->getUser()->initResultados();           // inicializo el arreglo de resultados
+           //$this->forward('principal', 'pregunta'); // vuelvo al flujo del principio pero con otro
+       }
+       $this->getResponse()->setContent($respuesta);
+       return sfView::NONE;
+       
   }
 }
