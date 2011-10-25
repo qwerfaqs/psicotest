@@ -17,6 +17,7 @@ abstract class BaseEvaluacionesFormFilter extends BaseFormFilterPropel
       'cantidad'               => new sfWidgetFormFilterInput(),
       'fecha'                  => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate())),
       'nombre'                 => new sfWidgetFormFilterInput(),
+      'created_at'             => new sfWidgetFormFilterInput(),
     ));
 
     $this->setValidators(array(
@@ -25,6 +26,7 @@ abstract class BaseEvaluacionesFormFilter extends BaseFormFilterPropel
       'cantidad'               => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
       'fecha'                  => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDate(array('required' => false)), 'to_date' => new sfValidatorDate(array('required' => false)))),
       'nombre'                 => new sfValidatorPass(array('required' => false)),
+      'created_at'             => new sfValidatorPass(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('evaluaciones_filters[%s]');
@@ -48,6 +50,7 @@ abstract class BaseEvaluacionesFormFilter extends BaseFormFilterPropel
       'cantidad'               => 'Number',
       'fecha'                  => 'Date',
       'nombre'                 => 'Text',
+      'created_at'             => 'Text',
     );
   }
 }

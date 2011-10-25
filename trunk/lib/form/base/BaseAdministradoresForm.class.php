@@ -14,19 +14,21 @@ abstract class BaseAdministradoresForm extends BaseFormPropel
   public function setup()
   {
     $this->setWidgets(array(
-      'id'       => new sfWidgetFormInputHidden(),
-      'usuario'  => new sfWidgetFormInputText(),
-      'password' => new sfWidgetFormInputText(),
-      'nombre'   => new sfWidgetFormInputText(),
-      'apellido' => new sfWidgetFormInputText(),
+      'id'         => new sfWidgetFormInputHidden(),
+      'usuario'    => new sfWidgetFormInputText(),
+      'password'   => new sfWidgetFormInputText(),
+      'nombre'     => new sfWidgetFormInputText(),
+      'apellido'   => new sfWidgetFormInputText(),
+      'created_at' => new sfWidgetFormDateTime(),
     ));
 
     $this->setValidators(array(
-      'id'       => new sfValidatorChoice(array('choices' => array($this->getObject()->getId()), 'empty_value' => $this->getObject()->getId(), 'required' => false)),
-      'usuario'  => new sfValidatorString(array('max_length' => 50, 'required' => false)),
-      'password' => new sfValidatorString(array('max_length' => 50, 'required' => false)),
-      'nombre'   => new sfValidatorString(array('max_length' => 50, 'required' => false)),
-      'apellido' => new sfValidatorString(array('max_length' => 20, 'required' => false)),
+      'id'         => new sfValidatorChoice(array('choices' => array($this->getObject()->getId()), 'empty_value' => $this->getObject()->getId(), 'required' => false)),
+      'usuario'    => new sfValidatorString(array('max_length' => 50, 'required' => false)),
+      'password'   => new sfValidatorString(array('max_length' => 50, 'required' => false)),
+      'nombre'     => new sfValidatorString(array('max_length' => 50, 'required' => false)),
+      'apellido'   => new sfValidatorString(array('max_length' => 20, 'required' => false)),
+      'created_at' => new sfValidatorDateTime(array('required' => false)),
     ));
 
     $this->validatorSchema->setPostValidator(
