@@ -21,6 +21,7 @@ abstract class BaseAspirantesForm extends BaseFormPropel
       'sexo'            => new sfWidgetFormInputText(),
       'fechanacimiento' => new sfWidgetFormDate(),
       'password'        => new sfWidgetFormInputText(),
+      'created_at'      => new sfWidgetFormDateTime(),
     ));
 
     $this->setValidators(array(
@@ -31,6 +32,7 @@ abstract class BaseAspirantesForm extends BaseFormPropel
       'sexo'            => new sfValidatorString(array('max_length' => 1, 'required' => false)),
       'fechanacimiento' => new sfValidatorDate(array('required' => false)),
       'password'        => new sfValidatorString(array('max_length' => 20, 'required' => false)),
+      'created_at'      => new sfValidatorDateTime(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('aspirantes[%s]');

@@ -18,6 +18,7 @@ abstract class BaseAspirantesFormFilter extends BaseFormFilterPropel
       'sexo'            => new sfWidgetFormFilterInput(),
       'fechanacimiento' => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate())),
       'password'        => new sfWidgetFormFilterInput(),
+      'created_at'      => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate())),
     ));
 
     $this->setValidators(array(
@@ -27,6 +28,7 @@ abstract class BaseAspirantesFormFilter extends BaseFormFilterPropel
       'sexo'            => new sfValidatorPass(array('required' => false)),
       'fechanacimiento' => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDate(array('required' => false)), 'to_date' => new sfValidatorDate(array('required' => false)))),
       'password'        => new sfValidatorPass(array('required' => false)),
+      'created_at'      => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDate(array('required' => false)), 'to_date' => new sfValidatorDate(array('required' => false)))),
     ));
 
     $this->widgetSchema->setNameFormat('aspirantes_filters[%s]');
@@ -51,6 +53,7 @@ abstract class BaseAspirantesFormFilter extends BaseFormFilterPropel
       'sexo'            => 'Text',
       'fechanacimiento' => 'Date',
       'password'        => 'Text',
+      'created_at'      => 'Date',
     );
   }
 }
