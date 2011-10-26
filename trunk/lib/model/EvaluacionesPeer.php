@@ -24,7 +24,7 @@ class EvaluacionesPeer extends BaseEvaluacionesPeer
     if($nombre!="")
         $criteria->add(EvaluacionesPeer::NOMBRE,$nombre,Criteria::EQUAL);     
     if($fecha!="--")
-        $criteria->add(EvaluacionesPeer::FECHA,$fecha,Criteria::EQUAL);     
+        $criteria->add(EvaluacionesPeer::CREATED_AT,$fecha.'%',Criteria::LIKE);     
     
     $criteria->add(EvaluacionesPeer::ESTADOSEVALUACIONES_ID,$estado,Criteria::EQUAL);     
     $pager = new PropelPager($criteria, 'EvaluacionesPeer', 'doSelectJoinAll', $page = $pagina, $rows);
