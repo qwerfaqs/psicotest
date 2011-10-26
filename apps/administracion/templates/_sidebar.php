@@ -45,9 +45,10 @@
         </div>
           
         <div class="gadget">
-          <h2 class="star"><span>Estadisticas y reportes</span></h2>
+          <h2 class="star"><span>Auditorias y reportes</span></h2>
           <div class="clr"></div>
           <ul class="sb_menu">
+            <li><a href="<?php echo url_for('auditorias/index') ?>">Auditorias generales</a></li>            
             <li><a href="<?php echo url_for('estadisticas/aprobados') ?>">Cantidad de aprobados por test</a></li>
             <li><a href="<?php echo url_for('estadisticas/desaprobados') ?>">Cantidad de desaprobados por test</a></li>
             <li><a href="<?php echo url_for('estadisticas/aspirantes') ?>">Cantidad de aspirantes registrados</a></li>            
