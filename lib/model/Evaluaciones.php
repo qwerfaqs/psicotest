@@ -16,6 +16,50 @@
  *
  * @package    lib.model
  */
-class Evaluaciones extends BaseEvaluaciones {
+class Evaluaciones extends BaseEvaluaciones 
+{
+    public function postInsert(PropelPDO $con = null)
+     {
+             $auditoria = new Auditorias();
+             //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
+             $auditoria->setAdministradoresId(1);
+             $auditoria->setObjeto('Evaluaciones');
+             $auditoria->setDescripcion(' Nombre : '.$this->getNombre().' Perfil : '.$this->getPerfil()->getNombre().' Cantidad de aspirantes : '.$this->getCantidad());
+             $auditoria->setTipooperacion('Alta de evaluación');
+             $auditoria->save();             
+     }
+     
+      public function postUpdate(PropelPDO $con = null)
+     {
+             $auditoria = new Auditorias();
+             //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
+             $auditoria->setAdministradoresId(1);
+             $auditoria->setObjeto('Evaluaciones');
+             $auditoria->setDescripcion(' Nombre : '.$this->getNombre().' Perfil : '.$this->getPerfil()->getNombre().' Cantidad de aspirantes : '.$this->getCantidad());
+             $auditoria->setTipooperacion('Modificación de evaluación');
+             $auditoria->save();   
+     }
+     
+     public function preUpdate(PropelPDO $con = null)
+     {
+             $auditoria = new Auditorias();
+             //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
+             $auditoria->setAdministradoresId(1);
+             $auditoria->setObjeto('Evaluaciones');
+             $auditoria->setDescripcion(' Nombre : '.$this->getNombre().' Perfil : '.$this->getPerfil()->getNombre().' Cantidad de aspirantes : '.$this->getCantidad());
+             $auditoria->setTipooperacion('Modificación de evaluación');
+             $auditoria->save();   
+     }
+
+     public function preDelete(PropelPDO $con = null)
+     {
+             $auditoria = new Auditorias();
+             //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
+             $auditoria->setAdministradoresId(1);
+             $auditoria->setObjeto('Evaluaciones');
+             $auditoria->setDescripcion(' Nombre : '.$this->getNombre().' Perfil : '.$this->getPerfil()->getNombre().' Cantidad de aspirantes : '.$this->getCantidad());
+             $auditoria->setTipooperacion('Eliminación de evaluación');
+             $auditoria->save();          
+     }
 
 } // Evaluaciones
