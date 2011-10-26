@@ -22,13 +22,18 @@
     </tr>
     <tr>
       <th>Administradores:</th>
-      <td><?php echo $Auditorias->getAdministradoresId() ?></td>
+      <td><?php echo $Auditorias->getAdministradores()->getUsuario() ?></td>
     </tr>
+    
+       <tr>
+      <th>Nombre y apellido del administrador :</th>
+      <td><?php echo $Auditorias->getAdministradores()->getNombre().' '.$Auditorias->getAdministradores()->getApellido(); ?></td>
+    </tr>
+    
+    
   </tbody>
 </table>
 
 <hr />
 
-<a href="<?php echo url_for('auditorias/edit?id='.$Auditorias->getId()) ?>">Edit</a>
-&nbsp;
-<a href="<?php echo url_for('auditorias/index') ?>">List</a>
+

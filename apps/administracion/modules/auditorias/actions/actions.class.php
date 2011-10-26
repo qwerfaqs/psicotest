@@ -11,7 +11,7 @@ class auditoriasActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
-    $this->Auditoriass = AuditoriasPeer::doSelect(new Criteria());
+    $this->Auditorias = AuditoriasPeer::doSelect(new Criteria());
   }
 
   public function executeShow(sfWebRequest $request)
