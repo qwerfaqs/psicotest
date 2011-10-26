@@ -11,7 +11,14 @@ class auditoriasActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
-    $this->Auditorias = AuditoriasPeer::doSelect(new Criteria());
+    $pagina = $request->getParameter('pagina');  
+    $this->dia = $request->getParameter('day');
+    $this->mes = $request->getParameter('month');
+    $this->año = $request->getParameter('year'); 
+    $this->fecha = $this->año.'-'.$this->mes.'-'.$this->dia;
+     if(!isset($pagina))
+       $pagina = 1;   
+    $this->Auditorias = AuditoriasPeer::getAuditorias($pagina, 10, $this->fecha);
   }
 
   public function executeShow(sfWebRequest $request)
