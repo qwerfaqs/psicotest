@@ -16,6 +16,16 @@
  *
  * @package    lib.model
  */
-class AuditoriasPeer extends BaseAuditoriasPeer {
+class AuditoriasPeer extends BaseAuditoriasPeer 
+{
 
+  public static function getAuditorias($pagina,$rows,$fecha)
+  {
+    $criteria = new Criteria();        
+    if($fecha!="--")
+        $criteria->add(AuditoriasPeer::CREATED_AT,'%'.$fecha.'%',Criteria::LIKE);     
+     $criteria->addDescendingOrderByColumn('auditorias.created_at');   
+    $pager = new PropelPager($criteria, 'AuditoriasPeer', 'doSelectJoinAll', $page = $pagina, $rows);
+    return $pager;
+  }
 } // AuditoriasPeer
