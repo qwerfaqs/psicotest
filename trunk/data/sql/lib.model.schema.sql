@@ -71,6 +71,30 @@ CREATE TABLE `aspirantes`
 )Type=InnoDB;
 
 #-----------------------------------------------------------------------------
+#-- auditorias
+#-----------------------------------------------------------------------------
+
+DROP TABLE IF EXISTS `auditorias`;
+
+
+CREATE TABLE `auditorias`
+(
+	`id` INTEGER(11)  NOT NULL AUTO_INCREMENT,
+	`objeto` VARCHAR(50),
+	`tipooperacion` VARCHAR(80),
+	`created_at` DATETIME,
+	`descripcion` TEXT,
+	`administradores_id` INTEGER(11)  NOT NULL,
+	PRIMARY KEY (`id`),
+	KEY `administradores_id`(`administradores_id`),
+	CONSTRAINT `auditorias_FK_1`
+		FOREIGN KEY (`administradores_id`)
+		REFERENCES `administradores` (`id`)
+		ON UPDATE RESTRICT
+		ON DELETE RESTRICT
+)Type=InnoDB;
+
+#-----------------------------------------------------------------------------
 #-- escalas
 #-----------------------------------------------------------------------------
 
