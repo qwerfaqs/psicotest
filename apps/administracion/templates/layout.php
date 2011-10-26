@@ -22,7 +22,7 @@
             <div class="header">
                 <div class="header_resize">
                     <div class="logo">
-                        <h1><a href="index.html">Psico<span>Test</span> <small><span>Fuerzas Armadas del Ecuador</span></small></a></h1>
+                        <h1><a href="<?php echo url_for('evaluaciones/index'); ?>">Psico<span>Test</span> <small><span>Fuerzas Armadas del Ecuador</span></small></a></h1>
                     </div>
                     <div class="clr"></div>
                     <div class="clr"></div>
