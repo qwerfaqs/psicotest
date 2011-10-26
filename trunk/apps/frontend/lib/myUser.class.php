@@ -1,12 +1,10 @@
 <?php
-
 class myUser extends derechosSecurityUser {
 
     public function initialize(sfEventDispatcher $dispatcher, sfStorage $storage, $options = array()) {
         parent::initialize($dispatcher, $storage, $options);
         $this->setAttribute("startTime", array());
     }
-
     public function getPrueba($num=0) { // listado de pruebas de una evaluacion
         $numPrueba = $this->getCurrentprueba();
         $pruebas = $this->getPruebas();
@@ -15,7 +13,6 @@ class myUser extends derechosSecurityUser {
         else
             return(null);
     }
-
     public function setPruebas() { // seteo todas las pruebas de una evaluacion  
         $pruebas = PruebasPeer::getPruebas($this->getAttribute('evaluacion')->getId());
         $tests = TestsPeer::getTestHijos($pruebas);
@@ -23,46 +20,37 @@ class myUser extends derechosSecurityUser {
         $this->setResultadoInicial($pruebas);
         $this->setInitprueba(sfConfig::get('app_init_prueba'));
     }
-
     public function setEvaluacion($evaluacion) { // setea la evaluacion a realizar   
         $this->setAttribute('evaluacion', $evaluacion);
     }
-
     public function getPruebas() {
         return($this->getAttribute('pruebas'));
     }
-
     public function setInitprueba($num) {
         $this->setAttribute('currentprueba', $num);
     }
-
     public function Nextprueba() {
         $numero = $this->getAttribute('currentprueba');
         $numero++;
         $this->setAttribute('currentprueba', $numero);
     }
-
     public function getCurrentprueba() {
         return($this->getAttribute('currentprueba'));
     }
-
     public function getEvaluacion() {
         return($this->getAttribute('evaluacion'));
     }
-
     public function initResultados() {
         $resultados = array();
         $intensidades = array();
         $this->setAttribute('resultados', $resultados);
         $this->setAttribute('intensidades', $intensidades);
     }
-
     public function addResultados($resultado) {
         $result = $this->getAttribute('resultados');
         $result[] = $resultado;
         $this->setAttribute('resultados', $result);
     }
-
     public function addIntensidades($opcion, $resultado) {
         $resulta = $this->getAttribute('intensidades');
         $intensidad = new Intensidades();
@@ -72,7 +60,6 @@ class myUser extends derechosSecurityUser {
         $resulta[] = $intensidad;
         $this->setAttribute('intensidades', $resulta);
     }
-
     public function setResultadoInicial($pruebas) {
         foreach ($pruebas as $prueba) {
             $result = new Resultados();
@@ -83,14 +70,12 @@ class myUser extends derechosSecurityUser {
             $result->save();
         }
     }
-
     public function setResultado($prueba, $test, $respuesta, $pregunta) {
         if ($test->getTitulo() == 'eae1') {
             $tal = explode("/", $respuesta);
             $respuesta = $tal[0];
             $intensidad = $tal[1];
         }
-
         $res = OpcionesPeer::getOpcion($respuesta, $test->getTipoopcion()->getId());
         $resultado = new Resultadosparciales();
         $resultado->setAspirantesId($this->getAttribute('usuarioId'));
@@ -104,7 +89,6 @@ class myUser extends derechosSecurityUser {
             $this->addIntensidades($int, $resultado);
         }
     }
-
     public function saveResultados($test) {
         $respuestas = $this->getAttribute('resultados');
         $intensidades = $this->getAttribute('intensidades');
@@ -143,7 +127,6 @@ class myUser extends derechosSecurityUser {
                 break;
         }
     }
-
     public function setStarTestTimeStamp() {
         $startTime = $this->getAttribute("startTime");
         $evaluaciones_id = $this->getAttribute('evaluacion')->getId();
@@ -154,7 +137,6 @@ class myUser extends derechosSecurityUser {
         }
 //      $this->setAttribute("StarTestTimeStamp", time());
     }
-
     public function getStarTestTimeStamp() {
         $startTime = $this->getAttribute("startTime");
         $evaluaciones_id = $this->getAttribute('evaluacion')->getId();
@@ -165,5 +147,4 @@ class myUser extends derechosSecurityUser {
         }
         return $respuesta;
     }
-
 }

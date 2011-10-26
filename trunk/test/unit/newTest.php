@@ -1,15 +1,23 @@
 <?php
-/*
-$consulta = "";
-for($i=1;$i<=60;$i++) {
-    $nombreArchivo = "raven ".str_pad($i, 3, "0", STR_PAD_LEFT).".jpg";
-    
-$consulta .= <<<SQL
-   INSERT INTO Preguntas (tests_id, imagen) VALUES (19, '$nombreArchivo');
-       
-SQL;
+
+header("Content-type: application/vnd.ms-excel");
+header("Content-Disposition: attachment; filename=downloaded.xls");
+
+// create a 50x40 excel sheet and return it to the client
+$workbook = new java("org.apache.poi.hssf.usermodel.HSSFWorkbook");
+$sheet = $workbook->createSheet("new sheet");
+
+for($y=0; $y<40; $y++) {
+  $row = $sheet->createRow($y);
+  for($x=0; $x<50; $x++) {
+    $cell = $row->createCell($x);
+    $cell->setCellValue("cell $x/$y");
+  }
 }
-echo $consulta;
- * 
- */
+
+// create and return the excel sheet to the client
+$memoryStream = new java("java.io.ByteArrayOutputStream");
+$workbook->write($memoryStream);
+$memoryStream->close();
+echo java_values($memoryStream->toByteArray());
 ?>
