@@ -12,7 +12,7 @@ class EvaluacionesForm extends BaseEvaluacionesForm
   public function configure()
   {
        unset(
-      $this['fecha']
+      $this['fecha'],$this['created_at']
     );
   }
 }

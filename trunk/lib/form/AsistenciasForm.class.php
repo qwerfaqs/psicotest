@@ -11,5 +11,8 @@ class AsistenciasForm extends BaseAsistenciasForm
 {
   public function configure()
   {
+        unset(
+      $this['created_at']
+    );
   }
 }

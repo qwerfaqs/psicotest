@@ -11,5 +11,8 @@ class AdministradoresForm extends BaseAdministradoresForm
 {
   public function configure()
   {
+      unset(
+      $this['created_at']
+    );
   }
 }
