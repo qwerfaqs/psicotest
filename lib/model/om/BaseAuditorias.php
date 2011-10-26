@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Base class that represents a row from the 'estadopruebas' table.
+ * Base class that represents a row from the 'auditorias' table.
  *
  * 
  *
@@ -11,14 +11,14 @@
  *
  * @package    lib.model.om
  */
-abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
+abstract class BaseAuditorias extends BaseObject  implements Persistent {
 
 
 	/**
 	 * The Peer class.
 	 * Instance provides a convenient way of calling static methods on a class
 	 * that calling code may not be able to identify.
-	 * @var        EstadopruebasPeer
+	 * @var        AuditoriasPeer
 	 */
 	protected static $peer;
 
@@ -29,20 +29,39 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 	protected $id;
 
 	/**
-	 * The value for the nombre field.
+	 * The value for the objeto field.
 	 * @var        string
 	 */
-	protected $nombre;
+	protected $objeto;
 
 	/**
-	 * @var        array Pruebas[] Collection to store aggregation of Pruebas objects.
+	 * The value for the tipooperacion field.
+	 * @var        string
 	 */
-	protected $collPruebass;
+	protected $tipooperacion;
 
 	/**
-	 * @var        Criteria The criteria used to select the current contents of collPruebass.
+	 * The value for the created_at field.
+	 * @var        string
 	 */
-	private $lastPruebasCriteria = null;
+	protected $created_at;
+
+	/**
+	 * The value for the descripcion field.
+	 * @var        string
+	 */
+	protected $descripcion;
+
+	/**
+	 * The value for the administradores_id field.
+	 * @var        int
+	 */
+	protected $administradores_id;
+
+	/**
+	 * @var        Administradores
+	 */
+	protected $aAdministradores;
 
 	/**
 	 * Flag to prevent endless save loop, if this object is referenced
@@ -60,7 +79,7 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 
 	// symfony behavior
 	
-	const PEER = 'EstadopruebasPeer';
+	const PEER = 'AuditoriasPeer';
 
 	/**
 	 * Get the [id] column value.
@@ -73,20 +92,88 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 	}
 
 	/**
-	 * Get the [nombre] column value.
+	 * Get the [objeto] column value.
 	 * 
 	 * @return     string
 	 */
-	public function getNombre()
+	public function getObjeto()
 	{
-		return $this->nombre;
+		return $this->objeto;
+	}
+
+	/**
+	 * Get the [tipooperacion] column value.
+	 * 
+	 * @return     string
+	 */
+	public function getTipooperacion()
+	{
+		return $this->tipooperacion;
+	}
+
+	/**
+	 * Get the [optionally formatted] temporal [created_at] column value.
+	 * 
+	 *
+	 * @param      string $format The date/time format string (either date()-style or strftime()-style).
+	 *							If format is NULL, then the raw DateTime object will be returned.
+	 * @return     mixed Formatted date/time value as string or DateTime object (if format is NULL), NULL if column is NULL, and 0 if column value is 0000-00-00 00:00:00
+	 * @throws     PropelException - if unable to parse/validate the date/time value.
+	 */
+	public function getCreatedAt($format = 'Y-m-d H:i:s')
+	{
+		if ($this->created_at === null) {
+			return null;
+		}
+
+
+		if ($this->created_at === '0000-00-00 00:00:00') {
+			// while technically this is not a default value of NULL,
+			// this seems to be closest in meaning.
+			return null;
+		} else {
+			try {
+				$dt = new DateTime($this->created_at);
+			} catch (Exception $x) {
+				throw new PropelException("Internally stored date/time/timestamp value could not be converted to DateTime: " . var_export($this->created_at, true), $x);
+			}
+		}
+
+		if ($format === null) {
+			// Because propel.useDateTimeClass is TRUE, we return a DateTime object.
+			return $dt;
+		} elseif (strpos($format, '%') !== false) {
+			return strftime($format, $dt->format('U'));
+		} else {
+			return $dt->format($format);
+		}
+	}
+
+	/**
+	 * Get the [descripcion] column value.
+	 * 
+	 * @return     string
+	 */
+	public function getDescripcion()
+	{
+		return $this->descripcion;
+	}
+
+	/**
+	 * Get the [administradores_id] column value.
+	 * 
+	 * @return     int
+	 */
+	public function getAdministradoresId()
+	{
+		return $this->administradores_id;
 	}
 
 	/**
 	 * Set the value of [id] column.
 	 * 
 	 * @param      int $v new value
-	 * @return     Estadopruebas The current object (for fluent API support)
+	 * @return     Auditorias The current object (for fluent API support)
 	 */
 	public function setId($v)
 	{
@@ -96,31 +183,144 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 
 		if ($this->id !== $v) {
 			$this->id = $v;
-			$this->modifiedColumns[] = EstadopruebasPeer::ID;
+			$this->modifiedColumns[] = AuditoriasPeer::ID;
 		}
 
 		return $this;
 	} // setId()
 
 	/**
-	 * Set the value of [nombre] column.
+	 * Set the value of [objeto] column.
 	 * 
 	 * @param      string $v new value
-	 * @return     Estadopruebas The current object (for fluent API support)
+	 * @return     Auditorias The current object (for fluent API support)
 	 */
-	public function setNombre($v)
+	public function setObjeto($v)
 	{
 		if ($v !== null) {
 			$v = (string) $v;
 		}
 
-		if ($this->nombre !== $v) {
-			$this->nombre = $v;
-			$this->modifiedColumns[] = EstadopruebasPeer::NOMBRE;
+		if ($this->objeto !== $v) {
+			$this->objeto = $v;
+			$this->modifiedColumns[] = AuditoriasPeer::OBJETO;
 		}
 
 		return $this;
-	} // setNombre()
+	} // setObjeto()
+
+	/**
+	 * Set the value of [tipooperacion] column.
+	 * 
+	 * @param      string $v new value
+	 * @return     Auditorias The current object (for fluent API support)
+	 */
+	public function setTipooperacion($v)
+	{
+		if ($v !== null) {
+			$v = (string) $v;
+		}
+
+		if ($this->tipooperacion !== $v) {
+			$this->tipooperacion = $v;
+			$this->modifiedColumns[] = AuditoriasPeer::TIPOOPERACION;
+		}
+
+		return $this;
+	} // setTipooperacion()
+
+	/**
+	 * Sets the value of [created_at] column to a normalized version of the date/time value specified.
+	 * 
+	 * @param      mixed $v string, integer (timestamp), or DateTime value.  Empty string will
+	 *						be treated as NULL for temporal objects.
+	 * @return     Auditorias The current object (for fluent API support)
+	 */
+	public function setCreatedAt($v)
+	{
+		// we treat '' as NULL for temporal objects because DateTime('') == DateTime('now')
+		// -- which is unexpected, to say the least.
+		if ($v === null || $v === '') {
+			$dt = null;
+		} elseif ($v instanceof DateTime) {
+			$dt = $v;
+		} else {
+			// some string/numeric value passed; we normalize that so that we can
+			// validate it.
+			try {
+				if (is_numeric($v)) { // if it's a unix timestamp
+					$dt = new DateTime('@'.$v, new DateTimeZone('UTC'));
+					// We have to explicitly specify and then change the time zone because of a
+					// DateTime bug: http://bugs.php.net/bug.php?id=43003
+					$dt->setTimeZone(new DateTimeZone(date_default_timezone_get()));
+				} else {
+					$dt = new DateTime($v);
+				}
+			} catch (Exception $x) {
+				throw new PropelException('Error parsing date/time value: ' . var_export($v, true), $x);
+			}
+		}
+
+		if ( $this->created_at !== null || $dt !== null ) {
+			// (nested ifs are a little easier to read in this case)
+
+			$currNorm = ($this->created_at !== null && $tmpDt = new DateTime($this->created_at)) ? $tmpDt->format('Y-m-d H:i:s') : null;
+			$newNorm = ($dt !== null) ? $dt->format('Y-m-d H:i:s') : null;
+
+			if ( ($currNorm !== $newNorm) // normalized values don't match 
+					)
+			{
+				$this->created_at = ($dt ? $dt->format('Y-m-d H:i:s') : null);
+				$this->modifiedColumns[] = AuditoriasPeer::CREATED_AT;
+			}
+		} // if either are not null
+
+		return $this;
+	} // setCreatedAt()
+
+	/**
+	 * Set the value of [descripcion] column.
+	 * 
+	 * @param      string $v new value
+	 * @return     Auditorias The current object (for fluent API support)
+	 */
+	public function setDescripcion($v)
+	{
+		if ($v !== null) {
+			$v = (string) $v;
+		}
+
+		if ($this->descripcion !== $v) {
+			$this->descripcion = $v;
+			$this->modifiedColumns[] = AuditoriasPeer::DESCRIPCION;
+		}
+
+		return $this;
+	} // setDescripcion()
+
+	/**
+	 * Set the value of [administradores_id] column.
+	 * 
+	 * @param      int $v new value
+	 * @return     Auditorias The current object (for fluent API support)
+	 */
+	public function setAdministradoresId($v)
+	{
+		if ($v !== null) {
+			$v = (int) $v;
+		}
+
+		if ($this->administradores_id !== $v) {
+			$this->administradores_id = $v;
+			$this->modifiedColumns[] = AuditoriasPeer::ADMINISTRADORES_ID;
+		}
+
+		if ($this->aAdministradores !== null && $this->aAdministradores->getId() !== $v) {
+			$this->aAdministradores = null;
+		}
+
+		return $this;
+	} // setAdministradoresId()
 
 	/**
 	 * Indicates whether the columns in this object are only set to default values.
@@ -155,7 +355,11 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 		try {
 
 			$this->id = ($row[$startcol + 0] !== null) ? (int) $row[$startcol + 0] : null;
-			$this->nombre = ($row[$startcol + 1] !== null) ? (string) $row[$startcol + 1] : null;
+			$this->objeto = ($row[$startcol + 1] !== null) ? (string) $row[$startcol + 1] : null;
+			$this->tipooperacion = ($row[$startcol + 2] !== null) ? (string) $row[$startcol + 2] : null;
+			$this->created_at = ($row[$startcol + 3] !== null) ? (string) $row[$startcol + 3] : null;
+			$this->descripcion = ($row[$startcol + 4] !== null) ? (string) $row[$startcol + 4] : null;
+			$this->administradores_id = ($row[$startcol + 5] !== null) ? (int) $row[$startcol + 5] : null;
 			$this->resetModified();
 
 			$this->setNew(false);
@@ -165,10 +369,10 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 			}
 
 			// FIXME - using NUM_COLUMNS may be clearer.
-			return $startcol + 2; // 2 = EstadopruebasPeer::NUM_COLUMNS - EstadopruebasPeer::NUM_LAZY_LOAD_COLUMNS).
+			return $startcol + 6; // 6 = AuditoriasPeer::NUM_COLUMNS - AuditoriasPeer::NUM_LAZY_LOAD_COLUMNS).
 
 		} catch (Exception $e) {
-			throw new PropelException("Error populating Estadopruebas object", $e);
+			throw new PropelException("Error populating Auditorias object", $e);
 		}
 	}
 
@@ -188,6 +392,9 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 	public function ensureConsistency()
 	{
 
+		if ($this->aAdministradores !== null && $this->administradores_id !== $this->aAdministradores->getId()) {
+			$this->aAdministradores = null;
+		}
 	} // ensureConsistency
 
 	/**
@@ -211,13 +418,13 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 		}
 
 		if ($con === null) {
-			$con = Propel::getConnection(EstadopruebasPeer::DATABASE_NAME, Propel::CONNECTION_READ);
+			$con = Propel::getConnection(AuditoriasPeer::DATABASE_NAME, Propel::CONNECTION_READ);
 		}
 
 		// We don't need to alter the object instance pool; we're just modifying this instance
 		// already in the pool.
 
-		$stmt = EstadopruebasPeer::doSelectStmt($this->buildPkeyCriteria(), $con);
+		$stmt = AuditoriasPeer::doSelectStmt($this->buildPkeyCriteria(), $con);
 		$row = $stmt->fetch(PDO::FETCH_NUM);
 		$stmt->closeCursor();
 		if (!$row) {
@@ -227,9 +434,7 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 
 		if ($deep) {  // also de-associate any related objects?
 
-			$this->collPruebass = null;
-			$this->lastPruebasCriteria = null;
-
+			$this->aAdministradores = null;
 		} // if (deep)
 	}
 
@@ -249,14 +454,14 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 		}
 
 		if ($con === null) {
-			$con = Propel::getConnection(EstadopruebasPeer::DATABASE_NAME, Propel::CONNECTION_WRITE);
+			$con = Propel::getConnection(AuditoriasPeer::DATABASE_NAME, Propel::CONNECTION_WRITE);
 		}
 		
 		$con->beginTransaction();
 		try {
 			$ret = $this->preDelete($con);
 			// symfony_behaviors behavior
-			foreach (sfMixer::getCallables('BaseEstadopruebas:delete:pre') as $callable)
+			foreach (sfMixer::getCallables('BaseAuditorias:delete:pre') as $callable)
 			{
 			  if (call_user_func($callable, $this, $con))
 			  {
@@ -267,10 +472,10 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 			}
 
 			if ($ret) {
-				EstadopruebasPeer::doDelete($this, $con);
+				AuditoriasPeer::doDelete($this, $con);
 				$this->postDelete($con);
 				// symfony_behaviors behavior
-				foreach (sfMixer::getCallables('BaseEstadopruebas:delete:post') as $callable)
+				foreach (sfMixer::getCallables('BaseAuditorias:delete:post') as $callable)
 				{
 				  call_user_func($callable, $this, $con);
 				}
@@ -306,7 +511,7 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 		}
 
 		if ($con === null) {
-			$con = Propel::getConnection(EstadopruebasPeer::DATABASE_NAME, Propel::CONNECTION_WRITE);
+			$con = Propel::getConnection(AuditoriasPeer::DATABASE_NAME, Propel::CONNECTION_WRITE);
 		}
 		
 		$con->beginTransaction();
@@ -314,7 +519,7 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 		try {
 			$ret = $this->preSave($con);
 			// symfony_behaviors behavior
-			foreach (sfMixer::getCallables('BaseEstadopruebas:save:pre') as $callable)
+			foreach (sfMixer::getCallables('BaseAuditorias:save:pre') as $callable)
 			{
 			  if (is_integer($affectedRows = call_user_func($callable, $this, $con)))
 			  {
@@ -324,8 +529,16 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 			  }
 			}
 
+			// symfony_timestampable behavior
+			
 			if ($isInsert) {
 				$ret = $ret && $this->preInsert($con);
+				// symfony_timestampable behavior
+				if (!$this->isColumnModified(AuditoriasPeer::CREATED_AT))
+				{
+				  $this->setCreatedAt(time());
+				}
+
 			} else {
 				$ret = $ret && $this->preUpdate($con);
 			}
@@ -338,12 +551,12 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 				}
 				$this->postSave($con);
 				// symfony_behaviors behavior
-				foreach (sfMixer::getCallables('BaseEstadopruebas:save:post') as $callable)
+				foreach (sfMixer::getCallables('BaseAuditorias:save:post') as $callable)
 				{
 				  call_user_func($callable, $this, $con, $affectedRows);
 				}
 
-				EstadopruebasPeer::addInstanceToPool($this);
+				AuditoriasPeer::addInstanceToPool($this);
 			} else {
 				$affectedRows = 0;
 			}
@@ -372,14 +585,26 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 		if (!$this->alreadyInSave) {
 			$this->alreadyInSave = true;
 
+			// We call the save method on the following object(s) if they
+			// were passed to this object by their coresponding set
+			// method.  This object relates to these object(s) by a
+			// foreign key reference.
+
+			if ($this->aAdministradores !== null) {
+				if ($this->aAdministradores->isModified() || $this->aAdministradores->isNew()) {
+					$affectedRows += $this->aAdministradores->save($con);
+				}
+				$this->setAdministradores($this->aAdministradores);
+			}
+
 			if ($this->isNew() ) {
-				$this->modifiedColumns[] = EstadopruebasPeer::ID;
+				$this->modifiedColumns[] = AuditoriasPeer::ID;
 			}
 
 			// If this object has been modified, then save it to the database.
 			if ($this->isModified()) {
 				if ($this->isNew()) {
-					$pk = EstadopruebasPeer::doInsert($this, $con);
+					$pk = AuditoriasPeer::doInsert($this, $con);
 					$affectedRows += 1; // we are assuming that there is only 1 row per doInsert() which
 										 // should always be true here (even though technically
 										 // BasePeer::doInsert() can insert multiple rows).
@@ -388,18 +613,10 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 
 					$this->setNew(false);
 				} else {
-					$affectedRows += EstadopruebasPeer::doUpdate($this, $con);
+					$affectedRows += AuditoriasPeer::doUpdate($this, $con);
 				}
 
 				$this->resetModified(); // [HL] After being saved an object is no longer 'modified'
-			}
-
-			if ($this->collPruebass !== null) {
-				foreach ($this->collPruebass as $referrerFK) {
-					if (!$referrerFK->isDeleted()) {
-						$affectedRows += $referrerFK->save($con);
-					}
-				}
 			}
 
 			$this->alreadyInSave = false;
@@ -468,18 +685,22 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 			$failureMap = array();
 
 
-			if (($retval = EstadopruebasPeer::doValidate($this, $columns)) !== true) {
-				$failureMap = array_merge($failureMap, $retval);
+			// We call the validate method on the following object(s) if they
+			// were passed to this object by their coresponding set
+			// method.  This object relates to these object(s) by a
+			// foreign key reference.
+
+			if ($this->aAdministradores !== null) {
+				if (!$this->aAdministradores->validate($columns)) {
+					$failureMap = array_merge($failureMap, $this->aAdministradores->getValidationFailures());
+				}
 			}
 
 
-				if ($this->collPruebass !== null) {
-					foreach ($this->collPruebass as $referrerFK) {
-						if (!$referrerFK->validate($columns)) {
-							$failureMap = array_merge($failureMap, $referrerFK->getValidationFailures());
-						}
-					}
-				}
+			if (($retval = AuditoriasPeer::doValidate($this, $columns)) !== true) {
+				$failureMap = array_merge($failureMap, $retval);
+			}
+
 
 
 			$this->alreadyInValidation = false;
@@ -499,7 +720,7 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 	 */
 	public function getByName($name, $type = BasePeer::TYPE_PHPNAME)
 	{
-		$pos = EstadopruebasPeer::translateFieldName($name, $type, BasePeer::TYPE_NUM);
+		$pos = AuditoriasPeer::translateFieldName($name, $type, BasePeer::TYPE_NUM);
 		$field = $this->getByPosition($pos);
 		return $field;
 	}
@@ -518,7 +739,19 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 				return $this->getId();
 				break;
 			case 1:
-				return $this->getNombre();
+				return $this->getObjeto();
+				break;
+			case 2:
+				return $this->getTipooperacion();
+				break;
+			case 3:
+				return $this->getCreatedAt();
+				break;
+			case 4:
+				return $this->getDescripcion();
+				break;
+			case 5:
+				return $this->getAdministradoresId();
 				break;
 			default:
 				return null;
@@ -539,10 +772,14 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 	 */
 	public function toArray($keyType = BasePeer::TYPE_PHPNAME, $includeLazyLoadColumns = true)
 	{
-		$keys = EstadopruebasPeer::getFieldNames($keyType);
+		$keys = AuditoriasPeer::getFieldNames($keyType);
 		$result = array(
 			$keys[0] => $this->getId(),
-			$keys[1] => $this->getNombre(),
+			$keys[1] => $this->getObjeto(),
+			$keys[2] => $this->getTipooperacion(),
+			$keys[3] => $this->getCreatedAt(),
+			$keys[4] => $this->getDescripcion(),
+			$keys[5] => $this->getAdministradoresId(),
 		);
 		return $result;
 	}
@@ -559,7 +796,7 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 	 */
 	public function setByName($name, $value, $type = BasePeer::TYPE_PHPNAME)
 	{
-		$pos = EstadopruebasPeer::translateFieldName($name, $type, BasePeer::TYPE_NUM);
+		$pos = AuditoriasPeer::translateFieldName($name, $type, BasePeer::TYPE_NUM);
 		return $this->setByPosition($pos, $value);
 	}
 
@@ -578,7 +815,19 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 				$this->setId($value);
 				break;
 			case 1:
-				$this->setNombre($value);
+				$this->setObjeto($value);
+				break;
+			case 2:
+				$this->setTipooperacion($value);
+				break;
+			case 3:
+				$this->setCreatedAt($value);
+				break;
+			case 4:
+				$this->setDescripcion($value);
+				break;
+			case 5:
+				$this->setAdministradoresId($value);
 				break;
 		} // switch()
 	}
@@ -602,10 +851,14 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 	 */
 	public function fromArray($arr, $keyType = BasePeer::TYPE_PHPNAME)
 	{
-		$keys = EstadopruebasPeer::getFieldNames($keyType);
+		$keys = AuditoriasPeer::getFieldNames($keyType);
 
 		if (array_key_exists($keys[0], $arr)) $this->setId($arr[$keys[0]]);
-		if (array_key_exists($keys[1], $arr)) $this->setNombre($arr[$keys[1]]);
+		if (array_key_exists($keys[1], $arr)) $this->setObjeto($arr[$keys[1]]);
+		if (array_key_exists($keys[2], $arr)) $this->setTipooperacion($arr[$keys[2]]);
+		if (array_key_exists($keys[3], $arr)) $this->setCreatedAt($arr[$keys[3]]);
+		if (array_key_exists($keys[4], $arr)) $this->setDescripcion($arr[$keys[4]]);
+		if (array_key_exists($keys[5], $arr)) $this->setAdministradoresId($arr[$keys[5]]);
 	}
 
 	/**
@@ -615,10 +868,14 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 	 */
 	public function buildCriteria()
 	{
-		$criteria = new Criteria(EstadopruebasPeer::DATABASE_NAME);
+		$criteria = new Criteria(AuditoriasPeer::DATABASE_NAME);
 
-		if ($this->isColumnModified(EstadopruebasPeer::ID)) $criteria->add(EstadopruebasPeer::ID, $this->id);
-		if ($this->isColumnModified(EstadopruebasPeer::NOMBRE)) $criteria->add(EstadopruebasPeer::NOMBRE, $this->nombre);
+		if ($this->isColumnModified(AuditoriasPeer::ID)) $criteria->add(AuditoriasPeer::ID, $this->id);
+		if ($this->isColumnModified(AuditoriasPeer::OBJETO)) $criteria->add(AuditoriasPeer::OBJETO, $this->objeto);
+		if ($this->isColumnModified(AuditoriasPeer::TIPOOPERACION)) $criteria->add(AuditoriasPeer::TIPOOPERACION, $this->tipooperacion);
+		if ($this->isColumnModified(AuditoriasPeer::CREATED_AT)) $criteria->add(AuditoriasPeer::CREATED_AT, $this->created_at);
+		if ($this->isColumnModified(AuditoriasPeer::DESCRIPCION)) $criteria->add(AuditoriasPeer::DESCRIPCION, $this->descripcion);
+		if ($this->isColumnModified(AuditoriasPeer::ADMINISTRADORES_ID)) $criteria->add(AuditoriasPeer::ADMINISTRADORES_ID, $this->administradores_id);
 
 		return $criteria;
 	}
@@ -633,9 +890,9 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 	 */
 	public function buildPkeyCriteria()
 	{
-		$criteria = new Criteria(EstadopruebasPeer::DATABASE_NAME);
+		$criteria = new Criteria(AuditoriasPeer::DATABASE_NAME);
 
-		$criteria->add(EstadopruebasPeer::ID, $this->id);
+		$criteria->add(AuditoriasPeer::ID, $this->id);
 
 		return $criteria;
 	}
@@ -666,28 +923,22 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 	 * If desired, this method can also make copies of all associated (fkey referrers)
 	 * objects.
 	 *
-	 * @param      object $copyObj An object of Estadopruebas (or compatible) type.
+	 * @param      object $copyObj An object of Auditorias (or compatible) type.
 	 * @param      boolean $deepCopy Whether to also copy all rows that refer (by fkey) to the current row.
 	 * @throws     PropelException
 	 */
 	public function copyInto($copyObj, $deepCopy = false)
 	{
 
-		$copyObj->setNombre($this->nombre);
+		$copyObj->setObjeto($this->objeto);
 
+		$copyObj->setTipooperacion($this->tipooperacion);
 
-		if ($deepCopy) {
-			// important: temporarily setNew(false) because this affects the behavior of
-			// the getter/setter methods for fkey referrer objects.
-			$copyObj->setNew(false);
+		$copyObj->setCreatedAt($this->created_at);
 
-			foreach ($this->getPruebass() as $relObj) {
-				if ($relObj !== $this) {  // ensure that we don't try to copy a reference to ourselves
-					$copyObj->addPruebas($relObj->copy($deepCopy));
-				}
-			}
+		$copyObj->setDescripcion($this->descripcion);
 
-		} // if ($deepCopy)
+		$copyObj->setAdministradoresId($this->administradores_id);
 
 
 		$copyObj->setNew(true);
@@ -705,7 +956,7 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 	 * objects.
 	 *
 	 * @param      boolean $deepCopy Whether to also copy all rows that refer (by fkey) to the current row.
-	 * @return     Estadopruebas Clone of current object.
+	 * @return     Auditorias Clone of current object.
 	 * @throws     PropelException
 	 */
 	public function copy($deepCopy = false)
@@ -724,262 +975,63 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 	 * same instance for all member of this class. The method could therefore
 	 * be static, but this would prevent one from overriding the behavior.
 	 *
-	 * @return     EstadopruebasPeer
+	 * @return     AuditoriasPeer
 	 */
 	public function getPeer()
 	{
 		if (self::$peer === null) {
-			self::$peer = new EstadopruebasPeer();
+			self::$peer = new AuditoriasPeer();
 		}
 		return self::$peer;
 	}
 
 	/**
-	 * Clears out the collPruebass collection (array).
+	 * Declares an association between this object and a Administradores object.
 	 *
-	 * This does not modify the database; however, it will remove any associated objects, causing
-	 * them to be refetched by subsequent calls to accessor method.
-	 *
-	 * @return     void
-	 * @see        addPruebass()
-	 */
-	public function clearPruebass()
-	{
-		$this->collPruebass = null; // important to set this to NULL since that means it is uninitialized
-	}
-
-	/**
-	 * Initializes the collPruebass collection (array).
-	 *
-	 * By default this just sets the collPruebass collection to an empty array (like clearcollPruebass());
-	 * however, you may wish to override this method in your stub class to provide setting appropriate
-	 * to your application -- for example, setting the initial array to the values stored in database.
-	 *
-	 * @return     void
-	 */
-	public function initPruebass()
-	{
-		$this->collPruebass = array();
-	}
-
-	/**
-	 * Gets an array of Pruebas objects which contain a foreign key that references this object.
-	 *
-	 * If this collection has already been initialized with an identical Criteria, it returns the collection.
-	 * Otherwise if this Estadopruebas has previously been saved, it will retrieve
-	 * related Pruebass from storage. If this Estadopruebas is new, it will return
-	 * an empty collection or the current collection, the criteria is ignored on a new object.
-	 *
-	 * @param      PropelPDO $con
-	 * @param      Criteria $criteria
-	 * @return     array Pruebas[]
+	 * @param      Administradores $v
+	 * @return     Auditorias The current object (for fluent API support)
 	 * @throws     PropelException
 	 */
-	public function getPruebass($criteria = null, PropelPDO $con = null)
+	public function setAdministradores(Administradores $v = null)
 	{
-		if ($criteria === null) {
-			$criteria = new Criteria(EstadopruebasPeer::DATABASE_NAME);
-		}
-		elseif ($criteria instanceof Criteria)
-		{
-			$criteria = clone $criteria;
-		}
-
-		if ($this->collPruebass === null) {
-			if ($this->isNew()) {
-			   $this->collPruebass = array();
-			} else {
-
-				$criteria->add(PruebasPeer::ESTADOPRUEBAS_ID, $this->id);
-
-				PruebasPeer::addSelectColumns($criteria);
-				$this->collPruebass = PruebasPeer::doSelect($criteria, $con);
-			}
+		if ($v === null) {
+			$this->setAdministradoresId(NULL);
 		} else {
-			// criteria has no effect for a new object
-			if (!$this->isNew()) {
-				// the following code is to determine if a new query is
-				// called for.  If the criteria is the same as the last
-				// one, just return the collection.
-
-
-				$criteria->add(PruebasPeer::ESTADOPRUEBAS_ID, $this->id);
-
-				PruebasPeer::addSelectColumns($criteria);
-				if (!isset($this->lastPruebasCriteria) || !$this->lastPruebasCriteria->equals($criteria)) {
-					$this->collPruebass = PruebasPeer::doSelect($criteria, $con);
-				}
-			}
+			$this->setAdministradoresId($v->getId());
 		}
-		$this->lastPruebasCriteria = $criteria;
-		return $this->collPruebass;
+
+		$this->aAdministradores = $v;
+
+		// Add binding for other direction of this n:n relationship.
+		// If this object has already been added to the Administradores object, it will not be re-added.
+		if ($v !== null) {
+			$v->addAuditorias($this);
+		}
+
+		return $this;
 	}
 
+
 	/**
-	 * Returns the number of related Pruebas objects.
+	 * Get the associated Administradores object
 	 *
-	 * @param      Criteria $criteria
-	 * @param      boolean $distinct
-	 * @param      PropelPDO $con
-	 * @return     int Count of related Pruebas objects.
+	 * @param      PropelPDO Optional Connection object.
+	 * @return     Administradores The associated Administradores object.
 	 * @throws     PropelException
 	 */
-	public function countPruebass(Criteria $criteria = null, $distinct = false, PropelPDO $con = null)
+	public function getAdministradores(PropelPDO $con = null)
 	{
-		if ($criteria === null) {
-			$criteria = new Criteria(EstadopruebasPeer::DATABASE_NAME);
-		} else {
-			$criteria = clone $criteria;
+		if ($this->aAdministradores === null && ($this->administradores_id !== null)) {
+			$this->aAdministradores = AdministradoresPeer::retrieveByPk($this->administradores_id);
+			/* The following can be used additionally to
+			   guarantee the related object contains a reference
+			   to this object.  This level of coupling may, however, be
+			   undesirable since it could result in an only partially populated collection
+			   in the referenced object.
+			   $this->aAdministradores->addAuditoriass($this);
+			 */
 		}
-
-		if ($distinct) {
-			$criteria->setDistinct();
-		}
-
-		$count = null;
-
-		if ($this->collPruebass === null) {
-			if ($this->isNew()) {
-				$count = 0;
-			} else {
-
-				$criteria->add(PruebasPeer::ESTADOPRUEBAS_ID, $this->id);
-
-				$count = PruebasPeer::doCount($criteria, false, $con);
-			}
-		} else {
-			// criteria has no effect for a new object
-			if (!$this->isNew()) {
-				// the following code is to determine if a new query is
-				// called for.  If the criteria is the same as the last
-				// one, just return count of the collection.
-
-
-				$criteria->add(PruebasPeer::ESTADOPRUEBAS_ID, $this->id);
-
-				if (!isset($this->lastPruebasCriteria) || !$this->lastPruebasCriteria->equals($criteria)) {
-					$count = PruebasPeer::doCount($criteria, false, $con);
-				} else {
-					$count = count($this->collPruebass);
-				}
-			} else {
-				$count = count($this->collPruebass);
-			}
-		}
-		return $count;
-	}
-
-	/**
-	 * Method called to associate a Pruebas object to this object
-	 * through the Pruebas foreign key attribute.
-	 *
-	 * @param      Pruebas $l Pruebas
-	 * @return     void
-	 * @throws     PropelException
-	 */
-	public function addPruebas(Pruebas $l)
-	{
-		if ($this->collPruebass === null) {
-			$this->initPruebass();
-		}
-		if (!in_array($l, $this->collPruebass, true)) { // only add it if the **same** object is not already associated
-			array_push($this->collPruebass, $l);
-			$l->setEstadopruebas($this);
-		}
-	}
-
-
-	/**
-	 * If this collection has already been initialized with
-	 * an identical criteria, it returns the collection.
-	 * Otherwise if this Estadopruebas is new, it will return
-	 * an empty collection; or if this Estadopruebas has previously
-	 * been saved, it will retrieve related Pruebass from storage.
-	 *
-	 * This method is protected by default in order to keep the public
-	 * api reasonable.  You can provide public methods for those you
-	 * actually need in Estadopruebas.
-	 */
-	public function getPruebassJoinTests($criteria = null, $con = null, $join_behavior = Criteria::LEFT_JOIN)
-	{
-		if ($criteria === null) {
-			$criteria = new Criteria(EstadopruebasPeer::DATABASE_NAME);
-		}
-		elseif ($criteria instanceof Criteria)
-		{
-			$criteria = clone $criteria;
-		}
-
-		if ($this->collPruebass === null) {
-			if ($this->isNew()) {
-				$this->collPruebass = array();
-			} else {
-
-				$criteria->add(PruebasPeer::ESTADOPRUEBAS_ID, $this->id);
-
-				$this->collPruebass = PruebasPeer::doSelectJoinTests($criteria, $con, $join_behavior);
-			}
-		} else {
-			// the following code is to determine if a new query is
-			// called for.  If the criteria is the same as the last
-			// one, just return the collection.
-
-			$criteria->add(PruebasPeer::ESTADOPRUEBAS_ID, $this->id);
-
-			if (!isset($this->lastPruebasCriteria) || !$this->lastPruebasCriteria->equals($criteria)) {
-				$this->collPruebass = PruebasPeer::doSelectJoinTests($criteria, $con, $join_behavior);
-			}
-		}
-		$this->lastPruebasCriteria = $criteria;
-
-		return $this->collPruebass;
-	}
-
-
-	/**
-	 * If this collection has already been initialized with
-	 * an identical criteria, it returns the collection.
-	 * Otherwise if this Estadopruebas is new, it will return
-	 * an empty collection; or if this Estadopruebas has previously
-	 * been saved, it will retrieve related Pruebass from storage.
-	 *
-	 * This method is protected by default in order to keep the public
-	 * api reasonable.  You can provide public methods for those you
-	 * actually need in Estadopruebas.
-	 */
-	public function getPruebassJoinEvaluaciones($criteria = null, $con = null, $join_behavior = Criteria::LEFT_JOIN)
-	{
-		if ($criteria === null) {
-			$criteria = new Criteria(EstadopruebasPeer::DATABASE_NAME);
-		}
-		elseif ($criteria instanceof Criteria)
-		{
-			$criteria = clone $criteria;
-		}
-
-		if ($this->collPruebass === null) {
-			if ($this->isNew()) {
-				$this->collPruebass = array();
-			} else {
-
-				$criteria->add(PruebasPeer::ESTADOPRUEBAS_ID, $this->id);
-
-				$this->collPruebass = PruebasPeer::doSelectJoinEvaluaciones($criteria, $con, $join_behavior);
-			}
-		} else {
-			// the following code is to determine if a new query is
-			// called for.  If the criteria is the same as the last
-			// one, just return the collection.
-
-			$criteria->add(PruebasPeer::ESTADOPRUEBAS_ID, $this->id);
-
-			if (!isset($this->lastPruebasCriteria) || !$this->lastPruebasCriteria->equals($criteria)) {
-				$this->collPruebass = PruebasPeer::doSelectJoinEvaluaciones($criteria, $con, $join_behavior);
-			}
-		}
-		$this->lastPruebasCriteria = $criteria;
-
-		return $this->collPruebass;
+		return $this->aAdministradores;
 	}
 
 	/**
@@ -994,14 +1046,9 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 	public function clearAllReferences($deep = false)
 	{
 		if ($deep) {
-			if ($this->collPruebass) {
-				foreach ((array) $this->collPruebass as $o) {
-					$o->clearAllReferences($deep);
-				}
-			}
 		} // if ($deep)
 
-		$this->collPruebass = null;
+			$this->aAdministradores = null;
 	}
 
 	// symfony_behaviors behavior
@@ -1011,9 +1058,9 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 	 */
 	public function __call($method, $arguments)
 	{
-	  if (!$callable = sfMixer::getCallable('BaseEstadopruebas:'.$method))
+	  if (!$callable = sfMixer::getCallable('BaseAuditorias:'.$method))
 	  {
-	    throw new sfException(sprintf('Call to undefined method BaseEstadopruebas::%s', $method));
+	    throw new sfException(sprintf('Call to undefined method BaseAuditorias::%s', $method));
 	  }
 	
 	  array_unshift($arguments, $this);
@@ -1021,4 +1068,4 @@ abstract class BaseEstadopruebas extends BaseObject  implements Persistent {
 	  return call_user_func_array($callable, $arguments);
 	}
 
-} // BaseEstadopruebas
+} // BaseAuditorias

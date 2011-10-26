@@ -28,6 +28,15 @@ propel:
     fechanacimiento: { phpName: Fechanacimiento, type: DATE, required: false }
     password: { phpName: Password, type: CHAR, size: '20', required: false }
     created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+  auditorias:
+    _attributes: { phpName: Auditorias }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    objeto: { phpName: Objeto, type: VARCHAR, size: '50', required: false }
+    tipooperacion: { phpName: Tipooperacion, type: VARCHAR, size: '80', required: false }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    descripcion: { phpName: Descripcion, type: LONGVARCHAR, required: false }
+    administradores_id: { phpName: AdministradoresId, type: INTEGER, size: '11', required: true, foreignTable: administradores, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
+    _indexes: { administradores_id: [administradores_id] }
   escalas:
     _attributes: { phpName: Escalas }
     id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
