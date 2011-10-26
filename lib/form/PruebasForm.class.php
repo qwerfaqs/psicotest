@@ -11,5 +11,8 @@ class PruebasForm extends BasePruebasForm
 {
   public function configure()
   {
+      unset(
+      $this['created_at']
+    );
   }
 }

@@ -13,6 +13,10 @@ class AspirantesForm extends BaseAspirantesForm
      
   public function configure()
   {
+        unset(
+      $this['created_at']
+    );
+        
    $years = range(1978, 2011 );
         $this->widgetSchema['fechanacimiento'] = new sfWidgetFormDate(array(       
         'format'=>'%day%%month%%year%',
