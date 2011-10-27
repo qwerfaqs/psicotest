@@ -4,9 +4,9 @@
         <tr>
             <th scope="col">ID</th>
             <th scope="col">Prueba</th>                        
-            <th scope="col">Texto de pregunta</th>
-            <th scope="col">Imagen de pregunta</th>
+            <th scope="col">Texto de pregunta</th>            
             <th scope="col">Respuesta</th>            
+            <th scope="col">Intensidad</th>      
         </tr>
     </thead>
     <tfoot>
@@ -19,10 +19,10 @@
     <?php foreach ($resultados as $i =>$resultado): ?>
     <tr class="<?php echo fmod($i, 2) ? 'even' : 'odd' ?>">
       <td><?php echo $resultado->getId() ?></a></td>      
-        <td><?php echo $resultado->getPruebas()->getTests()->getTitulo() ?></td>
-        <td><?php echo $resultado->getPreguntas()->getDescripcion()?></td>
-        <td><?php if($resultado->getPreguntas()->getImagen()!=NULL) { ?><img width="180px" src="/images/tests/<?php echo $resultado->getPreguntas()->getTests()->getTitulo()?>/<?php echo $resultado->getPreguntas()->getImagen()?>"/><?php } else { ?><img width="180px" src="/images/nodisponible.jpg" /><?php } ?> </td>
-        <td><?php echo $resultado->getOpciones()->getTexto() ?></td>
+        <td><?php echo $resultado->getResultadosparciales()->getPruebas()->getTests()->getTitulo() ?></td>
+        <td><?php echo $resultado->getResultadosparciales()->getPreguntas()->getDescripcion()?></td>       
+        <td><?php echo $resultado->getResultadosparciales()->getOpciones()->getTexto() ?></td>
+        <td><?php echo $resultado->getOpciones()->getTexto()?></td>
     </tr>
     <?php endforeach; ?>
   </tbody>

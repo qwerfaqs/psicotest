@@ -26,4 +26,6 @@ class ResultadosparcialesPeer extends BaseResultadosparcialesPeer
     $criteria->add(ResultadosparcialesPeer::ASPIRANTES_ID,$aspirante,Criteria::EQUAL);    
     return (self::doSelectJoinAll($criteria));
   }
+  
+  
 } // ResultadosparcialesPeer
