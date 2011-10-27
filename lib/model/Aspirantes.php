@@ -1,6 +1,4 @@
 <?php
-
-
 /**
  * Skeleton subclass for representing a row from the 'aspirantes' table.
  *
@@ -16,10 +14,8 @@
  *
  * @package    lib.model
  */
-class Aspirantes extends BaseAspirantes 
-{
- public function postInsert(PropelPDO $con = null)
-     {
+class Aspirantes extends BaseAspirantes {
+ public function postInsert(PropelPDO $con = null) {
              $auditoria = new Auditorias();
              //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
              $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
@@ -28,9 +24,7 @@ class Aspirantes extends BaseAspirantes
              $auditoria->setTipooperacion('Alta de aspirante');
              $auditoria->save();             
      }
-     
-      public function postUpdate(PropelPDO $con = null)
-     {
+      public function postUpdate(PropelPDO $con = null) {
              $auditoria = new Auditorias();
              //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
              $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
@@ -39,10 +33,7 @@ class Aspirantes extends BaseAspirantes
              $auditoria->setTipooperacion('Modificación de aspirante');
              $auditoria->save();   
      }
-     
-     
-     public function postDelete(PropelPDO $con = null)
-     {
+     public function postDelete(PropelPDO $con = null) {
              $auditoria = new Auditorias();
              //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
              $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));

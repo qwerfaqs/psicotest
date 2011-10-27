@@ -11,6 +11,7 @@
 <div class="content">
     <div class="content_resize">
         <div class="mainbar">
+            <span id="contador"></span>
             <script>
                 function fr(z, n) { //fr=fichaRespuesta
                     if (z == 'S') f_d.R1.value = n;
@@ -105,5 +106,11 @@ $.get('<?php echo url_for('principal/consultaTiempo') ?>?ts='+Math.random(), fun
     function patadaEnElOrto(){
         document.location.href = '<?php echo url_for('principal/pregunta') ?>';
     }
-    verificarRecurrente();
+    $(document).ready(function(){
+//        $('#contador').countdown({seconds: 30 });
+        $('#contador').countdown({until: '+1m', significant: 2, 
+    layout: '{d<}{dn} {dl} {d>}{h<}{hn} {hl} {h>}{m<}{mn} {ml} {m>}{s<}{sn} {sl}{s>}'}); 
+        verificarRecurrente();
+    });
+    
 </script>

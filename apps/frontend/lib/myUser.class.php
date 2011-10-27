@@ -138,8 +138,8 @@ class myUser extends derechosSecurityUser {
             $startTime[$evaluaciones_id][$pruebas_id] = time();
             $this->setAttribute("startTime", $startTime);
         }
-        var_dump($startTime[$evaluaciones_id][$pruebas_id]);
-        var_dump($this->getStarTestTimeStamp());
+//        var_dump($startTime[$evaluaciones_id][$pruebas_id]);
+//        var_dump($this->getStarTestTimeStamp());
 //        die("MORTE");
 //      $this->setAttribute("StarTestTimeStamp", time());
     }
