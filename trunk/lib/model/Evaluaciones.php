@@ -33,7 +33,7 @@ class Evaluaciones extends BaseEvaluaciones
      {
              $auditoria = new Auditorias();
              //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
-             $auditoria->setAdministradoresId(sfContext::getInstance()-getUser()-getAttribute('usuarioId'));
+             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
              $auditoria->setObjeto('Evaluaciones');
              $auditoria->setDescripcion(' Nombre : '.$this->getNombre().' Perfil : '.$this->getPerfil()->getNombre().' Cantidad de aspirantes : '.$this->getCantidad());
              $auditoria->setTipooperacion('Modificación de evaluación');
@@ -45,7 +45,7 @@ class Evaluaciones extends BaseEvaluaciones
      {
              $auditoria = new Auditorias();
              //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
-             $auditoria->setAdministradoresId(sfContext::getInstance()-getUser()-getAttribute('usuarioId'));
+             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
              $auditoria->setObjeto('Evaluaciones');
              $auditoria->setDescripcion(' Nombre : '.$this->getNombre().' Perfil : '.$this->getPerfil()->getNombre().' Cantidad de aspirantes : '.$this->getCantidad());
              $auditoria->setTipooperacion('Eliminación de evaluación');

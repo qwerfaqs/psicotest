@@ -22,7 +22,7 @@ class Aspirantes extends BaseAspirantes
      {
              $auditoria = new Auditorias();
              //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
-             $auditoria->setAdministradoresId(sfContext::getInstance()-getUser()-getAttribute('usuarioId'));
+             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
              $auditoria->setObjeto('Aspirantes');
              $auditoria->setDescripcion(' Cedula : '.$this->getCedula().' Nombre : '.$this->getNombre().' Apellido : '.$this->getApellido());
              $auditoria->setTipooperacion('Alta de aspirante');
@@ -33,7 +33,7 @@ class Aspirantes extends BaseAspirantes
      {
              $auditoria = new Auditorias();
              //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
-             $auditoria->setAdministradoresId(sfContext::getInstance()-getUser()-getAttribute('usuarioId'));
+             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
              $auditoria->setObjeto('Aspirantes');
              $auditoria->setDescripcion(' Cedula : '.$this->getCedula().' Nombre : '.$this->getNombre().' Apellido : '.$this->getApellido());
              $auditoria->setTipooperacion('Modificación de aspirante');
@@ -45,7 +45,7 @@ class Aspirantes extends BaseAspirantes
      {
              $auditoria = new Auditorias();
              //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
-             $auditoria->setAdministradoresId(sfContext::getInstance()-getUser()-getAttribute('usuarioId'));
+             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
              $auditoria->setObjeto('Aspirantes');
              $auditoria->setDescripcion(' Cedula : '.$this->getCedula().' Nombre : '.$this->getNombre().' Apellido : '.$this->getApellido());
              $auditoria->setTipooperacion('Eliminación de aspirante');

@@ -22,7 +22,7 @@ class Asistencias extends BaseAsistencias
      {
              $auditoria = new Auditorias();
              //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
-             $auditoria->setAdministradoresId(sfContext::getInstance()-getUser()-getAttribute('usuarioId'));
+             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
              $auditoria->setObjeto('Asistencias');
              $auditoria->setDescripcion('Aspirante : '.$this->getAspirantes()->getCedula().' Evaluación : '.$this->getEvaluaciones()->getNombre());
              $auditoria->setTipooperacion('Alta de asistencia');
@@ -33,7 +33,7 @@ class Asistencias extends BaseAsistencias
      {
              $auditoria = new Auditorias();
              //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
-             $auditoria->setAdministradoresId(sfContext::getInstance()-getUser()-getAttribute('usuarioId'));
+             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
              $auditoria->setObjeto('Asistencias');
              $auditoria->setDescripcion('Aspirante : '.$this->getAspirantes()->getCedula().' Evaluación : '.$this->getEvaluaciones()->getNombre());
              $auditoria->setTipooperacion('Modificación de asistencia');
@@ -45,7 +45,7 @@ class Asistencias extends BaseAsistencias
      {
              $auditoria = new Auditorias();
              //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
-             $auditoria->setAdministradoresId(sfContext::getInstance()-getUser()-getAttribute('usuarioId'));
+             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
              $auditoria->setObjeto('Asistencias');
              $auditoria->setDescripcion('Aspirante : '.$this->getAspirantes()->getCedula().' Evaluación : '.$this->getEvaluaciones()->getNombre());
              $auditoria->setTipooperacion('Eliminación de asistencia');
