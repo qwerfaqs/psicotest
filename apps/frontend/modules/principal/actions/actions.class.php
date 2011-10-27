@@ -103,18 +103,36 @@ class principalActions extends sfActions {
         $id = $tests_hijo->getId();
         $nombre = $tests_hijo->getTitulo();
         $inicio = $this->getUser()->getStarTestTimeStamp();
-        $lapsus = round(time() - $inicio);
+        $lapsus = time() - $inicio;
 //       var_dump($tests_hijo);
+        $diff = $duracion - $lapsus;
         $respuesta = "tortugaNinja";
-        if ($lapsus >= $duracion) {
+        /*
+        if ($diff <= 0) {
             $respuesta = "patadaNinja";
-            $this->getUser()->saveResultados($tests_hijo); // grabo los resultados totales y parciales
+            if($this->getUser()->HAYRESULTADOS()) {
+                $this->getUser()->saveResultados($tests_hijo); // grabo los resultados totales y parciales
+            }
             $this->getUser()->Nextprueba();   // doy acceso a la siguiente prueba
             $this->getUser()->initResultados();           // inicializo el arreglo de resultados
             //$this->forward('principal', 'pregunta'); // vuelvo al flujo del principio pero con otro
         }
-        $this->getResponse()->setContent($respuesta);
+         * 
+         */
+        $debug = "Duracion: $duracion, Inicio: $inicio";
+        var_dump($this->getUser()->getStarTestTimeStamp());
+        $this->getResponse()->setContent($debug);
         return sfView::NONE;
     }
-
+    public function executeTicks(sfWebRequest $request){
+        $tests_hijo = $this->getUser()->getPrueba();
+//       $tests_hijo = new Tests();
+        $duracion = $tests_hijo->getDuracion() * 60;
+        $id = $tests_hijo->getId();
+        $nombre = $tests_hijo->getTitulo();
+        $inicio = $this->getUser()->getStarTestTimeStamp();
+        $lapsus = round(time() - $inicio);
+        $this->getResponse()->setContent($lapsus);
+        return sfView::NONE;
+    }
 }

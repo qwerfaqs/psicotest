@@ -139,7 +139,7 @@ class evaluacionesActions extends sfActions {
         $form->bind($request->getParameter($form->getName()), $request->getFiles($form->getName()));
         if ($form->isValid()) {
             $Evaluacion = $form->save();
-            $this->redirect('evaluaciones/edit?id=' . $Evaluacion->getId());
+            $this->redirect('evaluaciones/show?id=' . $Evaluacion->getId());
         }
     }
 

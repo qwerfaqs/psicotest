@@ -2,9 +2,7 @@
 
 class administracionConfiguration extends sfApplicationConfiguration
 {
-  public function setup()
+  public function configure()
   {
-    $this->enablePlugins('sfPropelPlugin');  
-    $this->enablePlugins('sfTCPDFPlugin');
   }
 }

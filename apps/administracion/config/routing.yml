@@ -14,3 +14,11 @@ default_index:
 
 default:
   url:   /:module/:action/*
+
+# reglas para el Plugin de Derechos
+derechos_signin:
+  param: { module: derechosAuth, action: signin }
+
+derechos_signout:
+  url:   /logout/
+  param: { module: derechosAuth, action: signout }

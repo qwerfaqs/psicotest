@@ -1,10 +1,10 @@
 <?php
 class myUser extends derechosSecurityUser {
 
-    public function initialize(sfEventDispatcher $dispatcher, sfStorage $storage, $options = array()) {
-        parent::initialize($dispatcher, $storage, $options);
-        $this->setAttribute("startTime", array());
-    }
+//    public function initialize(sfEventDispatcher $dispatcher, sfStorage $storage, $options = array()) {
+//        parent::initialize($dispatcher, $storage, $options);
+//        $this->setAttribute("startTime", array());
+//    }
     public function getPrueba($num=0) { // listado de pruebas de una evaluacion
         $numPrueba = $this->getCurrentprueba();
         $pruebas = $this->getPruebas();
@@ -128,13 +128,19 @@ class myUser extends derechosSecurityUser {
         }
     }
     public function setStarTestTimeStamp() {
-        $startTime = $this->getAttribute("startTime");
+        $startTime = $this->getAttribute("startTime", array());
         $evaluaciones_id = $this->getAttribute('evaluacion')->getId();
         $pruebas_id = $this->getPrueba()->getId();
+        if (!isset($startTime[$evaluaciones_id])) {
+            $startTime[$evaluaciones_id] = array();
+        }
         if (!isset($startTime[$evaluaciones_id][$pruebas_id])) {
             $startTime[$evaluaciones_id][$pruebas_id] = time();
             $this->setAttribute("startTime", $startTime);
         }
+        var_dump($startTime[$evaluaciones_id][$pruebas_id]);
+        var_dump($this->getStarTestTimeStamp());
+//        die("MORTE");
 //      $this->setAttribute("StarTestTimeStamp", time());
     }
     public function getStarTestTimeStamp() {
@@ -146,5 +152,9 @@ class myUser extends derechosSecurityUser {
             $respuesta = $startTime[$evaluaciones_id][$pruebas_id];
         }
         return $respuesta;
+    }
+    public function HAYRESULTADOS() { 
+        $result = $this->getAttribute('resultados');
+        return isset($result[0]) ? true : false;
     }
 }
