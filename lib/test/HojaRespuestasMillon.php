@@ -10,14 +10,10 @@
  *
  * @author QwerfaqS
  */
-class HojaRespuestasMillon {
-    var $hoja;
-//    public function __construct($respuestas) {
-//        if(!is_array($respuestas)){
-//            throw new sfException("Debe crearse con un array");
-//        }
-//        $this->hoja = $respuestas;
-//    }
+class HojaRespuestasMillon extends BaseHojaMillon{
+    var $nombre = 'Respuestas';
+    
+
     /*
      * Constructor, inicializa el arreglo interno de celdas, con los resultados parciales pasados por parametros
      */
@@ -35,13 +31,10 @@ class HojaRespuestasMillon {
             $respuestas[$celda] = 1;
         }
         $this->hoja = $respuestas;
+        parent::__construct();
     }
-    public function getValor($celda){
-        if(!isset($this->hoja[$celda])){
-            throw new sfException("No hay valor cargado para la celda: ".$celda);
-        }
-        return $this->hoja[$celda];
-    }
+
+  
 }
 
 ?>
