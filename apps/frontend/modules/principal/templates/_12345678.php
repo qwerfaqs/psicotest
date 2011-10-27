@@ -1,4 +1,5 @@
 <div class="mainbar">
+    <span id="contador"></span>
      <ul class="listado">
      <form  action="<?php echo url_for('principal/check') ?>" method="post">    
       <?php foreach ($preguntas as $n=>$pregunta) : ?>
