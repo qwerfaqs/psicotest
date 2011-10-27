@@ -90,10 +90,11 @@ class principalActions extends sfActions {
         $this->setTemplate('pregunta');
     }
 
-    public function executeFinish(sfWebRequest $request) {
-        /*   $ev = $this->getUser()->getEvaluacion();      
-          $ev->setEstadosevaluacionesId(3);
-          $ev->save(); FINALIZA TODAS LAS EVALUACIONES */
+    public function executeFinish(sfWebRequest $request) 
+    {
+          $ev = $this->getUser()->getEvaluacion();      
+          $asistencia = AsistenciasPeer::getAsistencia($ev->getId(),$this->getUser()->getAttribute('usuarioId'));
+          $asistencia->delete();
     }
 
     public function executeConsultaTiempo(sfWebRequest $request) {
