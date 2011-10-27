@@ -1,16 +1,10 @@
 <?php
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  * Description of BaseHojaMillon
  *
  * @author QwerfaqS
  */
-class BaseHojaMillon {
+class BaseHojaMillon extends BaseHojaMillon {
 
     var $nombre = 'Hoja';
     var $hoja;

@@ -10,7 +10,7 @@
  *
  * @author QwerfaqS
  */
-class HojaRespuestasMillon extends BaseHojaMillon{
+class HojaRespuestasMillon extends BaseHojaMillon {
     var $nombre = 'Respuestas';
     
 
