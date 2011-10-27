@@ -116,7 +116,7 @@ class evaluacionesActions extends sfActions {
         $this->mes = $request->getParameter('month');
         $this->año = $request->getParameter('year');        
         $this->nombre = $request->getParameter('nombre');                    
-        $this->fecha = $this->año.'-'.$this->mes.'-'.$this->dia;
+        $this->fecha = $this->año.'-'.$this->mes.'-'.$this->dia;        
       
         if(!isset($pagina))
             $pagina = 1;

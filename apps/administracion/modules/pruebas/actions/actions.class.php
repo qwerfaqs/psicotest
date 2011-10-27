@@ -24,7 +24,8 @@ class pruebasActions extends sfActions
   public function executeParciales(sfWebRequest $request)
   {      
     $aspirante = $request->getParameter('id');
-    $prueba = $request->getParameter('prueba');
+    $prueba = $request->getParameter('prueba');    
+    
     $this->resultados = ResultadosparcialesPeer::getResultadosParciales($prueba, $aspirante);    
   }
 
