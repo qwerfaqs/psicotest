@@ -12,10 +12,12 @@
 <h4>Aspirantes : </h4>
 <p>-Ver aspirantes : visualiza todos los aspirantes registrados en el sistema , asi como sus datos personales.</p>
 <p>-Nuevo aspirante : nos permite registrar un aspirante nuevo , tenga en cuenta de pedir permiso previo porque todas sus acciones quedaran registradas en un registro de transacciones de usuarios.</p>
-<h4>Estadisticas : </h4>
-<p>- Cantidad de aspirantes aprobados por test  :arroja el numero de estudiantes aprobados por test hasta la fecha y luego filtrado por año.</p>
-<p>- Cantidad de aspirantes desaprobados por test  :arroja el numero de estudiantes desaprobados por test hasta la fecha y luego filtrado por año.</p>
+<h4>Auditorias y reportes : </h4>
+<p>- Auditorias generales  : nos permite consultar todas las acciones que realizan todos los administradores por fecha .</p>
+<p>- Cantidad de aspirantes aprobados por test  :arroja el numero de estudiantes aprobados por test hasta la fecha .</p>
+<p>- Cantidad de aspirantes desaprobados por test  :arroja el numero de estudiantes desaprobados por test hasta la fecha.</p>
 <p>- Cantidad de aspirantes registrados : nos permitira identificar la cantidad de aspirantes evaluados por el sistema y por año .</p>
+<p>- 20 aspirantes con mejores puntajes : arroja los 20 primeros aspirantes que obtuvieron los mejores puntajes hasta la fecha actual .</p>
 <p/><p/>
 <h4>Para mas detalles consulte su correspondiente manual de usuario . Muchas Gracias  </h4>
       

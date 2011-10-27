@@ -16,6 +16,14 @@
  *
  * @package    lib.model
  */
-class IntensidadesPeer extends BaseIntensidadesPeer {
-
+class IntensidadesPeer extends BaseIntensidadesPeer 
+{
+ public static function getIntensidades($prueba,$aspirante)
+  {
+    $criteria = new Criteria();    
+    $criteria->add(ResultadosparcialesPeer::PRUEBAS_ID,$prueba,Criteria::EQUAL);     
+    $criteria->add(ResultadosparcialesPeer::ASPIRANTES_ID,$aspirante,Criteria::EQUAL);
+    
+    return (self::doSelectJoinResultadosparciales($criteria));
+  }
 } // IntensidadesPeer

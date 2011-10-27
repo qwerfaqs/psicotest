@@ -24,9 +24,32 @@ class pruebasActions extends sfActions
   public function executeParciales(sfWebRequest $request)
   {      
     $aspirante = $request->getParameter('id');
-    $prueba = $request->getParameter('prueba');    
-    
+    $prueba = $request->getParameter('prueba');        
     $this->resultados = ResultadosparcialesPeer::getResultadosParciales($prueba, $aspirante);    
+    $pru = PruebasPeer::retrieveByPK($prueba);
+  
+    switch ($pru->getTests()->getTitulo()) 
+    {
+        case 'EAE1 - ESCALA  G':
+            $this->resultados = IntensidadesPeer::getIntensidades($prueba, $aspirante);          
+            $this->setTemplate('eae1');
+        break;
+        case 'Bady G Escalas  Principales':
+            $resultado = $request->getParameter('resultado');
+            $this->resultados = ResultadosescalasPeer::getResultados($resultado);         
+            $this->setTemplate('escalas');
+        break;
+    
+            case '16. P. F':
+            $resultado = $request->getParameter('resultado');
+            $this->resultados = ResultadosescalasPeer::getResultados($resultado);         
+            $this->setTemplate('escalas');
+        break;
+
+        default:
+            $this->setTemplate('parciales');
+        break;
+    }
   }
 
   public function executeShow(sfWebRequest $request)
