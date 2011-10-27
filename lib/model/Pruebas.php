@@ -22,7 +22,7 @@ class Pruebas extends BasePruebas
      {
              $auditoria = new Auditorias();
              
-             $auditoria->setAdministradoresId(sfContext::getInstance()-getUser()-getAttribute('usuarioId'));
+             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
              $auditoria->setObjeto('Pruebas');
              $auditoria->setDescripcion(' Test : '.$this->getTests()->getTitulo().' Evaluación : '.$this->getEvaluaciones()->getNombre());
              $auditoria->setTipooperacion('Alta de prueba');
@@ -33,7 +33,7 @@ class Pruebas extends BasePruebas
      {
              $auditoria = new Auditorias();
              //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
-             $auditoria->setAdministradoresId(sfContext::getInstance()-getUser()-getAttribute('usuarioId'));
+             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
              $auditoria->setObjeto('Pruebas');
              $auditoria->setDescripcion(' Test : '.$this->getTests()->getTitulo().' Evaluación : '.$this->getEvaluaciones()->getNombre());
              $auditoria->setTipooperacion('Modificación de prueba');
@@ -45,7 +45,7 @@ class Pruebas extends BasePruebas
      {
              $auditoria = new Auditorias();
              //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
-             $auditoria->setAdministradoresId(sfContext::getInstance()-getUser()-getAttribute('usuarioId'));
+             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
              $auditoria->setObjeto('Pruebas');
              $auditoria->setDescripcion(' Test : '.$this->getTests()->getTitulo().' Evaluación : '.$this->getEvaluaciones()->getNombre());
              $auditoria->setTipooperacion('Eliminación de prueba');
