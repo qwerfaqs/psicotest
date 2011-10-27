@@ -108,7 +108,7 @@ $.get('<?php echo url_for('principal/consultaTiempo') ?>?ts='+Math.random(), fun
     }
     $(document).ready(function(){
 //        $('#contador').countdown({seconds: 30 });
-        $('#contador').countdown({until: '+1m', significant: 2, 
+        $('#contador').countdown({until: '+<?php echo $sf_user->getTimeDiff() ?>s', significant: 2, 
     layout: '{d<}{dn} {dl} {d>}{h<}{hn} {hl} {h>}{m<}{mn} {ml} {m>}{s<}{sn} {sl}{s>}'}); 
         verificarRecurrente();
     });

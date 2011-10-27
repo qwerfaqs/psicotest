@@ -157,4 +157,10 @@ class myUser extends derechosSecurityUser {
         $result = $this->getAttribute('resultados');
         return isset($result[0]) ? true : false;
     }
+    public function getTimeDiff(){
+        $inicio = $this->getStarTestTimeStamp();
+        $lapsus = time() - $inicio;
+        $duracion = $this->getPrueba()->getDuracion() * 60;
+        return $duracion - $lapsus;
+    }
 }

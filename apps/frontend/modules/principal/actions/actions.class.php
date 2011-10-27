@@ -121,15 +121,4 @@ class principalActions extends sfActions {
         $this->getResponse()->setContent($respuesta);
         return sfView::NONE;
     }
-    public function executeTicks(sfWebRequest $request){
-        $tests_hijo = $this->getUser()->getPrueba();
-//       $tests_hijo = new Tests();
-        $duracion = $tests_hijo->getDuracion() * 60;
-        $id = $tests_hijo->getId();
-        $nombre = $tests_hijo->getTitulo();
-        $inicio = $this->getUser()->getStarTestTimeStamp();
-        $lapsus = round(time() - $inicio);
-        $this->getResponse()->setContent($lapsus);
-        return sfView::NONE;
-    }
 }
