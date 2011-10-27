@@ -1,3 +1,4 @@
+<?php if($sf_user->getPrueba()->getDuracion() > 0 and $sf_user->getPrueba()->getDuracion() != null): ?>
 <script>
     function verificar(){
 //        alert(i++);
@@ -25,4 +26,5 @@ $.get('<?php echo url_for('principal/consultaTiempo') ?>?ts='+Math.random(), fun
     });
     
 </script>
+<?php endif; ?>
 

@@ -1,3 +1,4 @@
+<span id="contador"></span>
 <ul class="listado">
     
     <form  action="<?php echo url_for('principal/check') ?>" method="post">
