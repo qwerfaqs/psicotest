@@ -6,8 +6,8 @@
           <h2 class="star"><span>Opciones</span></h2>
           <div class="clr"></div>
           <ul class="sb_menu">
-            <li><a href="<?php echo url_for("principal/index") ?>">Inicio</a></li>
-            <li><a href="<?php echo url_for("principal/index") ?>">Cerrar Sesion</a></li>
+            <li><a href="<?php echo url_for("@homepage") ?>">Inicio</a></li>
+            <li><a href="<?php echo url_for("@derechos_signout") ?>">Cerrar Sesion</a></li>
           </ul>
         </div>
           
