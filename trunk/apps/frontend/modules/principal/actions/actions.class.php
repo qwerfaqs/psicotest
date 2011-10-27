@@ -106,8 +106,8 @@ class principalActions extends sfActions {
         $lapsus = time() - $inicio;
 //       var_dump($tests_hijo);
         $diff = $duracion - $lapsus;
-        $respuesta = "tortugaNinja";
-        /*
+        $respuesta = "Duracion: $duracion, Inicio: $inicio, Diff: $diff, Lapsus: $lapsus";
+        
         if ($diff <= 0) {
             $respuesta = "patadaNinja";
             if($this->getUser()->HAYRESULTADOS()) {
@@ -117,11 +117,8 @@ class principalActions extends sfActions {
             $this->getUser()->initResultados();           // inicializo el arreglo de resultados
             //$this->forward('principal', 'pregunta'); // vuelvo al flujo del principio pero con otro
         }
-         * 
-         */
-        $debug = "Duracion: $duracion, Inicio: $inicio";
-        var_dump($this->getUser()->getStarTestTimeStamp());
-        $this->getResponse()->setContent($debug);
+//        var_dump($this->getUser()->getStarTestTimeStamp());
+        $this->getResponse()->setContent($respuesta);
         return sfView::NONE;
     }
     public function executeTicks(sfWebRequest $request){
