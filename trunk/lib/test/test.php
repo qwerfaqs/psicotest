@@ -230,7 +230,7 @@ class test {
             }
         }
         if ($aprobado == 6) {
-            $resultado->setEstadosresultados(1);
+            $resultado->setEstadosresultadosId(1);
             $resultado->save();
         }
     }
