@@ -24,12 +24,16 @@ test:
 
 all:
   .settings:
+    enabled_modules: [derechosAuth]
     # Form security secret (CSRF protection)
     csrf_secret:            UniqueSecret
 
     # Output escaping settings
-    escaping_strategy:      false
+    escaping_strategy:      true
     escaping_method:        ESC_SPECIALCHARS
 
     # Enable the database manager
     use_database:           true
+  .actions:
+    login_module: derechosAuth
+    login_action: signin
