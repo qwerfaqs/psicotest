@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Skeleton subclass for representing a row from the 'aspirantes' table.
  *
@@ -15,31 +16,53 @@
  * @package    lib.model
  */
 class Aspirantes extends BaseAspirantes {
- public function postInsert(PropelPDO $con = null) {
-             $auditoria = new Auditorias();
-             //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
-             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
-             $auditoria->setObjeto('Aspirantes');
-             $auditoria->setDescripcion(' Cedula : '.$this->getCedula().' Nombre : '.$this->getNombre().' Apellido : '.$this->getApellido());
-             $auditoria->setTipooperacion('Alta de aspirante');
-             $auditoria->save();             
-     }
-      public function postUpdate(PropelPDO $con = null) {
-             $auditoria = new Auditorias();
-             //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
-             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
-             $auditoria->setObjeto('Aspirantes');
-             $auditoria->setDescripcion(' Cedula : '.$this->getCedula().' Nombre : '.$this->getNombre().' Apellido : '.$this->getApellido());
-             $auditoria->setTipooperacion('Modificación de aspirante');
-             $auditoria->save();   
-     }
-     public function postDelete(PropelPDO $con = null) {
-             $auditoria = new Auditorias();
-             //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
-             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
-             $auditoria->setObjeto('Aspirantes');
-             $auditoria->setDescripcion(' Cedula : '.$this->getCedula().' Nombre : '.$this->getNombre().' Apellido : '.$this->getApellido());
-             $auditoria->setTipooperacion('Eliminación de aspirante');
-             $auditoria->save();        
-     }
-} // Aspirantes
+
+    public function postInsert(PropelPDO $con = null) {
+        if (sfConfig::get('sf_environment') != "cli") {
+            $auditoria = new Auditorias();
+            //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
+            $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
+            $auditoria->setObjeto('Aspirantes');
+            $auditoria->setDescripcion(' Cedula : ' . $this->getCedula() . ' Nombre : ' . $this->getNombre() . ' Apellido : ' . $this->getApellido());
+            $auditoria->setTipooperacion('Alta de aspirante');
+            $auditoria->save();
+        }
+    }
+
+    public function postUpdate(PropelPDO $con = null) {
+        if (sfConfig::get('sf_environment') != "cli") {
+            $auditoria = new Auditorias();
+            //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
+            $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
+            $auditoria->setObjeto('Aspirantes');
+            $auditoria->setDescripcion(' Cedula : ' . $this->getCedula() . ' Nombre : ' . $this->getNombre() . ' Apellido : ' . $this->getApellido());
+            $auditoria->setTipooperacion('Modificación de aspirante');
+            $auditoria->save();
+        }
+    }
+
+    public function postDelete(PropelPDO $con = null) {
+        if (sfConfig::get('sf_environment') != "cli") {
+            $auditoria = new Auditorias();
+            //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
+            $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
+            $auditoria->setObjeto('Aspirantes');
+            $auditoria->setDescripcion(' Cedula : ' . $this->getCedula() . ' Nombre : ' . $this->getNombre() . ' Apellido : ' . $this->getApellido());
+            $auditoria->setTipooperacion('Eliminación de aspirante');
+            $auditoria->save();
+        }
+    }
+    public function getEdad() {
+        $edad = $this->getFechanacimiento("Y/m/d");
+        list($anio,$mes,$dia) = explode("-",$edad);
+        $anio_dif = date("Y") - $anio;
+        $mes_dif = date("m") - $mes;
+        $dia_dif = date("d") - $dia;
+        if ($dia_dif < 0 || $mes_dif < 0)
+        $anio_dif--;
+        return $anio_dif;
+    }
+
+}
+
+// Aspirantes

@@ -1,6 +1,5 @@
 <?php
 
-
 /**
  * Skeleton subclass for representing a row from the 'evaluaciones' table.
  *
@@ -16,40 +15,44 @@
  *
  * @package    lib.model
  */
-class Evaluaciones extends BaseEvaluaciones 
-{
-    public function postInsert(PropelPDO $con = null)
-     {
-             $auditoria = new Auditorias();
-             //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
-             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
-             $auditoria->setObjeto('Evaluaciones');
-             $auditoria->setDescripcion(' Nombre : '.$this->getNombre().' Perfil : '.$this->getPerfil()->getNombre().' Cantidad de aspirantes : '.$this->getCantidad());
-             $auditoria->setTipooperacion('Alta de evaluación');
-             $auditoria->save();             
-     }
-     
-      public function postUpdate(PropelPDO $con = null)
-     {
-             $auditoria = new Auditorias();
-             //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
-             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
-             $auditoria->setObjeto('Evaluaciones');
-             $auditoria->setDescripcion(' Nombre : '.$this->getNombre().' Perfil : '.$this->getPerfil()->getNombre().' Cantidad de aspirantes : '.$this->getCantidad());
-             $auditoria->setTipooperacion('Modificación de evaluación');
-             $auditoria->save();   
-     }
-     
-     
-     public function postDelete(PropelPDO $con = null)
-     {
-             $auditoria = new Auditorias();
-             //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
-             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
-             $auditoria->setObjeto('Evaluaciones');
-             $auditoria->setDescripcion(' Nombre : '.$this->getNombre().' Perfil : '.$this->getPerfil()->getNombre().' Cantidad de aspirantes : '.$this->getCantidad());
-             $auditoria->setTipooperacion('Eliminación de evaluación');
-             $auditoria->save();          
-     }
+class Evaluaciones extends BaseEvaluaciones {
 
-} // Evaluaciones
+    public function postInsert(PropelPDO $con = null) {
+        if (sfConfig::get('sf_environment') != "cli") {
+            $auditoria = new Auditorias();
+            //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
+            $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
+            $auditoria->setObjeto('Evaluaciones');
+            $auditoria->setDescripcion(' Nombre : ' . $this->getNombre() . ' Perfil : ' . $this->getPerfil()->getNombre() . ' Cantidad de aspirantes : ' . $this->getCantidad());
+            $auditoria->setTipooperacion('Alta de evaluación');
+            $auditoria->save();
+        }
+    }
+
+    public function postUpdate(PropelPDO $con = null) {
+        if (sfConfig::get('sf_environment') != "cli") {
+            $auditoria = new Auditorias();
+            //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
+            $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
+            $auditoria->setObjeto('Evaluaciones');
+            $auditoria->setDescripcion(' Nombre : ' . $this->getNombre() . ' Perfil : ' . $this->getPerfil()->getNombre() . ' Cantidad de aspirantes : ' . $this->getCantidad());
+            $auditoria->setTipooperacion('Modificación de evaluación');
+            $auditoria->save();
+        }
+    }
+
+    public function postDelete(PropelPDO $con = null) {
+        if (sfConfig::get('sf_environment') != "cli") {
+            $auditoria = new Auditorias();
+            //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
+            $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
+            $auditoria->setObjeto('Evaluaciones');
+            $auditoria->setDescripcion(' Nombre : ' . $this->getNombre() . ' Perfil : ' . $this->getPerfil()->getNombre() . ' Cantidad de aspirantes : ' . $this->getCantidad());
+            $auditoria->setTipooperacion('Eliminación de evaluación');
+            $auditoria->save();
+        }
+    }
+
+}
+
+// Evaluaciones
