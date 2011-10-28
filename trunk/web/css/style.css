@@ -147,12 +147,18 @@ h1 {
 	line-height:1.2em;
 	text-transform:none;
 	text-align:center;
+        
 }
-h1 a, h1 a:hover {
+h1 a{
 	color:#363636;
 	text-decoration:none;
 }
-h1 span {
+ h1 a:hover {color:#363636;
+	text-decoration:none;}
+
+
+
+h1  span {
 	color:#fff;
 }
 h1 small {

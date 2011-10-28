@@ -1,12 +1,4 @@
-@charset "utf-8";
-/* CSS Document */
 
-/* 
-pop.pop.star 
-by Timo Wirth
-24th Oct. 05
-http://www.javajim.de 
-*/
 
 
 
@@ -126,6 +118,6 @@ tbody td a {
 color: #DF3985;
 }
 
-a:visited, tbody tr.odd th a:visited {
+/*a:visited, tbody tr.odd th a:visited {
 color: #999;
-}
+}>*/
