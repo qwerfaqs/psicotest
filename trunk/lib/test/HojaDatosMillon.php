@@ -6,9 +6,12 @@
  */
 class HojaDatosMillon extends BaseHojaMillon {
     var $nombre = 'Datos';
+    
     public function getValor($celda) {
         $valor = null;
-        switch ($celda) {
+        
+        switch ($celda) 
+        {
             case "F12": // aca retorno Género:  "M" o "F"               
                 break;
             case "F14": // Edad

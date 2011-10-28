@@ -4,11 +4,12 @@
  *
  * @author QwerfaqS
  */
-class BaseHojaMillon extends BaseHojaMillon {
+class BaseHojaMillon  {
 
     var $nombre = 'Hoja';
     var $hoja;
     static $hojas;
+    
     public function __construct() {
         self::setHoja($this);
     }
