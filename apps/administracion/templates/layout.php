@@ -20,23 +20,28 @@
     <body>
         <div class="main">
             <div class="header">
-                <div class="header_resize">
-                    <div class="logo">
-                        <h1><a href="<?php echo url_for('evaluaciones/index'); ?>">Psico<span>Test</span> <small><span>Fuerzas Armadas del Ecuador</span></small></a></h1>
+                <div class="header">
+
+                    <div class="header_resize">
+
+                        <div class="logo">
+                            <h1><a href="">Psico<span>Test</span> <small><span>Fuerzas Armadas del Ecuador</span></small></a></h1>
+                        </div>
+                        <div class="clr"></div>
+                        <div class="clr"></div>
+                        <div class="clr"></div>
                     </div>
-                    <div class="clr"></div>
-                    <div class="clr"></div>
-                    <div class="clr"></div>
                 </div>
-            </div>
-            <div class="content">
-                <div class="content_resize">
-                    <div class="mainbar">
-                        <?php echo $sf_content ?>
+                <div class="content">
+                    <div class="content_resize">
+                        <div class="mainbar">
+                            <?php echo $sf_content ?>
+                        </div>
+                        <?php echo include_partial('global/sidebar') ?>
+                        <div class="clr"></div>
                     </div>
-                    <?php echo include_partial('global/sidebar') ?>
-                    <div class="clr"></div>
                 </div>
+                
             </div>
             <div class="fbg"></div>
         </div>
