@@ -26,6 +26,7 @@ all:
       classname:  PropelPDO
      # dsn:        mysql:dbname=psicotest;host=ldpane.homelinux.org;port=3306
       dsn:        mysql:dbname=psicotest;host=localhost
+#      dsn:        mysql:dbname=psicotest;host=192.168.1.2
 #      dsn:        mysql:dbname=psicotest;host=camarastream.dontexist.org
       username:   root
       password:   root

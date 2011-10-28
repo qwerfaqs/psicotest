@@ -1,6 +1,5 @@
 <?php
 
-
 /**
  * Skeleton subclass for representing a row from the 'pruebas' table.
  *
@@ -16,39 +15,44 @@
  *
  * @package    lib.model
  */
-class Pruebas extends BasePruebas 
-{
-    public function postInsert(PropelPDO $con = null)
-     {
-             $auditoria = new Auditorias();
-             
-             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
-             $auditoria->setObjeto('Pruebas');
-             $auditoria->setDescripcion(' Test : '.$this->getTests()->getTitulo().' Evaluación : '.$this->getEvaluaciones()->getNombre());
-             $auditoria->setTipooperacion('Alta de prueba');
-             $auditoria->save();             
-     }
-     
-      public function postUpdate(PropelPDO $con = null)
-     {
-             $auditoria = new Auditorias();
-             //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
-             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
-             $auditoria->setObjeto('Pruebas');
-             $auditoria->setDescripcion(' Test : '.$this->getTests()->getTitulo().' Evaluación : '.$this->getEvaluaciones()->getNombre());
-             $auditoria->setTipooperacion('Modificación de prueba');
-             $auditoria->save();   
-     }
-     
-     
-     public function postDelete(PropelPDO $con = null)
-     {
-             $auditoria = new Auditorias();
-             //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
-             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
-             $auditoria->setObjeto('Pruebas');
-             $auditoria->setDescripcion(' Test : '.$this->getTests()->getTitulo().' Evaluación : '.$this->getEvaluaciones()->getNombre());
-             $auditoria->setTipooperacion('Eliminación de prueba');
-             $auditoria->save();        
-     }
-} // Pruebas
+class Pruebas extends BasePruebas {
+
+    public function postInsert(PropelPDO $con = null) {
+        if (sfConfig::get('sf_environment') != "cli") {
+            $auditoria = new Auditorias();
+
+            $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
+            $auditoria->setObjeto('Pruebas');
+            $auditoria->setDescripcion(' Test : ' . $this->getTests()->getTitulo() . ' Evaluación : ' . $this->getEvaluaciones()->getNombre());
+            $auditoria->setTipooperacion('Alta de prueba');
+            $auditoria->save();
+        }
+    }
+
+    public function postUpdate(PropelPDO $con = null) {
+        if (sfConfig::get('sf_environment') != "cli") {
+            $auditoria = new Auditorias();
+            //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
+            $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
+            $auditoria->setObjeto('Pruebas');
+            $auditoria->setDescripcion(' Test : ' . $this->getTests()->getTitulo() . ' Evaluación : ' . $this->getEvaluaciones()->getNombre());
+            $auditoria->setTipooperacion('Modificación de prueba');
+            $auditoria->save();
+        }
+    }
+
+    public function postDelete(PropelPDO $con = null) {
+        if (sfConfig::get('sf_environment') != "cli") {
+            $auditoria = new Auditorias();
+            //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
+            $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
+            $auditoria->setObjeto('Pruebas');
+            $auditoria->setDescripcion(' Test : ' . $this->getTests()->getTitulo() . ' Evaluación : ' . $this->getEvaluaciones()->getNombre());
+            $auditoria->setTipooperacion('Eliminación de prueba');
+            $auditoria->save();
+        }
+    }
+
+}
+
+// Pruebas

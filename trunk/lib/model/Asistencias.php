@@ -1,6 +1,4 @@
 <?php
-
-
 /**
  * Skeleton subclass for representing a row from the 'asistencias' table.
  *
@@ -16,39 +14,44 @@
  *
  * @package    lib.model
  */
-class Asistencias extends BaseAsistencias 
-{
- public function postInsert(PropelPDO $con = null)
-     {
-             $auditoria = new Auditorias();
-             //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
-             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
-             $auditoria->setObjeto('Asistencias');
-             $auditoria->setDescripcion('Aspirante : '.$this->getAspirantes()->getCedula().' Evaluación : '.$this->getEvaluaciones()->getNombre());
-             $auditoria->setTipooperacion('Alta de asistencia');
-             $auditoria->save();             
-     }
-     
-      public function postUpdate(PropelPDO $con = null)
-     {
-             $auditoria = new Auditorias();
-             //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
-             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
-             $auditoria->setObjeto('Asistencias');
-             $auditoria->setDescripcion('Aspirante : '.$this->getAspirantes()->getCedula().' Evaluación : '.$this->getEvaluaciones()->getNombre());
-             $auditoria->setTipooperacion('Modificación de asistencia');
-             $auditoria->save();   
-     }
-     
-     
-     public function postDelete(PropelPDO $con = null)
-     {
-             $auditoria = new Auditorias();
-             //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
-             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
-             $auditoria->setObjeto('Asistencias');
-             $auditoria->setDescripcion('Aspirante : '.$this->getAspirantes()->getCedula().' Evaluación : '.$this->getEvaluaciones()->getNombre());
-             $auditoria->setTipooperacion('Eliminación de asistencia');
-             $auditoria->save();          
-     }
-} // Asistencias
+class Asistencias extends BaseAsistencias {
+
+    public function postInsert(PropelPDO $con = null) {
+        if (sfConfig::get('sf_environment') != "cli") {
+            $auditoria = new Auditorias();
+            //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
+            $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
+            $auditoria->setObjeto('Asistencias');
+            $auditoria->setDescripcion('Aspirante : ' . $this->getAspirantes()->getCedula() . ' Evaluación : ' . $this->getEvaluaciones()->getNombre());
+            $auditoria->setTipooperacion('Alta de asistencia');
+            $auditoria->save();
+        }
+    }
+
+    public function postUpdate(PropelPDO $con = null) {
+        if (sfConfig::get('sf_environment') != "cli") {
+            $auditoria = new Auditorias();
+            //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
+            $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
+            $auditoria->setObjeto('Asistencias');
+            $auditoria->setDescripcion('Aspirante : ' . $this->getAspirantes()->getCedula() . ' Evaluación : ' . $this->getEvaluaciones()->getNombre());
+            $auditoria->setTipooperacion('Modificación de asistencia');
+            $auditoria->save();
+        }
+    }
+
+    public function postDelete(PropelPDO $con = null) {
+        if (sfConfig::get('sf_environment') != "cli") {
+            $auditoria = new Auditorias();
+            //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
+            $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
+            $auditoria->setObjeto('Asistencias');
+            $auditoria->setDescripcion('Aspirante : ' . $this->getAspirantes()->getCedula() . ' Evaluación : ' . $this->getEvaluaciones()->getNombre());
+            $auditoria->setTipooperacion('Eliminación de asistencia');
+            $auditoria->save();
+        }
+    }
+
+}
+
+// Asistencias
