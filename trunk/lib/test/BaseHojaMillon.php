@@ -34,6 +34,31 @@ class BaseHojaMillon  {
         }
         return $this->hoja[$celda];
     }
+    
+    public function sum($celdas) 
+    {
+        if (is_array($celdas)) 
+          $valor = array_sum($celdas);
+       
+        else 
+            throw new sfException("El parametro no es un arreglo: " . $celdas);
+        return $valor;
+    }
+    
+    public function sumBeetwen($hoja,$desde,$hasta) 
+    {        
+       if (is_array($celdas)) 
+        {            
+            $desde = array_search($desde, array_keys($hoja));
+            $hasta = array_search($hasta, array_keys($hoja))+1;           
+            $hoja = array_slice($hoja,$desde,$hasta);         
+            $valor = array_sum($hoja);
+        }
+        else 
+            throw new sfException("El parametro no es un arreglo: " . $celdas);
+        return $valor;
+       
+    }
 
 }
 

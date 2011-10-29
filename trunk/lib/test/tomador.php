@@ -66,6 +66,11 @@ class Tomador
          case 'monedas':              
             return(Tomador::getRespuestaSimple($request,$num) );                
          break;
+     
+         case 'millon':              
+            return(Tomador::getRespuestaSimple($request,$num) );                
+         break;
+     
          default:             
          break;
      }
