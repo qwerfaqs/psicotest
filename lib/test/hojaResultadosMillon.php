@@ -10,16 +10,14 @@ class HojaResultadosMillon extends BaseHojaMillon {
     var $nombre = 'Resultados';
 
     public function getValor($celda) {
-        if (!isset($this->hoja[$celda]))
-            switch ($celda) {
+        if (!isset($this->hoja[$celda])) // Si no esta guarda la celda
+            switch ($celda) { // hago el calculo que corresponda
                 case "D2":
-
                     $celdas = array($this->getHoja("Respuestas")->getValor("C63"),
                         $this->getHoja("Respuestas")->getValor("C91"),
                         $this->getHoja("Respuestas")->getValor("C153"),
                         $this->getHoja("Respuestas")->getValor("C170"));
                     $this->hoja["D2"] = $this->sum($celdas);
-
                     break;
                 case "D9":
                     $celdas = array($this->getHoja("Respuestas")->getValor("C2") * 3,
@@ -62,7 +60,7 @@ class HojaResultadosMillon extends BaseHojaMillon {
                     break;
             }
 
-        return parent::getValor($celda);
+        return parent::getValor($celda); // finalmente retorno el valor cualquiera sea el caso
     }
 
 }
