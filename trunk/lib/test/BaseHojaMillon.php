@@ -8,7 +8,7 @@ class BaseHojaMillon  {
 
     var $nombre = 'Hoja';
     var $hoja;
-    static $hojas;
+    public static $hojas;
     
     public function __construct() {
         self::setHoja($this);
@@ -18,7 +18,7 @@ class BaseHojaMillon  {
     }
 
     public function getHoja($nombre) {
-        return self::$hoja[$nombre];
+        return self::$hojas[$nombre];
     }
 
     public static function setHoja(BaseHojaMillon $hoja) {
