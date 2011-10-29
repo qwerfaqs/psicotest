@@ -197,6 +197,61 @@ class HojaResultadosMillon extends BaseHojaMillon {
                     );
                     $this->hoja["D12"] = $this->sum($celdas);
                     break;
+                
+                    case "D13":
+                        $celdas = array(
+                        $this->getHoja("Respuestas")->getValor("C2")*3 ,
+                        $this->getHoja("Respuestas")->getValor("C3"),
+                        $this->getHoja("Respuestas")->getValor("C5") * 2,
+                        $this->getHoja("Respuestas")->getValor("C7")*3,
+                        $this->getHoja("Respuestas")->getValor("D9"),
+                        $this->getHoja("Respuestas")->getValor("C13") ,
+                        $this->getHoja("Respuestas")->getValor("C15") * 2,
+                        $this->getHoja("Respuestas")->getValor("C16")*3,
+                        $this->getHoja("Respuestas")->getValor("C17")*2,
+                        $this->getHoja("Respuestas")->getValor("C23"),
+                        $this->getHoja("Respuestas")->getValor("C29"),
+                        $this->getHoja("Respuestas")->getValor("D32") ,
+                        $this->getHoja("Respuestas")->getValor("C33"),
+                        $this->getHoja("Respuestas")->getValor("C38")*3,
+                        $this->getHoja("Respuestas")->getValor("C42")* 2,
+                        $this->getHoja("Respuestas")->getValor("D43")*2 ,
+                        $this->getHoja("Respuestas")->getValor("C44"),
+                        $this->getHoja("Respuestas")->getValor("D46") ,
+                        $this->getHoja("Respuestas")->getValor("C52"),
+                        $this->getHoja("Respuestas")->getValor("D56"),
+                        $this->getHoja("Respuestas")->getValor("C61"),
+                        $this->getHoja("Respuestas")->getValor("D79"),
+                        $this->getHoja("Respuestas")->getValor("C81"),
+                        $this->getHoja("Respuestas")->getValor("C86") ,
+                        $this->getHoja("Respuestas")->getValor("C87")*2,
+                        $this->getHoja("Respuestas")->getValor("C90") * 3,
+                        $this->getHoja("Respuestas")->getValor("C92")*3,
+                        $this->getHoja("Respuestas")->getValor("C104")*2 ,
+                        $this->getHoja("Respuestas")->getValor("D107"),
+                        $this->getHoja("Respuestas")->getValor("C112")*2,
+                        $this->getHoja("Respuestas")->getValor("C126")*2,
+                        $this->getHoja("Respuestas")->getValor("C127"),
+                        $this->getHoja("Respuestas")->getValor("C130")*3,
+                        $this->getHoja("Respuestas")->getValor("C131"),
+                        $this->getHoja("Respuestas")->getValor("C132")*3,
+                        $this->getHoja("Respuestas")->getValor("C135"),
+                        $this->getHoja("Respuestas")->getValor("C136"),                      
+                        $this->getHoja("Respuestas")->getValor("C138")*2,       
+                        $this->getHoja("Respuestas")->getValor("C143")*3,       
+                        $this->getHoja("Respuestas")->getValor("C144"),  
+                        $this->getHoja("Respuestas")->getValor("C147"), 
+                        $this->getHoja("Respuestas")->getValor("D150")*2, 
+                        $this->getHoja("Respuestas")->getValor("D159")*2, 
+                        $this->getHoja("Respuestas")->getValor("C164"), 
+                        $this->getHoja("Respuestas")->getValor("C166")*2, 
+                        $this->getHoja("Respuestas")->getValor("C167")*3,     
+                        $this->getHoja("Respuestas")->getValor("C171")*2,   
+                        $this->getHoja("Respuestas")->getValor("C172")*2,   
+                        $this->getHoja("Respuestas")->getValor("C173")*2,       
+                    );
+                    $this->hoja["D13"] = $this->sum($celdas);
+                    break;
             }
 
         return parent::getValor($celda); // finalmente retorno el valor cualquiera sea el caso
