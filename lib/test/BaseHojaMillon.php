@@ -47,7 +47,7 @@ class BaseHojaMillon  {
     
     public function sumBeetwen($hoja,$desde,$hasta) 
     {        
-       if (is_array($celdas)) 
+       if (is_array($hoja)) 
         {            
             $desde = array_search($desde, array_keys($hoja));
             $hasta = array_search($hasta, array_keys($hoja))+1;           
