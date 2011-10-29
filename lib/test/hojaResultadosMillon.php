@@ -12,15 +12,14 @@ class HojaResultadosMillon extends BaseHojaMillon {
         
         switch ($celda) 
         {
-            case "F12":  $valor = self::getHoja("Respuestas")->getValor("C63");
+            case "D2": 
+                    $celdas = array( self::getHoja("Respuestas")->getValor("C63"),
+                                     self::getHoja("Respuestas")->getValor("C91"),
+                                     self::getHoja("Respuestas")->getValor("C153"),
+                                     self::getHoja("Respuestas")->getValor("C170"));
+                    $this->hoja["D2"]  = parent::sum($celdas);
                 break;
-            case "F14":  
-                break;
-            case "F17":
-            case "F18":
-                break;
-            case "F19":
-                $valor = "X";
+
             default:
                 $valor = parent::getValor($celda);
                 break;
