@@ -59,6 +59,8 @@ class HojaResultadosMillon extends BaseHojaMillon {
                     $this->hoja["D9"]  = parent::sum($celdas);
             break;
         
+        
+        
 
             default:
                 $valor = parent::getValor($celda);
