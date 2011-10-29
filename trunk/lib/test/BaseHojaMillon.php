@@ -101,6 +101,18 @@ class BaseHojaMillon {
         
         return $resultado;
     }
+    /*
+     * Devuelve un arreglo con los valores del rango especificado (inclusive)
+     * 
+     */
+    public function getRangoValores($columna, $filadesde, $filahasta){
+        $resultado = array();
+        for($i = $filadesde;$i<=$filahasta;$i++) {
+            $celda = $columna.$i;
+            $resultado[] = $this->getValor($celda);
+        }
+        return $resultado;
+    }
 
 }
 
