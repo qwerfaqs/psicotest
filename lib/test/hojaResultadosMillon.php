@@ -9,138 +9,19 @@ class HojaResultadosMillon extends BaseHojaMillon {
 
     var $nombre = 'Resultados';
 
-    public function __construct() {
-    
-        
-    //CALCULA TODAS LAS E
-    $columna = array($this->getHoja("Datos")->getValor("F12"),
-                     $this->getHoja("Datos")->getValor("F12"),
-                     $this->getHoja("Datos")->getValor("F12"),
-                     $this->getHoja("Datos")->getValor("F12"),
-                     $this->getHoja("Datos")->getValor("F12"),
-                     $this->getHoja("Datos")->getValor("F12"),
-                     $this->getHoja("Datos")->getValor("F12"),
-                     $this->getHoja("Datos")->getValor("F12"),
-                     $this->getHoja("Datos")->getValor("F12"),
-                     $this->getHoja("Datos")->getValor("F12"),
-                     $this->getHoja("Datos")->getValor("F12"),
-                     $this->getHoja("Datos")->getValor("F12"),
-                     $this->getHoja("Datos")->getValor("F12"),
-                     $this->getHoja("Datos")->getValor("F12"),
-                     $this->getHoja("Datos")->getValor("F12"),
-                     $this->getHoja("Datos")->getValor("F12"),
-                     $this->getHoja("Datos")->getValor("F12"),
-                     $this->getHoja("Datos")->getValor("F12"),
-                     $this->getHoja("Datos")->getValor("F12"),
-                     $this->getHoja("Datos")->getValor("F12"),
-                     $this->getHoja("Datos")->getValor("F12"),
-                     $this->getHoja("Datos")->getValor("F12"),
-            
-            
-            );
-    
-    $valor = array("M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M");
-    
-    $si = array($this->getHoja("Br hombre")->getValor("M44"),
-                $this->getHoja("Br hombre")->getValor("P49"),                
-                $this->getHoja("Br hombre")->getValor("S54"),
-                $this->getHoja("Br hombre")->getValor("V61"),
-                $this->getHoja("Br hombre")->getValor("Y70"),
-                $this->getHoja("Br hombre")->getValor("AB57"),
-                $this->getHoja("Br hombre")->getValor("AE56"),
-                $this->getHoja("Br hombre")->getValor("AH64"),
-                $this->getHoja("Br hombre")->getValor("AK58"),                                                                          
-                $this->getHoja("Br hombre")->getValor("AN46"),   
-        
-                $this->getHoja("Br hombre")->getValor("AQ51"),
-                $this->getHoja("Br hombre")->getValor("AT67"),
-                $this->getHoja("Br hombre")->getValor("AW65"),
-                $this->getHoja("Br hombre")->getValor("AZ39"),
-                $this->getHoja("Br hombre")->getValor("BC46"),
-                $this->getHoja("Br hombre")->getValor("BF47"),
-                $this->getHoja("Br hombre")->getValor("BI59"),
-                $this->getHoja("Br hombre")->getValor("BL54"),
-                $this->getHoja("Br hombre")->getValor("BO63"),
-                $this->getHoja("Br hombre")->getValor("BR42"),
-                $this->getHoja("Br hombre")->getValor("BU49"),
-                $this->getHoja("Br hombre")->getValor("BX39"),
-        
-            );
-    
-    
-    $no = array($this->getHoja("Br mujer")->getValor("L48"),
-                $this->getHoja("Br mujer")->getValor("O54"),
-                $this->getHoja("Br mujer")->getValor("R56"),
-                $this->getHoja("Br mujer")->getValor("U55"),
-                $this->getHoja("Br mujer")->getValor("X60"),
-                $this->getHoja("Br mujer")->getValor("AA59"),
-                $this->getHoja("Br mujer")->getValor("AD65"),
-                $this->getHoja("Br mujer")->getValor("AG63"),
-                $this->getHoja("Br mujer")->getValor("AJ56"),
-                $this->getHoja("Br mujer")->getValor("AM51"),
-        
-                $this->getHoja("Br mujer")->getValor("AP51"),
-                $this->getHoja("Br mujer")->getValor("AS68"),
-                $this->getHoja("Br mujer")->getValor("AV62"),
-                $this->getHoja("Br mujer")->getValor("AY42"),
-                $this->getHoja("Br mujer")->getValor("BB47"),
-                $this->getHoja("Br mujer")->getValor("BE48"),
-                $this->getHoja("Br mujer")->getValor("BH60"),
-                $this->getHoja("Br mujer")->getValor("BK53"),
-                $this->getHoja("Br mujer")->getValor("BN66"),
-                $this->getHoja("Br mujer")->getValor("BR50"),
-                $this->getHoja("Br mujer")->getValor("BU51"),
-                $this->getHoja("Br mujer")->getValor("BX39"),                                                
-            );
-    
-    $resultados = $this->SiesIgualValorColumnas($columna, $valor, $si, $no);
-    $celdas = array("E9","E10","E11","E12","E13","E14","E15","E16","E17","E18","E21","E22","E23","E26","E27","E28","E29","E30","E31","E34","E35","E36");
-    $this->setRangoValores($celdas, $resultados);
-        
-    
-    //CALCULA TODAS LAS F    
-    $valores = $this->getRangoValores("E",9,18);
-    $constante = $this->getHoja("Auxiliar")->getValor("C66");
-    $resultados = $this->sumValores($valores, $constante);
-    $celdas = array("F9","F10","F11","F12","F13","F14","F15","F16","F17","F18");
-    $this->setRangoValores($celdas, $resultados);
-    //segunda parte de F
-    $valores = $this->getRangoValores("E",26,31);
-    $constante = $this->getHoja("Auxiliar")->getValor("C66");
-    $resultados = $this->sumValores($valores, $constante);
-    $celdas = array("E26","E27","E28","E29","E30","E31");
-    $this->setRangoValores($celdas, $resultados);
-    
-    
-    //CALCULA TODAS LAS G
-    //
-    //PRIMERA PARTE 
-    $valores = $this->getRangoValores("G",21,23);
-    $constante = $this->getHoja("Auxiliar")->getValor("G66");
-    $resultados = $this->sumValores($valores, $constante);
-    $celdas = array("G21","G22","G23");
-    $this->setRangoValores($celdas, $resultados);
-    
-    //SEGUNDA PARTE 
-    $valores = $this->getRangoValores("G",34,36);
-    $constante = $this->getHoja("Auxiliar")->getValor("G66");
-    $resultados = $this->sumValores($valores, $constante);
-    $celdas = array("G34","G35","G36");
-    $this->setRangoValores($celdas, $resultados);
-    
-    // PUNTAJE FINAL 
-    
-    $celdas = array("M9","M10","M11","M12","M13","M14","M15","M16","M17","M18","M21","M22","M23","M26","M27","M28","M29","M30","M31","M34","M35","M36");
-    $celdasvalores = array("F9","H10","F11","F12","F13","F14","F15","F16","F17","H18","K21","K22","K23","K26","K27","F28","K29","F30","F31","L34","L35","L36");
-    $this->refCelda($celdas, $celdavalores);
-    }
+  
     
     
     public function getValor($celda) {
+       
+        
         if (!isset($this->hoja[$celda])) // Si no esta guarda la celda
+        {   
+                                   
+          //QUEDA EL PUNTAJE FINAL PERO ESE LO LLAMO DE AFUERA PARA TRAER TODOS LOS CAMPOS    
+          
             switch ($celda) 
-            { // hago el calculo que corresponda
-              
+            {               
                case "D2":
                     $celdas = array($this->getHoja("Respuestas")->getValor("C63"),
                         $this->getHoja("Respuestas")->getValor("C91"),
@@ -1164,12 +1045,155 @@ class HojaResultadosMillon extends BaseHojaMillon {
                 case "L34": $this->hoja["L34"] = $this->getHoja("Auxiliar")->getValor("D95")+ $this->getHoja("Resultados")->getValor("G34");                                                
                 case "L35": $this->hoja["L35"] = $this->getHoja("Auxiliar")->getValor("E95")+ $this->getHoja("Resultados")->getValor("G35");                                                
                 case "L36": $this->hoja["L36"] = $this->getHoja("Auxiliar")->getValor("F95")+ $this->getHoja("Resultados")->getValor("G36");                                                     
-                
+                default : 
+                    if(strpos($celda,'E')!=FALSE)
+                        $this->calcularE();
+                    if(strpos($celda,'F')!=FALSE)
+                        $this->calcularF(); 
+                    if(strpos($celda,'G')!=FALSE)
+                        $this->calcularG();  
+               break;
             }
+            
+           }
 
         return parent::getValor($celda); // finalmente retorno el valor cualquiera sea el caso
     }
-
+    
+    public function calcularE() 
+    {
+      //CALCULA TODAS LAS E
+    $columna = array($this->getHoja("Datos")->getValor("F12"),
+                     $this->getHoja("Datos")->getValor("F12"),
+                     $this->getHoja("Datos")->getValor("F12"),
+                     $this->getHoja("Datos")->getValor("F12"),
+                     $this->getHoja("Datos")->getValor("F12"),
+                     $this->getHoja("Datos")->getValor("F12"),
+                     $this->getHoja("Datos")->getValor("F12"),
+                     $this->getHoja("Datos")->getValor("F12"),
+                     $this->getHoja("Datos")->getValor("F12"),
+                     $this->getHoja("Datos")->getValor("F12"),
+                     $this->getHoja("Datos")->getValor("F12"),
+                     $this->getHoja("Datos")->getValor("F12"),
+                     $this->getHoja("Datos")->getValor("F12"),
+                     $this->getHoja("Datos")->getValor("F12"),
+                     $this->getHoja("Datos")->getValor("F12"),
+                     $this->getHoja("Datos")->getValor("F12"),
+                     $this->getHoja("Datos")->getValor("F12"),
+                     $this->getHoja("Datos")->getValor("F12"),
+                     $this->getHoja("Datos")->getValor("F12"),
+                     $this->getHoja("Datos")->getValor("F12"),
+                     $this->getHoja("Datos")->getValor("F12"),
+                     $this->getHoja("Datos")->getValor("F12"),
+            
+            
+            );
+    
+    $valor = array("M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M","M");
+    
+    $si = array($this->getHoja("Br hombre")->getValor("M44"),
+                $this->getHoja("Br hombre")->getValor("P49"),                
+                $this->getHoja("Br hombre")->getValor("S54"),
+                $this->getHoja("Br hombre")->getValor("V61"),
+                $this->getHoja("Br hombre")->getValor("Y70"),
+                $this->getHoja("Br hombre")->getValor("AB57"),
+                $this->getHoja("Br hombre")->getValor("AE56"),
+                $this->getHoja("Br hombre")->getValor("AH64"),
+                $this->getHoja("Br hombre")->getValor("AK58"),                                                                          
+                $this->getHoja("Br hombre")->getValor("AN46"),   
+        
+                $this->getHoja("Br hombre")->getValor("AQ51"),
+                $this->getHoja("Br hombre")->getValor("AT67"),
+                $this->getHoja("Br hombre")->getValor("AW65"),
+                $this->getHoja("Br hombre")->getValor("AZ39"),
+                $this->getHoja("Br hombre")->getValor("BC46"),
+                $this->getHoja("Br hombre")->getValor("BF47"),
+                $this->getHoja("Br hombre")->getValor("BI59"),
+                $this->getHoja("Br hombre")->getValor("BL54"),
+                $this->getHoja("Br hombre")->getValor("BO63"),
+                $this->getHoja("Br hombre")->getValor("BR42"),
+                $this->getHoja("Br hombre")->getValor("BU49"),
+                $this->getHoja("Br hombre")->getValor("BX39"),
+        
+            );
+    
+    
+    $no = array($this->getHoja("Br mujer")->getValor("L48"),
+                $this->getHoja("Br mujer")->getValor("O54"),
+                $this->getHoja("Br mujer")->getValor("R56"),
+                $this->getHoja("Br mujer")->getValor("U55"),
+                $this->getHoja("Br mujer")->getValor("X60"),
+                $this->getHoja("Br mujer")->getValor("AA59"),
+                $this->getHoja("Br mujer")->getValor("AD65"),
+                $this->getHoja("Br mujer")->getValor("AG63"),
+                $this->getHoja("Br mujer")->getValor("AJ56"),
+                $this->getHoja("Br mujer")->getValor("AM51"),
+        
+                $this->getHoja("Br mujer")->getValor("AP51"),
+                $this->getHoja("Br mujer")->getValor("AS68"),
+                $this->getHoja("Br mujer")->getValor("AV62"),
+                $this->getHoja("Br mujer")->getValor("AY42"),
+                $this->getHoja("Br mujer")->getValor("BB47"),
+                $this->getHoja("Br mujer")->getValor("BE48"),
+                $this->getHoja("Br mujer")->getValor("BH60"),
+                $this->getHoja("Br mujer")->getValor("BK53"),
+                $this->getHoja("Br mujer")->getValor("BN66"),
+                $this->getHoja("Br mujer")->getValor("BR50"),
+                $this->getHoja("Br mujer")->getValor("BU51"),
+                $this->getHoja("Br mujer")->getValor("BX39"),                                                
+            );
+    
+    $resultados = $this->SiesIgualValorColumnas($columna, $valor, $si, $no);
+    $celdas = array("E9","E10","E11","E12","E13","E14","E15","E16","E17","E18","E21","E22","E23","E26","E27","E28","E29","E30","E31","E34","E35","E36");
+    $this->setRangoValores($celdas, $resultados);  
+    }
+    
+    
+    public function calcularF() 
+    {
+     //CALCULA TODAS LAS F    
+    $valores = $this->getRangoValores("E",9,18);
+    $constante = $this->getHoja("Auxiliar")->getValor("C66");
+    $resultados = $this->sumValores($valores, $constante);
+    $celdas = array("F9","F10","F11","F12","F13","F14","F15","F16","F17","F18");
+    $this->setRangoValores($celdas, $resultados);
+   
+    //segunda parte de F
+    $valores = $this->getRangoValores("E",26,31);
+    $constante = $this->getHoja("Auxiliar")->getValor("C66");
+    $resultados = $this->sumValores($valores, $constante);
+    $celdas = array("F26","F27","F28","F29","F30","F31");
+    $this->setRangoValores($celdas, $resultados);
+    
+    
+    }
+    
+     public function calcularG() 
+    {
+       //CALCULA TODAS LAS G
+    //
+    //PRIMERA PARTE 
+    $valores = $this->getRangoValores("G",21,23);
+    $constante = $this->getHoja("Auxiliar")->getValor("G66");
+    $resultados = $this->sumValores($valores, $constante);
+    $celdas = array("G21","G22","G23");
+    $this->setRangoValores($celdas, $resultados);
+    
+    //SEGUNDA PARTE 
+    $valores = $this->getRangoValores("G",34,36);
+    $constante = $this->getHoja("Auxiliar")->getValor("G66");
+    $resultados = $this->sumValores($valores, $constante);
+    $celdas = array("G34","G35","G36");
+    $this->setRangoValores($celdas, $resultados);  
+    }
+    
+    public function calcularFinal() 
+    {
+         // PUNTAJE FINAL     
+     $celdas = array("M9","M10","M11","M12","M13","M14","M15","M16","M17","M18","M21","M22","M23","M26","M27","M28","M29","M30","M31","M34","M35","M36");
+     $celdasvalores = array("F9","H10","F11","F12","F13","F14","F15","F16","F17","H18","K21","K22","K23","K26","K27","F28","K29","F30","F31","L34","L35","L36");
+     $this->refCelda($celdas, $celdavalores); 
+    }
 }
 
 ?>
