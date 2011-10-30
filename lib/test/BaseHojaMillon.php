@@ -45,6 +45,9 @@ class BaseHojaMillon {
             throw new sfException("El parametro no es un arreglo: " . $celdas);
         return $valor;
     }
+    
+    
+    
 
     public function sumBeetwen($hoja, $desde, $hasta) {
         if (is_array($hoja)) {
@@ -126,6 +129,37 @@ class BaseHojaMillon {
         }
      }        
     }
+    // M9 TOMA EL VALOR DE  => F9
+    public function refCelda($celdas,$celdavalores) 
+    {
+        if (is_array($celdavalores))
+        {
+            foreach($celdavalores as $key=>$valor)
+            {
+                $this->hoja[$celdas[$key]] =$this->hoja[$valor];
+            }
+        }
+
+        else
+            throw new sfException("El parametro no es un arreglo: " . $celdas);
+        return $valor;
+    }
+    
+    public function sumValores($valores,$constante) 
+    {
+        if (is_array($valores))
+        {
+            foreach($valores as $valor)
+            {
+                $valor = $valor + $constante;
+            }
+        }
+
+        else
+            throw new sfException("El parametro no es un arreglo: " . $celdas);
+        return $valor;
+    }
+    
     /*
      * Devuelve un arreglo con los valores del rango especificado (inclusive)
      * 
