@@ -57,6 +57,19 @@ class BaseHojaMillon {
             throw new sfException("El parametro no es un arreglo: " . $celdas);
         return $valor;
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /*
      * Compara cada valor de $columna con $valor(y sea un elemento o un arreglo)
      * En caso positivo retorna $si o $no
@@ -101,6 +114,18 @@ class BaseHojaMillon {
         
         return $resultado;
     }
+    
+    
+    public function setRangoValores($columna,$resultados)
+    {
+     if(is_array($columna))
+     {    
+        foreach($resultados as  $key => $resultado) 
+        {
+           $this->hoja[$columna[$key]] = $resultado;
+        }
+     }        
+    }
     /*
      * Devuelve un arreglo con los valores del rango especificado (inclusive)
      * 
@@ -108,7 +133,7 @@ class BaseHojaMillon {
     public function getRangoValores($columna, $filadesde, $filahasta){
         $resultado = array();
         for($i = $filadesde;$i<=$filahasta;$i++) {
-            $celda = $columna.$i;
+            $celda = $columna.$i; 
             $resultado[] = $this->getValor($celda);
         }
         return $resultado;
