@@ -11,6 +11,8 @@ class HojaResultadosMillon extends BaseHojaMillon {
 
     public function __construct() {
     
+        
+    //CALCULA TODAS LAS E
     $columna = array($this->getHoja("Datos")->getValor("F12"),
                      $this->getHoja("Datos")->getValor("F12"),
                      $this->getHoja("Datos")->getValor("F12"),
@@ -92,10 +94,45 @@ class HojaResultadosMillon extends BaseHojaMillon {
             );
     
     $resultados = $this->SiesIgualValorColumnas($columna, $valor, $si, $no);
-    $celdas = array("E9","E10","E11","E12","E13","E14","E15","E16","E17","E18");
+    $celdas = array("E9","E10","E11","E12","E13","E14","E15","E16","E17","E18","E21","E22","E23","E26","E27","E28","E29","E30","E31","E34","E35","E36");
     $this->setRangoValores($celdas, $resultados);
         
     
+    //CALCULA TODAS LAS F    
+    $valores = $this->getRangoValores("E",9,18);
+    $constante = $this->getHoja("Auxiliar")->getValor("C66");
+    $resultados = $this->sumValores($valores, $constante);
+    $celdas = array("F9","F10","F11","F12","F13","F14","F15","F16","F17","F18");
+    $this->setRangoValores($celdas, $resultados);
+    //segunda parte de F
+    $valores = $this->getRangoValores("E",26,31);
+    $constante = $this->getHoja("Auxiliar")->getValor("C66");
+    $resultados = $this->sumValores($valores, $constante);
+    $celdas = array("E26","E27","E28","E29","E30","E31");
+    $this->setRangoValores($celdas, $resultados);
+    
+    
+    //CALCULA TODAS LAS G
+    //
+    //PRIMERA PARTE 
+    $valores = $this->getRangoValores("G",21,23);
+    $constante = $this->getHoja("Auxiliar")->getValor("G66");
+    $resultados = $this->sumValores($valores, $constante);
+    $celdas = array("G21","G22","G23");
+    $this->setRangoValores($celdas, $resultados);
+    
+    //SEGUNDA PARTE 
+    $valores = $this->getRangoValores("G",34,36);
+    $constante = $this->getHoja("Auxiliar")->getValor("G66");
+    $resultados = $this->sumValores($valores, $constante);
+    $celdas = array("G34","G35","G36");
+    $this->setRangoValores($celdas, $resultados);
+    
+    // PUNTAJE FINAL 
+    
+    $celdas = array("M9","M10","M11","M12","M13","M14","M15","M16","M17","M18","M21","M22","M23","M26","M27","M28","M29","M30","M31","M34","M35","M36");
+    $celdasvalores = array("F9","H10","F11","F12","F13","F14","F15","F16","F17","H18","K21","K22","K23","K26","K27","F28","K29","F30","F31","L34","L35","L36");
+    $this->refCelda($celdas, $celdavalores);
     }
     
     
@@ -1104,7 +1141,29 @@ class HojaResultadosMillon extends BaseHojaMillon {
             
                 case "F2": $this->hoja["F2"] = $this->getHoja("Auxiliar")->getValor("E4")== "Verdadero" ? "Valido" : "Invalido";   
                 case "F3": $this->hoja["F3"] = $this->getHoja("Auxiliar")->getValor("C5")== "Verdadero" ? "Valido" : "Invalido";      
-                
+                case "H10": $this->hoja["H10"] = $this->getHoja("Auxiliar")->getValor("E78")>0 ? $this->getHoja("Auxiliar")->getValor("E78") : $this->getHoja("Resultados")->getValor("F10");      
+                case "H18": $this->hoja["H18"] = $this->getHoja("Auxiliar")->getValor("F78")>0 ? $this->getHoja("Auxiliar")->getValor("F78") : $this->getHoja("Resultados")->getValor("F18");           
+                case "H22": $this->hoja["H22"] = $this->getHoja("Auxiliar")->getValor("G78")>0 ? $this->getHoja("Auxiliar")->getValor("G78") : $this->getHoja("Resultados")->getValor("G22");           
+                case "I21": $this->hoja["I21"] = round($this->getHoja("Auxiliar")->getValor("C81")+$this->getHoja("Resultados")->getValor("G21"));                
+                case "I22": $this->hoja["I22"] = round($this->getHoja("Auxiliar")->getValor("C81")+$this->getHoja("Resultados")->getValor("H22"));                
+                case "I26": $this->hoja["I26"] = round($this->getHoja("Auxiliar")->getValor("C81")+$this->getHoja("Resultados")->getValor("F26"));                     
+                case "I27": $this->hoja["I27"] = round($this->getHoja("Auxiliar")->getValor("C81")+$this->getHoja("Resultados")->getValor("F27"));                
+                case "I29": $this->hoja["I29"] = round($this->getHoja("Auxiliar")->getValor("C81")+$this->getHoja("Resultados")->getValor("F29"));                     
+                case "J21": $this->hoja["J21"] = $this->getHoja("Auxiliar")->getValor("C86")=='Verdadero' ? $this->getHoja("Resultados")->getValor("I21")+4 : $this->getHoja("Resultados")->getValor("I21");           
+                case "J22": $this->hoja["J22"] = $this->getHoja("Auxiliar")->getValor("C86")=='Verdadero' ? $this->getHoja("Resultados")->getValor("I22")+4 : $this->getHoja("Resultados")->getValor("I22");           
+                case "J23": $this->hoja["J23"] = $this->getHoja("Auxiliar")->getValor("C86")=='Verdadero' ? $this->getHoja("Resultados")->getValor("G23")+2 : $this->getHoja("Resultados")->getValor("G23");           
+                case "J26": $this->hoja["J26"] = $this->getHoja("Auxiliar")->getValor("C86")=='Verdadero' ? $this->getHoja("Resultados")->getValor("I26")+15 : $this->getHoja("Resultados")->getValor("I26");                
+                case "J27": $this->hoja["J27"] = $this->getHoja("Auxiliar")->getValor("C86")=='Verdadero' ? $this->getHoja("Resultados")->getValor("I27")+13 : $this->getHoja("Resultados")->getValor("I27");           
+                case "J29": $this->hoja["J29"] = $this->getHoja("Auxiliar")->getValor("C86")=='Verdadero' ? $this->getHoja("Resultados")->getValor("I29")+15 : $this->getHoja("Resultados")->getValor("I29");                
+                case "K21": $this->hoja["K21"] = $this->getHoja("Auxiliar")->getValor("C90")=='Verdadero' ? $this->getHoja("Resultados")->getValor("J21")-2 : $this->getHoja("Resultados")->getValor("J21");                     
+                case "K22": $this->hoja["K22"] = $this->getHoja("Auxiliar")->getValor("C90")=='Verdadero' ? $this->getHoja("Resultados")->getValor("J22")-6 : $this->getHoja("Resultados")->getValor("J22");                          
+                case "K23": $this->hoja["K23"] = $this->getHoja("Auxiliar")->getValor("C90")=='Verdadero' ? $this->getHoja("Resultados")->getValor("J23")-7 : $this->getHoja("Resultados")->getValor("J23");                              
+                case "K26": $this->hoja["K26"] = $this->getHoja("Auxiliar")->getValor("C90")=='Verdadero' ? $this->getHoja("Resultados")->getValor("J26")-7 : $this->getHoja("Resultados")->getValor("J26");                                   
+                case "K27": $this->hoja["K27"] = $this->getHoja("Auxiliar")->getValor("C90")=='Verdadero' ? $this->getHoja("Resultados")->getValor("J27")-5 : $this->getHoja("Resultados")->getValor("J27");                                        
+                case "K29": $this->hoja["K29"] = $this->getHoja("Auxiliar")->getValor("C90")=='Verdadero' ? $this->getHoja("Resultados")->getValor("J29")-5 : $this->getHoja("Resultados")->getValor("J29");                                            
+                case "L34": $this->hoja["L34"] = $this->getHoja("Auxiliar")->getValor("D95")+ $this->getHoja("Resultados")->getValor("G34");                                                
+                case "L35": $this->hoja["L35"] = $this->getHoja("Auxiliar")->getValor("E95")+ $this->getHoja("Resultados")->getValor("G35");                                                
+                case "L36": $this->hoja["L36"] = $this->getHoja("Auxiliar")->getValor("F95")+ $this->getHoja("Resultados")->getValor("G36");                                                     
                 
             }
 
