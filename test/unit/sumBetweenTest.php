@@ -3,7 +3,7 @@ require_once dirname(__FILE__).'/../bootstrap/unit.php';
 $configuration = ProjectConfiguration::getApplicationConfiguration( 'frontend', 'test', true);
 new sfDatabaseManager($configuration);
 
-$t = new lime_test(2);
+$t = new lime_test(4);
 
 
 $obj = new BaseHojaMillon();
@@ -19,8 +19,16 @@ $hoja = array(  "A1" => 1,
                 "A10" => 10 );
 $desde = "A1";
 $hasta = "A10";
-$t->is($obj->sumBeetwen($hoja, $desde, $hasta), 55, "sum de A1 a A10 deberia ser 55");
+$t->is($obj->sumBeetwen($hoja, $desde, $hasta), 55, "sumBeetwen de A1 a A10 deberia ser 55");
 
 $desde = "A4";
 $hasta = "A8";
-$t->is($obj->sumBeetwen($hoja, $desde, $hasta), 30, "sum de A4 a A8 deberia ser 30");
+$t->is($obj->sumBeetwen($hoja, $desde, $hasta), 30, "sumBeetwen de A4 a A8 deberia ser 30");
+
+$desde = "A1";
+$hasta = "A10";
+$t->is($obj->sumBetween($hoja, $desde, $hasta), 55, "sumBetween de A1 a A10 deberia ser 55");
+
+$desde = "A4";
+$hasta = "A8";
+$t->is($obj->sumBetween($hoja, $desde, $hasta), 30, "sumBetween de A4 a A8 deberia ser 30");
