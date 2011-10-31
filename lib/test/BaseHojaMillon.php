@@ -78,36 +78,39 @@ class BaseHojaMillon {
     
     
 
-    public function sumBeetwen($hoja, $desde, $hasta) {
-        if (is_array($hoja)) {
-            $desde = array_search($desde, array_keys($hoja));
-            $hasta = array_search($hasta, array_keys($hoja));
-            $hoja = array_slice($hoja, $desde, $hasta);
-            $valor = array_sum($hoja);
-        }
-        else
-            throw new sfException("El parametro no es un arreglo: " . $celdas);
-        return $valor;
-    }
+//    public function sumBeetwen($hoja, $desde, $hasta) {
+//        if (is_array($hoja)) {
+//            $desde = array_search($desde, array_keys($hoja));
+//            $hasta = array_search($hasta, array_keys($hoja));
+//            $hoja = array_slice($hoja, $desde, $hasta);
+//            $valor = array_sum($hoja);
+//        }
+//        else
+//            throw new sfException("El parametro no es un arreglo: " . $celdas);
+//        return $valor;
+//    }
     public function sumBetween($hoja, $desde, $hasta) {
         if (is_array($hoja)) {
             $respuesta = array();
             $col = $this->cell2col($desde);
             $filaDesde = $this->cell2row($desde);
             $filaHasta = $this->cell2row($hasta);
-            for($i=$desde;$i<=$hasta;$i++){
+            for($i=$filaDesde;$i<=$filaHasta;$i++){
                 $respuesta[] = $hoja[$col.$i];
             }
             return array_sum($respuesta);
         } else
             throw new sfException("El parametro no es un arreglo: " . $celdas);
     }
+    public function sumBetween($desde, $hasta) {
+        return $this->sumBetween($this->hoja, $desde, $hasta);
+    }
     
     public function cell2row($celda){
-        return ltrim($cell, "QWERTYUIOPASDFGHJKLÑZXCVBNM");
+        return ltrim($celda, "QWERTYUIOPASDFGHJKLÑZXCVBNM");
     }
     public function cell2col($celda){
-        return rtrim($cell, "1234567890");
+        return rtrim($celda, "1234567890");
     }
     
     
