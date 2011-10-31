@@ -6,9 +6,22 @@
  * @author QwerfaqS
  */
 class BaseHojaMillon {
-
+    /**
+     * El nombre de la hoja actual
+     * @var string
+     */
     var $nombre = 'Hoja';
+    /**
+     *  Almacena las celdas internas de cada hoja
+     *
+     * @var array
+     */
     var $hoja;
+    /**
+     *  Arreglo estatico que guarda las instancias de las hojas (contexto)
+     *
+     * @var array BaseHojaMillon[]
+     */
     public static $hojas;
 
     public function __construct() {
@@ -18,18 +31,34 @@ class BaseHojaMillon {
     public function getNombre() {
         $this->nombre;
     }
-
+    /**
+     * Retorna la instancia de otra hoja del contexto
+     *
+     * @param      string $nombre Nombre de la hoja, es el declarado en el $nombre de cada subclase
+     *
+     * @return BaseHojaMillon
+     */
     public function getHoja($nombre) {
         return self::$hojas[$nombre];
     }
 
+    /**
+     *  Metodo estatico para relacionar una hoja al contexto
+     *
+     * @param BaseHojaMillon $hoja
+     */
     public static function setHoja(BaseHojaMillon $hoja) {
         if (!is_array(self::$hojas)) {
             self::$hojas = array();
         }
         self::$hojas[$hoja->getNombre()] = $hoja;
     }
-
+    /**
+     *  Retorna el valor para el nombre de celda dada
+     *
+     * @param string $celda Nombre completo de la celda a consultar
+     * @return mixed Valor de la celda consultada
+     */
     public function getValor($celda) {
         if (!isset($this->hoja[$celda])) {
             throw new sfException("No hay valor cargado para la celda: " . $celda);
@@ -59,6 +88,12 @@ class BaseHojaMillon {
         else
             throw new sfException("El parametro no es un arreglo: " . $celdas);
         return $valor;
+    }
+    public function cell2row($celda){
+        return ltrim($cell, "QWERTYUIOPASDFGHJKLÑZXCVBNM");
+    }
+    public function cell2col($celda){
+        return rtrim($cell, "1234567890");
     }
     
     

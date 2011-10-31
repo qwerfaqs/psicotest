@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/E:/PANE/xampp/htdocs/psicotest/apps/frontend/modules/principal/actions/actions.class.php</file>
+        <file>file:/E:/PANE/xampp/htdocs/psicotest/lib/model/PreguntasPeer.php</file>
+        <file>file:/E:/PANE/xampp/htdocs/psicotest/test/unit/proceso16pfTest.php</file>
+        <file>file:/E:/PANE/xampp/htdocs/psicotest/test/unit/calcularEscalas16pfTest.php</file>
+        <file>file:/E:/PANE/xampp/htdocs/psicotest/apps/frontend/modules/principal/templates/_ABC.php</file>
+        <file>file:/E:/PANE/xampp/htdocs/psicotest/apps/frontend/modules/principal/templates/_16pf.php</file>
+        <file>file:/E:/PANE/xampp/htdocs/psicotest/apps/frontend/lib/myUser.class.php</file>
+    </open-files>
 </project-private>

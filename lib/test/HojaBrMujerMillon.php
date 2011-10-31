@@ -187,10 +187,72 @@ class HojaBrMujerMillon extends BaseHojaMillon {
                 case"C153":
                 case"C154":
                     $fila = ltrim($str, "C");
-                    $this->hoja[$celda] = $this->getValor("D".$fila) == "VERDADERO" ? $this->getValor("B".$fila) :  0;
+                    $this->hoja[$celda] = $this->getValor("D".$fila) == "Verdadero" ? $this->getValor("B".$fila) :  0;
                     break;
                 case"C155":
                     $this->hoja[$celda] = array_sum($this->getRangoValores("C", 2, 154));
+                    break;
+                case"D136":
+                case"D137":
+                case"D138":
+                case"D139":
+                case"D140":
+                case"D141":
+                case"D142":
+                case"D143":
+                case"D144":
+                case"D145":
+                case"D146":
+                case"D147":
+                case"D148":
+                case"D149":
+                case"D150":
+                case"D151":
+                case"D152":
+                case"D153":
+                case"D154":
+                // =and(resultados!D3>'br mujer'!A135,resultados!D3<='br mujer'!A136)
+                    $col = "A"; //columna que se usa para calcular contra resultados!D3>
+                    $fila = $this->cell2row($celda); // obtengo la fila 136 a 154
+                    $ResultadosD3 = $this->getHoja("Resultados")->getValor("D3");
+                    //                                  "A"  + $fila - 1 = De 135 a 153,                         "A"    De 136 a 154
+                    if($ResultadosD3 > $this->getValor($col . ($fila - 1) ) and $ResultadosD3 <= $this->getValor($col . ($fila) ) ) {
+                        $this->hoja[$celda] = "Verdadero";
+                    }else {
+                        $this->hoja[$celda] = "Falso";
+                    }
+                    break;
+                case"F2":
+                case"F3":
+                case"F4":
+                case"F5":
+                case"F6":
+                case"F7":
+                case"F8":
+                case"F9":
+                case"F10":
+                case"F11":
+                case"F12":
+                case"F13":
+                case"F14":
+                case"F15":
+                case"F16":
+                case"F17":
+                case"F18":
+                case"F19":
+                case"F20":
+                case"F21":
+                case"F22":
+                case"F23":
+                    // F2  =IF(Resultados!D4='BR mujer'!D2,E2,0)
+                    // F23 =IF(Resultados!D4>='BR mujer'!D23,E23,0)
+                    $ResultadosD4 = $this->getHoja("Resultados")->getValor("D4");
+                    $fila = $this->cell2row($celda);
+                    $this->hoja[$celda] = ($ResultadosD4 == $this->getValor("D". $fila)) ? $this->getValor("E". $fila) : 0;
+                    break;
+                case"F24":
+                    // F24 =SUM(F2:F23)
+
                     break;
                 default:
                     break;
