@@ -3,7 +3,7 @@
       <div class="mainbar">
         <h2>Bienvenido <em><?php echo ucfirst($sf_user->getAttribute("usuarioNombre")) ?></em></h2>
         <h3>Evaluaciones disponibles:</h3>
-        <p>Seleccione Cualquiera de las evaluaciones disponibles, el link lo llevará a una pantalla con detalles de la evaluación y de cada uno de los Evaluación que deberá realizar.	</p>
+        <p>Seleccione Cualquiera de las evaluaciones disponibles, el link lo llevará a una pantalla con detalles de la evaluación y luego podrá comenzar con la evaluación.	</p>
         <p id="listadoevaluaciones">
             <ul class="listadoconimagen">                
                 <?php foreach($evaluaciones as $evaluacion) : ?>
