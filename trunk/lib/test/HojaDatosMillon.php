@@ -6,6 +6,7 @@
  */
 class HojaDatosMillon extends BaseHojaMillon {
     var $nombre = 'Datos';
+    
     public function __construct(Aspirantes $aspirante) {
         // como no tiene nada calculado, entonces lo inicializamos aca y dejamos el getValor por defecto
         $this->hoja = array();
