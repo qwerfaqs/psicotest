@@ -89,6 +89,19 @@ class BaseHojaMillon {
             throw new sfException("El parametro no es un arreglo: " . $celdas);
         return $valor;
     }
+    public function sumBetween($hoja, $desde, $hasta) {
+        if (is_array($hoja)) {
+            $respuesta = array();
+            $col = $this->cell2col($desde);
+            $filaDesde = $this->cell2row($desde);
+            $filaHasta = $this->cell2row($hasta);
+            for($i=$desde;$i<=$hasta;$i++){
+                $respuesta[] = $hoja[$col.$i];
+            }
+            return array_sum($respuesta);
+        } else
+            throw new sfException("El parametro no es un arreglo: " . $celdas);
+    }
     public function cell2row($celda){
         return ltrim($cell, "QWERTYUIOPASDFGHJKLÑZXCVBNM");
     }
@@ -108,7 +121,7 @@ class BaseHojaMillon {
     
     
     
-    /*
+    /**
      * Compara cada valor de $columna con $valor(y sea un elemento o un arreglo)
      * En caso positivo retorna $si o $no
      * tanto $valor, $si y $no pueden ser array() o valores simples
