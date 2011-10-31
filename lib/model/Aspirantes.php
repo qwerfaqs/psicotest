@@ -18,6 +18,9 @@
 class Aspirantes extends BaseAspirantes {
 
     public function postInsert(PropelPDO $con = null) {
+        
+          if(sfContext::getInstance()->getUser()->getAttribute('usuarioId')!=null)
+          {
         if (sfConfig::get('sf_environment') != "cli") {
             $auditoria = new Auditorias();
             //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
@@ -27,17 +30,21 @@ class Aspirantes extends BaseAspirantes {
             $auditoria->setTipooperacion('Alta de aspirante');
             $auditoria->save();
         }
+          }
     }
 
     public function postUpdate(PropelPDO $con = null) {
         if (sfConfig::get('sf_environment') != "cli") {
+            
+        
             $auditoria = new Auditorias();
-            //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
-            $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
+            //sfContext::getInstance()-getUser()-getAttribute('usuarioId')            
+             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
             $auditoria->setObjeto('Aspirantes');
             $auditoria->setDescripcion(' Cedula : ' . $this->getCedula() . ' Nombre : ' . $this->getNombre() . ' Apellido : ' . $this->getApellido());
             $auditoria->setTipooperacion('Modificación de aspirante');
             $auditoria->save();
+          
         }
     }
 

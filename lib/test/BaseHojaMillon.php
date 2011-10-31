@@ -81,7 +81,7 @@ class BaseHojaMillon {
     public function sumBeetwen($hoja, $desde, $hasta) {
         if (is_array($hoja)) {
             $desde = array_search($desde, array_keys($hoja));
-            $hasta = array_search($hasta, array_keys($hoja)) + 1;
+            $hasta = array_search($hasta, array_keys($hoja));
             $hoja = array_slice($hoja, $desde, $hasta);
             $valor = array_sum($hoja);
         }
@@ -102,6 +102,7 @@ class BaseHojaMillon {
         } else
             throw new sfException("El parametro no es un arreglo: " . $celdas);
     }
+    
     public function cell2row($celda){
         return ltrim($cell, "QWERTYUIOPASDFGHJKLÑZXCVBNM");
     }
