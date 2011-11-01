@@ -71,7 +71,107 @@ class HojaAuxiliarMillon extends BaseHojaMillon
                           $this->hoja["E77"] = $resultado;   
               break;
               case "E78": $this->hoja["E78"] = round($this->getHoja("Auxiliar")->getValor("E77"));   break;
-          }
+              
+              case "F73": $this->hoja["F73"] = $this->getHoja("Auxiliar")->getValor("C73")=='Verdadero' ? $this->getHoja("Resultados")->getValor("F18")-$this->getHoja("Auxiliar")->getValor("D72") : 0   ;           break;
+              case "F74": $this->hoja["F74"] = $this->getHoja("Auxiliar")->getValor("C74")=='Verdadero' ? $this->getHoja("Resultados")->getValor("F18")-$this->getHoja("Auxiliar")->getValor("D72")/2 : 0   ;           break;
+              case "F75": $this->hoja["F75"] = $this->getHoja("Auxiliar")->getValor("C75")=='Verdadero' ? $this->getHoja("Resultados")->getValor("F18")-$this->getHoja("Auxiliar")->getValor("D72")/4 : 0   ;           break;
+              case "F76": $this->hoja["F76"] = round($this->getHoja("Auxiliar")->getValor("F74") ) ;           break;
+              case "F77": $resultado = $this->sumBetween($this->hoja, 'F73', 'F75');
+                          $this->hoja["F77"] = $resultado;              break;
+              case "F78": $this->hoja["F78"] = round($this->getHoja("Auxiliar")->getValor("F77"));   break;
+          
+          
+              case "G73": $this->hoja["G73"] = $this->getHoja("Auxiliar")->getValor("D73")=='Verdadero' ? $this->getHoja("Resultados")->getValor("G22")-$this->getHoja("Auxiliar")->getValor("D72") : 0   ;           break;
+              case "G74": $this->hoja["G74"] = $this->getHoja("Auxiliar")->getValor("D74")=='Verdadero' ? $this->getHoja("Resultados")->getValor("G22")-$this->getHoja("Auxiliar")->getValor("D72")*3/2 : 0   ;           break;
+              case "G75": $this->hoja["G75"] = $this->getHoja("Auxiliar")->getValor("D75")=='Verdadero' ? $this->getHoja("Resultados")->getValor("G22")-$this->getHoja("Auxiliar")->getValor("D72")/2 : 0   ;           break;              
+              case "G77": $resultado = $this->sumBetween($this->hoja, 'G73', 'G75');
+                          $this->hoja["G77"] = $resultado;              break;
+              case "G78": $this->hoja["G78"] = round($this->getHoja("Auxiliar")->getValor("G77"));   break;
+          
+              //DD
+            case "C80": $this->hoja["C80"] = ($this->getHoja("Resultados")->getValor("D4")-$this->getHoja("Resultados")->getValor("D5") ) /10;   break;
+            case "C81": $this->hoja["C81"] = round($this->getHoja("Auxiliar")->getValor("C80"));     break;
+              
+          // DC1
+         
+          case "C83": $this->hoja["C83"] = $this->getHoja("Resultados")->getValor("F12")>$this->getHoja("Resultados")->getValor("F9") && $this->getHoja("Resultados")->getValor("F12")>$this->getHoja("Resultados")->getValor("H10")&&$this->getHoja("Resultados")->getValor("F12")>$this->getHoja("Resultados")->getValor("F11")&&$this->getHoja("Resultados")->getValor("F12")>$this->getHoja("Resultados")->getValor("F13")&&$this->getHoja("Resultados")->getValor("F12")>$this->getHoja("Resultados")->getValor("F14")&&$this->getHoja("Resultados")->getValor("F12")>$this->getHoja("Resultados")->getValor("F15")&&$this->getHoja("Resultados")->getValor("F12")>$this->getHoja("Resultados")->getValor("F16")&&$this->getHoja("Resultados")->getValor("F12")>$this->getHoja("Resultados")->getValor("F17")&&$this->getHoja("Resultados")->getValor("F12")>$this->getHoja("Resultados")->getValor("H18")  ? 'Verdadero' : 'Falso'   ;         break;
+          case "C84": $this->hoja["C84"] =   $this->getHoja("Resultados")->getValor("F16")>$this->getHoja("Resultados")->getValor("F9") ? 1 : 0;
+          case "C85": $this->hoja["C85"] =   $this->getHoja("Auxiliar")->getValor("L84")>7 ? 'Si' : 'No';
+          case "C86": $this->hoja["C86"] =   $this->getHoja("Auxiliar")->getValor("E83")=='Verdadero' ||  $this->getHoja("Auxiliar")->getValor("C85")=='Si' ? 'Verdadero' : 'Falso';                       
+          case "D83": $this->hoja["D83"] = $this->getHoja("Resultados")->getValor("F13")>$this->getHoja("Resultados")->getValor("F9") && $this->getHoja("Resultados")->getValor("F13")>$this->getHoja("Resultados")->getValor("H10")&&$this->getHoja("Resultados")->getValor("F13")>$this->getHoja("Resultados")->getValor("F11")&&$this->getHoja("Resultados")->getValor("F13")>$this->getHoja("Resultados")->getValor("F12")&&$this->getHoja("Resultados")->getValor("F13")>$this->getHoja("Resultados")->getValor("F14")&&$this->getHoja("Resultados")->getValor("F13")>$this->getHoja("Resultados")->getValor("F15")&&$this->getHoja("Resultados")->getValor("F13")>$this->getHoja("Resultados")->getValor("F16")&&$this->getHoja("Resultados")->getValor("F13")>$this->getHoja("Resultados")->getValor("F17")&&$this->getHoja("Resultados")->getValor("F13")>$this->getHoja("Resultados")->getValor("H18")  ? 'Verdadero' : 'Falso'   ;         break;                  
+          case "D84": $this->hoja["D84"] =   $this->getHoja("Resultados")->getValor("F16")>$this->getHoja("Resultados")->getValor("H10") ? 1 : 0;
+        
+          case "E83": $this->hoja["E83"] = $this->getHoja("Resultados")->getValor("C83")=='Verdadero' || $this->getHoja("Resultados")->getValor("D83")=='Verdadero' ? 'Verdadero' : 'Falso'   ;         break;          
+         
+          case "E84": $this->hoja["E84"] = $this->getHoja("Resultados")->getValor("F16")>$this->getHoja("Resultados")->getValor("F11") ? 1: 0   ;         break;          
+
+          case "F84": $this->hoja["F84"] = $this->getHoja("Resultados")->getValor("F16")>$this->getHoja("Resultados")->getValor("F12") ? 1: 0   ;         break;          
+
+          case "G84": $this->hoja["F84"] = $this->getHoja("Resultados")->getValor("F16")>$this->getHoja("Resultados")->getValor("F13") ? 1: 0   ;         break;          
+
+          case "H84": $this->hoja["F84"] = $this->getHoja("Resultados")->getValor("F16")>$this->getHoja("Resultados")->getValor("F14") ? 1: 0   ;         break;          
+          
+          case "I84": $this->hoja["I84"] = $this->getHoja("Resultados")->getValor("F16")>$this->getHoja("Resultados")->getValor("F15") ? 1: 0   ;         break;          
+          
+          case "J84": $this->hoja["J84"] = $this->getHoja("Resultados")->getValor("F16")>$this->getHoja("Resultados")->getValor("F17") ? 1: 0   ;         break;          
+          
+          case "K84": $this->hoja["K84"] = $this->getHoja("Resultados")->getValor("F16")>$this->getHoja("Resultados")->getValor("H18") ? 1: 0   ;         break;          
+          
+         case "L84": $this->hoja["L84"] = $resultado = $this->sumBetween($this->hoja, 'C84', 'K84');
+                          $this->hoja["L84"] = $resultado;              break;
+                 
+        //DC II
+                      
+          case "C88": $this->hoja["C88"] = $this->getHoja("Resultados")->getValor("H18")>$this->getHoja("Resultados")->getValor("F9") && $this->getHoja("Resultados")->getValor("H18")>$this->getHoja("Resultados")->getValor("H10")&&$this->getHoja("Resultados")->getValor("H18")>$this->getHoja("Resultados")->getValor("F11")&&$this->getHoja("Resultados")->getValor("H18")>$this->getHoja("Resultados")->getValor("F13")&&$this->getHoja("Resultados")->getValor("H18")>$this->getHoja("Resultados")->getValor("F14")&&$this->getHoja("Resultados")->getValor("H18")>$this->getHoja("Resultados")->getValor("F15")&&$this->getHoja("Resultados")->getValor("H18")>$this->getHoja("Resultados")->getValor("F16")&&$this->getHoja("Resultados")->getValor("H18")>$this->getHoja("Resultados")->getValor("F17")&&$this->getHoja("Resultados")->getValor("H18")>$this->getHoja("Resultados")->getValor("H18")  ? 'Verdadero' : 'Falso'   ;         break;
+          
+          case "C89": $this->hoja["C89"] =   $this->getHoja("Resultados")->getValor("H10")>$this->getHoja("Resultados")->getValor("F9") ? 1 : 0;
+         
+          case "C90": $this->hoja["C90"] =   $this->getHoja("Auxiliar")->getValor("L89")>7 ? 'Si' : 'No';
+        
+          case "C91": $this->hoja["C91"] =   $this->getHoja("Auxiliar")->getValor("C88")=='Verdadero' ||  $this->getHoja("Auxiliar")->getValor("C90")=='Si' ? 'Verdadero' : 'Falso';                       
+         
+          
+          case "D89": $this->hoja["D89"] =   $this->getHoja("Resultados")->getValor("H10")>$this->getHoja("Resultados")->getValor("F11") ? 1 : 0;
+        
+          case "E89": $this->hoja["E89"] = $this->getHoja("Resultados")->getValor("H10") >$this->getHoja("Resultados")->getValor("F12") ? 1 : 0   ;         break;          
+         
+          case "F89": $this->hoja["F89"] = $this->getHoja("Resultados")->getValor("H10")>$this->getHoja("Resultados")->getValor("F13") ? 1: 0   ;         break;          
+
+          case "G89": $this->hoja["G89"] = $this->getHoja("Resultados")->getValor("H10")>$this->getHoja("Resultados")->getValor("F14") ? 1: 0   ;         break;          
+      
+          case "H89": $this->hoja["H89"] = $this->getHoja("Resultados")->getValor("H10")>$this->getHoja("Resultados")->getValor("F15") ? 1: 0   ;         break;          
+                    
+          case "I89": $this->hoja["I89"] = $this->getHoja("Resultados")->getValor("H10")>$this->getHoja("Resultados")->getValor("F16") ? 1: 0   ;         break;          
+          
+          case "J89": $this->hoja["J89"] = $this->getHoja("Resultados")->getValor("H10")>$this->getHoja("Resultados")->getValor("F17") ? 1: 0   ;         break;          
+          
+          case "K89": $this->hoja["K89"] = $this->getHoja("Resultados")->getValor("H10")>$this->getHoja("Resultados")->getValor("H18") ? 1: 0   ;         break;          
+                                 
+          case "L89":  $resultado = $this->sumBetween($this->hoja, 'C89', 'K89  ');
+                          $this->hoja["L89"] = $resultado;              break;
+                                
+            // DP             
+          case "C93": $this->hoja["C93"] = $this->getHoja("Datos")->getValor("F17")=='X' ? 'Si': 'No'   ;         break;                       
+          case "C94": $this->hoja["C94"] = $this->getHoja("Datos")->getValor("F18")=='X' ? 'Si': 'No'   ;         break;                         
+          case "D93": $this->hoja["D93"] = $this->getHoja("Auxiliar")->getValor("C93")=='Si' ? 8: 0  ;         break;                          
+          case "D94": $this->hoja["D94"] = $this->getHoja("Auxiliar")->getValor("C94")=='Si' ? 5: 0  ;         break;                           
+          case "D95":  $resultado = $this->sumBetween($this->hoja, 'D93', 'D94  ');
+                          $this->hoja["D95"] = $resultado;              break;
+                      
+          case "E93": $this->hoja["E93"] = $this->getHoja("Auxiliar")->getValor("C93")=='Si' ? 10: 0  ;         break;                          
+          case "E94": $this->hoja["E94"] = $this->getHoja("Auxiliar")->getValor("C94")=='Si' ? 7: 0  ;         break;                           
+          case "E95":  $resultado = $this->sumBetween($this->hoja, 'E93', 'E94  ');
+                          $this->hoja["E95"] = $resultado;              break;            
+          
+       case "F93": $this->hoja["F93"] = $this->getHoja("Auxiliar")->getValor("C93")=='Si' ? 4: 0  ;         break;                              
+        case "F94": $this->hoja["F94"] = $this->getHoja("Auxiliar")->getValor("C94")=='Si' ? 2: 0  ;         break;                              
+     
+     case "F95":  $resultado = $this->sumBetween($this->hoja, 'F93', 'F94  ');
+                          $this->hoja["F95"] = $resultado;              break;    
+    
+    // YESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS TERMINE ESTA MIERDA
+    
+    }
             
             
             
