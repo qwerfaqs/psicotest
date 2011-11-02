@@ -1599,7 +1599,84 @@ class HojaBrMujerMillon extends BaseHojaMillon {
                 case "BX39":
                     $this->hoja[$celda] = $this->sumBetween("BX2", "BX38");
                     break;
-                
+                case "BN3":
+                case "BN4":
+                case "BN5":
+                case "BN6":
+                case "BN7":
+                case "BN8":
+                case "BN9":
+                case "BN10":
+                case "BN11":
+                case "BN12":
+                case "BN13":
+                case "BN14":
+                case "BN15":
+                case "BN16":
+                case "BN17":
+                case "BN18":
+                case "BN19":
+                case "BN20":
+                case "BN21":
+                case "BN22":
+                case "BN23":
+                case "BN24":
+                case "BN25":
+                case "BN26":
+                case "BN27":
+                case "BN28":
+                case "BN29":
+                case "BN30":
+                case "BN31":
+                    $fila = $this->cell2row($celda);
+                    $this->hoja[$celda] = ( $this->getValor("BO" . $fila) == "Verdadero" ) ? $this->getValor("BM" . $fila) : 0;
+                    break;
+                case "BN2":
+                    $fila = $this->cell2row($celda);
+                    $this->hoja[$celda] = ( $this->getHoja("Resultados")->getValor("BO3") <= $this->getValor("BL" . $fila) ) ? $this->getValor("BM" . $fila) : 0;
+                    break;
+                case "BN32":
+                    $this->hoja[$celda] = $this->sumBetween("BN2", "BN31");
+                    break;
+                case "BO3":
+                case "BO4":
+                case "BO5":
+                case "BO6":
+                case "BO7":
+                case "BO8":
+                case "BO9":
+                case "BO10":
+                case "BO11":
+                case "BO12":
+                case "BO13":
+                case "BO14":
+                case "BO15":
+                case "BO16":
+                case "BO17":
+                case "BO18":
+                case "BO19":
+                case "BO20":
+                case "BO21":
+                case "BO22":
+                case "BO23":
+                case "BO24":
+                case "BO25":
+                case "BO26":
+                case "BO27":
+                case "BO28":
+                case "BO29":
+                case "BO30":
+                case "BO31":
+                    // BO3  =and(resultados!BO3>'br mujer'!BL2,resultados!BO3<='br mujer'!BL3)
+                    // BO31 =and(resultados!BO3>'br mujer'!BL30,resultados!BO3<='br mujer'!BL31)
+                    $fila = $this->cell2row($celda);
+                    $ResultadosBO3 = $this->getHoja("Resultados")->getValor("BO3");
+                    if($ResultadosBO3 > $this->getValor("BL". ($fila - 1) ) and $ResultadosBO3 <= $this->getValor("BL". $fila )){
+                        $this->hoja[$celda] = "Verdadero";
+                    }else {
+                        $this->hoja[$celda] = "Falso";
+                    }
+                    break;
                 default:
                     break;
             }
