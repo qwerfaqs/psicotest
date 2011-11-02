@@ -273,12 +273,13 @@ class test {
     public static function calcularmillon($resultadosParciales) 
     {
         $resultados = Test::cargarResultadosExcel($resultadosParciales);
-        //pone el copiar archivo 
-        
+        //pone el copiar archivo  copy ( string $source , string $dest [, resource $context ] )
+        // el excel que anda bien es el que esta en C:\development\sfprojects\psicotest\lib\phpexel\php\baby.xlsx
         $ex = new Excel();
         $ex->writeCells($celdas, $srcOrigen, $srcDestino, $sheet); // escribe el excel con nombre nuevo 
         $finales = $ex->readCells($celdas, $src, $sheet); // devuelve los resultados 
         // grabar en resultados escalas todo y poner si es apto o no
+        
         
     }  
     
