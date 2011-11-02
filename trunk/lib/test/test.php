@@ -270,13 +270,26 @@ class test {
         $result->save();
     }
 
-    public static function calcularmillon($resultadosParciales) {
-        $hojaRespuestas = new HojaRespuestasMillon($resultadosParciales); // creo la hoja de Respuesta con los datos
+    public static function calcularmillon($resultadosParciales) 
+    {
+    
+        $respuestas = array();
+        foreach ($resultadosParciales as $resultado) 
+        {
+//            $resultado = new Resultadosparciales();
+            $preguntas_id = $resultado->getPreguntasId();
+            $opciones_id = $resultado->getOpcionesId();
+            $criteria = new Criteria();
+            $criteria->add(RespuestasPeer::PREGUNTAS_ID, $preguntas_id);
+            $criteria->add(RespuestasPeer::OPCIONES_ID, $opciones_id);
+            $respuesta = RespuestasPeer::doSelectOne($criteria);
+            $celda = $respuesta->getCelda();
+            $respuestas[$celda] = 1;                    
+        }
+    }  
         
         
-        
-        
-    }
+   
 }
 
 ?>
