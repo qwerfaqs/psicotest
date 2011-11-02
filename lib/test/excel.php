@@ -7,9 +7,7 @@
  */
 class Excel 
 {
-    
-    
-    
+           
     
     public function writeCells($celdas,$srcOrigen,$srcDestino,$sheet) // escribe las celdas especificas de un archivo de excel existente
     {
