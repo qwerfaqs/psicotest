@@ -9,33 +9,27 @@ class Excel
 {
            
     
-    public function writeCells($celdas,$srcOrigen,$srcDestino,$sheet) // escribe las celdas especificas de un archivo de excel existente
+    public function writeCells($celdas,$srcOrigen,$sheet) // escribe las celdas especificas de un archivo de excel existente
     {
-       $objReader = new PHPExcel_Reader_Excel2007();       
+       $objReader = new PHPExcel_Reader_Excel5();       
        $objPHPExcel = $objReader->load($srcOrigen);
-       $objWriter = new PHPExcel_Writer_Excel2007($objPHPExcel); //objeto de PHPExcel, para escribir en el excel                 
+       $objWriter = new PHPExcel_Writer_Excel5($objPHPExcel); //objeto de PHPExcel, para escribir en el excel                 
        $objPHPExcel->setActiveSheetIndex($sheet);
         
        foreach($celdas as $campo=>$celda)
         $objPHPExcel->getActiveSheet()->setCellValue($campo,$celda);
-     //   $objPHPExcel->getActiveSheet()->setCellValue("D175","1");
-       
-       
-        $objWriter->save($srcDestino);//guardamos el archivo excel
-                       
+ 
+       return($objPHPExcel);
+          
     }
     
     
-    public function readCells($celdas,$src,$sheet) // lee las celdas especificas de un archivo de excel existente
+    public function readCells($objPHPExcel,$celdas,$sheet) // lee las celdas especificas de un archivo de excel existente
     {
-       $extraccion = array(); 
-       $objReader = new PHPExcel_Reader_Excel2007();       
-       $objPHPExcel = $objReader->load($src);                   
-       $objPHPExcel->setActiveSheetIndex($sheet);
-       
+       $extraccion = array();                               
+       $objPHPExcel->setActiveSheetIndex($sheet);       
         foreach($celdas as $celda)
-          $extraccion[] = $objPHPExcel->getActiveSheet()->getCell($celda)->getCalculatedValue();         
-              
+          $extraccion[] = $objPHPExcel->getActiveSheet()->getCell($celda)->getCalculatedValue() ;                       
         return($extraccion);              
                        
     }
