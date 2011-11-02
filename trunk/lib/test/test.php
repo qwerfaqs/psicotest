@@ -227,7 +227,7 @@ class test {
         $resultadosescalas = ResultadosescalasPeer::getResultados($resultado->getId());
         $aprobado = 0;
         foreach ($resultadosescalas as $resultadoe) {
-            if ($resultadoe->getValor() >= $resultadoe->getEscalas()->getTests()->getPuntajeaprobacion()) {
+            if ($resultadoe->getValor()>= $resultadoe->getEscalas()->getTests()->getPuntajeaprobacion()) {
                 $aprobado++;
             }
         }
