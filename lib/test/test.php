@@ -272,8 +272,18 @@ class test {
 
     public static function calcularmillon($resultadosParciales) 
     {
+        $resultados = Test::cargarResultadosExcel($resultadosParciales);
+        
+        $ex = new Excel();
+        $ex->writeCells($celdas, $srcOrigen, $srcDestino, $sheet);
+        $ex->readCells($celdas, $src, $sheet);
+        
+    }  
     
-        $respuestas = array();
+    
+    public static function cargarResultadosExcel($resultadosParciales) 
+    {
+         $respuestas = array();
         foreach ($resultadosParciales as $resultado) 
         {
 //            $resultado = new Resultadosparciales();
@@ -284,9 +294,10 @@ class test {
             $criteria->add(RespuestasPeer::OPCIONES_ID, $opciones_id);
             $respuesta = RespuestasPeer::doSelectOne($criteria);
             $celda = $respuesta->getCelda();
-            $respuestas[$celda] = 1;                    
+            $respuestas[$celda] = 1;   
         }
-    }  
+        return($respuestas);
+    }
         
         
    
