@@ -48,7 +48,7 @@ class pruebasActions extends sfActions
     
         case 'Inventario Multiaxial Clinico de Millon. MCMI-II':
             $resultado = $request->getParameter('resultado');
-            $this->resultados = ResultadosescalasPeer::getMillon($resultado);        
+            $this->resultados = ResultadosescalasPeer::getResultados($resultado);        
             $this->setTemplate('escalas');
         break;
 
