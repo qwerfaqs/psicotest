@@ -40,9 +40,15 @@ class pruebasActions extends sfActions
             $this->setTemplate('escalas');
         break;
     
-            case '16. P. F':
+        case '16. P. F':
             $resultado = $request->getParameter('resultado');
             $this->resultados = ResultadosescalasPeer::getResultados($resultado);         
+            $this->setTemplate('escalas');
+        break;
+    
+        case 'Inventario Multiaxial Clinico de Millon. MCMI-II':
+            $resultado = $request->getParameter('resultado');
+            $this->resultados = ResultadosescalasPeer::getMillon($resultado);        
             $this->setTemplate('escalas');
         break;
 

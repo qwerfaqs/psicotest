@@ -5,6 +5,7 @@
             <th scope="col">Test</th>
             <th scope="col">Nombre</th>                        
             <th scope="col">Nombre largo</th>
+            <th scope="col">Descripción</th>   
             <th scope="col">Puntaje</th>            
         </tr>
     </thead>
@@ -20,7 +21,9 @@
         <td><?php echo $resultado->getEscalas()->getTests()->getTitulo() ?></td>
         <td><?php echo $resultado->getEscalas()->getNombre() ?></td>
         <td><?php echo $resultado->getEscalas()->getNombrelargo() ?></td>      
+        <td><?php echo $resultado->getEscalas()->getDescripcion() ?></td>
         <td><?php echo $resultado->getValor() ?></td>
+        
     </tr>
     <?php endforeach; ?>
   </tbody>

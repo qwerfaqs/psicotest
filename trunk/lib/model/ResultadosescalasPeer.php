@@ -24,4 +24,14 @@ class ResultadosescalasPeer extends BaseResultadosescalasPeer
     $criteria->add(ResultadosescalasPeer::RESULTADOS_ID,$resultado,Criteria::EQUAL);     
     return (self::doSelectJoinAll($criteria));
   }
+  
+  public static function getMillon($resultado)
+  {
+    $criteria = new Criteria();    
+    $criteria->addJoin(self::ESCALAS_ID,EscalasPeer::ID, Criteria::INNER_JOIN);
+    $criteria->addJoin(self::RESULTADOS_ID,ResultadosPeer::ID, Criteria::INNER_JOIN);    
+    $criteria->add(ResultadosescalasPeer::RESULTADOS_ID,$resultado,Criteria::EQUAL);     
+      
+    return (self::doSelect($criteria));
+  }
 } // ResultadosescalasPeer
