@@ -222,15 +222,74 @@ class HojaBrHombreMillon extends BaseHojaMillon {
 
                     break;
                     $fila = $this->cell2row($celda);
-                    $this->hoja[$celda] = ( $this->getHoja("Resultados")->getValor("D4") == $this->getValor("E" . $fila) ) ? $this->getValor("F" . $fila) : 0;
+                    $this->hoja[$celda] = ( $this->getHoja("Resultados")->getValor("D9") == $this->getValor("K" . $fila) ) ? $this->getValor("L" . $fila) : 0;
                     break;
-                case "G24":
+                case "M43":
                     $fila = $this->cell2row($celda);
-                    $this->hoja[$celda] = ( $this->getHoja("Resultados")->getValor("D4") >= $this->getValor("E" . $fila) ) ? $this->getValor("F" . $fila) : 0;
+                    $this->hoja[$celda] = ( $this->getHoja("Resultados")->getValor("D9") >= $this->getValor("K" . $fila) ) ? $this->getValor("L" . $fila) : 0;
                     break;
-                case "G25":
-                    $this->hoja[$celda] = $this->sumBetween("G2", "G24");
+                case "M44":
+                    $this->hoja[$celda] = $this->sumBetween("M2", "M43");
                     break;
+                case "P2":
+                case "P3":
+                case "P4":
+                case "P5":
+                case "P6":
+                case "P7":
+                case "P8":
+                case "P9":
+                case "P10":
+                case "P11":
+                case "P12":
+                case "P13":
+                case "P14":
+                case "P15":
+                case "P16":
+                case "P17":
+                case "P18":
+                case "P19":
+                case "P20":
+                case "P21":
+                case "P22":
+                case "P23":
+                case "P24":
+                case "P25":
+                case "P26":
+                case "P27":
+                case "P28":
+                case "P29":
+                case "P30":
+                case "P31":
+                case "P32":
+                case "P33":
+                case "P34":
+                case "P35":
+                case "P36":
+                case "P37":
+                case "P38":
+                case "P39":
+                case "P40":
+                case "P41":
+                case "P42":
+                case "P43":
+                case "P44":
+                case "P45":
+                case "P46":
+                case "P47":
+                     break;
+                    $fila = $this->cell2row($celda);
+                    $this->hoja[$celda] = ( $this->getHoja("Resultados")->getValor("D10") == $this->getValor("N" . $fila) ) ? $this->getValor("O" . $fila) : 0;
+                    break;
+                case "P48":
+                    $fila = $this->cell2row($celda);
+                    $this->hoja[$celda] = ( $this->getHoja("Resultados")->getValor("D10") >= $this->getValor("N" . $fila) ) ? $this->getValor("O" . $fila) : 0;
+                    break;
+                case "P49":
+                    $this->hoja[$celda] = $this->sumBetween("P2", "P48");
+                    break;
+                
+
                 default:
                     break;
             }

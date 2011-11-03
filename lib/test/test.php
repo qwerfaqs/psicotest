@@ -83,7 +83,7 @@ class test {
             $criteria = new Criteria();
             $criteria->add(RespuestasPeer::PREGUNTAS_ID, $preguntas_id);
             $criteria->add(RespuestasPeer::OPCIONES_ID, $opciones_id);
-            $respuesta = RespuestasPeer::doSelectOne($criteria); 
+            $respuesta = RespuestasPeer::doSelectOne($criteria);
 
             $Respuestasescalas = $respuesta->getRespuestasescalass();  //cuando ya tengo la respuestas le pido las RespuestasEscalas
 //          echo $Respuestasescalas[0];
@@ -227,7 +227,7 @@ class test {
         $resultadosescalas = ResultadosescalasPeer::getResultados($resultado->getId());
         $aprobado = 0;
         foreach ($resultadosescalas as $resultadoe) {
-            if ($resultadoe->getValor()>= $resultadoe->getEscalas()->getTests()->getPuntajeaprobacion()) {
+            if ($resultadoe->getValor() >= $resultadoe->getEscalas()->getTests()->getPuntajeaprobacion()) {
                 $aprobado++;
             }
         }
@@ -243,12 +243,10 @@ class test {
 
     public static function calcularbabybase($respuestas) {
         $puntaje = 0;
-
         foreach ($respuestas as $resultado) {
             $pregunta = $resultado->getPreguntas();
             $estado = sfConfig::get('app_activo');
             $respuesta = RespuestasPeer::getRespuesta($pregunta->getId(), $estado);
-
             if ($resultado->getOpciones()->getTexto() == $respuesta->getOpciones()->getTexto()) {
                 $puntaje = $puntaje + 1;
             }
@@ -270,25 +268,89 @@ class test {
         $result->save();
     }
 
-    public static function calcularmillon($resultadosParciales) 
-    {
+    public static function calcularmillon($resultadosParciales) {
         $resultados = Test::cargarResultadosExcel($resultadosParciales);
+        $aspirante = $resultadosParciales[0]->getAspirantes();
+//        $aspirante = new Aspirantes();
+        $edad = $aspirante->getEdad();
+        $sexo = $aspirante->getSexo();
+        $datos = array("G12" => $sexo, "G14" => $edad);
+        $idAspirante = $aspirante->getId();
+        $resultado = ResultadosPeer::getResultado($resultadosParciales[0]->getPruebas()->getId(), $aspirante->getId());
+        $resultadoMillon = test::procesarMillon($resultados, $datos, $idAspirante); // esto me devuelve un arreglo con las escalas y sus valores
+        $aprobado = true; // inicializo un marcador de aprobacion del test
+        foreach ($resultadoMillon as $escala => $valor) {
+            // Busco en la base de datos la escala correspondiente por nombre
+            $criteria = new Criteria();
+            $criteria->add(EscalasPeer::NOMBRE, $escala);
+            $Escala = EscalasPeer::doSelectOne($criteria);
+            // Creo el Resultadosescalas
+            $result = new Resultadosescalas();
+            $result->setEscalas($Escala); // le seteo la Escala
+            $result->setValor($valor); // le seteo el valor
+            $result->setResultados($resultado); // la asocio a el resultado general del test
+            $result->save(); // lo guardo
+            if($escala== "V" and $valor != 0){ // si saca algo distito a 0(cero) en la escala de validez, queda afuera
+                $aprobado = false;
+            }
+            if($escala!= "V" and $valor > 70){ // si saca mas de 70 en cualquier otra escala, queda afuera
+                $aprobado = false;
+            }
+            
+        }
+            // segun aprobado le sereo el estado del resultado Aprobacion o NO
+            $resultado->setEstadosresultadosId($aprobado == true ? 1 : 2); // TODO: manopleado??
+            $resultado->save(); // guardo el resultado
+            
+        // no me quedaria nada mas por hacer ya estaria todo guardado.
+    }
+
+    public static function procesarMillon($resultados, $datos, $idArchivoTemporal) {
         //pone el copiar archivo  copy ( string $source , string $dest [, resource $context ] )
         // el excel que anda bien es el que esta en C:\development\sfprojects\psicotest\lib\phpexel\php\baby.xlsx
-        $ex = new Excel();
-        $ex->writeCells($celdas, $srcOrigen, $srcDestino, $sheet); // escribe el excel con nombre nuevo 
-        $finales = $ex->readCells($celdas, $src, $sheet); // devuelve los resultados 
-        // grabar en resultados escalas todo y poner si es apto o no
-        
-        
-    }  
-    
-    
-    public static function cargarResultadosExcel($resultadosParciales) 
-    {
-         $respuestas = array();
-        foreach ($resultadosParciales as $resultado) 
-        {
+        $dir = sfConfig::get("sf_lib_dir") . "/phpexel/php/"; // obtengo la ruta a donde estan alojados los xlsx
+        $source = $dir . "baby.xls"; //ruta al archivo maestro  o base, mas conocido como "el original"
+        $dest = $dir . "temp$idArchivoTemporal.xls"; //ruta al archivo copia de uso exclusivo de este usuario
+        copy($source, $dest); //generero una nueva copia, si existia ya una antes, va a ser pisada, igualmente se lo va a eliminar luego de obtener los resultados
+        $ex = new Excel(); // creamos el objeto para operar con el xlsx
+        $obj = $ex->writeCells($datos, $dest, 0); //llena el excel con los datos personales y lo guarda
+        $obj = $ex->writeCells($resultados, $obj, 1); // llena el excel con las respuestas y lo guarda para luego ser leido
+        // Arreglo de las celdas a leer los resultados
+        $celdas = array("V" => "D3", // Validez
+//                        "X" => "M4", // Sinceridad
+//                        "Y" => "M5", // Deseabilidad Social
+//                        "Z" => "M6", // Autodescalificación
+                        "1" => "M10", // Esquizoide
+                        "2" => "M11", // Evitativo
+                        "3" => "M12", // Dependiente
+                        "4" => "M13", // Histriónico
+                        "5" => "M14", // Narcisita
+                        "6A" => "M15", // Antisocial
+                        "6B" => "M16", // Agresivo-sádico
+                        "7" => "M17", // Compulsivo
+                        "8A" => "M18", // Pasivo-agresivo
+                        "8B" => "M19", // Autoderrotista
+                        "S" => "M22", // Esquizotípico
+                        "C" => "M23", // Borderline
+                        "P" => "M24", // Paranoide
+                        "A" => "M27", // Ansiedad
+                        "H" => "M28", // Somatoformo
+                        "N" => "M29", // Bipolar
+                        "D" => "M30", // Distimia
+                        "B" => "M31", // Dependencia de alcohol
+                        "T" => "M32", // Dependencia de drogas
+                        "SS" => "M35", // Desorden del pensamiento
+                        "CC" => "M36", // Depresión mayor
+                        "PP" => "M37", // Desorden delusional
+        );
+        $finales = $ex->readCells($obj, $celdas, 3); // devuelve los resultados desde el xlsx copiado
+        unlink($dest);
+        return $finales;
+    }
+
+    public static function cargarResultadosExcel($resultadosParciales) {
+        $respuestas = array();
+        foreach ($resultadosParciales as $resultado) {
 //            $resultado = new Resultadosparciales();
             $preguntas_id = $resultado->getPreguntasId();
             $opciones_id = $resultado->getOpcionesId();
@@ -297,13 +359,11 @@ class test {
             $criteria->add(RespuestasPeer::OPCIONES_ID, $opciones_id);
             $respuesta = RespuestasPeer::doSelectOne($criteria);
             $celda = $respuesta->getCelda();
-            $respuestas[$celda] = 1;   
+            $respuestas[$celda] = 1;
         }
         return($respuestas);
     }
-        
-        
-   
+
 }
 
 ?>

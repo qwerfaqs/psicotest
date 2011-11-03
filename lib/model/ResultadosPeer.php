@@ -27,7 +27,12 @@ class ResultadosPeer extends BaseResultadosPeer
   }
   
   
-  
+  /**
+   *
+   * @param integer $prueba PRUEBAS_ID
+   * @param integer $aspirante ASPIRANTES_ID
+   * @return Resultados
+   */
   public static function getResultado($prueba,$aspirante)
   {
     $criteria = new Criteria();    
