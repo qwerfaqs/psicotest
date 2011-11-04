@@ -18,7 +18,7 @@
 class Pruebas extends BasePruebas {
 
     public function postInsert(PropelPDO $con = null) {
-        if (sfConfig::get('sf_environment') != "cli") {
+        if (sfConfig::get('sf_environment') != "cli" or sfContext::hasInstance()) {
             $auditoria = new Auditorias();
 
             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
@@ -30,7 +30,7 @@ class Pruebas extends BasePruebas {
     }
 
     public function postUpdate(PropelPDO $con = null) {
-        if (sfConfig::get('sf_environment') != "cli") {
+        if (sfConfig::get('sf_environment') != "cli" or sfContext::hasInstance()) {
             $auditoria = new Auditorias();
             //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
@@ -42,7 +42,7 @@ class Pruebas extends BasePruebas {
     }
 
     public function postDelete(PropelPDO $con = null) {
-        if (sfConfig::get('sf_environment') != "cli") {
+        if (sfConfig::get('sf_environment') != "cli" or sfContext::hasInstance()) {
             $auditoria = new Auditorias();
             //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));

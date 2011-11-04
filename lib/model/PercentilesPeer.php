@@ -34,18 +34,22 @@ IFNULL(hasta,desde)*/
         return self::populateObjects($statement, $connection);
     }
     public static function getPercentilPorEscala($escala, $puntaje) {
+        
         $query = "SELECT * FROM percentiles 
                   WHERE escalas_id=$escala AND $puntaje between percentiles.desde and 
                   IFNULL(percentiles.hasta,percentiles.desde)";
         $connection = Propel::getConnection(self::DATABASE_NAME);
         $statement = $connection->prepare($query);
         $statement->execute();
-        return self::populateObjects($statement, $connection);
+        $r = self::populateObjects($statement, $connection);
+        return $r[0];
     }
     public static function evaluarValorEsperado(Perfil $perfil, Percentiles $percentil) {
         $criteria = new Criteria();
         $criteria->add(ValoresperadoPeer::ESCALAS_ID, $percentil->getEscalasId());
         $valorEsperados = $perfil->getValoresperados($criteria);
+//        var_dump($perfil);
+//        var_dump($percentil);   
         $valorEsperado = $valorEsperados[0];
 //        $valorEsperado = new Valoresperado();
         return  (   $valorEsperado->getMayorque() <= $percentil->getPercentil() 

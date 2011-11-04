@@ -42,7 +42,7 @@ propel:
     id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
     tests_id: { phpName: TestsId, type: INTEGER, size: '11', required: true, foreignTable: tests, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
     nombre: { phpName: Nombre, type: VARCHAR, size: '50', required: false }
-    nombreLargo: { phpName: Nombrelargo, type: VARCHAR, size: '20', required: false }
+    nombreLargo: { phpName: Nombrelargo, type: VARCHAR, size: '150', required: false }
     descripcion: { phpName: Descripcion, type: LONGVARCHAR, required: false }
     _indexes: { tests_id: [tests_id] }
   estadopruebas:
@@ -67,10 +67,10 @@ propel:
     nombre: { phpName: Nombre, type: CHAR, size: '50', required: false }
     created_at: { phpName: CreatedAt, type: CHAR, size: '20', required: false }
     _indexes: { estadosevaluaciones_id: [estadosevaluaciones_id], perfil_id: [perfil_id] }
-  hojas:
-    _attributes: { phpName: Hojas }
-    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
-    nombre: { phpName: Nombre, type: VARCHAR, size: '50', required: false }
+#  hojas:
+#    _attributes: { phpName: Hojas }
+#    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+#    nombre: { phpName: Nombre, type: VARCHAR, size: '50', required: false }
   intensidades:
     _attributes: { phpName: Intensidades }
     id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
@@ -168,13 +168,13 @@ propel:
     _attributes: { phpName: Tipoopcion }
     id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
     nombre: { phpName: Nombre, type: VARCHAR, size: '50', required: false }
-  valores:
-    _attributes: { phpName: Valores }
-    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
-    celda: { phpName: Celda, type: CHAR, size: '10', required: false }
-    valor: { phpName: Valor, type: CHAR, size: '30', required: false }
-    hojas_id: { phpName: HojasId, type: INTEGER, size: '11', required: true, foreignTable: hojas, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
-    _indexes: { hojas_id: [hojas_id] }
+#  valores:
+#    _attributes: { phpName: Valores }
+#    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+#    celda: { phpName: Celda, type: CHAR, size: '10', required: false }
+#    valor: { phpName: Valor, type: CHAR, size: '30', required: false }
+#    hojas_id: { phpName: HojasId, type: INTEGER, size: '11', required: true, foreignTable: hojas, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
+#    _indexes: { hojas_id: [hojas_id] }
   valoresdeverdad:
     _attributes: { phpName: Valoresdeverdad }
     id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }

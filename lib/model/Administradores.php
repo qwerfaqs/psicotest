@@ -18,7 +18,7 @@
 class Administradores extends BaseAdministradores {
 
     public function postInsert(PropelPDO $con = null) {
-        if (sfConfig::get('sf_environment') != "cli") {
+        if (sfConfig::get('sf_environment') != "cli" or sfContext::hasInstance()) {
             $auditoria = new Auditorias();
             //sfContext::hasInstance() ? sfContext::getInstance()->getUser()->getAttribute('usuarioId') : 0
             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
@@ -30,7 +30,7 @@ class Administradores extends BaseAdministradores {
     }
 
     public function postUpdate(PropelPDO $con = null) {
-        if (sfConfig::get('sf_environment') != "cli") {
+        if (sfConfig::get('sf_environment') != "cli" or sfContext::hasInstance()) {
             $auditoria = new Auditorias();
             //sfContext::hasInstance() ? sfContext::getInstance()->getUser()->getAttribute('usuarioId') : 0
             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
@@ -42,7 +42,7 @@ class Administradores extends BaseAdministradores {
     }
 
     public function postDelete(PropelPDO $con = null) {
-        if (sfConfig::get('sf_environment') != "cli") {
+        if (sfConfig::get('sf_environment') != "cli" or sfContext::hasInstance()) {
             $auditoria = new Auditorias();
             //sfContext::hasInstance() ? sfContext::getInstance()->getUser()->getAttribute('usuarioId') : 0
             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));

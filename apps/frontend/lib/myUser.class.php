@@ -1,4 +1,5 @@
 <?php
+
 class myUser extends derechosSecurityUser {
 
 //    public function initialize(sfEventDispatcher $dispatcher, sfStorage $storage, $options = array()) {
@@ -13,6 +14,7 @@ class myUser extends derechosSecurityUser {
         else
             return(null);
     }
+
     public function setPruebas() { // seteo todas las pruebas de una evaluacion  
         $pruebas = PruebasPeer::getPruebas($this->getAttribute('evaluacion')->getId());
         $tests = TestsPeer::getTestHijos($pruebas);
@@ -20,37 +22,46 @@ class myUser extends derechosSecurityUser {
         $this->setResultadoInicial($pruebas);
         $this->setInitprueba(sfConfig::get('app_init_prueba'));
     }
+
     public function setEvaluacion($evaluacion) { // setea la evaluacion a realizar   
         $this->setAttribute('evaluacion', $evaluacion);
     }
+
     public function getPruebas() {
         return($this->getAttribute('pruebas'));
     }
+
     public function setInitprueba($num) {
         $this->setAttribute('currentprueba', $num);
     }
+
     public function Nextprueba() {
         $numero = $this->getAttribute('currentprueba');
         $numero++;
         $this->setAttribute('currentprueba', $numero);
     }
+
     public function getCurrentprueba() {
         return($this->getAttribute('currentprueba'));
     }
+
     public function getEvaluacion() {
         return($this->getAttribute('evaluacion'));
     }
+
     public function initResultados() {
         $resultados = array();
         $intensidades = array();
         $this->setAttribute('resultados', $resultados);
         $this->setAttribute('intensidades', $intensidades);
     }
+
     public function addResultados($resultado) {
         $result = $this->getAttribute('resultados');
         $result[] = $resultado;
         $this->setAttribute('resultados', $result);
     }
+
     public function addIntensidades($opcion, $resultado) {
         $resulta = $this->getAttribute('intensidades');
         $intensidad = new Intensidades();
@@ -60,6 +71,7 @@ class myUser extends derechosSecurityUser {
         $resulta[] = $intensidad;
         $this->setAttribute('intensidades', $resulta);
     }
+
     public function setResultadoInicial($pruebas) {
         foreach ($pruebas as $prueba) {
             $result = new Resultados();
@@ -70,6 +82,7 @@ class myUser extends derechosSecurityUser {
             $result->save();
         }
     }
+
     public function setResultado($prueba, $test, $respuesta, $pregunta) {
         if ($test->getTitulo() == 'eae1') {
             $tal = explode("/", $respuesta);
@@ -89,6 +102,7 @@ class myUser extends derechosSecurityUser {
             $this->addIntensidades($int, $resultado);
         }
     }
+
     public function saveResultados($test) {
         $respuestas = $this->getAttribute('resultados');
         $intensidades = $this->getAttribute('intensidades');
@@ -96,6 +110,8 @@ class myUser extends derechosSecurityUser {
             case 'domino': Test::calcularDomino($respuestas);
                 break;
             case '16pf': Test::calcular16pf($respuestas);
+                break;
+            case 'millon': Test::calcularmillon($respuestas);
                 break;
             case 'ig2': Test::calcularig2($respuestas);
                 break;
@@ -127,6 +143,7 @@ class myUser extends derechosSecurityUser {
                 break;
         }
     }
+
     public function setStarTestTimeStamp() {
         $startTime = $this->getAttribute("startTime", array());
         $evaluaciones_id = $this->getAttribute('evaluacion')->getId();
@@ -143,6 +160,7 @@ class myUser extends derechosSecurityUser {
 //        die("MORTE");
 //      $this->setAttribute("StarTestTimeStamp", time());
     }
+
     public function getStarTestTimeStamp() {
         $startTime = $this->getAttribute("startTime");
         $evaluaciones_id = $this->getAttribute('evaluacion')->getId();
@@ -153,14 +171,17 @@ class myUser extends derechosSecurityUser {
         }
         return $respuesta;
     }
-    public function HAYRESULTADOS() { 
+
+    public function HAYRESULTADOS() {
         $result = $this->getAttribute('resultados');
         return isset($result[0]) ? true : false;
     }
-    public function getTimeDiff(){
+
+    public function getTimeDiff() {
         $inicio = $this->getStarTestTimeStamp();
         $lapsus = time() - $inicio;
         $duracion = $this->getPrueba()->getDuracion() * 60;
         return $duracion - $lapsus;
     }
+
 }

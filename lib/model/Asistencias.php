@@ -17,7 +17,7 @@
 class Asistencias extends BaseAsistencias {
 
     public function postInsert(PropelPDO $con = null) {
-        if (sfConfig::get('sf_environment') != "cli") {
+        if (sfConfig::get('sf_environment') != "cli" or sfContext::hasInstance()) {
             $auditoria = new Auditorias();
             //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
