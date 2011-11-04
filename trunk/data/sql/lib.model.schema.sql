@@ -106,7 +106,7 @@ CREATE TABLE `escalas`
 	`id` INTEGER(11)  NOT NULL AUTO_INCREMENT,
 	`tests_id` INTEGER(11)  NOT NULL,
 	`nombre` VARCHAR(50),
-	`nombreLargo` VARCHAR(20),
+	`nombreLargo` VARCHAR(150),
 	`descripcion` TEXT,
 	PRIMARY KEY (`id`),
 	KEY `tests_id`(`tests_id`),
@@ -188,20 +188,6 @@ CREATE TABLE `evaluaciones`
 		REFERENCES `estadosevaluaciones` (`id`)
 		ON UPDATE RESTRICT
 		ON DELETE RESTRICT
-)Type=InnoDB;
-
-#-----------------------------------------------------------------------------
-#-- hojas
-#-----------------------------------------------------------------------------
-
-DROP TABLE IF EXISTS `hojas`;
-
-
-CREATE TABLE `hojas`
-(
-	`id` INTEGER(11)  NOT NULL AUTO_INCREMENT,
-	`nombre` VARCHAR(50),
-	PRIMARY KEY (`id`)
 )Type=InnoDB;
 
 #-----------------------------------------------------------------------------
@@ -562,28 +548,6 @@ CREATE TABLE `tipoopcion`
 	`id` INTEGER(11)  NOT NULL AUTO_INCREMENT,
 	`nombre` VARCHAR(50),
 	PRIMARY KEY (`id`)
-)Type=InnoDB;
-
-#-----------------------------------------------------------------------------
-#-- valores
-#-----------------------------------------------------------------------------
-
-DROP TABLE IF EXISTS `valores`;
-
-
-CREATE TABLE `valores`
-(
-	`id` INTEGER(11)  NOT NULL AUTO_INCREMENT,
-	`celda` CHAR(10),
-	`valor` CHAR(30),
-	`hojas_id` INTEGER(11)  NOT NULL,
-	PRIMARY KEY (`id`),
-	KEY `hojas_id`(`hojas_id`),
-	CONSTRAINT `valores_FK_1`
-		FOREIGN KEY (`hojas_id`)
-		REFERENCES `hojas` (`id`)
-		ON UPDATE RESTRICT
-		ON DELETE RESTRICT
 )Type=InnoDB;
 
 #-----------------------------------------------------------------------------

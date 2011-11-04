@@ -25,7 +25,7 @@ abstract class BaseEscalasForm extends BaseFormPropel
       'id'          => new sfValidatorChoice(array('choices' => array($this->getObject()->getId()), 'empty_value' => $this->getObject()->getId(), 'required' => false)),
       'tests_id'    => new sfValidatorPropelChoice(array('model' => 'Tests', 'column' => 'id')),
       'nombre'      => new sfValidatorString(array('max_length' => 50, 'required' => false)),
-      'nombreLargo' => new sfValidatorString(array('max_length' => 20, 'required' => false)),
+      'nombreLargo' => new sfValidatorString(array('max_length' => 150, 'required' => false)),
       'descripcion' => new sfValidatorString(array('required' => false)),
     ));
 

@@ -108,7 +108,7 @@ class test {
             $Resultadosescalas->setEscalas($Escala);
             $Resultadosescalas->setResultados($resultado);
             //$Resultadosescalas->setValor($valor);
-            $percentil = PercentilesPeer::getPercentilPorEscala($Escala, $valor);
+            $percentil = PercentilesPeer::getPercentilPorEscala($EscalaId, $valor);
 //          $percentil = new Percentiles();
 //          $percentil->getPercentil();
 //          $percentiles_por_escala[$Escala] = $percentil->getPercentil();
@@ -279,6 +279,7 @@ class test {
         $resultado = ResultadosPeer::getResultado($resultadosParciales[0]->getPruebas()->getId(), $aspirante->getId());
         $resultadoMillon = test::procesarMillon($resultados, $datos, $idAspirante); // esto me devuelve un arreglo con las escalas y sus valores
         $aprobado = true; // inicializo un marcador de aprobacion del test
+//        var_dump($resultadoMillon); die();
         foreach ($resultadoMillon as $escala => $valor) {
             // Busco en la base de datos la escala correspondiente por nombre
             $criteria = new Criteria();

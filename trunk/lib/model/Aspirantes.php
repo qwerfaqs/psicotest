@@ -18,38 +18,33 @@
 class Aspirantes extends BaseAspirantes {
 
     public function postInsert(PropelPDO $con = null) {
-        
-          if(sfContext::getInstance()->getUser()->getAttribute('usuarioId')!=null)
-          {
-        if (sfConfig::get('sf_environment') != "cli") {
-            $auditoria = new Auditorias();
-            //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
-            $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
-            $auditoria->setObjeto('Aspirantes');
-            $auditoria->setDescripcion(' Cedula : ' . $this->getCedula() . ' Nombre : ' . $this->getNombre() . ' Apellido : ' . $this->getApellido());
-            $auditoria->setTipooperacion('Alta de aspirante');
-            $auditoria->save();
+        if (sfConfig::get('sf_environment') != "cli" or sfContext::hasInstance()) {
+            if (sfContext::getInstance()->getUser()->getAttribute('usuarioId') != null) {
+                $auditoria = new Auditorias();
+                //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
+                $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
+                $auditoria->setObjeto('Aspirantes');
+                $auditoria->setDescripcion(' Cedula : ' . $this->getCedula() . ' Nombre : ' . $this->getNombre() . ' Apellido : ' . $this->getApellido());
+                $auditoria->setTipooperacion('Alta de aspirante');
+                $auditoria->save();
+            }
         }
-          }
     }
 
     public function postUpdate(PropelPDO $con = null) {
-        if (sfConfig::get('sf_environment') != "cli") {
-            
-        
+        if (sfConfig::get('sf_environment') != "cli" or sfContext::hasInstance()) {
             $auditoria = new Auditorias();
             //sfContext::getInstance()-getUser()-getAttribute('usuarioId')            
-             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
+            $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
             $auditoria->setObjeto('Aspirantes');
             $auditoria->setDescripcion(' Cedula : ' . $this->getCedula() . ' Nombre : ' . $this->getNombre() . ' Apellido : ' . $this->getApellido());
             $auditoria->setTipooperacion('Modificación de aspirante');
             $auditoria->save();
-          
         }
     }
 
     public function postDelete(PropelPDO $con = null) {
-        if (sfConfig::get('sf_environment') != "cli") {
+        if (sfConfig::get('sf_environment') != "cli" or sfContext::hasInstance()) {
             $auditoria = new Auditorias();
             //sfContext::getInstance()-getUser()-getAttribute('usuarioId')
             $auditoria->setAdministradoresId(sfContext::getInstance()->getUser()->getAttribute('usuarioId'));
@@ -59,14 +54,18 @@ class Aspirantes extends BaseAspirantes {
             $auditoria->save();
         }
     }
+
     public function getEdad() {
         $edad = $this->getFechanacimiento("Y/m/d");
-        list($anio,$mes,$dia) = explode("-",$edad);
+        $anio_dif = 0;
+        if($edad){
+        list($anio, $mes, $dia) = explode("-", $edad);
         $anio_dif = date("Y") - $anio;
         $mes_dif = date("m") - $mes;
         $dia_dif = date("d") - $dia;
         if ($dia_dif < 0 || $mes_dif < 0)
-        $anio_dif--;
+            $anio_dif--;
+        }
         return $anio_dif;
     }
 
