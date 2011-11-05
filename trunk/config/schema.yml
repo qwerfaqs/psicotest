@@ -62,8 +62,7 @@ propel:
     id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
     perfil_id: { phpName: PerfilId, type: INTEGER, size: '11', required: true, foreignTable: perfil, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
     estadosevaluaciones_id: { phpName: EstadosevaluacionesId, type: INTEGER, size: '11', required: true, foreignTable: estadosevaluaciones, foreignReference: id, onDelete: RESTRICT, onUpdate: RESTRICT }
-    cantidad: { phpName: Cantidad, type: INTEGER, size: '11', required: false }
-    fecha: { phpName: Fecha, type: DATE, required: false }
+    cantidad: { phpName: Cantidad, type: INTEGER, size: '11', required: false }   
     nombre: { phpName: Nombre, type: CHAR, size: '50', required: false }
     created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
     _indexes: { estadosevaluaciones_id: [estadosevaluaciones_id], perfil_id: [perfil_id] }
