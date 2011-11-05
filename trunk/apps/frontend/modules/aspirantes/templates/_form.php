@@ -1,4 +1,4 @@
-  <div class="content">
+  <div class="content">      
     <div id="registro" class="contenido">
     	<img src="/images/registerbackgroundtop.png"  style="position:relative; left:-10px; top:-10px;"/>
     	<h2>Formulario de Registro</h2>
