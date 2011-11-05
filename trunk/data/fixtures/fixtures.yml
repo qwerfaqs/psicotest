@@ -18975,3 +18975,8 @@ Valoresperado:
     escalas_id: Escalas_20
     mayorque: '5'
     menorque: '9'
+  Valoresperado_48:
+    perfil_id: Perfil_1
+    escalas_id: Escalas_11
+    mayorque: '5'
+    menorque: '9'

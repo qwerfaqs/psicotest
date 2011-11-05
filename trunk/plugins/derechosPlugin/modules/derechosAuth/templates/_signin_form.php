@@ -12,7 +12,7 @@
                 <?php echo $form["password"]->render() ?>
             </li>
             <?php echo $form->renderHiddenFields() ?>
-            <p id="forgetpass"><a href="<?php echo url_for('aspirantes/new'); ?>">Regístrese</a> - <a>Olvido su Contraseña?</a></p>
+            <p id="forgetpass"><a href="<?php echo url_for('@registracion'); ?>">Regístrese</a> - <a>Olvido su Contraseña?</a></p>
             <p><input type="image" value="Enviar" id="boton_enviar" src="/images/contactformsend.png" alt="Enviar"></p>
         </ol>
     </fieldset>
