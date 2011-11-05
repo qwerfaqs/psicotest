@@ -204,7 +204,7 @@ EOD;
         $pdf->SetSubject('Psicotest');
 
 // set default header data
-        $pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, PDF_HEADER_TITLE, PDF_HEADER_STRING);
+        $pdf->SetHeaderData('', PDF_HEADER_LOGO_WIDTH, 'Reportes', 'Generados por Psicotest');
 
 // set header and footer fonts
         $pdf->setHeaderFont(Array(PDF_FONT_NAME_MAIN, '', PDF_FONT_SIZE_MAIN));
