@@ -24,7 +24,7 @@ test:
 
 all:
   .settings:
-    enabled_modules: [derechosAuth]
+#    enabled_modules: [derechosAuth]
     # Form security secret (CSRF protection)
     csrf_secret:            UniqueSecret
 
