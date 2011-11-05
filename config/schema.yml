@@ -65,7 +65,7 @@ propel:
     cantidad: { phpName: Cantidad, type: INTEGER, size: '11', required: false }
     fecha: { phpName: Fecha, type: DATE, required: false }
     nombre: { phpName: Nombre, type: CHAR, size: '50', required: false }
-    created_at: { phpName: CreatedAt, type: CHAR, size: '20', required: false }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
     _indexes: { estadosevaluaciones_id: [estadosevaluaciones_id], perfil_id: [perfil_id] }
 #  hojas:
 #    _attributes: { phpName: Hojas }
