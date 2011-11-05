@@ -6,7 +6,9 @@
 homepage:
   url:   /
   param: { module: principal, action: evaluaciones }
-
+registracion:
+  url: /registracion
+  param: { module: aspirantes, action: new }
 evaluacion:
   url:     /principal/:id
   class:   sfPropelRoute
