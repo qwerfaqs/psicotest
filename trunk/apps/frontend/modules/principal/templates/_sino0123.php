@@ -1,6 +1,10 @@
-<span id="contador"></span>
+<div class="main">
+    <div class="content">
+        <div class="content_resize">
+            <div class="mainbar">
+                <span id="contador"></span>
 <ul class="listado">
-    
+    <ul class="listado">  
     <form  action="<?php echo url_for('principal/check') ?>" method="post">
     <?php foreach ($preguntas as $n=>$pregunta) : ?>
           <li>
@@ -30,4 +34,12 @@
               <input type="hidden" name="cantidad" value="<?php echo count($preguntas); ?>" />
               <input type="submit" value="Continuar" />
             </form> 
-       </ul>
+        </ul>
+       </ul>           
+              <p style="text-align:center">&nbsp;</p>
+            </div>
+            <div class="clr"></div>
+        </div>
+    </div>
+
+</div>
