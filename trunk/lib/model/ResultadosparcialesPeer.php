@@ -27,5 +27,13 @@ class ResultadosparcialesPeer extends BaseResultadosparcialesPeer
     return (self::doSelectJoinAll($criteria));
   }
   
+   public static function is_Pregunta($prueba,$pregunta)
+  {
+    $criteria = new Criteria();    
+    $criteria->add(ResultadosparcialesPeer::PRUEBAS_ID,$prueba,Criteria::EQUAL);     
+    $criteria->add(ResultadosparcialesPeer::PREGUNTAS_ID,$pregunta,Criteria::EQUAL);    
+    return (self::doSelectOne($criteria));
+  }
+  
   
 } // ResultadosparcialesPeer
