@@ -8,7 +8,8 @@
                 <input type="hidden" name="sf_method" value="put" />
            <?php endif; ?>           
               <fieldset>   
-                             <?php echo $form->renderGlobalErrors() ?>
+                            <?php echo $form['cedula']->renderError(); ?>
+                            <?php echo $form['password']->renderError(); ?>
                             <ol>
                                 <li>
                                   <label for="name"><span>Nombre</span></label><?php echo $form['nombre']->render(array('class'=>'txt')); ?> </li>

@@ -60,14 +60,15 @@ DROP TABLE IF EXISTS `aspirantes`;
 CREATE TABLE `aspirantes`
 (
 	`id` INTEGER(11)  NOT NULL AUTO_INCREMENT,
-	`nombre` VARCHAR(60),
-	`apellido` VARCHAR(60),
-	`cedula` CHAR(30),
-	`sexo` CHAR(1),
-	`fechanacimiento` DATE,
-	`password` CHAR(20),
-	`created_at` DATETIME,
-	PRIMARY KEY (`id`)
+	`nombre` VARCHAR(60)  NOT NULL,
+	`apellido` VARCHAR(60)  NOT NULL,
+	`cedula` CHAR(30)  NOT NULL,
+	`sexo` CHAR(1)  NOT NULL,
+	`fechanacimiento` DATE  NOT NULL,
+	`password` CHAR(20)  NOT NULL,
+	`created_at` DATETIME  NOT NULL,
+	PRIMARY KEY (`id`),
+	UNIQUE KEY `aspirantes_U_1` (`cedula`)
 )Type=InnoDB;
 
 #-----------------------------------------------------------------------------
@@ -172,9 +173,8 @@ CREATE TABLE `evaluaciones`
 	`perfil_id` INTEGER(11)  NOT NULL,
 	`estadosevaluaciones_id` INTEGER(11)  NOT NULL,
 	`cantidad` INTEGER(11),
-	`fecha` DATE,
 	`nombre` CHAR(50),
-	`created_at` CHAR(20),
+	`created_at` DATETIME,
 	PRIMARY KEY (`id`),
 	KEY `estadosevaluaciones_id`(`estadosevaluaciones_id`),
 	KEY `perfil_id`(`perfil_id`),

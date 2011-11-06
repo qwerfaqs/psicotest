@@ -26,14 +26,18 @@ abstract class BaseAspirantesForm extends BaseFormPropel
 
     $this->setValidators(array(
       'id'              => new sfValidatorChoice(array('choices' => array($this->getObject()->getId()), 'empty_value' => $this->getObject()->getId(), 'required' => false)),
-      'nombre'          => new sfValidatorString(array('max_length' => 60, 'required' => false)),
-      'apellido'        => new sfValidatorString(array('max_length' => 60, 'required' => false)),
-      'cedula'          => new sfValidatorString(array('max_length' => 30, 'required' => false)),
-      'sexo'            => new sfValidatorString(array('max_length' => 1, 'required' => false)),
-      'fechanacimiento' => new sfValidatorDate(array('required' => false)),
-      'password'        => new sfValidatorString(array('max_length' => 20, 'required' => false)),
-      'created_at'      => new sfValidatorDateTime(array('required' => false)),
+      'nombre'          => new sfValidatorString(array('max_length' => 60)),
+      'apellido'        => new sfValidatorString(array('max_length' => 60)),
+      'cedula'          => new sfValidatorString(array('max_length' => 30)),
+      'sexo'            => new sfValidatorString(array('max_length' => 1)),
+      'fechanacimiento' => new sfValidatorDate(),
+      'password'        => new sfValidatorString(array('max_length' => 20)),
+      'created_at'      => new sfValidatorDateTime(),
     ));
+
+    $this->validatorSchema->setPostValidator(
+      new sfValidatorPropelUnique(array('model' => 'Aspirantes', 'column' => array('cedula')))
+    );
 
     $this->widgetSchema->setNameFormat('aspirantes[%s]');
 
