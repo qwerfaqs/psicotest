@@ -10,7 +10,7 @@
     </tr>
     <tr>
       <th>Fecha:</th>
-      <td><?php echo $Evaluacion->getFecha() ?></td>
+      <td><?php echo $Evaluacion->getCreatedAt() ?></td>
     </tr>
     <tr>
       <th>Nombre:</th>
