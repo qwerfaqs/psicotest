@@ -8,7 +8,7 @@ class ValidatorCedula extends sfValidatorBase
  
    // $this->addRequiredOption('cedula');  
  
-    $this->addMessage('invalid_cedula', 'La cedula es invalida.');
+    $this->addMessage('invalid_cedula', 'La cedula es invalida es decir no existe o no es un numero.');
   }
  
   protected function doClean( $value )
