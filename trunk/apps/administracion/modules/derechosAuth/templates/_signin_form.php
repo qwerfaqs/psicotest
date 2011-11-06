@@ -12,9 +12,12 @@
                 <?php echo $form["password"]->render() ?>
             </li>
             <?php echo $form->renderHiddenFields() ?>
-            
+            <?php foreach ($form->getGlobalErrors() as $name => $error): ?>
+            <li class="error_list">
+                <?php echo $error ?>
+            </li>
+            <?php endforeach; ?>
             <p><input type="image" value="Enviar" id="boton_enviar" src="/images/contactformsend.png" alt="Enviar"></p>
         </ol>
     </fieldset>
-    <?php     echo $form->renderGlobalErrors() ?>
 </form>

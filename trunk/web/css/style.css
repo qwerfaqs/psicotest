@@ -1,4 +1,4 @@
-/* Design by http://www.dreamtemplate.com */
+
 @charset "utf-8";
 
 
@@ -273,10 +273,10 @@ h1 small {
 {
 	text-align:center;
 	width:400px;
-	padding:10px 0 15px 0;
+    height: 206px;
+	padding:10px 0 10px 0;
 	margin:40px auto 0 auto;
 	background-color:#FFFFFF;
-	
 	background-position:center top;
 	background-repeat:no-repeat;	
 }
@@ -307,6 +307,18 @@ background-image:url(../images/loginbackground.png);
 #login #signin_username, #signin_password
 {
 	width:220px;
+}
+#login .error_list
+{
+    color: red;
+}
+#login #forgetpass 
+{
+    padding-left: 107px;
+}
+#login #forgetpass a
+{
+    float: left;
 }
 /*FIN LOGIN*/
 
