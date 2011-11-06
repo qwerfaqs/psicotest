@@ -82,6 +82,15 @@ class myUser extends derechosSecurityUser {
             $result->save();
         }
     }
+    
+     public function is_pregunta($pregunta,$prueba) 
+     {
+         $seek = false;
+         $resultado = ResultadosparcialesPeer::is_Pregunta($prueba, $pregunta);
+         if (isset($resultado) )
+                 $seek = true;
+         return($seek);
+     }
 
     public function setResultado($prueba, $test, $respuesta, $pregunta) {
         if ($test->getTitulo() == 'eae1') {
@@ -90,16 +99,20 @@ class myUser extends derechosSecurityUser {
             $intensidad = $tal[1];
         }
         $res = OpcionesPeer::getOpcion($respuesta, $test->getTipoopcion()->getId());
-        $resultado = new Resultadosparciales();
-        $resultado->setAspirantesId($this->getAttribute('usuarioId'));
-        $resultado->setOpciones($res);
-        $resultado->setPruebas($prueba);
-        $resultado->setPreguntasId($pregunta);
-        $resultado->save();
-        $this->addResultados($resultado);
-        if ($test->getTitulo() == 'eae1') {
-            $int = OpcionesPeer::getOpcion($intensidad, $prueba->getTests()->getTipoopcion()->getId());
-            $this->addIntensidades($int, $resultado);
+        if(!$this->is_pregunta($pregunta,$prueba->getId())) 
+        {      //// 
+         $resultado = new Resultadosparciales();
+         $resultado->setAspirantesId($this->getAttribute('usuarioId'));
+         $resultado->setOpciones($res);
+         $resultado->setPruebas($prueba);
+         $resultado->setPreguntasId($pregunta);
+         $resultado->save();
+         $this->addResultados($resultado);
+         if ($test->getTitulo() == 'eae1') {
+             $int = OpcionesPeer::getOpcion($intensidad, $prueba->getTests()->getTipoopcion()->getId());
+             $this->addIntensidades($int, $resultado);
+         }
+         
         }
     }
 
