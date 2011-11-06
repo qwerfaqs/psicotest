@@ -1,6 +1,6 @@
 <a href="<?php echo url_for('evaluacion', $evaluacion); ?>">
     <li>
-        <img alt="gal2.jpg"  src="/images/gal2.jpg" />
+        <img alt="imagen de evaluacion"  src="/images/listadoimgbackground.png" />
         <label><?php echo $evaluacion->getNombre(); ?></label>
     </li>
 </a>
