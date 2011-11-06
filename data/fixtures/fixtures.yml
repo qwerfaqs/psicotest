@@ -32,6 +32,7 @@ Aspirantes:
     cedula: '33273976'
     sexo: M
     password: hola
+    fechanacimiento: '1980-10-26'
     created_at: '2011-10-26 00:49:24'
   Aspirantes_2:
     nombre: francisco
@@ -39,6 +40,7 @@ Aspirantes:
     cedula: '33646764'
     sexo: M
     password: mundo
+    fechanacimiento: '1980-10-26'
     created_at: '2011-10-26 00:49:24'
 Tipoopcion:
   Tipoopcion_1:
