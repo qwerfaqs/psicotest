@@ -13,10 +13,10 @@ DROP TABLE IF EXISTS `administradores`;
 CREATE TABLE `administradores`
 (
 	`id` INTEGER(11)  NOT NULL AUTO_INCREMENT,
-	`usuario` CHAR(50),
-	`password` CHAR(50),
-	`nombre` CHAR(50),
-	`apellido` CHAR(20),
+	`usuario` CHAR(50)  NOT NULL,
+	`password` CHAR(50)  NOT NULL,
+	`nombre` CHAR(50)  NOT NULL,
+	`apellido` CHAR(20)  NOT NULL,
 	`created_at` DATETIME,
 	PRIMARY KEY (`id`),
 	UNIQUE KEY `usuario` (`usuario`)

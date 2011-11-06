@@ -24,10 +24,10 @@ abstract class BaseAdministradoresForm extends BaseFormPropel
 
     $this->setValidators(array(
       'id'         => new sfValidatorChoice(array('choices' => array($this->getObject()->getId()), 'empty_value' => $this->getObject()->getId(), 'required' => false)),
-      'usuario'    => new sfValidatorString(array('max_length' => 50, 'required' => false)),
-      'password'   => new sfValidatorString(array('max_length' => 50, 'required' => false)),
-      'nombre'     => new sfValidatorString(array('max_length' => 50, 'required' => false)),
-      'apellido'   => new sfValidatorString(array('max_length' => 20, 'required' => false)),
+      'usuario'    => new sfValidatorString(array('max_length' => 50)),
+      'password'   => new sfValidatorString(array('max_length' => 50)),
+      'nombre'     => new sfValidatorString(array('max_length' => 50)),
+      'apellido'   => new sfValidatorString(array('max_length' => 20)),
       'created_at' => new sfValidatorDateTime(array('required' => false)),
     ));
 

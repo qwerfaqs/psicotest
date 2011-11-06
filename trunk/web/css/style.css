@@ -3,6 +3,7 @@
 .error_list
 {
     color: red;
+    list-style-type: none;
 }
 
 body {

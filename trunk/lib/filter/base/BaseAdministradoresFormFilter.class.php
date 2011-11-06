@@ -12,10 +12,10 @@ abstract class BaseAdministradoresFormFilter extends BaseFormFilterPropel
   public function setup()
   {
     $this->setWidgets(array(
-      'usuario'    => new sfWidgetFormFilterInput(),
-      'password'   => new sfWidgetFormFilterInput(),
-      'nombre'     => new sfWidgetFormFilterInput(),
-      'apellido'   => new sfWidgetFormFilterInput(),
+      'usuario'    => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'password'   => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'nombre'     => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'apellido'   => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'created_at' => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate())),
     ));
 
