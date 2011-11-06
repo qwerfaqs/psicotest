@@ -12,12 +12,12 @@
     </thead>
     <tfoot>
         <tr>
-            <th scope="row">Total</th>
-            <td colspan="3"><?php echo $cant_tests ?> tests</td>
+            
+            <td colspan="3">Total <?php echo $cant_tests ?> tests</td>
             <td><a href="#" title="emma">
             <?php echo $cant_tests_incluidos ?> Incluidos</a></td>
             <td><a href="#" title="emma"><?php echo $cant_tests - $cant_tests_incluidos ?> no incluidos</a>
-                <a href="#" title="emma"></a></td>
+                <a href="#" title="emma"></a></td>            
         </tr>
     </tfoot>
     <tbody>
@@ -50,7 +50,7 @@
                         <input type="image" src="/images/btnagregar.png" />
                     </a>
                 </td>
-                <td>No Incluido</td>
+                <td>No Incluido</td>                
             <?php endif; ?>
             </tr>
         <?php endforeach; ?>
