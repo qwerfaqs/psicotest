@@ -1,6 +1,9 @@
 
 @charset "utf-8";
-
+.error_list
+{
+    color: red;
+}
 
 body {
 	margin:0;
@@ -308,10 +311,7 @@ background-image:url(../images/loginbackground.png);
 {
 	width:220px;
 }
-#login .error_list
-{
-    color: red;
-}
+
 #login #forgetpass 
 {
     padding-left: 107px;
