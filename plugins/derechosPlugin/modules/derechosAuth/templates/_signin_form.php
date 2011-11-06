@@ -1,5 +1,5 @@
 
-  <?php echo $form->renderGlobalErrors() ?> 
+  
    
 <form action="<?php echo url_for('@derechos_signin') ?>" class="cmxform" style="display: block; " method="post">
 
@@ -14,10 +14,19 @@
                 <?php echo $form["password"]->render() ?>
             </li>
             <?php echo $form->renderHiddenFields() ?>
-            <p id="forgetpass"><a href="<?php echo url_for('@registracion'); ?>">Regístrese</a> </p>
-            <p><input type="image" value="Enviar" id="boton_enviar" src="/images/contactformsend.png" alt="Enviar"></p>
+            <?php foreach ($form->getGlobalErrors() as $name => $error): ?>
+            <li class="error_list">
+                <?php echo $error ?>
+            </li>
+            <?php endforeach; ?>
+            <p id="forgetpass">
+                <a href="<?php echo url_for('@registracion'); ?>">Regístrese</a>
+                <input type="image" value="Enviar" id="boton_enviar" src="/images/contactformsend.png" alt="Enviar" />
+            </p>
+ 
         </ol>
     </fieldset>
- 
+    <?php     //echo $form->renderGlobalErrors(); //echo getGlobalErrors() ?>
+
 </form>
 
