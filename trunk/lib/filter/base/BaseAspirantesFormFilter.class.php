@@ -12,13 +12,13 @@ abstract class BaseAspirantesFormFilter extends BaseFormFilterPropel
   public function setup()
   {
     $this->setWidgets(array(
-      'nombre'          => new sfWidgetFormFilterInput(),
-      'apellido'        => new sfWidgetFormFilterInput(),
-      'cedula'          => new sfWidgetFormFilterInput(),
-      'sexo'            => new sfWidgetFormFilterInput(),
-      'fechanacimiento' => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate())),
-      'password'        => new sfWidgetFormFilterInput(),
-      'created_at'      => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate())),
+      'nombre'          => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'apellido'        => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'cedula'          => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'sexo'            => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'fechanacimiento' => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
+      'password'        => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'created_at'      => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
     ));
 
     $this->setValidators(array(

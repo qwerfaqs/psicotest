@@ -21,13 +21,13 @@ propel:
   aspirantes:
     _attributes: { phpName: Aspirantes }
     id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
-    nombre: { phpName: Nombre, type: VARCHAR, size: '60', required: false }
-    apellido: { phpName: Apellido, type: VARCHAR, size: '60', required: false }
-    cedula: { phpName: Cedula, type: CHAR, size: '30', required: false }
-    sexo: { phpName: Sexo, type: CHAR, size: '1', required: false }
-    fechanacimiento: { phpName: Fechanacimiento, type: DATE, required: false }
-    password: { phpName: Password, type: CHAR, size: '20', required: false }
-    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    nombre: { phpName: Nombre, type: VARCHAR, size: '60', required: true }
+    apellido: { phpName: Apellido, type: VARCHAR, size: '60', required: true }
+    cedula: { phpName: Cedula, type: CHAR, size: '30', required: true,index: unique }     
+    sexo: { phpName: Sexo, type: CHAR, size: '1', required: true }
+    fechanacimiento: { phpName: Fechanacimiento, type: DATE, required: true }
+    password: { phpName: Password, type: CHAR, size: '20', required: true }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: true }
   auditorias:
     _attributes: { phpName: Auditorias }
     id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
