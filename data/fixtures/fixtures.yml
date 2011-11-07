@@ -31,16 +31,16 @@ Aspirantes:
     apellido: luzardi
     cedula: '33273976'
     sexo: M
-    password: hola
     fechanacimiento: '1980-10-26'
+    password: hola
     created_at: '2011-10-26 00:49:24'
   Aspirantes_2:
     nombre: francisco
     apellido: pane
     cedula: '33646764'
     sexo: M
-    password: mundo
     fechanacimiento: '1980-10-26'
+    password: mundo
     created_at: '2011-10-26 00:49:24'
 Tipoopcion:
   Tipoopcion_1:
@@ -60,9 +60,9 @@ Tipoopcion:
 Tests:
   Tests_1:
     titulo: 'Test Domino'
-    historia: "El test de Dominó también llamado D48 es una prueba de la llamada inteligencia no verbal y fue creada por el psicólogo inglés E. Anstey para uso exclusivo de la Armada Británica. Mide el factor G de la inteligencia de los sujetos (capacidad de inteligencia general) en función de sus facultades lógicas.\r\nEl conocimiento del juego del dominó no supone en principio ninguna ventaja, simplemente una mayor familiaridad con las fichas y a pesar de que se trabaja con números no requiere de conocimientos matemáticos ni habilidades especiales. Simplemente hay que tener presente que las fichas siguen un orden cíclico de forma que la ficha posterior al 6 es la blanca y por lo tanto la ficha anterior a la blanca es el 6.\r\n\r\nUna de las principales ventajas de este test es que elimina las diferencias entre los sujetos causadas por factores sociales y educativos. Se le reconocen índices de validez y confiabilidad aceptables (r-0,79) con relación a otros tests de inteligencia y se aplica en multitud países en Psicología Clínica, Educativa y del Trabajo.\r\n\r\nEl test original, consta de 40 grupos de fichas y el objetivo es identificar una o más leyes que relacionan las partes superiores, inferiores o laterales de las fichas del dominó. No siempre regirán las mismas leyes. Lo que hay que descubrir es cuál es la serie u orden que que siguen las fichas. La dificultad se va incrementando en cada pregunta. Se aplica a personas de entre 10 y 65 años y el tiempo de realización oscila entre los 30 y 45 minutos."
+    historia: ''
     enunciado: ''
-    imagen: d1.png
+    imagen: ''
     puntaje_aprobacion: '50'
     paginacion: '5'
     tipoopcion_id: Tipoopcion_1
@@ -108,17 +108,17 @@ Tests:
   Tests_11:
     titulo: domino
     historia: ''
-    enunciado: "A continuación te proponemos una serie de ejemplos a modo de práctica. Puedes ver la solución de cada problema si lo deseas y la explicación razonada de la misma.\r\n\r\nPara responder cada problema debes seleccionar la orientación en la que debería aparecer la ficha, el número de la parte superior de la ficha y el de la parte inferior. Una vez seleccionada la respuesta, pulsa el botón continuar. Si lo deseas, puedes ver la solución pulsando el botón \"Mostrar solución\" que te aparece en la parte inferior."
+    enunciado: ''
     imagen: ''
-    duracion: '13'
-    puntaje_aprobacion: ''
+    duracion: '12'
+    puntaje_aprobacion: '50'
     paginacion: '1'
     tipoopcion_id: Tipoopcion_1
     tests_id: Tests_1
   Tests_12:
     titulo: millon
     historia: ''
-    enunciado: 'Este test contiene una serie de frases usuales o expreciones que las personas suelen utilizar para describirse asi mismas. Sirven para ayudarle a describirse asi mismas. Sirven para ayudarle a describir sus sentimientos y actitudes. No te preocupes si algunas cuestiones o fraces te parecen extrañas, estan incluidas para describir los diferentes problemas que puede tener la gente. Procura responder a todas las frases aunque no estes totalmente seguro. Marca Siempre Verdadero o Falso.'
+    enunciado: ''
     duracion: ''
     paginacion: '5'
     tipoopcion_id: Tipoopcion_2
@@ -126,22 +126,22 @@ Tests:
   Tests_13:
     titulo: 16pf
     historia: ''
-    enunciado: "Este es un cuestionario de sus actitudes. Lo que hace o lo que piensa acerca de ciertas situaciones. Las personas piensan de una manera u otra. Por lo tanto, no existen respuestas “correctas o incorrectas” a las preguntas de este formulario.Adelante aparecen cinco preguntas de ensayo que contestarán usted para estar seguro de que comprende lo que debe hacer en el propio cuestionario. Marque las contestaciones a estas preguntas de ensayo en la “Hoja de respuestas 16. P.F” en la parte superior izquierda, identificadas con números romanos. Se ofrecen tres posibles respuestas para cada pregunta que Ud. debe contestar “Si o No”, colocando una “Equis (X)” en la casilla (A) si su respuesta es afirmativa; o, en la casilla “C” si es negativa. Solamente debe marcar la respuesta en el centro “B” cuando le sea realmente imposible decir “Si” o “No”.\r\nConteste ahora las cinco siguientes preguntas de ensayo: \r\nI.	Me guata hacer ejercicios al aire libre (A) Si; (B) Más o menos; (C) No.\r\nII.	Me gustaría ser: (A) Operador de máquina de fábrica; (B) Vendedor; (C) Empleado de un Banco.\r\nIII.	Cuando duermo sueño  mucho (A) Si; (B) Ocasionalmente; (C) No.\r\nIV.	Me gusta una persona que sea: (A) Atenta con la gente; (B) Apartad e indiferente con la gente; (C) Que sea sarcástico.\r\nV.	Me es difícil conversar con alguien cuando el radio está puesto. (A) Si; (B) Intermedio; (C) No.\r\nEn las páginas interiores que siguen encontrará 102 preguntas similares a las que apareen arriba. Para contestarlas tenga presente estas reglas:\r\n1.	Conteste las preguntas tan franca y honradamente como le sea posible. No existe ventaja en crear una mejor impresión personal. No marque una respuesta que no sea cierta por creer que “es lo que debe decir”.\r\n2.	Conteste con la mayor rapidez posible. No dedique tiempo en meditar sobre las preguntas. Anote su primera reacción y pase de allí a la próxima pregunta.\r\n3.	Marque la respuesta “Si” (o “A”) o la respuesta “No” (o “C”) con una (X) para la mayoría de las preguntas. Solamente marque las respuestas en el centro “B” cuando le sea imposible contestar “Si” o  “No” aunque en algunos casos le será difícil escoger.\r\n4.	Conteste todas las preguntas sin excepción. Habrá las preguntas que no reflejan sus ideas, pero debe contestarlas todas. No debe saltarse ninguna. Sus respuestas serán confidenciales.   \r\n\r\n5.	onteste las preguntas tan franca y honradamente como le sea posible. No existe ventaja en crear una mejor impresión personal. No marque una respuesta que no sea cierta por creer que “es lo que debe decir”.\r\n6.	Conteste con la mayor rapidez posible. No dedique tiempo en meditar sobre las preguntas. Anote su primera reacción y pase de allí a la próxima pregunta.\r\n7.	Marque la respuesta “Si” (o “A”) o la respuesta “No” (o “C”) con una (X) para la mayoría de las preguntas. Solamente marque las respuestas en el centro “B” cuando le sea imposible contestar “Si” o  “No” aunque en algunos casos le será difícil escoger.\r\n8.	Conteste todas las preguntas sin excepción. Habrá las preguntas que no reflejan sus ideas, pero debe contestarlas todas. No debe saltarse ninguna. Sus respuestas serán confidenciales.   \r\n\r\n\r\n\r\nTodas sus contestaciones en la \"Hoja de Respuestas 16 P.F.\"    No marque ni haga señales en estas hojas.\r\nASEGURESE DE QUE HAYA MARCADO UNA RESPUESTA,  PERO SOLAMENTE UNA, PARA CADA PREGUNTA.\r\n"
+    enunciado: ''
     duracion: ''
     paginacion: '5'
     tipoopcion_id: Tipoopcion_3
     tests_id: Tests_4
   Tests_14:
     titulo: ig2
-    historia: "Perteneciente al grupo de pruebas de inteligencia tipo “omnibus”, sus elementos ponen en ejercicio varias aptitudes intelectuales, cuya puntuación global permite una rápida discriminación por medio de una aplicación colectiva.\r\n"
-    duracion: '33'
+    historia: ''
+    duracion: '32'
     puntaje_aprobacion: '50'
     paginacion: '5'
     tipoopcion_id: Tipoopcion_4
     tests_id: Tests_2
   Tests_15:
     titulo: barsit
-    enunciado: "Esta es una prueba que sirve para apreciar cómo piensa Ud. Contiene una serie de cuestiones sencillas que debe leerlas atentamente. Luego debe anotar en la línea de puntos de la derecha, la letra que esta antes de la palabra que Ud. Selecciona como la mejor respuesta. O bien, debe escribir los dos números que falten en cada serie. A continuación encontrara Ud. Cinco ejemplos para que comprenda como debe realizar este trabajo.\r\nEJEMPLO 1. ¿Qué palabra indica lo contrario de blanco?\r\na)	claro        b) obscuro        c) gris        d) negro        e) nítido			Ej. 1 ____ \r\nLo contrario de blanco es negro. La palabra negro lleva la letra d). Por consiguiente, debe Ud. escribir la letra d) en la línea de puntos de la derecha. ¡Hágalo¡ En esta misma forma seguirá contestando las demás cuestiones.\r\nEJEMPLO 2. ¿Qué palabra expresa mejor lo que es un martillo?\r\na)	metal        b) objeto        c) herramienta        d) cosa        e) útil 		Ej. 2 ____\r\nEJEMPLO 3. ¿Cuál de las siguientes palabras no pertenece al grupo?\r\na)	lápiz        b) zapato        c) cuaderno        d) libro        e) regla		Ej. 3 ____\r\nEJEMPLO 4. ¿Qué palabra significa lo mismo que responder?\r\na)	explicar      b) indagar      c) preguntar      d) contestar      e) decir		Ej. 4 ____\r\nEJEMPLO 5. Escriba los números que faltan en esta serie\r\n	10	12	14	__	18	20	22	__	26		Ej. 5 ____\r\nDe inmediato encontrara Ud. 60 cuestiones parecidas a las que acaba de resolver. Recuerde que cada vez tendrá que escribir una letra en el margen derecho de la hoja o bien, escribir los dos números que faltan en las series. Procure resolver el mayor número posible de cuestiones. Trabaje rápidamente, pero procure no equivocarse. No conteste las cuestiones que le parezcan muy difíciles o que le quiten mucho tiempo. No pregunte nada a nadie, ni se distraiga mirando lo que hacen las demás personas.\r\nUd. Tiene 30 minutos para resolver toda la prueba. Anote las respuestas con absoluta claridad, Cuando se equivoque, tache la letra mal escrita y a su lado vuelva a escribir la letra correcta.\r\n¡LISTO PARA COMENZAR!\r\n"
+    enunciado: ''
     duracion: ''
     puntaje_aprobacion: '50'
     paginacion: '5'
@@ -149,81 +149,93 @@ Tests:
     tests_id: Tests_3
   Tests_16:
     titulo: eae1
+    puntaje_aprobacion: '49'
     paginacion: '5'
     tipoopcion_id: Tipoopcion_5
     tests_id: Tests_6
   Tests_17:
     titulo: domino
-    enunciado: 'Dispone usted de quince minutos para realizar la siguiente prueba:'
+    enunciado: ''
     duracion: '16'
+    puntaje_aprobacion: '50'
     paginacion: '1'
     tipoopcion_id: Tipoopcion_1
     tests_id: Tests_1
   Tests_18:
     titulo: 'razonamientoverbal '
-    enunciado: "Esta prueba consta de frases o proposiciones a las que faltan la primera y la última palabras que se han sustituido por puntos. Su tarea consiste en encontrar las palabras que faltan de modo que, cuando se haya completado, la relación entre la primera y la segunda parte de cada frase sea semejante y la frase resulte verdadera y con sentido.\r\n\r\nPara ello ha de elegir entre los 5 pares de palabras que se proponen como opciones de respuesta. La primera palabra del par debe ir al principio de la frase y la segunda al final. Cuando haya elegido el par que, a su juicio, completa mejor la frase, debe fijarse en la letra que tiene delante y marcar el recuadro que está debajo de esa letra en la Hoja de respuestas.\r\n\r\nFíjese en el Ejemplo El:\r\n\r\n...es a maullar como perro es a...\r\n \r\n                                  A. ladrar - cachorro\r\n	                    B. gato – ladra\r\n                                  C. gato — morder\r\n	 D. foca - cazar\r\n	             E. arañar - hueso\r\n\r\nPara elegir la respuesta correcta al ejemplo El, examine atentamente cada par de palabras. Sólo uno de esos pares completará la frase de modo que los dos términos de la primera parte se relacionen entre sí de forma análoga a como se relacionan los de la segunda.\r\n\r\nLa respuesta A es incorrecta porque ladrar y maullar no se relacionan de la misma manera que perro y cachorro.\r\n\r\nLo mismo puede decirse de las respuestas D y E\r\n\r\nTampoco la respuesta C es buena, porque aunque el gato maullar y el perro muerde, las acciones son de distinto tipo.\r\n\r\nLa respuesta correcta es la B, porque gato y maullar se relacionan de modo semejante a como lo hacen perro y ladrar. Por eso, en la Hoja de respuestas, frente al Ejemplo El se ha marcado el recuadro que está debajo de la B\r\n\r\nFíjese en el Ejemplo E2:\r\n\r\n...es a derecha como oeste es a...\r\n \r\n                           A.  Izquierda - norte\r\n                           B.  dirección - este\r\n                           C.  izquierda - sur\r\n                           D.  diestra- dirección. 	\r\n                           E.  izquierda-este\r\n\r\nPara elegir la respuesta correcta al Ejemplo E2, considere cuidadosamente cada par de palabras. ¿Cuál de los pares completa la frase de modo que las dos primeras palabras de la misma se relacionen entre sí de la misma manera que las dos últimas?\r\n\r\nLa respuesta es E porque izquierda y derecha tienen entre sí la misma relación que oeste y este. Izquierda se opone a derecha como oeste se opone a este. Por eso ha debido marcar el espacio debajo de la letra E frente al Ejemplo E2 en la Hoja de respuestas.\r\n\r\nVea ahora el Ejemplo E3:\r\n\r\n...es a lapicero como tinta es a...\r\n\r\n                        A.	 goma - papel\r\n B.	   bolígrafo - color\r\nC.	papel - negro\r\nD.	mina – pluma\r\n                         E.	goma - rotulador\r\n\r\n\r\nPara dar la contestación correcta al Ejemplo E3 examine cuidadosamente cada par de palabras. ¿Cuál de las parejas completa la frase de modo que sus dos primeras palabras se relacionen entre sí de modo análogo a como lo hacen las dos últimas?\r\n\r\nLa respuesta es D, porque mina y lapicero tienen entre sí una relación semejante a la que existe entre tinta y pluma. La mina del lapicero y la tinta de la pluma producen marcas sobre el papel. Por eso ha debido marcar D frente al Ejemplo E3.\r\n\r\nRecuerde que en cada ejercicio tiene que elegir el par de palabras que mejor complete la frase de modo que las dos primeras palabras se relacionen entre sí de forma semejante a como lo hacen las dos últimas.\r\n\r\nSi tiene dificultad en contestar a algún ejercicio, déjelo y pase a otros que le parezcan más fáciles. Luego, si tiene tiempo, vuelva a los ejercicios que dejó sin contestar en esta prueba y trate de resolverlos. No continúe con la prueba siguiente hasta que se lo indiquen.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nDETÉNGASE Y ESPERE NUEVAS INSTRUCCIONES\r\n"
+    enunciado: ''
     duracion: '32'
+    puntaje_aprobacion: '50'
     paginacion: '5'
     tipoopcion_id: Tipoopcion_4
     tests_id: Tests_7
   Tests_19:
     titulo: razonamientoabstracto
-    enunciado: 'n esta prueba se trata de apreciar la capacidad para razonar con figuras o dibujos. En cada fila hay cuatro figuras llamadas PROBLEMAS y cinco llamadas  RESPUESTAS. Las figuras PROBLEMAS forman una serie porque están ordenadas siguiendo una ley. Su tarea consiste en elegir, entre las figuras RESPUESTAS, la que debería ir a continuación (es decir, la que sería el número cinco de la serie). Cuando la haya elegido, debe fijarse en la letra que corresponde a esa figura y marcar el recuadro que está debajo de esa letra en la hoja de respuestas. '
+    enunciado: ''
     duracion: '27'
+    puntaje_aprobacion: '50'
     paginacion: '5'
     tipoopcion_id: Tipoopcion_4
     tests_id: Tests_7
   Tests_20:
     titulo: razonamientonumerico
     duracion: '32'
-    puntaje_aprobacion: ''
+    puntaje_aprobacion: '50'
     paginacion: '5'
     tipoopcion_id: Tipoopcion_4
     tests_id: Tests_7
   Tests_21:
     titulo: raven
+    puntaje_aprobacion: '50'
     paginacion: '5'
     tipoopcion_id: Tipoopcion_6
     tests_id: Tests_8
   Tests_22:
     titulo: analogiasverbales
-    duracion: '9'
+    duracion: '8'
+    puntaje_aprobacion: '50'
     paginacion: '5'
     tipoopcion_id: Tipoopcion_4
     tests_id: Tests_9
   Tests_23:
     titulo: seriesnumericas
     duracion: '11'
+    puntaje_aprobacion: '50'
     paginacion: '5'
     tipoopcion_id: Tipoopcion_4
     tests_id: Tests_9
   Tests_24:
     titulo: matriceslogicas
     duracion: '12'
+    puntaje_aprobacion: '50'
     paginacion: '5'
     tipoopcion_id: Tipoopcion_4
     tests_id: Tests_9
   Tests_25:
     titulo: completaroraciones
-    duracion: '9'
+    duracion: '8'
+    puntaje_aprobacion: '50'
     paginacion: '5'
     tipoopcion_id: Tipoopcion_4
     tests_id: Tests_9
   Tests_26:
     titulo: encajarfiguras
     duracion: '9'
+    puntaje_aprobacion: '50'
     paginacion: '32'
     tipoopcion_id: Tipoopcion_7
     tests_id: Tests_9
   Tests_27:
     titulo: problemasnumericos
     duracion: '12'
+    puntaje_aprobacion: '50'
     paginacion: '5'
     tipoopcion_id: Tipoopcion_4
     tests_id: Tests_9
   Tests_28:
     titulo: monedas
     duracion: '17'
+    puntaje_aprobacion: '50'
     paginacion: '5'
     tipoopcion_id: Tipoopcion_4
     tests_id: Tests_10
