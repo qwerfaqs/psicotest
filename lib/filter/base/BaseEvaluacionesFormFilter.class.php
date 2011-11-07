@@ -15,7 +15,7 @@ abstract class BaseEvaluacionesFormFilter extends BaseFormFilterPropel
       'perfil_id'              => new sfWidgetFormPropelChoice(array('model' => 'Perfil', 'add_empty' => true)),
       'estadosevaluaciones_id' => new sfWidgetFormPropelChoice(array('model' => 'Estadosevaluaciones', 'add_empty' => true)),
       'cantidad'               => new sfWidgetFormFilterInput(),
-      'nombre'                 => new sfWidgetFormFilterInput(),
+      'nombre'                 => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'created_at'             => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate())),
     ));
 
