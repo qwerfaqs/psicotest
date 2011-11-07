@@ -27,7 +27,7 @@ abstract class BaseEvaluacionesForm extends BaseFormPropel
       'perfil_id'              => new sfValidatorPropelChoice(array('model' => 'Perfil', 'column' => 'id')),
       'estadosevaluaciones_id' => new sfValidatorPropelChoice(array('model' => 'Estadosevaluaciones', 'column' => 'id')),
       'cantidad'               => new sfValidatorInteger(array('min' => -2147483648, 'max' => 2147483647, 'required' => false)),
-      'nombre'                 => new sfValidatorString(array('max_length' => 50, 'required' => false)),
+      'nombre'                 => new sfValidatorString(array('max_length' => 50)),
       'created_at'             => new sfValidatorDateTime(array('required' => false)),
     ));
 

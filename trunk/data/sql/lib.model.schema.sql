@@ -173,7 +173,7 @@ CREATE TABLE `evaluaciones`
 	`perfil_id` INTEGER(11)  NOT NULL,
 	`estadosevaluaciones_id` INTEGER(11)  NOT NULL,
 	`cantidad` INTEGER(11),
-	`nombre` CHAR(50),
+	`nombre` CHAR(50)  NOT NULL,
 	`created_at` DATETIME,
 	PRIMARY KEY (`id`),
 	KEY `estadosevaluaciones_id`(`estadosevaluaciones_id`),
