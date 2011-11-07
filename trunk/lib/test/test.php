@@ -10,7 +10,8 @@ class test {
     public static function calcularDomino($respuestas) {
         $puntaje = 0;
 
-        foreach ($respuestas as $resultado) {
+        foreach ($respuestas as $resultado) 
+        {
             $pregunta = $resultado->getPreguntas();
             $estado = sfConfig::get('app_activo');
             $respuesta = RespuestasPeer::getRespuesta($pregunta->getId(), $estado);
