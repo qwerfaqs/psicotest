@@ -120,25 +120,25 @@ class myUser extends derechosSecurityUser {
         $respuestas = $this->getAttribute('resultados');
         $intensidades = $this->getAttribute('intensidades');
         switch ($test->getTitulo()) {
-            case 'domino': Test::calcularDomino($respuestas);
+            case 'domino': Test::calcularDomino($respuestas,$test);
                 break;
             case '16pf': Test::calcular16pf($respuestas);
                 break;
             case 'millon': Test::calcularmillon($respuestas);
                 break;
-            case 'ig2': Test::calcularig2($respuestas);
+            case 'ig2': Test::calcularig2($respuestas,$test);
                 break;
-            case 'barsit': Test::calcularbarsit($respuestas);
+            case 'barsit': Test::calcularbarsit($respuestas,$test);
                 break;
-            case 'eae1': Test::calculareae1($intensidades);
+            case 'eae1': Test::calculareae1($intensidades,$test);
                 break;
-            case 'razonamientoverbal ': Test::calcularrazonamientoverbal($respuestas);
+            case 'razonamientoverbal ': Test::calcularrazonamientoverbal($respuestas,$test);
                 break;
-            case 'razonamientoabstracto': Test::calcularrazonamientoabstracto($respuestas);
+            case 'razonamientoabstracto': Test::calcularrazonamientoabstracto($respuestas,$test);
                 break;
-            case 'razonamientonumerico': Test::calcularrazonamientonumerico($respuestas);
+            case 'razonamientonumerico': Test::calcularrazonamientonumerico($respuestas,$test);
                 break;
-            case 'raven': Test::calcularraven($respuestas);
+            case 'raven': Test::calcularraven($respuestas,$test);
                 break;
             case 'analogiasverbales': Test::calcularanalogiasverbales($respuestas);
                 break;
@@ -152,7 +152,7 @@ class myUser extends derechosSecurityUser {
                 break;
             case 'problemasnumericos': Test::calcularproblemasnumericos($respuestas);
                 break;
-            case 'monedas': Test::calcularmonedas($respuestas);
+            case 'monedas': Test::calcularmonedas($respuestas,$test);
                 break;
         }
     }
