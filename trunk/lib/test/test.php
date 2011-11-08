@@ -7,7 +7,7 @@
  */
 class test {
 
-    public static function calcularDomino($respuestas) {
+    public static function calcularDomino($respuestas,$test_hijo) {
         $puntaje = 0;
 
         foreach ($respuestas as $resultado) 
@@ -23,11 +23,11 @@ class test {
         /*
          * Si al tipo se le acabo el tiempo y no respondio nada tira error porque no existe el indice 0
          */
-        Test::grabarPuntaje($puntaje, $respuestas[0]->getPruebas(), $respuestas[0]->getAspirantesId());
+        Test::grabarPuntaje($puntaje, $respuestas[0]->getPruebas(), $respuestas[0]->getAspirantesId(),$test_hijo);
     }
 
-    public static function aprobacion($prueba, $puntaje) {
-        $aprobacion = $prueba->getTests()->getPuntajeAprobacion();
+    public static function aprobacion($test_hijo, $puntaje) {
+        $aprobacion = $test_hijo->getPuntajeAprobacion();
 
         if ($puntaje >= $aprobacion) {
             $estado = sfConfig::get('app_resultado_apto');
@@ -38,7 +38,7 @@ class test {
         }
     }
 
-    public static function calcularig2($respuestas) {
+    public static function calcularig2($respuestas,$test_hijo) {
         $puntaje = 0;
 
         foreach ($respuestas as $resultado) {
@@ -51,11 +51,11 @@ class test {
         }
 
         $percentil = PercentilesPeer::getPercentil($respuestas[0]->getPruebas()->getTests()->getId(), $puntaje);
-        Test::grabarPuntaje($percentil[0]->getPercentil(), $respuestas[0]->getPruebas(), $respuestas[0]->getAspirantesId());
+        Test::grabarPuntaje($percentil[0]->getPercentil(), $respuestas[0]->getPruebas(), $respuestas[0]->getAspirantesId(),$test_hijo);
     }
 
-    public static function calcularbarsit($respuestas) {
-        Test::calcularig2($respuestas);
+    public static function calcularbarsit($respuestas,$test_hijo) {
+        Test::calcularig2($respuestas,$test_hijo);
     }
 
     /*
@@ -143,7 +143,7 @@ class test {
         }
     }
 
-    public static function calculareae1($intensidades) {
+    public static function calculareae1($intensidades,$test_hijo) {
         $puntaje = 0;
         $sumaint = 0;
         foreach ($intensidades as $intensidad) {
@@ -160,14 +160,14 @@ class test {
         $puntaje = $puntaje + $sumaint;
         $percentil = PercentilesPeer::getPercentil($intensidades[0]->getResultadosparciales()->getPruebas()->getTests()->getId(), $puntaje);
 
-        Test::grabarPuntaje($percentil[0]->getPercentil(), $intensidades[0]->getResultadosparciales()->getPruebas(), $intensidades[0]->getResultadosparciales()->getAspirantesId());
+        Test::grabarPuntaje($percentil[0]->getPercentil(), $intensidades[0]->getResultadosparciales()->getPruebas(), $intensidades[0]->getResultadosparciales()->getAspirantesId(),$test_hijo);
     }
 
-    public static function calcularrazonamientoverbal($respuestas) {
-        Test::calcularrazonamientoabstracto($respuestas);
+    public static function calcularrazonamientoverbal($respuestas,$test_hijo) {
+        Test::calcularrazonamientoabstracto($respuestas,$test_hijo);
     }
 
-    public static function calcularrazonamientoabstracto($respuestas) {
+    public static function calcularrazonamientoabstracto($respuestas,$test_hijo) {
         $puntaje = 0;
         foreach ($respuestas as $resultado) {
             $pregunta = $resultado->getPreguntas();
@@ -177,18 +177,18 @@ class test {
                 $puntaje = $puntaje + 0.44;
             }
         }
-        Test::grabarPuntaje($puntaje, $respuestas[0]->getPruebas(), $respuestas[0]->getAspirantesId());
+        Test::grabarPuntaje($puntaje, $respuestas[0]->getPruebas(), $respuestas[0]->getAspirantesId(),$test_hijo);
     }
 
-    public static function calcularrazonamientonumerico($respuestas) {
-        Test::calcularrazonamientoabstracto($respuestas);
+    public static function calcularrazonamientonumerico($respuestas,$test_hijo) {
+        Test::calcularrazonamientoabstracto($respuestas,$test_hijo);
     }
 
-    public static function calcularraven($respuestas) {
-        Test::calcularig2($respuestas);
+    public static function calcularraven($respuestas,$test_hijo) {
+        Test::calcularig2($respuestas,$test_hijo);
     }
 
-    public static function calcularmonedas($respuestas) {
+    public static function calcularmonedas($respuestas,$test_hijo) {
         $puntaje = 0;
 
         foreach ($respuestas as $resultado) {
@@ -201,7 +201,7 @@ class test {
             }
         }
         $puntaje = ($puntaje * 100) / 40;
-        Test::grabarPuntaje($puntaje, $respuestas[0]->getPruebas(), $respuestas[0]->getAspirantesId());
+        Test::grabarPuntaje($puntaje, $respuestas[0]->getPruebas(), $respuestas[0]->getAspirantesId(),$test_hijo);
     }
 
     public static function calcularanalogiasverbales($respuestas) {
@@ -261,11 +261,11 @@ class test {
         $result->save();
     }
 
-    public static function grabarPuntaje($puntaje, $prueba, $aspirante) {
+    public static function grabarPuntaje($puntaje, $prueba, $aspirante,$test_hijo) {
         $result = ResultadosPeer::getResultado($prueba->getId(), $aspirante);
         $puntaje = $puntaje + $result->getPuntaje();
         $result->setPuntaje($puntaje);
-        $result->setEstadosresultadosId(Test::aprobacion($prueba, $puntaje));
+        $result->setEstadosresultadosId(Test::aprobacion($test_hijo, $puntaje));
         $result->save();
     }
 
