@@ -14,7 +14,7 @@ default:
 
   stylesheets:    [main.css,style.css,jquery.ui.accordion.css, jquery.countdown.css]
 
-  javascripts:    [jquery-1.6.2.js,jquery.ui.core.js,jquery.ui.widget.js,jquery.ui.accordion.js, jquery.countdown.min.js, jquery.countdown-es.js]
+  javascripts:    [jquery-1.6.2.js,jquery.ui.core.js,jquery.ui.widget.js,jquery.ui.accordion.js, jquery.countdown.min.js, jquery.countdown-es.js, cufon-yui.js, droid_sans_400-droid_sans_700.font.js, script.js]
 
   has_layout:     true
   layout:         layout
