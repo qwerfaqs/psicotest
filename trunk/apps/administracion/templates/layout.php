@@ -25,7 +25,7 @@
                     <div class="header_resize">
 
                         <div class="logo">
-                            <h1><a href="">Psico<span>Test</span> <small><span>Fuerzas Armadas del Ecuador</span></small></a></h1>
+                            <h1><a href="">Psico<span>Test</span> <small><span>Evaluaciones psicológicas</span></small></a></h1>
                         </div>
                         <div class="clr"></div>
                         <div class="clr"></div>
