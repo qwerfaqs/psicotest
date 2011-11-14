@@ -2,7 +2,7 @@
 <div>
 	<script>
             $(document).ready(function() {
-		$( "#accordion" ).accordion({
+		$("#accordion").accordion({
 			collapsible: true,
                         active: <?php echo $pagina == 1 ? 0 : 1; ?>
                         
